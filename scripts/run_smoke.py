@@ -100,7 +100,13 @@ def execute(ledger, job, runtime, code):
     )
     directory = ART / "attempts" / aid
     directory.mkdir(parents=True)
-    job = dict(job, schema_version=1, tested_code_commit=code, token_reservation=tokens)
+    job = dict(
+        job,
+        schema_version=1,
+        tested_code_commit=code,
+        token_reservation=tokens,
+        wall_reservation_seconds=seconds,
+    )
     write_new(directory / "input.json", job)
     command = [sys.executable, str(ROOT / "scripts/gpu_worker.py"), str(directory / "input.json")]
     write_new(
@@ -111,6 +117,7 @@ def execute(ledger, job, runtime, code):
             "environment": {
                 "PYTHONPATH": runtime["reused_site_packages"],
                 "STAGE1_GOVERNED_ATTEMPT": aid,
+                "STAGE1_CONTROLLER_PID": str(os.getpid()),
                 "PYTHONDONTWRITEBYTECODE": "1",
                 "CUDA_CACHE_DISABLE": "1",
             },
@@ -121,6 +128,7 @@ def execute(ledger, job, runtime, code):
         os.environ,
         PYTHONPATH=runtime["reused_site_packages"],
         STAGE1_GOVERNED_ATTEMPT=aid,
+        STAGE1_CONTROLLER_PID=str(os.getpid()),
         PYTHONDONTWRITEBYTECODE="1",
         CUDA_CACHE_DISABLE="1",
     )

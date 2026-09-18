@@ -21,6 +21,7 @@ from llm_stego_public_key.codecs.llama_backend import load_model
 from llm_stego_public_key.cryptography.hpke import ReplayCache, deserialize, public_key, seal
 from llm_stego_public_key.errors import Stage1Error, TransportError
 from llm_stego_public_key.evaluation.budget import TokenMeter
+from llm_stego_public_key.evaluation.process_guard import arm_worker_guard
 from llm_stego_public_key.evaluation.observer import public_format_test
 from llm_stego_public_key.profile import Binding, canonical_json
 from llm_stego_public_key.transport.receiver import receive
@@ -44,6 +45,7 @@ def main():
     if os.environ.get("STAGE1_GOVERNED_ATTEMPT") != directory.name:
         raise RuntimeError("Use run_smoke.py: an active budget reservation is required")
     job = json.loads(job_path.read_text())
+    arm_worker_guard(int(os.environ["STAGE1_CONTROLLER_PID"]), job["wall_reservation_seconds"] - 8)
     profile = json.loads((ROOT / "configs/public_profile.json").read_text())
     runtime = json.loads((ROOT / "configs/local_runtime.json").read_text())
     meter = TokenMeter(job["token_reservation"])
