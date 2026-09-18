@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "materials": [
+    {
+      "path": "../llm-rankcloak/paperV3/scientific_reports/main3.tex",
+      "available": true,
+      "historical_sha256": "6bcbd20fda1fda549b19c48417b95c4a6924b33d7bb9d9c40b4daa35cf515dee",
+      "current_sha256": "6bcbd20fda1fda549b19c48417b95c4a6924b33d7bb9d9c40b4daa35cf515dee",
+      "matches_recorded_material": true,
+      "repository_head": "ce853d42d6ba64065cb63c6bdfc0d825c62734cd"
+    },
+    {
+      "path": "../ImageCalgacus/paper/icaart2027/main.tex",
+      "available": true,
+      "historical_sha256": "ecb8df30c06b19f5147a30c1fca54910965f025fed227cf2e5b36aa5379be253",
+      "current_sha256": "ecb8df30c06b19f5147a30c1fca54910965f025fed227cf2e5b36aa5379be253",
+      "matches_recorded_material": true,
+      "repository_head": "2bec65dbe5509623f6658d8a231ec93f6d579b4e"
+    },
+    {
+      "path": "../LlmStenoExplore/paper-empirical-explorations/results/raw/run_manifest.json",
+      "available": true,
+      "historical_sha256": "d6b528e45bf0c57657842a9e01ef2bdde2662571a348cfadc038d60252f3eb1a",
+      "current_sha256": "d6b528e45bf0c57657842a9e01ef2bdde2662571a348cfadc038d60252f3eb1a",
+      "matches_recorded_material": true,
+      "repository_head": "b9f1650b4eb0b2261b0080f86d9b1d8fadedbc0b"
+    },
+    {
+      "cached_primary_paper": "carts",
+      "available": true,
+      "sha256": "808abbdfb6ef288c337b20cea5069a6a235e3ac5e0687903be829aca918d1e98"
+    },
+    {
+      "cached_primary_paper": "calgacus",
+      "available": true,
+      "sha256": "41fe4f009dee05083544cb9275d3121e8b27ef7b74592c0af68da187ee8489f6"
+    },
+    {
+      "cached_primary_paper": "meteor",
+      "available": true,
+      "sha256": "8ee5858264f895654c20265f3bbd3c81f263186fd189266558c76ef7efde3bdb"
+    }
+  ],
+  "reviewed_scope": "CARTS rank inversion/two-context/conjugacy; RankCloak abstract and rank/transport contract; ImageCalgacus shared authenticated packet and saved-artifact/receiver boundary; Meteor public-key/hybrid and secret sampler assumptions. No prior reported experiments reproduced.",
+  "novelty_readiness": "BLOCKED",
+  "unresolved": [
+    "Latest submitted versions and overlap permission/status are not established.",
+    "Focused priority search for the proposed public-format result remains incomplete.",
+    "Comparator interfaces are not implementations or security proofs."
+  ]
+}

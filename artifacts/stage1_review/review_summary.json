@@ -1,0 +1,267 @@
+{
+  "baseline_cpu_tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 59
+  },
+  "cpu_tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 109
+  },
+  "engineering_readiness": "CONDITIONAL",
+  "findings": [
+    {
+      "evidence": [
+        "artifacts/stage1_review/baseline_defect_reproductions.json",
+        "tests/test_review_hardening.py"
+      ],
+      "files": [
+        "src/llm_stego_public_key/evaluation/budget.py",
+        "configs/stage1_budget_anchor.json"
+      ],
+      "gpu_revalidation_required": true,
+      "id": "C01",
+      "severity": "critical",
+      "status": "repaired_cpu_verified",
+      "title": "Ledger reset, invalid accounting and token-limit bypass"
+    },
+    {
+      "evidence": [
+        "tests/test_review_hardening.py",
+        "tests/test_process_guard.py"
+      ],
+      "files": [
+        "scripts/run_smoke.py",
+        "scripts/gpu_worker.py",
+        "src/llm_stego_public_key/evaluation/worker_lease.py",
+        "src/llm_stego_public_key/evaluation/process_guard.py"
+      ],
+      "gpu_revalidation_required": true,
+      "id": "C02",
+      "severity": "critical",
+      "status": "repaired_cpu_verified_live_pending",
+      "title": "Worker reservation/deadline/lifetime not fully enforced"
+    },
+    {
+      "evidence": [
+        "tests/test_review_hardening.py"
+      ],
+      "files": [
+        "scripts/run_smoke.py"
+      ],
+      "gpu_revalidation_required": true,
+      "id": "M01",
+      "severity": "major",
+      "status": "repaired_cpu_verified",
+      "title": "Restart erased stop conditions and could miscredit nonzero worker exits; lost keys regenerated"
+    },
+    {
+      "evidence": [
+        "tests/test_review_hardening.py"
+      ],
+      "files": [
+        "src/llm_stego_public_key/profile.py",
+        "src/llm_stego_public_key/codecs/llama_backend.py"
+      ],
+      "gpu_revalidation_required": true,
+      "id": "M02",
+      "severity": "major",
+      "status": "repaired_cpu_verified_live_pending",
+      "title": "Bound public profile could disagree with hard-coded backend behavior"
+    },
+    {
+      "evidence": [
+        "artifacts/stage1_review/artifact-audit.json",
+        "tests/test_review_hardening.py"
+      ],
+      "files": [
+        "scripts/run_smoke.py",
+        "manifests/environment.json",
+        "docs/source_audit.md"
+      ],
+      "gpu_revalidation_required": true,
+      "id": "M03",
+      "severity": "major",
+      "status": "future_checks_repaired_historical_gap_remains",
+      "title": "Incomplete historical source-cleanliness and native build provenance"
+    },
+    {
+      "evidence": [
+        "artifacts/stage1_review/artifact-audit.json"
+      ],
+      "files": [
+        "src/llm_stego_public_key/codecs/calgacus.py",
+        "artifacts/stage1/failure_analysis.json"
+      ],
+      "gpu_revalidation_required": false,
+      "id": "M04",
+      "note": "Historical failures remain valid; no transport filter or normalization repair introduced.",
+      "severity": "major",
+      "status": "open_documented_profile_limitation",
+      "title": "Six of twelve encrypted text transports fail serialization"
+    },
+    {
+      "evidence": [
+        "tests/test_review_hardening.py"
+      ],
+      "files": [
+        "src/llm_stego_public_key/evaluation/observer.py",
+        "scripts/gpu_worker.py"
+      ],
+      "gpu_revalidation_required": true,
+      "id": "N01",
+      "severity": "minor",
+      "status": "public_only_API_hardened_no_historical_label_use_found",
+      "title": "Observer wrapper unnecessarily received evaluator metadata"
+    },
+    {
+      "evidence": [
+        "artifacts/stage1_review/artifact-audit.json"
+      ],
+      "files": [
+        "artifacts/stage1/cases.jsonl"
+      ],
+      "gpu_revalidation_required": false,
+      "id": "N02",
+      "severity": "minor",
+      "status": "qualified_preserved_not_recreated",
+      "title": "Declared preflight carry-in lacks raw connectivity evidence"
+    }
+  ],
+  "gpu_evidence_applicability": {
+    "historical_code_commits": [
+      "c21265e9a9b31d8ee965808ceca8ef8b58cca092",
+      "d07f5a7ee6025e7e65ac236c3dd08e2b5981beec"
+    ],
+    "historical_codec_profile_results_remain_valid": true,
+    "unchanged_paths": [
+      "src/llm_stego_public_key/codecs/calgacus.py",
+      "src/llm_stego_public_key/cryptography/hpke.py",
+      "src/llm_stego_public_key/transport/receiver.py",
+      "configs/public_profile.json"
+    ],
+    "validates_repaired_execution_path": false
+  },
+  "historical_by_kind": {
+    "control": {
+      "attempted": 3,
+      "successful": 3
+    },
+    "encrypted": {
+      "attempted": 12,
+      "successful": 6
+    },
+    "preflight": {
+      "attempted": 1,
+      "successful": 1
+    },
+    "replay": {
+      "attempted": 3,
+      "successful": 3
+    },
+    "upstream_reference": {
+      "attempted": 2,
+      "successful": 2
+    }
+  },
+  "historical_by_payload_bytes": {
+    "128": {
+      "attempted": 6,
+      "recovered": 1
+    },
+    "32": {
+      "attempted": 6,
+      "recovered": 5
+    }
+  },
+  "historical_gpu_usage": {
+    "cases": 21,
+    "seconds": 632.4426544000003,
+    "tokens": 10230
+  },
+  "initial_working_tree": "clean",
+  "novelty_status": "unresolved_not_cleared",
+  "pilot": {
+    "additional_ceilings": {
+      "cases": 12,
+      "seconds": 1200,
+      "tokens": 8000
+    },
+    "combined_upper_bounds": {
+      "cases": 33,
+      "seconds": 1832.4426544000003,
+      "tokens": 18230
+    },
+    "comparators_implemented": false,
+    "executed": false,
+    "new_models": 0,
+    "specification": "STAGE2_PILOT_SPEC.md"
+  },
+  "reports": [
+    "STAGE1_REVIEW_REPORT.md",
+    "STAGE2_PILOT_SPEC.md"
+  ],
+  "repository_url": "https://github.com/mantzaris/CalgacusPublicEncryption",
+  "review_branch": "stage1-review-hardening",
+  "review_gpu_usage": {
+    "cases": 0,
+    "seconds": 0,
+    "tokens": 0
+  },
+  "reviewed_main_commit": "68f8d78d9c2aa6d4df005d80bbac4bb18d8d45f6",
+  "schema_version": 1,
+  "scientific_novelty_readiness": "BLOCKED",
+  "tested_code_commit": "7f60caf86f7430a19105aa5641f1003336d154b6",
+  "unresolved_gates": [
+    {
+      "id": "G01",
+      "requirement": "Separate external review and explicit pilot execution authorization.",
+      "scope": "engineering",
+      "status": "pending"
+    },
+    {
+      "id": "G02",
+      "requirement": "CPU-tested fixed pilot allocation, immutable history carry-forward and no-inference dry run; do not repurpose Stage 1 allocation or reset its ledger.",
+      "scope": "engineering",
+      "status": "pending"
+    },
+    {
+      "id": "G03",
+      "requirement": "Mandatory 3 successful historical UTF-8 replays plus 1 known-negative replay under repaired controller, before new pilot cases.",
+      "scope": "engineering",
+      "status": "pending_live"
+    },
+    {
+      "id": "G04",
+      "requirement": "Resolve transport reliability or explicitly justify a negative diagnostic research question; all six historical failures remain in denominators.",
+      "scope": "scale_up",
+      "status": "blocked"
+    },
+    {
+      "id": "G05",
+      "requirement": "Latest submitted-manuscript overlap/status review and focused public-format-result priority search.",
+      "scope": "novelty",
+      "status": "blocked"
+    },
+    {
+      "id": "G06",
+      "requirement": "Audited executable public arithmetic/keyed adapters with explicit randomness, nonce, backend and text contracts; not needed for the limited proposed C2/C0 diagnostic.",
+      "scope": "comparators",
+      "status": "blocked"
+    }
+  ],
+  "verification": {
+    "authentication_before_delivery": "PASS",
+    "checkpoint_and_crash_subprocess_tests": "PASS_CPU",
+    "crypto_library_and_known_answer_vectors": "PASS",
+    "current_model_tokenizer_native_cuda_hashes": "MATCH",
+    "historical_artifact_accounting": "PASS",
+    "new_live_gpu_validation": "NOT_RUN_PROHIBITED_BY_REVIEW_SCOPE",
+    "replay_atomicity_and_persistence": "PASS",
+    "toy_rank_inverse_and_ties": "PASS",
+    "zero_case_controller_check": "PASS_CPU_NO_INFERENCE"
+  }
+}

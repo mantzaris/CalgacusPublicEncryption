@@ -1,0 +1,75 @@
+{
+  "commands": [
+    {
+      "argv": [
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=artifacts/stage1_review/cpu-final.xml"
+      ],
+      "exit_code": 0,
+      "stdout": "artifacts/stage1_review/cpu-final.txt"
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "scripts",
+        "tests"
+      ],
+      "exit_code": 0,
+      "stdout": "artifacts/stage1_review/static-checks.txt"
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "src",
+        "scripts",
+        "tests"
+      ],
+      "exit_code": 0,
+      "stdout": "artifacts/stage1_review/static-checks.txt"
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/run_smoke.py",
+        "--max-new-cases",
+        "0"
+      ],
+      "exit_code": 0,
+      "gpu_operations": 0,
+      "stdout": "artifacts/stage1_review/controller-dry-run.txt"
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/audit_stage1.py"
+      ],
+      "exit_code": 0,
+      "stdout": "artifacts/stage1_review/artifact-audit-current.json"
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/audit_stage1.py",
+        "--assets"
+      ],
+      "exit_code": 0,
+      "note": "Run before implementation commit; audit script content matches the tested commit. Existing assets hashed without model/CUDA initialization.",
+      "stdout": "artifacts/stage1_review/artifact-audit.json"
+    }
+  ],
+  "gpu_budget_sha256_after": "3ce4afa608815a52578b688952ed220e2362999a9a533ec63fac6dfcada73bbf",
+  "recorded_utc": "2026-09-18T18:09:58.381014+00:00",
+  "schema_version": 1,
+  "tested_code_commit": "7f60caf86f7430a19105aa5641f1003336d154b6"
+}

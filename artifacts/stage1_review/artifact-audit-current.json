@@ -1,0 +1,97 @@
+{
+  "assets": {
+    "checked": false
+  },
+  "budget": {
+    "cases": 21,
+    "seconds": 632.4426544000003,
+    "tokens": 10230
+  },
+  "by_kind": {
+    "control": {
+      "attempted": 3,
+      "successful": 3
+    },
+    "encrypted": {
+      "attempted": 12,
+      "successful": 6
+    },
+    "preflight": {
+      "attempted": 1,
+      "successful": 1
+    },
+    "replay": {
+      "attempted": 3,
+      "successful": 3
+    },
+    "upstream_reference": {
+      "attempted": 2,
+      "successful": 2
+    }
+  },
+  "by_payload_bytes": {
+    "128": {
+      "attempted": 6,
+      "recovered": 1
+    },
+    "32": {
+      "attempted": 6,
+      "recovered": 5
+    }
+  },
+  "cpu_package_versions": {
+    "cryptography": "46.0.7",
+    "numpy": "2.2.6",
+    "pyhpke": "0.6.5",
+    "pytest": "8.4.2"
+  },
+  "evidence_limits": [
+    "Preflight 30 seconds is declared conservative carry-in, without a retained raw connectivity trace.",
+    "Historical controller checked selected code paths, not dependency lock/vendor; no per-job dirty diff retained.",
+    "No new GPU recovery is claimed; recorded traces and authenticated source fixtures are reconciled on CPU."
+  ],
+  "failure_counts": {
+    "tokenization_serialization_drift": 6
+  },
+  "fresh_process_replays": [
+    {
+      "attempt_id": "de2228bb-c94c-4f79-a8ba-219971d26c5c",
+      "pid": 110581,
+      "source_attempt_id": "bcb46cde-561b-48cb-ab40-73efd8b5dff4",
+      "source_pid": 92789
+    },
+    {
+      "attempt_id": "d82f7750-1ef9-43ba-83db-cac9878a1e97",
+      "pid": 111281,
+      "source_attempt_id": "e5f17a95-4bba-4511-bd77-d318cb600038",
+      "source_pid": 96744
+    },
+    {
+      "attempt_id": "3739c44c-1260-4917-a72d-1dddf0c44efb",
+      "pid": 112077,
+      "source_attempt_id": "28297d91-c3a6-4f08-b65f-4ad095921c28",
+      "source_pid": 100514
+    }
+  ],
+  "gpu_jobs_with_pid_offload_evidence": 20,
+  "historical_file_hashes": 207,
+  "historical_manifest_hashes": 203,
+  "live_gpu_revalidation_performed": false,
+  "peak_sampled_vram_mib": 5006,
+  "phase_token_reconciliations": 35,
+  "public_format_diagnostic": {
+    "control": {
+      "examined": 3,
+      "format_positive": 0
+    },
+    "encrypted": {
+      "examined": 3,
+      "format_positive": 2
+    }
+  },
+  "reviewed_main_commit": "68f8d78d9c2aa6d4df005d80bbac4bb18d8d45f6",
+  "schema_version": 1,
+  "status": "PASS",
+  "unique_receiver_public_keys": 6,
+  "vectors": "exact published entry checked against pinned full upstream file"
+}
