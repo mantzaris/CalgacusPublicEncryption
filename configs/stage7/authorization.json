@@ -1,0 +1,31 @@
+{
+  "additional_limits": {
+    "cases": 128,
+    "seconds": 14400,
+    "tokens": 300000
+  },
+  "allocation_id": "stage7_public_arithmetic_comparison_2026-09-18",
+  "authority": "Explicit user Stage 7 authorization: additional 4 hours / 300000 evaluated tokens / 128 attempts; no unused earlier allowances",
+  "baseline_usage": {
+    "cases": 214,
+    "seconds": 7541.8848853629825,
+    "tokens": 124994
+  },
+  "lifetime_limits": {
+    "cases": 342,
+    "seconds": 21941.884885362982,
+    "tokens": 424994
+  },
+  "previous_checkpoint": {
+    "bytes": 114488,
+    "limits": {
+      "cases": 224,
+      "seconds": 16132.698757323,
+      "tokens": 223849
+    },
+    "schema_version": 1,
+    "sha256": "3bd430af581a350a175e917d6abdadb9b0763d202eb0f204596d1b094a6bdc99"
+  },
+  "schema_version": 1,
+  "starting_commit": "c2b4f91f0cc6842c37133ce31576ae2fa455b2a6"
+}

@@ -43,12 +43,19 @@ RANK16_PROFILE_SHA256 = "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd12
 
 STAGE6_PROFILE_HASHES = {'L': 'ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a', 'F': 'c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006', 'Calgacus': '45a56748eeb728052a7d31d464527e5fb0c6d99adadd32b8a43f026cd6973e71'}
 
+STAGE7_PROFILE_HASHES = {'F32': '8058245eab41db9f5b3826943e32f17bb3fe8dbe605aa15281b66f4d0d84d885', 'F128': 'c96715f5280b57f3beaa719c00546ec907d679f5a2ab63fdbf00c32664f783c6', 'R32': 'c581c623f4eb99e0043af0f415d0215585626bd0d65e377a3d06dcfe40923acf', 'R128': 'e1f2a4e90bfadca57a196cb364775030748cf223a70de9e1877b51fe3a8c843a'}
+
+def validate_stage7_profile(profile, method=None):
+    digest=hashlib.sha256(canonical_json(profile)).hexdigest()
+    allowed={v for k,v in STAGE7_PROFILE_HASHES.items() if method is None or k.startswith(method)}
+    if digest not in allowed: raise ValueError("Unsupported Stage 7 profile")
+
 def validate_inferred_profile(profile: dict):
-    if hashlib.sha256(canonical_json(profile)).hexdigest() != STAGE6_PROFILE_HASHES["F"]:
+    if hashlib.sha256(canonical_json(profile)).hexdigest() not in {STAGE6_PROFILE_HASHES["F"], STAGE7_PROFILE_HASHES["F32"], STAGE7_PROFILE_HASHES["F128"]}:
         raise ValueError("Unsupported inferred rank16 profile")
 
 def validate_rank_transport_profile(profile: dict):
-    if hashlib.sha256(canonical_json(profile)).hexdigest() not in {RANK16_PROFILE_SHA256, STAGE6_PROFILE_HASHES["L"], STAGE6_PROFILE_HASHES["F"]}:
+    if hashlib.sha256(canonical_json(profile)).hexdigest() not in {RANK16_PROFILE_SHA256, STAGE6_PROFILE_HASHES["L"], STAGE6_PROFILE_HASHES["F"], *STAGE7_PROFILE_HASHES.values()}:
         raise ValueError("Unsupported public envelope transport profile")
 
 def validate_rank16_profile(profile: dict):
@@ -58,7 +65,7 @@ def validate_rank16_profile(profile: dict):
 
 def validate_supported_profile(profile: dict):
     """Reject unimplemented profile settings before loading the frozen backend."""
-    if hashlib.sha256(canonical_json(profile)).hexdigest() not in {SUPPORTED_PROFILE_SHA256, RANK16_PROFILE_SHA256, *STAGE6_PROFILE_HASHES.values()}:
+    if hashlib.sha256(canonical_json(profile)).hexdigest() not in {SUPPORTED_PROFILE_SHA256, RANK16_PROFILE_SHA256, *STAGE6_PROFILE_HASHES.values(), *STAGE7_PROFILE_HASHES.values()}:
         raise ValueError(
             "Unsupported public model/profile; explicit adaptation and revalidation required"
         )

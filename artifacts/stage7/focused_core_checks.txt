@@ -1,0 +1,154 @@
+...FFFF....F                                                             [100%]
+=================================== FAILURES ===================================
+______________ test_independent_rational_reference[\x80-tables3] _______________
+
+data = b'\x80', tables = [[3, 1]]
+
+    @pytest.mark.parametrize('data,tables',[(b'\x00',[[1]*16]),(b'\xff',[[1]*16]),(b'\x1f',[[1]*16]),(b'\x80',[[3,1]]),(b'\x01',[[3,1]]),(b'\xfe',[[1,3]]),(b'\xa5',[[1,1],[1,3],[3,1]]),(bytes.fromhex('00112233445566778899aabbccddeeff'),[[1]*16])])
+    def test_independent_rational_reference(data,tables):
+>       expected=reference_packet(data,tables)
+
+tests/test_stage7.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+data = b'\x80', tables = [[3, 1]], limit = 10000
+
+    def reference_packet(data,tables,limit=10000):
+        # Independent exact rational interval calculation, without finite-state
+        # renormalization, pending bits, or production inverse code.
+        n=8*len(data);value=int.from_bytes(data,'big');point=Fraction(value,2**n)
+        low,high=Fraction(0),Fraction(1);symbols=[]
+        for i in range(limit):
+            freq=tables[i%len(tables)];width=high-low;cumulative=0
+            for symbol,f in enumerate(freq):
+                a=low+width*Fraction(cumulative,sum(freq));cumulative+=f
+                b=low+width*Fraction(cumulative,sum(freq))
+                if a<=point<b:break
+            else:raise AssertionError('Reference interval')
+            low,high=a,b;symbols.append(symbol)
+            if low>=Fraction(value,2**n) and high<=Fraction(value+1,2**n):return symbols
+>       raise AssertionError('Reference capacity')
+E       AssertionError: Reference capacity
+
+tests/test_stage7.py:25: AssertionError
+______________ test_independent_rational_reference[\x01-tables4] _______________
+
+data = b'\x01', tables = [[3, 1]]
+
+    @pytest.mark.parametrize('data,tables',[(b'\x00',[[1]*16]),(b'\xff',[[1]*16]),(b'\x1f',[[1]*16]),(b'\x80',[[3,1]]),(b'\x01',[[3,1]]),(b'\xfe',[[1,3]]),(b'\xa5',[[1,1],[1,3],[3,1]]),(bytes.fromhex('00112233445566778899aabbccddeeff'),[[1]*16])])
+    def test_independent_rational_reference(data,tables):
+>       expected=reference_packet(data,tables)
+
+tests/test_stage7.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+data = b'\x01', tables = [[3, 1]], limit = 10000
+
+    def reference_packet(data,tables,limit=10000):
+        # Independent exact rational interval calculation, without finite-state
+        # renormalization, pending bits, or production inverse code.
+        n=8*len(data);value=int.from_bytes(data,'big');point=Fraction(value,2**n)
+        low,high=Fraction(0),Fraction(1);symbols=[]
+        for i in range(limit):
+            freq=tables[i%len(tables)];width=high-low;cumulative=0
+            for symbol,f in enumerate(freq):
+                a=low+width*Fraction(cumulative,sum(freq));cumulative+=f
+                b=low+width*Fraction(cumulative,sum(freq))
+                if a<=point<b:break
+            else:raise AssertionError('Reference interval')
+            low,high=a,b;symbols.append(symbol)
+            if low>=Fraction(value,2**n) and high<=Fraction(value+1,2**n):return symbols
+>       raise AssertionError('Reference capacity')
+E       AssertionError: Reference capacity
+
+tests/test_stage7.py:25: AssertionError
+______________ test_independent_rational_reference[\xfe-tables5] _______________
+
+data = b'\xfe', tables = [[1, 3]]
+
+    @pytest.mark.parametrize('data,tables',[(b'\x00',[[1]*16]),(b'\xff',[[1]*16]),(b'\x1f',[[1]*16]),(b'\x80',[[3,1]]),(b'\x01',[[3,1]]),(b'\xfe',[[1,3]]),(b'\xa5',[[1,1],[1,3],[3,1]]),(bytes.fromhex('00112233445566778899aabbccddeeff'),[[1]*16])])
+    def test_independent_rational_reference(data,tables):
+>       expected=reference_packet(data,tables)
+
+tests/test_stage7.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+data = b'\xfe', tables = [[1, 3]], limit = 10000
+
+    def reference_packet(data,tables,limit=10000):
+        # Independent exact rational interval calculation, without finite-state
+        # renormalization, pending bits, or production inverse code.
+        n=8*len(data);value=int.from_bytes(data,'big');point=Fraction(value,2**n)
+        low,high=Fraction(0),Fraction(1);symbols=[]
+        for i in range(limit):
+            freq=tables[i%len(tables)];width=high-low;cumulative=0
+            for symbol,f in enumerate(freq):
+                a=low+width*Fraction(cumulative,sum(freq));cumulative+=f
+                b=low+width*Fraction(cumulative,sum(freq))
+                if a<=point<b:break
+            else:raise AssertionError('Reference interval')
+            low,high=a,b;symbols.append(symbol)
+            if low>=Fraction(value,2**n) and high<=Fraction(value+1,2**n):return symbols
+>       raise AssertionError('Reference capacity')
+E       AssertionError: Reference capacity
+
+tests/test_stage7.py:25: AssertionError
+______________ test_independent_rational_reference[\xa5-tables6] _______________
+
+data = b'\xa5', tables = [[1, 1], [1, 3], [3, 1]]
+
+    @pytest.mark.parametrize('data,tables',[(b'\x00',[[1]*16]),(b'\xff',[[1]*16]),(b'\x1f',[[1]*16]),(b'\x80',[[3,1]]),(b'\x01',[[3,1]]),(b'\xfe',[[1,3]]),(b'\xa5',[[1,1],[1,3],[3,1]]),(bytes.fromhex('00112233445566778899aabbccddeeff'),[[1]*16])])
+    def test_independent_rational_reference(data,tables):
+>       expected=reference_packet(data,tables)
+
+tests/test_stage7.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+data = b'\xa5', tables = [[1, 1], [1, 3], [3, 1]], limit = 10000
+
+    def reference_packet(data,tables,limit=10000):
+        # Independent exact rational interval calculation, without finite-state
+        # renormalization, pending bits, or production inverse code.
+        n=8*len(data);value=int.from_bytes(data,'big');point=Fraction(value,2**n)
+        low,high=Fraction(0),Fraction(1);symbols=[]
+        for i in range(limit):
+            freq=tables[i%len(tables)];width=high-low;cumulative=0
+            for symbol,f in enumerate(freq):
+                a=low+width*Fraction(cumulative,sum(freq));cumulative+=f
+                b=low+width*Fraction(cumulative,sum(freq))
+                if a<=point<b:break
+            else:raise AssertionError('Reference interval')
+            low,high=a,b;symbols.append(symbol)
+            if low>=Fraction(value,2**n) and high<=Fraction(value+1,2**n):return symbols
+>       raise AssertionError('Reference capacity')
+E       AssertionError: Reference capacity
+
+tests/test_stage7.py:25: AssertionError
+_____________ test_precision_crossing_and_public_canonical_inverse _____________
+
+    def test_precision_crossing_and_public_canonical_inverse():
+        data=bytes(range(196));tables=[[40000,20000,5536],[1]*16]
+>       symbols=coded(data,tables);d=PacketDecoder(len(data))
+
+tests/test_stage7.py:72: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+data = b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x...a6\xa7\xa8\xa9\xaa\xab\xac\xad\xae\xaf\xb0\xb1\xb2\xb3\xb4\xb5\xb6\xb7\xb8\xb9\xba\xbb\xbc\xbd\xbe\xbf\xc0\xc1\xc2\xc3'
+tables = [[40000, 20000, 5536], [1, 1, 1, 1, 1, 1, ...]], precision = 32
+
+    def coded(data,tables,precision=32):
+        coder=PacketEncoder(data,precision);symbols=[]
+        for i in range(10000):
+            if coder.done:return symbols
+            symbols.append(coder.step(tables[i%len(tables)]))
+>       raise AssertionError('Capacity')
+E       AssertionError: Capacity
+
+tests/test_stage7.py:33: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_stage7.py::test_independent_rational_reference[\x80-tables3]
+FAILED tests/test_stage7.py::test_independent_rational_reference[\x01-tables4]
+FAILED tests/test_stage7.py::test_independent_rational_reference[\xfe-tables5]
+FAILED tests/test_stage7.py::test_independent_rational_reference[\xa5-tables6]
+FAILED tests/test_stage7.py::test_precision_crossing_and_public_canonical_inverse
+5 failed, 7 passed in 16.93s

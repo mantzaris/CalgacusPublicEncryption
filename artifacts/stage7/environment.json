@@ -1,0 +1,61 @@
+{
+  "asset_checks": "PASS; frozen model/tokenizer/backend/CUDA hashes verified; no model inference",
+  "crypto_dependencies": {
+    "cryptography": "46.0.7",
+    "pyhpke": "0.6.5"
+  },
+  "cuda_library_sha256": {
+    "nvidia/cublas/lib/libcublas.so.12": "4cc45526449a95d3985389785e985b7832460ea3db178bc9e9963be2111fbee8",
+    "nvidia/cublas/lib/libcublasLt.so.12": "44a813aa2da08830f9083f81d0eb73f1ae4052a4d9b0b0de480a8f6cd9eb3078",
+    "nvidia/cublas/lib/libnvblas.so.12": "7c2a58dc54154208392301d0fe3d53a120e4c1ebeab9e80ce91fe9948baeadc9",
+    "nvidia/cuda_runtime/lib/libcudart.so.12": "8774224f5b11a73b15d074a3fcce7327322c5c4cfdfd924d6a826779eec968fe"
+  },
+  "gpu_inventory": [
+    {
+      "driver": "590.48.01",
+      "index": "0",
+      "name": "Quadro T2000",
+      "uuid": "GPU-3f5529e2-cb0a-d0ae-42ef-900bb3b35e04",
+      "vram_mib": "4096"
+    },
+    {
+      "driver": "590.48.01",
+      "index": "1",
+      "name": "NVIDIA RTX 5000 Ada Generation",
+      "uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+      "vram_mib": "32760"
+    }
+  ],
+  "model_sha256": "86c8ea6c8b755687d0b723176fcd0b2411ef80533d23e2a5030f845d13ab2db7",
+  "native_library_sha256": {
+    "libggml-base.so": "d7fadcef23b3b97e6e313254c5656caaf96b92c6785060ff2db1677e134c8aa6",
+    "libggml-cpu.so": "19be8814e6190554e4c1d3f72123da3717413cefb3c347903285ed63dd2a980f",
+    "libggml-cuda.so": "89d5798bdf1bfd679d8a155f1ba02c40008d708b8cafba62f5f5e21a8d7b958d",
+    "libggml.so": "c908ca5f8ae463d5d5c6d4c380326390a84be3b899cb01ad41bc117b91a887b8",
+    "libllama.so": "ed7dbeb62742a4a2d42fb35f5c26f48139121c7faa7715673ab5c01bb603267f",
+    "libmtmd.so": "408f42232538e4bc9f4ae5273e2e94dbbeda4c963a62c693a9e80e709d9055d6"
+  },
+  "platform": "Linux-6.17.0-22-generic-x86_64-with-glibc2.39",
+  "python": "3.10.13",
+  "runtime": {
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "model_path": "/home/meow/Documents/repos/llm-rankcloak/models/llama3_8b/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf",
+    "reused_site_packages": "/home/meow/Documents/repos/llm-rankcloak/.venv-generation-v3/lib/python3.10/site-packages",
+    "schema_version": 1
+  },
+  "runtime_packages": {
+    "llama-cpp-python": "0.3.23",
+    "numpy": "2.2.6",
+    "nvidia-cublas-cu12": "12.4.5.8",
+    "nvidia-cuda-runtime-cu12": "12.4.127"
+  },
+  "schema_version": 1,
+  "selected_gpu": {
+    "driver": "590.48.01",
+    "index": "1",
+    "name": "NVIDIA RTX 5000 Ada Generation",
+    "uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "vram_mib": "32760"
+  },
+  "tokenizer_sha256": "5c8950bef385be95db5feda8c8afadba6a5c0b903e6ceaa39efe6cfe3d84f3f3"
+}
