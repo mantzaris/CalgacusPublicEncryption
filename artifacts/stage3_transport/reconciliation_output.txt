@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "starting_commit": "54a57067e4c44dd0937950fe1e86d721489b7064",
+  "gpu_tested_code_commit": "6f78518d69e5e3f0bea80db94b9885a9daaa47e7",
+  "profile_id": "public_utf8_rank16_v1",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "split": "development_only_excluded_from_future_heldout",
+  "planned_cases": 10,
+  "attempted_cases": 10,
+  "recorded_outcomes": 10,
+  "unused_slots": [],
+  "fixtures": {
+    "attempted": 2,
+    "exact_envelope_recovery": 2,
+    "new_profile_hpke_binding_claimed": false
+  },
+  "fresh_recovery": {
+    "32": {
+      "attempted": 2,
+      "authenticated_exact": 2
+    },
+    "128": {
+      "attempted": 2,
+      "authenticated_exact": 2
+    }
+  },
+  "fresh_recipient_key_pairs": 2,
+  "fresh_128_replays": {
+    "attempted": 2,
+    "authenticated_exact": 2
+  },
+  "ordinary_controls": {
+    "attempted": 2,
+    "generated_utf8": 2
+  },
+  "public_format_diagnostics": [
+    {
+      "attempt_id": "1514528d-2e90-4288-ae56-172086110902",
+      "case_id": "rank16-k0-n32",
+      "kind": "encrypted",
+      "authenticated": false,
+      "envelope_bytes": 100,
+      "envelope_sha256": "b58182a38fe46becce5b140e5516c8fc0b94fb8f31ea4461b5ae40e8b21a6626",
+      "format_valid": true
+    },
+    {
+      "attempt_id": "c2249cd8-c821-435b-8d46-ac5f58b8d480",
+      "case_id": "rank16-k0-n128",
+      "kind": "encrypted",
+      "authenticated": false,
+      "envelope_bytes": 196,
+      "envelope_sha256": "1ab6d9c9f9a703ee8064e7133dea8bb992af8e0fd72187d95ef565d4145ff20d",
+      "format_valid": true
+    },
+    {
+      "attempt_id": "368fd333-39ce-487e-aa54-736034d8c5e3",
+      "case_id": "rank16-k1-n32",
+      "kind": "encrypted",
+      "authenticated": false,
+      "envelope_bytes": 100,
+      "envelope_sha256": "4d77d19e196b90da9d1b9fd4a73044cdc02090d1b795a9bf8314ffe9ff2c514f",
+      "format_valid": true
+    },
+    {
+      "attempt_id": "f213c595-a301-4e4a-a3f3-fdec26de6c2b",
+      "case_id": "rank16-k1-n128",
+      "kind": "encrypted",
+      "authenticated": false,
+      "envelope_bytes": 196,
+      "envelope_sha256": "bb8c0369281f5f4cb7339890215e3977b50b68da8cc20bfced526644a8eb3c6b",
+      "format_valid": true
+    },
+    {
+      "attempt_id": "cafeba1d-5d47-4dc1-a32d-58aeedd2b438",
+      "case_id": "rank16-control-0",
+      "kind": "control",
+      "authenticated": false,
+      "error": "Declared envelope length outside 68..196 bytes",
+      "failure_category": "framing_failure",
+      "format_valid": false
+    },
+    {
+      "attempt_id": "6e8cb2a1-d3d1-4193-8dee-8d61ac1bd85d",
+      "case_id": "rank16-control-1",
+      "kind": "control",
+      "authenticated": false,
+      "error": "Declared envelope length outside 68..196 bytes",
+      "failure_category": "framing_failure",
+      "format_valid": false
+    }
+  ],
+  "primary_failures": {},
+  "candidate_availability": {
+    "aggregation": "encoder steps only; stop scan at 16 eligible; not total support in top128",
+    "steps": 2016,
+    "min_eligible_capped_at16": 16,
+    "mean_examined": 16.044146825396826,
+    "max_examined": 23,
+    "rejected": {
+      "empty": 0,
+      "invalid_utf8": 0,
+      "noncanonical": 88,
+      "special_control": 1
+    }
+  },
+  "measurements": [
+    {
+      "attempt_id": "b1047479-0b2c-4a26-bedd-b819aafcc9ca",
+      "case_id": "rank16-fixture-0",
+      "carrier_tokens": 400,
+      "carrier_utf8_bytes": 1231,
+      "envelope_bytes": 196,
+      "net_payload_bits_per_token": null,
+      "historical_intended_carrier_tokens": 185,
+      "token_expansion_vs_historical_fixture": 2.1621621621621623,
+      "job_elapsed_seconds": 45.876804239000194,
+      "timings": {
+        "encode_seconds": 15.285071622000032,
+        "fixture_decoder_seconds": 15.25341832400045,
+        "load_and_verify_seconds": 14.473064431000239
+      }
+    },
+    {
+      "attempt_id": "7f758cd4-bea8-4765-947a-7dd433da341a",
+      "case_id": "rank16-fixture-1",
+      "carrier_tokens": 400,
+      "carrier_utf8_bytes": 1799,
+      "envelope_bytes": 196,
+      "net_payload_bits_per_token": null,
+      "historical_intended_carrier_tokens": 183,
+      "token_expansion_vs_historical_fixture": 2.185792349726776,
+      "job_elapsed_seconds": 45.92394782100018,
+      "timings": {
+        "encode_seconds": 15.42604360400037,
+        "fixture_decoder_seconds": 15.411277674000303,
+        "load_and_verify_seconds": 14.233643650999511
+      }
+    },
+    {
+      "attempt_id": "1514528d-2e90-4288-ae56-172086110902",
+      "case_id": "rank16-k0-n32",
+      "carrier_tokens": 208,
+      "carrier_utf8_bytes": 933,
+      "envelope_bytes": 100,
+      "net_payload_bits_per_token": 1.2307692307692308,
+      "historical_intended_carrier_tokens": null,
+      "token_expansion_vs_historical_fixture": null,
+      "job_elapsed_seconds": 36.799493393999,
+      "timings": {
+        "encode_seconds": 7.338683187999777,
+        "load_and_verify_seconds": 14.33594249899943,
+        "public_extraction_seconds": 7.306697226000324,
+        "receiver_seconds": 7.329990274000011
+      }
+    },
+    {
+      "attempt_id": "c2249cd8-c821-435b-8d46-ac5f58b8d480",
+      "case_id": "rank16-k0-n128",
+      "carrier_tokens": 400,
+      "carrier_utf8_bytes": 1657,
+      "envelope_bytes": 196,
+      "net_payload_bits_per_token": 2.56,
+      "historical_intended_carrier_tokens": null,
+      "token_expansion_vs_historical_fixture": null,
+      "job_elapsed_seconds": 60.80002033799974,
+      "timings": {
+        "encode_seconds": 15.201816524000606,
+        "load_and_verify_seconds": 14.281360795999717,
+        "public_extraction_seconds": 15.215653125000244,
+        "receiver_seconds": 15.15487638599916
+      }
+    },
+    {
+      "attempt_id": "368fd333-39ce-487e-aa54-736034d8c5e3",
+      "case_id": "rank16-k1-n32",
+      "carrier_tokens": 208,
+      "carrier_utf8_bytes": 910,
+      "envelope_bytes": 100,
+      "net_payload_bits_per_token": 1.2307692307692308,
+      "historical_intended_carrier_tokens": null,
+      "token_expansion_vs_historical_fixture": null,
+      "job_elapsed_seconds": 37.39115169900106,
+      "timings": {
+        "encode_seconds": 7.276758514000903,
+        "load_and_verify_seconds": 14.527373327999157,
+        "public_extraction_seconds": 7.28113108099933,
+        "receiver_seconds": 7.263982213000418
+      }
+    },
+    {
+      "attempt_id": "f213c595-a301-4e4a-a3f3-fdec26de6c2b",
+      "case_id": "rank16-k1-n128",
+      "carrier_tokens": 400,
+      "carrier_utf8_bytes": 1792,
+      "envelope_bytes": 196,
+      "net_payload_bits_per_token": 2.56,
+      "historical_intended_carrier_tokens": null,
+      "token_expansion_vs_historical_fixture": null,
+      "job_elapsed_seconds": 60.802244229998905,
+      "timings": {
+        "encode_seconds": 15.13033465999979,
+        "load_and_verify_seconds": 14.55278941799952,
+        "public_extraction_seconds": 15.348763574000259,
+        "receiver_seconds": 15.137641209999856
+      }
+    }
+  ],
+  "incremental_usage": {
+    "cases": 10,
+    "seconds": 399.08410894499866,
+    "tokens": 7098
+  },
+  "cumulative_usage": {
+    "cases": 43,
+    "seconds": 1401.5295174820044,
+    "tokens": 23499
+  },
+  "peak_sampled_process_vram_mib": 5006,
+  "stop_reason": "Fixed allocation exhausted; stop GPU work",
+  "focused_codec_tests": 7,
+  "focused_allocation_checks": 5,
+  "new_full_cpu_suite_run": false,
+  "engineering_verdict": "bounded_qualification_passed",
+  "novelty_and_keyed_comparators": "unresolved; not assessed or executed"
+}

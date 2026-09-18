@@ -1,0 +1,26 @@
+{
+  "case_id": "rank16-fixture-0",
+  "context_index": 2,
+  "envelope_hex": "8530e5f7d84c31fe2bddce040dd216676dd4cc34d0ce684726fb448a5cff674b6ef4215c91b9cc2ab56d8730462e7e826cde74aedcfb65666b42b7bfe0d823c11de62702fc517a44f260b841d2a02c6f93f74c251200cb437d1db3e50a9ae488f85a1ea9922412ec6396adfa68080973181af0858a9087d273552d5c7fdb8c4e84fcbf2dfe6de41ee4dd1d97b77be65a4bcda7b46cb4ba2638db89567021960481a00f6bf322226c12231ec5c85db91e62edb708d3629cad7224b288dd869d7bc5e7a6ad",
+  "fixture_source_attempt_id": "12de85ea-3e3e-4a4a-8997-27e551978366",
+  "kind": "fixture",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "6f78518d69e5e3f0bea80db94b9885a9daaa47e7",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "tested_code_commit": "6f78518d69e5e3f0bea80db94b9885a9daaa47e7",
+  "token_reservation": 900,
+  "wall_reservation_seconds": 140
+}

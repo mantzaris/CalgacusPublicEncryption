@@ -1,0 +1,185 @@
+{
+  "records": [
+    {
+      "attempt_id": "b1047479-0b2c-4a26-bedd-b819aafcc9ca",
+      "capacity_failure_step": null,
+      "case_id": "rank16-fixture-0",
+      "error": null,
+      "failure_category": null,
+      "family": "fixture",
+      "first_divergences": {
+        "candidate_order": null,
+        "tokenization": null
+      },
+      "invalid_choice": null,
+      "public_declared_envelope_bytes": null,
+      "public_rejection": null,
+      "public_rejection_error": null,
+      "raw_result": "artifacts/stage3_transport/attempts/b1047479-0b2c-4a26-bedd-b819aafcc9ca/result.json",
+      "success": true
+    },
+    {
+      "attempt_id": "7f758cd4-bea8-4765-947a-7dd433da341a",
+      "capacity_failure_step": null,
+      "case_id": "rank16-fixture-1",
+      "error": null,
+      "failure_category": null,
+      "family": "fixture",
+      "first_divergences": {
+        "candidate_order": null,
+        "tokenization": null
+      },
+      "invalid_choice": null,
+      "public_declared_envelope_bytes": null,
+      "public_rejection": null,
+      "public_rejection_error": null,
+      "raw_result": "artifacts/stage3_transport/attempts/7f758cd4-bea8-4765-947a-7dd433da341a/result.json",
+      "success": true
+    },
+    {
+      "attempt_id": "1514528d-2e90-4288-ae56-172086110902",
+      "capacity_failure_step": null,
+      "case_id": "rank16-k0-n32",
+      "error": null,
+      "failure_category": null,
+      "family": "fresh_encrypted",
+      "first_divergences": {
+        "candidate_order": null,
+        "tokenization": null
+      },
+      "invalid_choice": null,
+      "public_declared_envelope_bytes": 100,
+      "public_rejection": null,
+      "public_rejection_error": null,
+      "raw_result": "artifacts/stage3_transport/attempts/1514528d-2e90-4288-ae56-172086110902/result.json",
+      "success": true
+    },
+    {
+      "attempt_id": "c2249cd8-c821-435b-8d46-ac5f58b8d480",
+      "capacity_failure_step": null,
+      "case_id": "rank16-k0-n128",
+      "error": null,
+      "failure_category": null,
+      "family": "fresh_encrypted",
+      "first_divergences": {
+        "candidate_order": null,
+        "tokenization": null
+      },
+      "invalid_choice": null,
+      "public_declared_envelope_bytes": 196,
+      "public_rejection": null,
+      "public_rejection_error": null,
+      "raw_result": "artifacts/stage3_transport/attempts/c2249cd8-c821-435b-8d46-ac5f58b8d480/result.json",
+      "success": true
+    },
+    {
+      "attempt_id": "368fd333-39ce-487e-aa54-736034d8c5e3",
+      "capacity_failure_step": null,
+      "case_id": "rank16-k1-n32",
+      "error": null,
+      "failure_category": null,
+      "family": "fresh_encrypted",
+      "first_divergences": {
+        "candidate_order": null,
+        "tokenization": null
+      },
+      "invalid_choice": null,
+      "public_declared_envelope_bytes": 100,
+      "public_rejection": null,
+      "public_rejection_error": null,
+      "raw_result": "artifacts/stage3_transport/attempts/368fd333-39ce-487e-aa54-736034d8c5e3/result.json",
+      "success": true
+    },
+    {
+      "attempt_id": "f213c595-a301-4e4a-a3f3-fdec26de6c2b",
+      "capacity_failure_step": null,
+      "case_id": "rank16-k1-n128",
+      "error": null,
+      "failure_category": null,
+      "family": "fresh_encrypted",
+      "first_divergences": {
+        "candidate_order": null,
+        "tokenization": null
+      },
+      "invalid_choice": null,
+      "public_declared_envelope_bytes": 196,
+      "public_rejection": null,
+      "public_rejection_error": null,
+      "raw_result": "artifacts/stage3_transport/attempts/f213c595-a301-4e4a-a3f3-fdec26de6c2b/result.json",
+      "success": true
+    },
+    {
+      "attempt_id": "aa7ad412-8954-4929-aa0f-5777968c337d",
+      "capacity_failure_step": null,
+      "case_id": "rank16-replay-0",
+      "error": null,
+      "failure_category": null,
+      "family": "fresh_replay",
+      "first_divergences": {
+        "candidate_order": null,
+        "tokenization": null
+      },
+      "invalid_choice": null,
+      "public_declared_envelope_bytes": null,
+      "public_rejection": null,
+      "public_rejection_error": null,
+      "raw_result": "artifacts/stage3_transport/attempts/aa7ad412-8954-4929-aa0f-5777968c337d/result.json",
+      "success": true
+    },
+    {
+      "attempt_id": "67eeb99e-2e26-4091-b5f9-d506a5396da4",
+      "capacity_failure_step": null,
+      "case_id": "rank16-replay-1",
+      "error": null,
+      "failure_category": null,
+      "family": "fresh_replay",
+      "first_divergences": {
+        "candidate_order": null,
+        "tokenization": null
+      },
+      "invalid_choice": null,
+      "public_declared_envelope_bytes": null,
+      "public_rejection": null,
+      "public_rejection_error": null,
+      "raw_result": "artifacts/stage3_transport/attempts/67eeb99e-2e26-4091-b5f9-d506a5396da4/result.json",
+      "success": true
+    },
+    {
+      "attempt_id": "cafeba1d-5d47-4dc1-a32d-58aeedd2b438",
+      "capacity_failure_step": null,
+      "case_id": "rank16-control-0",
+      "error": null,
+      "failure_category": null,
+      "family": "control",
+      "first_divergences": {
+        "candidate_order": null,
+        "tokenization": null
+      },
+      "invalid_choice": null,
+      "public_declared_envelope_bytes": 77825,
+      "public_rejection": "framing_failure",
+      "public_rejection_error": "Declared envelope length outside 68..196 bytes",
+      "raw_result": "artifacts/stage3_transport/attempts/cafeba1d-5d47-4dc1-a32d-58aeedd2b438/result.json",
+      "success": true
+    },
+    {
+      "attempt_id": "6e8cb2a1-d3d1-4193-8dee-8d61ac1bd85d",
+      "capacity_failure_step": null,
+      "case_id": "rank16-control-1",
+      "error": null,
+      "failure_category": null,
+      "family": "control",
+      "first_divergences": {
+        "candidate_order": null,
+        "tokenization": null
+      },
+      "invalid_choice": null,
+      "public_declared_envelope_bytes": 17764353,
+      "public_rejection": "framing_failure",
+      "public_rejection_error": "Declared envelope length outside 68..196 bytes",
+      "raw_result": "artifacts/stage3_transport/attempts/6e8cb2a1-d3d1-4193-8dee-8d61ac1bd85d/result.json",
+      "success": true
+    }
+  ],
+  "schema_version": 1
+}

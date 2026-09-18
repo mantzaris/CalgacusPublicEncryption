@@ -1,0 +1,126 @@
+{
+  "both_ceilings_enforced": true,
+  "checked_attempts": 10,
+  "historical_codecs_profiles_reports_and_artifacts_unchanged": true,
+  "historical_ledger_prefix_preserved": true,
+  "lease_hashes_and_unique_pids_verified": true,
+  "no_model_inference": true,
+  "phase_charges_reconstructed": [
+    {
+      "attempt_id": "b1047479-0b2c-4a26-bedd-b819aafcc9ca",
+      "phase": "encode",
+      "tokens": 409
+    },
+    {
+      "attempt_id": "b1047479-0b2c-4a26-bedd-b819aafcc9ca",
+      "phase": "fixture_decoder",
+      "tokens": 409
+    },
+    {
+      "attempt_id": "7f758cd4-bea8-4765-947a-7dd433da341a",
+      "phase": "encode",
+      "tokens": 409
+    },
+    {
+      "attempt_id": "7f758cd4-bea8-4765-947a-7dd433da341a",
+      "phase": "fixture_decoder",
+      "tokens": 409
+    },
+    {
+      "attempt_id": "1514528d-2e90-4288-ae56-172086110902",
+      "phase": "encode",
+      "tokens": 219
+    },
+    {
+      "attempt_id": "1514528d-2e90-4288-ae56-172086110902",
+      "phase": "public_extraction",
+      "tokens": 219
+    },
+    {
+      "attempt_id": "1514528d-2e90-4288-ae56-172086110902",
+      "phase": "receiver",
+      "tokens": 219
+    },
+    {
+      "attempt_id": "c2249cd8-c821-435b-8d46-ac5f58b8d480",
+      "phase": "encode",
+      "tokens": 412
+    },
+    {
+      "attempt_id": "c2249cd8-c821-435b-8d46-ac5f58b8d480",
+      "phase": "public_extraction",
+      "tokens": 412
+    },
+    {
+      "attempt_id": "c2249cd8-c821-435b-8d46-ac5f58b8d480",
+      "phase": "receiver",
+      "tokens": 412
+    },
+    {
+      "attempt_id": "368fd333-39ce-487e-aa54-736034d8c5e3",
+      "phase": "encode",
+      "tokens": 217
+    },
+    {
+      "attempt_id": "368fd333-39ce-487e-aa54-736034d8c5e3",
+      "phase": "public_extraction",
+      "tokens": 217
+    },
+    {
+      "attempt_id": "368fd333-39ce-487e-aa54-736034d8c5e3",
+      "phase": "receiver",
+      "tokens": 217
+    },
+    {
+      "attempt_id": "f213c595-a301-4e4a-a3f3-fdec26de6c2b",
+      "phase": "encode",
+      "tokens": 411
+    },
+    {
+      "attempt_id": "f213c595-a301-4e4a-a3f3-fdec26de6c2b",
+      "phase": "public_extraction",
+      "tokens": 411
+    },
+    {
+      "attempt_id": "f213c595-a301-4e4a-a3f3-fdec26de6c2b",
+      "phase": "receiver",
+      "tokens": 411
+    },
+    {
+      "attempt_id": "aa7ad412-8954-4929-aa0f-5777968c337d",
+      "phase": "fresh_receiver",
+      "tokens": 412
+    },
+    {
+      "attempt_id": "67eeb99e-2e26-4091-b5f9-d506a5396da4",
+      "phase": "fresh_receiver",
+      "tokens": 411
+    },
+    {
+      "attempt_id": "cafeba1d-5d47-4dc1-a32d-58aeedd2b438",
+      "phase": "ordinary_control",
+      "tokens": 412
+    },
+    {
+      "attempt_id": "cafeba1d-5d47-4dc1-a32d-58aeedd2b438",
+      "phase": "public_extraction",
+      "tokens": 20
+    },
+    {
+      "attempt_id": "6e8cb2a1-d3d1-4193-8dee-8d61ac1bd85d",
+      "phase": "ordinary_control",
+      "tokens": 411
+    },
+    {
+      "attempt_id": "6e8cb2a1-d3d1-4193-8dee-8d61ac1bd85d",
+      "phase": "public_extraction",
+      "tokens": 19
+    }
+  ],
+  "pid_matched_gpu_samples_and_full_offload_verified": true,
+  "prefix_bytes": 16611,
+  "prefix_sha256": "074d302afe62abc518565f9322bc5365fb62fd0a16e7c3c69733c3e2942d0fe6",
+  "reservations_settlements_outcomes_agree": true,
+  "schema_version": 1,
+  "status": "PASS"
+}

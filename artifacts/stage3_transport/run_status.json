@@ -1,0 +1,18 @@
+{
+  "cumulative_usage": {
+    "cases": 43,
+    "seconds": 1401.5295174820044,
+    "tokens": 23499
+  },
+  "incremental_usage": {
+    "cases": 10,
+    "seconds": 399.08410894499866,
+    "tokens": 7098
+  },
+  "recorded_outcomes": 10,
+  "schema_version": 1,
+  "skipped": [],
+  "split": "development_only_excluded_from_future_heldout",
+  "stop_reason": "Fixed allocation exhausted; stop GPU work",
+  "tested_code_commit": "6f78518d69e5e3f0bea80db94b9885a9daaa47e7"
+}
