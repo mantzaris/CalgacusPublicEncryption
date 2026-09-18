@@ -1,0 +1,356 @@
+{
+  "abort_policy": "candidate exhaustion or invalid text retained, counted as nonmatch in intention-to-generate denominator; runtime failure separately inconclusive and stops execution",
+  "additional_limits": {
+    "cases": 21,
+    "seconds": 1000,
+    "tokens": 1400
+  },
+  "baseline_usage": {
+    "cases": 43,
+    "seconds": 1401.5295174820044,
+    "tokens": 23499
+  },
+  "generators": {
+    "A": "full-vocabulary temperature-one sampling",
+    "B": "temperature-one probabilities renormalized over unchanged first 16 admissible IDs",
+    "C": "uniform index in unchanged first 16 admissible IDs"
+  },
+  "global_limits": {
+    "cases": 72,
+    "seconds": 7200,
+    "tokens": 25000
+  },
+  "observer": "compare actual received first six token IDs only; invalid UTF-8 and insufficient tokens do not match; no full message-length or ciphertext/tag validation",
+  "observer_id": "public_zero6_v1",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "public_context_prelaunch_checks": [
+    {
+      "basis": "retained public context tokenization, unchanged model/tokenizer/backend hashes; verified again by every worker",
+      "context": "A field note about trees in the public garden:",
+      "context_index": 0,
+      "context_token_ids": [
+        128000,
+        32,
+        2115,
+        5296,
+        922,
+        12690,
+        304,
+        279,
+        586,
+        13863,
+        25
+      ],
+      "six_token_evaluation_count": 17
+    },
+    {
+      "basis": "retained public context tokenization, unchanged model/tokenizer/backend hashes; verified again by every worker",
+      "context": "A brief explanation of how a library organizes books:",
+      "context_index": 1,
+      "context_token_ids": [
+        128000,
+        32,
+        10015,
+        16540,
+        315,
+        1268,
+        264,
+        6875,
+        2942,
+        4861,
+        6603,
+        25
+      ],
+      "six_token_evaluation_count": 18
+    },
+    {
+      "basis": "retained public context tokenization, unchanged model/tokenizer/backend hashes; verified again by every worker",
+      "context": "A research note about measuring afternoon rainfall:",
+      "context_index": 2,
+      "context_token_ids": [
+        128000,
+        32,
+        3495,
+        5296,
+        922,
+        30090,
+        13658,
+        53958,
+        25
+      ],
+      "six_token_evaluation_count": 15
+    }
+  ],
+  "retries": 0,
+  "rng": "NumPy PCG64; reproducibility only, not cryptographic keys",
+  "sample_space": "six latent emissions followed by exact detokenization and UTF-8 tokenization, or explicit abort; all allocated attempts retained",
+  "schema_version": 1,
+  "seeds": [
+    2026092101,
+    2026092102
+  ],
+  "slots": [
+    {
+      "case_id": "prefix-predict-c0",
+      "context_index": 0,
+      "expected_evaluated_tokens": 17,
+      "historical_carrier_paths": [
+        "artifacts/stage3_transport/attempts/1514528d-2e90-4288-ae56-172086110902/carrier.txt",
+        "artifacts/stage3_transport/attempts/f213c595-a301-4e4a-a3f3-fdec26de6c2b/carrier.txt"
+      ],
+      "kind": "prediction",
+      "reservation": [
+        45,
+        64
+      ]
+    },
+    {
+      "case_id": "prefix-predict-c1",
+      "context_index": 1,
+      "expected_evaluated_tokens": 18,
+      "historical_carrier_paths": [
+        "artifacts/stage3_transport/attempts/c2249cd8-c821-435b-8d46-ac5f58b8d480/carrier.txt"
+      ],
+      "kind": "prediction",
+      "reservation": [
+        45,
+        64
+      ]
+    },
+    {
+      "case_id": "prefix-predict-c2",
+      "context_index": 2,
+      "expected_evaluated_tokens": 15,
+      "historical_carrier_paths": [
+        "artifacts/stage3_transport/attempts/b1047479-0b2c-4a26-bedd-b819aafcc9ca/carrier.txt",
+        "artifacts/stage3_transport/attempts/7f758cd4-bea8-4765-947a-7dd433da341a/carrier.txt",
+        "artifacts/stage3_transport/attempts/368fd333-39ce-487e-aa54-736034d8c5e3/carrier.txt"
+      ],
+      "kind": "prediction",
+      "reservation": [
+        45,
+        64
+      ]
+    },
+    {
+      "case_id": "prefix-c0-A-s2026092101",
+      "context_index": 0,
+      "expected_evaluated_tokens": 17,
+      "family": "A",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092101
+    },
+    {
+      "case_id": "prefix-c0-A-s2026092102",
+      "context_index": 0,
+      "expected_evaluated_tokens": 17,
+      "family": "A",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092102
+    },
+    {
+      "case_id": "prefix-c0-B-s2026092101",
+      "context_index": 0,
+      "expected_evaluated_tokens": 17,
+      "family": "B",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092101
+    },
+    {
+      "case_id": "prefix-c0-B-s2026092102",
+      "context_index": 0,
+      "expected_evaluated_tokens": 17,
+      "family": "B",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092102
+    },
+    {
+      "case_id": "prefix-c0-C-s2026092101",
+      "context_index": 0,
+      "expected_evaluated_tokens": 17,
+      "family": "C",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092101
+    },
+    {
+      "case_id": "prefix-c0-C-s2026092102",
+      "context_index": 0,
+      "expected_evaluated_tokens": 17,
+      "family": "C",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092102
+    },
+    {
+      "case_id": "prefix-c1-A-s2026092101",
+      "context_index": 1,
+      "expected_evaluated_tokens": 18,
+      "family": "A",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092101
+    },
+    {
+      "case_id": "prefix-c1-A-s2026092102",
+      "context_index": 1,
+      "expected_evaluated_tokens": 18,
+      "family": "A",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092102
+    },
+    {
+      "case_id": "prefix-c1-B-s2026092101",
+      "context_index": 1,
+      "expected_evaluated_tokens": 18,
+      "family": "B",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092101
+    },
+    {
+      "case_id": "prefix-c1-B-s2026092102",
+      "context_index": 1,
+      "expected_evaluated_tokens": 18,
+      "family": "B",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092102
+    },
+    {
+      "case_id": "prefix-c1-C-s2026092101",
+      "context_index": 1,
+      "expected_evaluated_tokens": 18,
+      "family": "C",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092101
+    },
+    {
+      "case_id": "prefix-c1-C-s2026092102",
+      "context_index": 1,
+      "expected_evaluated_tokens": 18,
+      "family": "C",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092102
+    },
+    {
+      "case_id": "prefix-c2-A-s2026092101",
+      "context_index": 2,
+      "expected_evaluated_tokens": 15,
+      "family": "A",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092101
+    },
+    {
+      "case_id": "prefix-c2-A-s2026092102",
+      "context_index": 2,
+      "expected_evaluated_tokens": 15,
+      "family": "A",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092102
+    },
+    {
+      "case_id": "prefix-c2-B-s2026092101",
+      "context_index": 2,
+      "expected_evaluated_tokens": 15,
+      "family": "B",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092101
+    },
+    {
+      "case_id": "prefix-c2-B-s2026092102",
+      "context_index": 2,
+      "expected_evaluated_tokens": 15,
+      "family": "B",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092102
+    },
+    {
+      "case_id": "prefix-c2-C-s2026092101",
+      "context_index": 2,
+      "expected_evaluated_tokens": 15,
+      "family": "C",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092101
+    },
+    {
+      "case_id": "prefix-c2-C-s2026092102",
+      "context_index": 2,
+      "expected_evaluated_tokens": 15,
+      "family": "C",
+      "kind": "control",
+      "reservation": [
+        45,
+        64
+      ],
+      "sampling_seed": 2026092102
+    }
+  ],
+  "split": "development_only_excluded_from_future_heldout",
+  "starting_commit": "fe3aeaddd7df1d4fb3b19c49ccc84251a519d39f",
+  "starting_working_tree": "clean before implementation",
+  "stop_policy": "stop on prediction failure, invariant/numerical, accounting, lease, timeout or provenance failure; retain ordinary serialization failures/candidate exhaustion without retries"
+}

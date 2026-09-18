@@ -1,0 +1,10 @@
+test_exact_sampling_policies (test_public_prefix.PrefixContracts) ... ok
+test_independent_probability_and_path_values (test_public_prefix.PrefixContracts) ... ok
+test_malformed_and_wrong_public_cache (test_public_prefix.PrefixContracts) ... ok
+test_observer_public_boundary_and_no_length_feature (test_public_prefix.PrefixContracts) ... ok
+test_structural_six_zeros_all_supported_lengths (test_public_prefix.PrefixContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.029s
+
+OK
