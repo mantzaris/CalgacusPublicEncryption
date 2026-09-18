@@ -1,0 +1,12 @@
+test_bounded_length_before_payload_allocation (test_public_utf8_rank16.NewCodecContracts) ... ok
+test_equal_logits_and_exclusion_order (test_public_utf8_rank16.NewCodecContracts) ... ok
+test_independent_nibble_and_wire_examples (test_public_utf8_rank16.NewCodecContracts) ... ok
+test_maximum_and_inverse_without_encoder (test_public_utf8_rank16.NewCodecContracts) ... ok
+test_prefix_admissibility_and_exhaustion (test_public_utf8_rank16.NewCodecContracts) ... ok
+test_truncation_trailing_invalid_choice (test_public_utf8_rank16.NewCodecContracts) ... ok
+test_unregistered_policy_rejected (test_public_utf8_rank16.NewCodecContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.160s
+
+OK

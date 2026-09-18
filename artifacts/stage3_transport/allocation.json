@@ -1,0 +1,153 @@
+{
+  "additional_limits": {
+    "cases": 10,
+    "seconds": 1200,
+    "tokens": 8000
+  },
+  "baseline_usage": {
+    "cases": 33,
+    "seconds": 1002.4454085370057,
+    "tokens": 16401
+  },
+  "controls": "context and emitted token count of new 128-byte carrier for same key; no fallback",
+  "cpu_scope": "only focused new-codec contracts and fixed-allocation arithmetic; no broad suite",
+  "crypto_randomness": "fresh OS/library recipient keys, HPKE ephemeral randomness and 16-byte message IDs",
+  "global_limits": {
+    "cases": 72,
+    "seconds": 7200,
+    "tokens": 25000
+  },
+  "payload_formula": "byte j = (193 + 31*u + 11*j + n) mod 256",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "replay_selection": "128-byte success for each key only; no substitutions",
+  "retries": 0,
+  "schema_version": 1,
+  "slots": [
+    {
+      "case_id": "rank16-fixture-0",
+      "context_index": 2,
+      "envelope_hex": "8530e5f7d84c31fe2bddce040dd216676dd4cc34d0ce684726fb448a5cff674b6ef4215c91b9cc2ab56d8730462e7e826cde74aedcfb65666b42b7bfe0d823c11de62702fc517a44f260b841d2a02c6f93f74c251200cb437d1db3e50a9ae488f85a1ea9922412ec6396adfa68080973181af0858a9087d273552d5c7fdb8c4e84fcbf2dfe6de41ee4dd1d97b77be65a4bcda7b46cb4ba2638db89567021960481a00f6bf322226c12231ec5c85db91e62edb708d3629cad7224b288dd869d7bc5e7a6ad",
+      "envelope_sha256": "d83e24dd53b29b281d3a45df31806ff136e6e64214379f9f2bad7b8015aeac6d",
+      "family": "fixture",
+      "fixture_source_attempt_id": "12de85ea-3e3e-4a4a-8997-27e551978366",
+      "historical_carrier_tokens": 185,
+      "kind": "fixture",
+      "reservation": [
+        140,
+        900
+      ]
+    },
+    {
+      "case_id": "rank16-fixture-1",
+      "context_index": 2,
+      "envelope_hex": "6ee77ea5e9f52dd0d21d64c1e0a0bec04ae2f65732728c4239009b7f6b58db612f5a3dfd1664794292c215a1079c8ee5c64e4a94c40ef84d408b7b697345b690aafc212975c824381c40af4952fe7864e1b479dec9e596177ba6d06e1d6325f965a2b96c84377a75d81d003f13f04d3d64f47852b139e65a307233268319a65b1dd3f71d076dae9f7187ba9b1179dc85f63f6552c7c0ffc5a5743e37fc03af51dfc667df54cae4f11acf7a9ff597ed2a27ea76f465ef7133fecb309f57381215f79fb18d",
+      "envelope_sha256": "ccee0034c303ca179bf4f37bfb1f0311baf870c87961b9b7e47f262d27fab1dd",
+      "family": "fixture",
+      "fixture_source_attempt_id": "21732f7e-11f4-48da-8b5c-2f7b622a7770",
+      "historical_carrier_tokens": 183,
+      "kind": "fixture",
+      "reservation": [
+        140,
+        900
+      ]
+    },
+    {
+      "case_id": "rank16-k0-n32",
+      "context_index": 0,
+      "family": "fresh_encrypted",
+      "key_id": "rank16-0",
+      "kind": "encrypted",
+      "payload_bytes": 32,
+      "payload_hex": "e1ecf7020d18232e39444f5a65707b86919ca7b2bdc8d3dee9f4ff0a15202b36",
+      "reservation": [
+        120,
+        750
+      ]
+    },
+    {
+      "case_id": "rank16-k0-n128",
+      "context_index": 1,
+      "family": "fresh_encrypted",
+      "key_id": "rank16-0",
+      "kind": "encrypted",
+      "payload_bytes": 128,
+      "payload_hex": "414c57626d78838e99a4afbac5d0dbe6f1fc07121d28333e49545f6a75808b96a1acb7c2cdd8e3eef9040f1a25303b46515c67727d88939ea9b4bfcad5e0ebf6010c17222d38434e59646f7a85909ba6b1bcc7d2dde8f3fe09141f2a35404b56616c77828d98a3aeb9c4cfdae5f0fb06111c27323d48535e69747f8a95a0abb6",
+      "reservation": [
+        160,
+        1300
+      ]
+    },
+    {
+      "case_id": "rank16-k1-n32",
+      "context_index": 2,
+      "family": "fresh_encrypted",
+      "key_id": "rank16-1",
+      "kind": "encrypted",
+      "payload_bytes": 32,
+      "payload_hex": "000b16212c37424d58636e79848f9aa5b0bbc6d1dce7f2fd08131e29343f4a55",
+      "reservation": [
+        120,
+        750
+      ]
+    },
+    {
+      "case_id": "rank16-k1-n128",
+      "context_index": 0,
+      "family": "fresh_encrypted",
+      "key_id": "rank16-1",
+      "kind": "encrypted",
+      "payload_bytes": 128,
+      "payload_hex": "606b76818c97a2adb8c3ced9e4effa05101b26313c47525d68737e89949faab5c0cbd6e1ecf7020d18232e39444f5a65707b86919ca7b2bdc8d3dee9f4ff0a15202b36414c57626d78838e99a4afbac5d0dbe6f1fc07121d28333e49545f6a75808b96a1acb7c2cdd8e3eef9040f1a25303b46515c67727d88939ea9b4bfcad5",
+      "reservation": [
+        160,
+        1300
+      ]
+    },
+    {
+      "case_id": "rank16-replay-0",
+      "family": "fresh_replay",
+      "key_id": "rank16-0",
+      "kind": "replay",
+      "reservation": [
+        80,
+        450
+      ]
+    },
+    {
+      "case_id": "rank16-replay-1",
+      "family": "fresh_replay",
+      "key_id": "rank16-1",
+      "kind": "replay",
+      "reservation": [
+        80,
+        450
+      ]
+    },
+    {
+      "case_id": "rank16-control-0",
+      "family": "control",
+      "key_id": "rank16-0",
+      "kind": "control",
+      "reservation": [
+        100,
+        900
+      ],
+      "sampling_seed": 2026092001
+    },
+    {
+      "case_id": "rank16-control-1",
+      "family": "control",
+      "key_id": "rank16-1",
+      "kind": "control",
+      "reservation": [
+        100,
+        900
+      ],
+      "sampling_seed": 2026092002
+    }
+  ],
+  "split": "development_only_excluded_from_future_heldout",
+  "starting_commit": "54a57067e4c44dd0937950fe1e86d721489b7064",
+  "starting_working_tree": "clean before implementation",
+  "stop_policy": "fixture or non-control failure stops qualification; control framing rejection expected; fatal execution/numerical/invariant failures stop all GPU work"
+}

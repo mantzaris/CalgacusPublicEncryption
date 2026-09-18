@@ -1,0 +1,16 @@
+{
+  "keys": [
+    {
+      "TEST_ONLY_private_key_hex": "b0cd98929e49f8e6ecc8cac0e65db89c4b06e25ee03e1030222797844d8ec774",
+      "key_id": "rank16-0",
+      "public_key_hex": "3bbeaffc4e59a43d0de31a6ee3290a45c98e7e399010ca4011bd086646758218"
+    },
+    {
+      "TEST_ONLY_private_key_hex": "b87e05a402cd4b3f4897fa6c9951f5a2ab62f9df9070d5b1581e060a7df8965b",
+      "key_id": "rank16-1",
+      "public_key_hex": "77a42437df0cb0af2fb4d7f6c4e764e0137b630ef2d6c4b0455899b973f2771b"
+    }
+  ],
+  "schema_version": 1,
+  "warning": "PUBLIC INSECURE DEVELOPMENT TEST KEYS; never use for real data"
+}

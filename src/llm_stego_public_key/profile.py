@@ -38,9 +38,17 @@ class Binding:
 SUPPORTED_PROFILE_SHA256 = "bd8a59d736843d78984c5d093dcee72cec50747629ce79a0685fe7652f4989b3"
 
 
+RANK16_PROFILE_SHA256 = "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6"
+
+
+def validate_rank16_profile(profile: dict):
+    if hashlib.sha256(canonical_json(profile)).hexdigest() != RANK16_PROFILE_SHA256:
+        raise ValueError("Unsupported public rank16 profile")
+
+
 def validate_supported_profile(profile: dict):
     """Reject unimplemented profile settings before loading the frozen backend."""
-    if hashlib.sha256(canonical_json(profile)).hexdigest() != SUPPORTED_PROFILE_SHA256:
+    if hashlib.sha256(canonical_json(profile)).hexdigest() not in {SUPPORTED_PROFILE_SHA256, RANK16_PROFILE_SHA256}:
         raise ValueError(
             "Unsupported public model/profile; explicit adaptation and revalidation required"
         )

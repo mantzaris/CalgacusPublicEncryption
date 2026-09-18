@@ -94,7 +94,7 @@ def observed_gpu(pid, gpu_uuid):
     return None
 
 
-def execute(ledger, job, runtime, code, *, artifact_root=None, reservation=None, replay_source=None, expected_rejection=False):
+def execute(ledger, job, runtime, code, *, artifact_root=None, reservation=None, replay_source=None, expected_rejection=False, worker_script=None):
     if revision() != code:
         raise RuntimeError("Source revision changed while the controller was running")
     artifact_root = ART if artifact_root is None else artifact_root
@@ -132,7 +132,7 @@ def execute(ledger, job, runtime, code, *, artifact_root=None, reservation=None,
         },
     )
     write_new(directory / "input.json", job)
-    command = [sys.executable, str(ROOT / "scripts/gpu_worker.py"), str(directory / "input.json")]
+    command = [sys.executable, str(worker_script or ROOT / "scripts/gpu_worker.py"), str(directory / "input.json")]
     start = time.monotonic()
     deadline = start + seconds - 8
     job_sha256 = hashlib.sha256((directory / "input.json").read_bytes()).hexdigest()
