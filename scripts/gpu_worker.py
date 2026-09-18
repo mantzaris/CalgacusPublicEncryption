@@ -14,6 +14,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
+from llm_stego_public_key.evaluation.worker_lease import verify_worker_lease
+
+# Arm the inherited controller deadline before importing NumPy, crypto or a backend.
+_LEASED_JOB = (
+    verify_worker_lease(Path(sys.argv[1]), ROOT / "artifacts/stage1/budget.jsonl")
+    if __name__ == "__main__"
+    else None
+)
+
 import numpy as np
 
 from llm_stego_public_key.codecs.calgacus import CalgacusCodec, first_difference
@@ -21,8 +30,7 @@ from llm_stego_public_key.codecs.llama_backend import load_model
 from llm_stego_public_key.cryptography.hpke import ReplayCache, deserialize, public_key, seal
 from llm_stego_public_key.errors import Stage1Error, TransportError
 from llm_stego_public_key.evaluation.budget import TokenMeter
-from llm_stego_public_key.evaluation.process_guard import arm_worker_guard
-from llm_stego_public_key.evaluation.observer import public_format_test
+from llm_stego_public_key.evaluation.observer import observe_text
 from llm_stego_public_key.profile import Binding, canonical_json
 from llm_stego_public_key.transport.receiver import receive
 
@@ -42,10 +50,9 @@ def dump(path, value):
 def main():
     job_path = Path(sys.argv[1])
     directory = job_path.parent
-    if os.environ.get("STAGE1_GOVERNED_ATTEMPT") != directory.name:
-        raise RuntimeError("Use run_smoke.py: an active budget reservation is required")
-    job = json.loads(job_path.read_text())
-    arm_worker_guard(int(os.environ["STAGE1_CONTROLLER_PID"]), job["wall_reservation_seconds"] - 8)
+    if _LEASED_JOB is None:
+        raise RuntimeError("Use the governed controller entry point")
+    job = _LEASED_JOB
     profile = json.loads((ROOT / "configs/public_profile.json").read_text())
     runtime = json.loads((ROOT / "configs/local_runtime.json").read_text())
     meter = TokenMeter(job["token_reservation"])
@@ -229,18 +236,11 @@ def main():
 def public_observer(codec, wire, cover, meter, record):
     meter.phase = "public_inversion"
     t = time.monotonic()
-    try:
-        extracted = codec.extract(wire, cover)
-        record["observer"] = public_format_test(extracted)
-        record["observer"]["extracted_sha256"] = sha(extracted.encode("utf-8"))
-        record["observer"]["extracted_text"] = extracted
-    except Stage1Error as exc:
-        record["observer"] = {
-            "format_valid": False,
-            "authenticated": False,
-            "failure_category": exc.category,
-            "error": str(exc),
-        }
+    record["observer"] = observe_text(codec, wire, cover)
+    if "extracted_text" in record["observer"]:
+        record["observer"]["extracted_sha256"] = sha(
+            record["observer"]["extracted_text"].encode("utf-8")
+        )
     record["observer_trace"] = copy.deepcopy(codec.trace)
     record["timings"]["public_inversion_seconds"] = time.monotonic() - t
 

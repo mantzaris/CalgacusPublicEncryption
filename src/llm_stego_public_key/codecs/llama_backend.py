@@ -12,6 +12,7 @@ from pathlib import Path
 import numpy as np
 
 from ..errors import CapacityError
+from ..profile import validate_supported_profile
 from ..evaluation.budget import TokenMeter
 
 FLAGS = {
@@ -33,6 +34,7 @@ def sha256_file(path):
 
 
 def load_model(runtime: dict, profile: dict, meter: TokenMeter):
+    validate_supported_profile(profile)
     # Must be set before importing llama_cpp or loading any CUDA library.
     os.environ.update(FLAGS)
     os.environ["CUDA_VISIBLE_DEVICES"] = runtime["gpu_uuid"]

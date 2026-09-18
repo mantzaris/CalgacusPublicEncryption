@@ -7,7 +7,7 @@ from llm_stego_public_key.evaluation.budget import BudgetLedger, TokenMeter
 def test_restart_charges_entire_abandoned_job(tmp_path):
     path = tmp_path / "budget.jsonl"
     limits = {"seconds": 10, "tokens": 20, "cases": 2}
-    ledger = BudgetLedger(path, limits)
+    ledger = BudgetLedger(path, limits, create=True)
     ledger.reserve(5, 10)
     ledger.close()  # Simulate controller crash: no settlement.
     ledger = BudgetLedger(path, limits)
@@ -26,7 +26,9 @@ def test_restart_charges_entire_abandoned_job(tmp_path):
 
 @pytest.mark.parametrize("reservation", [(11, 0, 0), (0, 21, 0), (0, 0, 3)])
 def test_each_ceiling_is_enforced(tmp_path, reservation):
-    ledger = BudgetLedger(tmp_path / "b.jsonl", {"seconds": 10, "tokens": 20, "cases": 2})
+    ledger = BudgetLedger(
+        tmp_path / "b.jsonl", {"seconds": 10, "tokens": 20, "cases": 2}, create=True
+    )
     with pytest.raises(BudgetError):
         ledger.reserve(*reservation)
     ledger.close()
@@ -34,7 +36,7 @@ def test_each_ceiling_is_enforced(tmp_path, reservation):
 
 def test_no_concurrent_controller_and_corruption_fail_closed(tmp_path):
     path = tmp_path / "b.jsonl"
-    a = BudgetLedger(path)
+    a = BudgetLedger(path, create=True)
     with pytest.raises(BudgetError):
         BudgetLedger(path)
     path.write_text('{"partial":')

@@ -33,3 +33,14 @@ class Binding:
     @property
     def aad(self) -> bytes:
         return b"ICISSP2027/HPKE/envelope/v1\x00" + self.digest
+
+
+SUPPORTED_PROFILE_SHA256 = "bd8a59d736843d78984c5d093dcee72cec50747629ce79a0685fe7652f4989b3"
+
+
+def validate_supported_profile(profile: dict):
+    """Reject unimplemented profile settings before loading the frozen backend."""
+    if hashlib.sha256(canonical_json(profile)).hexdigest() != SUPPORTED_PROFILE_SHA256:
+        raise ValueError(
+            "Unsupported public model/profile; explicit adaptation and revalidation required"
+        )

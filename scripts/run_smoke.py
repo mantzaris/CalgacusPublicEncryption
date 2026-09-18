@@ -18,7 +18,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from llm_stego_public_key.cryptography.hpke import generate_key_pair
 from llm_stego_public_key.errors import BudgetError
 from llm_stego_public_key.evaluation.budget import BudgetLedger, append_json
 from llm_stego_public_key.profile import canonical_json
@@ -35,11 +34,35 @@ def write_new(path, obj):
 def revision():
     # Untracked evidence is allowed; tracked code/config changes are not.
     dirty = subprocess.check_output(
-        ["git", "diff", "HEAD", "--", "src", "scripts", "configs", "tests", "pyproject.toml"],
+        [
+            "git",
+            "diff",
+            "HEAD",
+            "--",
+            "src",
+            "scripts",
+            "configs",
+            "tests",
+            "pyproject.toml",
+            "requirements-cpu.lock",
+            "vendor",
+        ],
         cwd=ROOT,
     )
     unknown = subprocess.check_output(
-        ["git", "ls-files", "--others", "--exclude-standard", "src", "scripts", "configs", "tests"],
+        [
+            "git",
+            "ls-files",
+            "--others",
+            "--exclude-standard",
+            "src",
+            "scripts",
+            "configs",
+            "tests",
+            "pyproject.toml",
+            "requirements-cpu.lock",
+            "vendor",
+        ],
         cwd=ROOT,
     )
     if dirty or unknown:
@@ -50,25 +73,7 @@ def revision():
 def initialize_inputs():
     path = ART / "TEST_ONLY_keys.json"
     if not path.exists():
-        keys = []
-        for i in range(6):
-            sk, pk = generate_key_pair()
-            keys.append(
-                {
-                    "key_id": f"development-{i}",
-                    "TEST_ONLY_private_key_hex": sk.hex(),
-                    "public_key_hex": pk.hex(),
-                }
-            )
-        write_new(
-            path,
-            {
-                "schema_version": 1,
-                "warning": "INSECURE PUBLIC TEST MATERIAL. Never use these keys outside this development study.",
-                "generation": "six independent OS-random X25519 library key pairs",
-                "keys": keys,
-            },
-        )
+        raise BudgetError("Missing historical test keys; do not silently regenerate study inputs")
     return json.loads(path.read_text())["keys"]
 
 
@@ -90,6 +95,8 @@ def observed_gpu(pid, gpu_uuid):
 
 
 def execute(ledger, job, runtime, code):
+    if revision() != code:
+        raise RuntimeError("Source revision changed while the controller was running")
     remaining = {k: ledger.limits[k] - v for k, v in ledger.usage().items()}
     seconds = min(240.0, remaining["seconds"])
     tokens = min(1500, remaining["tokens"])
@@ -106,9 +113,31 @@ def execute(ledger, job, runtime, code):
         tested_code_commit=code,
         token_reservation=tokens,
         wall_reservation_seconds=seconds,
+        source_provenance={
+            "commit": code,
+            "checked_immediately_before_reservation": True,
+            "tracked_and_untracked_code_dirty": False,
+            "checked_paths": [
+                "src",
+                "scripts",
+                "configs",
+                "tests",
+                "pyproject.toml",
+                "requirements-cpu.lock",
+                "vendor",
+            ],
+        },
     )
     write_new(directory / "input.json", job)
     command = [sys.executable, str(ROOT / "scripts/gpu_worker.py"), str(directory / "input.json")]
+    start = time.monotonic()
+    deadline = start + seconds - 8
+    job_sha256 = hashlib.sha256((directory / "input.json").read_bytes()).hexdigest()
+    lease_env = {
+        "STAGE1_LEDGER_FD": str(ledger.lock.fileno()),
+        "STAGE1_DEADLINE_MONOTONIC": str(deadline),
+        "STAGE1_JOB_SHA256": job_sha256,
+    }
     write_new(
         directory / "command.json",
         {
@@ -120,6 +149,7 @@ def execute(ledger, job, runtime, code):
                 "STAGE1_CONTROLLER_PID": str(os.getpid()),
                 "PYTHONDONTWRITEBYTECODE": "1",
                 "CUDA_CACHE_DISABLE": "1",
+                **lease_env,
             },
             "reservation_seconds": seconds,
         },
@@ -131,45 +161,58 @@ def execute(ledger, job, runtime, code):
         STAGE1_CONTROLLER_PID=str(os.getpid()),
         PYTHONDONTWRITEBYTECODE="1",
         CUDA_CACHE_DISABLE="1",
+        **lease_env,
     )
-    start = time.monotonic()
     timed_out = False
     samples = []
     with (directory / "worker.log").open("x") as log:
         proc = subprocess.Popen(
-            command, cwd=ROOT, env=env, stdout=log, stderr=log, start_new_session=True
+            command,
+            cwd=ROOT,
+            env=env,
+            stdout=log,
+            stderr=log,
+            start_new_session=True,
+            pass_fds=(ledger.lock.fileno(),),
         )
-        while proc.poll() is None:
-            elapsed = time.monotonic() - start
-            if elapsed >= seconds - 8:
-                timed_out = True
-                os.killpg(proc.pid, signal.SIGKILL)
-                break
-            try:
-                used = observed_gpu(proc.pid, runtime["gpu_uuid"])
-                if used is not None:
-                    samples.append(
-                        {
-                            "elapsed_seconds": elapsed,
-                            "used_vram_mib": used,
-                            "pid": proc.pid,
-                            "gpu_uuid": runtime["gpu_uuid"],
-                        }
-                    )
-            except (subprocess.SubprocessError, ValueError):
-                pass  # Absence of evidence remains explicit; not a GPU success.
-            time.sleep(0.5)
-        proc.wait(timeout=5)
+        try:
+            while proc.poll() is None:
+                elapsed = time.monotonic() - start
+                if time.monotonic() >= deadline:
+                    timed_out = True
+                    break
+                try:
+                    used = observed_gpu(proc.pid, runtime["gpu_uuid"])
+                    if used is not None:
+                        samples.append(
+                            {
+                                "elapsed_seconds": elapsed,
+                                "used_vram_mib": used,
+                                "pid": proc.pid,
+                                "gpu_uuid": runtime["gpu_uuid"],
+                            }
+                        )
+                except (subprocess.SubprocessError, ValueError):
+                    pass
+                time.sleep(0.5)
+        finally:
+            # Includes interrupted controllers and unexpected sampling exceptions.
+            if proc.poll() is None:
+                try:
+                    os.killpg(proc.pid, signal.SIGKILL)
+                except ProcessLookupError:
+                    pass
+            proc.wait(timeout=5)
     elapsed = time.monotonic() - start
     result_path = directory / "result.json"
-    if result_path.exists() and not timed_out:
+    if result_path.exists() and not timed_out and proc.returncode == 0:
         record = json.loads(result_path.read_text())
         if elapsed <= seconds:
             ledger.settle(aid, elapsed, record["charged_tokens"])
         else:
-            record["accounting_note"] = (
-                "Wall time exceeded job reservation; full reservation retained"
-            )
+            ledger.settle(aid, elapsed, tokens, overrun=True)
+            record["charged_tokens"] = tokens
+            record["accounting_note"] = "Wall overrun charged in full; future work blocked"
             record["success"] = False
             record["failure_category"] = "timeout_resource_failure"
     else:
@@ -186,6 +229,10 @@ def execute(ledger, job, runtime, code):
             "charged_tokens": tokens,
             "error": "Worker timeout" if timed_out else "Worker exited without result",
         }
+    if elapsed > seconds and not any(
+        e["attempt_id"] == aid and e["event"] == "overrun" for e in ledger.events()
+    ):
+        ledger.settle(aid, elapsed, tokens, overrun=True)
     log_text = (directory / "worker.log").read_text(errors="replace")
     gpu_evidence = bool(samples) and "offloaded 33/33 layers to GPU" in log_text
     record.update(
@@ -236,6 +283,23 @@ def cases():
     return [json.loads(x) for x in p.read_text().splitlines()] if p.exists() else []
 
 
+def validate_resume(ledger, rows):
+    """Missing outcomes and fatal attempts remain stop conditions across restarts."""
+    events = ledger.events()
+    reservations = {e["attempt_id"] for e in events if e["event"] == "reserve"}
+    settled = {e["attempt_id"] for e in events if e["event"] == "settle"}
+    ids = [row["attempt_id"] for row in rows]
+    if reservations != settled or len(ids) != len(set(ids)) or set(ids) != reservations:
+        raise BudgetError(
+            "Incomplete/overrun history; retain full charges and review before resuming"
+        )
+    fatal = {"implementation_failure", "rank_numerical_divergence", "timeout_resource_failure"}
+    if any(row.get("failure_category") in fatal for row in rows):
+        raise BudgetError(
+            "Previous runtime/numerical failure requires review; restart is not approval"
+        )
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -250,33 +314,10 @@ def main():
     code = revision()
     profile = json.loads((ROOT / "configs/public_profile.json").read_text())
     runtime = json.loads((ROOT / "configs/local_runtime.json").read_text())
-    ledger = BudgetLedger(ART / "budget.jsonl")
+    anchor = json.loads((ROOT / "configs/stage1_budget_anchor.json").read_text())
+    ledger = BudgetLedger(ART / "budget.jsonl", anchor=anchor)
+    validate_resume(ledger, cases())
     keys = initialize_inputs()
-    if not ledger.events():
-        aid = ledger.reserve(
-            30,
-            0,
-            case_id="prior-connectivity-check",
-            kind="preflight",
-            note="Conservative carry-in for the preceding session's small PyTorch matrix and llama.cpp backend checks; no model tokens",
-        )
-        ledger.settle(aid, 30, 0)
-        append_json(
-            ART / "cases.jsonl",
-            {
-                "schema_version": 1,
-                "attempt_id": aid,
-                "case_id": "prior-connectivity-check",
-                "kind": "preflight",
-                "success": True,
-                "split": "development_only",
-                "charged_tokens": 0,
-                "job_elapsed_seconds": 30,
-                "accounting": "conservative carry-in, not a model transport case",
-                "tested_code_commit": None,
-                "gpu_model": "NVIDIA RTX 5000 Ada Generation",
-            },
-        )
     # Fixed balanced design: six independent receiver keys, both sizes, three contexts.
     jobs = [
         {
