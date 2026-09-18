@@ -1,0 +1,29 @@
+{
+  "case_id": "prefix-c1-B-s2026092102",
+  "context_index": 1,
+  "expected_evaluated_tokens": 18,
+  "family": "B",
+  "kind": "control",
+  "prediction_path": "artifacts/stage4_prefix/attempts/081035c9-c80c-4310-9056-832d53165f0b/public_prediction.json",
+  "prediction_sha256": "c88025653fdffe9c676c5f4499f40ce5a364145fcb5c4caf40f0df764d63b759",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "sampling_seed": 2026092102,
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "token_reservation": 64,
+  "wall_reservation_seconds": 45
+}

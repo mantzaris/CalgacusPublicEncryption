@@ -1,0 +1,467 @@
+{
+  "attempt_id": "081035c9-c80c-4310-9056-832d53165f0b",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "case_id": "prefix-predict-c1",
+  "charged_tokens": 18,
+  "context_index": 1,
+  "cover_context": "A brief explanation of how a library organizes books:",
+  "cumulative_budget": {
+    "cases": 45,
+    "seconds": 1433.670078370002,
+    "tokens": 23534
+  },
+  "evidence_dir": "artifacts/stage4_prefix/attempts/081035c9-c80c-4310-9056-832d53165f0b",
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "historical_reanalysis": [
+    {
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          50400,
+          1216,
+          27826,
+          55982,
+          320,
+          4195
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/c2249cd8-c821-435b-8d46-ac5f58b8d480/carrier.txt",
+      "transport_sha256": "06ea497b6f00a0c41984ebfabb0410db42c2e2de34a7e6d95e5655d6e4b760d3"
+    }
+  ],
+  "job_elapsed_seconds": 16.02488963199903,
+  "kind": "prediction",
+  "lease_verified": true,
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 375893,
+  "prediction": {
+    "A_log_probability_latent_sequence": -2.3966462726568185,
+    "A_probability_latent_sequence": 0.09102270731518823,
+    "B_log_probability_prefix_match": -2.1520826576270693,
+    "B_probability_prefix_match": 0.11624181360144295,
+    "C_log_probability_prefix_match": -16.635532333438686,
+    "C_probability_prefix_match": 5.960464477539063e-08,
+    "cache_key": "c326c56d96c44d8bc46603338138d6517682bdd80a3fd1d67d72133df3d1bae9",
+    "cover_context": "A brief explanation of how a library organizes books:",
+    "observer_id": "public_zero6_v1",
+    "prefix_utf8": " Dewey Decimal Classification (DD",
+    "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+    "provenance": {
+      "attempt_id": "081035c9-c80c-4310-9056-832d53165f0b",
+      "computation": "six independent public zero-symbol selections; computed before opening historical carrier files",
+      "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+      "pid": 375893,
+      "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0"
+    },
+    "provenance_rule": "public candidate selection, symbol zero six times; no saved carriers or encoder data used",
+    "schema_version": 1,
+    "scores": [
+      {
+        "A_log_probability": -1.3517717377918292,
+        "A_probability_latent_token": 0.25878136152344294,
+        "B_log_probability": -1.1124401562090942,
+        "B_probability_admissible_zero": 0.32875576608921764,
+        "admissible_ids": [
+          50400,
+          279,
+          578,
+          18312,
+          6017,
+          362,
+          6603,
+          11896,
+          55982,
+          264,
+          29438,
+          24790,
+          423,
+          220,
+          2363,
+          55612
+        ],
+        "admissible_logits": [
+          16.1782283782959,
+          15.624174118041992,
+          15.597726821899414,
+          14.310674667358398,
+          14.141216278076172,
+          14.071409225463867,
+          13.868204116821289,
+          13.793627738952637,
+          13.250432968139648,
+          13.225177764892578,
+          13.121556282043457,
+          12.937738418579102,
+          12.747739791870117,
+          12.677515983581543,
+          12.63983154296875,
+          12.533180236816406
+        ],
+        "position": 0,
+        "token_id": 50400
+      },
+      {
+        "A_log_probability": -4.241689915895943e-05,
+        "A_probability_latent_token": 0.999957584000425,
+        "B_log_probability": -3.9559556536393046e-05,
+        "B_probability_admissible_zero": 0.9999604412259325,
+        "admissible_ids": [
+          1216,
+          88,
+          68,
+          111142,
+          19316,
+          744,
+          19494,
+          797,
+          9522,
+          198,
+          1468,
+          85709,
+          12,
+          287,
+          58331,
+          49059
+        ],
+        "admissible_logits": [
+          28.833585739135742,
+          18.35500144958496,
+          16.961750030517578,
+          14.597782135009766,
+          14.305418014526367,
+          14.275962829589844,
+          14.077153205871582,
+          14.002285957336426,
+          13.990113258361816,
+          13.924079895019531,
+          13.841514587402344,
+          13.652515411376953,
+          13.604398727416992,
+          13.568413734436035,
+          13.307916641235352,
+          13.139717102050781
+        ],
+        "position": 1,
+        "token_id": 1216
+      },
+      {
+        "A_log_probability": -0.00260985640392485,
+        "A_probability_latent_token": 0.9973935463104574,
+        "B_log_probability": -0.0024392526773292624,
+        "B_probability_admissible_zero": 0.9975637198820503,
+        "admissible_ids": [
+          27826,
+          12395,
+          3799,
+          323,
+          55982,
+          596,
+          11,
+          6296,
+          198,
+          753,
+          11520,
+          744,
+          1887,
+          24790,
+          4194,
+          12
+        ],
+        "admissible_logits": [
+          24.49887466430664,
+          17.113815307617188,
+          17.026586532592773,
+          16.68661880493164,
+          16.38326072692871,
+          15.722833633422852,
+          15.078340530395508,
+          15.006377220153809,
+          14.77658462524414,
+          14.53312873840332,
+          14.19865894317627,
+          14.02595043182373,
+          13.935323715209961,
+          13.572284698486328,
+          13.341955184936523,
+          13.151470184326172
+        ],
+        "position": 2,
+        "token_id": 27826
+      },
+      {
+        "A_log_probability": -0.5663444397645877,
+        "A_probability_latent_token": 0.5675965342061924,
+        "B_log_probability": -0.5656502084051759,
+        "B_probability_admissible_zero": 0.5679907143300019,
+        "admissible_ids": [
+          55982,
+          744,
+          198,
+          323,
+          1887,
+          627,
+          3308,
+          4194,
+          24790,
+          4999,
+          21021,
+          13,
+          320,
+          7290,
+          6296,
+          271
+        ],
+        "admissible_logits": [
+          23.007200241088867,
+          22.71677017211914,
+          17.720260620117188,
+          16.909809112548828,
+          16.490203857421875,
+          15.891359329223633,
+          15.690662384033203,
+          15.513235092163086,
+          15.485868453979492,
+          15.055225372314453,
+          14.424993515014648,
+          14.384647369384766,
+          14.307750701904297,
+          14.21192455291748,
+          14.135942459106445,
+          13.92772102355957
+        ],
+        "position": 3,
+        "token_id": 55982
+      },
+      {
+        "A_log_probability": -0.47326136389804146,
+        "A_probability_latent_token": 0.6229672287547602,
+        "B_log_probability": -0.46951828459101635,
+        "B_probability_admissible_zero": 0.6253034140334331,
+        "admissible_ids": [
+          320,
+          198,
+          744,
+          271,
+          627,
+          1887,
+          323,
+          4999,
+          11,
+          13,
+          382,
+          2268,
+          4194,
+          477,
+          374,
+          0
+        ],
+        "admissible_logits": [
+          21.644092559814453,
+          20.502735137939453,
+          19.78847885131836,
+          18.669527053833008,
+          17.713111877441406,
+          17.292640686035156,
+          17.28438949584961,
+          16.662029266357422,
+          16.542984008789062,
+          16.13068962097168,
+          15.864978790283203,
+          15.356451988220215,
+          15.231822967529297,
+          15.081914901733398,
+          14.872782707214355,
+          14.720260620117188
+        ],
+        "position": 4,
+        "token_id": 320
+      },
+      {
+        "A_log_probability": -0.002616457899276325,
+        "A_probability_latent_token": 0.9973869620433309,
+        "B_log_probability": -0.0019951961879173612,
+        "B_probability_admissible_zero": 0.9980067928929081,
+        "admissible_ids": [
+          4195,
+          35,
+          269,
+          92461,
+          634,
+          18,
+          19171,
+          423,
+          1507,
+          11520,
+          6881,
+          70104,
+          5581,
+          8846,
+          5744,
+          17344
+        ],
+        "admissible_logits": [
+          23.009458541870117,
+          15.84000015258789,
+          14.748882293701172,
+          14.486337661743164,
+          14.478588104248047,
+          14.060205459594727,
+          14.05074691772461,
+          13.466493606567383,
+          12.923653602600098,
+          12.908157348632812,
+          12.729293823242188,
+          12.67956829071045,
+          12.39320182800293,
+          12.352221488952637,
+          12.346248626708984,
+          12.267145156860352
+        ],
+        "position": 5,
+        "token_id": 4195
+      }
+    ],
+    "token_ids": [
+      50400,
+      1216,
+      27826,
+      55982,
+      320,
+      4195
+    ]
+  },
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A brief explanation of how a library organizes books:": [
+      128000,
+      32,
+      10015,
+      16540,
+      315,
+      1268,
+      264,
+      6875,
+      2942,
+      4861,
+      6603,
+      25
+    ]
+  },
+  "retained_generated_prefix_hex": "20446577657920446563696d616c20436c617373696669636174696f6e20284444",
+  "schema_version": 1,
+  "split": "development_only_excluded_from_future_heldout",
+  "success": true,
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "timings": {
+    "load_and_verify_seconds": 14.561826356999518,
+    "operation_and_host_observation_seconds": 0.539515931999631
+  },
+  "tokens_by_phase": {
+    "public_prediction": 18
+  },
+  "trace": {
+    "advanced_ids": [
+      50400,
+      1216,
+      27826,
+      55982,
+      320,
+      4195
+    ],
+    "candidate_steps": [
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "152779ab54a92c88131bdff9bdb85f22070360111f95aaf16dd6d5d3459009a0",
+        "position": 0,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "c6ff212792e8b577676b17141580f03310e741b0a9ffe13948e5cb287f47e051",
+        "position": 1,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "aea23f0f2d6b1c68902e5a3b48b826be6ddb2646f0f74c22a77aa26b412cb9b1",
+        "position": 2,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "a0375068538293c250a63247aff349611643e257fd2ebcb6f376e8fc3cb1bcbe",
+        "position": 3,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "e47f26528765dc921dbcde246487d5bcafe6542dc2368d6561e8daed535382e7",
+        "position": 4,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "6660ccf72f898fee1452a0f9749b616690edd2266c0907b61449146cee80d47d",
+        "position": 5,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      }
+    ],
+    "direction": "public_prediction",
+    "symbols": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "worker_seconds": 15.182906139998522
+}

@@ -1,0 +1,108 @@
+{
+  "attempt_id": "4679dc79-7bc3-4a22-9a24-c7f4b1ccfaa1",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "case_id": "prefix-c1-A-s2026092102",
+  "charged_tokens": 18,
+  "context_index": 1,
+  "cover_context": "A brief explanation of how a library organizes books:",
+  "cumulative_budget": {
+    "cases": 54,
+    "seconds": 1574.0619182930009,
+    "tokens": 23687
+  },
+  "evidence_dir": "artifacts/stage4_prefix/attempts/4679dc79-7bc3-4a22-9a24-c7f4b1ccfaa1",
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": "A",
+  "generated_tokens": 6,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "job_elapsed_seconds": 15.50913513299929,
+  "kind": "control",
+  "lease_verified": true,
+  "observer": {
+    "observed_prefix_ids": [
+      578,
+      50400,
+      1216,
+      27826,
+      55982,
+      1887
+    ],
+    "prefix_match": false,
+    "status": "valid_nonmatch"
+  },
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 380107,
+  "prediction_cache_key": "c326c56d96c44d8bc46603338138d6517682bdd80a3fd1d67d72133df3d1bae9",
+  "prediction_path": "artifacts/stage4_prefix/attempts/081035c9-c80c-4310-9056-832d53165f0b/public_prediction.json",
+  "prediction_sha256": "c88025653fdffe9c676c5f4499f40ce5a364145fcb5c4caf40f0df764d63b759",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A brief explanation of how a library organizes books:": [
+      128000,
+      32,
+      10015,
+      16540,
+      315,
+      1268,
+      264,
+      6875,
+      2942,
+      4861,
+      6603,
+      25
+    ]
+  },
+  "retained_generated_prefix_hex": "2054686520446577657920446563696d616c20436c617373696669636174696f6e2073797374656d",
+  "retokenized_ids": [
+    578,
+    50400,
+    1216,
+    27826,
+    55982,
+    1887
+  ],
+  "sampling_seed": 2026092102,
+  "schema_version": 1,
+  "serialization_outcome": "canonical",
+  "snippet_bytes_hex": "2054686520446577657920446563696d616c20436c617373696669636174696f6e2073797374656d",
+  "snippet_utf8": " The Dewey Decimal Classification system",
+  "split": "development_only_excluded_from_future_heldout",
+  "success": true,
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "text_retokenizes": true,
+  "timings": {
+    "load_and_verify_seconds": 14.232881869998891,
+    "operation_and_host_observation_seconds": 0.4089790960006212
+  },
+  "tokens_by_phase": {
+    "six_token_control": 18
+  },
+  "trace": {
+    "advanced_ids": [
+      578,
+      50400,
+      1216,
+      27826,
+      55982,
+      1887
+    ],
+    "candidate_steps": [],
+    "direction": "control_A",
+    "symbols": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "worker_seconds": 14.70344403299896
+}

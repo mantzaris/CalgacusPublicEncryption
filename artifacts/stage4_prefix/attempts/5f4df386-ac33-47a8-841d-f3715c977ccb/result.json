@@ -1,0 +1,162 @@
+{
+  "attempt_id": "5f4df386-ac33-47a8-841d-f3715c977ccb",
+  "authenticated": false,
+  "case_id": "prefix-c2-B-s2026092101",
+  "charged_tokens": 15,
+  "context_index": 2,
+  "cover_context": "A research note about measuring afternoon rainfall:",
+  "failure_category": null,
+  "family": "B",
+  "generated_tokens": 6,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "control",
+  "observer": {
+    "observed_prefix_ids": [
+      459,
+      3851,
+      315,
+      279,
+      19463,
+      58917
+    ],
+    "prefix_match": false,
+    "status": "valid_nonmatch"
+  },
+  "pid": 383361,
+  "prediction_cache_key": "0793e69aaf34b132b84c006fe1f9c015c6c998e3907b36fda55cd11b20fc05c6",
+  "prediction_path": "artifacts/stage4_prefix/attempts/e27e7e56-c970-41c0-a98c-b3cea7b9fb2a/public_prediction.json",
+  "prediction_sha256": "159f411ab9100c6ad7fcefed4d8a73b168dc9427ca11245ca9097fa5352fdf34",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "public_context_token_ids": {
+    "A research note about measuring afternoon rainfall:": [
+      128000,
+      32,
+      3495,
+      5296,
+      922,
+      30090,
+      13658,
+      53958,
+      25
+    ]
+  },
+  "retained_generated_prefix_hex": "20616e206170706c69636174696f6e206f66207468652070726f626162696c697479207468656f72656d",
+  "retokenized_ids": [
+    459,
+    3851,
+    315,
+    279,
+    19463,
+    58917
+  ],
+  "sampling_seed": 2026092101,
+  "schema_version": 1,
+  "serialization_outcome": "canonical",
+  "snippet_bytes_hex": "20616e206170706c69636174696f6e206f66207468652070726f626162696c697479207468656f72656d",
+  "snippet_utf8": " an application of the probability theorem",
+  "split": "development_only_excluded_from_future_heldout",
+  "success": true,
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "text_retokenizes": true,
+  "timings": {
+    "load_and_verify_seconds": 14.771070775001135,
+    "operation_and_host_observation_seconds": 0.39856030700138945
+  },
+  "tokens_by_phase": {
+    "six_token_control": 15
+  },
+  "trace": {
+    "advanced_ids": [
+      459,
+      3851,
+      315,
+      279,
+      19463,
+      58917
+    ],
+    "candidate_steps": [
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "c0843f6a503ed589f3bd9f801d1726ea3b0b9c87bec82095bc3ddfec193a31ad",
+        "position": 0,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "40cab8e9ce08e129b051328cb97dd0e6608f60ad1b3502a182afef7202958957",
+        "position": 1,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "9dd4eb4c2761a9f872f73fe63785c6f209194834fd811ed82d1b30e1ead8c629",
+        "position": 2,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "35f1f5ff17c6af608beff82e98768f4c958ab85949c4c8ce07e2809a4a3c9123",
+        "position": 3,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "9d85099d31a71a0dfab8b6c13aacad057cae240ff94274c0e292c27b1bb98d4b",
+        "position": 4,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "404b04f4be7c3114ccc096d6f4f56c866fcbe2406e0bcb196b0b6155bb864516",
+        "position": 5,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      }
+    ],
+    "direction": "control_B",
+    "symbols": [
+      3,
+      4,
+      0,
+      0,
+      4,
+      11
+    ]
+  },
+  "worker_seconds": 15.232411162000062
+}

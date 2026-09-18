@@ -1,0 +1,36 @@
+{
+  "attempts_reconciled": 21,
+  "checks": [
+    "immutable IDs and exact fixed slot order; no missing attempts/retries",
+    "every full reservation fits both ceilings",
+    "ledger charges and summary/result/phase counts agree",
+    "clean tested-source provenance and public prediction cache hashes",
+    "21 distinct fresh worker PIDs, one-shot lease claims, matching GPU samples and full offload logs",
+    "all complete jobs below 37-second deadline, including import/load/shutdown",
+    "historical ledger complete byte prefix, old artifacts/codecs/profiles unchanged",
+    "zero-symbol prediction and candidate-order digests",
+    "B probabilities independently recomputed from saved logits",
+    "A/B log-products and ideal C probability reconciled",
+    "exact snippet bytes, retained tokenization records and prefix decisions consistent"
+  ],
+  "final_ledger": {
+    "bytes": 32183,
+    "sha256": "9cf35c86ee1aa96868f244bb4703835da4e7b866d192e0a135e265c08a45f304"
+  },
+  "historical_ledger_prefix": {
+    "bytes": 21601,
+    "sha256": "ea3428a40656517c3728fa710e38085f9353ebb92d1015189598ad0549cf9594",
+    "unchanged": true
+  },
+  "inference": false,
+  "limitations": [
+    "Artifact reconciliation does not rerun native inference or tokenizer",
+    "A full-vocabulary normalization was computed by the worker; complete logits not retained",
+    "Existing full CPU results do not test this new observer/controller code"
+  ],
+  "new_ledger_events": 42,
+  "schema_version": 1,
+  "scope": "retained evidence reconciliation, not another CPU implementation test suite",
+  "status": "PASS",
+  "tested_source": "32edd3bf54712a8134659f298b8958462024c2a0"
+}

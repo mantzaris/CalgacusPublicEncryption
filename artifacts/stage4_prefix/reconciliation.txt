@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "attempts": 21,
+  "incremental_usage": {
+    "cases": 21,
+    "seconds": 331.16923984099594,
+    "tokens": 350
+  },
+  "cumulative_usage": {
+    "cases": 64,
+    "seconds": 1732.6987573230003,
+    "tokens": 23849
+  },
+  "controls": {
+    "A": {
+      "attempted": 6,
+      "prefix_matches": 0,
+      "valid_nonmatches": 6,
+      "invalid_utf8": 0,
+      "insufficient_tokens": 0,
+      "retokenization_changes": 0,
+      "candidate_exhaustions": 0,
+      "runtime_failures": 0
+    },
+    "B": {
+      "attempted": 6,
+      "prefix_matches": 0,
+      "valid_nonmatches": 6,
+      "invalid_utf8": 0,
+      "insufficient_tokens": 0,
+      "retokenization_changes": 0,
+      "candidate_exhaustions": 0,
+      "runtime_failures": 0
+    },
+    "C": {
+      "attempted": 6,
+      "prefix_matches": 0,
+      "valid_nonmatches": 6,
+      "invalid_utf8": 0,
+      "insufficient_tokens": 0,
+      "retokenization_changes": 0,
+      "candidate_exhaustions": 0,
+      "runtime_failures": 0
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "attempt_id": "fcf0a006-a09e-4f9b-945b-6184a2551a4a",
+  "authenticated": false,
+  "case_id": "prefix-c0-A-s2026092102",
+  "charged_tokens": 17,
+  "context_index": 0,
+  "cover_context": "A field note about trees in the public garden:",
+  "failure_category": null,
+  "family": "A",
+  "generated_tokens": 6,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "control",
+  "observer": {
+    "observed_prefix_ids": [
+      578,
+      20562,
+      12,
+      777,
+      28522,
+      6197
+    ],
+    "prefix_match": false,
+    "status": "valid_nonmatch"
+  },
+  "pid": 377394,
+  "prediction_cache_key": "a32f636fff1af0690d80d5f1e705df0451c1c51a0a0d36a9c14b45e2eba45ab1",
+  "prediction_path": "artifacts/stage4_prefix/attempts/67be93ae-7957-4e6c-bf3d-8b045f66a093/public_prediction.json",
+  "prediction_sha256": "353af053df3ecdefa6645ed842bf7886498ad200cd71a2c4e0e2a790f0532026",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "public_context_token_ids": {
+    "A field note about trees in the public garden:": [
+      128000,
+      32,
+      2115,
+      5296,
+      922,
+      12690,
+      304,
+      279,
+      586,
+      13863,
+      25
+    ]
+  },
+  "retained_generated_prefix_hex": "2054686520434f5649442d31392070616e64656d6963206c6564",
+  "retokenized_ids": [
+    578,
+    20562,
+    12,
+    777,
+    28522,
+    6197
+  ],
+  "sampling_seed": 2026092102,
+  "schema_version": 1,
+  "serialization_outcome": "canonical",
+  "snippet_bytes_hex": "2054686520434f5649442d31392070616e64656d6963206c6564",
+  "snippet_utf8": " The COVID-19 pandemic led",
+  "split": "development_only_excluded_from_future_heldout",
+  "success": true,
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "text_retokenizes": true,
+  "timings": {
+    "load_and_verify_seconds": 14.817573780999737,
+    "operation_and_host_observation_seconds": 0.38863084099830303
+  },
+  "tokens_by_phase": {
+    "six_token_control": 17
+  },
+  "trace": {
+    "advanced_ids": [
+      578,
+      20562,
+      12,
+      777,
+      28522,
+      6197
+    ],
+    "candidate_steps": [],
+    "direction": "control_A",
+    "symbols": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "worker_seconds": 15.265524461001405
+}

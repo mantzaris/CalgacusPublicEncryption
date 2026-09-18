@@ -1,0 +1,437 @@
+{
+  "cases": [
+    {
+      "attempt_id": "daf9f9ba-da41-47fb-a045-7a77b1c8236a",
+      "case_id": "prefix-c0-A-s2026092101",
+      "charged_tokens": 17,
+      "context_index": 0,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/daf9f9ba-da41-47fb-a045-7a77b1c8236a",
+      "family": "A",
+      "job_elapsed_seconds": 15.49054204300046,
+      "observer": {
+        "observed_prefix_ids": [
+          4427,
+          7185,
+          13363,
+          198,
+          2170,
+          584
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092101,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " Some interesting facts\nAs we"
+    },
+    {
+      "attempt_id": "fcf0a006-a09e-4f9b-945b-6184a2551a4a",
+      "case_id": "prefix-c0-A-s2026092102",
+      "charged_tokens": 17,
+      "context_index": 0,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/fcf0a006-a09e-4f9b-945b-6184a2551a4a",
+      "family": "A",
+      "job_elapsed_seconds": 16.017106920000515,
+      "observer": {
+        "observed_prefix_ids": [
+          578,
+          20562,
+          12,
+          777,
+          28522,
+          6197
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092102,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " The COVID-19 pandemic led"
+    },
+    {
+      "attempt_id": "7da15a37-fdaf-4e63-b299-f1079c6de1e5",
+      "case_id": "prefix-c0-B-s2026092101",
+      "charged_tokens": 17,
+      "context_index": 0,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/7da15a37-fdaf-4e63-b299-f1079c6de1e5",
+      "family": "B",
+      "job_elapsed_seconds": 15.478217886999118,
+      "observer": {
+        "observed_prefix_ids": [
+          220,
+          679,
+          20,
+          12,
+          2318,
+          12
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092101,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " 2015-08-"
+    },
+    {
+      "attempt_id": "396ebecf-e157-4974-9e1a-28b08fab9a48",
+      "case_id": "prefix-c0-B-s2026092102",
+      "charged_tokens": 17,
+      "context_index": 0,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/396ebecf-e157-4974-9e1a-28b08fab9a48",
+      "family": "B",
+      "job_elapsed_seconds": 15.457986874998824,
+      "observer": {
+        "observed_prefix_ids": [
+          264,
+          10015,
+          27501,
+          315,
+          7438,
+          3339
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092102,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " a brief exploration of meaning making"
+    },
+    {
+      "attempt_id": "54aa631a-455e-4eb9-abab-b89e5bdb6da9",
+      "case_id": "prefix-c0-C-s2026092101",
+      "charged_tokens": 17,
+      "context_index": 0,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/54aa631a-455e-4eb9-abab-b89e5bdb6da9",
+      "family": "C",
+      "job_elapsed_seconds": 16.023486796000725,
+      "observer": {
+        "observed_prefix_ids": [
+          279,
+          3674,
+          5536,
+          627,
+          16328,
+          1115
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092101,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " the social impact.\nAbstract This"
+    },
+    {
+      "attempt_id": "4de9f437-a910-459c-9e10-b35ac5c53eaf",
+      "case_id": "prefix-c0-C-s2026092102",
+      "charged_tokens": 17,
+      "context_index": 0,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/4de9f437-a910-459c-9e10-b35ac5c53eaf",
+      "family": "C",
+      "job_elapsed_seconds": 15.458970427000168,
+      "observer": {
+        "observed_prefix_ids": [
+          1952,
+          220,
+          2366,
+          679,
+          975,
+          2212
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092102,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " On 20220114 around"
+    },
+    {
+      "attempt_id": "9976a5cc-3b23-423d-9a7b-572b2d51d960",
+      "case_id": "prefix-c1-A-s2026092101",
+      "charged_tokens": 18,
+      "context_index": 1,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/9976a5cc-3b23-423d-9a7b-572b2d51d960",
+      "family": "A",
+      "job_elapsed_seconds": 15.47936003399991,
+      "observer": {
+        "observed_prefix_ids": [
+          18312,
+          527,
+          17057,
+          304,
+          264,
+          6875
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092101,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " Books are organized in a library"
+    },
+    {
+      "attempt_id": "4679dc79-7bc3-4a22-9a24-c7f4b1ccfaa1",
+      "case_id": "prefix-c1-A-s2026092102",
+      "charged_tokens": 18,
+      "context_index": 1,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/4679dc79-7bc3-4a22-9a24-c7f4b1ccfaa1",
+      "family": "A",
+      "job_elapsed_seconds": 15.50913513299929,
+      "observer": {
+        "observed_prefix_ids": [
+          578,
+          50400,
+          1216,
+          27826,
+          55982,
+          1887
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092102,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " The Dewey Decimal Classification system"
+    },
+    {
+      "attempt_id": "66d6ab88-7870-4282-850f-2aba69b3ff9b",
+      "case_id": "prefix-c1-B-s2026092101",
+      "charged_tokens": 18,
+      "context_index": 1,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/66d6ab88-7870-4282-850f-2aba69b3ff9b",
+      "family": "B",
+      "job_elapsed_seconds": 16.000578111999857,
+      "observer": {
+        "observed_prefix_ids": [
+          578,
+          50400,
+          1216,
+          27826,
+          55982,
+          1887
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092101,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " The Dewey Decimal Classification system"
+    },
+    {
+      "attempt_id": "9ebe7883-db41-4a7d-9976-c8271dc22c70",
+      "case_id": "prefix-c1-B-s2026092102",
+      "charged_tokens": 18,
+      "context_index": 1,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/9ebe7883-db41-4a7d-9976-c8271dc22c70",
+      "family": "B",
+      "job_elapsed_seconds": 16.007870591998653,
+      "observer": {
+        "observed_prefix_ids": [
+          279,
+          50400,
+          1216,
+          27826,
+          55982,
+          744
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092102,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " the Dewey Decimal Classification System"
+    },
+    {
+      "attempt_id": "b5407b9d-5870-4858-9062-89a005cef6e4",
+      "case_id": "prefix-c1-C-s2026092101",
+      "charged_tokens": 18,
+      "context_index": 1,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/b5407b9d-5870-4858-9062-89a005cef6e4",
+      "family": "C",
+      "job_elapsed_seconds": 16.012088949000827,
+      "observer": {
+        "observed_prefix_ids": [
+          18312,
+          430,
+          649,
+          617,
+          4528,
+          2038
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092101,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " Books that can have similar information"
+    },
+    {
+      "attempt_id": "3d335ba7-2e90-4ae8-a429-efbe8ebd2a5c",
+      "case_id": "prefix-c1-C-s2026092102",
+      "charged_tokens": 18,
+      "context_index": 1,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/3d335ba7-2e90-4ae8-a429-efbe8ebd2a5c",
+      "family": "C",
+      "job_elapsed_seconds": 15.493798556000911,
+      "observer": {
+        "observed_prefix_ids": [
+          423,
+          3924,
+          815,
+          3238,
+          2363,
+          11
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092102,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " D.H.S.' book,"
+    },
+    {
+      "attempt_id": "30c71db1-2e2d-4b10-a1dd-5bf84b50497c",
+      "case_id": "prefix-c2-A-s2026092101",
+      "charged_tokens": 15,
+      "context_index": 2,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/30c71db1-2e2d-4b10-a1dd-5bf84b50497c",
+      "family": "A",
+      "job_elapsed_seconds": 15.481405139000344,
+      "observer": {
+        "observed_prefix_ids": [
+          3639,
+          596,
+          279,
+          1888,
+          1648,
+          1980
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092101,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " What's the best way?\n\n"
+    },
+    {
+      "attempt_id": "578e6a94-b1d6-4ecb-b255-28f24408ed18",
+      "case_id": "prefix-c2-A-s2026092102",
+      "charged_tokens": 15,
+      "context_index": 2,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/578e6a94-b1d6-4ecb-b255-28f24408ed18",
+      "family": "A",
+      "job_elapsed_seconds": 16.060546287999387,
+      "observer": {
+        "observed_prefix_ids": [
+          459,
+          24481,
+          315,
+          40944,
+          61050,
+          43785
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092102,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " an examination of cumulative precipitation distributions"
+    },
+    {
+      "attempt_id": "5f4df386-ac33-47a8-841d-f3715c977ccb",
+      "case_id": "prefix-c2-B-s2026092101",
+      "charged_tokens": 15,
+      "context_index": 2,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/5f4df386-ac33-47a8-841d-f3715c977ccb",
+      "family": "B",
+      "job_elapsed_seconds": 15.994725388000006,
+      "observer": {
+        "observed_prefix_ids": [
+          459,
+          3851,
+          315,
+          279,
+          19463,
+          58917
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092101,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " an application of the probability theorem"
+    },
+    {
+      "attempt_id": "d3b770ee-59d0-4eac-9439-e9c08e1a3fc4",
+      "case_id": "prefix-c2-B-s2026092102",
+      "charged_tokens": 15,
+      "context_index": 2,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/d3b770ee-59d0-4eac-9439-e9c08e1a3fc4",
+      "family": "B",
+      "job_elapsed_seconds": 15.483495649999895,
+      "observer": {
+        "observed_prefix_ids": [
+          362,
+          5296,
+          922,
+          11422,
+          2427,
+          84
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092102,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " A note about rain-gu"
+    },
+    {
+      "attempt_id": "858fd166-1e7b-45c0-83c6-980377b02c3a",
+      "case_id": "prefix-c2-C-s2026092101",
+      "charged_tokens": 15,
+      "context_index": 2,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/858fd166-1e7b-45c0-83c6-980377b02c3a",
+      "family": "C",
+      "job_elapsed_seconds": 16.06107225499909,
+      "observer": {
+        "observed_prefix_ids": [
+          459,
+          3062,
+          3465,
+          271,
+          32,
+          502
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092101,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " an important task\n\nA new"
+    },
+    {
+      "attempt_id": "bb7840b4-299c-4e0c-9daa-2dbe2863d3f7",
+      "case_id": "prefix-c2-C-s2026092102",
+      "charged_tokens": 15,
+      "context_index": 2,
+      "evidence_dir": "artifacts/stage4_prefix/attempts/bb7840b4-299c-4e0c-9daa-2dbe2863d3f7",
+      "family": "C",
+      "job_elapsed_seconds": 16.041258101000494,
+      "observer": {
+        "observed_prefix_ids": [
+          1148,
+          433,
+          3445,
+          30,
+          510,
+          16533
+        ],
+        "prefix_match": false,
+        "status": "valid_nonmatch"
+      },
+      "sampling_seed": 2026092102,
+      "serialization_outcome": "canonical",
+      "snippet_utf8": " what it means? [Answer"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,162 @@
+{
+  "attempt_id": "858fd166-1e7b-45c0-83c6-980377b02c3a",
+  "authenticated": false,
+  "case_id": "prefix-c2-C-s2026092101",
+  "charged_tokens": 15,
+  "context_index": 2,
+  "cover_context": "A research note about measuring afternoon rainfall:",
+  "failure_category": null,
+  "family": "C",
+  "generated_tokens": 6,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "control",
+  "observer": {
+    "observed_prefix_ids": [
+      459,
+      3062,
+      3465,
+      271,
+      32,
+      502
+    ],
+    "prefix_match": false,
+    "status": "valid_nonmatch"
+  },
+  "pid": 384346,
+  "prediction_cache_key": "0793e69aaf34b132b84c006fe1f9c015c6c998e3907b36fda55cd11b20fc05c6",
+  "prediction_path": "artifacts/stage4_prefix/attempts/e27e7e56-c970-41c0-a98c-b3cea7b9fb2a/public_prediction.json",
+  "prediction_sha256": "159f411ab9100c6ad7fcefed4d8a73b168dc9427ca11245ca9097fa5352fdf34",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "public_context_token_ids": {
+    "A research note about measuring afternoon rainfall:": [
+      128000,
+      32,
+      3495,
+      5296,
+      922,
+      30090,
+      13658,
+      53958,
+      25
+    ]
+  },
+  "retained_generated_prefix_hex": "20616e20696d706f7274616e74207461736b0a0a41206e6577",
+  "retokenized_ids": [
+    459,
+    3062,
+    3465,
+    271,
+    32,
+    502
+  ],
+  "sampling_seed": 2026092101,
+  "schema_version": 1,
+  "serialization_outcome": "canonical",
+  "snippet_bytes_hex": "20616e20696d706f7274616e74207461736b0a0a41206e6577",
+  "snippet_utf8": " an important task\n\nA new",
+  "split": "development_only_excluded_from_future_heldout",
+  "success": true,
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "text_retokenizes": true,
+  "timings": {
+    "load_and_verify_seconds": 14.651863348000916,
+    "operation_and_host_observation_seconds": 0.39512772200032487
+  },
+  "tokens_by_phase": {
+    "six_token_control": 15
+  },
+  "trace": {
+    "advanced_ids": [
+      459,
+      3062,
+      3465,
+      271,
+      32,
+      502
+    ],
+    "candidate_steps": [
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "c0843f6a503ed589f3bd9f801d1726ea3b0b9c87bec82095bc3ddfec193a31ad",
+        "position": 0,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "40cab8e9ce08e129b051328cb97dd0e6608f60ad1b3502a182afef7202958957",
+        "position": 1,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "2bf13d75fec59379b5b7006ded350322ac83b2ee5edf7275b659e244c8389235",
+        "position": 2,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "69ac9067ebd18b726fb862ecbb86db07747fd0435dd6fe436ace8737bf79dfef",
+        "position": 3,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "447fd11935868c87d2a7f9dc17147220eb87277055761364cac2c847b991c774",
+        "position": 4,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "e80d5e76d5f57d3c9a1de1acc2a115702ed7301ce2ffff183dd794c026690105",
+        "position": 5,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      }
+    ],
+    "direction": "control_C",
+    "symbols": [
+      3,
+      10,
+      14,
+      7,
+      6,
+      6
+    ]
+  },
+  "worker_seconds": 15.10412314899986
+}

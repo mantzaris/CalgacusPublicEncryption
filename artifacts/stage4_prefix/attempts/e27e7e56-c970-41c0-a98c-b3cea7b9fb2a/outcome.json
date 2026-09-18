@@ -1,0 +1,498 @@
+{
+  "attempt_id": "e27e7e56-c970-41c0-a98c-b3cea7b9fb2a",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "case_id": "prefix-predict-c2",
+  "charged_tokens": 15,
+  "context_index": 2,
+  "cover_context": "A research note about measuring afternoon rainfall:",
+  "cumulative_budget": {
+    "cases": 46,
+    "seconds": 1449.1471121780019,
+    "tokens": 23549
+  },
+  "evidence_dir": "artifacts/stage4_prefix/attempts/e27e7e56-c970-41c0-a98c-b3cea7b9fb2a",
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "historical_reanalysis": [
+    {
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          264,
+          1162,
+          4007,
+          304,
+          279,
+          3363
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/b1047479-0b2c-4a26-bedd-b819aafcc9ca/carrier.txt",
+      "transport_sha256": "4662de00a8fe66125e0ce8ca3f352d02fe97ef59ea222251495ff7963fdc700d"
+    },
+    {
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          264,
+          1162,
+          4007,
+          304,
+          279,
+          3363
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/7f758cd4-bea8-4765-947a-7dd433da341a/carrier.txt",
+      "transport_sha256": "7d54b3d34fd2aad24f3ece1475da9b16d1b0481556c17abbd119746e965d54be"
+    },
+    {
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          264,
+          1162,
+          4007,
+          304,
+          279,
+          3363
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/368fd333-39ce-487e-aa54-736034d8c5e3/carrier.txt",
+      "transport_sha256": "76e69bd4d8d3ea8dbe184cee771d50fc86d554b9c773ba02ab1efdb34bfc8401"
+    }
+  ],
+  "job_elapsed_seconds": 15.47703380799976,
+  "kind": "prediction",
+  "lease_verified": true,
+  "peak_sampled_process_vram_mib": 4714,
+  "phase_meter_verified": true,
+  "pid": 376554,
+  "prediction": {
+    "A_log_probability_latent_sequence": -8.253612512123757,
+    "A_probability_latent_sequence": 0.00026031646028896945,
+    "B_log_probability_prefix_match": -5.42770580591685,
+    "B_probability_prefix_match": 0.004393163018783372,
+    "C_log_probability_prefix_match": -16.635532333438686,
+    "C_probability_prefix_match": 5.960464477539063e-08,
+    "cache_key": "0793e69aaf34b132b84c006fe1f9c015c6c998e3907b36fda55cd11b20fc05c6",
+    "cover_context": "A research note about measuring afternoon rainfall:",
+    "observer_id": "public_zero6_v1",
+    "prefix_utf8": " a case study in the city",
+    "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+    "provenance": {
+      "attempt_id": "e27e7e56-c970-41c0-a98c-b3cea7b9fb2a",
+      "computation": "six independent public zero-symbol selections; computed before opening historical carrier files",
+      "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+      "pid": 376554,
+      "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0"
+    },
+    "provenance_rule": "public candidate selection, symbol zero six times; no saved carriers or encoder data used",
+    "schema_version": 1,
+    "scores": [
+      {
+        "A_log_probability": -2.0038082019184857,
+        "A_probability_latent_token": 0.13482087925015054,
+        "B_log_probability": -1.3465257317526014,
+        "B_probability_admissible_zero": 0.26014249725035404,
+        "admissible_ids": [
+          264,
+          362,
+          330,
+          459,
+          1556,
+          279,
+          578,
+          1054,
+          220,
+          2650,
+          1268,
+          14727,
+          1148,
+          25127,
+          22674,
+          358
+        ],
+        "admissible_logits": [
+          13.08588695526123,
+          12.90087890625,
+          11.954487800598145,
+          11.857439041137695,
+          11.81114673614502,
+          11.635364532470703,
+          11.50611686706543,
+          11.250228881835938,
+          10.693514823913574,
+          10.471946716308594,
+          10.451276779174805,
+          10.370112419128418,
+          10.258163452148438,
+          10.148641586303711,
+          10.145954132080078,
+          10.1011381149292
+        ],
+        "position": 0,
+        "token_id": 264
+      },
+      {
+        "A_log_probability": -1.9285754600150868,
+        "A_probability_latent_token": 0.1453551152417079,
+        "B_log_probability": -1.468620237876912,
+        "B_probability_admissible_zero": 0.23024294662258574,
+        "admissible_ids": [
+          1162,
+          4007,
+          12593,
+          4382,
+          502,
+          18178,
+          3477,
+          1749,
+          29564,
+          55394,
+          15325,
+          11775,
+          9200,
+          10795,
+          33269,
+          37538
+        ],
+        "admissible_logits": [
+          15.236299514770508,
+          15.015281677246094,
+          14.978264808654785,
+          14.099849700927734,
+          13.956507682800293,
+          13.79949951171875,
+          13.650470733642578,
+          13.377811431884766,
+          13.077482223510742,
+          12.900348663330078,
+          12.654214859008789,
+          12.615104675292969,
+          12.362565994262695,
+          12.296459197998047,
+          12.26498031616211,
+          12.249188423156738
+        ],
+        "position": 1,
+        "token_id": 1162
+      },
+      {
+        "A_log_probability": -0.017629079349121154,
+        "A_probability_latent_token": 0.9825254037399483,
+        "B_log_probability": -0.017484228265756588,
+        "B_probability_admissible_zero": 0.9826677339172046,
+        "admissible_ids": [
+          4007,
+          315,
+          369,
+          5594,
+          304,
+          505,
+          9522,
+          19723,
+          12515,
+          198,
+          4194,
+          6492,
+          389,
+          3187,
+          7978,
+          2585
+        ],
+        "admissible_logits": [
+          26.495464324951172,
+          22.17986297607422,
+          20.1312255859375,
+          19.68461036682129,
+          19.255584716796875,
+          18.498931884765625,
+          17.515356063842773,
+          17.053791046142578,
+          16.592496871948242,
+          16.457935333251953,
+          15.732337951660156,
+          15.688024520874023,
+          15.620366096496582,
+          15.494168281555176,
+          15.313164710998535,
+          15.139715194702148
+        ],
+        "position": 2,
+        "token_id": 4007
+      },
+      {
+        "A_log_probability": -0.8690109684175572,
+        "A_probability_latent_token": 0.419366110534668,
+        "B_log_probability": -0.8673084502437645,
+        "B_probability_admissible_zero": 0.42008069708501394,
+        "admissible_ids": [
+          304,
+          315,
+          505,
+          389,
+          520,
+          198,
+          1701,
+          369,
+          449,
+          271,
+          627,
+          3196,
+          16239,
+          320,
+          9522,
+          922
+        ],
+        "admissible_logits": [
+          22.443233489990234,
+          22.395580291748047,
+          20.767444610595703,
+          20.130786895751953,
+          19.540523529052734,
+          19.06066131591797,
+          18.876686096191406,
+          18.211894989013672,
+          16.58175277709961,
+          16.09876251220703,
+          16.059616088867188,
+          15.922384262084961,
+          14.734804153442383,
+          14.587923049926758,
+          14.403280258178711,
+          14.354778289794922
+        ],
+        "position": 3,
+        "token_id": 304
+      },
+      {
+        "A_log_probability": -1.468087220562278,
+        "A_probability_latent_token": 0.23036570281238894,
+        "B_log_probability": -0.694873458367653,
+        "B_probability_admissible_zero": 0.4991376056764011,
+        "admissible_ids": [
+          279,
+          264,
+          87433,
+          16036,
+          11683,
+          735,
+          459,
+          44327,
+          86341,
+          435,
+          358,
+          35148,
+          29258,
+          17366,
+          2758,
+          386
+        ],
+        "admissible_logits": [
+          14.311805725097656,
+          13.352984428405762,
+          11.78150749206543,
+          11.512157440185547,
+          11.50036907196045,
+          11.332915306091309,
+          11.205148696899414,
+          11.136897087097168,
+          11.109207153320312,
+          11.0889253616333,
+          11.070155143737793,
+          11.050405502319336,
+          11.05034065246582,
+          10.785343170166016,
+          10.768949508666992,
+          10.71919059753418
+        ],
+        "position": 4,
+        "token_id": 279
+      },
+      {
+        "A_log_probability": -1.966501581861229,
+        "A_probability_latent_token": 0.13994558900777943,
+        "B_log_probability": -1.032893699410163,
+        "B_probability_admissible_zero": 0.3559753829954584,
+        "admissible_ids": [
+          3363,
+          35148,
+          16036,
+          24024,
+          21965,
+          83209,
+          8339,
+          18768,
+          36083,
+          31714,
+          35335,
+          18671,
+          19001,
+          11427,
+          18561,
+          480
+        ],
+        "admissible_logits": [
+          13.208494186401367,
+          12.512983322143555,
+          11.305646896362305,
+          11.085075378417969,
+          10.9911527633667,
+          10.964512825012207,
+          10.910364151000977,
+          10.848145484924316,
+          10.833017349243164,
+          10.786832809448242,
+          10.740320205688477,
+          10.705815315246582,
+          10.627630233764648,
+          10.560445785522461,
+          10.533452987670898,
+          10.521419525146484
+        ],
+        "position": 5,
+        "token_id": 3363
+      }
+    ],
+    "token_ids": [
+      264,
+      1162,
+      4007,
+      304,
+      279,
+      3363
+    ]
+  },
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A research note about measuring afternoon rainfall:": [
+      128000,
+      32,
+      3495,
+      5296,
+      922,
+      30090,
+      13658,
+      53958,
+      25
+    ]
+  },
+  "retained_generated_prefix_hex": "2061206361736520737475647920696e207468652063697479",
+  "schema_version": 1,
+  "split": "development_only_excluded_from_future_heldout",
+  "success": true,
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "timings": {
+    "load_and_verify_seconds": 14.271795977001602,
+    "operation_and_host_observation_seconds": 0.4840246890016715
+  },
+  "tokens_by_phase": {
+    "public_prediction": 15
+  },
+  "trace": {
+    "advanced_ids": [
+      264,
+      1162,
+      4007,
+      304,
+      279,
+      3363
+    ],
+    "candidate_steps": [
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "c0843f6a503ed589f3bd9f801d1726ea3b0b9c87bec82095bc3ddfec193a31ad",
+        "position": 0,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "0060631f8cf13a9d336303389985b8e7ffec9e10acff7ad26f0224a924da27ad",
+        "position": 1,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "2d61364ec730d85682c5f417b3041e04e270f30153d1cc4fdb99671ea3338807",
+        "position": 2,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "a7bf09708966c300a0511e84c08c624ba7b3e030e4ff1de539eecb0b5bb3c7db",
+        "position": 3,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "1ffa23e1950ed18b66167fcf35a1133e20dc2db7a743020497053700652f54df",
+        "position": 4,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "975bae01028bd06e50021e88dd7e53bdbafb72ab5606bb72510ae9df71718470",
+        "position": 5,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      }
+    ],
+    "direction": "public_prediction",
+    "symbols": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "worker_seconds": 14.838296518000789
+}

@@ -1,0 +1,44 @@
+{
+  "commands": [
+    {
+      "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -p test_public_prefix.py -v > artifacts/stage4_prefix/focused_checks.txt 2>&1",
+      "gpu_inference": false,
+      "output": "focused_checks.txt",
+      "phase": "focused_new_contracts_before_commit"
+    },
+    {
+      "command": ".venv/bin/python scripts/prepare_stage4.py > artifacts/stage4_prefix/preparation.txt",
+      "gpu_inference": false,
+      "output": "preparation.txt",
+      "phase": "host_only_preparation_before_commit"
+    },
+    {
+      "command": ".venv/bin/python scripts/run_stage4.py --allocation-check > artifacts/stage4_prefix/allocation_check.txt",
+      "gpu_inference": false,
+      "output": "allocation_check.txt",
+      "phase": "focused_allocation_before_commit"
+    },
+    {
+      "command": ".venv/bin/python scripts/run_stage4.py > artifacts/stage4_prefix/controller.log 2>&1",
+      "gpu_inference": true,
+      "output": "controller.log",
+      "phase": "fixed_gpu_allocation",
+      "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0"
+    },
+    {
+      "command": ".venv/bin/python artifacts/stage4_prefix/reconcile.py > artifacts/stage4_prefix/reconciliation.txt 2>&1",
+      "gpu_inference": false,
+      "output": "reconciliation.txt",
+      "phase": "artifact_only_reconciliation"
+    },
+    {
+      "command": ".venv/bin/python artifacts/stage4_prefix/build_manifest.py",
+      "gpu_inference": false,
+      "output": "evidence_manifest.json",
+      "phase": "evidence_index"
+    }
+  ],
+  "cwd": "/home/meow/Documents/repos/CalgacusPublicEncryption",
+  "note": "Precommit focused checks and preparer used files subsequently frozen unchanged in tested commit. GPU attempts independently record their exact command, environment and clean source revision. Completed allocation cannot be implicitly rerun.",
+  "schema_version": 1
+}

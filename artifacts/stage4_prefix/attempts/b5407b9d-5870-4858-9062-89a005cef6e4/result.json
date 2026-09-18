@@ -1,0 +1,165 @@
+{
+  "attempt_id": "b5407b9d-5870-4858-9062-89a005cef6e4",
+  "authenticated": false,
+  "case_id": "prefix-c1-C-s2026092101",
+  "charged_tokens": 18,
+  "context_index": 1,
+  "cover_context": "A brief explanation of how a library organizes books:",
+  "failure_category": null,
+  "family": "C",
+  "generated_tokens": 6,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "control",
+  "observer": {
+    "observed_prefix_ids": [
+      18312,
+      430,
+      649,
+      617,
+      4528,
+      2038
+    ],
+    "prefix_match": false,
+    "status": "valid_nonmatch"
+  },
+  "pid": 381361,
+  "prediction_cache_key": "c326c56d96c44d8bc46603338138d6517682bdd80a3fd1d67d72133df3d1bae9",
+  "prediction_path": "artifacts/stage4_prefix/attempts/081035c9-c80c-4310-9056-832d53165f0b/public_prediction.json",
+  "prediction_sha256": "c88025653fdffe9c676c5f4499f40ce5a364145fcb5c4caf40f0df764d63b759",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "public_context_token_ids": {
+    "A brief explanation of how a library organizes books:": [
+      128000,
+      32,
+      10015,
+      16540,
+      315,
+      1268,
+      264,
+      6875,
+      2942,
+      4861,
+      6603,
+      25
+    ]
+  },
+  "retained_generated_prefix_hex": "20426f6f6b7320746861742063616e20686176652073696d696c617220696e666f726d6174696f6e",
+  "retokenized_ids": [
+    18312,
+    430,
+    649,
+    617,
+    4528,
+    2038
+  ],
+  "sampling_seed": 2026092101,
+  "schema_version": 1,
+  "serialization_outcome": "canonical",
+  "snippet_bytes_hex": "20426f6f6b7320746861742063616e20686176652073696d696c617220696e666f726d6174696f6e",
+  "snippet_utf8": " Books that can have similar information",
+  "split": "development_only_excluded_from_future_heldout",
+  "success": true,
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "text_retokenizes": true,
+  "timings": {
+    "load_and_verify_seconds": 14.562538764001147,
+    "operation_and_host_observation_seconds": 0.45724031499958073
+  },
+  "tokens_by_phase": {
+    "six_token_control": 18
+  },
+  "trace": {
+    "advanced_ids": [
+      18312,
+      430,
+      649,
+      617,
+      4528,
+      2038
+    ],
+    "candidate_steps": [
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "152779ab54a92c88131bdff9bdb85f22070360111f95aaf16dd6d5d3459009a0",
+        "position": 0,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "ba94d3279772868aefdd93d6bf01c7d4e2e1c4d6bcce21ef851b99309dbd54c5",
+        "position": 1,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "6944206bdaab01f2d165600cd8021686910442a7aadafac230f69d2aa7ea23cd",
+        "position": 2,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "2a5c970b9a2d553f982fe2602e0f82a6eec5aa8c93d36f5dfd4f6101a1a179ee",
+        "position": 3,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "4a7aab298e2ac76f8bd5ad93b5207f2c1db01b6ac1b2728ca0b42be3849f59f1",
+        "position": 4,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "d591f0beca371e888fc8ba23fb579b699447a2d02e29eb8eb1a33174ba197a5c",
+        "position": 5,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      }
+    ],
+    "direction": "control_C",
+    "symbols": [
+      3,
+      10,
+      14,
+      7,
+      6,
+      6
+    ]
+  },
+  "worker_seconds": 15.08233709399974
+}

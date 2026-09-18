@@ -1,0 +1,29 @@
+{
+  "case_id": "prefix-predict-c0",
+  "context_index": 0,
+  "expected_evaluated_tokens": 17,
+  "historical_carrier_paths": [
+    "artifacts/stage3_transport/attempts/1514528d-2e90-4288-ae56-172086110902/carrier.txt",
+    "artifacts/stage3_transport/attempts/f213c595-a301-4e4a-a3f3-fdec26de6c2b/carrier.txt"
+  ],
+  "kind": "prediction",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "token_reservation": 64,
+  "wall_reservation_seconds": 45
+}

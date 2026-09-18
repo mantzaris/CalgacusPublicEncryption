@@ -1,0 +1,89 @@
+{
+  "attempt_id": "578e6a94-b1d6-4ecb-b255-28f24408ed18",
+  "authenticated": false,
+  "case_id": "prefix-c2-A-s2026092102",
+  "charged_tokens": 15,
+  "context_index": 2,
+  "cover_context": "A research note about measuring afternoon rainfall:",
+  "failure_category": null,
+  "family": "A",
+  "generated_tokens": 6,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "control",
+  "observer": {
+    "observed_prefix_ids": [
+      459,
+      24481,
+      315,
+      40944,
+      61050,
+      43785
+    ],
+    "prefix_match": false,
+    "status": "valid_nonmatch"
+  },
+  "pid": 382770,
+  "prediction_cache_key": "0793e69aaf34b132b84c006fe1f9c015c6c998e3907b36fda55cd11b20fc05c6",
+  "prediction_path": "artifacts/stage4_prefix/attempts/e27e7e56-c970-41c0-a98c-b3cea7b9fb2a/public_prediction.json",
+  "prediction_sha256": "159f411ab9100c6ad7fcefed4d8a73b168dc9427ca11245ca9097fa5352fdf34",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "public_context_token_ids": {
+    "A research note about measuring afternoon rainfall:": [
+      128000,
+      32,
+      3495,
+      5296,
+      922,
+      30090,
+      13658,
+      53958,
+      25
+    ]
+  },
+  "retained_generated_prefix_hex": "20616e206578616d696e6174696f6e206f662063756d756c61746976652070726563697069746174696f6e20646973747269627574696f6e73",
+  "retokenized_ids": [
+    459,
+    24481,
+    315,
+    40944,
+    61050,
+    43785
+  ],
+  "sampling_seed": 2026092102,
+  "schema_version": 1,
+  "serialization_outcome": "canonical",
+  "snippet_bytes_hex": "20616e206578616d696e6174696f6e206f662063756d756c61746976652070726563697069746174696f6e20646973747269627574696f6e73",
+  "snippet_utf8": " an examination of cumulative precipitation distributions",
+  "split": "development_only_excluded_from_future_heldout",
+  "success": true,
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "text_retokenizes": true,
+  "timings": {
+    "load_and_verify_seconds": 14.693635321998954,
+    "operation_and_host_observation_seconds": 0.3560194820001925
+  },
+  "tokens_by_phase": {
+    "six_token_control": 15
+  },
+  "trace": {
+    "advanced_ids": [
+      459,
+      24481,
+      315,
+      40944,
+      61050,
+      43785
+    ],
+    "candidate_steps": [],
+    "direction": "control_A",
+    "symbols": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "worker_seconds": 15.116675907998797
+}

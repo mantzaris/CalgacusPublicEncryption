@@ -1,0 +1,119 @@
+{
+  "cases": [
+    {
+      "context_index": 0,
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          578,
+          12690,
+          304,
+          279,
+          586,
+          13863
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/1514528d-2e90-4288-ae56-172086110902/carrier.txt",
+      "prediction_attempt_id": "67be93ae-7957-4e6c-bf3d-8b045f66a093",
+      "transport_sha256": "1446ded629b0e34e2a74a0cf588f7536cc7a4a3d6d922ec6ec9dffb76c9c8822"
+    },
+    {
+      "context_index": 0,
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          578,
+          12690,
+          304,
+          279,
+          586,
+          13863
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/f213c595-a301-4e4a-a3f3-fdec26de6c2b/carrier.txt",
+      "prediction_attempt_id": "67be93ae-7957-4e6c-bf3d-8b045f66a093",
+      "transport_sha256": "2ab40df4e6cc20c35d271a326512ad9ff2fa8f7e1e7a04d231ca6f14e2ecdc20"
+    },
+    {
+      "context_index": 1,
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          50400,
+          1216,
+          27826,
+          55982,
+          320,
+          4195
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/c2249cd8-c821-435b-8d46-ac5f58b8d480/carrier.txt",
+      "prediction_attempt_id": "081035c9-c80c-4310-9056-832d53165f0b",
+      "transport_sha256": "06ea497b6f00a0c41984ebfabb0410db42c2e2de34a7e6d95e5655d6e4b760d3"
+    },
+    {
+      "context_index": 2,
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          264,
+          1162,
+          4007,
+          304,
+          279,
+          3363
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/b1047479-0b2c-4a26-bedd-b819aafcc9ca/carrier.txt",
+      "prediction_attempt_id": "e27e7e56-c970-41c0-a98c-b3cea7b9fb2a",
+      "transport_sha256": "4662de00a8fe66125e0ce8ca3f352d02fe97ef59ea222251495ff7963fdc700d"
+    },
+    {
+      "context_index": 2,
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          264,
+          1162,
+          4007,
+          304,
+          279,
+          3363
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/7f758cd4-bea8-4765-947a-7dd433da341a/carrier.txt",
+      "prediction_attempt_id": "e27e7e56-c970-41c0-a98c-b3cea7b9fb2a",
+      "transport_sha256": "7d54b3d34fd2aad24f3ece1475da9b16d1b0481556c17abbd119746e965d54be"
+    },
+    {
+      "context_index": 2,
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          264,
+          1162,
+          4007,
+          304,
+          279,
+          3363
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/368fd333-39ce-487e-aa54-736034d8c5e3/carrier.txt",
+      "prediction_attempt_id": "e27e7e56-c970-41c0-a98c-b3cea7b9fb2a",
+      "transport_sha256": "76e69bd4d8d3ea8dbe184cee771d50fc86d554b9c773ba02ab1efdb34bfc8401"
+    }
+  ],
+  "schema_version": 1
+}

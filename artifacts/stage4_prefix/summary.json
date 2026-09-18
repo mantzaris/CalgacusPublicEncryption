@@ -1,0 +1,208 @@
+{
+  "admission": {
+    "candidate_steps": 90,
+    "examined_max": 17,
+    "examined_min": 16,
+    "rejected_candidates_by_reason": {
+      "empty": 0,
+      "invalid_utf8": 0,
+      "noncanonical": 2,
+      "special_control": 0
+    }
+  },
+  "all_workers_clean_exit_full_offload_pid_gpu_lease_phase_and_provenance_verified": true,
+  "attempted_cases": 21,
+  "baseline_usage": {
+    "cases": 43,
+    "seconds": 1401.5295174820044,
+    "tokens": 23499
+  },
+  "control_cases": 18,
+  "control_totals": {
+    "A": {
+      "attempted": 6,
+      "candidate_exhaustions": 0,
+      "insufficient_tokens": 0,
+      "invalid_utf8": 0,
+      "prefix_matches": 0,
+      "retokenization_changes": 0,
+      "runtime_failures": 0,
+      "valid_nonmatches": 6
+    },
+    "B": {
+      "attempted": 6,
+      "candidate_exhaustions": 0,
+      "insufficient_tokens": 0,
+      "invalid_utf8": 0,
+      "prefix_matches": 0,
+      "retokenization_changes": 0,
+      "runtime_failures": 0,
+      "valid_nonmatches": 6
+    },
+    "C": {
+      "attempted": 6,
+      "candidate_exhaustions": 0,
+      "insufficient_tokens": 0,
+      "invalid_utf8": 0,
+      "prefix_matches": 0,
+      "retokenization_changes": 0,
+      "runtime_failures": 0,
+      "valid_nonmatches": 6
+    }
+  },
+  "controls_by_context": {
+    "0": {
+      "A": {
+        "attempted": 2,
+        "candidate_exhaustions": 0,
+        "insufficient_tokens": 0,
+        "invalid_utf8": 0,
+        "prefix_matches": 0,
+        "retokenization_changes": 0,
+        "runtime_failures": 0,
+        "valid_nonmatches": 2
+      },
+      "B": {
+        "attempted": 2,
+        "candidate_exhaustions": 0,
+        "insufficient_tokens": 0,
+        "invalid_utf8": 0,
+        "prefix_matches": 0,
+        "retokenization_changes": 0,
+        "runtime_failures": 0,
+        "valid_nonmatches": 2
+      },
+      "C": {
+        "attempted": 2,
+        "candidate_exhaustions": 0,
+        "insufficient_tokens": 0,
+        "invalid_utf8": 0,
+        "prefix_matches": 0,
+        "retokenization_changes": 0,
+        "runtime_failures": 0,
+        "valid_nonmatches": 2
+      }
+    },
+    "1": {
+      "A": {
+        "attempted": 2,
+        "candidate_exhaustions": 0,
+        "insufficient_tokens": 0,
+        "invalid_utf8": 0,
+        "prefix_matches": 0,
+        "retokenization_changes": 0,
+        "runtime_failures": 0,
+        "valid_nonmatches": 2
+      },
+      "B": {
+        "attempted": 2,
+        "candidate_exhaustions": 0,
+        "insufficient_tokens": 0,
+        "invalid_utf8": 0,
+        "prefix_matches": 0,
+        "retokenization_changes": 0,
+        "runtime_failures": 0,
+        "valid_nonmatches": 2
+      },
+      "C": {
+        "attempted": 2,
+        "candidate_exhaustions": 0,
+        "insufficient_tokens": 0,
+        "invalid_utf8": 0,
+        "prefix_matches": 0,
+        "retokenization_changes": 0,
+        "runtime_failures": 0,
+        "valid_nonmatches": 2
+      }
+    },
+    "2": {
+      "A": {
+        "attempted": 2,
+        "candidate_exhaustions": 0,
+        "insufficient_tokens": 0,
+        "invalid_utf8": 0,
+        "prefix_matches": 0,
+        "retokenization_changes": 0,
+        "runtime_failures": 0,
+        "valid_nonmatches": 2
+      },
+      "B": {
+        "attempted": 2,
+        "candidate_exhaustions": 0,
+        "insufficient_tokens": 0,
+        "invalid_utf8": 0,
+        "prefix_matches": 0,
+        "retokenization_changes": 0,
+        "runtime_failures": 0,
+        "valid_nonmatches": 2
+      },
+      "C": {
+        "attempted": 2,
+        "candidate_exhaustions": 0,
+        "insufficient_tokens": 0,
+        "invalid_utf8": 0,
+        "prefix_matches": 0,
+        "retokenization_changes": 0,
+        "runtime_failures": 0,
+        "valid_nonmatches": 2
+      }
+    }
+  },
+  "cumulative_usage": {
+    "cases": 64,
+    "seconds": 1732.6987573230003,
+    "tokens": 23849
+  },
+  "focused_allocation_checks_passed": 5,
+  "focused_new_tests_passed": 5,
+  "full_cpu_suite_rerun": false,
+  "gpu_tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "historical_artifacts_reanalyzed": 6,
+  "historical_prefix_matches": 6,
+  "incremental_usage": {
+    "cases": 21,
+    "seconds": 331.16923984099594,
+    "tokens": 350
+  },
+  "job_seconds": {
+    "max": 16.115671255998677,
+    "median": 15.994725388000006,
+    "min": 15.457986874998824
+  },
+  "load_and_verify_seconds_total": 305.02105862600365,
+  "new_authenticated_recoveries": 0,
+  "new_encrypted_transmissions": 0,
+  "operation_and_host_observation_seconds_total": 9.028946633003216,
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_evaluated_tokens": {
+    "public_prediction": 50,
+    "six_token_control": 300
+  },
+  "planned_cases": 21,
+  "prediction_cases": 3,
+  "remaining_project_headroom": {
+    "cases": 8,
+    "seconds": 5467.301242677,
+    "tokens": 1151
+  },
+  "schema_version": 1,
+  "scientific_limits": [
+    "no general false-positive/operational accuracy estimate",
+    "A probability is latent-token path only",
+    "B/C probabilities assume ideal specified draws; fixed seeds are deterministic",
+    "historical artifacts selected; unknown full stego and cover abort rates",
+    "no HPKE break, sender authentication, edit robustness or concealment proof",
+    "novelty and latest manuscript overlap unresolved"
+  ],
+  "selected_gpu": {
+    "driver": "590.48.01",
+    "index": "1",
+    "name": "NVIDIA RTX 5000 Ada Generation",
+    "uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "vram_mib": "32760"
+  },
+  "skipped_cases": [],
+  "split": "development_only_excluded_from_future_heldout",
+  "starting_commit": "fe3aeaddd7df1d4fb3b19c49ccc84251a519d39f",
+  "verdict": "bounded public-prefix diagnostic completed; predictable framing confirmed for this profile"
+}

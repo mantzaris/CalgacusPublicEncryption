@@ -1,0 +1,89 @@
+{
+  "attempt_id": "30c71db1-2e2d-4b10-a1dd-5bf84b50497c",
+  "authenticated": false,
+  "case_id": "prefix-c2-A-s2026092101",
+  "charged_tokens": 15,
+  "context_index": 2,
+  "cover_context": "A research note about measuring afternoon rainfall:",
+  "failure_category": null,
+  "family": "A",
+  "generated_tokens": 6,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "control",
+  "observer": {
+    "observed_prefix_ids": [
+      3639,
+      596,
+      279,
+      1888,
+      1648,
+      1980
+    ],
+    "prefix_match": false,
+    "status": "valid_nonmatch"
+  },
+  "pid": 382257,
+  "prediction_cache_key": "0793e69aaf34b132b84c006fe1f9c015c6c998e3907b36fda55cd11b20fc05c6",
+  "prediction_path": "artifacts/stage4_prefix/attempts/e27e7e56-c970-41c0-a98c-b3cea7b9fb2a/public_prediction.json",
+  "prediction_sha256": "159f411ab9100c6ad7fcefed4d8a73b168dc9427ca11245ca9097fa5352fdf34",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "public_context_token_ids": {
+    "A research note about measuring afternoon rainfall:": [
+      128000,
+      32,
+      3495,
+      5296,
+      922,
+      30090,
+      13658,
+      53958,
+      25
+    ]
+  },
+  "retained_generated_prefix_hex": "20576861742773207468652062657374207761793f0a0a",
+  "retokenized_ids": [
+    3639,
+    596,
+    279,
+    1888,
+    1648,
+    1980
+  ],
+  "sampling_seed": 2026092101,
+  "schema_version": 1,
+  "serialization_outcome": "canonical",
+  "snippet_bytes_hex": "20576861742773207468652062657374207761793f0a0a",
+  "snippet_utf8": " What's the best way?\n\n",
+  "split": "development_only_excluded_from_future_heldout",
+  "success": true,
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "text_retokenizes": true,
+  "timings": {
+    "load_and_verify_seconds": 14.450302115999875,
+    "operation_and_host_observation_seconds": 0.34852605699961714
+  },
+  "tokens_by_phase": {
+    "six_token_control": 15
+  },
+  "trace": {
+    "advanced_ids": [
+      3639,
+      596,
+      279,
+      1888,
+      1648,
+      1980
+    ],
+    "candidate_steps": [],
+    "direction": "control_A",
+    "symbols": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "worker_seconds": 14.85926505399948
+}

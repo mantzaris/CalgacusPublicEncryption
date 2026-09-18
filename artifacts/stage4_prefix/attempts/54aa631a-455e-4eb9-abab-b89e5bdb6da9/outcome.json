@@ -1,0 +1,180 @@
+{
+  "attempt_id": "54aa631a-455e-4eb9-abab-b89e5bdb6da9",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "case_id": "prefix-c0-C-s2026092101",
+  "charged_tokens": 17,
+  "context_index": 0,
+  "cover_context": "A field note about trees in the public garden:",
+  "cumulative_budget": {
+    "cases": 51,
+    "seconds": 1527.6144526990015,
+    "tokens": 23634
+  },
+  "evidence_dir": "artifacts/stage4_prefix/attempts/54aa631a-455e-4eb9-abab-b89e5bdb6da9",
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": "C",
+  "generated_tokens": 6,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "job_elapsed_seconds": 16.023486796000725,
+  "kind": "control",
+  "lease_verified": true,
+  "observer": {
+    "observed_prefix_ids": [
+      279,
+      3674,
+      5536,
+      627,
+      16328,
+      1115
+    ],
+    "prefix_match": false,
+    "status": "valid_nonmatch"
+  },
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 378767,
+  "prediction_cache_key": "a32f636fff1af0690d80d5f1e705df0451c1c51a0a0d36a9c14b45e2eba45ab1",
+  "prediction_path": "artifacts/stage4_prefix/attempts/67be93ae-7957-4e6c-bf3d-8b045f66a093/public_prediction.json",
+  "prediction_sha256": "353af053df3ecdefa6645ed842bf7886498ad200cd71a2c4e0e2a790f0532026",
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A field note about trees in the public garden:": [
+      128000,
+      32,
+      2115,
+      5296,
+      922,
+      12690,
+      304,
+      279,
+      586,
+      13863,
+      25
+    ]
+  },
+  "retained_generated_prefix_hex": "2074686520736f6369616c20696d706163742e0a41627374726163742054686973",
+  "retokenized_ids": [
+    279,
+    3674,
+    5536,
+    627,
+    16328,
+    1115
+  ],
+  "sampling_seed": 2026092101,
+  "schema_version": 1,
+  "serialization_outcome": "canonical",
+  "snippet_bytes_hex": "2074686520736f6369616c20696d706163742e0a41627374726163742054686973",
+  "snippet_utf8": " the social impact.\nAbstract This",
+  "split": "development_only_excluded_from_future_heldout",
+  "success": true,
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "text_retokenizes": true,
+  "timings": {
+    "load_and_verify_seconds": 14.750590953000938,
+    "operation_and_host_observation_seconds": 0.43662370199854195
+  },
+  "tokens_by_phase": {
+    "six_token_control": 17
+  },
+  "trace": {
+    "advanced_ids": [
+      279,
+      3674,
+      5536,
+      627,
+      16328,
+      1115
+    ],
+    "candidate_steps": [
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "d4f89bb50287532491e741842842664cb310ad039c96357aa930ef92101eb34f",
+        "position": 0,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "87e38f0bf6c449cfb48cd442a6a8686d4a1f117590d6d355d82014be9d58d2f1",
+        "position": 1,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "55c02fc286a3e051b6ce09fc6d1bac29583f1d8d9654bf52f7604908e4b0a5d5",
+        "position": 2,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "016eaa01dd7112203cd512753459aaa9958ec1566cc066c37d38bf31297124d4",
+        "position": 3,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "32ae5f548b73902220306f1dce903c108ee2a338c24dac2b0ee05d2139ecbe91",
+        "position": 4,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "389483d9e9c55dc3d787d93277712f9f0ac1e154aed5eabc2d0d20b7c18cb69a",
+        "position": 5,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      }
+    ],
+    "direction": "control_C",
+    "symbols": [
+      3,
+      10,
+      14,
+      7,
+      6,
+      6
+    ]
+  },
+  "worker_seconds": 15.248763642000995
+}

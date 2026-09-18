@@ -1,0 +1,483 @@
+{
+  "attempt_id": "67be93ae-7957-4e6c-bf3d-8b045f66a093",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "case_id": "prefix-predict-c0",
+  "charged_tokens": 17,
+  "context_index": 0,
+  "cover_context": "A field note about trees in the public garden:",
+  "cumulative_budget": {
+    "cases": 44,
+    "seconds": 1417.645188738003,
+    "tokens": 23516
+  },
+  "evidence_dir": "artifacts/stage4_prefix/attempts/67be93ae-7957-4e6c-bf3d-8b045f66a093",
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "historical_reanalysis": [
+    {
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          578,
+          12690,
+          304,
+          279,
+          586,
+          13863
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/1514528d-2e90-4288-ae56-172086110902/carrier.txt",
+      "transport_sha256": "1446ded629b0e34e2a74a0cf588f7536cc7a4a3d6d922ec6ec9dffb76c9c8822"
+    },
+    {
+      "interpretation": "historical artifact reanalysis, not a new transmission or recovery",
+      "observer": {
+        "observed_prefix_ids": [
+          578,
+          12690,
+          304,
+          279,
+          586,
+          13863
+        ],
+        "prefix_match": true,
+        "status": "match"
+      },
+      "path": "artifacts/stage3_transport/attempts/f213c595-a301-4e4a-a3f3-fdec26de6c2b/carrier.txt",
+      "transport_sha256": "2ab40df4e6cc20c35d271a326512ad9ff2fa8f7e1e7a04d231ca6f14e2ecdc20"
+    }
+  ],
+  "job_elapsed_seconds": 16.115671255998677,
+  "kind": "prediction",
+  "lease_verified": true,
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 375466,
+  "prediction": {
+    "A_log_probability_latent_sequence": -4.864159910195879,
+    "A_probability_latent_sequence": 0.0077183095417746265,
+    "B_log_probability_prefix_match": -3.1763106350126202,
+    "B_probability_prefix_match": 0.041739363149314535,
+    "C_log_probability_prefix_match": -16.635532333438686,
+    "C_probability_prefix_match": 5.960464477539063e-08,
+    "cache_key": "a32f636fff1af0690d80d5f1e705df0451c1c51a0a0d36a9c14b45e2eba45ab1",
+    "cover_context": "A field note about trees in the public garden:",
+    "observer_id": "public_zero6_v1",
+    "prefix_utf8": " The trees in the public garden",
+    "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+    "provenance": {
+      "attempt_id": "67be93ae-7957-4e6c-bf3d-8b045f66a093",
+      "computation": "six independent public zero-symbol selections; computed before opening historical carrier files",
+      "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+      "pid": 375466,
+      "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0"
+    },
+    "provenance_rule": "public candidate selection, symbol zero six times; no saved carriers or encoder data used",
+    "schema_version": 1,
+    "scores": [
+      {
+        "A_log_probability": -2.6739508861655454,
+        "A_probability_latent_token": 0.06897915743568456,
+        "B_log_probability": -1.8269704245359732,
+        "B_probability_admissible_zero": 0.16090028969231604,
+        "admissible_ids": [
+          578,
+          362,
+          264,
+          279,
+          330,
+          220,
+          358,
+          1054,
+          24654,
+          2684,
+          763,
+          1115,
+          1952,
+          31943,
+          1556,
+          459
+        ],
+        "admissible_logits": [
+          11.626758575439453,
+          11.619804382324219,
+          11.239516258239746,
+          11.174345016479492,
+          10.973569869995117,
+          10.930536270141602,
+          10.291253089904785,
+          10.255353927612305,
+          10.192100524902344,
+          10.00407600402832,
+          9.935609817504883,
+          9.80947494506836,
+          9.790411949157715,
+          9.719574928283691,
+          9.717445373535156,
+          9.60859489440918
+        ],
+        "position": 0,
+        "token_id": 578
+      },
+      {
+        "A_log_probability": -1.8439707591799022,
+        "A_probability_latent_token": 0.15818805073024828,
+        "B_log_probability": -1.0528829325993576,
+        "B_probability_admissible_zero": 0.34893035498890423,
+        "admissible_ids": [
+          12690,
+          586,
+          13863,
+          3142,
+          6246,
+          5021,
+          13444,
+          1176,
+          12939,
+          3363,
+          7160,
+          11141,
+          20057,
+          2768,
+          1455,
+          9546
+        ],
+        "admissible_logits": [
+          12.408872604370117,
+          12.309059143066406,
+          10.766075134277344,
+          10.350174903869629,
+          10.224141120910645,
+          10.035294532775879,
+          9.857120513916016,
+          9.493951797485352,
+          9.368431091308594,
+          9.255355834960938,
+          9.2405424118042,
+          9.187846183776855,
+          9.120527267456055,
+          8.98118782043457,
+          8.925901412963867,
+          8.869516372680664
+        ],
+        "position": 1,
+        "token_id": 12690
+      },
+      {
+        "A_log_probability": -0.2781667327416327,
+        "A_probability_latent_token": 0.7571705658648225,
+        "B_log_probability": -0.2317567638917425,
+        "B_probability_admissible_zero": 0.7931390198945313,
+        "admissible_ids": [
+          304,
+          527,
+          430,
+          1618,
+          11,
+          1051,
+          617,
+          39441,
+          315,
+          2559,
+          520,
+          3493,
+          584,
+          2212,
+          11509,
+          14932
+        ],
+        "admissible_logits": [
+          20.255346298217773,
+          17.836132049560547,
+          17.044214248657227,
+          16.852230072021484,
+          16.038013458251953,
+          16.013628005981445,
+          15.989282608032227,
+          15.57459831237793,
+          15.459311485290527,
+          15.443561553955078,
+          15.323230743408203,
+          15.064628601074219,
+          15.021138191223145,
+          14.878599166870117,
+          14.604497909545898,
+          14.500667572021484
+        ],
+        "position": 2,
+        "token_id": 304
+      },
+      {
+        "A_log_probability": -0.05171273667787459,
+        "A_probability_latent_token": 0.949601613380131,
+        "B_log_probability": -0.051074306157141085,
+        "B_probability_admissible_zero": 0.9502080615995783,
+        "admissible_ids": [
+          279,
+          420,
+          1057,
+          586,
+          4156,
+          856,
+          701,
+          9522,
+          3488,
+          264,
+          3142,
+          198,
+          1521,
+          510,
+          12515,
+          3432
+        ],
+        "admissible_logits": [
+          23.532958984375,
+          20.108173370361328,
+          19.413333892822266,
+          17.525527954101562,
+          15.866934776306152,
+          14.982043266296387,
+          14.616890907287598,
+          14.386923789978027,
+          13.640552520751953,
+          13.26698112487793,
+          13.225496292114258,
+          13.175695419311523,
+          12.959943771362305,
+          12.837833404541016,
+          12.758615493774414,
+          12.154718399047852
+        ],
+        "position": 3,
+        "token_id": 279
+      },
+      {
+        "A_log_probability": -0.0148931088104234,
+        "A_probability_latent_token": 0.9852172450181632,
+        "B_log_probability": -0.012229621589711265,
+        "B_probability_admissible_zero": 0.9878448563110521,
+        "admissible_ids": [
+          586,
+          13863,
+          6246,
+          3142,
+          3363,
+          9522,
+          36536,
+          2678,
+          19558,
+          198,
+          510,
+          4219,
+          1925,
+          6424,
+          2254,
+          6814
+        ],
+        "admissible_logits": [
+          21.56448745727539,
+          16.593053817749023,
+          15.91835880279541,
+          14.149262428283691,
+          13.733680725097656,
+          12.536823272705078,
+          12.499547958374023,
+          12.493867874145508,
+          12.269814491271973,
+          11.955754280090332,
+          11.907186508178711,
+          11.889185905456543,
+          11.771913528442383,
+          11.733089447021484,
+          11.637372016906738,
+          11.579296112060547
+        ],
+        "position": 4,
+        "token_id": 586
+      },
+      {
+        "A_log_probability": -0.0014656866205001854,
+        "A_probability_latent_token": 0.998535386973553,
+        "B_log_probability": -0.001396586238694597,
+        "B_probability_admissible_zero": 0.9986043885340289,
+        "admissible_ids": [
+          13863,
+          6246,
+          36536,
+          9522,
+          9518,
+          198,
+          19558,
+          527,
+          4194,
+          60299,
+          12515,
+          1131,
+          6875,
+          13,
+          22641,
+          6307
+        ],
+        "admissible_logits": [
+          26.205350875854492,
+          18.942440032958984,
+          18.622602462768555,
+          16.06905746459961,
+          15.580345153808594,
+          15.568668365478516,
+          15.442081451416016,
+          15.302473068237305,
+          14.98310661315918,
+          14.95843505859375,
+          14.36306381225586,
+          14.338323593139648,
+          14.007925033569336,
+          14.005693435668945,
+          13.913429260253906,
+          13.902344703674316
+        ],
+        "position": 5,
+        "token_id": 13863
+      }
+    ],
+    "token_ids": [
+      578,
+      12690,
+      304,
+      279,
+      586,
+      13863
+    ]
+  },
+  "profile_sha256": "b3a106424d9e0e8b1c6d19ec7061d13a07a9a0871d0a92d5bb3dd1296b6156a6",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A field note about trees in the public garden:": [
+      128000,
+      32,
+      2115,
+      5296,
+      922,
+      12690,
+      304,
+      279,
+      586,
+      13863,
+      25
+    ]
+  },
+  "retained_generated_prefix_hex": "2054686520747265657320696e20746865207075626c69632067617264656e",
+  "schema_version": 1,
+  "split": "development_only_excluded_from_future_heldout",
+  "success": true,
+  "tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "timings": {
+    "load_and_verify_seconds": 14.628205074001016,
+    "operation_and_host_observation_seconds": 0.5221115510012169
+  },
+  "tokens_by_phase": {
+    "public_prediction": 17
+  },
+  "trace": {
+    "advanced_ids": [
+      578,
+      12690,
+      304,
+      279,
+      586,
+      13863
+    ],
+    "candidate_steps": [
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "d4f89bb50287532491e741842842664cb310ad039c96357aa930ef92101eb34f",
+        "position": 0,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "ae1103a1bf483d4e677fc645f26440c77bacfe3dd2c5cd2bac2c0758cd62e969",
+        "position": 1,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "4e423b0022fbcd6bdb66d8e8ebdd9e7ce3964204c06c1fe57662fca8a261ac3b",
+        "position": 2,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "4075b601e03d8df9fbef773007b35b5b740c1958908a51f86ab8501ef60137c1",
+        "position": 3,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "fd8898244762b4a3c5cde46e1f816f511df07e16031627c3729080404daa76c5",
+        "position": 4,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "7171f1a822493f99af6e0b7aec91746111b102bed2edf29ba3620a9a6bc997aa",
+        "position": 5,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      }
+    ],
+    "direction": "public_prediction",
+    "symbols": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "worker_seconds": 15.238725511000666
+}
