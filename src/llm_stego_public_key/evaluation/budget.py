@@ -16,6 +16,7 @@ from pathlib import Path
 from ..errors import BudgetError
 
 LIMITS = {"seconds": 7200.0, "tokens": 25000, "cases": 72}
+STAGE6_AUTHORIZATION_SHA256 = "a79e6ebb431cc683d0a847c3a20936d714a16f0a9abad541fc7092d31772c2f9"
 MAX_LEDGER_BYTES = 2 * 1024 * 1024
 
 
@@ -38,10 +39,18 @@ def amounts(values):
 
 
 class BudgetLedger:
-    def __init__(self, path: Path, limits=None, *, create=False, anchor=None):
+    def __init__(self, path: Path, limits=None, *, create=False, anchor=None, authorization=None):
         self.path = Path(path)
+        self.authorization = authorization
+        if authorization is not None:
+            from ..profile import canonical_json
+            if (create or limits is not None or anchor is not None
+                or hashlib.sha256(canonical_json(authorization)).hexdigest() != STAGE6_AUTHORIZATION_SHA256):
+                raise BudgetError("Only the explicit frozen Stage 6 extension is authorized")
+            limits = authorization["lifetime_limits"]
+            anchor = authorization["previous_checkpoint"]
         self._limits = dict(amounts(dict(LIMITS if limits is None else limits)))
-        if any(self._limits[k] > LIMITS[k] for k in LIMITS):
+        if authorization is None and any(self._limits[k] > LIMITS[k] for k in LIMITS):
             raise BudgetError("Cannot raise project ceilings")
         self.checkpoint = self.path.with_suffix(".checkpoint.json")
         self.anchor = anchor
@@ -58,6 +67,10 @@ class BudgetLedger:
                     os.fsync(handle.fileno())
                 self._checkpoint(b"")
             self.usage()
+            if authorization is not None:
+                # Preserve every historical ledger byte; only advance the durable checkpoint.
+                # Old launchers retain their original limits and now fail closed.
+                self._checkpoint(self._raw())
         except Exception as exc:
             self.lock.close()
             if isinstance(exc, BlockingIOError):
@@ -101,7 +114,8 @@ class BudgetLedger:
             checkpoints = []
             if self.checkpoint.exists():
                 state = json.loads(self.checkpoint.read_text())
-                if state["schema_version"] != 1 or state["limits"] != self._limits:
+                historical_extension = self.authorization is not None and state == self.authorization["previous_checkpoint"]
+                if state["schema_version"] != 1 or (state["limits"] != self._limits and not historical_extension):
                     raise BudgetError("Accounting checkpoint/limits changed")
                 checkpoints.append(state)
             if self.anchor is not None:
@@ -165,6 +179,8 @@ class BudgetLedger:
         requested = amounts({"seconds": seconds, "tokens": tokens, "cases": cases})
         if set(metadata) & {"schema_version", "event", "attempt_id", "time_unix", "reserved"}:
             raise BudgetError("Metadata cannot overwrite accounting fields")
+        if self.authorization is not None and metadata.get("allocation_id") != self.authorization["allocation_id"]:
+            raise BudgetError("New reservations must identify the authorized Stage 6 allocation")
         usage = self.usage()
         if any(usage[k] + requested[k] > self._limits[k] for k in LIMITS) or any(
             e["event"] == "overrun" for e in self.events()

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "starting_commit": "f51f38c22367aeae4dd728e37f4c092435ad0e14",
+  "starting_worktree": "clean",
+  "inputs": {
+    "AGENTS.md": "1ec5154d30154b012620f9c32353719716204eff8ce31de8113f530a75176dd4",
+    "ICISSP_2027_Public_Key_LLM_Steganography_Research_Plan.md": "6904a3d59eac00543e798afd41cf90e7c056efab15266e5edef7a2126f940be5",
+    "STAGE1_FOUNDATIONS_REPORT.md": "671f7bea4ff03fa33f690a988589f5c1444e82d263d74e0d0e79e7d1ef6d25f4",
+    "STAGE1_REVIEW_REPORT.md": "07a35c80803cc034ee0853e1e257d397ab4cc845cbefafc4043101cb9a73434b",
+    "STAGE2_PILOT_REPORT.md": "43433063430e2f713aab9cc69d5c52e1718dd2e67af435aa7d283b2db3a45f3b",
+    "STAGE3_TRANSPORT_REPORT.md": "a4702d4deecee9fbac268899db7d4ab8933dd4aa86dfd48b5ba15d5e89671906",
+    "STAGE4_PREFIX_REPORT.md": "176ebe2ffbea0e8475ed1ddf911484ea77edc8fe6575fe983a2873e7a0baa483",
+    "STAGE5_CONTRIBUTION_DECISION.md": "0c6962d022432c4302b47995434b353a369d68ddff0a67622cf910ad6ccd80a3",
+    "docs/protocol.md": "74e4c3b13d051e987e7c84a548950eb5e3cde31450748c66914473457d83902d",
+    "docs/threat_model.md": "ec3b8ca5a3acdce44981252e6e8c2362a18b67e49657f2f098ec78d288854a86",
+    "docs/related_work_sources.md": "d90004931f1ee43d389b29a23266e910ec2af59c43c8901c5c45348ecf747bdc",
+    "requirements-cpu.lock": "e2763b3675b354e9615162a6690a12146bbdf0c2eec69a0b31b186700de72c73",
+    "configs/local_runtime.json": "bd7d1dd4567a341b5faa16f06766e703f23eb9031daa60e5bc345f6520d7e775"
+  },
+  "commands": [
+    "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -p test_stage6.py -v",
+    ".venv/bin/python scripts/prepare_stage6.py",
+    ".venv/bin/python scripts/run_stage6.py --allocation-check",
+    ".venv/bin/python scripts/run_stage6.py"
+  ],
+  "focused_tests_passed": 11,
+  "full_cpu_suite_run": false,
+  "prior_crypto_validation": "Unchanged HPKE implementation/dependencies; historical results retain their original revisions",
+  "host_only_prelaunch_note": "An allocation check invoked before preparation completed failed on missing allocation.json; retained separately; no inference or ledger charge occurred"
+}

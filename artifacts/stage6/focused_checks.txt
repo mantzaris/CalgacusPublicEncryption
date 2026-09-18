@@ -1,0 +1,16 @@
+test_exact_additional_boundary_and_no_implicit_increase (test_stage6.AllocationContracts) ... ok
+test_extension_prefix_lock_and_restart (test_stage6.AllocationContracts) ... ok
+test_rollback_detected (test_stage6.AllocationContracts) ... ok
+test_empty_max_and_profile_binding (test_stage6.FramingContracts) ... ok
+test_even_truncation_append_authentication_and_odd_rejection (test_stage6.FramingContracts) ... ok
+test_independent_nibble_inverse_and_bounds (test_stage6.FramingContracts) ... ok
+test_invalid_utf8_noncanonical_and_rank (test_stage6.FramingContracts) ... ok
+test_unchanged_candidates_and_registered_profiles (test_stage6.FramingContracts) ... ok
+test_independent_representation_and_frame_failures (test_stage6.ObserverContracts) ... ok
+test_public_inputs_independent_score_and_frame (test_stage6.ObserverContracts) ... ok
+test_sampling_policies_not_changed (test_stage6.ObserverContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.734s
+
+OK

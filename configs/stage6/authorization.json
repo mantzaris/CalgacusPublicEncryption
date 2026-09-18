@@ -1,0 +1,32 @@
+{
+  "additional_limits": {
+    "cases": 160,
+    "seconds": 14400,
+    "tokens": 200000
+  },
+  "allocation_id": "stage6_framing_2026_09_18",
+  "authorization": "User explicitly authorized an additional allocation on 2026-09-18; unused earlier allowances are not added",
+  "baseline_usage": {
+    "cases": 64,
+    "seconds": 1732.6987573230003,
+    "tokens": 23849
+  },
+  "ledger_path": "artifacts/project_budget.jsonl",
+  "lifetime_limits": {
+    "cases": 224,
+    "seconds": 16132.698757323,
+    "tokens": 223849
+  },
+  "previous_checkpoint": {
+    "bytes": 32183,
+    "limits": {
+      "cases": 72,
+      "seconds": 7200.0,
+      "tokens": 25000
+    },
+    "schema_version": 1,
+    "sha256": "9cf35c86ee1aa96868f244bb4703835da4e7b866d192e0a135e265c08a45f304"
+  },
+  "schema_version": 1,
+  "starting_commit": "f51f38c22367aeae4dd728e37f4c092435ad0e14"
+}
