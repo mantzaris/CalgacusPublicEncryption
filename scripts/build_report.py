@@ -181,7 +181,7 @@ def main():
         "",
         "Repository: https://github.com/mantzaris/CalgacusPublicEncryption",
         "",
-        "Working branch: `stage1-foundations`. Starting commit: `7d5b2dce89b8c7463f04b3b4c7980b6b1e19dddb`.",
+        "Delivery branch: `main`. Starting commit: `7d5b2dce89b8c7463f04b3b4c7980b6b1e19dddb`.",
         "",
         f"Final tested inference/crypto code commit: `{codes[-1]}`. Earlier retained test revision: `{codes[0]}`. "
         "The first three model cases used the earlier revision. The later revision adds independent worker wall-time and parent-death guards; it leaves the model/profile/codec unchanged. "

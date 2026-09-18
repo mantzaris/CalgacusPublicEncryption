@@ -6,7 +6,7 @@ This package is ready for external inspection; Stage 2 is not authorized by this
 
 Repository: https://github.com/mantzaris/CalgacusPublicEncryption
 
-Working branch: `stage1-foundations`. Starting commit: `7d5b2dce89b8c7463f04b3b4c7980b6b1e19dddb`.
+Delivery branch: `main`. Starting commit: `7d5b2dce89b8c7463f04b3b4c7980b6b1e19dddb`.
 
 Final tested inference/crypto code commit: `d07f5a7ee6025e7e65ac236c3dd08e2b5981beec`. Earlier retained test revision: `c21265e9a9b31d8ee965808ceca8ef8b58cca092`. The first three model cases used the earlier revision. The later revision adds independent worker wall-time and parent-death guards; it leaves the model/profile/codec unchanged. The delivery commit additionally contains report tooling, documentation and evidence. Every model attempt records its exact tested revision. Use `git rev-parse HEAD` or the pushed branch for the final evidence commit; it is distinct from the tested code revision.
 
