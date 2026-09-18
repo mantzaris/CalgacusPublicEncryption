@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Internal bounded worker. Launch ONLY through run_smoke.py's global governor."""
+"""Internal bounded worker. Launch ONLY through run_pilot.py and its shared project governor."""
 
 import ast
 import copy
@@ -18,7 +18,7 @@ from llm_stego_public_key.evaluation.worker_lease import verify_worker_lease
 
 # Arm the inherited controller deadline before importing NumPy, crypto or a backend.
 _LEASED_JOB = (
-    verify_worker_lease(Path(sys.argv[1]), ROOT / "artifacts/stage1/budget.jsonl")
+    verify_worker_lease(Path(sys.argv[1]), ROOT / "artifacts/project_budget.jsonl")
     if __name__ == "__main__"
     else None
 )
@@ -67,6 +67,7 @@ def main():
         "pid": os.getpid(),
         "gpu_uuid": runtime["gpu_uuid"],
         "success": False,
+        "authenticated": False,
         "timings": {},
         "failure_category": None,
     }
@@ -163,6 +164,7 @@ def main():
         elif job["kind"] == "replay":
             # Deliberately no source payload, expected digest, ranks, or token IDs here.
             wire = (ROOT / job["carrier_path"]).read_bytes()
+            record["transport_sha256"] = sha(wire)
             sk = bytes.fromhex(job["TEST_ONLY_private_key_hex"])
             meter.phase = "fresh_receiver"
             t = time.monotonic()
@@ -177,6 +179,9 @@ def main():
                 )
             finally:
                 record["receiver_trace"] = copy.deepcopy(codec.trace)
+                if "reconstructed_ids" in codec.trace:
+                    candidate = model.detokenize(codec.trace["reconstructed_ids"])
+                    record["extracted_source_bytes_hex"] = candidate.hex()
                 record["timings"]["receiver_seconds"] = time.monotonic() - t
         elif job["kind"] == "control":
             meter.phase = "ordinary_control"

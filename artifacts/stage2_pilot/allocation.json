@@ -1,0 +1,177 @@
+{
+  "baseline_usage": {
+    "cases": 21,
+    "seconds": 632.4426544000003,
+    "tokens": 10230
+  },
+  "control_policy": "first produced new carrier in same context, else 192 tokens",
+  "cpu_rerun": "waived by explicit user authorization; historical 109 CPU results reused, not credited to this extension",
+  "crypto_randomness": "OS/library fresh encapsulation and message IDs",
+  "global_limits": {
+    "cases": 72,
+    "seconds": 7200,
+    "tokens": 25000
+  },
+  "pilot_limits": {
+    "cases": 12,
+    "seconds": 1200,
+    "tokens": 8000
+  },
+  "profile_sha256": "bd8a59d736843d78984c5d093dcee72cec50747629ce79a0685fe7652f4989b3",
+  "replay_policy": "first successful new carrier per new key",
+  "retry_policy": "none",
+  "schema_version": 1,
+  "slots": [
+    {
+      "case_id": "pilot-historical-0",
+      "context_index": 0,
+      "expected_rejection": false,
+      "family": "historical_replay",
+      "kind": "replay",
+      "reservation": [
+        60,
+        600
+      ],
+      "source_attempt_id": "bcb46cde-561b-48cb-ab40-73efd8b5dff4"
+    },
+    {
+      "case_id": "pilot-historical-1",
+      "context_index": 1,
+      "expected_rejection": false,
+      "family": "historical_replay",
+      "kind": "replay",
+      "reservation": [
+        60,
+        600
+      ],
+      "source_attempt_id": "e5f17a95-4bba-4511-bd77-d318cb600038"
+    },
+    {
+      "case_id": "pilot-historical-2",
+      "context_index": 2,
+      "expected_rejection": false,
+      "family": "historical_replay",
+      "kind": "replay",
+      "reservation": [
+        60,
+        600
+      ],
+      "source_attempt_id": "28297d91-c3a6-4f08-b65f-4ad095921c28"
+    },
+    {
+      "case_id": "pilot-historical-3",
+      "context_index": 2,
+      "expected_rejection": true,
+      "family": "historical_replay",
+      "kind": "replay",
+      "reservation": [
+        60,
+        600
+      ],
+      "source_attempt_id": "12de85ea-3e3e-4a4a-8997-27e551978366"
+    },
+    {
+      "case_id": "pilot-k0-n32",
+      "context_index": 0,
+      "family": "fresh_encrypted",
+      "key_id": "pilot-0",
+      "kind": "encrypted",
+      "payload_bytes": 32,
+      "payload_hex": "c7ced5dce3eaf1f8ff060d141b222930373e454c535a61686f767d848b9299a0",
+      "public_observer": true,
+      "reservation": [
+        120,
+        2000
+      ]
+    },
+    {
+      "case_id": "pilot-k0-n128",
+      "context_index": 1,
+      "family": "fresh_encrypted",
+      "key_id": "pilot-0",
+      "kind": "encrypted",
+      "payload_bytes": 128,
+      "payload_hex": "272e353c434a51585f666d747b828990979ea5acb3bac1c8cfd6dde4ebf2f900070e151c232a31383f464d545b626970777e858c939aa1a8afb6bdc4cbd2d9e0e7eef5fc030a11181f262d343b424950575e656c737a81888f969da4abb2b9c0c7ced5dce3eaf1f8ff060d141b222930373e454c535a61686f767d848b9299a0",
+      "public_observer": true,
+      "reservation": [
+        120,
+        2000
+      ]
+    },
+    {
+      "case_id": "pilot-k1-n32",
+      "context_index": 2,
+      "family": "fresh_encrypted",
+      "key_id": "pilot-1",
+      "kind": "encrypted",
+      "payload_bytes": 32,
+      "payload_hex": "e4ebf2f900070e151c232a31383f464d545b626970777e858c939aa1a8afb6bd",
+      "public_observer": true,
+      "reservation": [
+        120,
+        2000
+      ]
+    },
+    {
+      "case_id": "pilot-k1-n128",
+      "context_index": 0,
+      "family": "fresh_encrypted",
+      "key_id": "pilot-1",
+      "kind": "encrypted",
+      "payload_bytes": 128,
+      "payload_hex": "444b525960676e757c838a91989fa6adb4bbc2c9d0d7dee5ecf3fa01080f161d242b323940474e555c636a71787f868d949ba2a9b0b7bec5ccd3dae1e8eff6fd040b121920272e353c434a51585f666d747b828990979ea5acb3bac1c8cfd6dde4ebf2f900070e151c232a31383f464d545b626970777e858c939aa1a8afb6bd",
+      "public_observer": true,
+      "reservation": [
+        120,
+        2000
+      ]
+    },
+    {
+      "case_id": "pilot-control-0",
+      "context_index": 0,
+      "fallback_tokens": 192,
+      "family": "control",
+      "kind": "control",
+      "reservation": [
+        90,
+        1200
+      ],
+      "sampling_seed": 2026091901
+    },
+    {
+      "case_id": "pilot-control-1",
+      "context_index": 1,
+      "fallback_tokens": 192,
+      "family": "control",
+      "kind": "control",
+      "reservation": [
+        90,
+        1200
+      ],
+      "sampling_seed": 2026091902
+    },
+    {
+      "case_id": "pilot-fresh-replay-0",
+      "family": "fresh_replay",
+      "key_id": "pilot-0",
+      "kind": "replay",
+      "reservation": [
+        60,
+        750
+      ]
+    },
+    {
+      "case_id": "pilot-fresh-replay-1",
+      "family": "fresh_replay",
+      "key_id": "pilot-1",
+      "kind": "replay",
+      "reservation": [
+        60,
+        750
+      ]
+    }
+  ],
+  "split": "development_only_excluded_from_future_heldout",
+  "starting_commit": "24fd553e6b79fcfdbe7dc6b6abca71cac440ea8a",
+  "starting_working_tree": "clean before implementation"
+}

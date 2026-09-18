@@ -1,0 +1,17 @@
+{
+  "generation": "two independent OS-random library X25519 key pairs",
+  "keys": [
+    {
+      "TEST_ONLY_private_key_hex": "8087a0482d50faa53c17e7089acee0ada678d983e4e684ef93cd6bd19d9cd351",
+      "key_id": "pilot-0",
+      "public_key_hex": "b9e708b580bce02d9c3899cafa14089ad467eac1d8f0403c1f573d229d12ff22"
+    },
+    {
+      "TEST_ONLY_private_key_hex": "b039324da9c521d09995c5677cec3b31d26d5761192f8faf840af599dad9d858",
+      "key_id": "pilot-1",
+      "public_key_hex": "9f368b1c091b54d522a8edbeb11a0fcca48e614bafa8dd2a846ca1be6c232d6e"
+    }
+  ],
+  "schema_version": 1,
+  "warning": "PUBLIC INSECURE DEVELOPMENT TEST MATERIAL; never use for real data."
+}

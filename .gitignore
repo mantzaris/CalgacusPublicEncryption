@@ -11,3 +11,6 @@ dist/
 *.sqlite*
 .stage1-budget.lock
 artifacts/stage1/budget.lock
+
+artifacts/project_budget.lock
+artifacts/project_budget.checkpoint.json.tmp

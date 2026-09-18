@@ -94,18 +94,21 @@ def observed_gpu(pid, gpu_uuid):
     return None
 
 
-def execute(ledger, job, runtime, code):
+def execute(ledger, job, runtime, code, *, artifact_root=None, reservation=None, replay_source=None, expected_rejection=False):
     if revision() != code:
         raise RuntimeError("Source revision changed while the controller was running")
+    artifact_root = ART if artifact_root is None else artifact_root
     remaining = {k: ledger.limits[k] - v for k, v in ledger.usage().items()}
     seconds = min(240.0, remaining["seconds"])
     tokens = min(1500, remaining["tokens"])
+    if reservation is not None:
+        seconds, tokens = reservation  # Full frozen reservation; never shrink to fit.
     if seconds < 30 or tokens < 64:
         raise BudgetError("Insufficient remaining reservation for another bounded job")
     aid = ledger.reserve(
         seconds, tokens, case_id=job["case_id"], kind=job["kind"], tested_code_commit=code
     )
-    directory = ART / "attempts" / aid
+    directory = artifact_root / "attempts" / aid
     directory.mkdir(parents=True)
     job = dict(
         job,
@@ -247,17 +250,42 @@ def execute(ledger, job, runtime, code):
         record["success"] = False
         record["failure_category"] = "timeout_resource_failure"
         record["gpu_evidence_error"] = "No PID-matched GPU sample or incomplete full-offload log"
+    claim_path = directory / "worker_claim.json"
+    claim = json.loads(claim_path.read_text()) if claim_path.exists() else {}
+    record["lease_verified"] = (claim.get("attempt_id") == aid and claim.get("pid") == proc.pid
+                                and claim.get("deadline_monotonic") == deadline)
+    record["phase_meter_verified"] = sum(record.get("tokens_by_phase", {}).values()) == record["charged_tokens"]
+    if not record["lease_verified"] or not record["phase_meter_verified"]:
+        record["success"] = False
+        record["failure_category"] = "timeout_resource_failure"
     if job["kind"] == "replay" and record["success"]:
         # The controller, not the receiver, compares the expected source digest.
-        source = next(r for r in cases() if r["attempt_id"] == job["source_attempt_id"])
+        source = replay_source if replay_source is not None else next(r for r in cases() if r["attempt_id"] == job["source_attempt_id"])
         record["source_attempt_id"] = source["attempt_id"]
         record["exact_recovery"] = record["recovered_sha256"] == source["payload_sha256"]
         record["success"] = record["exact_recovery"]
         if not record["success"]:
             record["failure_category"] = "rank_numerical_divergence"
+    record["provenance_verified"] = (record.get("tested_code_commit") == code
+        and record.get("profile_sha256") == job.get("profile_sha256", record.get("profile_sha256"))
+        and record.get("gpu_uuid") == runtime["gpu_uuid"])
+    if not record["provenance_verified"]:
+        record["success"] = False
+        record["failure_category"] = "implementation_failure"
+    if job["kind"] == "encrypted" and record.get("authenticated") and record.get("recovered_sha256") != record.get("payload_sha256"):
+        record["success"] = False
+        record["failure_category"] = "rank_numerical_divergence"
+    if replay_source is not None:
+        record["source_attempt_id"] = replay_source["attempt_id"]
+    record["expected_rejection"] = expected_rejection
+    record["expected_outcome_agreement"] = (
+        (record.get("failure_category") == "framing_failure" and not record.get("authenticated", False)
+         and record.get("error") == "Invalid Base64 length") if expected_rejection else bool(record["success"])
+    ) and gpu_evidence and record["lease_verified"] and record["phase_meter_verified"] and proc.returncode == 0
+    record["authenticated_message_recovery"] = bool(record.get("authenticated", False) and record["success"] and job["kind"] != "control")
     write_new(directory / "gpu_samples.json", samples)
     write_new(directory / "outcome.json", record)
-    append_json(ART / "cases.jsonl", record)
+    append_json(artifact_root / "cases.jsonl", record)
     print(
         json.dumps(
             {
@@ -301,6 +329,7 @@ def validate_resume(ledger, rows):
 
 
 def main():
+    raise RuntimeError("Stage 1 allocation is retired. Use run_pilot.py with the authoritative project ledger.")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--max-new-cases",

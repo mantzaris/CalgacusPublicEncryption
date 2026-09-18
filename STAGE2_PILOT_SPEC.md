@@ -1,6 +1,6 @@
-# Proposed Stage 2 diagnostic pilot — NOT EXECUTED
+# Authorized Stage 2 diagnostic pilot specification
 
-This specification requires separate review and explicit execution authorization. It is not the full research matrix. Engineering readiness is conditional; scientific novelty is unresolved. No comparator is assumed runnable because an interface exists.
+The user authorized this fixed pilot from main `24fd553e6b79fcfdbe7dc6b6abca71cac440ea8a`. The prior requirement for another CPU test/static-check cycle is waived: reuse the 109-test reviewed foundation, perform only focused hardware/asset/accounting/allocation checks, then execute. Historical CPU results are not attributed to the new extension. Execution results belong in `STAGE2_PILOT_REPORT.md`. It is not the full research matrix. Engineering readiness is conditional; scientific novelty is unresolved. No comparator is assumed runnable because an interface exists.
 
 ## Questions and frozen method
 
@@ -34,7 +34,7 @@ Additional pilot ceilings are **1,200 conservative GPU-job seconds (0.3334 hours
 
 Carry forward the complete historical usage: 632.4426544 seconds, 10,230 tokens and 21 cases. Thus the combined upper bounds would be **1,832.4426544 seconds, 18,230 tokens and 33 cases**, also below the original 7,200-second / 25,000-token / 72-case global ceilings. An existing ledger must never be reinitialized at zero or its prior events removed.
 
-Before execution, implement and CPU-review the smallest fixed-allocation controller needed for this specification; the completed Stage 1 controller does not implement this new allocation. Maintain one authoritative cumulative ledger, preserve the entire historical prefix, and enforce both global and pilot-delta ceilings before reservation. If moving the authoritative ledger to a project-level path to keep the original artifact file frozen, the migration must copy and verify the complete historical prefix/usage and retire the old launch path, with one shared lock and explicit migration evidence. No migration or pilot runner was implemented in this review.
+Before execution, implement and inspect the smallest fixed-allocation controller needed for this specification; the completed Stage 1 controller does not implement this new allocation. Maintain one authoritative cumulative ledger, preserve the entire historical prefix, and enforce both global and pilot-delta ceilings before reservation. If moving the authoritative ledger to a project-level path to keep the original artifact file frozen, the migration must copy and verify the complete historical prefix/usage and retire the old launch path, with one shared lock and explicit migration evidence. The source review did not implement a migration or pilot runner; this authorized task adds that minimal extension.
 
 Per-case reservation maxima: historical replays 60 seconds / 600 tokens each; fresh C2 120 seconds / 2,000 tokens each; controls 90 seconds / 1,200 tokens each; new receiver replays 60 seconds / 750 tokens each. These simultaneous worst-case token reservations exceed the pilot ceiling; admit jobs sequentially only when both remaining ceilings cover their full reservation. Settle observed usage after clean exit; abandoned attempts retain full reservations. Stop early rather than lower a required reservation or borrow from another allocation. The inherited deadline is eight seconds inside each wall reservation and is armed before expensive imports. No standalone ungoverned warmup or worker invocation is allowed.
 
@@ -42,7 +42,7 @@ Historical encrypted jobs took at most 49.6287 seconds including startup and, in
 
 ## Gates and stopping rules
 
-Before any GPU allocation: approve this review and specification; freeze the new case manifest, source commit and both budget ceilings; pass CPU tests/static checks and a zero-inference allocation dry run; verify unchanged model/tokenizer/native/CUDA hashes. Do not claim that the new live path has already passed.
+Before any GPU allocation: authorization is granted; freeze the new case manifest, source commit and both budget ceilings; perform the focused reservation-boundary check in place of the waived CPU/static-check rerun; verify unchanged model/tokenizer/native/CUDA hashes. Do not claim that the new live path has already passed.
 
 Execute the four mandatory replay cases first. Require exact authenticated recovery for all three formerly successful carriers, expected rejection for the known drifted carrier, a distinct receiver PID, matching GPU UUID/full offload, accurate phase metering, a unique reservation/claim, clean process exit, and preserved original records. If any gate fails unexpectedly, stop the entire pilot before fresh cases. Authentication success on the known failed carrier also requires investigation rather than being silently called an improvement.
 

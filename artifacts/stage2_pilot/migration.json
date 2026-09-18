@@ -1,0 +1,14 @@
+{
+  "bytes": 10608,
+  "destination": "artifacts/project_budget.jsonl",
+  "old_launch_path": "run_smoke.py main retired; shared execute helper uses new ledger",
+  "prior_usage": {
+    "cases": 21,
+    "seconds": 632.4426544000003,
+    "tokens": 10230
+  },
+  "schema_version": 1,
+  "sha256": "3ce4afa608815a52578b688952ed220e2362999a9a533ec63fac6dfcada73bbf",
+  "shared_lock": "artifacts/project_budget.lock",
+  "source": "artifacts/stage1/budget.jsonl"
+}
