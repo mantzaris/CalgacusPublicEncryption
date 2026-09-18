@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "gpu_tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "prelaunch": [
+    {
+      "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -p test_stage6.py -v",
+      "output": "artifacts/stage6/focused_checks.txt",
+      "scope": "11 focused new framing/observer/allocation checks; not the full suite"
+    },
+    {
+      "command": ".venv/bin/python scripts/prepare_stage6.py",
+      "output": "artifacts/stage6/preparation.txt",
+      "scope": "Host-only asset verification, device discovery and allocation freeze"
+    },
+    {
+      "command": ".venv/bin/python scripts/run_stage6.py --allocation-check",
+      "output": "artifacts/stage6/allocation_check.txt",
+      "scope": "Complete reservations, token bounds and additional budget boundaries"
+    }
+  ],
+  "inference": {
+    "command": ".venv/bin/python scripts/run_stage6.py > artifacts/stage6/controller.log 2>&1",
+    "output": "artifacts/stage6/controller.log",
+    "per_attempt_commands": "artifacts/stage6/attempts/<immutable UUID>/command.json",
+    "restart_policy": "Controller refuses an already stopped/completed allocation; no ledger reset or implicit rerun"
+  },
+  "host_analysis": [
+    {
+      "command": ".venv/bin/python artifacts/stage6/analyze.py > artifacts/stage6/analysis_output.txt 2>&1",
+      "scope": "Retained-file reconciliation and frozen statistical analysis; no model imports"
+    },
+    {
+      "command": "MPLCONFIGDIR=/tmp/stage6-mpl ../llm-rankcloak/.venv/bin/python artifacts/stage6/plot.py > artifacts/stage6/plot_output.txt 2>&1",
+      "scope": "Existing matplotlib 3.10.9 environment; standalone PNG/PDF figures, no inference"
+    },
+    {
+      "command": ".venv/bin/python artifacts/stage6/finalize_manifest.py",
+      "scope": "Hash and verify reports, figures and completed output files after writers exit; no inference"
+    }
+  ],
+  "earlier_host_failure": "An allocation check before preparation finished found no allocation.json. Its output is retained as allocation_check_before_preparation.txt; no inference or budget charge occurred.",
+  "full_cpu_suite_run": false,
+  "earlier_crypto_results_reused_at_original_revisions": true
+}

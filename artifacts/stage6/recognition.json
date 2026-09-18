@@ -1,0 +1,1388 @@
+[
+  {
+    "auc_cluster_interval": [
+      0.875,
+      1.0
+    ],
+    "auc_higher_is_stego": 0.96875,
+    "context_auc": {
+      "0": 0.875,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.0625,
+    "control_median": 0.0,
+    "encrypted_mean": 1,
+    "encrypted_median": 1.0,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "prefix_match"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.0,
+    "control_median": 0.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "format_accepted"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.0,
+    "control_median": 0.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "format_and_kem_canonical"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.9729927884615385,
+    "control_median": 0.9754807692307692,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "member_fraction"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 1.4025902685039564,
+    "control_median": 1.4749927073972358,
+    "encrypted_mean": 5.766682173866449,
+    "encrypted_median": 5.83500098425475,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "mean_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.5611924532269528,
+    "control_median": 0.5922261516839422,
+    "encrypted_mean": 2.704897392721955,
+    "encrypted_median": 2.7050408032500153,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "mean_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 1.3641938459725247,
+    "control_median": 1.4723723013060654,
+    "encrypted_mean": 5.836167775157254,
+    "encrypted_median": 5.895551336273116,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "after_eight_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 1.2935953294327711,
+    "control_median": 1.3709527311414076,
+    "encrypted_mean": 5.622892871702843,
+    "encrypted_median": 5.581905746351168,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "encrypted_body_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.5030013212151273,
+    "control_median": 0.5063843864494881,
+    "encrypted_mean": 2.750117174778545,
+    "encrypted_median": 2.74451005074486,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "encrypted_body_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 304.0,
+    "control_median": 304.0,
+    "encrypted_mean": 304.0,
+    "encrypted_median": 304.0,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "token_count"
+  },
+  {
+    "auc_cluster_interval": [
+      0.28115234375,
+      0.484375
+    ],
+    "auc_higher_is_stego": 0.37109375,
+    "context_auc": {
+      "0": 0.3125,
+      "1": 0.3125,
+      "2": 0.4375,
+      "3": 0.375
+    },
+    "control_mean": 1491.8125,
+    "control_median": 1494.5,
+    "encrypted_mean": 1366.375,
+    "encrypted_median": 1369.5,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "utf8_bytes"
+  },
+  {
+    "auc_cluster_interval": [
+      0.875,
+      1.0
+    ],
+    "auc_higher_is_stego": 0.96875,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 0.875
+    },
+    "control_mean": 0.0625,
+    "control_median": 0.0,
+    "encrypted_mean": 1,
+    "encrypted_median": 1.0,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "prefix_match"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.0,
+    "control_median": 0.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "format_accepted"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.0,
+    "control_median": 0.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "format_and_kem_canonical"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 1.0,
+    "control_median": 1.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "member_fraction"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 1.08522453419782,
+    "control_median": 1.1335645103326721,
+    "encrypted_mean": 5.766682173866449,
+    "encrypted_median": 5.83500098425475,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "mean_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.39514701396243335,
+    "control_median": 0.4018018667170905,
+    "encrypted_mean": 2.704897392721955,
+    "encrypted_median": 2.7050408032500153,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "mean_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 1.0558322573127976,
+    "control_median": 1.102314376640639,
+    "encrypted_mean": 5.836167775157254,
+    "encrypted_median": 5.895551336273116,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "after_eight_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 1.0085164871982994,
+    "control_median": 1.090430693291197,
+    "encrypted_mean": 5.622892871702843,
+    "encrypted_median": 5.581905746351168,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "encrypted_body_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.36410115011522975,
+    "control_median": 0.38292276545280807,
+    "encrypted_mean": 2.750117174778545,
+    "encrypted_median": 2.74451005074486,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "encrypted_body_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 304.0,
+    "control_median": 304.0,
+    "encrypted_mean": 304.0,
+    "encrypted_median": 304.0,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "token_count"
+  },
+  {
+    "auc_cluster_interval": [
+      0.2734375,
+      0.44140625
+    ],
+    "auc_higher_is_stego": 0.3671875,
+    "context_auc": {
+      "0": 0.25,
+      "1": 0.4375,
+      "2": 0.375,
+      "3": 0.375
+    },
+    "control_mean": 1498.8125,
+    "control_median": 1506.5,
+    "encrypted_mean": 1366.375,
+    "encrypted_median": 1369.5,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "utf8_bytes"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0,
+    "control_median": 0.0,
+    "encrypted_mean": 1,
+    "encrypted_median": 1.0,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "prefix_match"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.0,
+    "control_median": 0.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "format_accepted"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.0,
+    "control_median": 0.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "format_and_kem_canonical"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 1.0,
+    "control_median": 1.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "member_fraction"
+  },
+  {
+    "auc_cluster_interval": [
+      0.15625,
+      0.71484375
+    ],
+    "auc_higher_is_stego": 0.421875,
+    "context_auc": {
+      "0": 0.375,
+      "1": 0.375,
+      "2": 0.375,
+      "3": 0.4375
+    },
+    "control_mean": 5.877916358850443,
+    "control_median": 5.848236181500252,
+    "encrypted_mean": 5.766682173866449,
+    "encrypted_median": 5.83500098425475,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "mean_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      0.0,
+      0.453125
+    ],
+    "auc_higher_is_stego": 0.203125,
+    "context_auc": {
+      "0": 0.25,
+      "1": 0.1875,
+      "2": 0.25,
+      "3": 0.0
+    },
+    "control_mean": 2.7663333083052297,
+    "control_median": 2.7706786911182975,
+    "encrypted_mean": 2.704897392721955,
+    "encrypted_median": 2.7050408032500153,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "mean_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      0.23408203125000002,
+      0.8125
+    ],
+    "auc_higher_is_stego": 0.51171875,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.75,
+      "2": 0.375,
+      "3": 0.5625
+    },
+    "control_mean": 5.848502078425855,
+    "control_median": 5.813037572872183,
+    "encrypted_mean": 5.836167775157254,
+    "encrypted_median": 5.895551336273116,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "after_eight_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      0.15615234375,
+      0.765625
+    ],
+    "auc_higher_is_stego": 0.44140625,
+    "context_auc": {
+      "0": 0.4375,
+      "1": 0.5625,
+      "2": 0.25,
+      "3": 0.5
+    },
+    "control_mean": 5.6701573580228875,
+    "control_median": 5.611511920854609,
+    "encrypted_mean": 5.622892871702843,
+    "encrypted_median": 5.581905746351168,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "encrypted_body_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      0.296875,
+      0.6875
+    ],
+    "auc_higher_is_stego": 0.49609375,
+    "context_auc": {
+      "0": 0.5625,
+      "1": 0.375,
+      "2": 0.375,
+      "3": 0.625
+    },
+    "control_mean": 2.748749235137726,
+    "control_median": 2.7450207847875636,
+    "encrypted_mean": 2.750117174778545,
+    "encrypted_median": 2.74451005074486,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "encrypted_body_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 304.0,
+    "control_median": 304.0,
+    "encrypted_mean": 304.0,
+    "encrypted_median": 304.0,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "token_count"
+  },
+  {
+    "auc_cluster_interval": [
+      0.359375,
+      0.640625
+    ],
+    "auc_higher_is_stego": 0.51171875,
+    "context_auc": {
+      "0": 0.375,
+      "1": 0.375,
+      "2": 0.6875,
+      "3": 0.5
+    },
+    "control_mean": 1314.9375,
+    "control_median": 1212.5,
+    "encrypted_mean": 1366.375,
+    "encrypted_median": 1369.5,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "L",
+    "metric": "utf8_bytes"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 0,
+    "control_median": 0.0,
+    "encrypted_mean": 0,
+    "encrypted_median": 0.0,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "prefix_match"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.0,
+    "control_median": 0.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "format_accepted"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.0,
+    "control_median": 0.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "format_and_kem_canonical"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.9662560504971219,
+    "control_median": 0.9693877551020409,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "member_fraction"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 1.5312155220361856,
+    "control_median": 1.4007798927214123,
+    "encrypted_mean": 5.750245782518279,
+    "encrypted_median": 5.73097156143328,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "mean_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.6431779791532073,
+    "control_median": 0.5575611611734813,
+    "encrypted_mean": 2.749612121173376,
+    "encrypted_median": 2.754861219638562,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "mean_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 1.4703376356302027,
+    "control_median": 1.3148922353073962,
+    "encrypted_mean": 5.715355314615395,
+    "encrypted_median": 5.714022084845725,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "after_eight_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 1.4606729332724429,
+    "control_median": 1.3199700005768777,
+    "encrypted_mean": 5.5809600883565365,
+    "encrypted_median": 5.511623833952649,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "encrypted_body_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.6127004253430003,
+    "control_median": 0.5078630972299611,
+    "encrypted_mean": 2.7618131429371893,
+    "encrypted_median": 2.7781860766573856,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "encrypted_body_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5625
+    ],
+    "auc_higher_is_stego": 0.515625,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5625
+    },
+    "control_mean": 295.875,
+    "control_median": 295.0,
+    "encrypted_mean": 296.0,
+    "encrypted_median": 296.0,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "token_count"
+  },
+  {
+    "auc_cluster_interval": [
+      0.25,
+      0.40234375
+    ],
+    "auc_higher_is_stego": 0.3125,
+    "context_auc": {
+      "0": 0.25,
+      "1": 0.375,
+      "2": 0.25,
+      "3": 0.4375
+    },
+    "control_mean": 1451.0625,
+    "control_median": 1350.5,
+    "encrypted_mean": 1244.125,
+    "encrypted_median": 1084.0,
+    "family": "A",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "utf8_bytes"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 0,
+    "control_median": 0.0,
+    "encrypted_mean": 0,
+    "encrypted_median": 0.0,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "prefix_match"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 1.0,
+    "control_median": 1.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "format_accepted"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 1.0,
+    "control_median": 1.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "format_and_kem_canonical"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 1.0,
+    "control_median": 1.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "member_fraction"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.9450504332382567,
+    "control_median": 0.9162446766717226,
+    "encrypted_mean": 5.750245782518279,
+    "encrypted_median": 5.73097156143328,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "mean_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.33680177011519646,
+    "control_median": 0.32363605378235905,
+    "encrypted_mean": 2.749612121173376,
+    "encrypted_median": 2.754861219638562,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "mean_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.9094658502800064,
+    "control_median": 0.8834890666533023,
+    "encrypted_mean": 5.715355314615395,
+    "encrypted_median": 5.714022084845725,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "after_eight_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.8784920057092055,
+    "control_median": 0.8497585818598895,
+    "encrypted_mean": 5.5809600883565365,
+    "encrypted_median": 5.511623833952649,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "encrypted_body_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "auc_higher_is_stego": 1.0,
+    "context_auc": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "control_mean": 0.3079158079440558,
+    "control_median": 0.2830276328350023,
+    "encrypted_mean": 2.7618131429371893,
+    "encrypted_median": 2.7781860766573856,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "encrypted_body_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 296.0,
+    "control_median": 296.0,
+    "encrypted_mean": 296.0,
+    "encrypted_median": 296.0,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "token_count"
+  },
+  {
+    "auc_cluster_interval": [
+      0.25,
+      0.40625
+    ],
+    "auc_higher_is_stego": 0.30859375,
+    "context_auc": {
+      "0": 0.25,
+      "1": 0.4375,
+      "2": 0.3125,
+      "3": 0.25
+    },
+    "control_mean": 1448.3125,
+    "control_median": 1426.0,
+    "encrypted_mean": 1244.125,
+    "encrypted_median": 1084.0,
+    "family": "B",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "utf8_bytes"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 0,
+    "control_median": 0.0,
+    "encrypted_mean": 0,
+    "encrypted_median": 0.0,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "prefix_match"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 1.0,
+    "control_median": 1.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "format_accepted"
+  },
+  {
+    "auc_cluster_interval": [
+      0.59375,
+      0.84375
+    ],
+    "auc_higher_is_stego": 0.71875,
+    "context_auc": {
+      "0": 0.625,
+      "1": 0.625,
+      "2": 0.75,
+      "3": 0.875
+    },
+    "control_mean": 0.5625,
+    "control_median": 1.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "format_and_kem_canonical"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 1.0,
+    "control_median": 1.0,
+    "encrypted_mean": 1.0,
+    "encrypted_median": 1.0,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "member_fraction"
+  },
+  {
+    "auc_cluster_interval": [
+      0.16796875,
+      0.5234375
+    ],
+    "auc_higher_is_stego": 0.3671875,
+    "context_auc": {
+      "0": 0.4375,
+      "1": 0.375,
+      "2": 0.125,
+      "3": 0.4375
+    },
+    "control_mean": 5.858738813753633,
+    "control_median": 5.874265657133975,
+    "encrypted_mean": 5.750245782518279,
+    "encrypted_median": 5.73097156143328,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "mean_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      0.265625,
+      0.65625
+    ],
+    "auc_higher_is_stego": 0.45703125,
+    "context_auc": {
+      "0": 0.25,
+      "1": 0.625,
+      "2": 0.5,
+      "3": 0.4375
+    },
+    "control_mean": 2.7614821520229285,
+    "control_median": 2.759342346969527,
+    "encrypted_mean": 2.749612121173376,
+    "encrypted_median": 2.754861219638562,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "mean_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      0.15234375,
+      0.515625
+    ],
+    "auc_higher_is_stego": 0.34765625,
+    "context_auc": {
+      "0": 0.375,
+      "1": 0.375,
+      "2": 0.0625,
+      "3": 0.4375
+    },
+    "control_mean": 5.846455934438894,
+    "control_median": 5.8511918937473855,
+    "encrypted_mean": 5.715355314615395,
+    "encrypted_median": 5.714022084845725,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "after_eight_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      0.1794921875,
+      0.609375
+    ],
+    "auc_higher_is_stego": 0.41015625,
+    "context_auc": {
+      "0": 0.4375,
+      "1": 0.5,
+      "2": 0.25,
+      "3": 0.4375
+    },
+    "control_mean": 5.667005239912877,
+    "control_median": 5.642049895954945,
+    "encrypted_mean": 5.5809600883565365,
+    "encrypted_median": 5.511623833952649,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "encrypted_body_nll_bits"
+  },
+  {
+    "auc_cluster_interval": [
+      0.34375,
+      0.7774414062499995
+    ],
+    "auc_higher_is_stego": 0.5625,
+    "context_auc": {
+      "0": 0.3125,
+      "1": 0.875,
+      "2": 0.4375,
+      "3": 0.375
+    },
+    "control_mean": 2.7476358168256096,
+    "control_median": 2.7579964033087725,
+    "encrypted_mean": 2.7618131429371893,
+    "encrypted_median": 2.7781860766573856,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "encrypted_body_log2_rank"
+  },
+  {
+    "auc_cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "auc_higher_is_stego": 0.5,
+    "context_auc": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
+    },
+    "control_mean": 296.0,
+    "control_median": 296.0,
+    "encrypted_mean": 296.0,
+    "encrypted_median": 296.0,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "token_count"
+  },
+  {
+    "auc_cluster_interval": [
+      0.375,
+      0.5625976562499995
+    ],
+    "auc_higher_is_stego": 0.4609375,
+    "context_auc": {
+      "0": 0.4375,
+      "1": 0.375,
+      "2": 0.375,
+      "3": 0.5625
+    },
+    "control_mean": 1278.0,
+    "control_median": 1217.0,
+    "encrypted_mean": 1244.125,
+    "encrypted_median": 1084.0,
+    "family": "C",
+    "matched_scorable_pairs": 16,
+    "method": "F",
+    "metric": "utf8_bytes"
+  }
+]

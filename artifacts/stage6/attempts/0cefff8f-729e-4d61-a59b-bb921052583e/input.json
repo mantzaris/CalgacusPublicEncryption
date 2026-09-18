@@ -1,0 +1,28 @@
+{
+  "case_id": "qualification-predict-2",
+  "context_index": 2,
+  "kind": "prediction",
+  "method": "L",
+  "profile_path": "configs/stage6/L.json",
+  "profile_sha256": "ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "qualification_development_only",
+  "stage6_phase": "qualification",
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "token_reservation": 128,
+  "wall_reservation_seconds": 45
+}

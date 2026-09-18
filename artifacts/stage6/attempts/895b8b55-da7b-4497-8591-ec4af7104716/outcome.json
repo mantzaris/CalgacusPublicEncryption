@@ -1,0 +1,163 @@
+{
+  "attempt_id": "895b8b55-da7b-4497-8591-ec4af7104716",
+  "attempt_useful_bits_per_transmitted_token": 1.28,
+  "authenticated": true,
+  "authenticated_message_recovery": true,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 20,
+      "examined_total": 3226,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 2,
+        "noncanonical": 24,
+        "special_control": 0
+      },
+      "steps": 200
+    },
+    "public_scoring": {
+      "examined_max": 20,
+      "examined_total": 3226,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 2,
+        "noncanonical": 24,
+        "special_control": 0
+      },
+      "steps": 200
+    },
+    "receiver": {
+      "examined_max": 20,
+      "examined_total": 3226,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 2,
+        "noncanonical": 24,
+        "special_control": 0
+      },
+      "steps": 200
+    }
+  },
+  "carrier_tokens": 200,
+  "case_id": "F-c3-n32-r0",
+  "charged_tokens": 639,
+  "ciphertext_sha256": "986e692f091236d363b864f3015456f57991722490161bb8919f9dd3572c692b",
+  "context_index": 3,
+  "cover_context": "A short account of sorting apples at a small orchard:",
+  "cumulative_budget": {
+    "cases": 95,
+    "seconds": 3100.9898553800017,
+    "tokens": 48581
+  },
+  "encapsulation_hex": "45a3b8e230689bb62e0123a45afff5be1d36579f5c66cba08c2d10bcc7e22a0d",
+  "envelope_bytes": 100,
+  "envelope_sha256": "ee10be316c10269f3cf042f1bc0a123ff60622568a76b4cb6562e55bdaacbf69",
+  "evidence_dir": "artifacts/stage6/attempts/895b8b55-da7b-4497-8591-ec4af7104716",
+  "exact_recovery": true,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "first_rank_divergence": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 200,
+  "job_elapsed_seconds": 36.813624682999944,
+  "key_id": "STAGE6_TEST_ONLY_6",
+  "kind": "encrypted",
+  "lease_verified": true,
+  "method": "F",
+  "observer": {
+    "after_eight_log2_rank": 2.7644070439869997,
+    "after_eight_nll_bits": 6.26567856784515,
+    "all_candidates_member": true,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": 2.781243430726403,
+    "encrypted_body_nll_bits": 5.949673233002809,
+    "envelope_bytes": 100,
+    "envelope_sha256": "ee10be316c10269f3cf042f1bc0a123ff60622568a76b4cb6562e55bdaacbf69",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_log2_rank": 2.7668960762912143,
+    "mean_nll_bits": 6.31413937904583,
+    "member_fraction": 1.0,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "9b0657f01a5781713f5098276fae0fb4508120270d69802c6a29d1a5fffae14d",
+    "prefix": {
+      "observed_prefix_ids": [
+        3744,
+        3861,
+        12,
+        76685,
+        4194,
+        61612
+      ],
+      "prefix_match": false,
+      "status": "valid_nonmatch"
+    },
+    "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 200,
+    "utf8_bytes": 754
+  },
+  "pair_id": "c3-n32-r0",
+  "payload_bytes": 32,
+  "payload_sha256": "3f90f7717a22b9fbb2a367038896f675a162fe25f6096998c4169870ee1c705a",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 538726,
+  "profile_id": "stage6_public_utf8_rank16_inferred_v1",
+  "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A short account of sorting apples at a small orchard:": [
+      128000,
+      32,
+      2875,
+      2759,
+      315,
+      29373,
+      41776,
+      520,
+      264,
+      2678,
+      41245,
+      569,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "3c8491d6b4f51594befe2db17754e7f01eb1864901fbce048993c6f5520c906c",
+  "recovered_sha256": "3f90f7717a22b9fbb2a367038896f675a162fe25f6096998c4169870ee1c705a",
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "serialized_base64": "RaO44jBom7YuASOkWv/1vh02V59cZsugjC0QvMfiKg0+RfZ/Kd8BIy7mvkLdUqxFYte6Tn1d8Aad4YXU+Xw3yXgcKGwXejeR8DNFwlXNYjdFXq8/VgN6X1DSDkDnO53d3YmFJg==",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "main_fixed",
+  "success": true,
+  "successful_payload_bits_per_token": 1.28,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 7.192234187001304,
+    "load_and_verify_seconds": 14.24798544299847,
+    "public_scoring_seconds": 7.398180323998531,
+    "receiver_seconds": 7.136254056000325
+  },
+  "tokens_by_phase": {
+    "encode": 213,
+    "public_scoring": 213,
+    "receiver": 213
+  },
+  "trace_path": "artifacts/stage6/attempts/895b8b55-da7b-4497-8591-ec4af7104716/traces.json",
+  "transport_bytes": 754,
+  "transport_sha256": "53973e311f342814a8c62ad9912f3034a4c7551dc2d7b7c62d620b77757bab6a",
+  "wire_delivered": true,
+  "worker_seconds": 36.15117403899785
+}

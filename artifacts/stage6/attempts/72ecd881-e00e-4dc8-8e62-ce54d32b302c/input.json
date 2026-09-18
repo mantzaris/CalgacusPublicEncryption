@@ -1,0 +1,34 @@
+{
+  "TEST_ONLY_private_key_hex": "58b7717fd82dd39204208a4bb8a6720bfaea0bb1bdda9ff0ae8bac14aa10df54",
+  "case_id": "qualification-F-0",
+  "context_index": 0,
+  "key_id": "STAGE6_TEST_ONLY_8",
+  "kind": "encrypted",
+  "method": "F",
+  "payload_bytes": 0,
+  "payload_hex": "",
+  "prediction_path": "artifacts/stage6/attempts/cf1d1a77-0e8b-4d89-bbd7-87f39e738959/public_prediction.json",
+  "prediction_sha256": "519f6657c138eac971f2662ca0b323c7e1424ef09b74effadcb4d7e8f991da95",
+  "profile_path": "configs/stage6/F.json",
+  "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "qualification_development_only",
+  "stage6_phase": "qualification",
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "token_reservation": 700,
+  "wall_reservation_seconds": 75
+}

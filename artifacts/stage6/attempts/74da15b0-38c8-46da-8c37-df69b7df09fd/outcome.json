@@ -1,0 +1,138 @@
+{
+  "attempt_id": "74da15b0-38c8-46da-8c37-df69b7df09fd",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": null,
+      "examined_total": 0,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 0
+    },
+    "public_scoring": {
+      "examined_max": 17,
+      "examined_total": 3202,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 2,
+        "special_control": 0
+      },
+      "steps": 200
+    }
+  },
+  "carrier_tokens": 200,
+  "case_id": "control-F-c0-n32-r0-A",
+  "charged_tokens": 422,
+  "context_index": 0,
+  "cover_context": "A museum note describing how a brass compass works:",
+  "cumulative_budget": {
+    "cases": 106,
+    "seconds": 3574.822463119996,
+    "tokens": 57190
+  },
+  "evidence_dir": "artifacts/stage6/attempts/74da15b0-38c8-46da-8c37-df69b7df09fd",
+  "exact_recovery": false,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": "A",
+  "first_transport_divergence": null,
+  "generated_tokens": 200,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 200,
+  "job_elapsed_seconds": 27.204400024002098,
+  "kind": "control",
+  "lease_verified": true,
+  "method": "F",
+  "observer": {
+    "after_eight_log2_rank": 0.8364107713660807,
+    "after_eight_nll_bits": 2.03454431791126,
+    "all_candidates_member": false,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": 0.8587088843392547,
+    "encrypted_body_nll_bits": 2.0877730834863177,
+    "format_accepted": false,
+    "format_and_kem_canonical": false,
+    "format_error": "Received token outside public rank16 alphabet",
+    "format_failure_category": "framing_failure",
+    "kem_canonical": null,
+    "mean_log2_rank": 0.8252514986046239,
+    "mean_nll_bits": 2.0178133924259667,
+    "member_fraction": 0.96,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "4bfd33673871d4fd379f99ed9d1d63dfcc830b4b5ec9be0a3da8231bd2f59698",
+    "prefix": {
+      "observed_prefix_ids": [
+        330,
+        791,
+        24653,
+        34744,
+        389,
+        279
+      ],
+      "prefix_match": false,
+      "status": "valid_nonmatch"
+    },
+    "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 200,
+    "utf8_bytes": 997
+  },
+  "pair_id": "c0-n32-r0",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 552252,
+  "profile_id": "stage6_public_utf8_rank16_inferred_v1",
+  "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A museum note describing how a brass compass works:": [
+      128000,
+      32,
+      24925,
+      5296,
+      23524,
+      1268,
+      264,
+      37138,
+      24653,
+      4375,
+      25
+    ]
+  },
+  "sampling_seed": 202609180010,
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "main_fixed",
+  "success": true,
+  "target_tokens": 200,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": true,
+  "timings": {
+    "control_generation_seconds": 4.757574778999697,
+    "load_and_verify_seconds": 14.429553011999815,
+    "public_scoring_seconds": 7.233084675997816
+  },
+  "tokens_by_phase": {
+    "control_generation": 211,
+    "public_scoring": 211
+  },
+  "trace_path": "artifacts/stage6/attempts/74da15b0-38c8-46da-8c37-df69b7df09fd/traces.json",
+  "transport_bytes": 997,
+  "transport_sha256": "b1cd64beec5386aacbcdf72cbe4ea7753b299668678de50c917660904d328359",
+  "wire_delivered": true,
+  "worker_seconds": 26.556231285998365
+}

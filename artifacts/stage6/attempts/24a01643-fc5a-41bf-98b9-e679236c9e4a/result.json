@@ -1,0 +1,124 @@
+{
+  "attempt_id": "24a01643-fc5a-41bf-98b9-e679236c9e4a",
+  "authenticated": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": 20,
+      "examined_total": 6406,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 6,
+        "special_control": 0
+      },
+      "steps": 400
+    },
+    "public_scoring": {
+      "examined_max": 20,
+      "examined_total": 6406,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 6,
+        "special_control": 0
+      },
+      "steps": 400
+    }
+  },
+  "carrier_tokens": 400,
+  "case_id": "control-L-c3-n128-r1-C",
+  "charged_tokens": 826,
+  "context_index": 3,
+  "cover_context": "A short account of sorting apples at a small orchard:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": "C",
+  "first_transport_divergence": null,
+  "generated_tokens": 400,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "intended_carrier_tokens": 400,
+  "kind": "control",
+  "method": "L",
+  "observer": {
+    "after_eight_log2_rank": 2.755916768666077,
+    "after_eight_nll_bits": 5.743387181061253,
+    "all_candidates_member": true,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": 2.7401476125477435,
+    "encrypted_body_nll_bits": 5.565523799038009,
+    "format_accepted": false,
+    "format_and_kem_canonical": false,
+    "format_error": "Invalid declared envelope length or trailing/truncated frame",
+    "format_failure_category": "framing_failure",
+    "kem_canonical": null,
+    "mean_log2_rank": 2.760008798069756,
+    "mean_nll_bits": 5.761584565058937,
+    "member_fraction": 1.0,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "9b0657f01a5781713f5098276fae0fb4508120270d69802c6a29d1a5fffae14d",
+    "prefix": {
+      "observed_prefix_ids": [
+        358,
+        7543,
+        13985,
+        304,
+        17136,
+        11
+      ],
+      "prefix_match": false,
+      "status": "valid_nonmatch"
+    },
+    "profile_sha256": "ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 400,
+    "utf8_bytes": 1680
+  },
+  "pair_id": "c3-n128-r1",
+  "pid": 648909,
+  "profile_id": "stage6_public_utf8_rank16_length_v1",
+  "profile_sha256": "ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a",
+  "public_context_token_ids": {
+    "A short account of sorting apples at a small orchard:": [
+      128000,
+      32,
+      2875,
+      2759,
+      315,
+      29373,
+      41776,
+      520,
+      264,
+      2678,
+      41245,
+      569,
+      25
+    ]
+  },
+  "sampling_seed": 202609180312,
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "main_fixed",
+  "success": true,
+  "target_tokens": 400,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": true,
+  "timings": {
+    "control_generation_seconds": 15.330078171999048,
+    "load_and_verify_seconds": 14.689250003997586,
+    "public_scoring_seconds": 15.751289214997087
+  },
+  "tokens_by_phase": {
+    "control_generation": 413,
+    "public_scoring": 413
+  },
+  "trace_path": "artifacts/stage6/attempts/24a01643-fc5a-41bf-98b9-e679236c9e4a/traces.json",
+  "transport_bytes": 1680,
+  "transport_sha256": "4f7bf6b6db9e752fff496676096372fdea03731e1824968b3192c8812e613726",
+  "wire_delivered": true,
+  "worker_seconds": 45.936133049999626
+}

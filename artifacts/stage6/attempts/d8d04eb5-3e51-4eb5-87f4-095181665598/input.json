@@ -1,0 +1,36 @@
+{
+  "TEST_ONLY_private_key_hex": "40198b70c12643cfbdca4c7cfda2f7c267b775f95da0f1b0d5f1b6a1705d0761",
+  "case_id": "Calgacus-c3-n32",
+  "context_index": 3,
+  "key_id": "STAGE6_TEST_ONLY_6",
+  "kind": "encrypted",
+  "method": "Calgacus",
+  "pair_id": "c3-n32-r0",
+  "payload_bytes": 32,
+  "payload_hex": "c59e591ff61eb0b1708901d0925ba3aa74bf3a069a3550c34ddd43f6f28a4063",
+  "payload_sha256": "3f90f7717a22b9fbb2a367038896f675a162fe25f6096998c4169870ee1c705a",
+  "prediction_path": "artifacts/stage6/attempts/a95a13cc-f114-4acf-a97d-2fb7b7b7a931/public_prediction.json",
+  "prediction_sha256": "d81b508d06b7265dccb94c047aeba84c3b3e785be2bb61657924f17d9d4ffcbe",
+  "profile_path": "configs/stage6/Calgacus.json",
+  "profile_sha256": "45a56748eeb728052a7d31d464527e5fb0c6d99adadd32b8a43f026cd6973e71",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "baseline",
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "token_reservation": 3300,
+  "wall_reservation_seconds": 120
+}

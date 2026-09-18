@@ -1,0 +1,153 @@
+{
+  "attempt_id": "1d6c87c8-f6a9-4499-bcb3-a3319642fc45",
+  "attempt_useful_bits_per_transmitted_token": 2.694736842105263,
+  "authenticated": true,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": null,
+      "examined_total": 0,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 0
+    },
+    "public_scoring": {
+      "examined_max": 17,
+      "examined_total": 1523,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 3,
+        "special_control": 0
+      },
+      "steps": 95
+    },
+    "receiver": {
+      "examined_max": null,
+      "examined_total": 0,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 0
+    }
+  },
+  "carrier_tokens": 95,
+  "case_id": "Calgacus-c1-n32",
+  "charged_tokens": 618,
+  "ciphertext_sha256": "db377d84ac3258bc145971908d26a946871c2df766dff08549aecb7c3fb3d81a",
+  "context_index": 1,
+  "cover_context": "A workshop guide to repairing a wooden chair:",
+  "encapsulation_hex": "f2d0e1448ec80d3f5330d7572ca8a1504c1e024d9317ad86714f779846127245",
+  "envelope_bytes": 100,
+  "envelope_sha256": "87dec8dcaeda9f15644a4b36aec01aaaac5b82c741324787c230d735a528a0ea",
+  "exact_recovery": true,
+  "failure_category": null,
+  "family": null,
+  "first_rank_divergence": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "intended_carrier_tokens": 95,
+  "key_id": "STAGE6_TEST_ONLY_2",
+  "kind": "encrypted",
+  "method": "Calgacus",
+  "observer": {
+    "after_eight_log2_rank": 6.274899796806886,
+    "after_eight_nll_bits": 10.20069029917769,
+    "all_candidates_member": false,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": null,
+    "encrypted_body_nll_bits": null,
+    "envelope_bytes": 100,
+    "envelope_sha256": "87dec8dcaeda9f15644a4b36aec01aaaac5b82c741324787c230d735a528a0ea",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_log2_rank": 6.3019839500825965,
+    "mean_nll_bits": 10.395832230814877,
+    "member_fraction": 0.24210526315789474,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "5e704ddb23898d218b92174836600c41ede46c039ddc3a2ea252a0adfc9f48d0",
+    "prefix": {
+      "observed_prefix_ids": [
+        3388,
+        2316,
+        765,
+        63592,
+        5017,
+        9522
+      ],
+      "prefix_match": false,
+      "status": "valid_nonmatch"
+    },
+    "profile_sha256": "45a56748eeb728052a7d31d464527e5fb0c6d99adadd32b8a43f026cd6973e71",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 95,
+    "utf8_bytes": 523
+  },
+  "pair_id": "c1-n32-r0",
+  "payload_bytes": 32,
+  "payload_sha256": "46ef78c657c8633a8a5807956a8954e1cc9ed26af685665012d0c57d1b482a4f",
+  "pid": 652717,
+  "profile_id": "stage6_public_calgacus_base64_v1",
+  "profile_sha256": "45a56748eeb728052a7d31d464527e5fb0c6d99adadd32b8a43f026cd6973e71",
+  "public_context_token_ids": {
+    "A workshop guide to repairing a wooden chair:": [
+      128000,
+      32,
+      26129,
+      8641,
+      311,
+      68337,
+      264,
+      23162,
+      10716,
+      25
+    ],
+    "Canonical Base64 data:": [
+      128000,
+      72014,
+      5464,
+      1227,
+      828,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "eaeb55601f6640033dd6e6608144e062f73e0bb71b39c1db627b50dc4f552624",
+  "recovered_sha256": "46ef78c657c8633a8a5807956a8954e1cc9ed26af685665012d0c57d1b482a4f",
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "serialized_base64": "8tDhRI7IDT9TMNdXLKihUEweAk2TF62GcU93mEYSckWQ6d7rPa23Uxzn2y43BsZM3g9h6TNnENvctlE8AE07KNF9GsRnGZfBOruqaZmtesKfYTikWR5jTBECn9nzLpxNzeWAsw==",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "baseline",
+  "success": true,
+  "successful_payload_bits_per_token": 2.694736842105263,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 6.059691317997931,
+    "load_and_verify_seconds": 14.43022566700165,
+    "public_scoring_seconds": 6.370836481997685,
+    "receiver_seconds": 6.022052044001612
+  },
+  "tokens_by_phase": {
+    "encode": 206,
+    "public_scoring": 105,
+    "public_source_reconstruction": 101,
+    "receiver": 206
+  },
+  "trace_path": "artifacts/stage6/attempts/1d6c87c8-f6a9-4499-bcb3-a3319642fc45/traces.json",
+  "transport_bytes": 523,
+  "transport_sha256": "7d9e234b2b64a2808a47bb9b021aea8919da962abd6633ebd7614163a214da73",
+  "wire_delivered": true,
+  "worker_seconds": 33.044606639999984
+}

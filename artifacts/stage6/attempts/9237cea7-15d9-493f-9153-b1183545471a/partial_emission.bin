@@ -1,0 +1,12 @@
+ in analysis of data, I need to distinguish the “peak wave” and “period” of the wave.
+
+For the peak wave, I need to find the maximum wave height, and for the period, I need to find the time between consecutive peak waves. However, it seems that these two parameters can be difficult to separate in a time series of wave data.
+
+Here are a few questions that I would appreciate you help with:
+
+1. How do I distinguish the peak wave from other waves when there are several waves occurring at the same time?
+2. How do I correctly calculate the period of the wave when there are multiple waves occurring at the same time?
+
+For distinguishing the peak wave, I planned to use a threshold of wave height, for example, only waves that are higher than a certain threshold (e.g. 0.5 m) would be considered as peak waves. However, I am not sure if this is the correct way, and if it is, how should I choose the threshold?
+
+Regarding the calculation of period,

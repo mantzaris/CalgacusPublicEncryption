@@ -1,0 +1,83 @@
+{
+  "attempt_id": "0b580a2e-571e-4185-825c-efaad72e06d4",
+  "authenticated": true,
+  "authenticated_message_recovery": true,
+  "candidate_costs": {
+    "fresh_receiver": {
+      "examined_max": 17,
+      "examined_total": 3203,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 3,
+        "special_control": 0
+      },
+      "steps": 200
+    }
+  },
+  "carrier_tokens": 200,
+  "case_id": "replay-05",
+  "charged_tokens": 211,
+  "context_index": 2,
+  "cover_context": "A coastal report about waves around a stone pier:",
+  "cumulative_budget": {
+    "cases": 212,
+    "seconds": 7481.047025656986,
+    "tokens": 124180
+  },
+  "evidence_dir": "artifacts/stage6/attempts/0b580a2e-571e-4185-825c-efaad72e06d4",
+  "exact_recovery": true,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "job_elapsed_seconds": 22.446569912997802,
+  "kind": "replay",
+  "lease_verified": true,
+  "method": "F",
+  "pair_id": null,
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 663447,
+  "profile_id": "stage6_public_utf8_rank16_inferred_v1",
+  "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A coastal report about waves around a stone pier:": [
+      128000,
+      32,
+      35335,
+      1934,
+      922,
+      17301,
+      2212,
+      264,
+      9998,
+      22710,
+      25
+    ]
+  },
+  "recovered_bytes": 32,
+  "recovered_sha256": "b1cf870ca8d0a5170ce6f43a07a7393639fe76e46d4878625ae7d3c99b85f912",
+  "schema_version": 1,
+  "source_attempt_id": "e067c247-4d13-417b-8322-c360b6f70fde",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "fresh_receiver",
+  "success": true,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "timings": {
+    "fresh_receiver_seconds": 7.07544087900169,
+    "load_and_verify_seconds": 14.444640663001337
+  },
+  "tokens_by_phase": {
+    "fresh_receiver": 211
+  },
+  "trace_path": "artifacts/stage6/attempts/0b580a2e-571e-4185-825c-efaad72e06d4/traces.json",
+  "transport_bytes": 932,
+  "transport_sha256": "3cc788a84389e5cc350935416e75750b1aaf4e3308c8d48ec8cca8de2c2b9845",
+  "wire_delivered": true,
+  "worker_seconds": 21.593587407001905
+}

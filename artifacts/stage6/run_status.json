@@ -1,0 +1,18 @@
+{
+  "allocation_id": "stage6_framing_2026_09_18",
+  "lifetime_usage": {
+    "cases": 214,
+    "seconds": 7541.8848853629825,
+    "tokens": 124994
+  },
+  "recorded_outcomes": 150,
+  "schema_version": 1,
+  "skipped": [],
+  "stage6_usage": {
+    "cases": 150,
+    "seconds": 5809.186128039983,
+    "tokens": 101145
+  },
+  "stop_reason": "Frozen 150-slot allocation completed; unused investigation allowance not spent",
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c"
+}

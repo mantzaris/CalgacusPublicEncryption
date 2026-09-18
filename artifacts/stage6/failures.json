@@ -1,0 +1,138 @@
+[
+  {
+    "attempt_id": "e9be092b-d35f-4376-9a4e-35fd9069aa6f",
+    "case_id": "control-F-c0-n128-r1-A",
+    "error": null,
+    "failure_category": null,
+    "first_rank_divergence": null,
+    "first_transport_divergence": {
+      "actual": 5450,
+      "expected": 13,
+      "position": 35
+    },
+    "kind": "control",
+    "method": "F",
+    "serialization_status": "retokenization_drift"
+  },
+  {
+    "attempt_id": "a23f0226-cf65-441a-8228-b7c6bfd5c7f7",
+    "case_id": "control-F-c2-n32-r1-A",
+    "error": null,
+    "failure_category": null,
+    "first_rank_divergence": null,
+    "first_transport_divergence": {
+      "actual": 5570,
+      "expected": 320,
+      "position": 192
+    },
+    "kind": "control",
+    "method": "F",
+    "serialization_status": "retokenization_drift"
+  },
+  {
+    "attempt_id": "9701e770-d2f0-4b23-82c5-3a14b49ecd02",
+    "case_id": "control-F-c3-n128-r0-A",
+    "error": null,
+    "failure_category": null,
+    "first_rank_divergence": null,
+    "first_transport_divergence": {
+      "actual": 38927,
+      "expected": 330,
+      "position": 34
+    },
+    "kind": "control",
+    "method": "F",
+    "serialization_status": "retokenization_drift"
+  },
+  {
+    "attempt_id": "0fec6120-4bc5-4bdc-a4cb-afc06e4780e2",
+    "case_id": "control-F-c3-n128-r1-A",
+    "error": null,
+    "failure_category": null,
+    "first_rank_divergence": null,
+    "first_transport_divergence": {
+      "actual": 18613,
+      "expected": 1365,
+      "position": 318
+    },
+    "kind": "control",
+    "method": "F",
+    "serialization_status": "retokenization_drift"
+  },
+  {
+    "attempt_id": "407ce1fb-6006-4265-a94f-b66238b4955e",
+    "case_id": "Calgacus-c0-n32",
+    "error": "HPKE authentication failed",
+    "failure_category": "tokenization_serialization_drift",
+    "first_rank_divergence": {
+      "actual": 24,
+      "expected": 1022,
+      "position": 97
+    },
+    "first_transport_divergence": {
+      "actual": 45,
+      "expected": 19480,
+      "position": 97
+    },
+    "kind": "encrypted",
+    "method": "Calgacus",
+    "serialization_status": "retokenization_drift"
+  },
+  {
+    "attempt_id": "4f558ed6-6ac8-4bde-a5b4-a7a4914ce7ff",
+    "case_id": "Calgacus-c1-n128",
+    "error": "Invalid Base64 length",
+    "failure_category": "tokenization_serialization_drift",
+    "first_rank_divergence": {
+      "actual": 15,
+      "expected": 40,
+      "position": 10
+    },
+    "first_transport_divergence": {
+      "actual": 343,
+      "expected": 33339,
+      "position": 10
+    },
+    "kind": "encrypted",
+    "method": "Calgacus",
+    "serialization_status": "retokenization_drift"
+  },
+  {
+    "attempt_id": "d8d04eb5-3e51-4eb5-87f4-095181665598",
+    "case_id": "Calgacus-c3-n32",
+    "error": "Invalid Base64",
+    "failure_category": "tokenization_serialization_drift",
+    "first_rank_divergence": {
+      "actual": 1,
+      "expected": 48,
+      "position": 48
+    },
+    "first_transport_divergence": {
+      "actual": 13,
+      "expected": 5253,
+      "position": 48
+    },
+    "kind": "encrypted",
+    "method": "Calgacus",
+    "serialization_status": "retokenization_drift"
+  },
+  {
+    "attempt_id": "f48b6571-c829-4f6e-96cb-f5c9c5c07b5e",
+    "case_id": "Calgacus-c3-n128",
+    "error": "Invalid Base64 length",
+    "failure_category": "tokenization_serialization_drift",
+    "first_rank_divergence": {
+      "actual": 2,
+      "expected": 20,
+      "position": 106
+    },
+    "first_transport_divergence": {
+      "actual": 92,
+      "expected": 11281,
+      "position": 106
+    },
+    "kind": "encrypted",
+    "method": "Calgacus",
+    "serialization_status": "retokenization_drift"
+  }
+]

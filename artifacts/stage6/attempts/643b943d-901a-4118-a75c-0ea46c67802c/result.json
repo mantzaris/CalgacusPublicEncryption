@@ -1,0 +1,147 @@
+{
+  "attempt_id": "643b943d-901a-4118-a75c-0ea46c67802c",
+  "attempt_useful_bits_per_transmitted_token": 1.2307692307692308,
+  "authenticated": true,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 19,
+      "examined_total": 3334,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 6,
+        "special_control": 0
+      },
+      "steps": 208
+    },
+    "public_scoring": {
+      "examined_max": 19,
+      "examined_total": 3334,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 6,
+        "special_control": 0
+      },
+      "steps": 208
+    },
+    "receiver": {
+      "examined_max": 19,
+      "examined_total": 3334,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 6,
+        "special_control": 0
+      },
+      "steps": 208
+    }
+  },
+  "carrier_tokens": 208,
+  "case_id": "L-c3-n32-r0",
+  "charged_tokens": 663,
+  "ciphertext_sha256": "44a4eb3b568925ec2b686d52423275d6059629d1be6b0282ab3d6b89921fe17c",
+  "context_index": 3,
+  "cover_context": "A short account of sorting apples at a small orchard:",
+  "encapsulation_hex": "17dd3f172fcaa6465a2eae20ee896327d0f7f7cb83737a67240c8bda7d4ee575",
+  "envelope_bytes": 100,
+  "envelope_sha256": "99eba804f1ab682dc5c714b4267cb7af7a9d346d5a08a97783154c0d69fc32ce",
+  "exact_recovery": true,
+  "failure_category": null,
+  "family": null,
+  "first_rank_divergence": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "intended_carrier_tokens": 208,
+  "key_id": "STAGE6_TEST_ONLY_6",
+  "kind": "encrypted",
+  "method": "L",
+  "observer": {
+    "after_eight_log2_rank": 2.789364851978476,
+    "after_eight_nll_bits": 5.993722910468863,
+    "all_candidates_member": true,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": 2.7451359056713476,
+    "encrypted_body_nll_bits": 5.605964776562562,
+    "envelope_bytes": 100,
+    "envelope_sha256": "99eba804f1ab682dc5c714b4267cb7af7a9d346d5a08a97783154c0d69fc32ce",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_log2_rank": 2.7067416029453852,
+    "mean_nll_bits": 5.909906652914642,
+    "member_fraction": 1.0,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "9b0657f01a5781713f5098276fae0fb4508120270d69802c6a29d1a5fffae14d",
+    "prefix": {
+      "observed_prefix_ids": [
+        279,
+        1920,
+        11,
+        279,
+        1274,
+        11
+      ],
+      "prefix_match": true,
+      "status": "match"
+    },
+    "profile_sha256": "ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 208,
+    "utf8_bytes": 1056
+  },
+  "pair_id": "c3-n32-r0",
+  "payload_bytes": 32,
+  "payload_sha256": "3f90f7717a22b9fbb2a367038896f675a162fe25f6096998c4169870ee1c705a",
+  "pid": 539760,
+  "profile_id": "stage6_public_utf8_rank16_length_v1",
+  "profile_sha256": "ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a",
+  "public_context_token_ids": {
+    "A short account of sorting apples at a small orchard:": [
+      128000,
+      32,
+      2875,
+      2759,
+      315,
+      29373,
+      41776,
+      520,
+      264,
+      2678,
+      41245,
+      569,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "3c8491d6b4f51594befe2db17754e7f01eb1864901fbce048993c6f5520c906c",
+  "recovered_sha256": "3f90f7717a22b9fbb2a367038896f675a162fe25f6096998c4169870ee1c705a",
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "serialized_base64": "F90/Fy/KpkZaLq4g7oljJ9D398uDc3pnJAyL2n1O5XVsHaXH1v5ZMhCckAhs1AHRghBT9yaeG5kNSWSfxWh450mx98MnMYQdl7zLjdqZLD6jYNRY3spIfgJShtQM5Rauz7RsGQ==",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "main_fixed",
+  "success": true,
+  "successful_payload_bits_per_token": 1.2307692307692308,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 7.3890505870003835,
+    "load_and_verify_seconds": 14.283744213000318,
+    "public_scoring_seconds": 7.607818306998524,
+    "receiver_seconds": 7.375950628997089
+  },
+  "tokens_by_phase": {
+    "encode": 221,
+    "public_scoring": 221,
+    "receiver": 221
+  },
+  "trace_path": "artifacts/stage6/attempts/643b943d-901a-4118-a75c-0ea46c67802c/traces.json",
+  "transport_bytes": 1056,
+  "transport_sha256": "dcee9dfb503392751d52d3b67f701ad6004e9149683767bef5bf7273d947991e",
+  "wire_delivered": true,
+  "worker_seconds": 36.83155319499929
+}

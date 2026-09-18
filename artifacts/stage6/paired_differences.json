@@ -1,0 +1,332 @@
+[
+  {
+    "F_minus_L_auc": -0.46875,
+    "complete_support": true,
+    "family": "A",
+    "metric": "prefix_match",
+    "paired_cluster_interval": [
+      -0.5,
+      -0.375
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "A",
+    "metric": "format_accepted",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "A",
+    "metric": "format_and_kem_canonical",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "A",
+    "metric": "member_fraction",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "A",
+    "metric": "mean_nll_bits",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "A",
+    "metric": "mean_log2_rank",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "A",
+    "metric": "after_eight_nll_bits",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "A",
+    "metric": "encrypted_body_nll_bits",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "A",
+    "metric": "encrypted_body_log2_rank",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.015625,
+    "complete_support": true,
+    "family": "A",
+    "metric": "token_count",
+    "paired_cluster_interval": [
+      0.0,
+      0.0625
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.05859375,
+    "complete_support": true,
+    "family": "A",
+    "metric": "utf8_bytes",
+    "paired_cluster_interval": [
+      -0.17578125,
+      0.078125
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.46875,
+    "complete_support": true,
+    "family": "B",
+    "metric": "prefix_match",
+    "paired_cluster_interval": [
+      -0.5,
+      -0.375
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.5,
+    "complete_support": true,
+    "family": "B",
+    "metric": "format_accepted",
+    "paired_cluster_interval": [
+      -0.5,
+      -0.5
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.5,
+    "complete_support": true,
+    "family": "B",
+    "metric": "format_and_kem_canonical",
+    "paired_cluster_interval": [
+      -0.5,
+      -0.5
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "B",
+    "metric": "member_fraction",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "B",
+    "metric": "mean_nll_bits",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "B",
+    "metric": "mean_log2_rank",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "B",
+    "metric": "after_eight_nll_bits",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "B",
+    "metric": "encrypted_body_nll_bits",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "B",
+    "metric": "encrypted_body_log2_rank",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "B",
+    "metric": "token_count",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.05859375,
+    "complete_support": true,
+    "family": "B",
+    "metric": "utf8_bytes",
+    "paired_cluster_interval": [
+      -0.12890625,
+      0.05087890624999947
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.5,
+    "complete_support": true,
+    "family": "C",
+    "metric": "prefix_match",
+    "paired_cluster_interval": [
+      -0.5,
+      -0.5
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.5,
+    "complete_support": true,
+    "family": "C",
+    "metric": "format_accepted",
+    "paired_cluster_interval": [
+      -0.5,
+      -0.5
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.28125,
+    "complete_support": true,
+    "family": "C",
+    "metric": "format_and_kem_canonical",
+    "paired_cluster_interval": [
+      -0.40625,
+      -0.15625
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "C",
+    "metric": "member_fraction",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.0546875,
+    "complete_support": true,
+    "family": "C",
+    "metric": "mean_nll_bits",
+    "paired_cluster_interval": [
+      -0.40234375,
+      0.234375
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.25390625,
+    "complete_support": true,
+    "family": "C",
+    "metric": "mean_log2_rank",
+    "paired_cluster_interval": [
+      -0.03144531249999999,
+      0.5197265624999989
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.1640625,
+    "complete_support": true,
+    "family": "C",
+    "metric": "after_eight_nll_bits",
+    "paired_cluster_interval": [
+      -0.50400390625,
+      0.11337890624999947
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.03125,
+    "complete_support": true,
+    "family": "C",
+    "metric": "encrypted_body_nll_bits",
+    "paired_cluster_interval": [
+      -0.390625,
+      0.2734375
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.06640625,
+    "complete_support": true,
+    "family": "C",
+    "metric": "encrypted_body_log2_rank",
+    "paired_cluster_interval": [
+      -0.2265625,
+      0.45322265624999947
+    ]
+  },
+  {
+    "F_minus_L_auc": 0.0,
+    "complete_support": true,
+    "family": "C",
+    "metric": "token_count",
+    "paired_cluster_interval": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "F_minus_L_auc": -0.05078125,
+    "complete_support": true,
+    "family": "C",
+    "metric": "utf8_bytes",
+    "paired_cluster_interval": [
+      -0.234375,
+      0.13291015624999947
+    ]
+  }
+]

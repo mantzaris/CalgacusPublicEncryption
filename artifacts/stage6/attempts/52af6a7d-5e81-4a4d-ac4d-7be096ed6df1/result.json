@@ -1,0 +1,121 @@
+{
+  "attempt_id": "52af6a7d-5e81-4a4d-ac4d-7be096ed6df1",
+  "authenticated": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": 19,
+      "examined_total": 6292,
+      "rejected": {
+        "empty": 1,
+        "invalid_utf8": 0,
+        "noncanonical": 19,
+        "special_control": 0
+      },
+      "steps": 392
+    },
+    "public_scoring": {
+      "examined_max": 19,
+      "examined_total": 6292,
+      "rejected": {
+        "empty": 1,
+        "invalid_utf8": 0,
+        "noncanonical": 19,
+        "special_control": 0
+      },
+      "steps": 392
+    }
+  },
+  "carrier_tokens": 392,
+  "case_id": "control-F-c1-n128-r0-B",
+  "charged_tokens": 804,
+  "context_index": 1,
+  "cover_context": "A workshop guide to repairing a wooden chair:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": "B",
+  "first_transport_divergence": null,
+  "generated_tokens": 392,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "intended_carrier_tokens": 392,
+  "kind": "control",
+  "method": "F",
+  "observer": {
+    "after_eight_log2_rank": 0.27544262796581637,
+    "after_eight_nll_bits": 0.8012415282161255,
+    "all_candidates_member": true,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": 0.2590127681330989,
+    "encrypted_body_nll_bits": 0.7331308190522744,
+    "envelope_bytes": 196,
+    "envelope_sha256": "87a8f179ebf34195a6912a4304fbd69566275d041c86f5ea72503ca27a62e919",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_log2_rank": 0.29470626694142077,
+    "mean_nll_bits": 0.8439498537060525,
+    "member_fraction": 1.0,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "5e704ddb23898d218b92174836600c41ede46c039ddc3a2ea252a0adfc9f48d0",
+    "prefix": {
+      "observed_prefix_ids": [
+        578,
+        32874,
+        315,
+        7732,
+        25270,
+        198
+      ],
+      "prefix_match": false,
+      "status": "valid_nonmatch"
+    },
+    "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 392,
+    "utf8_bytes": 1753
+  },
+  "pair_id": "c1-n128-r0",
+  "pid": 589210,
+  "profile_id": "stage6_public_utf8_rank16_inferred_v1",
+  "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+  "public_context_token_ids": {
+    "A workshop guide to repairing a wooden chair:": [
+      128000,
+      32,
+      26129,
+      8641,
+      311,
+      68337,
+      264,
+      23162,
+      10716,
+      25
+    ]
+  },
+  "sampling_seed": 202609180131,
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "main_fixed",
+  "success": true,
+  "target_tokens": 392,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": true,
+  "timings": {
+    "control_generation_seconds": 15.254081668001163,
+    "load_and_verify_seconds": 14.69957400400017,
+    "public_scoring_seconds": 15.542241506002028
+  },
+  "tokens_by_phase": {
+    "control_generation": 402,
+    "public_scoring": 402
+  },
+  "trace_path": "artifacts/stage6/attempts/52af6a7d-5e81-4a4d-ac4d-7be096ed6df1/traces.json",
+  "transport_bytes": 1753,
+  "transport_sha256": "bcb621ecb2170118b578b94998b67e9a320c9235f50d75bf80b98b92fd9b951e",
+  "wire_delivered": true,
+  "worker_seconds": 45.66299327800152
+}

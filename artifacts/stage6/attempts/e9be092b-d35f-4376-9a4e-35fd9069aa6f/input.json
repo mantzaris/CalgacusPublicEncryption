@@ -1,0 +1,37 @@
+{
+  "associated_encrypted_case_id": "F-c0-n128-r1",
+  "case_id": "control-F-c0-n128-r1-A",
+  "context_index": 0,
+  "family": "A",
+  "kind": "control",
+  "method": "F",
+  "pair_id": "c0-n128-r1",
+  "prediction_path": "artifacts/stage6/attempts/cf1d1a77-0e8b-4d89-bbd7-87f39e738959/public_prediction.json",
+  "prediction_sha256": "519f6657c138eac971f2662ca0b323c7e1424ef09b74effadcb4d7e8f991da95",
+  "profile_path": "configs/stage6/F.json",
+  "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+  "recipient_public_key_hex": "a7dbc7ddac4ec82265be048903dee69765111abe7438034d250d8d6cf394ad5a",
+  "repetition": 1,
+  "sampling_seed": 202609180070,
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "main_fixed",
+  "target_tokens": 392,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "token_reservation": 1100,
+  "wall_reservation_seconds": 90
+}

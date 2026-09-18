@@ -1,0 +1,25 @@
+{
+  "historical_files_checked": 651,
+  "historical_ledger_prefix": {
+    "bytes": 32183,
+    "limits": {
+      "cases": 72,
+      "seconds": 7200.0,
+      "tokens": 25000
+    },
+    "schema_version": 1,
+    "sha256": "9cf35c86ee1aa96868f244bb4703835da4e7b866d192e0a135e265c08a45f304"
+  },
+  "historical_ledger_prefix_preserved": true,
+  "historical_reports_profiles_attempt_records_and_manifests_unchanged": true,
+  "permitted_changed_existing_files": [
+    "artifacts/project_budget.checkpoint.json",
+    "artifacts/project_budget.jsonl",
+    "src/llm_stego_public_key/evaluation/budget.py",
+    "src/llm_stego_public_key/profile.py",
+    "src/llm_stego_public_key/transport/envelope_receiver.py"
+  ],
+  "schema_version": 1,
+  "starting_commit": "f51f38c22367aeae4dd728e37f4c092435ad0e14",
+  "unchanged_historical_files": 646
+}

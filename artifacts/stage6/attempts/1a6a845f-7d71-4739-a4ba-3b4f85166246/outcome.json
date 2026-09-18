@@ -1,0 +1,83 @@
+{
+  "attempt_id": "1a6a845f-7d71-4739-a4ba-3b4f85166246",
+  "authenticated": true,
+  "authenticated_message_recovery": true,
+  "candidate_costs": {
+    "fresh_receiver": {
+      "examined_max": 18,
+      "examined_total": 6402,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 2,
+        "special_control": 0
+      },
+      "steps": 400
+    }
+  },
+  "carrier_tokens": 400,
+  "case_id": "replay-02",
+  "charged_tokens": 411,
+  "context_index": 0,
+  "cover_context": "A museum note describing how a brass compass works:",
+  "cumulative_budget": {
+    "cases": 209,
+    "seconds": 7405.814076599989,
+    "tokens": 123347
+  },
+  "evidence_dir": "artifacts/stage6/attempts/1a6a845f-7d71-4739-a4ba-3b4f85166246",
+  "exact_recovery": true,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "job_elapsed_seconds": 30.416504764998535,
+  "kind": "replay",
+  "lease_verified": true,
+  "method": "L",
+  "pair_id": null,
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 661005,
+  "profile_id": "stage6_public_utf8_rank16_length_v1",
+  "profile_sha256": "ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A museum note describing how a brass compass works:": [
+      128000,
+      32,
+      24925,
+      5296,
+      23524,
+      1268,
+      264,
+      37138,
+      24653,
+      4375,
+      25
+    ]
+  },
+  "recovered_bytes": 128,
+  "recovered_sha256": "0760bdc7bd138fea7b9b682fdc8aaee60dc009131b38e6c9a7bc3d2161ed03b4",
+  "schema_version": 1,
+  "source_attempt_id": "4717ca65-63cc-49b3-a184-43d0c4864e26",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "fresh_receiver",
+  "success": true,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "timings": {
+    "fresh_receiver_seconds": 15.256192699998792,
+    "load_and_verify_seconds": 14.564806408998265
+  },
+  "tokens_by_phase": {
+    "fresh_receiver": 411
+  },
+  "trace_path": "artifacts/stage6/attempts/1a6a845f-7d71-4739-a4ba-3b4f85166246/traces.json",
+  "transport_bytes": 1804,
+  "transport_sha256": "cdb3b4fa50ac24bd7238de0499f7691f540b3e2c3db4cd14a7061f68c36be05e",
+  "wire_delivered": true,
+  "worker_seconds": 29.976988061000156
+}

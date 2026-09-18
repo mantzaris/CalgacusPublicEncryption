@@ -1,0 +1,1052 @@
+[
+  {
+    "case_id": "qualification-predict-0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 500497
+  },
+  {
+    "case_id": "qualification-predict-1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 4974,
+    "phase_meter_verified": true,
+    "pid": 500980
+  },
+  {
+    "case_id": "qualification-predict-2",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 501508
+  },
+  {
+    "case_id": "qualification-predict-3",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 502024
+  },
+  {
+    "case_id": "qualification-F-0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 502438
+  },
+  {
+    "case_id": "qualification-F-128",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 503246
+  },
+  {
+    "case_id": "L-c0-n32-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 504958
+  },
+  {
+    "case_id": "F-c0-n32-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 506013
+  },
+  {
+    "case_id": "F-c0-n32-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 507015
+  },
+  {
+    "case_id": "L-c0-n32-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 507975
+  },
+  {
+    "case_id": "F-c0-n128-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 509098
+  },
+  {
+    "case_id": "L-c0-n128-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 510741
+  },
+  {
+    "case_id": "L-c0-n128-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 512401
+  },
+  {
+    "case_id": "F-c0-n128-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 514136
+  },
+  {
+    "case_id": "F-c1-n32-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 515983
+  },
+  {
+    "case_id": "L-c1-n32-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 517005
+  },
+  {
+    "case_id": "L-c1-n32-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 518146
+  },
+  {
+    "case_id": "F-c1-n32-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 519286
+  },
+  {
+    "case_id": "L-c1-n128-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 520267
+  },
+  {
+    "case_id": "F-c1-n128-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 522089
+  },
+  {
+    "case_id": "F-c1-n128-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 523976
+  },
+  {
+    "case_id": "L-c1-n128-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 525704
+  },
+  {
+    "case_id": "L-c2-n32-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 527438
+  },
+  {
+    "case_id": "F-c2-n32-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 528527
+  },
+  {
+    "case_id": "F-c2-n32-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 529639
+  },
+  {
+    "case_id": "L-c2-n32-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 530629
+  },
+  {
+    "case_id": "F-c2-n128-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 531814
+  },
+  {
+    "case_id": "L-c2-n128-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 533571
+  },
+  {
+    "case_id": "L-c2-n128-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 535268
+  },
+  {
+    "case_id": "F-c2-n128-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 537086
+  },
+  {
+    "case_id": "F-c3-n32-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 538726
+  },
+  {
+    "case_id": "L-c3-n32-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 539760
+  },
+  {
+    "case_id": "L-c3-n32-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 540750
+  },
+  {
+    "case_id": "F-c3-n32-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 541905
+  },
+  {
+    "case_id": "L-c3-n128-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 542871
+  },
+  {
+    "case_id": "F-c3-n128-r0",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 544517
+  },
+  {
+    "case_id": "F-c3-n128-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 546160
+  },
+  {
+    "case_id": "L-c3-n128-r1",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 547913
+  },
+  {
+    "case_id": "control-L-c0-n32-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 549648
+  },
+  {
+    "case_id": "control-L-c0-n32-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 550401
+  },
+  {
+    "case_id": "control-L-c0-n32-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 551285
+  },
+  {
+    "case_id": "control-F-c0-n32-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 552252
+  },
+  {
+    "case_id": "control-F-c0-n32-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 552975
+  },
+  {
+    "case_id": "control-F-c0-n32-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 553800
+  },
+  {
+    "case_id": "control-F-c0-n32-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 554610
+  },
+  {
+    "case_id": "control-F-c0-n32-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 555383
+  },
+  {
+    "case_id": "control-F-c0-n32-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 556133
+  },
+  {
+    "case_id": "control-L-c0-n32-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 556988
+  },
+  {
+    "case_id": "control-L-c0-n32-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 557735
+  },
+  {
+    "case_id": "control-L-c0-n32-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 558702
+  },
+  {
+    "case_id": "control-F-c0-n128-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 559552
+  },
+  {
+    "case_id": "control-F-c0-n128-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 560655
+  },
+  {
+    "case_id": "control-F-c0-n128-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 561919
+  },
+  {
+    "case_id": "control-L-c0-n128-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 563159
+  },
+  {
+    "case_id": "control-L-c0-n128-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 564338
+  },
+  {
+    "case_id": "control-L-c0-n128-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 565577
+  },
+  {
+    "case_id": "control-L-c0-n128-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 566818
+  },
+  {
+    "case_id": "control-L-c0-n128-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 568052
+  },
+  {
+    "case_id": "control-L-c0-n128-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 569380
+  },
+  {
+    "case_id": "control-F-c0-n128-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 570642
+  },
+  {
+    "case_id": "control-F-c0-n128-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 571734
+  },
+  {
+    "case_id": "control-F-c0-n128-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 573037
+  },
+  {
+    "case_id": "control-F-c1-n32-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 574221
+  },
+  {
+    "case_id": "control-F-c1-n32-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 575127
+  },
+  {
+    "case_id": "control-F-c1-n32-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 576052
+  },
+  {
+    "case_id": "control-L-c1-n32-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 576867
+  },
+  {
+    "case_id": "control-L-c1-n32-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 577672
+  },
+  {
+    "case_id": "control-L-c1-n32-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 578506
+  },
+  {
+    "case_id": "control-L-c1-n32-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 579338
+  },
+  {
+    "case_id": "control-L-c1-n32-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 580118
+  },
+  {
+    "case_id": "control-L-c1-n32-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 580991
+  },
+  {
+    "case_id": "control-F-c1-n32-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 581781
+  },
+  {
+    "case_id": "control-F-c1-n32-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 582601
+  },
+  {
+    "case_id": "control-F-c1-n32-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 583412
+  },
+  {
+    "case_id": "control-L-c1-n128-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 584242
+  },
+  {
+    "case_id": "control-L-c1-n128-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 585358
+  },
+  {
+    "case_id": "control-L-c1-n128-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 586707
+  },
+  {
+    "case_id": "control-F-c1-n128-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 587986
+  },
+  {
+    "case_id": "control-F-c1-n128-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 589210
+  },
+  {
+    "case_id": "control-F-c1-n128-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 590415
+  },
+  {
+    "case_id": "control-F-c1-n128-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 591734
+  },
+  {
+    "case_id": "control-F-c1-n128-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 592830
+  },
+  {
+    "case_id": "control-F-c1-n128-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 594119
+  },
+  {
+    "case_id": "control-L-c1-n128-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 595337
+  },
+  {
+    "case_id": "control-L-c1-n128-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 596534
+  },
+  {
+    "case_id": "control-L-c1-n128-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 597839
+  },
+  {
+    "case_id": "control-L-c2-n32-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 599227
+  },
+  {
+    "case_id": "control-L-c2-n32-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 599933
+  },
+  {
+    "case_id": "control-L-c2-n32-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 600854
+  },
+  {
+    "case_id": "control-F-c2-n32-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 601774
+  },
+  {
+    "case_id": "control-F-c2-n32-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 602540
+  },
+  {
+    "case_id": "control-F-c2-n32-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 603505
+  },
+  {
+    "case_id": "control-F-c2-n32-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 604373
+  },
+  {
+    "case_id": "control-F-c2-n32-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 605176
+  },
+  {
+    "case_id": "control-F-c2-n32-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 606087
+  },
+  {
+    "case_id": "control-L-c2-n32-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 606854
+  },
+  {
+    "case_id": "control-L-c2-n32-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 607651
+  },
+  {
+    "case_id": "control-L-c2-n32-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 608579
+  },
+  {
+    "case_id": "control-F-c2-n128-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 609411
+  },
+  {
+    "case_id": "control-F-c2-n128-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 610634
+  },
+  {
+    "case_id": "control-F-c2-n128-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 611873
+  },
+  {
+    "case_id": "control-L-c2-n128-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 613229
+  },
+  {
+    "case_id": "control-L-c2-n128-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 614344
+  },
+  {
+    "case_id": "control-L-c2-n128-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 615781
+  },
+  {
+    "case_id": "control-L-c2-n128-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 616998
+  },
+  {
+    "case_id": "control-L-c2-n128-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 618115
+  },
+  {
+    "case_id": "control-L-c2-n128-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 619507
+  },
+  {
+    "case_id": "control-F-c2-n128-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 620856
+  },
+  {
+    "case_id": "control-F-c2-n128-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 621930
+  },
+  {
+    "case_id": "control-F-c2-n128-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 623329
+  },
+  {
+    "case_id": "control-F-c3-n32-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 624603
+  },
+  {
+    "case_id": "control-F-c3-n32-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 625388
+  },
+  {
+    "case_id": "control-F-c3-n32-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 626251
+  },
+  {
+    "case_id": "control-L-c3-n32-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 627066
+  },
+  {
+    "case_id": "control-L-c3-n32-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 628110
+  },
+  {
+    "case_id": "control-L-c3-n32-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 628925
+  },
+  {
+    "case_id": "control-L-c3-n32-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 629773
+  },
+  {
+    "case_id": "control-L-c3-n32-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 630676
+  },
+  {
+    "case_id": "control-L-c3-n32-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 631525
+  },
+  {
+    "case_id": "control-F-c3-n32-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 632339
+  },
+  {
+    "case_id": "control-F-c3-n32-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 633321
+  },
+  {
+    "case_id": "control-F-c3-n32-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 634164
+  },
+  {
+    "case_id": "control-L-c3-n128-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 634998
+  },
+  {
+    "case_id": "control-L-c3-n128-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 636217
+  },
+  {
+    "case_id": "control-L-c3-n128-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 637493
+  },
+  {
+    "case_id": "control-F-c3-n128-r0-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 638898
+  },
+  {
+    "case_id": "control-F-c3-n128-r0-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 640000
+  },
+  {
+    "case_id": "control-F-c3-n128-r0-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 641273
+  },
+  {
+    "case_id": "control-F-c3-n128-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 642570
+  },
+  {
+    "case_id": "control-F-c3-n128-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 643785
+  },
+  {
+    "case_id": "control-F-c3-n128-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 645012
+  },
+  {
+    "case_id": "control-L-c3-n128-r1-A",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 646371
+  },
+  {
+    "case_id": "control-L-c3-n128-r1-B",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 647502
+  },
+  {
+    "case_id": "control-L-c3-n128-r1-C",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 648909
+  },
+  {
+    "case_id": "Calgacus-c0-n32",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 650142
+  },
+  {
+    "case_id": "Calgacus-c0-n128",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 651323
+  },
+  {
+    "case_id": "Calgacus-c1-n32",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 652717
+  },
+  {
+    "case_id": "Calgacus-c1-n128",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 653621
+  },
+  {
+    "case_id": "Calgacus-c2-n32",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 655030
+  },
+  {
+    "case_id": "Calgacus-c2-n128",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 656001
+  },
+  {
+    "case_id": "Calgacus-c3-n32",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 657442
+  },
+  {
+    "case_id": "Calgacus-c3-n128",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 658401
+  },
+  {
+    "case_id": "replay-00",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 659764
+  },
+  {
+    "case_id": "replay-01",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 660378
+  },
+  {
+    "case_id": "replay-02",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 661005
+  },
+  {
+    "case_id": "replay-03",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 661857
+  },
+  {
+    "case_id": "replay-04",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 662803
+  },
+  {
+    "case_id": "replay-05",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 663447
+  },
+  {
+    "case_id": "replay-06",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 664074
+  },
+  {
+    "case_id": "replay-07",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "phase_meter_verified": true,
+    "pid": 664902
+  }
+]

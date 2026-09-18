@@ -1,0 +1,122 @@
+{
+  "attempt_id": "c62f0d44-1ad1-4669-b88e-16be255ffc2e",
+  "authenticated": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": null,
+      "examined_total": 0,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 0
+    },
+    "public_scoring": {
+      "examined_max": 21,
+      "examined_total": 6443,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 1,
+        "noncanonical": 33,
+        "special_control": 9
+      },
+      "steps": 400
+    }
+  },
+  "carrier_tokens": 400,
+  "case_id": "control-L-c2-n128-r0-A",
+  "charged_tokens": 822,
+  "context_index": 2,
+  "cover_context": "A coastal report about waves around a stone pier:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": "A",
+  "first_transport_divergence": null,
+  "generated_tokens": 400,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "intended_carrier_tokens": 400,
+  "kind": "control",
+  "method": "L",
+  "observer": {
+    "after_eight_log2_rank": 0.3758635531197384,
+    "after_eight_nll_bits": 1.005663255667637,
+    "all_candidates_member": false,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": 0.3437816017794783,
+    "encrypted_body_nll_bits": 0.9993358829707262,
+    "format_accepted": false,
+    "format_and_kem_canonical": false,
+    "format_error": "Received token outside public rank16 alphabet",
+    "format_failure_category": "framing_failure",
+    "kem_canonical": null,
+    "mean_log2_rank": 0.4105567083551147,
+    "mean_nll_bits": 1.0619054201034757,
+    "member_fraction": 0.98,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "3c85ae5a7980bd6021d076d4e7f53cc66f45b5518cf77df58f868e0d4fd9e32c",
+    "prefix": {
+      "observed_prefix_ids": [
+        22323,
+        11,
+        24654,
+        323,
+        32887,
+        4211
+      ],
+      "prefix_match": false,
+      "status": "valid_nonmatch"
+    },
+    "profile_sha256": "ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 400,
+    "utf8_bytes": 2102
+  },
+  "pair_id": "c2-n128-r0",
+  "pid": 613229,
+  "profile_id": "stage6_public_utf8_rank16_length_v1",
+  "profile_sha256": "ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a",
+  "public_context_token_ids": {
+    "A coastal report about waves around a stone pier:": [
+      128000,
+      32,
+      35335,
+      1934,
+      922,
+      17301,
+      2212,
+      264,
+      9998,
+      22710,
+      25
+    ]
+  },
+  "sampling_seed": 202609180210,
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "main_fixed",
+  "success": true,
+  "target_tokens": 400,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": true,
+  "timings": {
+    "control_generation_seconds": 9.337294864002615,
+    "load_and_verify_seconds": 15.241956785001094,
+    "public_scoring_seconds": 15.875485720000142
+  },
+  "tokens_by_phase": {
+    "control_generation": 411,
+    "public_scoring": 411
+  },
+  "trace_path": "artifacts/stage6/attempts/c62f0d44-1ad1-4669-b88e-16be255ffc2e/traces.json",
+  "transport_bytes": 2102,
+  "transport_sha256": "c2100c7009c90199197caf5debf782b5f19c1d96377125f74e1ef780d612766e",
+  "wire_delivered": true,
+  "worker_seconds": 40.61579790399992
+}

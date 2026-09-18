@@ -1,0 +1,36 @@
+{
+  "TEST_ONLY_private_key_hex": "a05fe8f093fb5a8bcd91c3d368d9986e25b7d6109cd8764b3928d70571c2c46f",
+  "case_id": "Calgacus-c2-n128",
+  "context_index": 2,
+  "key_id": "STAGE6_TEST_ONLY_4",
+  "kind": "encrypted",
+  "method": "Calgacus",
+  "pair_id": "c2-n128-r0",
+  "payload_bytes": 128,
+  "payload_hex": "9abf124256cb3035801208c178aea53c6e5bc66e4b66a81485fb981c9193be3e5fa9243915db7870afcad52f6687f7a7b8d4f4df330e6dd6255a3092e45c293e744cd9e34c8106c68f29ac06d93678eaa72d4dd8f4ed35cb7c17b546806e30e8f1340e48015dfa68d705f471d485a6796b2133fc5cb7f2d5400dd26c1ac6a1a0",
+  "payload_sha256": "c0b6c058c0e0fd8cfdd8e3275120d9b7375bcd789895d6b1701b7ad5f2296ef5",
+  "prediction_path": "artifacts/stage6/attempts/0cefff8f-729e-4d61-a59b-bb921052583e/public_prediction.json",
+  "prediction_sha256": "0bc46bed52ff8c51afed0511782c097d757497f5825694bdb1eada94fb4a7533",
+  "profile_path": "configs/stage6/Calgacus.json",
+  "profile_sha256": "45a56748eeb728052a7d31d464527e5fb0c6d99adadd32b8a43f026cd6973e71",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "baseline",
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "token_reservation": 3300,
+  "wall_reservation_seconds": 120
+}

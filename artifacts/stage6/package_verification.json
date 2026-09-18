@@ -1,0 +1,25 @@
+{
+  "all_42_envelopes_distinct": true,
+  "baseline_attempted": 8,
+  "baseline_exact": 4,
+  "case_order_matches_frozen_allocation": true,
+  "controls_scorable": 96,
+  "diff_review": {
+    "raw_artifact_whitespace": "Git diagnostics in exact carriers, native logs and CRLF CSV outputs; bytes intentionally retained without normalization",
+    "source_and_documentation_whitespace_check": "PASS"
+  },
+  "documentation_local_links": "PASS",
+  "eight_balanced_main_recipient_keys": true,
+  "full_cpu_suite_run": false,
+  "gpu_tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "independent_receiver_exact": 8,
+  "inference_source_unchanged_since_gpu_commit": true,
+  "ledger_sha256": "3bd430af581a350a175e917d6abdadb9b0763d202eb0f204596d1b094a6bdc99",
+  "main_attempted": 32,
+  "main_exact": 32,
+  "ordinary_control_drifts": 4,
+  "paired_payload_and_key_with_distinct_envelopes": true,
+  "schema_version": 1,
+  "scope": "retained-record arithmetic, paired assignments, source freeze and local documentation links; no inference or broad tests",
+  "status": "PASS"
+}

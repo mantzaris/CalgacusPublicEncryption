@@ -1,0 +1,52 @@
+ A numerical simulation analysis.
+
+In the study presented hereby, an ocean engineering project simuated a situation about
+how big is water flow at stone pillar of the coastal pier? By running this experiment using 6 meters and wave 12, in total there are nine models.
+
+For our project the data will look more specific as:
+Wave period of about 12 s
+Wave heights up-to (2 meter )
+wave energy
+Water currents in a specific point near or on a fixed location
+
+A numerical experiment can then be implemented on such
+parameters. So it looks how different wave energies effect water velocity.
+Wave direction 180 degree
+Depth around that pillar should be around about a maximum level. (1m)
+
+
+This project uses computational software OpenSource called SWATH.
+
+We want also use python scripts (and) SWATH as our primary computational resource,
+also will we compare this outcome by comparing with real-life experiment results from
+the site near-by.
+
+
+This research paper can explore on these factors like 
+* Effects from a wave with direction.
+   wave with direction (or without any)
+
+Wave with high speed,
+and
+without high Speed
+
+
+For future references: This information might provide us information in designing for
+a pier to handle wave effects or water quality issues.
+
+Our hypothesis would is "As an energy increases the water currents increase"
+And our research objective for us: We hope find more detail to understand wave
+behavior near and around fixed structures.
+The data of real life observations is compared with the simulation.
+
+Data of this data set was measured over
+12 s wave cycles.
+we compare and check if these values can predict wave direction
+or we see any changes or correlations to our model in SWAth.
+
+
+
+Here an excerpt  from a data output in our script
+   ` 20191120` ,`'water_speed_at_node 8',`
+          - `   -9 7,5 ,0
+             --1    wave_period'     -10'    wave_hgt

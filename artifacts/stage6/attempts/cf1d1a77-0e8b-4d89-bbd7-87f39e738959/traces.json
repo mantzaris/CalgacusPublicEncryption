@@ -1,0 +1,95 @@
+{
+  "prediction": {
+    "advanced_ids": [
+      330,
+      791,
+      24653,
+      374,
+      264,
+      3756
+    ],
+    "candidate_steps": [
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "9c1eeadd77f9a4ba8cc06ca0c080bead905665130ea3f6a4c1611389b70182a1",
+        "position": 0,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "12cecdb02ff140e9a448fc42f955ec016b5bf1a03fb2ad8da0f10d23bc76a6a2",
+        "position": 1,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "c63d61041caa0a3bdece76d9b12860f93abf8f61c27f8ca9f54077d9226c8c88",
+        "position": 2,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "c3d729fa426e194a7056fc3e461a59c92ce5103dc687386f5cc3d348d8231ba4",
+        "position": 3,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "d14fc4c84816c50f686354c329ba4cab7553062dcd90b5c3ec9cbeae53dbb2df",
+        "position": 4,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      },
+      {
+        "eligible_found_capped_at_16": 16,
+        "examined": 16,
+        "ordered_ids_sha256": "31ceab09ee0d2e52c0a19564aaaac70ca176553c1b17706164af50e38679f36f",
+        "position": 5,
+        "rejected": {
+          "empty": 0,
+          "invalid_utf8": 0,
+          "noncanonical": 0,
+          "special_control": 0
+        }
+      }
+    ],
+    "direction": "public_prediction",
+    "symbols": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

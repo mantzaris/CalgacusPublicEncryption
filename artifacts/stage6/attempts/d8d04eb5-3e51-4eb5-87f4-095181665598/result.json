@@ -1,0 +1,164 @@
+{
+  "attempt_id": "d8d04eb5-3e51-4eb5-87f4-095181665598",
+  "attempt_useful_bits_per_transmitted_token": 0.0,
+  "authenticated": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": null,
+      "examined_total": 0,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 0
+    },
+    "public_scoring": {
+      "examined_max": 18,
+      "examined_total": 1529,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 8,
+        "special_control": 1
+      },
+      "steps": 95
+    },
+    "receiver": {
+      "examined_max": null,
+      "examined_total": 0,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 0
+    }
+  },
+  "carrier_tokens": 95,
+  "case_id": "Calgacus-c3-n32",
+  "charged_tokens": 625,
+  "ciphertext_sha256": "adbaf90ed7776f80658ba76b29258c12f9c768c1aecb2bf730129e9a76457085",
+  "context_index": 3,
+  "cover_context": "A short account of sorting apples at a small orchard:",
+  "encapsulation_hex": "81775a8782b6cec317bcaa8b83c72d82f71a4bc0b78af8c12dab0bbfcbf60121",
+  "envelope_bytes": 100,
+  "envelope_sha256": "561734690ddfd19609ac836de7c529998ea706e68889eaeade1cdaf44c7d433c",
+  "exact_recovery": false,
+  "failure_category": "tokenization_serialization_drift",
+  "family": null,
+  "first_rank_divergence": {
+    "actual": 1,
+    "expected": 48,
+    "position": 48
+  },
+  "first_transport_divergence": {
+    "actual": 13,
+    "expected": 5253,
+    "position": 48
+  },
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "intended_carrier_tokens": 94,
+  "key_id": "STAGE6_TEST_ONLY_6",
+  "kind": "encrypted",
+  "method": "Calgacus",
+  "observer": {
+    "after_eight_log2_rank": 6.3220445308663775,
+    "after_eight_nll_bits": 9.866156976962406,
+    "all_candidates_member": false,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": null,
+    "encrypted_body_nll_bits": null,
+    "format_accepted": false,
+    "format_and_kem_canonical": false,
+    "format_error": "Invalid Base64",
+    "format_failure_category": "framing_failure",
+    "kem_canonical": null,
+    "mean_log2_rank": 6.468435497105424,
+    "mean_nll_bits": 10.142422922449956,
+    "member_fraction": 0.2736842105263158,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "9b0657f01a5781713f5098276fae0fb4508120270d69802c6a29d1a5fffae14d",
+    "prefix": {
+      "observed_prefix_ids": [
+        67454,
+        16127,
+        3686,
+        539,
+        12266,
+        4999
+      ],
+      "prefix_match": false,
+      "status": "valid_nonmatch"
+    },
+    "profile_sha256": "45a56748eeb728052a7d31d464527e5fb0c6d99adadd32b8a43f026cd6973e71",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 95,
+    "utf8_bytes": 432
+  },
+  "pair_id": "c3-n32-r0",
+  "payload_bytes": 32,
+  "payload_sha256": "3f90f7717a22b9fbb2a367038896f675a162fe25f6096998c4169870ee1c705a",
+  "pid": 657442,
+  "profile_id": "stage6_public_calgacus_base64_v1",
+  "profile_sha256": "45a56748eeb728052a7d31d464527e5fb0c6d99adadd32b8a43f026cd6973e71",
+  "public_context_token_ids": {
+    "A short account of sorting apples at a small orchard:": [
+      128000,
+      32,
+      2875,
+      2759,
+      315,
+      29373,
+      41776,
+      520,
+      264,
+      2678,
+      41245,
+      569,
+      25
+    ],
+    "Canonical Base64 data:": [
+      128000,
+      72014,
+      5464,
+      1227,
+      828,
+      25
+    ]
+  },
+  "receiver_error": "Invalid Base64",
+  "receiver_public_key_hex": "3c8491d6b4f51594befe2db17754e7f01eb1864901fbce048993c6f5520c906c",
+  "schema_version": 1,
+  "serialization_status": "retokenization_drift",
+  "serialized_base64": "gXdah4K2zsMXvKqLg8ctgvcaS8C3ivjBLasLv8v2ASEBrMLO06IkLNDu/VPqHSU6fVR36hwvlnF3XrXUtz+MXBqipcCE467vPkGTLdACNa1wAGLDHIUuK4seX5KOlG1R7b+qhw==",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "baseline",
+  "success": false,
+  "successful_payload_bits_per_token": null,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": false,
+  "timings": {
+    "encode_seconds": 6.094030979002127,
+    "load_and_verify_seconds": 14.408760491998692,
+    "public_scoring_seconds": 6.4207138210003905,
+    "receiver_seconds": 6.090246481999202
+  },
+  "tokens_by_phase": {
+    "encode": 207,
+    "public_scoring": 108,
+    "public_source_reconstruction": 101,
+    "receiver": 209
+  },
+  "trace_path": "artifacts/stage6/attempts/d8d04eb5-3e51-4eb5-87f4-095181665598/traces.json",
+  "transport_bytes": 432,
+  "transport_sha256": "74980707c30a88f5843b0637dddee7fc2200d8767b8ffe5d41b2395215294d59",
+  "wire_delivered": true,
+  "worker_seconds": 33.17602729400096
+}

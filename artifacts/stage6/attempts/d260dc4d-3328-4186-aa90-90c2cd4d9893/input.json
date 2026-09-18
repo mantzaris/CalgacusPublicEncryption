@@ -1,0 +1,37 @@
+{
+  "TEST_ONLY_private_key_hex": "40198b70c12643cfbdca4c7cfda2f7c267b775f95da0f1b0d5f1b6a1705d0761",
+  "case_id": "L-c3-n128-r0",
+  "context_index": 3,
+  "key_id": "STAGE6_TEST_ONLY_6",
+  "kind": "encrypted",
+  "method": "L",
+  "pair_id": "c3-n128-r0",
+  "payload_bytes": 128,
+  "payload_hex": "4ae5f584131520829f44a5d12ae8d3b8d6e8a9dbda6c6a80907cb6360dfc984ef77e56086f79b5f4f84c662223e7a9842d3bf21ac1e7a39a91bdc6b81a98d9adf941e7c338b8949fc610f482171d9bb5b8b9ee4e99b4c98c91d2437e16757af49eeed2f6890d65838bbf4d4d82c2600b9a48d0ad0b981027b8f49e1e8b6f311b",
+  "payload_sha256": "7e0068de901978c540d5e268788e0065113c60190a87777add6976e8aa207484",
+  "prediction_path": "artifacts/stage6/attempts/a95a13cc-f114-4acf-a97d-2fb7b7b7a931/public_prediction.json",
+  "prediction_sha256": "d81b508d06b7265dccb94c047aeba84c3b3e785be2bb61657924f17d9d4ffcbe",
+  "profile_path": "configs/stage6/L.json",
+  "profile_sha256": "ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a",
+  "repetition": 0,
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "main_fixed",
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "token_reservation": 1500,
+  "wall_reservation_seconds": 120
+}

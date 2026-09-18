@@ -1,0 +1,13 @@
+method,family,role,attempted,delivered,scorable,prefix_matches,format_accepted,format_and_kem_canonical,all_candidates_member,invalid_utf8,retokenization_drift,candidate_exhaustion,observer_candidate_unavailable_messages,observer_candidate_unavailable_positions
+L,A,encrypted,16,16,16,16,16,16,16,0,0,0,0,0
+L,A,control,16,16,16,1,0,0,0,0,0,0,0,0
+L,B,encrypted,16,16,16,16,16,16,16,0,0,0,0,0
+L,B,control,16,16,16,1,0,0,16,0,0,0,0,0
+L,C,encrypted,16,16,16,16,16,16,16,0,0,0,0,0
+L,C,control,16,16,16,0,0,0,16,0,0,0,0,0
+F,A,encrypted,16,16,16,0,16,16,16,0,0,0,0,0
+F,A,control,16,16,16,0,0,0,0,0,4,0,0,0
+F,B,encrypted,16,16,16,0,16,16,16,0,0,0,0,0
+F,B,control,16,16,16,0,16,16,16,0,0,0,0,0
+F,C,encrypted,16,16,16,0,16,16,16,0,0,0,0,0
+F,C,control,16,16,16,0,16,9,16,0,0,0,0,0

@@ -1,0 +1,138 @@
+{
+  "attempt_id": "aa04feae-4c16-4ad4-9b05-0b31930b8ac3",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": 19,
+      "examined_total": 6303,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 31,
+        "special_control": 0
+      },
+      "steps": 392
+    },
+    "public_scoring": {
+      "examined_max": 19,
+      "examined_total": 6303,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 31,
+        "special_control": 0
+      },
+      "steps": 392
+    }
+  },
+  "carrier_tokens": 392,
+  "case_id": "control-F-c2-n128-r1-B",
+  "charged_tokens": 806,
+  "context_index": 2,
+  "cover_context": "A coastal report about waves around a stone pier:",
+  "cumulative_budget": {
+    "cases": 173,
+    "seconds": 6055.028618829994,
+    "tokens": 99384
+  },
+  "evidence_dir": "artifacts/stage6/attempts/aa04feae-4c16-4ad4-9b05-0b31930b8ac3",
+  "exact_recovery": false,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": "B",
+  "first_transport_divergence": null,
+  "generated_tokens": 392,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 392,
+  "job_elapsed_seconds": 46.41239381000196,
+  "kind": "control",
+  "lease_verified": true,
+  "method": "F",
+  "observer": {
+    "after_eight_log2_rank": 0.3084010307472304,
+    "after_eight_nll_bits": 0.8344904916384691,
+    "all_candidates_member": true,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": 0.32198845919426655,
+    "encrypted_body_nll_bits": 0.86791322192682,
+    "envelope_bytes": 196,
+    "envelope_sha256": "d46058cc60e6401b412ca7505b32867a2cf000b8d160071aa95fcdfe5b844edf",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_log2_rank": 0.3329560024180009,
+    "mean_nll_bits": 0.8734388384725909,
+    "member_fraction": 1.0,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "3c85ae5a7980bd6021d076d4e7f53cc66f45b5518cf77df58f868e0d4fd9e32c",
+    "prefix": {
+      "observed_prefix_ids": [
+        32418,
+        12,
+        23807,
+        43807,
+        320,
+        7585
+      ],
+      "prefix_match": false,
+      "status": "valid_nonmatch"
+    },
+    "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 392,
+    "utf8_bytes": 2188
+  },
+  "pair_id": "c2-n128-r1",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 621930,
+  "profile_id": "stage6_public_utf8_rank16_inferred_v1",
+  "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A coastal report about waves around a stone pier:": [
+      128000,
+      32,
+      35335,
+      1934,
+      922,
+      17301,
+      2212,
+      264,
+      9998,
+      22710,
+      25
+    ]
+  },
+  "sampling_seed": 202609180231,
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "main_fixed",
+  "success": true,
+  "target_tokens": 392,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": true,
+  "timings": {
+    "control_generation_seconds": 15.365376611000102,
+    "load_and_verify_seconds": 14.582093908000388,
+    "public_scoring_seconds": 15.700876875998802
+  },
+  "tokens_by_phase": {
+    "control_generation": 403,
+    "public_scoring": 403
+  },
+  "trace_path": "artifacts/stage6/attempts/aa04feae-4c16-4ad4-9b05-0b31930b8ac3/traces.json",
+  "transport_bytes": 2188,
+  "transport_sha256": "c51b787330919cc516feb6909c8b7594d425089182ab4491acbeea29c6af468d",
+  "wire_delivered": true,
+  "worker_seconds": 45.83065924699986
+}

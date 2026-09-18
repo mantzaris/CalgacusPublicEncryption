@@ -1,0 +1,66 @@
+{
+  "attempt_id": "e79e520c-7d56-4f25-9207-842a27da12a9",
+  "authenticated": true,
+  "candidate_costs": {
+    "fresh_receiver": {
+      "examined_max": 21,
+      "examined_total": 3336,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 8,
+        "special_control": 0
+      },
+      "steps": 208
+    }
+  },
+  "carrier_tokens": 208,
+  "case_id": "replay-04",
+  "charged_tokens": 219,
+  "context_index": 2,
+  "cover_context": "A coastal report about waves around a stone pier:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "replay",
+  "method": "L",
+  "pair_id": null,
+  "pid": 662803,
+  "profile_id": "stage6_public_utf8_rank16_length_v1",
+  "profile_sha256": "ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a",
+  "public_context_token_ids": {
+    "A coastal report about waves around a stone pier:": [
+      128000,
+      32,
+      35335,
+      1934,
+      922,
+      17301,
+      2212,
+      264,
+      9998,
+      22710,
+      25
+    ]
+  },
+  "recovered_bytes": 32,
+  "recovered_sha256": "b1cf870ca8d0a5170ce6f43a07a7393639fe76e46d4878625ae7d3c99b85f912",
+  "schema_version": 1,
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "fresh_receiver",
+  "success": true,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "timings": {
+    "fresh_receiver_seconds": 7.347579026998574,
+    "load_and_verify_seconds": 14.375735574998544
+  },
+  "tokens_by_phase": {
+    "fresh_receiver": 219
+  },
+  "trace_path": "artifacts/stage6/attempts/e79e520c-7d56-4f25-9207-842a27da12a9/traces.json",
+  "transport_bytes": 1144,
+  "transport_sha256": "5ae94bc5b4f309847d0a7b016c25c320767defc126608af7e23125644a4144cb",
+  "wire_delivered": true,
+  "worker_seconds": 21.804029238999647
+}

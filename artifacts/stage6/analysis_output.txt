@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "case_count": 150,
+  "stage6_usage": {
+    "seconds": 5809.186128039983,
+    "tokens": 101145,
+    "cases": 150
+  },
+  "lifetime_usage": {
+    "seconds": 7541.8848853629825,
+    "tokens": 124994,
+    "cases": 214
+  },
+  "unsettled": [],
+  "recovery": [
+    {
+      "method": "L",
+      "payload_bytes": 32,
+      "planned": 8,
+      "attempted": 8,
+      "delivered": 8,
+      "authenticated_exact": 8,
+      "recovery_fraction": 1.0,
+      "recovery_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "mean_success_payload_bits_per_token": 1.2307692307692308,
+      "mean_attempt_useful_bits_per_transmitted_token": 1.2307692307692308,
+      "attempt_rate_cluster_interval": [
+        1.2307692307692308,
+        1.2307692307692308
+      ],
+      "aggregate_recovered_bits_per_delivered_token": 1.2307692307692308,
+      "recovered_bytes_per_charged_second": 0.8506021915709887
+    },
+    {
+      "method": "L",
+      "payload_bytes": 128,
+      "planned": 8,
+      "attempted": 8,
+      "delivered": 8,
+      "authenticated_exact": 8,
+      "recovery_fraction": 1.0,
+      "recovery_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "mean_success_payload_bits_per_token": 2.56,
+      "mean_attempt_useful_bits_per_transmitted_token": 2.56,
+      "attempt_rate_cluster_interval": [
+        2.56,
+        2.56
+      ],
+      "aggregate_recovered_bits_per_delivered_token": 2.56,
+      "recovered_bytes_per_charged_second": 2.070929271269972
+    },
+    {
+      "method": "F",
+      "payload_bytes": 32,
+      "planned": 8,
+      "attempted": 8,
+      "delivered": 8,
+      "authenticated_exact": 8,
+      "recovery_fraction": 1.0,
+      "recovery_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "mean_success_payload_bits_per_token": 1.28,
+      "mean_attempt_useful_bits_per_transmitted_token": 1.28,
+      "attempt_rate_cluster_interval": [
+        1.28,
+        1.28
+      ],
+      "aggregate_recovered_bits_per_delivered_token": 1.28,
+      "recovered_bytes_per_charged_second": 0.8757507944304306
+    },
+    {
+      "method": "F",
+      "payload_bytes": 128,
+      "planned": 8,
+      "attempted": 8,
+      "delivered": 8,
+      "authenticated_exact": 8,
+      "recovery_fraction": 1.0,
+      "recovery_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "mean_success_payload_bits_per_token": 2.6122448979591835,
+      "mean_attempt_useful_bits_per_transmitted_token": 2.6122448979591835,
+      "attempt_rate_cluster_interval": [
+        2.6122448979591835,
+        2.6122448979591835
+      ],
+      "aggregate_recovered_bits_per_delivered_token": 2.6122448979591835,
+      "recovered_bytes_per_charged_second": 2.1071596621541975
+    },
+    {
+      "method": "Calgacus",
+      "payload_bytes": 32,
+      "planned": 4,
+      "attempted": 4,
+      "delivered": 4,
+      "authenticated_exact": 2,
+      "recovery_fraction": 0.5,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "mean_success_payload_bits_per_token": 2.602270381836945,
+      "mean_attempt_useful_bits_per_transmitted_token": 1.3011351909184725,
+      "attempt_rate_cluster_interval": [
+        null,
+        null
+      ],
+      "aggregate_recovered_bits_per_delivered_token": 1.3027989821882953,
+      "recovered_bytes_per_charged_second": 0.46688611902404314
+    },
+    {
+      "method": "Calgacus",
+      "payload_bytes": 128,
+      "planned": 4,
+      "attempted": 4,
+      "delivered": 4,
+      "authenticated_exact": 2,
+      "recovery_fraction": 0.5,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "mean_success_payload_bits_per_token": 5.435458436584817,
+      "mean_attempt_useful_bits_per_transmitted_token": 2.7177292182924084,
+      "attempt_rate_cluster_interval": [
+        null,
+        null
+      ],
+      "aggregate_recovered_bits_per_delivered_token": 2.716180371352785,
+      "recovered_bytes_per_charged_second": 1.2466179700709958
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "attempt_id": "f1469ac4-b918-415e-86e4-2f43518ff2e0",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": 24,
+      "examined_total": 6299,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 1,
+        "noncanonical": 26,
+        "special_control": 0
+      },
+      "steps": 392
+    },
+    "public_scoring": {
+      "examined_max": 24,
+      "examined_total": 6299,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 1,
+        "noncanonical": 26,
+        "special_control": 0
+      },
+      "steps": 392
+    }
+  },
+  "carrier_tokens": 392,
+  "case_id": "control-F-c3-n128-r1-B",
+  "charged_tokens": 810,
+  "context_index": 3,
+  "cover_context": "A short account of sorting apples at a small orchard:",
+  "cumulative_budget": {
+    "cases": 194,
+    "seconds": 6807.707762133985,
+    "tokens": 111924
+  },
+  "evidence_dir": "artifacts/stage6/attempts/f1469ac4-b918-415e-86e4-2f43518ff2e0",
+  "exact_recovery": false,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": "B",
+  "first_transport_divergence": null,
+  "generated_tokens": 392,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 392,
+  "job_elapsed_seconds": 45.87719131099948,
+  "kind": "control",
+  "lease_verified": true,
+  "method": "F",
+  "observer": {
+    "after_eight_log2_rank": 0.4116594571017625,
+    "after_eight_nll_bits": 1.1404720121584095,
+    "all_candidates_member": true,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": 0.43086080495400403,
+    "encrypted_body_nll_bits": 1.1800180782623022,
+    "envelope_bytes": 196,
+    "envelope_sha256": "1ed97db52d19e9a81ed6e6cf109931bb54344d29825e40d4de94e2da0e5c7fa8",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_log2_rank": 0.4192924330253547,
+    "mean_nll_bits": 1.159130854703721,
+    "member_fraction": 1.0,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "9b0657f01a5781713f5098276fae0fb4508120270d69802c6a29d1a5fffae14d",
+    "prefix": {
+      "observed_prefix_ids": [
+        279,
+        16267,
+        11,
+        279,
+        28566,
+        11
+      ],
+      "prefix_match": false,
+      "status": "valid_nonmatch"
+    },
+    "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 392,
+    "utf8_bytes": 1854
+  },
+  "pair_id": "c3-n128-r1",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 643785,
+  "profile_id": "stage6_public_utf8_rank16_inferred_v1",
+  "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A short account of sorting apples at a small orchard:": [
+      128000,
+      32,
+      2875,
+      2759,
+      315,
+      29373,
+      41776,
+      520,
+      264,
+      2678,
+      41245,
+      569,
+      25
+    ]
+  },
+  "sampling_seed": 202609180301,
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "main_fixed",
+  "success": true,
+  "target_tokens": 392,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": true,
+  "timings": {
+    "control_generation_seconds": 15.179002479999326,
+    "load_and_verify_seconds": 14.352485415998672,
+    "public_scoring_seconds": 15.455682793999586
+  },
+  "tokens_by_phase": {
+    "control_generation": 405,
+    "public_scoring": 405
+  },
+  "trace_path": "artifacts/stage6/attempts/f1469ac4-b918-415e-86e4-2f43518ff2e0/traces.json",
+  "transport_bytes": 1854,
+  "transport_sha256": "5a31fdc3799dae1981ca3345ccbbc3743acac9cc9762268a4962f05e019ed60e",
+  "wire_delivered": true,
+  "worker_seconds": 45.14457390499956
+}

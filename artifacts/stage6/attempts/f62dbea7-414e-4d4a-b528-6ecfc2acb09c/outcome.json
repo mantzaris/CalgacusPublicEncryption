@@ -1,0 +1,137 @@
+{
+  "attempt_id": "f62dbea7-414e-4d4a-b528-6ecfc2acb09c",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": null,
+      "examined_total": 0,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 0
+    },
+    "public_scoring": {
+      "examined_max": 17,
+      "examined_total": 3208,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 8,
+        "special_control": 0
+      },
+      "steps": 200
+    }
+  },
+  "carrier_tokens": 200,
+  "case_id": "control-F-c1-n32-r0-A",
+  "charged_tokens": 420,
+  "context_index": 1,
+  "cover_context": "A workshop guide to repairing a wooden chair:",
+  "cumulative_budget": {
+    "cases": 127,
+    "seconds": 4366.461125624992,
+    "tokens": 70802
+  },
+  "evidence_dir": "artifacts/stage6/attempts/f62dbea7-414e-4d4a-b528-6ecfc2acb09c",
+  "exact_recovery": false,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": "A",
+  "first_transport_divergence": null,
+  "generated_tokens": 200,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 200,
+  "job_elapsed_seconds": 27.219905914000265,
+  "kind": "control",
+  "lease_verified": true,
+  "method": "F",
+  "observer": {
+    "after_eight_log2_rank": 0.32796993437982164,
+    "after_eight_nll_bits": 0.9086034737810613,
+    "all_candidates_member": false,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": 0.22782136906367167,
+    "encrypted_body_nll_bits": 0.6237938969596502,
+    "format_accepted": false,
+    "format_and_kem_canonical": false,
+    "format_error": "Received token outside public rank16 alphabet",
+    "format_failure_category": "framing_failure",
+    "kem_canonical": null,
+    "mean_log2_rank": 0.3715503870190519,
+    "mean_nll_bits": 0.9762112292166819,
+    "member_fraction": 0.99,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "5e704ddb23898d218b92174836600c41ede46c039ddc3a2ea252a0adfc9f48d0",
+    "prefix": {
+      "observed_prefix_ids": [
+        2737,
+        12823,
+        11,
+        7384,
+        11,
+        323
+      ],
+      "prefix_match": false,
+      "status": "valid_nonmatch"
+    },
+    "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 200,
+    "utf8_bytes": 1033
+  },
+  "pair_id": "c1-n32-r0",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 574221,
+  "profile_id": "stage6_public_utf8_rank16_inferred_v1",
+  "profile_sha256": "c41e25c434f13f868ad2b795715437026d22029ffe92f01ab74c871f94b7b006",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A workshop guide to repairing a wooden chair:": [
+      128000,
+      32,
+      26129,
+      8641,
+      311,
+      68337,
+      264,
+      23162,
+      10716,
+      25
+    ]
+  },
+  "sampling_seed": 202609180080,
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "main_fixed",
+  "success": true,
+  "target_tokens": 200,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": true,
+  "timings": {
+    "control_generation_seconds": 4.751970797999093,
+    "load_and_verify_seconds": 14.420674940000026,
+    "public_scoring_seconds": 7.2150833169980615
+  },
+  "tokens_by_phase": {
+    "control_generation": 210,
+    "public_scoring": 210
+  },
+  "trace_path": "artifacts/stage6/attempts/f62dbea7-414e-4d4a-b528-6ecfc2acb09c/traces.json",
+  "transport_bytes": 1033,
+  "transport_sha256": "d1f2da0098b45277c3960805a9a988689a78ef35c5ae5ee6c2c0e6d9ce16e85f",
+  "wire_delivered": true,
+  "worker_seconds": 26.551295821001986
+}

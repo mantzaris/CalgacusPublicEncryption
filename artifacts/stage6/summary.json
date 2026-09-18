@@ -1,0 +1,2746 @@
+{
+  "all_gpu_lease_phase_provenance_verified": true,
+  "all_workers_clean_exit": true,
+  "analysis": {
+    "auc_population": "matched pairs with both delivered outputs scorable, independent of authentication success",
+    "hierarchical_bootstrap_draws": 2000,
+    "limits": "only four selected contexts; conditional/descriptive intervals, possibly degenerate; no operational false-positive or general concealment estimate",
+    "seed": 2026091866,
+    "unit": "context, then repetition/key block; lengths/variants/controls retained jointly"
+  },
+  "attempted_cases": 150,
+  "baseline_attempts": 8,
+  "candidate_costs": {
+    "empty": 18,
+    "examined_total": 1314286,
+    "invalid_utf8": 163,
+    "noncanonical": 2802,
+    "special_control": 55,
+    "steps": 81953
+  },
+  "candidate_search": {
+    "max_examined_on_any_step": 27,
+    "mean_examined_per_step": 16.037070027942846,
+    "public_scoring_unavailable_positions": 0
+  },
+  "control_attempts": 96,
+  "costs": [
+    {
+      "attempts": 4,
+      "charged_seconds": 62.409570487001474,
+      "evaluated_tokens": 69,
+      "family": "-",
+      "kind": "prediction",
+      "max_job_seconds": 16.013938485000835,
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.315822018499603,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 15.466236993501298,
+      "method": "L",
+      "payload_setting_bytes": null,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "qualification"
+    },
+    {
+      "attempts": 1,
+      "charged_seconds": 29.334064040998783,
+      "evaluated_tokens": 441,
+      "family": "-",
+      "kind": "encrypted",
+      "max_job_seconds": 29.334064040998783,
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 4.731123617999401,
+      "mean_load_and_verify_seconds": 14.223902429999725,
+      "mean_public_scoring_seconds": 4.86023623499932,
+      "mean_receiver_seconds": 4.71554835400093,
+      "median_job_seconds": 29.334064040998783,
+      "method": "F",
+      "payload_setting_bytes": 0,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "qualification"
+    },
+    {
+      "attempts": 1,
+      "charged_seconds": 60.80163810299928,
+      "evaluated_tokens": 1215,
+      "family": "-",
+      "kind": "encrypted",
+      "max_job_seconds": 60.80163810299928,
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 14.905329952001921,
+      "mean_load_and_verify_seconds": 14.767676633997326,
+      "mean_public_scoring_seconds": 15.310630346997641,
+      "mean_receiver_seconds": 14.888466676999087,
+      "median_job_seconds": 60.80163810299928,
+      "method": "F",
+      "payload_setting_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "qualification"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 300.96324996199473,
+      "evaluated_tokens": 5262,
+      "family": "-",
+      "kind": "encrypted",
+      "max_job_seconds": 38.39865879599893,
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 7.372794309999335,
+      "mean_load_and_verify_seconds": 14.603540847000659,
+      "mean_public_scoring_seconds": 7.592320301124801,
+      "mean_receiver_seconds": 7.336116981623945,
+      "median_job_seconds": 37.35264175800148,
+      "method": "L",
+      "payload_setting_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 292.3206026510052,
+      "evaluated_tokens": 5070,
+      "family": "-",
+      "kind": "encrypted",
+      "max_job_seconds": 36.83688197800075,
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 7.05043431175136,
+      "mean_load_and_verify_seconds": 14.465487053624656,
+      "mean_public_scoring_seconds": 7.264773768125451,
+      "mean_receiver_seconds": 7.013736475625137,
+      "median_job_seconds": 36.53439817900107,
+      "method": "F",
+      "payload_setting_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 485.9622260199976,
+      "evaluated_tokens": 9678,
+      "family": "-",
+      "kind": "encrypted",
+      "max_job_seconds": 61.33237024199843,
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 15.025564620000296,
+      "mean_load_and_verify_seconds": 14.550608941000064,
+      "mean_public_scoring_seconds": 15.454378411125617,
+      "mean_receiver_seconds": 14.984629987374774,
+      "median_job_seconds": 60.80121219600005,
+      "method": "F",
+      "payload_setting_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 494.46401391199834,
+      "evaluated_tokens": 9870,
+      "family": "-",
+      "kind": "encrypted",
+      "max_job_seconds": 62.94759998399968,
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 15.406896902499284,
+      "mean_load_and_verify_seconds": 14.430045534624242,
+      "mean_public_scoring_seconds": 15.864856864124704,
+      "mean_receiver_seconds": 15.367074218999733,
+      "median_job_seconds": 61.60203607200128,
+      "method": "L",
+      "payload_setting_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 223.59407212599763,
+      "evaluated_tokens": 3508,
+      "family": "A",
+      "kind": "control",
+      "max_job_seconds": 28.819918614000926,
+      "mean_control_generation_seconds": 4.964686367250579,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.587688147500103,
+      "mean_public_scoring_seconds": 7.603082204125258,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 27.736127682999722,
+      "method": "L",
+      "payload_setting_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 243.3452398710033,
+      "evaluated_tokens": 3508,
+      "family": "B",
+      "kind": "control",
+      "max_job_seconds": 30.92427502600185,
+      "mean_control_generation_seconds": 7.411858726625269,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.637213930500366,
+      "mean_public_scoring_seconds": 7.584330838125425,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 30.420115345501472,
+      "method": "L",
+      "payload_setting_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 242.2671217740026,
+      "evaluated_tokens": 3508,
+      "family": "C",
+      "kind": "control",
+      "max_job_seconds": 30.97025273300096,
+      "mean_control_generation_seconds": 7.368649137499233,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.592682059875187,
+      "mean_public_scoring_seconds": 7.5611282994996145,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 30.39970446949883,
+      "method": "L",
+      "payload_setting_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 218.7099264770004,
+      "evaluated_tokens": 3380,
+      "family": "A",
+      "kind": "control",
+      "max_job_seconds": 27.756364602999383,
+      "mean_control_generation_seconds": 4.77227615787524,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.516950117249507,
+      "mean_public_scoring_seconds": 7.285327430499365,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 27.204040643500775,
+      "method": "F",
+      "payload_setting_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 235.80418876099793,
+      "evaluated_tokens": 3380,
+      "family": "B",
+      "kind": "control",
+      "max_job_seconds": 29.876900650000607,
+      "mean_control_generation_seconds": 7.0992158196249875,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.464719510126088,
+      "mean_public_scoring_seconds": 7.277731879874864,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 29.341954857998644,
+      "method": "F",
+      "payload_setting_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 237.4765097659947,
+      "evaluated_tokens": 3380,
+      "family": "C",
+      "kind": "control",
+      "max_job_seconds": 30.424221436998778,
+      "mean_control_generation_seconds": 7.097353796249536,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.507382337749277,
+      "mean_public_scoring_seconds": 7.273789114750343,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 29.604485317999206,
+      "method": "F",
+      "payload_setting_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 321.21413735199894,
+      "evaluated_tokens": 6450,
+      "family": "A",
+      "kind": "control",
+      "max_job_seconds": 41.065470851997816,
+      "mean_control_generation_seconds": 9.161507843624804,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.635431334374971,
+      "mean_public_scoring_seconds": 15.46328917925075,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 40.027726488498956,
+      "method": "F",
+      "payload_setting_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 368.6030599580008,
+      "evaluated_tokens": 6452,
+      "family": "B",
+      "kind": "control",
+      "max_job_seconds": 46.430942851999134,
+      "mean_control_generation_seconds": 15.184316807125015,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.567010208374995,
+      "mean_public_scoring_seconds": 15.52128302275014,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 45.88215027050137,
+      "method": "F",
+      "payload_setting_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 365.85018598499664,
+      "evaluated_tokens": 6452,
+      "family": "C",
+      "kind": "control",
+      "max_job_seconds": 45.87795483999798,
+      "mean_control_generation_seconds": 14.9575541803747,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.693351300375525,
+      "mean_public_scoring_seconds": 15.38688231537435,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 45.86648911900011,
+      "method": "F",
+      "payload_setting_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 324.86285064900585,
+      "evaluated_tokens": 6580,
+      "family": "A",
+      "kind": "control",
+      "max_job_seconds": 41.0931724400034,
+      "mean_control_generation_seconds": 9.359921892374587,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.594846238124774,
+      "mean_public_scoring_seconds": 15.923646111749804,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 40.539929138500156,
+      "method": "L",
+      "payload_setting_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 374.01972155700423,
+      "evaluated_tokens": 6580,
+      "family": "B",
+      "kind": "control",
+      "max_job_seconds": 47.54365310100184,
+      "mean_control_generation_seconds": 15.480966022376379,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.643446964624673,
+      "mean_public_scoring_seconds": 15.83952442012469,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 46.68061091349955,
+      "method": "L",
+      "payload_setting_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 8,
+      "charged_seconds": 373.3606535799918,
+      "evaluated_tokens": 6580,
+      "family": "C",
+      "kind": "control",
+      "max_job_seconds": 46.93912135800201,
+      "mean_control_generation_seconds": 15.43165514062548,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.576501055124027,
+      "mean_public_scoring_seconds": 15.878825233623502,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 46.668898100499064,
+      "method": "L",
+      "payload_setting_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "main_fixed"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 137.07839533499646,
+      "evaluated_tokens": 2563,
+      "family": "-",
+      "kind": "encrypted",
+      "max_job_seconds": 35.22193995899943,
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 6.279343829999561,
+      "mean_load_and_verify_seconds": 14.490420701999938,
+      "mean_public_scoring_seconds": 6.616430109749672,
+      "mean_receiver_seconds": 6.252983575750477,
+      "median_job_seconds": 34.13273668199872,
+      "method": "Calgacus",
+      "payload_setting_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "baseline"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 205.35561506900194,
+      "evaluated_tokens": 4731,
+      "family": "-",
+      "kind": "encrypted",
+      "max_job_seconds": 52.26821340900278,
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 11.73080895449948,
+      "mean_load_and_verify_seconds": 14.52304497924979,
+      "mean_public_scoring_seconds": 12.683209270499901,
+      "mean_receiver_seconds": 11.701754530500693,
+      "median_job_seconds": 51.470457654499114,
+      "method": "Calgacus",
+      "payload_setting_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "baseline"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 105.63460773099723,
+      "evaluated_tokens": 1260,
+      "family": "-",
+      "kind": "replay",
+      "max_job_seconds": 30.416504764998535,
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.442587768248814,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 26.41210450899962,
+      "method": "L",
+      "payload_setting_bytes": null,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "fresh_receiver"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 105.75447687299675,
+      "evaluated_tokens": 1228,
+      "family": "-",
+      "kind": "replay",
+      "max_job_seconds": 30.429535906998353,
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": null,
+      "mean_load_and_verify_seconds": 14.492824062750515,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "median_job_seconds": 26.439185526500296,
+      "method": "F",
+      "payload_setting_bytes": null,
+      "peak_sampled_vram_mib": 5006,
+      "stage6_phase": "fresh_receiver"
+    }
+  ],
+  "distinct_encrypted_envelope_hashes": 42,
+  "failures": [
+    {
+      "attempt_id": "e9be092b-d35f-4376-9a4e-35fd9069aa6f",
+      "case_id": "control-F-c0-n128-r1-A",
+      "error": null,
+      "failure_category": null,
+      "first_rank_divergence": null,
+      "first_transport_divergence": {
+        "actual": 5450,
+        "expected": 13,
+        "position": 35
+      },
+      "kind": "control",
+      "method": "F",
+      "serialization_status": "retokenization_drift"
+    },
+    {
+      "attempt_id": "a23f0226-cf65-441a-8228-b7c6bfd5c7f7",
+      "case_id": "control-F-c2-n32-r1-A",
+      "error": null,
+      "failure_category": null,
+      "first_rank_divergence": null,
+      "first_transport_divergence": {
+        "actual": 5570,
+        "expected": 320,
+        "position": 192
+      },
+      "kind": "control",
+      "method": "F",
+      "serialization_status": "retokenization_drift"
+    },
+    {
+      "attempt_id": "9701e770-d2f0-4b23-82c5-3a14b49ecd02",
+      "case_id": "control-F-c3-n128-r0-A",
+      "error": null,
+      "failure_category": null,
+      "first_rank_divergence": null,
+      "first_transport_divergence": {
+        "actual": 38927,
+        "expected": 330,
+        "position": 34
+      },
+      "kind": "control",
+      "method": "F",
+      "serialization_status": "retokenization_drift"
+    },
+    {
+      "attempt_id": "0fec6120-4bc5-4bdc-a4cb-afc06e4780e2",
+      "case_id": "control-F-c3-n128-r1-A",
+      "error": null,
+      "failure_category": null,
+      "first_rank_divergence": null,
+      "first_transport_divergence": {
+        "actual": 18613,
+        "expected": 1365,
+        "position": 318
+      },
+      "kind": "control",
+      "method": "F",
+      "serialization_status": "retokenization_drift"
+    },
+    {
+      "attempt_id": "407ce1fb-6006-4265-a94f-b66238b4955e",
+      "case_id": "Calgacus-c0-n32",
+      "error": "HPKE authentication failed",
+      "failure_category": "tokenization_serialization_drift",
+      "first_rank_divergence": {
+        "actual": 24,
+        "expected": 1022,
+        "position": 97
+      },
+      "first_transport_divergence": {
+        "actual": 45,
+        "expected": 19480,
+        "position": 97
+      },
+      "kind": "encrypted",
+      "method": "Calgacus",
+      "serialization_status": "retokenization_drift"
+    },
+    {
+      "attempt_id": "4f558ed6-6ac8-4bde-a5b4-a7a4914ce7ff",
+      "case_id": "Calgacus-c1-n128",
+      "error": "Invalid Base64 length",
+      "failure_category": "tokenization_serialization_drift",
+      "first_rank_divergence": {
+        "actual": 15,
+        "expected": 40,
+        "position": 10
+      },
+      "first_transport_divergence": {
+        "actual": 343,
+        "expected": 33339,
+        "position": 10
+      },
+      "kind": "encrypted",
+      "method": "Calgacus",
+      "serialization_status": "retokenization_drift"
+    },
+    {
+      "attempt_id": "d8d04eb5-3e51-4eb5-87f4-095181665598",
+      "case_id": "Calgacus-c3-n32",
+      "error": "Invalid Base64",
+      "failure_category": "tokenization_serialization_drift",
+      "first_rank_divergence": {
+        "actual": 1,
+        "expected": 48,
+        "position": 48
+      },
+      "first_transport_divergence": {
+        "actual": 13,
+        "expected": 5253,
+        "position": 48
+      },
+      "kind": "encrypted",
+      "method": "Calgacus",
+      "serialization_status": "retokenization_drift"
+    },
+    {
+      "attempt_id": "f48b6571-c829-4f6e-96cb-f5c9c5c07b5e",
+      "case_id": "Calgacus-c3-n128",
+      "error": "Invalid Base64 length",
+      "failure_category": "tokenization_serialization_drift",
+      "first_rank_divergence": {
+        "actual": 2,
+        "expected": 20,
+        "position": 106
+      },
+      "first_transport_divergence": {
+        "actual": 92,
+        "expected": 11281,
+        "position": 106
+      },
+      "kind": "encrypted",
+      "method": "Calgacus",
+      "serialization_status": "retokenization_drift"
+    }
+  ],
+  "fresh_process_replays": {
+    "attempted": 8,
+    "authenticated_exact": 8,
+    "cases": [
+      {
+        "case_id": "replay-00",
+        "exact": true,
+        "source_case_id": "L-c0-n32-r0"
+      },
+      {
+        "case_id": "replay-01",
+        "exact": true,
+        "source_case_id": "F-c0-n32-r0"
+      },
+      {
+        "case_id": "replay-02",
+        "exact": true,
+        "source_case_id": "L-c0-n128-r0"
+      },
+      {
+        "case_id": "replay-03",
+        "exact": true,
+        "source_case_id": "F-c0-n128-r0"
+      },
+      {
+        "case_id": "replay-04",
+        "exact": true,
+        "source_case_id": "L-c2-n32-r0"
+      },
+      {
+        "case_id": "replay-05",
+        "exact": true,
+        "source_case_id": "F-c2-n32-r0"
+      },
+      {
+        "case_id": "replay-06",
+        "exact": true,
+        "source_case_id": "L-c2-n128-r0"
+      },
+      {
+        "case_id": "replay-07",
+        "exact": true,
+        "source_case_id": "F-c2-n128-r0"
+      }
+    ]
+  },
+  "full_cpu_suite_run": false,
+  "gpu_tested_code_commits": [
+    "404904dfd9d8a44212db1bc42ba1a54a83cbb48c"
+  ],
+  "historical_data_pooled": false,
+  "historical_prefix_preserved": true,
+  "independent_main_recipient_public_keys": 8,
+  "ledger_bytes": 114488,
+  "ledger_sha256": "3bd430af581a350a175e917d6abdadb9b0763d202eb0f204596d1b094a6bdc99",
+  "lifetime_usage": {
+    "cases": 214,
+    "seconds": 7541.8848853629825,
+    "tokens": 124994
+  },
+  "main_encrypted_attempts": 32,
+  "new_focused_tests": 11,
+  "paired_auc_differences": [
+    {
+      "F_minus_L_auc": -0.46875,
+      "complete_support": true,
+      "family": "A",
+      "metric": "prefix_match",
+      "paired_cluster_interval": [
+        -0.5,
+        -0.375
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "A",
+      "metric": "format_accepted",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "A",
+      "metric": "format_and_kem_canonical",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "A",
+      "metric": "member_fraction",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "A",
+      "metric": "mean_nll_bits",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "A",
+      "metric": "mean_log2_rank",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "A",
+      "metric": "after_eight_nll_bits",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "A",
+      "metric": "encrypted_body_nll_bits",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "A",
+      "metric": "encrypted_body_log2_rank",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.015625,
+      "complete_support": true,
+      "family": "A",
+      "metric": "token_count",
+      "paired_cluster_interval": [
+        0.0,
+        0.0625
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.05859375,
+      "complete_support": true,
+      "family": "A",
+      "metric": "utf8_bytes",
+      "paired_cluster_interval": [
+        -0.17578125,
+        0.078125
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.46875,
+      "complete_support": true,
+      "family": "B",
+      "metric": "prefix_match",
+      "paired_cluster_interval": [
+        -0.5,
+        -0.375
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.5,
+      "complete_support": true,
+      "family": "B",
+      "metric": "format_accepted",
+      "paired_cluster_interval": [
+        -0.5,
+        -0.5
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.5,
+      "complete_support": true,
+      "family": "B",
+      "metric": "format_and_kem_canonical",
+      "paired_cluster_interval": [
+        -0.5,
+        -0.5
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "B",
+      "metric": "member_fraction",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "B",
+      "metric": "mean_nll_bits",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "B",
+      "metric": "mean_log2_rank",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "B",
+      "metric": "after_eight_nll_bits",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "B",
+      "metric": "encrypted_body_nll_bits",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "B",
+      "metric": "encrypted_body_log2_rank",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "B",
+      "metric": "token_count",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.05859375,
+      "complete_support": true,
+      "family": "B",
+      "metric": "utf8_bytes",
+      "paired_cluster_interval": [
+        -0.12890625,
+        0.05087890624999947
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.5,
+      "complete_support": true,
+      "family": "C",
+      "metric": "prefix_match",
+      "paired_cluster_interval": [
+        -0.5,
+        -0.5
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.5,
+      "complete_support": true,
+      "family": "C",
+      "metric": "format_accepted",
+      "paired_cluster_interval": [
+        -0.5,
+        -0.5
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.28125,
+      "complete_support": true,
+      "family": "C",
+      "metric": "format_and_kem_canonical",
+      "paired_cluster_interval": [
+        -0.40625,
+        -0.15625
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "C",
+      "metric": "member_fraction",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.0546875,
+      "complete_support": true,
+      "family": "C",
+      "metric": "mean_nll_bits",
+      "paired_cluster_interval": [
+        -0.40234375,
+        0.234375
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.25390625,
+      "complete_support": true,
+      "family": "C",
+      "metric": "mean_log2_rank",
+      "paired_cluster_interval": [
+        -0.03144531249999999,
+        0.5197265624999989
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.1640625,
+      "complete_support": true,
+      "family": "C",
+      "metric": "after_eight_nll_bits",
+      "paired_cluster_interval": [
+        -0.50400390625,
+        0.11337890624999947
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.03125,
+      "complete_support": true,
+      "family": "C",
+      "metric": "encrypted_body_nll_bits",
+      "paired_cluster_interval": [
+        -0.390625,
+        0.2734375
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.06640625,
+      "complete_support": true,
+      "family": "C",
+      "metric": "encrypted_body_log2_rank",
+      "paired_cluster_interval": [
+        -0.2265625,
+        0.45322265624999947
+      ]
+    },
+    {
+      "F_minus_L_auc": 0.0,
+      "complete_support": true,
+      "family": "C",
+      "metric": "token_count",
+      "paired_cluster_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "F_minus_L_auc": -0.05078125,
+      "complete_support": true,
+      "family": "C",
+      "metric": "utf8_bytes",
+      "paired_cluster_interval": [
+        -0.234375,
+        0.13291015624999947
+      ]
+    }
+  ],
+  "payload_and_envelope_hashes_reconciled": true,
+  "peak_sampled_vram_mib": 5006,
+  "phase_evaluated_tokens": {
+    "control_generation": 29880,
+    "encode": 12942,
+    "fresh_receiver": 2488,
+    "public_prediction": 69,
+    "public_scoring": 41627,
+    "public_source_reconstruction": 1195,
+    "receiver": 12944
+  },
+  "phase_seconds": {
+    "control_generation_seconds": 946.3196951330065,
+    "encode_seconds": 450.5225858619997,
+    "fresh_receiver_seconds": 89.50923613000123,
+    "load_and_verify_seconds": 2182.5856218289846,
+    "public_prediction_seconds": 1.997414690998994,
+    "public_scoring_seconds": 1575.5707792569847,
+    "receiver_seconds": 449.0354287649934
+  },
+  "planned_slots": 150,
+  "qualification": {
+    "attempted": 6,
+    "completed": 6
+  },
+  "recognition_auc": [
+    {
+      "auc_cluster_interval": [
+        0.875,
+        1.0
+      ],
+      "auc_higher_is_stego": 0.96875,
+      "context_auc": {
+        "0": 0.875,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.0625,
+      "control_median": 0.0,
+      "encrypted_mean": 1,
+      "encrypted_median": 1.0,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "prefix_match"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.0,
+      "control_median": 0.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.0,
+      "control_median": 0.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.9729927884615385,
+      "control_median": 0.9754807692307692,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 1.4025902685039564,
+      "control_median": 1.4749927073972358,
+      "encrypted_mean": 5.766682173866449,
+      "encrypted_median": 5.83500098425475,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.5611924532269528,
+      "control_median": 0.5922261516839422,
+      "encrypted_mean": 2.704897392721955,
+      "encrypted_median": 2.7050408032500153,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 1.3641938459725247,
+      "control_median": 1.4723723013060654,
+      "encrypted_mean": 5.836167775157254,
+      "encrypted_median": 5.895551336273116,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "after_eight_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 1.2935953294327711,
+      "control_median": 1.3709527311414076,
+      "encrypted_mean": 5.622892871702843,
+      "encrypted_median": 5.581905746351168,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "encrypted_body_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.5030013212151273,
+      "control_median": 0.5063843864494881,
+      "encrypted_mean": 2.750117174778545,
+      "encrypted_median": 2.74451005074486,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "encrypted_body_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 304.0,
+      "control_median": 304.0,
+      "encrypted_mean": 304.0,
+      "encrypted_median": 304.0,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "token_count"
+    },
+    {
+      "auc_cluster_interval": [
+        0.28115234375,
+        0.484375
+      ],
+      "auc_higher_is_stego": 0.37109375,
+      "context_auc": {
+        "0": 0.3125,
+        "1": 0.3125,
+        "2": 0.4375,
+        "3": 0.375
+      },
+      "control_mean": 1491.8125,
+      "control_median": 1494.5,
+      "encrypted_mean": 1366.375,
+      "encrypted_median": 1369.5,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "utf8_bytes"
+    },
+    {
+      "auc_cluster_interval": [
+        0.875,
+        1.0
+      ],
+      "auc_higher_is_stego": 0.96875,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 0.875
+      },
+      "control_mean": 0.0625,
+      "control_median": 0.0,
+      "encrypted_mean": 1,
+      "encrypted_median": 1.0,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "prefix_match"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.0,
+      "control_median": 0.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.0,
+      "control_median": 0.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 1.0,
+      "control_median": 1.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 1.08522453419782,
+      "control_median": 1.1335645103326721,
+      "encrypted_mean": 5.766682173866449,
+      "encrypted_median": 5.83500098425475,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.39514701396243335,
+      "control_median": 0.4018018667170905,
+      "encrypted_mean": 2.704897392721955,
+      "encrypted_median": 2.7050408032500153,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 1.0558322573127976,
+      "control_median": 1.102314376640639,
+      "encrypted_mean": 5.836167775157254,
+      "encrypted_median": 5.895551336273116,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "after_eight_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 1.0085164871982994,
+      "control_median": 1.090430693291197,
+      "encrypted_mean": 5.622892871702843,
+      "encrypted_median": 5.581905746351168,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "encrypted_body_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.36410115011522975,
+      "control_median": 0.38292276545280807,
+      "encrypted_mean": 2.750117174778545,
+      "encrypted_median": 2.74451005074486,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "encrypted_body_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 304.0,
+      "control_median": 304.0,
+      "encrypted_mean": 304.0,
+      "encrypted_median": 304.0,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "token_count"
+    },
+    {
+      "auc_cluster_interval": [
+        0.2734375,
+        0.44140625
+      ],
+      "auc_higher_is_stego": 0.3671875,
+      "context_auc": {
+        "0": 0.25,
+        "1": 0.4375,
+        "2": 0.375,
+        "3": 0.375
+      },
+      "control_mean": 1498.8125,
+      "control_median": 1506.5,
+      "encrypted_mean": 1366.375,
+      "encrypted_median": 1369.5,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "utf8_bytes"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0,
+      "control_median": 0.0,
+      "encrypted_mean": 1,
+      "encrypted_median": 1.0,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "prefix_match"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.0,
+      "control_median": 0.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.0,
+      "control_median": 0.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 1.0,
+      "control_median": 1.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_cluster_interval": [
+        0.15625,
+        0.71484375
+      ],
+      "auc_higher_is_stego": 0.421875,
+      "context_auc": {
+        "0": 0.375,
+        "1": 0.375,
+        "2": 0.375,
+        "3": 0.4375
+      },
+      "control_mean": 5.877916358850443,
+      "control_median": 5.848236181500252,
+      "encrypted_mean": 5.766682173866449,
+      "encrypted_median": 5.83500098425475,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        0.0,
+        0.453125
+      ],
+      "auc_higher_is_stego": 0.203125,
+      "context_auc": {
+        "0": 0.25,
+        "1": 0.1875,
+        "2": 0.25,
+        "3": 0.0
+      },
+      "control_mean": 2.7663333083052297,
+      "control_median": 2.7706786911182975,
+      "encrypted_mean": 2.704897392721955,
+      "encrypted_median": 2.7050408032500153,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        0.23408203125000002,
+        0.8125
+      ],
+      "auc_higher_is_stego": 0.51171875,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.75,
+        "2": 0.375,
+        "3": 0.5625
+      },
+      "control_mean": 5.848502078425855,
+      "control_median": 5.813037572872183,
+      "encrypted_mean": 5.836167775157254,
+      "encrypted_median": 5.895551336273116,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "after_eight_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        0.15615234375,
+        0.765625
+      ],
+      "auc_higher_is_stego": 0.44140625,
+      "context_auc": {
+        "0": 0.4375,
+        "1": 0.5625,
+        "2": 0.25,
+        "3": 0.5
+      },
+      "control_mean": 5.6701573580228875,
+      "control_median": 5.611511920854609,
+      "encrypted_mean": 5.622892871702843,
+      "encrypted_median": 5.581905746351168,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "encrypted_body_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        0.296875,
+        0.6875
+      ],
+      "auc_higher_is_stego": 0.49609375,
+      "context_auc": {
+        "0": 0.5625,
+        "1": 0.375,
+        "2": 0.375,
+        "3": 0.625
+      },
+      "control_mean": 2.748749235137726,
+      "control_median": 2.7450207847875636,
+      "encrypted_mean": 2.750117174778545,
+      "encrypted_median": 2.74451005074486,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "encrypted_body_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 304.0,
+      "control_median": 304.0,
+      "encrypted_mean": 304.0,
+      "encrypted_median": 304.0,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "token_count"
+    },
+    {
+      "auc_cluster_interval": [
+        0.359375,
+        0.640625
+      ],
+      "auc_higher_is_stego": 0.51171875,
+      "context_auc": {
+        "0": 0.375,
+        "1": 0.375,
+        "2": 0.6875,
+        "3": 0.5
+      },
+      "control_mean": 1314.9375,
+      "control_median": 1212.5,
+      "encrypted_mean": 1366.375,
+      "encrypted_median": 1369.5,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "L",
+      "metric": "utf8_bytes"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 0,
+      "control_median": 0.0,
+      "encrypted_mean": 0,
+      "encrypted_median": 0.0,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "prefix_match"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.0,
+      "control_median": 0.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.0,
+      "control_median": 0.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.9662560504971219,
+      "control_median": 0.9693877551020409,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 1.5312155220361856,
+      "control_median": 1.4007798927214123,
+      "encrypted_mean": 5.750245782518279,
+      "encrypted_median": 5.73097156143328,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.6431779791532073,
+      "control_median": 0.5575611611734813,
+      "encrypted_mean": 2.749612121173376,
+      "encrypted_median": 2.754861219638562,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 1.4703376356302027,
+      "control_median": 1.3148922353073962,
+      "encrypted_mean": 5.715355314615395,
+      "encrypted_median": 5.714022084845725,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "after_eight_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 1.4606729332724429,
+      "control_median": 1.3199700005768777,
+      "encrypted_mean": 5.5809600883565365,
+      "encrypted_median": 5.511623833952649,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "encrypted_body_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.6127004253430003,
+      "control_median": 0.5078630972299611,
+      "encrypted_mean": 2.7618131429371893,
+      "encrypted_median": 2.7781860766573856,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "encrypted_body_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5625
+      ],
+      "auc_higher_is_stego": 0.515625,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5625
+      },
+      "control_mean": 295.875,
+      "control_median": 295.0,
+      "encrypted_mean": 296.0,
+      "encrypted_median": 296.0,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "token_count"
+    },
+    {
+      "auc_cluster_interval": [
+        0.25,
+        0.40234375
+      ],
+      "auc_higher_is_stego": 0.3125,
+      "context_auc": {
+        "0": 0.25,
+        "1": 0.375,
+        "2": 0.25,
+        "3": 0.4375
+      },
+      "control_mean": 1451.0625,
+      "control_median": 1350.5,
+      "encrypted_mean": 1244.125,
+      "encrypted_median": 1084.0,
+      "family": "A",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "utf8_bytes"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 0,
+      "control_median": 0.0,
+      "encrypted_mean": 0,
+      "encrypted_median": 0.0,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "prefix_match"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 1.0,
+      "control_median": 1.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 1.0,
+      "control_median": 1.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 1.0,
+      "control_median": 1.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.9450504332382567,
+      "control_median": 0.9162446766717226,
+      "encrypted_mean": 5.750245782518279,
+      "encrypted_median": 5.73097156143328,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.33680177011519646,
+      "control_median": 0.32363605378235905,
+      "encrypted_mean": 2.749612121173376,
+      "encrypted_median": 2.754861219638562,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.9094658502800064,
+      "control_median": 0.8834890666533023,
+      "encrypted_mean": 5.715355314615395,
+      "encrypted_median": 5.714022084845725,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "after_eight_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.8784920057092055,
+      "control_median": 0.8497585818598895,
+      "encrypted_mean": 5.5809600883565365,
+      "encrypted_median": 5.511623833952649,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "encrypted_body_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "auc_higher_is_stego": 1.0,
+      "context_auc": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
+      },
+      "control_mean": 0.3079158079440558,
+      "control_median": 0.2830276328350023,
+      "encrypted_mean": 2.7618131429371893,
+      "encrypted_median": 2.7781860766573856,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "encrypted_body_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 296.0,
+      "control_median": 296.0,
+      "encrypted_mean": 296.0,
+      "encrypted_median": 296.0,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "token_count"
+    },
+    {
+      "auc_cluster_interval": [
+        0.25,
+        0.40625
+      ],
+      "auc_higher_is_stego": 0.30859375,
+      "context_auc": {
+        "0": 0.25,
+        "1": 0.4375,
+        "2": 0.3125,
+        "3": 0.25
+      },
+      "control_mean": 1448.3125,
+      "control_median": 1426.0,
+      "encrypted_mean": 1244.125,
+      "encrypted_median": 1084.0,
+      "family": "B",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "utf8_bytes"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 0,
+      "control_median": 0.0,
+      "encrypted_mean": 0,
+      "encrypted_median": 0.0,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "prefix_match"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 1.0,
+      "control_median": 1.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_cluster_interval": [
+        0.59375,
+        0.84375
+      ],
+      "auc_higher_is_stego": 0.71875,
+      "context_auc": {
+        "0": 0.625,
+        "1": 0.625,
+        "2": 0.75,
+        "3": 0.875
+      },
+      "control_mean": 0.5625,
+      "control_median": 1.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 1.0,
+      "control_median": 1.0,
+      "encrypted_mean": 1.0,
+      "encrypted_median": 1.0,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_cluster_interval": [
+        0.16796875,
+        0.5234375
+      ],
+      "auc_higher_is_stego": 0.3671875,
+      "context_auc": {
+        "0": 0.4375,
+        "1": 0.375,
+        "2": 0.125,
+        "3": 0.4375
+      },
+      "control_mean": 5.858738813753633,
+      "control_median": 5.874265657133975,
+      "encrypted_mean": 5.750245782518279,
+      "encrypted_median": 5.73097156143328,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        0.265625,
+        0.65625
+      ],
+      "auc_higher_is_stego": 0.45703125,
+      "context_auc": {
+        "0": 0.25,
+        "1": 0.625,
+        "2": 0.5,
+        "3": 0.4375
+      },
+      "control_mean": 2.7614821520229285,
+      "control_median": 2.759342346969527,
+      "encrypted_mean": 2.749612121173376,
+      "encrypted_median": 2.754861219638562,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        0.15234375,
+        0.515625
+      ],
+      "auc_higher_is_stego": 0.34765625,
+      "context_auc": {
+        "0": 0.375,
+        "1": 0.375,
+        "2": 0.0625,
+        "3": 0.4375
+      },
+      "control_mean": 5.846455934438894,
+      "control_median": 5.8511918937473855,
+      "encrypted_mean": 5.715355314615395,
+      "encrypted_median": 5.714022084845725,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "after_eight_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        0.1794921875,
+        0.609375
+      ],
+      "auc_higher_is_stego": 0.41015625,
+      "context_auc": {
+        "0": 0.4375,
+        "1": 0.5,
+        "2": 0.25,
+        "3": 0.4375
+      },
+      "control_mean": 5.667005239912877,
+      "control_median": 5.642049895954945,
+      "encrypted_mean": 5.5809600883565365,
+      "encrypted_median": 5.511623833952649,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "encrypted_body_nll_bits"
+    },
+    {
+      "auc_cluster_interval": [
+        0.34375,
+        0.7774414062499995
+      ],
+      "auc_higher_is_stego": 0.5625,
+      "context_auc": {
+        "0": 0.3125,
+        "1": 0.875,
+        "2": 0.4375,
+        "3": 0.375
+      },
+      "control_mean": 2.7476358168256096,
+      "control_median": 2.7579964033087725,
+      "encrypted_mean": 2.7618131429371893,
+      "encrypted_median": 2.7781860766573856,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "encrypted_body_log2_rank"
+    },
+    {
+      "auc_cluster_interval": [
+        0.5,
+        0.5
+      ],
+      "auc_higher_is_stego": 0.5,
+      "context_auc": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "control_mean": 296.0,
+      "control_median": 296.0,
+      "encrypted_mean": 296.0,
+      "encrypted_median": 296.0,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "token_count"
+    },
+    {
+      "auc_cluster_interval": [
+        0.375,
+        0.5625976562499995
+      ],
+      "auc_higher_is_stego": 0.4609375,
+      "context_auc": {
+        "0": 0.4375,
+        "1": 0.375,
+        "2": 0.375,
+        "3": 0.5625
+      },
+      "control_mean": 1278.0,
+      "control_median": 1217.0,
+      "encrypted_mean": 1244.125,
+      "encrypted_median": 1084.0,
+      "family": "C",
+      "matched_scorable_pairs": 16,
+      "method": "F",
+      "metric": "utf8_bytes"
+    }
+  ],
+  "recognition_outcomes": [
+    {
+      "all_candidates_member": 16,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "A",
+      "format_accepted": 16,
+      "format_and_kem_canonical": 16,
+      "invalid_utf8": 0,
+      "method": "L",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 16,
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 16
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "A",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "L",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 1,
+      "retokenization_drift": 0,
+      "role": "control",
+      "scorable": 16
+    },
+    {
+      "all_candidates_member": 16,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "B",
+      "format_accepted": 16,
+      "format_and_kem_canonical": 16,
+      "invalid_utf8": 0,
+      "method": "L",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 16,
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 16
+    },
+    {
+      "all_candidates_member": 16,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "B",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "L",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 1,
+      "retokenization_drift": 0,
+      "role": "control",
+      "scorable": 16
+    },
+    {
+      "all_candidates_member": 16,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "C",
+      "format_accepted": 16,
+      "format_and_kem_canonical": 16,
+      "invalid_utf8": 0,
+      "method": "L",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 16,
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 16
+    },
+    {
+      "all_candidates_member": 16,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "C",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "L",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 0,
+      "retokenization_drift": 0,
+      "role": "control",
+      "scorable": 16
+    },
+    {
+      "all_candidates_member": 16,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "A",
+      "format_accepted": 16,
+      "format_and_kem_canonical": 16,
+      "invalid_utf8": 0,
+      "method": "F",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 0,
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 16
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "A",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "F",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 0,
+      "retokenization_drift": 4,
+      "role": "control",
+      "scorable": 16
+    },
+    {
+      "all_candidates_member": 16,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "B",
+      "format_accepted": 16,
+      "format_and_kem_canonical": 16,
+      "invalid_utf8": 0,
+      "method": "F",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 0,
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 16
+    },
+    {
+      "all_candidates_member": 16,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "B",
+      "format_accepted": 16,
+      "format_and_kem_canonical": 16,
+      "invalid_utf8": 0,
+      "method": "F",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 0,
+      "retokenization_drift": 0,
+      "role": "control",
+      "scorable": 16
+    },
+    {
+      "all_candidates_member": 16,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "C",
+      "format_accepted": 16,
+      "format_and_kem_canonical": 16,
+      "invalid_utf8": 0,
+      "method": "F",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 0,
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 16
+    },
+    {
+      "all_candidates_member": 16,
+      "attempted": 16,
+      "candidate_exhaustion": 0,
+      "delivered": 16,
+      "family": "C",
+      "format_accepted": 16,
+      "format_and_kem_canonical": 9,
+      "invalid_utf8": 0,
+      "method": "F",
+      "observer_candidate_unavailable_messages": 0,
+      "observer_candidate_unavailable_positions": 0,
+      "prefix_matches": 0,
+      "retokenization_drift": 0,
+      "role": "control",
+      "scorable": 16
+    }
+  ],
+  "recovery": [
+    {
+      "aggregate_recovered_bits_per_delivered_token": 1.2307692307692308,
+      "attempt_rate_cluster_interval": [
+        1.2307692307692308,
+        1.2307692307692308
+      ],
+      "attempted": 8,
+      "authenticated_exact": 8,
+      "delivered": 8,
+      "mean_attempt_useful_bits_per_transmitted_token": 1.2307692307692308,
+      "mean_success_payload_bits_per_token": 1.2307692307692308,
+      "method": "L",
+      "payload_bytes": 32,
+      "planned": 8,
+      "recovered_bytes_per_charged_second": 0.8506021915709887,
+      "recovery_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "recovery_fraction": 1.0
+    },
+    {
+      "aggregate_recovered_bits_per_delivered_token": 2.56,
+      "attempt_rate_cluster_interval": [
+        2.56,
+        2.56
+      ],
+      "attempted": 8,
+      "authenticated_exact": 8,
+      "delivered": 8,
+      "mean_attempt_useful_bits_per_transmitted_token": 2.56,
+      "mean_success_payload_bits_per_token": 2.56,
+      "method": "L",
+      "payload_bytes": 128,
+      "planned": 8,
+      "recovered_bytes_per_charged_second": 2.070929271269972,
+      "recovery_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "recovery_fraction": 1.0
+    },
+    {
+      "aggregate_recovered_bits_per_delivered_token": 1.28,
+      "attempt_rate_cluster_interval": [
+        1.28,
+        1.28
+      ],
+      "attempted": 8,
+      "authenticated_exact": 8,
+      "delivered": 8,
+      "mean_attempt_useful_bits_per_transmitted_token": 1.28,
+      "mean_success_payload_bits_per_token": 1.28,
+      "method": "F",
+      "payload_bytes": 32,
+      "planned": 8,
+      "recovered_bytes_per_charged_second": 0.8757507944304306,
+      "recovery_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "recovery_fraction": 1.0
+    },
+    {
+      "aggregate_recovered_bits_per_delivered_token": 2.6122448979591835,
+      "attempt_rate_cluster_interval": [
+        2.6122448979591835,
+        2.6122448979591835
+      ],
+      "attempted": 8,
+      "authenticated_exact": 8,
+      "delivered": 8,
+      "mean_attempt_useful_bits_per_transmitted_token": 2.6122448979591835,
+      "mean_success_payload_bits_per_token": 2.6122448979591835,
+      "method": "F",
+      "payload_bytes": 128,
+      "planned": 8,
+      "recovered_bytes_per_charged_second": 2.1071596621541975,
+      "recovery_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "recovery_fraction": 1.0
+    },
+    {
+      "aggregate_recovered_bits_per_delivered_token": 1.3027989821882953,
+      "attempt_rate_cluster_interval": [
+        null,
+        null
+      ],
+      "attempted": 4,
+      "authenticated_exact": 2,
+      "delivered": 4,
+      "mean_attempt_useful_bits_per_transmitted_token": 1.3011351909184725,
+      "mean_success_payload_bits_per_token": 2.602270381836945,
+      "method": "Calgacus",
+      "payload_bytes": 32,
+      "planned": 4,
+      "recovered_bytes_per_charged_second": 0.46688611902404314,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "recovery_fraction": 0.5
+    },
+    {
+      "aggregate_recovered_bits_per_delivered_token": 2.716180371352785,
+      "attempt_rate_cluster_interval": [
+        null,
+        null
+      ],
+      "attempted": 4,
+      "authenticated_exact": 2,
+      "delivered": 4,
+      "mean_attempt_useful_bits_per_transmitted_token": 2.7177292182924084,
+      "mean_success_payload_bits_per_token": 5.435458436584817,
+      "method": "Calgacus",
+      "payload_bytes": 128,
+      "planned": 4,
+      "recovered_bytes_per_charged_second": 1.2466179700709958,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "recovery_fraction": 0.5
+    }
+  ],
+  "schema_version": 1,
+  "selected_gpu": {
+    "driver": "590.48.01",
+    "index": "1",
+    "name": "NVIDIA RTX 5000 Ada Generation",
+    "uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "vram_mib": "32760"
+  },
+  "skipped": [],
+  "stage6_unused_allowance": {
+    "cases": 10,
+    "seconds": 8590.813871960017,
+    "tokens": 98855
+  },
+  "stage6_usage": {
+    "cases": 150,
+    "seconds": 5809.186128039983,
+    "tokens": 101145
+  },
+  "starting_commit": "f51f38c22367aeae4dd728e37f4c092435ad0e14",
+  "stop_reason": "Frozen 150-slot allocation completed; unused investigation allowance not spent",
+  "unique_worker_pids": 150,
+  "unsettled_attempt_ids": []
+}

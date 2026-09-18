@@ -1,0 +1,66 @@
+{
+  "attempt_id": "df0fc465-b93a-4c76-857f-37992f0dc592",
+  "authenticated": true,
+  "candidate_costs": {
+    "fresh_receiver": {
+      "examined_max": 17,
+      "examined_total": 3330,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 2,
+        "special_control": 0
+      },
+      "steps": 208
+    }
+  },
+  "carrier_tokens": 208,
+  "case_id": "replay-00",
+  "charged_tokens": 219,
+  "context_index": 0,
+  "cover_context": "A museum note describing how a brass compass works:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "replay",
+  "method": "L",
+  "pair_id": null,
+  "pid": 659764,
+  "profile_id": "stage6_public_utf8_rank16_length_v1",
+  "profile_sha256": "ca3fb4b56b74e9aa263cf365e10413465f46546badca5fbd9862b5d54480003a",
+  "public_context_token_ids": {
+    "A museum note describing how a brass compass works:": [
+      128000,
+      32,
+      24925,
+      5296,
+      23524,
+      1268,
+      264,
+      37138,
+      24653,
+      4375,
+      25
+    ]
+  },
+  "recovered_bytes": 32,
+  "recovered_sha256": "4c11d0874d0789647f9770bbd1e3f447018af606f132a9e985aaef25ee5f9bc4",
+  "schema_version": 1,
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "fresh_receiver",
+  "success": true,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "timings": {
+    "fresh_receiver_seconds": 7.292489561001275,
+    "load_and_verify_seconds": 14.459358049000002
+  },
+  "tokens_by_phase": {
+    "fresh_receiver": 219
+  },
+  "trace_path": "artifacts/stage6/attempts/df0fc465-b93a-4c76-857f-37992f0dc592/traces.json",
+  "transport_bytes": 797,
+  "transport_sha256": "e111f6308000cc2c4f84ad4f2a41edd40cb5cbbd9f45b6763e8c99ae92147d41",
+  "wire_delivered": true,
+  "worker_seconds": 21.888966327998787
+}

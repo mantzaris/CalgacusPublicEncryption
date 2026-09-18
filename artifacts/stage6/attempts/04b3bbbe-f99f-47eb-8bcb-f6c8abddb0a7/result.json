@@ -1,0 +1,154 @@
+{
+  "attempt_id": "04b3bbbe-f99f-47eb-8bcb-f6c8abddb0a7",
+  "attempt_useful_bits_per_transmitted_token": 5.565217391304348,
+  "authenticated": true,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": null,
+      "examined_total": 0,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 0
+    },
+    "public_scoring": {
+      "examined_max": 18,
+      "examined_total": 2960,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 16,
+        "special_control": 0
+      },
+      "steps": 184
+    },
+    "receiver": {
+      "examined_max": null,
+      "examined_total": 0,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 0
+    }
+  },
+  "carrier_tokens": 184,
+  "case_id": "Calgacus-c0-n128",
+  "charged_tokens": 1155,
+  "ciphertext_sha256": "c5b1b89cb84b73aba415954c23d69f4dfb05d1419ac7b916b7e21bf7747bf3b2",
+  "context_index": 0,
+  "cover_context": "A museum note describing how a brass compass works:",
+  "encapsulation_hex": "d75ac73f2c46c40612a0342d6d3b732a00210c49f045bfc7b2b8b3612fdc270b",
+  "envelope_bytes": 196,
+  "envelope_sha256": "0547023350f4e0ae2f1a968fa3def017390039a31243c53610969ab37046aca9",
+  "exact_recovery": true,
+  "failure_category": null,
+  "family": null,
+  "first_rank_divergence": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "intended_carrier_tokens": 184,
+  "key_id": "STAGE6_TEST_ONLY_0",
+  "kind": "encrypted",
+  "method": "Calgacus",
+  "observer": {
+    "after_eight_log2_rank": 6.090412702429652,
+    "after_eight_nll_bits": 9.531894261141511,
+    "all_candidates_member": false,
+    "authenticated": false,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "encrypted_body_log2_rank": null,
+    "encrypted_body_nll_bits": null,
+    "envelope_bytes": 196,
+    "envelope_sha256": "0547023350f4e0ae2f1a968fa3def017390039a31243c53610969ab37046aca9",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_log2_rank": 6.17088034602243,
+    "mean_nll_bits": 9.695661307602553,
+    "member_fraction": 0.21195652173913043,
+    "observer_id": "stage6_public_complete_v1",
+    "prediction_cache_key": "4bfd33673871d4fd379f99ed9d1d63dfcc830b4b5ec9be0a3da8231bd2f59698",
+    "prefix": {
+      "observed_prefix_ids": [
+        57284,
+        261,
+        13345,
+        13692,
+        198,
+        16
+      ],
+      "prefix_match": false,
+      "status": "valid_nonmatch"
+    },
+    "profile_sha256": "45a56748eeb728052a7d31d464527e5fb0c6d99adadd32b8a43f026cd6973e71",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 184,
+    "utf8_bytes": 540
+  },
+  "pair_id": "c0-n128-r0",
+  "payload_bytes": 128,
+  "payload_sha256": "0760bdc7bd138fea7b9b682fdc8aaee60dc009131b38e6c9a7bc3d2161ed03b4",
+  "pid": 651323,
+  "profile_id": "stage6_public_calgacus_base64_v1",
+  "profile_sha256": "45a56748eeb728052a7d31d464527e5fb0c6d99adadd32b8a43f026cd6973e71",
+  "public_context_token_ids": {
+    "A museum note describing how a brass compass works:": [
+      128000,
+      32,
+      24925,
+      5296,
+      23524,
+      1268,
+      264,
+      37138,
+      24653,
+      4375,
+      25
+    ],
+    "Canonical Base64 data:": [
+      128000,
+      72014,
+      5464,
+      1227,
+      828,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "cff6274c52b70f77dcc5c0268e96b123a0d391a6e649e260b3e5d64ff16ba869",
+  "recovered_sha256": "0760bdc7bd138fea7b9b682fdc8aaee60dc009131b38e6c9a7bc3d2161ed03b4",
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "serialized_base64": "11rHPyxGxAYSoDQtbTtzKgAhDEnwRb/HsrizYS/cJwu+/POMQvT2+qlHTqT/Xdk/NGfCZBbxb/aRCeFV2VxQDn5BG9Cl1SwbhwQsFxXIwclHTLAgao/pd4imyXvcXhrAVb5lONXdxn5JMLlbqZOkEXGiNY2QUlCDGOCodmvtCW+rV8rakLmcszBOA0LC2B+n+zAzdDSdO8mgJ+njHLBugZNMdvZjfvfwpW0QywDnaE3yN8N+HkbQvZi0e5HXd6LcewNwRQ==",
+  "split": "stage6_prospective_exploratory_fixed_not_final_test",
+  "stage6_phase": "baseline",
+  "success": true,
+  "successful_payload_bits_per_token": 5.565217391304348,
+  "tested_code_commit": "404904dfd9d8a44212db1bc42ba1a54a83cbb48c",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 11.441444306998164,
+    "load_and_verify_seconds": 14.459561088002374,
+    "public_scoring_seconds": 12.292810087998078,
+    "receiver_seconds": 11.417033165002067
+  },
+  "tokens_by_phase": {
+    "encode": 385,
+    "public_scoring": 195,
+    "public_source_reconstruction": 190,
+    "receiver": 385
+  },
+  "trace_path": "artifacts/stage6/attempts/04b3bbbe-f99f-47eb-8bcb-f6c8abddb0a7/traces.json",
+  "transport_bytes": 540,
+  "transport_sha256": "623315b551e3c08c93b480af226826a86e055ccae35b75b94c87dfbde46ef891",
+  "wire_delivered": true,
+  "worker_seconds": 49.776424339001096
+}
