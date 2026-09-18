@@ -1,0 +1,72 @@
+{
+  "calgacus": {
+    "commit": "116123d4b7a74b3d56d15623355f9acf32a87165",
+    "url": "https://github.com/noranta4/calgacus.git",
+    "files": {
+      "LICENSE": "01789a6677573e5952eb8bea86d97ef6b2682c8f428d979261f16affe25adeff",
+      "README.md": "dd3954d0b97cbd836ea7e014c9ae7f673d5b1727aad977ad0588cd07715100b1",
+      "LLMs_can_hide_text_in_other_text_of_the_same_length.ipynb": "90cad538bd01c93bfb720c19c7480c38d70ae1e45421c93584d91e742d84bbb6"
+    }
+  },
+  "pyhpke": {
+    "commit": "a7e10c4a409f017a3aa436a31eae97ec96552de8",
+    "url": "https://github.com/dajiaji/pyhpke.git",
+    "version": "0.6.5",
+    "installed_source_sha256": {
+      "__init__.py": "5107b1ad0fe2fa8064f965de61480c85abedd07f6585f3eaa5adf1c6f57bda66",
+      "aead.py": "b54643a9ffd10039d7ee30130d7b7ee31e7be8a39ab0bc453527007c52152ed4",
+      "aead_interface.py": "771bbb5a4b953c3c058d3f38f0939eb81e0f4748d7110bb024c878ffafa0e8db",
+      "aead_key.py": "4e212b818c6b00b7b65ba25acfd8e21636c5a313f9315fb30a862227e065a8b7",
+      "aead_key_interface.py": "4afec713f0fe63ba359f8dc1709387b1541b8593f423a5952b729795c8c505ff",
+      "cipher_suite.py": "8ba6fd2dab38b64b41b745f4de504762933e24147d8c6942324557bb9fdaaab1",
+      "consts.py": "3c68bce6e3ab1e2a8cc5bebcb7f8c00ba12f80e0b42c647029bf97e45c00f220",
+      "context_interface.py": "0d9fa71b2f6bacd8fc4249dc35f3b8867850664f064021feadaeb8f105419bbd",
+      "encryption_context.py": "242e5d03575afa828c06f8d5ae9a4fc2d596ecf59b349779201675f96bc549b4",
+      "exceptions.py": "bf2ebca0e4439f6c46a1580e8fe71e18b9b70df075680eef76416e7cc9ce8bce",
+      "exporter_context.py": "e5194dc4937dd77654212c79fd8709e9ce5a035bfc5ac1292367e8742247d808",
+      "kdf.py": "568af019664b1e67a23f9af4f1cfe4a2442d6080fe53839556f4fd94f8204d78",
+      "kdf_interface.py": "5a3394e54cfa8b4c259e98fecb9bf88e2d51fc1014703de13bb066b49cc17c9e",
+      "kem.py": "017f50d74cefeffc37f86ddeaddce36545765dab5d19b3857283d05a5cb9183c",
+      "kem_interface.py": "e9d993c1d10c419bb1b55b655fc2cdf3b681b97c401c2de43158b9b11df13e92",
+      "kem_key.py": "71ea99e815bda3e3ae0ec27d337b87e5a03856066146451e25f4e43622f0b353",
+      "kem_key_interface.py": "9955b8bd265aeea566f3918f3362a26bfb044505a6a832f9d39ccd6f810325eb",
+      "kem_primitives/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kem_primitives/ec.py": "72cc3619ee2895ca323318396b04ec46bbfa3f708a58425144f24d3bf59fa89a",
+      "kem_primitives/x25519.py": "82deaa5904cc8edac15920412993f520e61fa4c02ba0f06b2562afd5ae296850",
+      "kem_primitives/x448.py": "1fa1c51e0c147b3d57ef0b5433aa6bc86ba7e0b86b35523fc0af8f128391c617",
+      "kem_primitives_interface.py": "f25185e4059a59ecf3e4e91901a1b8062b328726f6500400e2681533bdf5ae88",
+      "keys/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "keys/aes_gcm_key.py": "fd21a60ce07bf3fef591a068d073228018edff17dcf00bf2cd4893b6bfde4a42",
+      "keys/chacha20_poly1305_key.py": "0899b9fd36eb64c8df91fb186d4dcf8c0d245defce3adff33ac193ee15f600b8",
+      "keys/ec_key.py": "41e6859107f549c9764f8223974ce16c988ed0afc4ed1b24db2f38ebe831b337",
+      "keys/x25519_key.py": "85d9352d98824fdccd50fb7c89cc9897eba44053ad2db5f70dda309055a02726",
+      "keys/x448_key.py": "27af69e8cb418fb3e878a2a25b1b85b276172072f039295e1dc1b1462e40e961",
+      "recipient_context.py": "6177a3bbb6c62746cad231394c3e92f13286234f4af261d02b707b05866b1481",
+      "sender_context.py": "ed23e6205fab1d87349e29e09d23a1507aca1b94240688bcaedcc047aaa3c66e",
+      "utils.py": "62edcae69f93d91e5074ad37cb7a6254645429ab7b7b9fc2d02d461b1d5174cd"
+    },
+    "installed_matches_inspected_upstream": true
+  },
+  "hpke-vectors": {
+    "commit": "b1f7cb0cdeab6906c61b3d6574e8bdfdbe1cd3fb",
+    "url": "https://github.com/cfrg/draft-irtf-cfrg-hpke.git",
+    "selected_fixture_sha256": "729cdd575ef6c08daa6ce84218aeea8ac7022b82c139974b4e27eb4e93a0805c",
+    "full_vector_file_sha256": "61fc662f01996cd06d713dacf5e133167bd309a1f329442d53f1e21a47b3ede6",
+    "selection": {
+      "mode": 0,
+      "kem_id": 32,
+      "kdf_id": 1,
+      "aead_id": 3,
+      "encryptions": 257
+    }
+  },
+  "arithmetic": {
+    "commit": "14e982564aeaf9a33f7b4de440deda2184d17f12",
+    "url": "https://github.com/harvardnlp/NeuralSteganography.git"
+  },
+  "rrc": {
+    "commit": "dae326259e4fca8bc4fcf460dafdbc0e88a0a71a",
+    "url": "https://github.com/ryehr/RRC_steganography.git"
+  },
+  "schema_version": 1
+}

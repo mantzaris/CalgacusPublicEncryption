@@ -1,0 +1,13 @@
+# Threat model and claim limits
+
+The sender knows the recipient public key and all model, tokenizer, algorithm, context and profile data. The receiver additionally knows the recipient private key. HPKE ephemeral randomness and private keys are secret in a real deployment; the public development bundle intentionally discloses six **test-only** receiver keys. They cannot protect real data.
+
+The primary passive observer knows the exact public contexts, public key, configuration and algorithms and can run the same model. It may publicly extract the ciphertext. The format diagnostic uses only extraction plus canonical Base64/length checks; it cannot verify ChaCha20-Poly1305 tags. Ordinary controls come from this same model and cover contexts, temperature one and full-vocabulary sampling, at matched token lengths. This is a small model-defined channel, not human email or arbitrary natural language.
+
+Confidentiality relies on RFC 9180's selected suite, sound implementations, authenticated recipient-key distribution, fresh randomness and private key protection. For equal public lengths, efficiently processing ciphertext does not itself imply plaintext disclosure; aborts, variable lengths, timing and selection policies need separate analysis. Stage 1 validates implementation examples and published vectors; it supplies no new reduction, new hardness assumption or formal security proof.
+
+Concealment is independent of confidentiality. Public extraction can expose recognizable serialization while the message remains encrypted. Neither an empirical format signal nor its absence in a handful of samples establishes detector reliability or steganographic security. Rank preservation does not imply probability preservation.
+
+An active party can corrupt, normalize, truncate, replay or replace carrier text. Corrupted envelopes should fail authentication; loss of synchronization may fail earlier. Base mode permits anyone to encrypt fresh messages, so valid outsider replacements are expected. No chosen-covertext/CCA composition theorem is claimed: alternate encodings, replay, length leakage and decoding-oracle behavior need separate treatment. The offline diagnostic interface is not a network service.
+
+Not established: sender authentication, formal concealment, deniability, robustness to paraphrase or edits, recipient anonymity, traffic hiding, forward secrecy after static recipient-key compromise, cross-backend/GPU portability, production key management, secure erasure, or side-channel resistance. The rank codec is public, and prompt secrecy is never the source of confidentiality.

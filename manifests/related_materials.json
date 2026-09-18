@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "materials": [
+    {
+      "repository": "llm-rankcloak",
+      "local_path": "../llm-rankcloak/paperV3/scientific_reports/main3.tex",
+      "commit": "ce853d42d6ba64065cb63c6bdfc0d825c62734cd",
+      "sha256": "6bcbd20fda1fda549b19c48417b95c4a6924b33d7bb9d9c40b4daa35cf515dee",
+      "status": "inspected_not_reproduced"
+    },
+    {
+      "repository": "ImageCalgacus",
+      "local_path": "../ImageCalgacus/paper/icaart2027/main.tex",
+      "commit": "2bec65dbe5509623f6658d8a231ec93f6d579b4e",
+      "sha256": "ecb8df30c06b19f5147a30c1fca54910965f025fed227cf2e5b36aa5379be253",
+      "status": "inspected_not_reproduced"
+    },
+    {
+      "repository": "LlmStenoExplore",
+      "local_path": "../LlmStenoExplore/paper-empirical-explorations/results/raw/run_manifest.json",
+      "commit": "b9f1650b4eb0b2261b0080f86d9b1d8fadedbc0b",
+      "sha256": "d6b528e45bf0c57657842a9e01ef2bdde2662571a348cfadc038d60252f3eb1a",
+      "status": "inspected_not_reproduced"
+    },
+    {
+      "paper": "carts",
+      "pdf_sha256": "808abbdfb6ef288c337b20cea5069a6a235e3ac5e0687903be829aca918d1e98",
+      "stored_in_repository": false
+    },
+    {
+      "paper": "calgacus",
+      "pdf_sha256": "41fe4f009dee05083544cb9275d3121e8b27ef7b74592c0af68da187ee8489f6",
+      "stored_in_repository": false
+    }
+  ],
+  "novelty_gate": "unresolved"
+}

@@ -1,0 +1,9 @@
+
+==================================== ERRORS ====================================
+____________________ ERROR collecting tests/test_budget.py _____________________
+tests/test_budget.py::test_each_ceiling_is_enforced: 'request' is a reserved name and cannot be used in @pytest.mark.parametrize
+- generated xml file: /home/meow/Documents/repos/CalgacusPublicEncryption/artifacts/stage1/cpu-tests-initial.xml -
+=========================== short test summary info ============================
+ERROR tests/test_budget.py - Failed: tests/test_budget.py::test_each_ceiling_...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.54s

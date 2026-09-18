@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-stego-public-key"
+version = "0.1.0"
+description = "Bounded research foundations for public-key encrypted rank transcoding"
+requires-python = ">=3.10"
+dependencies = ["pyhpke==0.6.5", "cryptography==46.0.7", "numpy==2.2.6"]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2"]
+inference = ["llama-cpp-python==0.3.23", "nvidia-cuda-runtime-cu12==12.4.127", "nvidia-cublas-cu12==12.4.5.8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/*.py" = ["E402"] # CLI bootstrap adds src before project imports.
