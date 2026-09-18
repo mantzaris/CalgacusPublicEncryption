@@ -1,0 +1,782 @@
+{
+  "schema_version": 1,
+  "stage": 5,
+  "review_date": "2026-09-18",
+  "repository_url": "https://github.com/mantzaris/CalgacusPublicEncryption",
+  "branch": "main",
+  "starting_commit": "a19d49f936c478d380ec38c27594a0fec501ca12",
+  "starting_worktree": "clean",
+  "latest_gpu_tested_code_commit": "32edd3bf54712a8134659f298b8958462024c2a0",
+  "recommendation": "NO DISTINCT CONTRIBUTION IDENTIFIED YET",
+  "recommendation_provisional": true,
+  "scientific_novelty_cleared": false,
+  "provisional_reason": "Latest submitted versions/author claim allocation unconfirmed; available sources already show substantive overlap",
+  "primary_manuscripts": [
+    {
+      "id": "rankcloak",
+      "title": "RankCloak Conceals the Surface Form of Synthetic Cryptographic Artifacts in Language Model Generated Text",
+      "version": "local draft identified by repository revision and content hashes; filename does not establish submission version",
+      "repository": "https://github.com/mantzaris/llm-rankcloak",
+      "repository_commit": "ce853d42d6ba64065cb63c6bdfc0d825c62734cd",
+      "availability": "local TeX and relevant includes inspected",
+      "publication_status": "local_draft",
+      "author_confirmed_submitted_version": false,
+      "newer_or_submitted_revision": "unknown; author confirmation required",
+      "unrelated_worktree_changes": "cover-letter files modified; not inspected for submission status and not changed",
+      "files": [
+        {
+          "path": "../llm-rankcloak/paperV3/scientific_reports/main3.tex",
+          "repository_relative_path": "paperV3/scientific_reports/main3.tex",
+          "sha256": "6bcbd20fda1fda549b19c48417b95c4a6924b33d7bb9d9c40b4daa35cf515dee",
+          "bytes": 88289,
+          "matches_committed_blob": true,
+          "inspected_scope": "Main Methods, Results, Discussion/limitations; payload/replay/detector contracts"
+        },
+        {
+          "path": "../llm-rankcloak/paperV3/scientific_reports/supplementary3.tex",
+          "repository_relative_path": "paperV3/scientific_reports/supplementary3.tex",
+          "sha256": "bcc8c66171b807bf10e58f512c431b8cea69caf62a9d0c831899f0f5cb7ff61b",
+          "bytes": 89186,
+          "matches_committed_blob": true,
+          "inspected_scope": "S1 methods; S8 finite code/inversion; S13 entropy gating, completion and recovery denominators"
+        },
+        {
+          "path": "../llm-rankcloak/paperV3/scientific_reports/references.bib",
+          "repository_relative_path": "paperV3/scientific_reports/references.bib",
+          "sha256": "298007e8d77c07f85c75f97c971d7cf73d11b0bc7d0cb5f263dd7bef8400bd94",
+          "bytes": 18527,
+          "matches_committed_blob": true,
+          "inspected_scope": "Selected relevant source entries"
+        }
+      ],
+      "results_independently_reproduced": false,
+      "complete_manuscript_copied_into_project": false
+    },
+    {
+      "id": "imagecalgacus",
+      "title": "Exact Bidirectional Steganographic Transport with Language and Pixel Autoregressive Models",
+      "version": "local draft identified by repository revision and content hashes; filename does not establish submission version",
+      "repository": "https://github.com/mantzaris/ImageCalgacus",
+      "repository_commit": "2bec65dbe5509623f6658d8a231ec93f6d579b4e",
+      "availability": "local TeX and relevant includes inspected",
+      "publication_status": "local_draft",
+      "author_confirmed_submitted_version": false,
+      "newer_or_submitted_revision": "unknown; author confirmation required",
+      "unrelated_worktree_changes": "clean",
+      "files": [
+        {
+          "path": "../ImageCalgacus/paper/icaart2027/main.tex",
+          "repository_relative_path": "paper/icaart2027/main.tex",
+          "sha256": "ecb8df30c06b19f5147a30c1fca54910965f025fed227cf2e5b36aa5379be253",
+          "bytes": 52245,
+          "matches_committed_blob": true,
+          "inspected_scope": "Sections 2-6 relevant text/coding/observer passages; especially 3.1-3.4,4.3-4.4,5.1-5.4; no independent photograph evaluation audit"
+        },
+        {
+          "path": "../ImageCalgacus/paper/icaart2027/supplement.tex",
+          "repository_relative_path": "paper/icaart2027/supplement.tex",
+          "sha256": "73e5af63280c0663d4783b6ce4b5a12a4193072490a4c327cef9212654473603",
+          "bytes": 23179,
+          "matches_committed_blob": true,
+          "inspected_scope": "S1-S5 artifact boundary, retained failures, framing, sequence filtering, context observations; supplement status explicitly unconfirmed"
+        },
+        {
+          "path": "../ImageCalgacus/paper/icaart2027/preamble.tex",
+          "repository_relative_path": "paper/icaart2027/preamble.tex",
+          "sha256": "93d00646c1e0333118cab75357442a7092a2feb4f2de02dcac37aa811a36be8e",
+          "bytes": 787,
+          "matches_committed_blob": true,
+          "inspected_scope": "Actual included macros/layout; no execution"
+        },
+        {
+          "path": "../ImageCalgacus/paper/icaart2027/figures/method_diagram.tex",
+          "repository_relative_path": "paper/icaart2027/figures/method_diagram.tex",
+          "sha256": "becb4b50dc514f43c3800f9247b900331b9d1571d4ae1c40cada33b47736b217",
+          "bytes": 1194,
+          "matches_committed_blob": true,
+          "inspected_scope": "Actual included artifact/receiver/evaluator diagram source"
+        },
+        {
+          "path": "../ImageCalgacus/paper/icaart2027/tables/supp_table2_v2_outcomes.tex",
+          "repository_relative_path": "paper/icaart2027/tables/supp_table2_v2_outcomes.tex",
+          "sha256": "f0c26ca6536bd95075c35f153e45b5568fdff854b1b2a4c43fee50ba345151cc",
+          "bytes": 1404,
+          "matches_committed_blob": true,
+          "inspected_scope": "Included recovery/failure/goodput table"
+        },
+        {
+          "path": "../ImageCalgacus/paper/icaart2027/tables/supp_table3_detectability.tex",
+          "repository_relative_path": "paper/icaart2027/tables/supp_table3_detectability.tex",
+          "sha256": "78099e3171ba6ba71677596dedca26b4817a4d4eeee8a69e71de636d8fa39619",
+          "bytes": 1524,
+          "matches_committed_blob": true,
+          "inspected_scope": "Included detector table and failed-carrier inclusion"
+        },
+        {
+          "path": "../ImageCalgacus/paper/icaart2027/tables/supp_tableS1_overhead.tex",
+          "repository_relative_path": "paper/icaart2027/tables/supp_tableS1_overhead.tex",
+          "sha256": "c07484c2bf97455ad9dacf61bceacbf27064f4445fad14ab3b26226d4b69e073",
+          "bytes": 1182,
+          "matches_committed_blob": true,
+          "inspected_scope": "Included packet/span/overhead table"
+        },
+        {
+          "path": "../ImageCalgacus/paper/icaart2027/tables/context_comparison.tex",
+          "repository_relative_path": "paper/icaart2027/tables/context_comparison.tex",
+          "sha256": "776f9e52d0546ba466d348b65246e32e45335c83c961f969b48d7e0f995d3ed9",
+          "bytes": 766,
+          "matches_committed_blob": true,
+          "inspected_scope": "Included correct/mismatched observer-context table"
+        },
+        {
+          "path": "../ImageCalgacus/paper/icaart2027/references.bib",
+          "repository_relative_path": "paper/icaart2027/references.bib",
+          "sha256": "0efe8981b2c099a36b9923625ec14aeb64c9d52a7fd6548dadfcf23cdc93c626",
+          "bytes": 6261,
+          "matches_committed_blob": true,
+          "inspected_scope": "Selected relevant source entries"
+        }
+      ],
+      "results_independently_reproduced": false,
+      "complete_manuscript_copied_into_project": false
+    }
+  ],
+  "public_primary_sources": [
+    {
+      "id": "carts",
+      "title": "CARTS: Contextual Autoregressive Rank Transcoding Steganography for Full-Capacity Keyed Text Encoding",
+      "version": "arXiv:2609.10744v1",
+      "version_date": "2026-09-09",
+      "publication_status": "public_preprint",
+      "source_url": "https://arxiv.org/pdf/2609.10744v1",
+      "inspected_sections": [
+        "3.1 Lemma 1 and Theorem 1, PDF p3",
+        "3.2 Theorem 2, PDF p3",
+        "4.1 scope and 4.2 Proposition 1, PDF p4",
+        "5 empirical setup/correctness and conclusion"
+      ],
+      "sha256": "808abbdfb6ef288c337b20cea5069a6a235e3ac5e0687903be829aca918d1e98",
+      "bytes": 811514,
+      "availability": "retrieved",
+      "results_independently_reproduced": false,
+      "proof_independently_validated": false,
+      "stored_in_project": false,
+      "author_confirmed_submitted_version": false,
+      "newer_or_submitted_revision": "unknown; public v1 inspected",
+      "source_archive": {
+        "url": "https://arxiv.org/src/2609.10744v1",
+        "sha256": "c3378921dc9b34ac7b2acbb9dab10a012ae7466675645e6cbf5fce6fa0ae242f",
+        "bytes": 186535,
+        "files": [
+          {
+            "path": "main.tex",
+            "sha256": "1b1ede5a9b8d56bad9aae7a86079deef5f1d1940722dedea3068427ec622449b",
+            "bytes": 77996,
+            "inspected_scope": "Sections 3.1-4.2 statements/proofs, 5.1-5.2 setup/correctness and 6 conclusion; relevant source is inline"
+          },
+          {
+            "path": "sample-base.bib",
+            "sha256": "e71fbf14e95a31517f4becab1945efb75ce82ce7e57e4e442c08529a93feed8b",
+            "bytes": 23263,
+            "inspected_scope": "Selected relevant bibliography entries"
+          }
+        ],
+        "textual_includes": "Relevant manuscript text is inline; bibliography separate; figure binaries not audited"
+      }
+    },
+    {
+      "id": "calgacus",
+      "title": "LLMs can hide text in other text of the same length",
+      "version": "arXiv:2510.20075v6",
+      "version_date": "2026-01-16",
+      "publication_status": "public_preprint",
+      "source_url": "https://arxiv.org/pdf/2510.20075v6",
+      "inspected_sections": [
+        "3 recipe, PDF p4",
+        "hash example/probability comparison, p5",
+        "low entropy, precision and 3.1 security, pp6-7"
+      ],
+      "sha256": "41fe4f009dee05083544cb9275d3121e8b27ef7b74592c0af68da187ee8489f6",
+      "bytes": 7185511,
+      "availability": "retrieved",
+      "results_independently_reproduced": false,
+      "proof_independently_validated": false,
+      "stored_in_project": false
+    },
+    {
+      "id": "meteor",
+      "title": "Meteor: Cryptographically Secure Steganography for Realistic Distributions",
+      "version": "CCS 2021; DOI 10.1145/3460120.3484550",
+      "version_date": "2021",
+      "publication_status": "author_hosted_conference_paper",
+      "source_url": "https://www.cs.umd.edu/users/kaptchuk/publications/ccs21_meteor.pdf",
+      "inspected_sections": [
+        "3 definitions, PDF pp3-5",
+        "4 classical public-key and hybrid discussion, pp6-7",
+        "5 construction/PRG masks, pp8-9",
+        "6 implementation, p9"
+      ],
+      "sha256": "8ee5858264f895654c20265f3bbd3c81f263186fd189266558c76ef7efde3bdb",
+      "bytes": 6774738,
+      "availability": "retrieved",
+      "results_independently_reproduced": false,
+      "proof_independently_validated": false,
+      "stored_in_project": false
+    },
+    {
+      "id": "public_key",
+      "title": "Public-Key Steganography",
+      "version": "ePrint 2003/233; EUROCRYPT 2004",
+      "version_date": "2003/2004",
+      "publication_status": "public_eprint",
+      "source_url": "https://eprint.iacr.org/2003/233.pdf",
+      "inspected_sections": [
+        "2 IND$-CPA, PDF p3",
+        "3-4 channel and public-key steganographic games, pp4-6",
+        "6 Construction 1, p8",
+        "6.1 Construction 2, Lemma 1 and Theorem 1, p10"
+      ],
+      "sha256": null,
+      "bytes": null,
+      "availability": "browser PDF text accessible; direct download HTTP 403",
+      "results_independently_reproduced": false,
+      "proof_independently_validated": false,
+      "stored_in_project": false,
+      "hash_unavailable_reason": "No PDF bytes retrieved by direct download; browser text was inspected, not represented as a file hash"
+    },
+    {
+      "id": "hopper",
+      "title": "Provably Secure Steganography",
+      "version": "CMU-CS-02-149, inspected technical report",
+      "version_date": "2002-09-06",
+      "publication_status": "author_hosted_technical_report",
+      "source_url": "https://www.cs.cmu.edu/~biglou/PSS.pdf",
+      "inspected_sections": [
+        "2.2-2.3 cryptographic/channel/stegosystem definitions, PDF pp4-5",
+        "3 Steganographic Secrecy game, PDF p6"
+      ],
+      "sha256": "c1fabf983241d3c9860fe6f890734e1122a106b2d81ac9a4eefc95f4f7c974f6",
+      "bytes": 275973,
+      "availability": "retrieved",
+      "results_independently_reproduced": false,
+      "proof_independently_validated": false,
+      "stored_in_project": false
+    },
+    {
+      "id": "nls",
+      "title": "Neural Linguistic Steganography",
+      "version": "ACL D19-1115; EMNLP-IJCNLP 2019, pp1210-1215",
+      "version_date": "2019-11",
+      "publication_status": "published_conference_paper",
+      "source_url": "https://aclanthology.org/D19-1115.pdf",
+      "inspected_sections": [
+        "2-3 assumptions and arithmetic construction, pp1211-1213",
+        "4.1 finite implementation and 4.2 distributional metrics, p1213"
+      ],
+      "sha256": "70bcaf5ec14f3ed87b3f7f8604eb58e137b476dc9929cc47075aaf4462578b2c",
+      "bytes": 371693,
+      "availability": "retrieved",
+      "results_independently_reproduced": false,
+      "proof_independently_validated": false,
+      "stored_in_project": false
+    },
+    {
+      "id": "tokenization",
+      "title": "Addressing Tokenization Inconsistency in Steganography and Watermarking Based on Large Language Models",
+      "version": "ACL 2025.emnlp-main.361; EMNLP 2025, pp7076-7098",
+      "version_date": "2025-11",
+      "publication_status": "published_conference_paper",
+      "source_url": "https://aclanthology.org/2025.emnlp-main.361.pdf",
+      "inspected_sections": [
+        "2-3 tokenization inconsistency and candidate verification",
+        "Algorithm 1 p7079; 3.1 p7080"
+      ],
+      "sha256": "348453ce485abdc88e011c02073ba21e28c82f8a351c957ddfcc4d2fb62a645f",
+      "bytes": 3448732,
+      "availability": "retrieved",
+      "results_independently_reproduced": false,
+      "proof_independently_validated": false,
+      "stored_in_project": false
+    },
+    {
+      "id": "rrc",
+      "title": "Efficient Provably Secure Linguistic Steganography via Range Coding",
+      "version": "arXiv:2604.08052v2",
+      "version_date": "2026-04-13",
+      "publication_status": "public_preprint",
+      "source_url": "https://arxiv.org/pdf/2604.08052v2",
+      "inspected_sections": [
+        "2.4,3 background/failure of vanilla range coding",
+        "4 Algorithms 3-4 and keyed offsets, pp4-5",
+        "5.1 Propositions 1-2 and 5.2 computational-security claim, p6; not an independent proof audit"
+      ],
+      "sha256": "e531aa803cf871548824c3510e567dc46ea9d7bc6dbdcbf272446408053d8705",
+      "bytes": 2165680,
+      "availability": "retrieved",
+      "results_independently_reproduced": false,
+      "proof_independently_validated": false,
+      "stored_in_project": false
+    },
+    {
+      "id": "gold_standard",
+      "title": "On the Gold Standard for Security of Universal Steganography",
+      "version": "arXiv:1801.08154v1",
+      "version_date": "2018-01-24",
+      "publication_status": "public_preprint",
+      "source_url": "https://arxiv.org/pdf/1801.08154",
+      "inspected_sections": [
+        "Introduction/scope",
+        "7 Theorem 10 and assumptions, p19",
+        "8 Theorem 12 and surrounding limitations, p23"
+      ],
+      "sha256": "519d24b40bfa241eb4d23d18dd1b8bf8736077e56275fb1fdda55dc358383bfe",
+      "bytes": 474967,
+      "availability": "retrieved",
+      "results_independently_reproduced": false,
+      "proof_independently_validated": false,
+      "stored_in_project": false,
+      "versioned_source_url": "https://arxiv.org/pdf/1801.08154v1",
+      "version_confirmed_from_pdf_front_matter": true
+    },
+    {
+      "id": "coupling",
+      "title": "Perfectly Secure Steganography Using Minimum Entropy Coupling",
+      "version": "ICLR 2023; arXiv:2210.14889v4",
+      "version_date": "2023-10-30",
+      "publication_status": "conference_paper_arxiv_version",
+      "source_url": "https://arxiv.org/pdf/2210.14889v4",
+      "inspected_sections": [
+        "2 shared-key/marginal assumptions and Definition 2.1, pp2-3",
+        "3 Definition 3.1, Theorems 1-2, p4"
+      ],
+      "sha256": "c7d1768f9214fe17d3f6a24fbc1727f4109ef99aa853aa5e367228b42177bf7e",
+      "bytes": 564114,
+      "availability": "retrieved",
+      "results_independently_reproduced": false,
+      "proof_independently_validated": false,
+      "stored_in_project": false
+    }
+  ],
+  "official_implementations_inspected": [
+    {
+      "id": "calgacus_notebook",
+      "repository_or_official_url": "https://github.com/noranta4/calgacus",
+      "revision": "116123d4b7a74b3d56d15623355f9acf32a87165",
+      "inspected_scope": "Cell 10 get_token_ranks/decode_from_ranks, notebook setup, tokenization/cache/detokenization; MIT attribution retained",
+      "executed": false,
+      "files": [
+        {
+          "name": "LLMs_can_hide_text_in_other_text_of_the_same_length.ipynb",
+          "sha256": "90cad538bd01c93bfb720c19c7480c38d70ae1e45421c93584d91e742d84bbb6",
+          "bytes": 127268
+        }
+      ]
+    },
+    {
+      "id": "nls_arithmetic",
+      "repository_or_official_url": "https://github.com/harvardnlp/NeuralSteganography",
+      "revision": "14e982564aeaf9a33f7b4de440deda2184d17f12",
+      "inspected_scope": "encode_arithmetic/decode_arithmetic: integer interval, exclusions, finite termination and retokenization heuristics",
+      "executed": false,
+      "files": [
+        {
+          "name": "arithmetic.py",
+          "sha256": "90a34b06d46b5e67660a1a70104ff1ba6fd80ea2ba6d77cbdb759ee6adae0dba",
+          "bytes": 12271
+        }
+      ]
+    },
+    {
+      "id": "rrc_code",
+      "repository_or_official_url": "https://github.com/ryehr/RRC_steganography",
+      "revision": "dae326259e4fca8bc4fcf460dafdbc0e88a0a71a",
+      "inspected_scope": "CLI random.Random(args.key); core Decimal(prng.random()) offsets; cached pinned revision, not a claim about all future versions",
+      "executed": false,
+      "files": [
+        {
+          "name": "RRC_embed.py",
+          "sha256": "ebe7950eb6a89f659c163b67c5be7fb1ffc6afc850c0553afcbe633d068527d0",
+          "bytes": 7396
+        },
+        {
+          "name": "rrc_core.py",
+          "sha256": "e45a4df5eebc86881d606f2fd6c3cbab5729252dce96e5ae1a7ba424be02ec4a",
+          "bytes": 18165
+        }
+      ]
+    },
+    {
+      "id": "meteor_demo",
+      "repository_or_official_url": "https://gist.github.com/tusharjois/ec8603b711ff61e09167d8fef37c9b86",
+      "revision": "1bba7c76710abcaa71db59724328ad4d9c314e65",
+      "inspected_scope": "DRBG init/update and key/nonce encoder/decoder setup; historical demo pins, not executed",
+      "executed": false,
+      "files": [
+        {
+          "name": "stage1-meteor-demo.py",
+          "sha256": "0679560775216e4c40f8fd14805a5e672567bb005f183d78042eba627cd5c7ee",
+          "bytes": 41430
+        }
+      ]
+    }
+  ],
+  "other_primary_sources": [
+    {
+      "id": "rfc9180",
+      "title": "Hybrid Public Key Encryption",
+      "version": "RFC 9180, February 2022",
+      "url": "https://www.rfc-editor.org/rfc/rfc9180.txt",
+      "sha256": "f45a8b7c30231b26d668b1e8168074e5ab514b174d656b67e859895117f1f8f6",
+      "inspected_sections": [
+        "5",
+        "9.1-9.2",
+        "9.7",
+        "10"
+      ],
+      "availability": "downloaded RFC text and official browser HTML"
+    },
+    {
+      "id": "icissp_dates",
+      "title": "ICISSP 2027 Important Dates",
+      "url": "https://icissp.scitevents.org/ImportantDates.aspx",
+      "accessed_on": "2026-09-18",
+      "availability": "official browser page accessible; direct HTML fetch HTTP 500",
+      "sha256": null,
+      "hash_unavailable_reason": "Direct file retrieval failed; no hash fabricated",
+      "verified_fact": "Position/second-stage regular submission October 22, 2026 AoE; first-stage regular September 29"
+    }
+  ],
+  "project_inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "1ec5154d30154b012620f9c32353719716204eff8ce31de8113f530a75176dd4",
+      "bytes": 252,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "ICISSP_2027_Public_Key_LLM_Steganography_Research_Plan.md",
+      "sha256": "6904a3d59eac00543e798afd41cf90e7c056efab15266e5edef7a2126f940be5",
+      "bytes": 49096,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "STAGE1_FOUNDATIONS_REPORT.md",
+      "sha256": "671f7bea4ff03fa33f690a988589f5c1444e82d263d74e0d0e79e7d1ef6d25f4",
+      "bytes": 10100,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "STAGE1_REVIEW_REPORT.md",
+      "sha256": "07a35c80803cc034ee0853e1e257d397ab4cc845cbefafc4043101cb9a73434b",
+      "bytes": 16205,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "STAGE2_PILOT_REPORT.md",
+      "sha256": "43433063430e2f713aab9cc69d5c52e1718dd2e67af435aa7d283b2db3a45f3b",
+      "bytes": 16868,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "STAGE3_TRANSPORT_REPORT.md",
+      "sha256": "a4702d4deecee9fbac268899db7d4ab8933dd4aa86dfd48b5ba15d5e89671906",
+      "bytes": 17107,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "STAGE4_PREFIX_REPORT.md",
+      "sha256": "176ebe2ffbea0e8475ed1ddf911484ea77edc8fe6575fe983a2873e7a0baa483",
+      "bytes": 18165,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "docs/protocol.md",
+      "sha256": "74e4c3b13d051e987e7c84a548950eb5e3cde31450748c66914473457d83902d",
+      "bytes": 5722,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "docs/threat_model.md",
+      "sha256": "ec3b8ca5a3acdce44981252e6e8c2362a18b67e49657f2f098ec78d288854a86",
+      "bytes": 2606,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "docs/transport_profile_v1.md",
+      "sha256": "64d4b3c088d0f4988466f66b1b6159c05cd7963a06ab51fc9315c0cc91420abd",
+      "bytes": 9070,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "docs/public_prefix_observer.md",
+      "sha256": "3cd2c910bc21f7b308b2661c3728efb7d2989873715dfb585fa4d7e532f9040a",
+      "bytes": 10217,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "docs/source_audit.md",
+      "sha256": "c093fdb1d47afe0b7b1f70099bb86c40487343b72eadbcbb7d66abace92aec84",
+      "bytes": 7922,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "manifests/related_materials.json",
+      "sha256": "bb7bb28530905e365e60874cd199007b01c5f3d5df3e31434cc211ceca9f43e7",
+      "bytes": 1999,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "manifests/upstream_sources.json",
+      "sha256": "332eecf8f585c985399a208838faea0c26b962a7f7a1ecb2c08dea373c245cea",
+      "bytes": 4412,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "configs/public_profile.json",
+      "sha256": "93dfed16b457760c690c93f3010fc2f8c214bdb4bf094a7d8723870c32ecbd13",
+      "bytes": 2941,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "configs/public_utf8_rank16_v1.json",
+      "sha256": "e05d1d0efb8106bed5a4701e430ad792b0b3d7f94f9256bc42b10b293a66d397",
+      "bytes": 4245,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage1/summary.json",
+      "sha256": "4caf3d570e01dd1f142fe2c33edd26840d984ad74a30a2447da69077a17d4d9f",
+      "bytes": 3279,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage1/failure_analysis.json",
+      "sha256": "c406936a4305cafaee04f961021be9d51effb94e39f34d70a1df043e05ca83e9",
+      "bytes": 4577,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage1/cases.jsonl",
+      "sha256": "44820e49ba6cebabb650505397eac00cddc29d819f0f6672171145682feb49d0",
+      "bytes": 155465,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage1_review/review_summary.json",
+      "sha256": "df35345cd6885dd5b06e7af4dc8038362d195d5ce5f3609b7868a1df0197fe9f",
+      "bytes": 8047,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage2_pilot/summary.json",
+      "sha256": "b9f519b27919c1ecab03ef2bf31ec890547edb32a873c316d5f50ebb41773f0a",
+      "bytes": 2786,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage2_pilot/cases.jsonl",
+      "sha256": "3834304fa3977bd7ce7992fde4c3a9348322f41707fd9320dc629f0675244cfd",
+      "bytes": 90884,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage3_transport/summary.json",
+      "sha256": "cbab207ae8031e339e3a7c392820a1bcca0bbe84f4c48aeedd809a18e90049f5",
+      "bytes": 7470,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage3_transport/cases.jsonl",
+      "sha256": "08296610b016cab14501885dd65f6276d306c7e094b29f8685e996b57b55b684",
+      "bytes": 1665735,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage4_prefix/summary.json",
+      "sha256": "ff2ab7be2f58877ca266eedc4233aa9814cf642df20d98d7288fba38f0aca4dd",
+      "bytes": 5738,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage4_prefix/cases.jsonl",
+      "sha256": "97f9fa6de0c1129d079287800e79e09784b6098dff3a6fbbf19d0e12d2e0a6f9",
+      "bytes": 88724,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage4_prefix/public_predictions.json",
+      "sha256": "e77a96b1058527255cbc0c907c5b16100f79bdac98fca170d78d9a1efbbb40e8",
+      "bytes": 25867,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage4_prefix/historical_reanalysis.json",
+      "sha256": "b22cd7cd61a0048a0841299e63f99cc09ff2c4dddd33e5bd12eafed81cdaec29",
+      "bytes": 3770,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/stage4_prefix/reconciliation.json",
+      "sha256": "4dc8659c91731647a2ea8ae2874873e01a2bcfb14b941ae80ece44907888b2b8",
+      "bytes": 1661,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/project_budget.jsonl",
+      "sha256": "9cf35c86ee1aa96868f244bb4703835da4e7b866d192e0a135e265c08a45f304",
+      "bytes": 32183,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "artifacts/project_budget.checkpoint.json",
+      "sha256": "82f23176b155fe1f92104f54035eb24b77eceda3dd761f239d1c761357a5aba9",
+      "bytes": 176,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "src/llm_stego_public_key/codecs/public_utf8_rank16.py",
+      "sha256": "1e73badae289b2c2d5ea505352c52655213d3fd070e785679e0d02adb0ba5ad5",
+      "bytes": 7698,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "src/llm_stego_public_key/evaluation/public_prefix.py",
+      "sha256": "c8d1f52acc2dd3ea4df1bc1363f9ae8b8806f284cce218dd8d38c68d9550e143",
+      "bytes": 6606,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "src/llm_stego_public_key/codecs/interfaces.py",
+      "sha256": "e672ea3fb51e867f2b48bc04a0bebe6a5e488ba3204039f1ca92b17f14494247",
+      "bytes": 1664,
+      "inspected_scope": "Evidence/contract used for Stage 5; no execution; whole-file identity, not a claim to audit every nested field"
+    },
+    {
+      "path": "docs/novelty_matrix.md",
+      "revision": "a19d49f936c478d380ec38c27594a0fec501ca12",
+      "sha256": "a40dfcbd838b707652fb13be12066a04ca5d35639538ca6f26bb8bced8714ba2",
+      "inspected_scope": "Prior preliminary matrix; superseded by Stage 5 output"
+    }
+  ],
+  "evidence_reconciliation": {
+    "case_index_rows": {
+      "stage1": 21,
+      "stage2_pilot": 12,
+      "stage3_transport": 10,
+      "stage4_prefix": 21
+    },
+    "ledger_events": 128,
+    "reserve_events": 64,
+    "settle_events": 64,
+    "unsettled_attempts": [],
+    "usage_before": {
+      "seconds": 1732.6987573230003,
+      "tokens": 23849,
+      "cases": 64
+    },
+    "usage_after": {
+      "seconds": 1732.6987573230003,
+      "tokens": 23849,
+      "cases": 64
+    },
+    "stage5_increment": {
+      "seconds": 0,
+      "tokens": 0,
+      "cases": 0
+    },
+    "limits": {
+      "seconds": 7200,
+      "tokens": 25000,
+      "cases": 72
+    },
+    "headroom": {
+      "seconds": 5467.301242677,
+      "tokens": 1151,
+      "cases": 8
+    },
+    "ledger_bytes": 32183,
+    "ledger_sha256": "9cf35c86ee1aa96868f244bb4703835da4e7b866d192e0a135e265c08a45f304",
+    "checkpoint_sha256": "82f23176b155fe1f92104f54035eb24b77eceda3dd761f239d1c761357a5aba9",
+    "protected_tracked_file_count": 646,
+    "protected_path_sha256_map_digest": "18ad406604de42537abc807f07233f6f0867b00315ddb69b17d4d4d639296b00",
+    "protected_tracked_files_unchanged": true,
+    "comparison_base": "starting revision; all tracked files except the explicitly updated docs/novelty_matrix.md"
+  },
+  "execution": {
+    "gpu_inference": false,
+    "cpu_model_inference": false,
+    "benchmarks": false,
+    "detector_training": false,
+    "cpu_tests": 0,
+    "experimental_artifacts_changed": false,
+    "ledger_changed": false,
+    "manuscript_written": false
+  },
+  "next_action": {
+    "status": "NOT AUTHORIZED OR EXECUTED",
+    "scope": "At most five working days of author-version reconciliation and one bounded analytical claim assessment",
+    "additional_budget": {
+      "seconds": 0,
+      "tokens": 0,
+      "cases": 0
+    },
+    "independent_authorization_required": true
+  },
+  "search_scope": {
+    "questions": [
+      "Conditional rank inversion priority",
+      "Full-prefix tokenizer verification and actual artifact receiver overlap",
+      "Public-key versus shared-secret/channel assumptions",
+      "Recognizable framing/public inversion/abort conditioning contribution"
+    ],
+    "selection": "Primary papers and official code; citations followed to resolve these questions, not an exhaustive priority survey",
+    "limitations": [
+      "No author-confirmed submitted/current versions for the three related manuscripts",
+      "No independent reproduction of related-project or literature experiments",
+      "No independent proof audit of cryptographic constructions",
+      "Bounded search does not establish absence of earlier framing observations",
+      "Direct download access failures explicitly recorded"
+    ]
+  },
+  "review_outputs": [
+    "STAGE5_CONTRIBUTION_DECISION.md",
+    "docs/related_work_sources.md",
+    "docs/novelty_matrix.md",
+    "docs/next_study_spec.md",
+    "manifests/stage5_sources.json"
+  ],
+  "output_documents": [
+    {
+      "path": "STAGE5_CONTRIBUTION_DECISION.md",
+      "sha256": "0c6962d022432c4302b47995434b353a369d68ddff0a67622cf910ad6ccd80a3",
+      "bytes": 20772
+    },
+    {
+      "path": "docs/related_work_sources.md",
+      "sha256": "d90004931f1ee43d389b29a23266e910ec2af59c43c8901c5c45348ecf747bdc",
+      "bytes": 13668
+    },
+    {
+      "path": "docs/novelty_matrix.md",
+      "sha256": "d73034fb24059c3dbcde353908ba9f228ba061fd5320dfed1abd76af10c7ca36",
+      "bytes": 10728
+    },
+    {
+      "path": "docs/next_study_spec.md",
+      "sha256": "4f769d7b91699a20036a49609e3283abd9a2d7e4eccb051c0178f7bf0f877bb4",
+      "bytes": 6830
+    }
+  ],
+  "documentation_verification": {
+    "checks": [
+      "Primary paper/manuscript locators checked against actual PDF/TeX text",
+      "Local Markdown targets exist",
+      "JSON parses; source/input hashes reconcile",
+      "Stage case index rows sum to 64; 64 reserve and 64 settle events reconcile",
+      "All 646 protected pre-existing tracked files unchanged",
+      "Five requested deliverables only; diff checked before commit"
+    ],
+    "experimental_test_count": 0,
+    "no_source_validation_suite_run": true
+  }
+}
