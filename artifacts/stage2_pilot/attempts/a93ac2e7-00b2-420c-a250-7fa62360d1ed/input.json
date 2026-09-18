@@ -1,0 +1,26 @@
+{
+  "TEST_ONLY_private_key_hex": "e8e26dd38e48298a4914fd93484ef15e810bb62fef468bd84e4736f0efbecb5c",
+  "carrier_path": "artifacts/stage1/attempts/12de85ea-3e3e-4a4a-8997-27e551978366/carrier.txt",
+  "case_id": "pilot-historical-3",
+  "context_index": 2,
+  "kind": "replay",
+  "profile_sha256": "bd8a59d736843d78984c5d093dcee72cec50747629ce79a0685fe7652f4989b3",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "5d53916e31171a69de04f5108c5cfe8bb5cc4bf7",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "tested_code_commit": "5d53916e31171a69de04f5108c5cfe8bb5cc4bf7",
+  "token_reservation": 600,
+  "wall_reservation_seconds": 60
+}

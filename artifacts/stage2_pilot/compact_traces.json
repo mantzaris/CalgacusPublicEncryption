@@ -1,0 +1,197 @@
+{
+  "records": [
+    {
+      "attempt_id": "467c9100-538a-4aa0-b54a-a083efe7c768",
+      "case_id": "pilot-historical-0",
+      "downstream_error": null,
+      "family": "historical_replay",
+      "first_divergences": {
+        "ranks": null,
+        "reconstruction": null,
+        "transport": null
+      },
+      "invalid_utf8": false,
+      "primary_failure": null,
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/467c9100-538a-4aa0-b54a-a083efe7c768/result.json",
+      "retokenization_drift": false
+    },
+    {
+      "attempt_id": "b64e8424-8265-477d-b247-83337b47c455",
+      "case_id": "pilot-historical-1",
+      "downstream_error": null,
+      "family": "historical_replay",
+      "first_divergences": {
+        "ranks": null,
+        "reconstruction": null,
+        "transport": null
+      },
+      "invalid_utf8": false,
+      "primary_failure": null,
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/b64e8424-8265-477d-b247-83337b47c455/result.json",
+      "retokenization_drift": false
+    },
+    {
+      "attempt_id": "c6bb3df0-09f8-4e7f-a31c-2ff9c3e50915",
+      "case_id": "pilot-historical-2",
+      "downstream_error": null,
+      "family": "historical_replay",
+      "first_divergences": {
+        "ranks": null,
+        "reconstruction": null,
+        "transport": null
+      },
+      "invalid_utf8": false,
+      "primary_failure": null,
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/c6bb3df0-09f8-4e7f-a31c-2ff9c3e50915/result.json",
+      "retokenization_drift": false
+    },
+    {
+      "attempt_id": "a93ac2e7-00b2-420c-a250-7fa62360d1ed",
+      "case_id": "pilot-historical-3",
+      "downstream_error": "Invalid Base64 length",
+      "family": "historical_replay",
+      "first_divergences": {
+        "ranks": {
+          "index": 35,
+          "intended": 453,
+          "observed": 180
+        },
+        "reconstruction": {
+          "index": 35,
+          "intended": 11328,
+          "observed": 3971
+        },
+        "transport": {
+          "index": 35,
+          "intended": 98968,
+          "observed": 101722
+        }
+      },
+      "invalid_utf8": false,
+      "primary_failure": "framing_failure",
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/a93ac2e7-00b2-420c-a250-7fa62360d1ed/result.json",
+      "retokenization_drift": true
+    },
+    {
+      "attempt_id": "eeb0c599-59dd-41ce-996f-bbd6775b40c8",
+      "case_id": "pilot-k0-n32",
+      "downstream_error": null,
+      "family": "fresh_encrypted",
+      "first_divergences": {
+        "ranks": null,
+        "reconstruction": null,
+        "transport": null
+      },
+      "invalid_utf8": false,
+      "primary_failure": null,
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/eeb0c599-59dd-41ce-996f-bbd6775b40c8/result.json",
+      "retokenization_drift": false
+    },
+    {
+      "attempt_id": "dd57b386-a4e2-46a1-b75a-5d864eabbb89",
+      "case_id": "pilot-k0-n128",
+      "downstream_error": null,
+      "family": "fresh_encrypted",
+      "first_divergences": {
+        "ranks": null,
+        "reconstruction": null,
+        "transport": null
+      },
+      "invalid_utf8": false,
+      "primary_failure": null,
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/dd57b386-a4e2-46a1-b75a-5d864eabbb89/result.json",
+      "retokenization_drift": false
+    },
+    {
+      "attempt_id": "38bb3a58-18f1-414f-8478-ea3c071b2d72",
+      "case_id": "pilot-k1-n32",
+      "downstream_error": null,
+      "family": "fresh_encrypted",
+      "first_divergences": {
+        "ranks": null,
+        "reconstruction": null,
+        "transport": null
+      },
+      "invalid_utf8": false,
+      "primary_failure": null,
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/38bb3a58-18f1-414f-8478-ea3c071b2d72/result.json",
+      "retokenization_drift": false
+    },
+    {
+      "attempt_id": "c2ec252a-199e-4c84-9979-70f56659f976",
+      "case_id": "pilot-k1-n128",
+      "downstream_error": null,
+      "family": "fresh_encrypted",
+      "first_divergences": {
+        "ranks": null,
+        "reconstruction": null,
+        "transport": null
+      },
+      "invalid_utf8": false,
+      "primary_failure": null,
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/c2ec252a-199e-4c84-9979-70f56659f976/result.json",
+      "retokenization_drift": false
+    },
+    {
+      "attempt_id": "c2581d80-40af-48b4-9e18-abf3ca9ce492",
+      "case_id": "pilot-control-0",
+      "downstream_error": null,
+      "family": "control",
+      "first_divergences": {
+        "ranks": null,
+        "reconstruction": null,
+        "transport": null
+      },
+      "invalid_utf8": false,
+      "primary_failure": null,
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/c2581d80-40af-48b4-9e18-abf3ca9ce492/result.json",
+      "retokenization_drift": false
+    },
+    {
+      "attempt_id": "d79c3b77-f3ed-4919-92e9-5a16a0a58960",
+      "case_id": "pilot-control-1",
+      "downstream_error": null,
+      "family": "control",
+      "first_divergences": {
+        "ranks": null,
+        "reconstruction": null,
+        "transport": null
+      },
+      "invalid_utf8": false,
+      "primary_failure": null,
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/d79c3b77-f3ed-4919-92e9-5a16a0a58960/result.json",
+      "retokenization_drift": false
+    },
+    {
+      "attempt_id": "cd876b13-57a1-46db-a631-2d229387b2de",
+      "case_id": "pilot-fresh-replay-0",
+      "downstream_error": null,
+      "family": "fresh_replay",
+      "first_divergences": {
+        "ranks": null,
+        "reconstruction": null,
+        "transport": null
+      },
+      "invalid_utf8": false,
+      "primary_failure": null,
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/cd876b13-57a1-46db-a631-2d229387b2de/result.json",
+      "retokenization_drift": false
+    },
+    {
+      "attempt_id": "e61508e1-4d58-4ccf-a057-9c9ac3d328e8",
+      "case_id": "pilot-fresh-replay-1",
+      "downstream_error": null,
+      "family": "fresh_replay",
+      "first_divergences": {
+        "ranks": null,
+        "reconstruction": null,
+        "transport": null
+      },
+      "invalid_utf8": false,
+      "primary_failure": null,
+      "raw_trace_path": "artifacts/stage2_pilot/attempts/e61508e1-4d58-4ccf-a057-9c9ac3d328e8/result.json",
+      "retokenization_drift": false
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,100 @@
+{
+  "attempted_cases": 12,
+  "both_fresh_128_failed": false,
+  "comparators": "unresolved, not executed",
+  "controls": {
+    "attempted": 2,
+    "generated_utf8": 2
+  },
+  "cpu_validation": {
+    "historical_code_commit": "7f60caf86f7430a19105aa5641f1003336d154b6",
+    "historical_tests_reused": 109,
+    "new_allocation_check": "5 focused checks only; not a suite rerun",
+    "new_full_suite_run": false
+  },
+  "cumulative_usage": {
+    "cases": 33,
+    "seconds": 1002.4454085370057,
+    "tokens": 16401
+  },
+  "fresh_key_pairs": 2,
+  "fresh_process_replays": {
+    "attempted": 2,
+    "authenticated_exact": 2
+  },
+  "fresh_recovery": {
+    "128": {
+      "attempted": 2,
+      "authenticated_exact": 2
+    },
+    "32": {
+      "attempted": 2,
+      "authenticated_exact": 2
+    }
+  },
+  "gpu_tested_code_commit": "5d53916e31171a69de04f5108c5cfe8bb5cc4bf7",
+  "historical_replays": {
+    "attempted": 4,
+    "authenticated_exact_recovery": 3,
+    "expected_outcome_agreement": 4,
+    "expected_rejections": 1
+  },
+  "incremental_usage": {
+    "cases": 12,
+    "seconds": 370.00275413700547,
+    "tokens": 6171
+  },
+  "novelty": "unresolved, not reassessed",
+  "outcomes": 12,
+  "peak_sampled_process_vram_mib": 5006,
+  "planned_cases": 12,
+  "public_diagnostics": [
+    {
+      "attempt_id": "eeb0c599-59dd-41ce-996f-bbd6775b40c8",
+      "case_id": "pilot-k0-n32",
+      "family": "fresh_encrypted",
+      "format_valid": true,
+      "tag_authentication_performed": false
+    },
+    {
+      "attempt_id": "dd57b386-a4e2-46a1-b75a-5d864eabbb89",
+      "case_id": "pilot-k0-n128",
+      "family": "fresh_encrypted",
+      "format_valid": true,
+      "tag_authentication_performed": false
+    },
+    {
+      "attempt_id": "38bb3a58-18f1-414f-8478-ea3c071b2d72",
+      "case_id": "pilot-k1-n32",
+      "family": "fresh_encrypted",
+      "format_valid": true,
+      "tag_authentication_performed": false
+    },
+    {
+      "attempt_id": "c2ec252a-199e-4c84-9979-70f56659f976",
+      "case_id": "pilot-k1-n128",
+      "family": "fresh_encrypted",
+      "format_valid": true,
+      "tag_authentication_performed": false
+    },
+    {
+      "attempt_id": "c2581d80-40af-48b4-9e18-abf3ca9ce492",
+      "case_id": "pilot-control-0",
+      "family": "control",
+      "format_valid": false,
+      "tag_authentication_performed": false
+    },
+    {
+      "attempt_id": "d79c3b77-f3ed-4919-92e9-5a16a0a58960",
+      "case_id": "pilot-control-1",
+      "family": "control",
+      "format_valid": false,
+      "tag_authentication_performed": false
+    }
+  ],
+  "schema_version": 1,
+  "split": "development_only_excluded_from_future_heldout",
+  "starting_commit": "24fd553e6b79fcfdbe7dc6b6abca71cac440ea8a",
+  "stop_reason": "Fixed allocation exhausted; no further GPU work",
+  "unused_slots": []
+}

@@ -1,0 +1,26 @@
+{
+  "TEST_ONLY_private_key_hex": "b039324da9c521d09995c5677cec3b31d26d5761192f8faf840af599dad9d858",
+  "carrier_path": "artifacts/stage2_pilot/attempts/38bb3a58-18f1-414f-8478-ea3c071b2d72/carrier.txt",
+  "case_id": "pilot-fresh-replay-1",
+  "context_index": 2,
+  "kind": "replay",
+  "profile_sha256": "bd8a59d736843d78984c5d093dcee72cec50747629ce79a0685fe7652f4989b3",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "5d53916e31171a69de04f5108c5cfe8bb5cc4bf7",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "tested_code_commit": "5d53916e31171a69de04f5108c5cfe8bb5cc4bf7",
+  "token_reservation": 750,
+  "wall_reservation_seconds": 60
+}

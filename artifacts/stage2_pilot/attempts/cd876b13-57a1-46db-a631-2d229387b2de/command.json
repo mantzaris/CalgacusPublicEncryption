@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/home/meow/Documents/repos/CalgacusPublicEncryption/.venv/bin/python",
+    "/home/meow/Documents/repos/CalgacusPublicEncryption/scripts/gpu_worker.py",
+    "/home/meow/Documents/repos/CalgacusPublicEncryption/artifacts/stage2_pilot/attempts/cd876b13-57a1-46db-a631-2d229387b2de/input.json"
+  ],
+  "cwd": "/home/meow/Documents/repos/CalgacusPublicEncryption",
+  "environment": {
+    "CUDA_CACHE_DISABLE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "/home/meow/Documents/repos/llm-rankcloak/.venv-generation-v3/lib/python3.10/site-packages",
+    "STAGE1_CONTROLLER_PID": "263934",
+    "STAGE1_DEADLINE_MONOTONIC": "10625.171746497",
+    "STAGE1_GOVERNED_ATTEMPT": "cd876b13-57a1-46db-a631-2d229387b2de",
+    "STAGE1_JOB_SHA256": "e430d4887d27093b549c594eb0735be38e9376f5ef02bf378419a60514cc720c",
+    "STAGE1_LEDGER_FD": "3"
+  },
+  "reservation_seconds": 60
+}

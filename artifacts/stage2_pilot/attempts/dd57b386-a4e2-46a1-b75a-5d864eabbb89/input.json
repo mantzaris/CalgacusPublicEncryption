@@ -1,0 +1,28 @@
+{
+  "TEST_ONLY_private_key_hex": "8087a0482d50faa53c17e7089acee0ada678d983e4e684ef93cd6bd19d9cd351",
+  "case_id": "pilot-k0-n128",
+  "context_index": 1,
+  "key_id": "pilot-0",
+  "kind": "encrypted",
+  "payload_hex": "272e353c434a51585f666d747b828990979ea5acb3bac1c8cfd6dde4ebf2f900070e151c232a31383f464d545b626970777e858c939aa1a8afb6bdc4cbd2d9e0e7eef5fc030a11181f262d343b424950575e656c737a81888f969da4abb2b9c0c7ced5dce3eaf1f8ff060d141b222930373e454c535a61686f767d848b9299a0",
+  "profile_sha256": "bd8a59d736843d78984c5d093dcee72cec50747629ce79a0685fe7652f4989b3",
+  "public_observer": true,
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "5d53916e31171a69de04f5108c5cfe8bb5cc4bf7",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "tested_code_commit": "5d53916e31171a69de04f5108c5cfe8bb5cc4bf7",
+  "token_reservation": 2000,
+  "wall_reservation_seconds": 120
+}

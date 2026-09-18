@@ -1,0 +1,27 @@
+{
+  "case_id": "pilot-control-1",
+  "context_index": 1,
+  "kind": "control",
+  "matched_attempt_id": "dd57b386-a4e2-46a1-b75a-5d864eabbb89",
+  "profile_sha256": "bd8a59d736843d78984c5d093dcee72cec50747629ce79a0685fe7652f4989b3",
+  "sampling_seed": 2026091902,
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "5d53916e31171a69de04f5108c5cfe8bb5cc4bf7",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "target_tokens": 189,
+  "tested_code_commit": "5d53916e31171a69de04f5108c5cfe8bb5cc4bf7",
+  "token_reservation": 1200,
+  "wall_reservation_seconds": 90
+}
