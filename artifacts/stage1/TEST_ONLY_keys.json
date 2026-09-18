@@ -1,0 +1,37 @@
+{
+  "generation": "six independent OS-random X25519 library key pairs",
+  "keys": [
+    {
+      "TEST_ONLY_private_key_hex": "30e13d4856d3eb78b83be9fa62e32605c05ab41d2c747f20ab4465ce55af4d41",
+      "key_id": "development-0",
+      "public_key_hex": "edb5919579515ac477bdb73e369387797789bd904e7747524e713154f41f1733"
+    },
+    {
+      "TEST_ONLY_private_key_hex": "e8e26dd38e48298a4914fd93484ef15e810bb62fef468bd84e4736f0efbecb5c",
+      "key_id": "development-1",
+      "public_key_hex": "ee5389d8301aa63109cb7189f61a0604ab862c25930ba6623ffb04f20c1a3144"
+    },
+    {
+      "TEST_ONLY_private_key_hex": "e0f38334296f4f512f93adb01dc5cd503ada137073246a75be3e1cd588ce2458",
+      "key_id": "development-2",
+      "public_key_hex": "88493c569df428a892e5e5b0db9f2fdcd020fa0c6bf1074d84e33659ac6d8d31"
+    },
+    {
+      "TEST_ONLY_private_key_hex": "68867a70680b8e775ffbc42f421d32a92c48a88ea8a4b5b317d8780246526556",
+      "key_id": "development-3",
+      "public_key_hex": "c42272c63b369b1206a4cbf99c535772c61404e191ce8e5892c6fc09d3d78b04"
+    },
+    {
+      "TEST_ONLY_private_key_hex": "50381aea0592e264efd114e5339b9065ca66fe219ae49138e3ed2de769651e7f",
+      "key_id": "development-4",
+      "public_key_hex": "99af5f7262e25e9656bb3364187e7b23db757c372f932754c18977c3dad42176"
+    },
+    {
+      "TEST_ONLY_private_key_hex": "08df9af63bc6c040a2dd8d49b19429a942a081839357ca2bce918e618438c442",
+      "key_id": "development-5",
+      "public_key_hex": "b510f8dac90021b6b367fa58415de99d9d9b918d9b0689a8f0f7d07dae956c0f"
+    }
+  ],
+  "schema_version": 1,
+  "warning": "INSECURE PUBLIC TEST MATERIAL. Never use these keys outside this development study."
+}

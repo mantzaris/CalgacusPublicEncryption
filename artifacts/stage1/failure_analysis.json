@@ -1,0 +1,132 @@
+{
+  "failures": [
+    {
+      "attempt_id": "12de85ea-3e3e-4a4a-8997-27e551978366",
+      "case_id": "encrypted-k1-n128",
+      "category": "tokenization_serialization_drift",
+      "consequence": "Actual saved text changed token segmentation; ranks and reconstructed source diverged at the recorded position; authentication/delivery not credited.",
+      "first_rank_divergence": {
+        "actual": 180,
+        "expected": 453,
+        "position": 35
+      },
+      "first_reconstruction_divergence": {
+        "actual": 3971,
+        "expected": 11328,
+        "position": 35
+      },
+      "first_transport_divergence": {
+        "actual": 101722,
+        "expected": 98968,
+        "position": 35
+      },
+      "receiver_error": "Invalid Base64 length"
+    },
+    {
+      "attempt_id": "78f24dcd-bb0c-48a3-86d7-48ef679fbd91",
+      "case_id": "encrypted-k2-n128",
+      "category": "tokenization_serialization_drift",
+      "consequence": "Actual saved text changed token segmentation; ranks and reconstructed source diverged at the recorded position; authentication/delivery not credited.",
+      "first_rank_divergence": {
+        "actual": 2417,
+        "expected": 10,
+        "position": 29
+      },
+      "first_reconstruction_divergence": {
+        "actual": 51490,
+        "expected": 19,
+        "position": 29
+      },
+      "first_transport_divergence": {
+        "actual": 28196,
+        "expected": 2933,
+        "position": 29
+      },
+      "receiver_error": "Invalid Base64 length"
+    },
+    {
+      "attempt_id": "835167cc-56a8-4d18-84f8-331427060ac9",
+      "case_id": "encrypted-k3-n128",
+      "category": "tokenization_serialization_drift",
+      "consequence": "Actual saved text changed token segmentation; ranks and reconstructed source diverged at the recorded position; authentication/delivery not credited.",
+      "first_rank_divergence": {
+        "actual": 5613,
+        "expected": 5657,
+        "position": 38
+      },
+      "first_reconstruction_divergence": {
+        "actual": 10967,
+        "expected": 59431,
+        "position": 38
+      },
+      "first_transport_divergence": {
+        "actual": 20214,
+        "expected": 65992,
+        "position": 38
+      },
+      "receiver_error": "Invalid Base64 length"
+    },
+    {
+      "attempt_id": "21732f7e-11f4-48da-8b5c-2f7b622a7770",
+      "case_id": "encrypted-k4-n128",
+      "category": "tokenization_serialization_drift",
+      "consequence": "Encoder produced bytes that cannot be a UTF-8 carrier; no text transmitted, no receiver success credited.",
+      "first_rank_divergence": null,
+      "first_reconstruction_divergence": null,
+      "first_transport_divergence": null,
+      "invalid_utf8": {
+        "end_byte_offset": 355,
+        "first_byte_offset": 353,
+        "nearby_hex": "8081e695b8e5b08be6ad6f6c6b69656e202e",
+        "reason": "invalid continuation byte"
+      },
+      "receiver_error": "Carrier or extracted source is not strict UTF-8"
+    },
+    {
+      "attempt_id": "0f10b587-db34-4a42-b02f-fdd809c27583",
+      "case_id": "encrypted-k5-n32",
+      "category": "tokenization_serialization_drift",
+      "consequence": "Actual saved text changed token segmentation; ranks and reconstructed source diverged at the recorded position; authentication/delivery not credited.",
+      "first_rank_divergence": {
+        "actual": 55,
+        "expected": 9,
+        "position": 10
+      },
+      "first_reconstruction_divergence": {
+        "actual": 26729,
+        "expected": 53,
+        "position": 10
+      },
+      "first_transport_divergence": {
+        "actual": 270,
+        "expected": 37943,
+        "position": 10
+      },
+      "receiver_error": "Invalid Base64 length"
+    },
+    {
+      "attempt_id": "93f18293-da63-40ab-800c-82fbe6b11d2c",
+      "case_id": "encrypted-k5-n128",
+      "category": "tokenization_serialization_drift",
+      "consequence": "Actual saved text changed token segmentation; ranks and reconstructed source diverged at the recorded position; authentication/delivery not credited.",
+      "first_rank_divergence": {
+        "actual": 5134,
+        "expected": 438,
+        "position": 27
+      },
+      "first_reconstruction_divergence": {
+        "actual": 14910,
+        "expected": 11628,
+        "position": 27
+      },
+      "first_transport_divergence": {
+        "actual": 25968,
+        "expected": 1541,
+        "position": 27
+      },
+      "receiver_error": "Invalid Base64 length"
+    }
+  ],
+  "method": "CPU inspection of preserved traces; no model evaluation, normalization or retry",
+  "schema_version": 1
+}

@@ -1,0 +1,12 @@
+{
+  "TEST_ONLY_private_key_hex": "30e13d4856d3eb78b83be9fa62e32605c05ab41d2c747f20ab4465ce55af4d41",
+  "carrier_path": "artifacts/stage1/attempts/bcb46cde-561b-48cb-ab40-73efd8b5dff4/carrier.txt",
+  "case_id": "replay-0",
+  "context_index": 0,
+  "kind": "replay",
+  "schema_version": 1,
+  "source_attempt_id": "bcb46cde-561b-48cb-ab40-73efd8b5dff4",
+  "tested_code_commit": "d07f5a7ee6025e7e65ac236c3dd08e2b5981beec",
+  "token_reservation": 1500,
+  "wall_reservation_seconds": 240.0
+}

@@ -31,6 +31,16 @@
       "paper": "calgacus",
       "pdf_sha256": "41fe4f009dee05083544cb9275d3121e8b27ef7b74592c0af68da187ee8489f6",
       "stored_in_repository": false
+    },
+    {
+      "paper": "Meteor CCS2021",
+      "url": "https://www.cs.umd.edu/users/kaptchuk/publications/ccs21_meteor.pdf",
+      "pdf_sha256": "8ee5858264f895654c20265f3bbd3c81f263186fd189266558c76ef7efde3bdb",
+      "inspected_scope": "public-key/hybrid discussion, construction and PRG setup, implementation sections; not independent proof verification",
+      "demo_url": "https://gist.github.com/tusharjois/ec8603b711ff61e09167d8fef37c9b86",
+      "demo_revision": "1bba7c76710abcaa71db59724328ad4d9c314e65",
+      "demo_code_sha256": "0679560775216e4c40f8fd14805a5e672567bb005f183d78042eba627cd5c7ee",
+      "executed": false
     }
   ],
   "novelty_gate": "unresolved"

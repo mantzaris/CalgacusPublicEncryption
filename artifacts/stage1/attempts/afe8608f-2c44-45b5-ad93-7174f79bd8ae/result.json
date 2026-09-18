@@ -1,0 +1,56 @@
+{
+  "attempt_id": "afe8608f-2c44-45b5-ad93-7174f79bd8ae",
+  "carrier_tokens": 9,
+  "case_id": "upstream-1",
+  "charged_tokens": 64,
+  "cover_context": "A brief explanation of how a library organizes books:",
+  "failure_category": null,
+  "first_rank_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "upstream_reference",
+  "method_label": "unchanged upstream cell-10 functions, adapted local model/runtime",
+  "pid": 92285,
+  "profile_sha256": "bd8a59d736843d78984c5d093dcee72cec50747629ce79a0685fe7652f4989b3",
+  "public_context_token_ids": {},
+  "receiver_ranks": [
+    5,
+    5625,
+    21,
+    2,
+    14,
+    2,
+    21,
+    201,
+    7
+  ],
+  "reconstructed_text": "A librarian checks the returned books before closing.",
+  "schema_version": 1,
+  "source_context": "A text:",
+  "source_ranks": [
+    5,
+    5625,
+    21,
+    2,
+    14,
+    2,
+    21,
+    201,
+    7
+  ],
+  "source_text": "A librarian checks the returned books before closing.",
+  "split": "development_only",
+  "success": true,
+  "tested_code_commit": "c21265e9a9b31d8ee965808ceca8ef8b58cca092",
+  "timings": {
+    "encode_seconds": 0.7450225579996186,
+    "load_and_verify_seconds": 14.510609252999984,
+    "receiver_seconds": 0.7245194029997037
+  },
+  "tokens_by_phase": {
+    "upstream_encode": 32,
+    "upstream_text_receiver": 32
+  },
+  "transport_sha256": "f7f4acad8fecadad8997b26a557f3d4f2bb6cc4cf7efaa8cc184fb9c97983ed5",
+  "transport_utf8": "In Chennai-based library the book categor (PDF",
+  "worker_seconds": 16.046476329999678
+}

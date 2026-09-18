@@ -1,0 +1,127 @@
+{
+  "actual_authenticated_exact_recovery": 6,
+  "assessment": "foundational_issues_remain",
+  "budget": {
+    "carry_in_seconds": 30,
+    "cases": 21,
+    "gpu_hours": 0.17567851511111118,
+    "limits": {
+      "cases": 72,
+      "seconds": 7200.0,
+      "tokens": 25000
+    },
+    "seconds": 632.4426544000003,
+    "token_definition": "ALL model-evaluated tokens, including prefill/scoring/reconstruction; an upper bound on generated tokens",
+    "tokens": 10230,
+    "unsettled_reservations": []
+  },
+  "by_kind": {
+    "control": {
+      "attempted": 3,
+      "successful": 3
+    },
+    "encrypted": {
+      "attempted": 12,
+      "successful": 6
+    },
+    "preflight": {
+      "attempted": 1,
+      "successful": 1
+    },
+    "replay": {
+      "attempted": 3,
+      "successful": 3
+    },
+    "upstream_reference": {
+      "attempted": 2,
+      "successful": 2
+    }
+  },
+  "by_payload_bytes": {
+    "128": {
+      "attempted": 6,
+      "recovered": 1
+    },
+    "32": {
+      "attempted": 6,
+      "recovered": 5
+    }
+  },
+  "comparator_readiness": "blocked_pending_audited_adapters_and_randomness",
+  "conditional_120_case_forecast_gpu_hours": 2.4814320777000147,
+  "cpu_tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 59
+  },
+  "development_only": true,
+  "encrypted_phase_timings_seconds": {
+    "encode_seconds": {
+      "count": 12,
+      "maximum": 12.002154658000109,
+      "mean": 8.944612911000073,
+      "median": 8.997007729000188
+    },
+    "load_and_verify_seconds": {
+      "count": 12,
+      "maximum": 14.765334357000029,
+      "mean": 14.40551697425004,
+      "median": 14.378681934000042
+    },
+    "public_inversion_seconds": {
+      "count": 3,
+      "maximum": 11.488032466999812,
+      "mean": 9.586338376333211,
+      "median": 11.414847089999967
+    },
+    "receiver_seconds": {
+      "count": 11,
+      "maximum": 11.877921742000126,
+      "mean": 8.690960710000002,
+      "median": 6.5954454849998
+    }
+  },
+  "failed_attempt_ids": [
+    "12de85ea-3e3e-4a4a-8997-27e551978366",
+    "78f24dcd-bb0c-48a3-86d7-48ef679fbd91",
+    "835167cc-56a8-4d18-84f8-331427060ac9",
+    "21732f7e-11f4-48da-8b5c-2f7b622a7770",
+    "0f10b587-db34-4a42-b02f-fdd809c27583",
+    "93f18293-da63-40ab-800c-82fbe6b11d2c"
+  ],
+  "failure_counts": {
+    "tokenization_serialization_drift": 6
+  },
+  "forecast_method": "120 times maximum measured encrypted-job wall time times 1.5; no full-matrix authorization",
+  "gpu": {
+    "cuda_runtime": "12.4",
+    "driver": "590.48.01",
+    "model_jobs_with_gpu_evidence": 20,
+    "name": "NVIDIA RTX 5000 Ada Generation",
+    "peak_sampled_process_vram_mib": 5006,
+    "vram_total_mib": 32760
+  },
+  "hpke_exporter_vectors": 3,
+  "hpke_known_answer_ciphertexts": 257,
+  "independent_receiver_keys": 6,
+  "novelty_gate": "unresolved",
+  "public_cover_contexts": 3,
+  "public_format_diagnostic": {
+    "control": {
+      "examined": 3,
+      "format_positive": 0
+    },
+    "encrypted": {
+      "examined": 3,
+      "format_positive": 2
+    }
+  },
+  "schema_version": 1,
+  "tested_code_commit": "d07f5a7ee6025e7e65ac236c3dd08e2b5981beec",
+  "tested_code_commits": [
+    "c21265e9a9b31d8ee965808ceca8ef8b58cca092",
+    "d07f5a7ee6025e7e65ac236c3dd08e2b5981beec"
+  ],
+  "text_retokenization_passed": 6
+}

@@ -1,0 +1,22 @@
+{
+  "allocation": {
+    "control": 3,
+    "encrypted": 12,
+    "replay": 3,
+    "upstream_reference": 2
+  },
+  "context_design": "(key_index+size_index) mod 3",
+  "control_sampling": "PCG64(2026091800+context_index), temperature 1, full vocabulary, fixed matched token length; EOS does not stop",
+  "keys": 6,
+  "limits": {
+    "cases": 72,
+    "seconds": 7200,
+    "tokens": 25000
+  },
+  "payload_design": "byte[j]=(j+17*key_index+size_index) mod 256; sizes 32,128",
+  "profile_sha256": "bd8a59d736843d78984c5d093dcee72cec50747629ce79a0685fe7652f4989b3",
+  "replay_selection": "first successful encrypted attempt per context in fixed case order, maximum 3",
+  "retry_policy": "none; all reservations (even failed/abandoned) consume a case",
+  "schema_version": 1,
+  "split": "development_only_excluded_from_future_heldout"
+}

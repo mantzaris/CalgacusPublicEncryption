@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "prior_pin_source": "../llm-rankcloak/configs/revision_v3/generation_requirements.json",
+  "prior_pin_source_sha256": "9927d23e709dd8e784dca64d592b00cdc3411a3fb52c6059f6b0025583f09a54",
+  "prior_repository_commit": "ce853d42d6ba64065cb63c6bdfc0d825c62734cd",
+  "reported_upstream_identity": {
+    "model_id": "llama3_8b_instruct_q4_k_m",
+    "repo_id": "QuantFactory/Meta-Llama-3-8B-Instruct-GGUF",
+    "revision": "a06c33ec89c1e3402009fb47f466a89127c6d223",
+    "filename": "Meta-Llama-3-8B-Instruct.Q4_K_M.gguf",
+    "quantization": "Q4_K_M",
+    "size_bytes": 4920734272,
+    "sha256": "86c8ea6c8b755687d0b723176fcd0b2411ef80533d23e2a5030f845d13ab2db7",
+    "expected_path": "models/llama3_8b/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf",
+    "download_command": "huggingface-cli download QuantFactory/Meta-Llama-3-8B-Instruct-GGUF Meta-Llama-3-8B-Instruct.Q4_K_M.gguf --revision a06c33ec89c1e3402009fb47f466a89127c6d223 --local-dir models/llama3_8b"
+  },
+  "established_this_stage": "Complete local GGUF independently hashed and matched the prior pin; embedded tokenizer hashed independently; remote model revision not re-downloaded.",
+  "license": "GGUF general.license=llama3; external weights not redistributed"
+}
