@@ -1,0 +1,90 @@
+{
+  "attempt_id": "5a149330-3020-4559-b54f-672c3ee94b06",
+  "attempt_useful_bits_per_transmitted_token": 0.0,
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 25,
+      "examined_total": 32011,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 173,
+        "special_control": 94
+      },
+      "steps": 1984
+    }
+  },
+  "case_id": "R-c2-n128-r0",
+  "charged_tokens": 1994,
+  "ciphertext_sha256": "bb2aba97e794e7d614ca36ec34f0c544684473e79222bd07143f1a477fdcb6d3",
+  "context_index": 2,
+  "context_window_verified": true,
+  "cover_context": "A station bulletin about maintaining a platform clock:",
+  "cumulative_budget": {
+    "cases": 235,
+    "seconds": 9995.084288683971,
+    "tokens": 161065
+  },
+  "encapsulation_hex": "d4a0c9aeb62fd9b108bf8e6fd163863afc150a12397c09293d0fee07835a6103",
+  "envelope_bytes": 196,
+  "envelope_sha256": "d90331597011c9a9f384e2c58a47c1a71d9b2d7e07cf3453bd9b81ea99434655",
+  "error": "Arithmetic carrier ceiling before complete stable packet",
+  "evidence_dir": "artifacts/stage8/attempts/5a149330-3020-4559-b54f-672c3ee94b06",
+  "exact_recovery": false,
+  "exception_type": "CapacityError",
+  "exit_code": 0,
+  "expected_outcome_agreement": false,
+  "expected_rejection": false,
+  "failure_category": "capacity_exhaustion",
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "job_elapsed_seconds": 147.6927142919958,
+  "key_id": "STAGE8_TEST_ONLY_5",
+  "kind": "encrypted",
+  "lease_verified": true,
+  "method": "R",
+  "pair_id": "c2-n128-r0",
+  "payload_bytes": 128,
+  "payload_setting_bytes": 128,
+  "payload_sha256": "02adaabc3597966fb6d41803e9570b178f7b27daa11eee70e74863673c17e648",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 855955,
+  "profile_id": "stage8_public_R_size128_v1",
+  "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A station bulletin about maintaining a platform clock:": [
+      128000,
+      32,
+      8216,
+      75829,
+      922,
+      20958,
+      264,
+      5452,
+      9042,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "45493b7db1a7392cc0b6c4c251ef1195c9e02f2a0d27e0262e59d657b5c1f740",
+  "schema_version": 1,
+  "serialized_base64": "1KDJrrYv2bEIv45v0WOGOvwVChI5fAkpPQ/uB4NaYQNM3smWx5GRFSfbx2uBx1jTQq73awTF4ZBVQaJk+rqECd57437N3VucI66JLl73W8p/qbllC91rVQSz4N2NBW4xK/RDm7H5UwsJVvTXA6kXlAofZIQFLX9keEiDGXb8waB5Bk+MVnPonPdducaZTIX/h37rIsO9lJ91MkSIQDhcaKETE5xsNEd3UDBvjmJbWq649GozvGgGU2WlUzdvAUuq6R5N5w==",
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "success": false,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "timings": {
+    "encode_seconds": 132.01882705399476,
+    "load_and_verify_seconds": 14.622487239001202
+  },
+  "tokens_by_phase": {
+    "encode": 1994
+  },
+  "trace_path": "artifacts/stage8/attempts/5a149330-3020-4559-b54f-672c3ee94b06/traces.json",
+  "wire_delivered": false,
+  "worker_seconds": 146.904036023996
+}

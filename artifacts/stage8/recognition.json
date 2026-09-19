@@ -1,305 +1,321 @@
 [
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 1.0,
+    "bootstrap_valid_draws": 2000,
     "cluster_interval": [
-      null,
-      null
+      1.0,
+      1.0
     ],
     "context_auc": {
-      "0": null,
-      "1": null,
-      "2": null,
-      "3": null
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 1.0992831807620276,
+    "encrypted_mean": 5.816595716796447,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 8,
     "method": "F",
     "metric": "mean_nll_bits"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 1.0,
+    "bootstrap_valid_draws": 2000,
     "cluster_interval": [
-      null,
-      null
+      1.0,
+      1.0
     ],
     "context_auc": {
-      "0": null,
-      "1": null,
-      "2": null,
-      "3": null
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 0.40501081559640534,
+    "encrypted_mean": 2.7437540137231684,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 8,
     "method": "F",
     "metric": "mean_log2_rank"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 1.0,
+    "bootstrap_valid_draws": 2000,
     "cluster_interval": [
-      null,
-      null
+      1.0,
+      1.0
     ],
     "context_auc": {
-      "0": null,
-      "1": null,
-      "2": null,
-      "3": null
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 1.0537141119372373,
+    "encrypted_mean": 5.315413643519258,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 8,
     "method": "F",
     "metric": "mean_admissible_nll_bits"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 0.5,
+    "bootstrap_valid_draws": 2000,
     "cluster_interval": [
-      null,
-      null
+      0.5,
+      0.5
     ],
     "context_auc": {
-      "0": null,
-      "1": null,
-      "2": null,
-      "3": null
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 1.0,
+    "encrypted_mean": 1.0,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 8,
     "method": "F",
     "metric": "member_fraction"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 0.5,
+    "bootstrap_valid_draws": 2000,
     "cluster_interval": [
-      null,
-      null
+      0.5,
+      0.5
     ],
     "context_auc": {
-      "0": null,
-      "1": null,
-      "2": null,
-      "3": null
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 1.0,
+    "encrypted_mean": 1.0,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 8,
     "method": "F",
     "metric": "format_accepted"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 0.5,
+    "bootstrap_valid_draws": 2000,
     "cluster_interval": [
-      null,
-      null
+      0.5,
+      0.5
     ],
     "context_auc": {
-      "0": null,
-      "1": null,
-      "2": null,
-      "3": null
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 1.0,
+    "encrypted_mean": 1.0,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 8,
     "method": "F",
     "metric": "format_and_kem_canonical"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 0.5,
+    "bootstrap_valid_draws": 2000,
     "cluster_interval": [
-      null,
-      null
+      0.5,
+      0.5
     ],
     "context_auc": {
-      "0": null,
-      "1": null,
-      "2": null,
-      "3": null
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 296.0,
+    "encrypted_mean": 296.0,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 8,
     "method": "F",
     "metric": "token_count"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 0.453125,
+    "bootstrap_valid_draws": 2000,
     "cluster_interval": [
-      null,
-      null
+      0.234375,
+      0.765625
     ],
     "context_auc": {
-      "0": null,
-      "1": null,
-      "2": null,
-      "3": null
+      "0": 0.75,
+      "1": 0.5,
+      "2": 0.25,
+      "3": 0.5
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 1399.75,
+    "encrypted_mean": 1322.75,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 8,
     "method": "F",
     "metric": "utf8_bytes"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 0.5,
+    "bootstrap_valid_draws": 1677,
     "cluster_interval": [
-      null,
-      null
+      0.0,
+      1.0
     ],
     "context_auc": {
       "0": null,
       "1": null,
-      "2": null,
-      "3": null
+      "2": 1.0,
+      "3": 0.0
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 0.708308707156398,
+    "encrypted_mean": 0.9821207726750056,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 2,
     "method": "R",
     "metric": "mean_nll_bits"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 0.5,
+    "bootstrap_valid_draws": 1677,
     "cluster_interval": [
-      null,
-      null
+      0.0,
+      1.0
     ],
     "context_auc": {
       "0": null,
       "1": null,
-      "2": null,
-      "3": null
+      "2": 1.0,
+      "3": 0.0
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 0.2505900292904537,
+    "encrypted_mean": 0.34401030409253797,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 2,
     "method": "R",
     "metric": "mean_log2_rank"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 0.5,
+    "bootstrap_valid_draws": 1677,
     "cluster_interval": [
-      null,
-      null
+      0.0,
+      1.0
     ],
     "context_auc": {
       "0": null,
       "1": null,
-      "2": null,
-      "3": null
+      "2": 1.0,
+      "3": 0.0
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 0.6792410398751716,
+    "encrypted_mean": 0.9368637029333607,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 2,
     "method": "R",
     "metric": "mean_admissible_nll_bits"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 0.5,
+    "bootstrap_valid_draws": 1677,
     "cluster_interval": [
-      null,
-      null
+      0.5,
+      0.5
     ],
     "context_auc": {
       "0": null,
       "1": null,
-      "2": null,
-      "3": null
+      "2": 0.5,
+      "3": 0.5
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 1.0,
+    "encrypted_mean": 1.0,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 2,
     "method": "R",
     "metric": "member_fraction"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 1.0,
+    "bootstrap_valid_draws": 1677,
     "cluster_interval": [
-      null,
-      null
+      1.0,
+      1.0
     ],
     "context_auc": {
       "0": null,
       "1": null,
-      "2": null,
-      "3": null
+      "2": 1.0,
+      "3": 1.0
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 0.0,
+    "encrypted_mean": 1.0,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 2,
     "method": "R",
     "metric": "format_accepted"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 1.0,
+    "bootstrap_valid_draws": 1677,
     "cluster_interval": [
-      null,
-      null
+      1.0,
+      1.0
     ],
     "context_auc": {
       "0": null,
       "1": null,
-      "2": null,
-      "3": null
+      "2": 1.0,
+      "3": 1.0
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 0.0,
+    "encrypted_mean": 1.0,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 2,
     "method": "R",
     "metric": "format_and_kem_canonical"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 0.5,
+    "bootstrap_valid_draws": 1677,
     "cluster_interval": [
-      null,
-      null
+      0.5,
+      0.5
     ],
     "context_auc": {
       "0": null,
       "1": null,
-      "2": null,
-      "3": null
+      "2": 0.5,
+      "3": 0.5
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 1173.0,
+    "encrypted_mean": 1173.0,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 2,
     "method": "R",
     "metric": "token_count"
   },
   {
-    "auc_higher_is_carrier": null,
+    "auc_higher_is_carrier": 0.5,
+    "bootstrap_valid_draws": 1677,
     "cluster_interval": [
-      null,
-      null
+      0.0,
+      1.0
     ],
     "context_auc": {
       "0": null,
       "1": null,
-      "2": null,
-      "3": null
+      "2": 1.0,
+      "3": 0.0
     },
-    "control_mean": null,
-    "encrypted_mean": null,
+    "control_mean": 5535.5,
+    "encrypted_mean": 4574.0,
     "family": "B",
-    "matched_scorable_pairs": 0,
+    "matched_scorable_pairs": 2,
     "method": "R",
     "metric": "utf8_bytes"
   }

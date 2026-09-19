@@ -1,6 +1,13 @@
 {
+  "additional_commands": [
+    ".venv/bin/python artifacts/stage8/diagnose.py",
+    ".venv/bin/python artifacts/stage8/release_main.py",
+    ".venv/bin/python artifacts/stage8/tables.py",
+    "MPLCONFIGDIR=/tmp/stage8-mpl ../llm-rankcloak/.venv/bin/python artifacts/stage8/plot.py",
+    ".venv/bin/python artifacts/stage8/finalize_evidence.py"
+  ],
   "analysis_note": "Host-only implementation after GPU freeze; no model inference; earlier CPU results retain their original revisions",
-  "analysis_source_sha256": "5448caf9f9f618d3ed41afdca8249581210c721d0febce7e9fd293c89e644010",
+  "analysis_source_sha256": "a1ba36d7dac9d9d1a920d355765f800c5a1f396e65ea0fd5b888da3f320ed4d8",
   "attempts": [
     {
       "attempt_id": "45aac5b9-103b-44d6-9230-5bb7ebf3beaf",
@@ -103,6 +110,656 @@
       },
       "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
       "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
+    },
+    {
+      "attempt_id": "2ebb48fc-25bd-44f2-b246-fc757074ee41",
+      "case_id": "F-c0-n32-r0",
+      "files": {
+        "artifacts/stage8/attempts/2ebb48fc-25bd-44f2-b246-fc757074ee41/carrier.txt": "e9a7d6a6af972e7c2ec159b330936af715106023b4641eb271ea97fa3b7911c4",
+        "artifacts/stage8/attempts/2ebb48fc-25bd-44f2-b246-fc757074ee41/command.json": "5555d7b2019913cf73e8e0e42c82557b9604ef7510008ed1cc8415c6f95da5c5",
+        "artifacts/stage8/attempts/2ebb48fc-25bd-44f2-b246-fc757074ee41/gpu_samples.json": "4468d508d6e6e80206e61a3649181e0a43a9b590e8ff2e149813d6d4d26b4c81",
+        "artifacts/stage8/attempts/2ebb48fc-25bd-44f2-b246-fc757074ee41/input.json": "18d89e6850322854277e7b03d70f30f6d98d142c40bad5605db8531a3c92b6a0",
+        "artifacts/stage8/attempts/2ebb48fc-25bd-44f2-b246-fc757074ee41/outcome.json": "ed4a190030532c8eaaf4c66add1e6b10c549ad09b0add0215cc265534067dc6f",
+        "artifacts/stage8/attempts/2ebb48fc-25bd-44f2-b246-fc757074ee41/partial_emission.bin": "e9a7d6a6af972e7c2ec159b330936af715106023b4641eb271ea97fa3b7911c4",
+        "artifacts/stage8/attempts/2ebb48fc-25bd-44f2-b246-fc757074ee41/result.json": "62992b72dde122fc9be6a32e7bb34913345598ddca317588b40e3dee7c430463",
+        "artifacts/stage8/attempts/2ebb48fc-25bd-44f2-b246-fc757074ee41/traces.json": "b6eafd81ccfde94964d01d0bd70c8ea75cf616be3b8f73c6758db0d2b868dfc3",
+        "artifacts/stage8/attempts/2ebb48fc-25bd-44f2-b246-fc757074ee41/worker.log": "0b76797440fe72d31ccb144e787aca778d5446edd171fb395510ada42f7c1f5d",
+        "artifacts/stage8/attempts/2ebb48fc-25bd-44f2-b246-fc757074ee41/worker_claim.json": "51e09b403161d00afca54f1f6fceb2cd70f20dade930458d0869b6a0ce02e854"
+      },
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "5ec8f275-1410-47ea-bb23-f28256f90198",
+      "case_id": "R-c0-n32-r0",
+      "files": {
+        "artifacts/stage8/attempts/5ec8f275-1410-47ea-bb23-f28256f90198/command.json": "c8a8f1fe41ccd8c2d146a9388a50345dc204e77a3c150ebd1aefaa3cdcdd921e",
+        "artifacts/stage8/attempts/5ec8f275-1410-47ea-bb23-f28256f90198/gpu_samples.json": "339421800acc98cb132b3c931f8f4b54fe60d5ea6b5cf41372588f678384f93c",
+        "artifacts/stage8/attempts/5ec8f275-1410-47ea-bb23-f28256f90198/input.json": "e18df5fd25a07598d086d5612341837778418b5589e569321a3a4ce7198e4a6f",
+        "artifacts/stage8/attempts/5ec8f275-1410-47ea-bb23-f28256f90198/outcome.json": "415e120a3636dbe41190dfb4c19560eab96588258718283d921709c64eae1ad6",
+        "artifacts/stage8/attempts/5ec8f275-1410-47ea-bb23-f28256f90198/partial_emission.bin": "cce59a6a0e322381cd4b61a5a708044b4653aba41ba89ec28209076f21622d9b",
+        "artifacts/stage8/attempts/5ec8f275-1410-47ea-bb23-f28256f90198/result.json": "46aac27629f0f42bf16b6d90558e679faa7a71a61b5bb62090b52ebb25959da4",
+        "artifacts/stage8/attempts/5ec8f275-1410-47ea-bb23-f28256f90198/traces.json": "9bda73f194b828af57b5df46b0e918d151d075a5fc1aee8efcf6a32fcac8f467",
+        "artifacts/stage8/attempts/5ec8f275-1410-47ea-bb23-f28256f90198/worker.log": "d125d57d3bf0f5e0be7b9fb9662bb2079ab06e78b401a3092903544a2edcb2cf",
+        "artifacts/stage8/attempts/5ec8f275-1410-47ea-bb23-f28256f90198/worker_claim.json": "dc2824fbb71b5812e0673d54f273f69be58f880f7c22cb550dd2b161679b4209"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d",
+      "case_id": "R-c0-n128-r0",
+      "files": {
+        "artifacts/stage8/attempts/f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d/command.json": "e717342d02ff688a39663812f24c220d128d09fc98503a0fe87b8e00a393fea0",
+        "artifacts/stage8/attempts/f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d/gpu_samples.json": "7e5075a619b28bdf1c048032bf7762e14aeda18d498ab2e7a3be43c421c2c3b1",
+        "artifacts/stage8/attempts/f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d/input.json": "d777f5b7a6eb33bebf25cf925133ec642e8561e7f9bfcf7572f2f9c6aa8bdb3d",
+        "artifacts/stage8/attempts/f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d/outcome.json": "0a91829159984f58f93fde685da239881b36a91273d9cb0d372a6e70d50646fe",
+        "artifacts/stage8/attempts/f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d/partial_emission.bin": "4b5fa1c9b7de6eee7887ac4f3fc7af4835356b18ef027f4f68e6d993aa9ac13f",
+        "artifacts/stage8/attempts/f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d/result.json": "c3e3d8129613f95b320599ff0dcf344fc2a0851eec4e6f80541351ae98d8f058",
+        "artifacts/stage8/attempts/f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d/traces.json": "4651f7d27cbf10582dae317d3593c58f4740ce88e945e956b7c866a48e906322",
+        "artifacts/stage8/attempts/f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d/worker.log": "bfbac7ed5ee32c1273be4b27be1794e3ebeea05cf38b245a79d7c2a90194e050",
+        "artifacts/stage8/attempts/f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d/worker_claim.json": "60bb8d47f6b29ba14140eac32059b099486e88302bed45f7fd8af5483950dca5"
+      },
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "5c24964a-b777-4e55-8b7b-7f3811a1de56",
+      "case_id": "F-c0-n128-r0",
+      "files": {
+        "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56/carrier.txt": "ab79641f84e1a1646cae3911a492d171f42fad713210735f1edee46abbec6de4",
+        "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56/command.json": "33bd12b57e2d6ab054a3b5c8b306245a26eae58a7989b5bbdea7c2b6ee54a47b",
+        "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56/gpu_samples.json": "44165625bc5ac2bdb96450d5cb3f5f44c1e5598925269f66cad24b92c9dbc1f5",
+        "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56/input.json": "36a228ca89ee2800d03c60e1df2f73f4d36b93279c454cc2c06ffefc8006f28f",
+        "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56/outcome.json": "cce35bafd8f633dbdce29511338867380d818f31b74a8a29e08a0dce2b75da64",
+        "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56/partial_emission.bin": "ab79641f84e1a1646cae3911a492d171f42fad713210735f1edee46abbec6de4",
+        "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56/result.json": "fe4ac517eea5dd594ab726e8588f02e8272c2740db80f3aa93ae3e8ef361c359",
+        "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56/traces.json": "7ffeb8d4b278fa649c8e90396f6286a4a4b1d668f664bd5066e4fa54286ef1c6",
+        "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56/worker.log": "e39c2bad0c1668b0882f54151ab6834e3c2e40fa7354144ca2f4da8ebeb6182b",
+        "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56/worker_claim.json": "503f74e58eb42e2db5571e9325934bb4210e2c58add89c9331853ac84d6cd0f4"
+      },
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "2156c164-3e4d-4f8e-b95c-700af9cf2e0e",
+      "case_id": "R-c1-n32-r0",
+      "files": {
+        "artifacts/stage8/attempts/2156c164-3e4d-4f8e-b95c-700af9cf2e0e/command.json": "7d6302e3a2cb1e002a87fb9c73db2f474d80a2c666b59573621c3f5809be8e13",
+        "artifacts/stage8/attempts/2156c164-3e4d-4f8e-b95c-700af9cf2e0e/gpu_samples.json": "2ffd0ea544aebb4dbe4e4e7b0b1fc4b7d0eeb7eaee0bce276c2ccd4817691a70",
+        "artifacts/stage8/attempts/2156c164-3e4d-4f8e-b95c-700af9cf2e0e/input.json": "d3c68c7ed560b1db6013bbd0472bf9ee89f0e60793b35bdbdc4fc80342155045",
+        "artifacts/stage8/attempts/2156c164-3e4d-4f8e-b95c-700af9cf2e0e/outcome.json": "62551d36d075e41f50f929a14c0b8a23747e50c41c61f625abfc70135bb29855",
+        "artifacts/stage8/attempts/2156c164-3e4d-4f8e-b95c-700af9cf2e0e/partial_emission.bin": "bd738698fdf8cc802f8038b9d7f92971707c8c2f79452777914dbc791d037cf5",
+        "artifacts/stage8/attempts/2156c164-3e4d-4f8e-b95c-700af9cf2e0e/result.json": "a8159735d225266f65d0b3cc580138e605a6774d85f65eac55466943a8b19430",
+        "artifacts/stage8/attempts/2156c164-3e4d-4f8e-b95c-700af9cf2e0e/traces.json": "cd5c00ada1ad5a1f8207c94bf4183ea0c1669c2c808cf027f0d907eae4d08557",
+        "artifacts/stage8/attempts/2156c164-3e4d-4f8e-b95c-700af9cf2e0e/worker.log": "046b2262ca8fca592d661a75625b88752f5a5b62ca956d3eefb75d1973e29d2c",
+        "artifacts/stage8/attempts/2156c164-3e4d-4f8e-b95c-700af9cf2e0e/worker_claim.json": "8172dcfe3c8b3085bdc1f26ad40d2b5ed847a77aaba7008db2c25971e975f8df"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "07c09f07-b57a-4ff1-9189-b4115a7ddf56",
+      "case_id": "F-c1-n32-r0",
+      "files": {
+        "artifacts/stage8/attempts/07c09f07-b57a-4ff1-9189-b4115a7ddf56/carrier.txt": "6e3886748ae06202b13f91e31983f1dd3f78400d95d5597256115066f2617d63",
+        "artifacts/stage8/attempts/07c09f07-b57a-4ff1-9189-b4115a7ddf56/command.json": "808b87a7eea9435b644972bf27276c1cf545d88fa41a24846791973d51ab564b",
+        "artifacts/stage8/attempts/07c09f07-b57a-4ff1-9189-b4115a7ddf56/gpu_samples.json": "2af3eb6ed97f3a1533f955ffd8eb678a703e33d5e3f85a52d0c0b83aea230791",
+        "artifacts/stage8/attempts/07c09f07-b57a-4ff1-9189-b4115a7ddf56/input.json": "3281a3ffecfdd1e814b059d93836f3271312968ee51d5b14103e0643b012d2dd",
+        "artifacts/stage8/attempts/07c09f07-b57a-4ff1-9189-b4115a7ddf56/outcome.json": "b6532223bc75bd2bcf97cf47ced7b78267a08e96cf03b12cddacceb7bc50a348",
+        "artifacts/stage8/attempts/07c09f07-b57a-4ff1-9189-b4115a7ddf56/partial_emission.bin": "6e3886748ae06202b13f91e31983f1dd3f78400d95d5597256115066f2617d63",
+        "artifacts/stage8/attempts/07c09f07-b57a-4ff1-9189-b4115a7ddf56/result.json": "e1385aebdcb896ce2ccbb558da454a393573ee7b2a5d7f52ef6ef5ad1316ec6f",
+        "artifacts/stage8/attempts/07c09f07-b57a-4ff1-9189-b4115a7ddf56/traces.json": "ae5852cf0d3dfa0628855892b50d7d591bb4430b4a42abe1773e1c5b83dfd5ed",
+        "artifacts/stage8/attempts/07c09f07-b57a-4ff1-9189-b4115a7ddf56/worker.log": "62ced9c0a80e1a5dd64026abfde5c04e48c56614a05bd0b31a697973bd9fac91",
+        "artifacts/stage8/attempts/07c09f07-b57a-4ff1-9189-b4115a7ddf56/worker_claim.json": "ce02c031d471260ef70c0dd512b981ec889a76edc28d9bb7ed99cad4a1422adc"
+      },
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "86619577-96b5-4881-9316-ac1984b33afc",
+      "case_id": "F-c1-n128-r0",
+      "files": {
+        "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc/carrier.txt": "413fea0dbef6121ad4c7f1fdae8b62f2ef82c8c420f95af97f7525739fa9746d",
+        "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc/command.json": "46e9757e03b70e1b6232cf116c953a94c9574ab15fb47725ce3256d1800e73a1",
+        "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc/gpu_samples.json": "4210681c38733f043c72b323c74bb5902af94a98324996ae7f8e23c489604153",
+        "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc/input.json": "efd6dc4aafa94fbde1b0f903bef4340cb0059cd79243460a888f7fc9d991b6f8",
+        "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc/outcome.json": "646b5a06d0a40013bd62ca651bd2b8d87bcf0e96e4f0e2192f96a0db206d4805",
+        "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc/partial_emission.bin": "413fea0dbef6121ad4c7f1fdae8b62f2ef82c8c420f95af97f7525739fa9746d",
+        "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc/result.json": "ec7053b753444695a66ae71ac678239453d031a9a78d330af5527281fc9cb19f",
+        "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc/traces.json": "19600e1a208c524a106a4a533feee3ca5ac67a2b306841985abbe47deb89dadd",
+        "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc/worker.log": "8392b9088bc2e4bcc3d8fa055ff1e28f0390deeefdba26c1de4e1e19fd6f2ba8",
+        "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc/worker_claim.json": "4c6b1dfab5d24a203d9fd86f0e863f41917d11042c3a43f6c9ebcac04ed0e7e5"
+      },
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "2b8f20f0-7f88-49cc-9804-30e91f12604c",
+      "case_id": "R-c1-n128-r0",
+      "files": {
+        "artifacts/stage8/attempts/2b8f20f0-7f88-49cc-9804-30e91f12604c/command.json": "ea1c8956ceffef5774a1758c6c69069dce42d7d97c792d3cabf8beeba4cf1f29",
+        "artifacts/stage8/attempts/2b8f20f0-7f88-49cc-9804-30e91f12604c/gpu_samples.json": "156bfae785272a71863230d5224baa871a266190a5644fec1c78edf6f06d4898",
+        "artifacts/stage8/attempts/2b8f20f0-7f88-49cc-9804-30e91f12604c/input.json": "b2a2f475c7ab11d390fdb846ce07c09bf311ae4adc9d81b524a8130d2a32e49a",
+        "artifacts/stage8/attempts/2b8f20f0-7f88-49cc-9804-30e91f12604c/outcome.json": "dddcb300fbfdbf4dc61f6dbcac000239b866abcd6f012499c4ae9f6ce03adf90",
+        "artifacts/stage8/attempts/2b8f20f0-7f88-49cc-9804-30e91f12604c/partial_emission.bin": "f256e3f3a790fc427cdb883e17baff1d7cf1356ac3eecacd4e6d4affeb78c992",
+        "artifacts/stage8/attempts/2b8f20f0-7f88-49cc-9804-30e91f12604c/result.json": "91031b495411a7cf75167e13589e0ccda961d23000ca9f1395355299a48137fc",
+        "artifacts/stage8/attempts/2b8f20f0-7f88-49cc-9804-30e91f12604c/traces.json": "1bb2e9412276cc2267cdcbb39c902acaf8781eb9b41713c3a9613aa7bca98fea",
+        "artifacts/stage8/attempts/2b8f20f0-7f88-49cc-9804-30e91f12604c/worker.log": "0836db0100099c3c35c8d8f4dc2b139ecbfde1ab73cecd2a24ab00cb14bd62e2",
+        "artifacts/stage8/attempts/2b8f20f0-7f88-49cc-9804-30e91f12604c/worker_claim.json": "d57d7c39f7c406f2f591a31e60c54737a0f8b749799579fd7a81cc5aa3e43f69"
+      },
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "0955c817-980e-479d-9bad-3234f8fe04ff",
+      "case_id": "F-c2-n32-r0",
+      "files": {
+        "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff/carrier.txt": "31166c0d579148ceb01670dc0886944d547d4888800814d01fa36a8362f08ca6",
+        "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff/command.json": "61181bb52098bbab0fea75ec240cb3f707ecfeb0d6395927dcd15604e555752d",
+        "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff/gpu_samples.json": "22835fecad5bbe3d5a0f2a42368093582fd7628f1a171cf0bbbccd4e4afb22ab",
+        "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff/input.json": "b2361e605cf97f3167569641c5e97dd09ac165d62f22a534f8ad0e14cebfb4a8",
+        "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff/outcome.json": "208cfc3bc25882947541ac65a9d32be3a84d8126b735ec45a3ee9d8be0df2f66",
+        "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff/partial_emission.bin": "31166c0d579148ceb01670dc0886944d547d4888800814d01fa36a8362f08ca6",
+        "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff/result.json": "fd640dedabbd4e93f19d1c9ab4c6b3371093b0c7dff0000fc80cfb4c3bd25dd0",
+        "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff/traces.json": "315c9b20b9f3ddbb37854a989734dc72ec01fb35017dba7ae069dc3b25050be0",
+        "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff/worker.log": "0401bc608cab15a1d575e7bf83aa32939a548751f7b2061fca321d776a7b5e70",
+        "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff/worker_claim.json": "4a6dc54626e4c095033253d611f22c5868a7594c9e6284314d9de2d0729e1cde"
+      },
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "1bc4be9e-5f41-4a60-97e4-65928514ce13",
+      "case_id": "R-c2-n32-r0",
+      "files": {
+        "artifacts/stage8/attempts/1bc4be9e-5f41-4a60-97e4-65928514ce13/carrier.txt": "c587ac1fa23df52e0862e8ff58722b6588b08ab919fa6862d81917aa7e358154",
+        "artifacts/stage8/attempts/1bc4be9e-5f41-4a60-97e4-65928514ce13/command.json": "2e20d7e8ba697d61a7688da0848d162261e7647066c5f07d51a6c63f74c27e29",
+        "artifacts/stage8/attempts/1bc4be9e-5f41-4a60-97e4-65928514ce13/gpu_samples.json": "ef5e0d06b191d2a34bc14c467bb656fef0ba9c71cf0057bedfb303f800dabca6",
+        "artifacts/stage8/attempts/1bc4be9e-5f41-4a60-97e4-65928514ce13/input.json": "b49b55fe52407161162cdd1c9b45533446aa672e5b7c6767cbf19cf7bfa7f95e",
+        "artifacts/stage8/attempts/1bc4be9e-5f41-4a60-97e4-65928514ce13/outcome.json": "9fc9a6426adb4302dc859c8548086a0073ee8bad4cc4e8419882247cac140b5d",
+        "artifacts/stage8/attempts/1bc4be9e-5f41-4a60-97e4-65928514ce13/partial_emission.bin": "c587ac1fa23df52e0862e8ff58722b6588b08ab919fa6862d81917aa7e358154",
+        "artifacts/stage8/attempts/1bc4be9e-5f41-4a60-97e4-65928514ce13/result.json": "fb4442863f62f1e801c9b8b8df3b7c050c7609aa0588741e820a2382d6746161",
+        "artifacts/stage8/attempts/1bc4be9e-5f41-4a60-97e4-65928514ce13/traces.json": "acd99266fa6e63d03cf8cb8b4714df7e2e62fa3888cdd0b59c68d2f293785a8f",
+        "artifacts/stage8/attempts/1bc4be9e-5f41-4a60-97e4-65928514ce13/worker.log": "48ecea33c5c3ad160d511892bb188e1ad4f4f5bdfff5fa9323687979cc2d5486",
+        "artifacts/stage8/attempts/1bc4be9e-5f41-4a60-97e4-65928514ce13/worker_claim.json": "71b4dfdc100bf53ef69f395ff43279061880e468d030745cd1f87d713ad02602"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "5a149330-3020-4559-b54f-672c3ee94b06",
+      "case_id": "R-c2-n128-r0",
+      "files": {
+        "artifacts/stage8/attempts/5a149330-3020-4559-b54f-672c3ee94b06/command.json": "a784e0734d843a2df51aad996a68892e23fe661a1110bf6023808106500fe76d",
+        "artifacts/stage8/attempts/5a149330-3020-4559-b54f-672c3ee94b06/gpu_samples.json": "87e3cf9bfe5ba9cb3e0ba8c513ac3f72acb881becf3a5980509ba56e6be24f25",
+        "artifacts/stage8/attempts/5a149330-3020-4559-b54f-672c3ee94b06/input.json": "07f268c00cfec64f52643dad1e1305179e3d65f041981bcb1c0738e01799ba81",
+        "artifacts/stage8/attempts/5a149330-3020-4559-b54f-672c3ee94b06/outcome.json": "bf049f4446c1eb696c634045a5b462ed0b94ca1ffb450f25e185f8467e20c1ca",
+        "artifacts/stage8/attempts/5a149330-3020-4559-b54f-672c3ee94b06/partial_emission.bin": "76b57b3104b5aec01f48b0a8805345bc47db54e9bfb9fc71fc23d4689c9d7dc1",
+        "artifacts/stage8/attempts/5a149330-3020-4559-b54f-672c3ee94b06/result.json": "94cd5e69d6249dbe639587e9b2df65b08a1e631ad43ef802f1c555e16ce35672",
+        "artifacts/stage8/attempts/5a149330-3020-4559-b54f-672c3ee94b06/traces.json": "2de7d74b72ce1a99e37d9efdc19301149fd7b6bd0ca9b4466d0f3f256335d8b7",
+        "artifacts/stage8/attempts/5a149330-3020-4559-b54f-672c3ee94b06/worker.log": "2d529898f357c554dd2009ceae10395190d5df6936c64089bf1f55fe4530fd5c",
+        "artifacts/stage8/attempts/5a149330-3020-4559-b54f-672c3ee94b06/worker_claim.json": "9623a15991c9f1df1d40367d87a61242e0d65db5062140d11bc2615dcd6ce2d2"
+      },
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "09d821ef-474b-49ab-ae90-e7314357e7a1",
+      "case_id": "F-c2-n128-r0",
+      "files": {
+        "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/carrier.txt": "715e7af70119aa5a6f5bcaf06265cbf78e5624797a00de7d9c35133fb00c6a0c",
+        "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/command.json": "224f7064507cef543dba90f5fd0a5be9a58aa7d515527f5d29e96fbd0274f2cc",
+        "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/gpu_samples.json": "b0817148150e98f90402d856bc5cb9925d6b7679e9bf4d74b235857c74298a95",
+        "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/input.json": "a1759ee1969d3fcad8d609cd06c35f888d05a76c7af1f9b215644c6b700c3b4f",
+        "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/outcome.json": "a58bb4c5552b842d20f80f93df45b543899442e27c340b49bbacec297ec5a4e8",
+        "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/partial_emission.bin": "715e7af70119aa5a6f5bcaf06265cbf78e5624797a00de7d9c35133fb00c6a0c",
+        "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/result.json": "01a7bb79f893299be1348f13e4b17765ce3f5243decd4d23e28c54d0a64d2faa",
+        "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/traces.json": "981b6c6d42cd8218aef43d1d30df34a9900eadba1b3c10d09b07278d544e1ed7",
+        "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/worker.log": "4648cd70d339c98e4a2da2b8a9b4c5addecda9f779ab9947778d524d23ee69af",
+        "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/worker_claim.json": "a37876d4b8c8824c78348df27b0cd499f5fe531b3ddffaf0308734e84b0b24fd"
+      },
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc",
+      "case_id": "R-c3-n32-r0",
+      "files": {
+        "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc/carrier.txt": "03e8e3b7904b6bd156935f438afa934b427c895916c010e4518e83e2a0e58de1",
+        "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc/command.json": "6c920d7f6bd2462a81b833f8d4f3c1cbe5ad7d18fd073e3409e91e24bbd2dc5e",
+        "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc/gpu_samples.json": "ff91fbe993a86e71345bab6adf63f335c0b6644eb86fa1943cc7a4c1cc41b2b6",
+        "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc/input.json": "226e72a174e13631a985b15200d30eed96d53ba1cb320956d6f14f19587d6e90",
+        "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc/outcome.json": "8ead509ddedd0fe1993023dfb7aa120b3803c659d662151b9ea8b3a70e56fab8",
+        "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc/partial_emission.bin": "03e8e3b7904b6bd156935f438afa934b427c895916c010e4518e83e2a0e58de1",
+        "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc/result.json": "dcec95c6d0abe6ea4eb53b28d58eca9b36c22ca3e7df3b2668f1479823bfbd1b",
+        "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc/traces.json": "0a134dc572ba3892a89da6af52907b1a7a9da52325ea8eefaed2a2453eed8c2f",
+        "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc/worker.log": "0b76797440fe72d31ccb144e787aca778d5446edd171fb395510ada42f7c1f5d",
+        "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc/worker_claim.json": "2fdd155f24547260f5efe6cbf395c784a2b368680bc68a463e24999683892fae"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3",
+      "case_id": "F-c3-n32-r0",
+      "files": {
+        "artifacts/stage8/attempts/a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3/carrier.txt": "adba0229e4e3432ce76362dde922a437b8b6c5c977fa13165a82f2b0929895b0",
+        "artifacts/stage8/attempts/a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3/command.json": "9faaf1a538d362b10b2b251bc0a826c3f72a9dbd98e92717acebebfcfe5c95d4",
+        "artifacts/stage8/attempts/a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3/gpu_samples.json": "a922302dd54b285ebb7a40ac55cad1b38c51a9e4e6dcc5cf60192d078edefc6e",
+        "artifacts/stage8/attempts/a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3/input.json": "222623df065b27b8e800c4afbd16f87a37f4c61ad8b31ccd6f29453cf8beb807",
+        "artifacts/stage8/attempts/a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3/outcome.json": "f7bdde277568618c8d21528d71478c4d2c5d86e7b6f08aeb295c11702ed00664",
+        "artifacts/stage8/attempts/a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3/partial_emission.bin": "adba0229e4e3432ce76362dde922a437b8b6c5c977fa13165a82f2b0929895b0",
+        "artifacts/stage8/attempts/a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3/result.json": "59914a2633d66290196eae3bd1772ce732ab2eed5aaecea523de0ae903dc30f4",
+        "artifacts/stage8/attempts/a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3/traces.json": "ab168fc154ff15145ee85133dca6b7538f8bba01b202235b0f69226333e69b4a",
+        "artifacts/stage8/attempts/a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3/worker.log": "144dbcbd84303505e401559d34093b7b54541f2af7c03c538c0128ec8810576f",
+        "artifacts/stage8/attempts/a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3/worker_claim.json": "96040e39036a49e78c3534ad7fbeefafa792927a0c5f4a6e158d940d966fc9a8"
+      },
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "bbdf6362-0e79-4fd4-a294-104828ef080b",
+      "case_id": "F-c3-n128-r0",
+      "files": {
+        "artifacts/stage8/attempts/bbdf6362-0e79-4fd4-a294-104828ef080b/carrier.txt": "7b37c3a92c513ac9b7a5f83f8c7e0e13410f3d943e960fd43b2555f9372092dc",
+        "artifacts/stage8/attempts/bbdf6362-0e79-4fd4-a294-104828ef080b/command.json": "c59e0fd6be24320f78a11bdc6ac38e1c9d91a7bed901706199e47671f0384415",
+        "artifacts/stage8/attempts/bbdf6362-0e79-4fd4-a294-104828ef080b/gpu_samples.json": "78866fc017499f1640fe2f655282efa48d383aeb00c901b1468149c70906d31d",
+        "artifacts/stage8/attempts/bbdf6362-0e79-4fd4-a294-104828ef080b/input.json": "7906755f3dfc6fd8eb6825ccab52bb8d8639a4b2a57edfb374ce78555d5339be",
+        "artifacts/stage8/attempts/bbdf6362-0e79-4fd4-a294-104828ef080b/outcome.json": "17393fdd168ee871192a405874e1f3896d7f28f07797aa8d7156af801ec3ab1c",
+        "artifacts/stage8/attempts/bbdf6362-0e79-4fd4-a294-104828ef080b/partial_emission.bin": "7b37c3a92c513ac9b7a5f83f8c7e0e13410f3d943e960fd43b2555f9372092dc",
+        "artifacts/stage8/attempts/bbdf6362-0e79-4fd4-a294-104828ef080b/result.json": "f0f1b2751d4805dbdd529acee4bd1afc423b59a7feac71c7a72f3e3ecb61ee92",
+        "artifacts/stage8/attempts/bbdf6362-0e79-4fd4-a294-104828ef080b/traces.json": "f59e686f758e8e5e94366e03caf945763b2210091263584f4e373a06c8e65200",
+        "artifacts/stage8/attempts/bbdf6362-0e79-4fd4-a294-104828ef080b/worker.log": "72dafccc0d04c21ff1a0b6cb6c3e59c320ff9db2e1ada5789c0d693d73a8b7b4",
+        "artifacts/stage8/attempts/bbdf6362-0e79-4fd4-a294-104828ef080b/worker_claim.json": "2f9f794f133c31880b2ae8027503e992f74da70b4a3f78ef4dbc7f01d07320ed"
+      },
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "c560b990-1609-4f2a-9472-b0176e90dbe4",
+      "case_id": "R-c3-n128-r0",
+      "files": {
+        "artifacts/stage8/attempts/c560b990-1609-4f2a-9472-b0176e90dbe4/command.json": "edf74611de13a875fbf778d670f40687f6830a00764e77bb77821cdbb17ccaea",
+        "artifacts/stage8/attempts/c560b990-1609-4f2a-9472-b0176e90dbe4/gpu_samples.json": "9ea6b257f916c5bf9e195600ec76e968004c305d4cab75ee6b657c2d8a063089",
+        "artifacts/stage8/attempts/c560b990-1609-4f2a-9472-b0176e90dbe4/input.json": "7f98c53dee7a68dc4873e6dd1195cda4753230db342fa2ee5fdf362598e55ca3",
+        "artifacts/stage8/attempts/c560b990-1609-4f2a-9472-b0176e90dbe4/outcome.json": "bc78439b6894d3f05f004a24eb18333e7462dc476df46db828aadcb630fe5580",
+        "artifacts/stage8/attempts/c560b990-1609-4f2a-9472-b0176e90dbe4/partial_emission.bin": "d273af337105c2877b3c69cf244e03ca0e9f3409e25b0ceea9b137cb3250b469",
+        "artifacts/stage8/attempts/c560b990-1609-4f2a-9472-b0176e90dbe4/result.json": "5cf233de70a0f355a8dfc2cf0d1628aa04cabfde6eafb1da44b48fd45d23d17f",
+        "artifacts/stage8/attempts/c560b990-1609-4f2a-9472-b0176e90dbe4/traces.json": "4a28db092675df74fdfa7ded7ac8de3f28a87a8fde351c5468f3a30acf2376a2",
+        "artifacts/stage8/attempts/c560b990-1609-4f2a-9472-b0176e90dbe4/worker.log": "fec96a30ef3a43eb947e83202b00b4572dffc73978114382def185126618ac2d",
+        "artifacts/stage8/attempts/c560b990-1609-4f2a-9472-b0176e90dbe4/worker_claim.json": "854689f6e5ceb9458400925aa01d4ad794166052249de19627ac4708ebbe56b7"
+      },
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "a53746f8-ec4d-40ed-ac7d-1f734b6e51fd",
+      "case_id": "control-F-c0-n32-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/a53746f8-ec4d-40ed-ac7d-1f734b6e51fd/carrier.txt": "67aa5614db9a7f40b7686e3092b93059c7fc18857c97b425e5d09433e5b3a755",
+        "artifacts/stage8/attempts/a53746f8-ec4d-40ed-ac7d-1f734b6e51fd/command.json": "0f3d53615844a67d0ec0422c209e9fb5a1acad68ed63cb191d18194ea0b9644b",
+        "artifacts/stage8/attempts/a53746f8-ec4d-40ed-ac7d-1f734b6e51fd/gpu_samples.json": "1367d60017e6fa1a87e5563caa514bfdf038819fd400f1be95e62ea1e26bc2e2",
+        "artifacts/stage8/attempts/a53746f8-ec4d-40ed-ac7d-1f734b6e51fd/input.json": "c2b2ba6794f3c6f3de9f9d3d4cdc574863a5dcac894231db27b36ca84d46f6b3",
+        "artifacts/stage8/attempts/a53746f8-ec4d-40ed-ac7d-1f734b6e51fd/outcome.json": "a36e731be6da195508585d41c691dc0d83640cd0a87f4c5c1c71028d6d85b1c7",
+        "artifacts/stage8/attempts/a53746f8-ec4d-40ed-ac7d-1f734b6e51fd/partial_emission.bin": "67aa5614db9a7f40b7686e3092b93059c7fc18857c97b425e5d09433e5b3a755",
+        "artifacts/stage8/attempts/a53746f8-ec4d-40ed-ac7d-1f734b6e51fd/result.json": "2d520803b8cc9267f31619733112f5eba4157446a95813178848195b9b5ea9ab",
+        "artifacts/stage8/attempts/a53746f8-ec4d-40ed-ac7d-1f734b6e51fd/traces.json": "ecfe91a796183667fe25267fee4028f7e0e5f70b0f78f61316d84207d45bf897",
+        "artifacts/stage8/attempts/a53746f8-ec4d-40ed-ac7d-1f734b6e51fd/worker.log": "cc1fb897ee19b0f673fd1293ec50f3b0c4f157c0941c4393a4088a943e7d9688",
+        "artifacts/stage8/attempts/a53746f8-ec4d-40ed-ac7d-1f734b6e51fd/worker_claim.json": "3335e1fd34fb3d592a52ace494b5818891692e92fabc04c418c0d7fa800bc403"
+      },
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "f9ca41bb-ebfe-47b4-931e-b2e874c4a0de",
+      "case_id": "control-R-c0-n32-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/carrier.txt": "c4f3d7afc87ff01eeba20fbcdad2d4c653818eb619e6b636516adfbc2887bfe3",
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/command.json": "070a56f55de12a773c803cf24c1630de37ee752b5bd959062ca9fb6c7a4dd246",
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/gpu_samples.json": "65f94f5e85b57abbf30e915015391f64f2d17d215fe2456f7b90fb152ed17d69",
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/input.json": "d5402edfa9f43fb9378c72cfc65e98623019dd2c50d74ae0f927c2f0001d32d3",
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/outcome.json": "6c97e28f1126b09560d178b7871c7275f6a472a48c0526f89463f68fc70a2604",
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/partial_emission.bin": "c4f3d7afc87ff01eeba20fbcdad2d4c653818eb619e6b636516adfbc2887bfe3",
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/result.json": "1a7ef04bd7a5f2cb94a49a95c6e984cb66e05f9bb82b0160c7663c8b6a20c56f",
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/traces.json": "f5b5396730981a4eace31c24eae55ebf7776a07f632189792e092a7058c10887",
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/worker.log": "52b9b0bef8e96098aaa14321f36846282f6cd8b3ec7e1b946c200117cb50dd65",
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/worker_claim.json": "6283d80c5188bd974e6256655ca2d67fa5964cd9f1008ab02a8d7a304f4821fa"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "463d8616-48aa-48fe-8d6d-0e5b2f74670d",
+      "case_id": "control-R-c0-n128-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/carrier.txt": "b1eecd2bf415dbbb32d2c8ca012203cd838719e45c81281877fb44483d8970cc",
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/command.json": "767d49700de8126f4d2b552aea4b2241f14f49e7ca7f7e31402c7d64cf6f85af",
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/gpu_samples.json": "18ffbfdac6ddd79a35990c14d72e2c1e59ffbcbe9416d2a75e6e5380cf06f6ad",
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/input.json": "ff399eb9b62cc0a0c891d7de3aecc05d1f204ef0e7bd6cf6af704401a6766b62",
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/outcome.json": "bfc01adc292966de08db949d4f3d8e3d8044e65dee4a3c73fd5ac90904721483",
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/partial_emission.bin": "b1eecd2bf415dbbb32d2c8ca012203cd838719e45c81281877fb44483d8970cc",
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/result.json": "4d9413a114ad7982251bec65a9363b394bf5384663d3fd810ab6b0dc90523188",
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/traces.json": "43d974a7207a509fae89ff367e3df2114524bd0ddfdf845355eb5ba0737063cf",
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/worker.log": "8c95ca3785428d5b2828f39d9625a797650a1bd101019f934b672ad9d943f86d",
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/worker_claim.json": "7797e3a36002b2ca0a77358f1b4f4334229176d4577152b77c50a9487158f025"
+      },
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "05bb20f4-2146-4bb3-83b4-127cfa7b3b30",
+      "case_id": "control-F-c0-n128-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/05bb20f4-2146-4bb3-83b4-127cfa7b3b30/carrier.txt": "8937ea89914a8cefa22b5ef5b538f3176002aead7089cec81f0373afea4fdebc",
+        "artifacts/stage8/attempts/05bb20f4-2146-4bb3-83b4-127cfa7b3b30/command.json": "7ddb7e3147eddd1b24707d9a57c8bc081a35f74b9e44b310a0c1cf98e17209e7",
+        "artifacts/stage8/attempts/05bb20f4-2146-4bb3-83b4-127cfa7b3b30/gpu_samples.json": "bb49dfa83017143eff3be74b65479f1d1a4379a47f7cc44d1d614c3bc530b41f",
+        "artifacts/stage8/attempts/05bb20f4-2146-4bb3-83b4-127cfa7b3b30/input.json": "7a41beefa374c8b3d13d8b5eabf60acb196d56b176926b0b23ccd7ab6d55d6db",
+        "artifacts/stage8/attempts/05bb20f4-2146-4bb3-83b4-127cfa7b3b30/outcome.json": "7169eaeef6b90a962c140d697d95621184a3d9274bd36f6b37b1536893296d97",
+        "artifacts/stage8/attempts/05bb20f4-2146-4bb3-83b4-127cfa7b3b30/partial_emission.bin": "8937ea89914a8cefa22b5ef5b538f3176002aead7089cec81f0373afea4fdebc",
+        "artifacts/stage8/attempts/05bb20f4-2146-4bb3-83b4-127cfa7b3b30/result.json": "ce5b702f4a765a4cc82eda0be673598d60e514073d3fc1cad7b7b7d8f3589557",
+        "artifacts/stage8/attempts/05bb20f4-2146-4bb3-83b4-127cfa7b3b30/traces.json": "1e29d7807f36c8ffc49850cf48c1fb45ceb505214597648fc4cde0256fc26db7",
+        "artifacts/stage8/attempts/05bb20f4-2146-4bb3-83b4-127cfa7b3b30/worker.log": "e8b20b1d3a51caf0605803693599d5bc1eb3452e9143f1b6d231b91bf4406365",
+        "artifacts/stage8/attempts/05bb20f4-2146-4bb3-83b4-127cfa7b3b30/worker_claim.json": "09680291d4024f09633f88108bb467ad7e3ac0cfabfbef4faecde8fcab3497e2"
+      },
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "1cbe87f3-dcd5-4ead-8ec0-045af2c25584",
+      "case_id": "control-R-c1-n32-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/carrier.txt": "545df43c90efed5ab1540d8eb76f0270880b1e80ffbee83c3297b64c8e84ebd8",
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/command.json": "724d3d0d3e5146f71c38cd2c51b3f1c5bb26cb65cb901afb8081b832c84ff9d2",
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/gpu_samples.json": "a1e7d40c8e0d00a2d5051d0400a485dc53e1078407ff7faa3a1f850f624aa585",
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/input.json": "c76f43b91e49645a94e2feafa2d72e33b8429ccef7082465994ddf3702eb1332",
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/outcome.json": "069e9aef0c20d86c5894b75a07acca8d24385770746e7d27b65d0372d5a0d712",
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/partial_emission.bin": "545df43c90efed5ab1540d8eb76f0270880b1e80ffbee83c3297b64c8e84ebd8",
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/result.json": "aa6b7112215f6a1f2a22749de2b1000111efe7e5243a8813061fe62850b03f36",
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/traces.json": "af09c41d61cd38a3f0f0ded89f4d5f7cc2e2c6288b90bc29f6a571314403583b",
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/worker.log": "81772903c0bdba9fb0d7da660f7a8e1c061e550e8919c42dc3adf1ca94c3b716",
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/worker_claim.json": "49fc93271ea1dbc777b4147515231e3f13dd14e10da5a13f3f815ca0bb744d89"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "86ef2334-dd17-4bb5-b337-cfb4086d14f5",
+      "case_id": "control-F-c1-n32-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/86ef2334-dd17-4bb5-b337-cfb4086d14f5/carrier.txt": "49e8d1e30a16e6ea49aebdaa2ff1522b6bcc103bcae0e03b7d4fb633d5193707",
+        "artifacts/stage8/attempts/86ef2334-dd17-4bb5-b337-cfb4086d14f5/command.json": "4389a63eab259cc5db5a3fb49e17b8fd8ecf4ba2bb7e5927a55609e3602177da",
+        "artifacts/stage8/attempts/86ef2334-dd17-4bb5-b337-cfb4086d14f5/gpu_samples.json": "6ff22028d63224466a61c75a0eaf5b8c8b324344b549206a8978e1bcbfc41bb4",
+        "artifacts/stage8/attempts/86ef2334-dd17-4bb5-b337-cfb4086d14f5/input.json": "caa101ae0f4bd334a9115e2c1572eefddfd8ab927affe5ef4d01ec04c58a3da0",
+        "artifacts/stage8/attempts/86ef2334-dd17-4bb5-b337-cfb4086d14f5/outcome.json": "4e2cf255d72f0d9a692bfc1fd9d98fe95124851b935c826ecbd9b1ee45b71fa3",
+        "artifacts/stage8/attempts/86ef2334-dd17-4bb5-b337-cfb4086d14f5/partial_emission.bin": "49e8d1e30a16e6ea49aebdaa2ff1522b6bcc103bcae0e03b7d4fb633d5193707",
+        "artifacts/stage8/attempts/86ef2334-dd17-4bb5-b337-cfb4086d14f5/result.json": "1af3fe014b197cb76b5a9adff55a85e0cf667a335e2234afb39a9ae2b1da15aa",
+        "artifacts/stage8/attempts/86ef2334-dd17-4bb5-b337-cfb4086d14f5/traces.json": "abee7647df187340a1aa46745a77a87133a2749343cf9d5ad053d7aabbbb0827",
+        "artifacts/stage8/attempts/86ef2334-dd17-4bb5-b337-cfb4086d14f5/worker.log": "8c002fbdd0bdfd3fcc9d3ec9ac5c969536bfac17ebdb34d207a6ffd0967dfebe",
+        "artifacts/stage8/attempts/86ef2334-dd17-4bb5-b337-cfb4086d14f5/worker_claim.json": "181327bc7fa42b099bbb2fbeef5520f3c183f908fabb722c90e874c3ddd71502"
+      },
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "07060109-dc28-442d-81f6-dd72f76c6a61",
+      "case_id": "control-F-c1-n128-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/07060109-dc28-442d-81f6-dd72f76c6a61/carrier.txt": "c4b003062b328a9d42097c331ed8840194b8eb308502528c2beaa47ce03bde19",
+        "artifacts/stage8/attempts/07060109-dc28-442d-81f6-dd72f76c6a61/command.json": "2e435643bc665b0eb548e4117c5688ad85f09b2bf81bf04cfe65620e2a1a96f2",
+        "artifacts/stage8/attempts/07060109-dc28-442d-81f6-dd72f76c6a61/gpu_samples.json": "582069582923083e37158f1bbc47c2893c46cec4e11a3168e228b6d8e5230e18",
+        "artifacts/stage8/attempts/07060109-dc28-442d-81f6-dd72f76c6a61/input.json": "631e8bdf36985a1682cbc3683d9100eee3ee891cebdf437d92ed6dd76831a081",
+        "artifacts/stage8/attempts/07060109-dc28-442d-81f6-dd72f76c6a61/outcome.json": "35f612329eb65e51f7a760a4c80cead26f203d60f3e34ed612a52be59ff82615",
+        "artifacts/stage8/attempts/07060109-dc28-442d-81f6-dd72f76c6a61/partial_emission.bin": "c4b003062b328a9d42097c331ed8840194b8eb308502528c2beaa47ce03bde19",
+        "artifacts/stage8/attempts/07060109-dc28-442d-81f6-dd72f76c6a61/result.json": "58e1b7d0427234b9daa11b2385b42f0cd509255de0b35dac355464f98441b4a9",
+        "artifacts/stage8/attempts/07060109-dc28-442d-81f6-dd72f76c6a61/traces.json": "f382d712f0a5b8fc29f3592b04ba73a809d2be4bf6c499ce0f6775bdad56c536",
+        "artifacts/stage8/attempts/07060109-dc28-442d-81f6-dd72f76c6a61/worker.log": "eb36ba2875dfd2d4889177d9e5801ecfb7baf8979f8fe17c6161a07fe5f782a8",
+        "artifacts/stage8/attempts/07060109-dc28-442d-81f6-dd72f76c6a61/worker_claim.json": "425a9ef22715045450ef22b1d76d23436d36b73aecf1679263440e084a5ff084"
+      },
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "89369901-4bcd-44c4-b3c5-a2e8322a11f7",
+      "case_id": "control-R-c1-n128-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/carrier.txt": "d42e49e26cec342aaaa1fc900c0ee1bc3fb8def70d1bdb44670fdb767c54891c",
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/command.json": "674da56e455e0434edccfab96d12ae3a953ac3c795733128a1dd08c69919ff7a",
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/gpu_samples.json": "d69bac825f850763abae09f4c489ec08530bb8856c2da220dd259a9a46eac62b",
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/input.json": "4bd2d59595cc47b219c46ac6c9c7f0f3dc76c763c58395fb5a65c1bddcffe893",
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/outcome.json": "b3e6ef8a939ddc7990b79dd3cc3140afc28bb8c94658311dd571b1fdec0dbfd6",
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/partial_emission.bin": "d42e49e26cec342aaaa1fc900c0ee1bc3fb8def70d1bdb44670fdb767c54891c",
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/result.json": "0b1456e2df716ef0f70bf7121d26cf7576e9297f39810f804f97e7f53332c776",
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/traces.json": "f5766bfecbe14c11215f72babd737a7e3733aeca71f9e1a41cdf4e2047b6d9bd",
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/worker.log": "411452a1747340c98aaad3eec0dac190ac6edc8c2e3c95ef02d18f94833c6c10",
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/worker_claim.json": "1f6b5a97bff1d0289b6736ef93c5fdec3565285c3bfa66a1e0f0d94dcb67433c"
+      },
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "928ee76d-0589-47ae-9d68-216c2ae06dc4",
+      "case_id": "control-F-c2-n32-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/928ee76d-0589-47ae-9d68-216c2ae06dc4/carrier.txt": "05cc02e1d96ad62faf73eaf75fa2b0de9add6d62aa5c211b25a69cbb5b827304",
+        "artifacts/stage8/attempts/928ee76d-0589-47ae-9d68-216c2ae06dc4/command.json": "5520ab8055b737d7755249ff426bc7e41a663ac4c87cb99befb5487f5fb8381e",
+        "artifacts/stage8/attempts/928ee76d-0589-47ae-9d68-216c2ae06dc4/gpu_samples.json": "568e1a98b86be13204fa220a119c66fc8c4a7c52c2b27b2b9841c0fc9f30ee76",
+        "artifacts/stage8/attempts/928ee76d-0589-47ae-9d68-216c2ae06dc4/input.json": "00265c9cf176510fbcbce8fd4eb2603298fc84c87e01d0f6c20a04f76d56f79b",
+        "artifacts/stage8/attempts/928ee76d-0589-47ae-9d68-216c2ae06dc4/outcome.json": "7ac1837bd2e264ac89edb5b02521cd8e42f80fe167dbd0c262e6f8ee5006dcd6",
+        "artifacts/stage8/attempts/928ee76d-0589-47ae-9d68-216c2ae06dc4/partial_emission.bin": "05cc02e1d96ad62faf73eaf75fa2b0de9add6d62aa5c211b25a69cbb5b827304",
+        "artifacts/stage8/attempts/928ee76d-0589-47ae-9d68-216c2ae06dc4/result.json": "f7c7e673a2c3e7e33dfbe35087ae360e902f89d4dc70576fab8fcf9650319287",
+        "artifacts/stage8/attempts/928ee76d-0589-47ae-9d68-216c2ae06dc4/traces.json": "235e8767ccad2fba43d4d48331b1d1585b43f51a6f347858dbe57751ade65958",
+        "artifacts/stage8/attempts/928ee76d-0589-47ae-9d68-216c2ae06dc4/worker.log": "f6b246fbbd5e2ac34f566ea7c96d8e0f7115391d7036c39a2ccfa3eb3aad63ac",
+        "artifacts/stage8/attempts/928ee76d-0589-47ae-9d68-216c2ae06dc4/worker_claim.json": "61189dcc0f1c943c5e2850e0baa9cb826df4f9fe60deeb3fdf59fa919c6dc772"
+      },
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "fc82f9fe-fe14-4ab3-aafb-1b87c41caf48",
+      "case_id": "control-R-c2-n32-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/carrier.txt": "39e94bc23373b1cdeea3749dc75a2eec8c19b5caa911614416b1e9a4bce99af1",
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/command.json": "34ac78deb9fa9cdd8bac2b39e51e94b2c0f56670cc6a92e7e286fb537a7fdebc",
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/gpu_samples.json": "2139c76127e8aeb83f526961d0aa02f20c2b8ac37a5c7c793378bc5255628d8f",
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/input.json": "d2785804f4be716e1c58d7c99d4357fddf4b0298b255c8fcce72e0d373af0357",
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/outcome.json": "678872047f29c1b60093f3ca5a82d08a56f8f676bd543729e86b9da845b9a9d5",
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/partial_emission.bin": "39e94bc23373b1cdeea3749dc75a2eec8c19b5caa911614416b1e9a4bce99af1",
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/result.json": "18a261fd1d5666674efd9e8c9f8fcfcd0a8cb72fd825c7e6339af74a28cf4154",
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/traces.json": "4bc098ebcb89cab319361fbf0c8741f90048a82d923d453aae849eb327aa3e0f",
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/worker.log": "f70b4007cc2f7c5c9b003a4e5850bacfa469c92777aec79b20f0dcda2df92d9c",
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/worker_claim.json": "04babaa545658bcd5e092802618e76a201ae0ee6a222986eef98d0bbb8c171c9"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "687f87df-d199-4dae-9686-e4e9a0f59b79",
+      "case_id": "control-R-c2-n128-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/carrier.txt": "ba1c29afdf05b8d41ab1b5507358eca567b7e119404dd717c8a085434bbe1b5e",
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/command.json": "b11a313986efd7f8564975f2bba6b781adaa6ac132b7e88ae72e9a2e159c9b44",
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/gpu_samples.json": "095ab47af755a14e357d3366dcde00f5db4e39ab34ff1e6f65ee72168144867e",
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/input.json": "a5df364407cfe9634bc193e20268625ae34b238c9d8b9fe80398e2e4c575cf27",
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/outcome.json": "3d21ec0f17bb2b49f1c4edb1fcf341213400d356c47a930beae20e8535a4d865",
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/partial_emission.bin": "ba1c29afdf05b8d41ab1b5507358eca567b7e119404dd717c8a085434bbe1b5e",
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/result.json": "6596c2fe23f57043edf68d08ddd58055ae176fd2128b78e62a4987f3d77c46d7",
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/traces.json": "250f1e40cc9b40a3468eb2cb8c354c9e3399289203318f056dbab122af085f49",
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/worker.log": "de2691fdc443783ff9b7405bfc5f49d88570f973e47304db5b3c85a60224ce3c",
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/worker_claim.json": "d54a0ce0c2bdf0547b64daa837d3255c89d94419db7dcab37d481b661db917a3"
+      },
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "183d4e5d-8213-407f-80c5-b1cb8583026d",
+      "case_id": "control-F-c2-n128-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/183d4e5d-8213-407f-80c5-b1cb8583026d/carrier.txt": "7424e25faeca2209abb54179445d7ffaeffca7c4d1ddd36bf9e92d72e4eeec65",
+        "artifacts/stage8/attempts/183d4e5d-8213-407f-80c5-b1cb8583026d/command.json": "c9c984b5f4671169bfd8d1f80901b2724e0b982a209940150639c515234166ce",
+        "artifacts/stage8/attempts/183d4e5d-8213-407f-80c5-b1cb8583026d/gpu_samples.json": "5f59dd6c8fbc474924b074d70e912e3bd0f7e5f0af385eb8b41bb9c798aa522c",
+        "artifacts/stage8/attempts/183d4e5d-8213-407f-80c5-b1cb8583026d/input.json": "9a935f5daf8eda37bcaa9a2bc5ccbcf8d2f4ae747ee4b1360ccc828650390a5d",
+        "artifacts/stage8/attempts/183d4e5d-8213-407f-80c5-b1cb8583026d/outcome.json": "77368bcb35e8e096b6844575e7e48430d3141aeaf13ea130f4beaf5b0137c328",
+        "artifacts/stage8/attempts/183d4e5d-8213-407f-80c5-b1cb8583026d/partial_emission.bin": "7424e25faeca2209abb54179445d7ffaeffca7c4d1ddd36bf9e92d72e4eeec65",
+        "artifacts/stage8/attempts/183d4e5d-8213-407f-80c5-b1cb8583026d/result.json": "0820a0afb3695df99cb5ac1ac6255463dba5f3a49539c02d286a0d7ceffeff50",
+        "artifacts/stage8/attempts/183d4e5d-8213-407f-80c5-b1cb8583026d/traces.json": "1033126d761a7e2398dcef74ebc6d0419a9bb6cf626bacc82a529c8ba76a9bd5",
+        "artifacts/stage8/attempts/183d4e5d-8213-407f-80c5-b1cb8583026d/worker.log": "62ced9c0a80e1a5dd64026abfde5c04e48c56614a05bd0b31a697973bd9fac91",
+        "artifacts/stage8/attempts/183d4e5d-8213-407f-80c5-b1cb8583026d/worker_claim.json": "2416f35e8c0b30ef1631fb7fdea7af5d8071256109b1e3674264ddae97c37ce5"
+      },
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "5805cd4c-bd1d-4261-977f-f42f925a3ee6",
+      "case_id": "control-R-c3-n32-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/carrier.txt": "2126bf856faf35d1651a8132ea2816b6e667050fdb4d9ea93dd12c2f9b2c4734",
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/command.json": "1bd9e31ebe396071fb0cc8b90b95681c740eb1a5548c8cd7218812654ef7c042",
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/gpu_samples.json": "bcd67b2f8aaac34d5a2e198f96efea6bd3d08eec850fb84bf70abbcc1f0fbd10",
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/input.json": "4d9c3c39549cda7d5c80b8fa7cf4864a054aad331f603fd287e504578ba74f07",
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/outcome.json": "8302bfbabf9e2fe6a0a786e8cfa7d516c619a8fcdf0d598e0087922278c64c55",
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/partial_emission.bin": "2126bf856faf35d1651a8132ea2816b6e667050fdb4d9ea93dd12c2f9b2c4734",
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/result.json": "3dd8f7cd78b060d836ee9637ca24b08770ce08eba54c443c6158d659a2b68b2f",
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/traces.json": "bcb89616d4fe71fdc28c3204120dffb0cd4626fd8a603754e6e98e948e1d5b60",
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/worker.log": "0f34f8131efec1cf68b17f32b97bf2f7d1afdafe1767299d621657848b747400",
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/worker_claim.json": "f8f53f2f911cf3cca1cceaa9fe894a42465b3df131c2279b2113dd5a1028ba2f"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "8f3568aa-cafb-4b4c-84bc-6eb9a99000ab",
+      "case_id": "control-F-c3-n32-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/8f3568aa-cafb-4b4c-84bc-6eb9a99000ab/carrier.txt": "ae05deaced0974b7b11cc6614bcb002f1a4ab0f848e3a40b719bc866fc97e26e",
+        "artifacts/stage8/attempts/8f3568aa-cafb-4b4c-84bc-6eb9a99000ab/command.json": "6632cc4b8c98d848071761295610b96a50c7de0f99795b1c89f71fc9f3e600cc",
+        "artifacts/stage8/attempts/8f3568aa-cafb-4b4c-84bc-6eb9a99000ab/gpu_samples.json": "a0db39791e3f2d1254ec130074571ad46d95ba0ec6718d17264c04f0e33aa9bc",
+        "artifacts/stage8/attempts/8f3568aa-cafb-4b4c-84bc-6eb9a99000ab/input.json": "be7e12af11c4216e9ffe39cb521c25c6e85232433a8a13b342cd7ac4f72ccec4",
+        "artifacts/stage8/attempts/8f3568aa-cafb-4b4c-84bc-6eb9a99000ab/outcome.json": "c0a216d4d760f1587b7491b41c77d852f3b2ff41942204909b0689cf62fadb77",
+        "artifacts/stage8/attempts/8f3568aa-cafb-4b4c-84bc-6eb9a99000ab/partial_emission.bin": "ae05deaced0974b7b11cc6614bcb002f1a4ab0f848e3a40b719bc866fc97e26e",
+        "artifacts/stage8/attempts/8f3568aa-cafb-4b4c-84bc-6eb9a99000ab/result.json": "b5e229f1a6a3b6703e45347899b06c4c2870004287cd1b8afdc230023834c3aa",
+        "artifacts/stage8/attempts/8f3568aa-cafb-4b4c-84bc-6eb9a99000ab/traces.json": "3744d0dedd7e3b51fd13ce28c23cdbcbb028b59cf140cd9b2a006fa299ee75e3",
+        "artifacts/stage8/attempts/8f3568aa-cafb-4b4c-84bc-6eb9a99000ab/worker.log": "28680e823b1fae9e4e88fa1d9bfed3fe12e2746a8723a383a73fb2cb1d608564",
+        "artifacts/stage8/attempts/8f3568aa-cafb-4b4c-84bc-6eb9a99000ab/worker_claim.json": "3fcc3355acd3718797113c20e3eb05ef1dbcc48f459884ffc164d0b7c32c09e0"
+      },
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "790cc07f-c016-4ce4-967d-8d12e75cf43e",
+      "case_id": "control-F-c3-n128-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/790cc07f-c016-4ce4-967d-8d12e75cf43e/carrier.txt": "2df5326d2e4a9160849db2be75317b6b170007a0e81697e39ae6abd396f4a534",
+        "artifacts/stage8/attempts/790cc07f-c016-4ce4-967d-8d12e75cf43e/command.json": "adaf96a9ea6c71d1111b57380fde6568a33e9c455ca05c2d4dc32448abf93424",
+        "artifacts/stage8/attempts/790cc07f-c016-4ce4-967d-8d12e75cf43e/gpu_samples.json": "aaeac7e3850ee87f4314cd9e245a0b3ebb1191f05d355edf61803a73f2a6b5a3",
+        "artifacts/stage8/attempts/790cc07f-c016-4ce4-967d-8d12e75cf43e/input.json": "58ed440e31957fb3059ee340498cc9034b96e7786cee63c478d14c14ee67d1cb",
+        "artifacts/stage8/attempts/790cc07f-c016-4ce4-967d-8d12e75cf43e/outcome.json": "cd16f3cbeb22246ecd59459797e05ca014c6067d7f34586e6954cdd254372ee9",
+        "artifacts/stage8/attempts/790cc07f-c016-4ce4-967d-8d12e75cf43e/partial_emission.bin": "2df5326d2e4a9160849db2be75317b6b170007a0e81697e39ae6abd396f4a534",
+        "artifacts/stage8/attempts/790cc07f-c016-4ce4-967d-8d12e75cf43e/result.json": "c0680980fd52fe2c699b4209d416bba50268d1fcc6c6f7c5e23fbba9b22136e0",
+        "artifacts/stage8/attempts/790cc07f-c016-4ce4-967d-8d12e75cf43e/traces.json": "dc625f54c853ea85bcad98fbb2bc5e413d4cd8b557ae545283a0424d53a81c9b",
+        "artifacts/stage8/attempts/790cc07f-c016-4ce4-967d-8d12e75cf43e/worker.log": "85f4d896cb9a195c55cb864dc29b5ea20c8e39f53df50ffce99dcbbfca9ab12a",
+        "artifacts/stage8/attempts/790cc07f-c016-4ce4-967d-8d12e75cf43e/worker_claim.json": "e2bdefcaee6f33d3de5a9d7002399d892ce48b1dac37e984c37c7d4ca9ada075"
+      },
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "b7617277-884e-49f1-88ae-eadec10985e7",
+      "case_id": "control-R-c3-n128-r0-B",
+      "files": {
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/carrier.txt": "d5d7753dafaa1fe6791cb0e406cd3631e27aa2bc7920f3a49d2abb3d7c4a65ac",
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/command.json": "28630bc5b96daacfad5784be328b37accdd59e00f0a0961bd6f69e92a31af1f2",
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/gpu_samples.json": "77cb9d835e2ec58a0027945892402a46e55d0198451103e41c810663f8113a19",
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/input.json": "9cdc00898ebd08e4d4365f107f7c7902cd06f44584c4627b6727bd46fc34262d",
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/outcome.json": "4780211f7d314d0dbab3d0479ef8cb6e006352ff0cf1e774afc50d41ce08fc78",
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/partial_emission.bin": "d5d7753dafaa1fe6791cb0e406cd3631e27aa2bc7920f3a49d2abb3d7c4a65ac",
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/result.json": "7eb4defc8cb7db38682a8b5c3aa1b3192af2e6ce0db32e92957e93b01f4ee458",
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/traces.json": "b3b75c03aa0864bba4bfafde5a70148b243a73b0457ffd4fde07f8603223cefc",
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/worker.log": "52b9b0bef8e96098aaa14321f36846282f6cd8b3ec7e1b946c200117cb50dd65",
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/worker_claim.json": "9200705a26d67028a197cccc36141156e4ea40ae4f69cf15b0d3f929034c8a70"
+      },
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "dbe52d05-e77e-4f8e-8938-7e2c811e44aa",
+      "case_id": "replay-F-c0-n32",
+      "files": {
+        "artifacts/stage8/attempts/dbe52d05-e77e-4f8e-8938-7e2c811e44aa/command.json": "0b3d8d851a0f5d5428ca4cedd1d49828d2952caceea1886a20fc1db8bd5fb86e",
+        "artifacts/stage8/attempts/dbe52d05-e77e-4f8e-8938-7e2c811e44aa/gpu_samples.json": "90f8cc571376d332ef7fba3d73263f9a8c3c2c3eed0c83b0db463a167fcdff37",
+        "artifacts/stage8/attempts/dbe52d05-e77e-4f8e-8938-7e2c811e44aa/input.json": "5eed81d89182c435afcf8a564a79e13874217e237133e20157a82bb9e4100369",
+        "artifacts/stage8/attempts/dbe52d05-e77e-4f8e-8938-7e2c811e44aa/outcome.json": "3a1834ee7518af27d3ebcd49b617b9b4cef53b9722b1b07d6e551957cf658137",
+        "artifacts/stage8/attempts/dbe52d05-e77e-4f8e-8938-7e2c811e44aa/result.json": "f1713c6e3ce23b051b556a882c99bac23589b31d3b136da023e690345a3b4d87",
+        "artifacts/stage8/attempts/dbe52d05-e77e-4f8e-8938-7e2c811e44aa/traces.json": "de8f507580eee5eaec898d52b4f5d19ad582ed7de1a03d5f93ac3c8dd84b689b",
+        "artifacts/stage8/attempts/dbe52d05-e77e-4f8e-8938-7e2c811e44aa/worker.log": "4d13b44be0a192ef571fd873df7b1baa954e8ac572ba473cfce71ded5ed64528",
+        "artifacts/stage8/attempts/dbe52d05-e77e-4f8e-8938-7e2c811e44aa/worker_claim.json": "f34894b921ca3f9887cf1eac22b807c33b9f7d305da0935cb63e1b3e2d0e3cd1"
+      },
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "d0ee3a57-2349-4133-b8e9-86aab2128d07",
+      "case_id": "replay-F-c0-n128",
+      "files": {
+        "artifacts/stage8/attempts/d0ee3a57-2349-4133-b8e9-86aab2128d07/command.json": "bb4d655559d3bd3b9973573b8e747f911b92c9f722784297abbb4d365947cc59",
+        "artifacts/stage8/attempts/d0ee3a57-2349-4133-b8e9-86aab2128d07/gpu_samples.json": "827320ad18ca766207083b4a2d90b05cb6decc4766697b12e0bd060a92fa17e6",
+        "artifacts/stage8/attempts/d0ee3a57-2349-4133-b8e9-86aab2128d07/input.json": "951128708baa92f89d714c36448a0f894819e0d11435a3ed9704cba35c175023",
+        "artifacts/stage8/attempts/d0ee3a57-2349-4133-b8e9-86aab2128d07/outcome.json": "8639e3eb0b4a126e7368bb8433e46c8cc74ead84fa582460c6cd308f36d82f47",
+        "artifacts/stage8/attempts/d0ee3a57-2349-4133-b8e9-86aab2128d07/result.json": "eb07618b6549be1d7de7c77cc4f89e231a25332e8aec77e49343be6ed78d1e81",
+        "artifacts/stage8/attempts/d0ee3a57-2349-4133-b8e9-86aab2128d07/traces.json": "036219f880d415b93caf6bdc2f038f9f99c9541ea6fbb3992e7aa5572d86150f",
+        "artifacts/stage8/attempts/d0ee3a57-2349-4133-b8e9-86aab2128d07/worker.log": "d2e99fb7f8daa4ef80823e2e42a96a61ec3980d5619bb6cecb2fc4fdfc68a5eb",
+        "artifacts/stage8/attempts/d0ee3a57-2349-4133-b8e9-86aab2128d07/worker_claim.json": "3911aa136b04c957281b3f490aa172c4df648e8578ab4c97d69cd8a51c520268"
+      },
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "f997ea04-61af-45c6-85ff-fbc841bb85ce",
+      "case_id": "replay-F-c2-n32",
+      "files": {
+        "artifacts/stage8/attempts/f997ea04-61af-45c6-85ff-fbc841bb85ce/command.json": "8c4d3cb7a0c01ac58832d505962a14c629557fffa7d7421c1a46a33e03d9d37f",
+        "artifacts/stage8/attempts/f997ea04-61af-45c6-85ff-fbc841bb85ce/gpu_samples.json": "4ec9b16ed4f928d56f6b18febdd02d81466e3df1663c2d25a57244c4213719ce",
+        "artifacts/stage8/attempts/f997ea04-61af-45c6-85ff-fbc841bb85ce/input.json": "cc229080143caf3dbe37fb28d3fa1683241e78d4dcb3bf29889d2c76469e1566",
+        "artifacts/stage8/attempts/f997ea04-61af-45c6-85ff-fbc841bb85ce/outcome.json": "a4f9e7400e0cb2c49239cdcad73275fece827279f324e8e5f891011b1469c3d1",
+        "artifacts/stage8/attempts/f997ea04-61af-45c6-85ff-fbc841bb85ce/result.json": "bc4556079ad9648b29c6685fa2e6a1a17023a74f04454edff566423a2226ea75",
+        "artifacts/stage8/attempts/f997ea04-61af-45c6-85ff-fbc841bb85ce/traces.json": "2b3d94c3bbfc5a76252b5c2c2557679a55ac96b1bd25f98fd5ab07047f41445c",
+        "artifacts/stage8/attempts/f997ea04-61af-45c6-85ff-fbc841bb85ce/worker.log": "5a62b086f93c939a65c08a01320f196fd3b8a3c9adde0a60f5d2b800cd465b54",
+        "artifacts/stage8/attempts/f997ea04-61af-45c6-85ff-fbc841bb85ce/worker_claim.json": "bee083c5860a601ddc855638787a09ddbd6d5f4ac365cd1f782b50b23bb6c059"
+      },
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "2bebc392-a26a-4b48-83a0-270decea3ca7",
+      "case_id": "replay-R-c2-n32",
+      "files": {
+        "artifacts/stage8/attempts/2bebc392-a26a-4b48-83a0-270decea3ca7/command.json": "037344d53642e0961c6c59d0ec9e4a38f572d9bcba59f8104bd79f5516f499a6",
+        "artifacts/stage8/attempts/2bebc392-a26a-4b48-83a0-270decea3ca7/gpu_samples.json": "212ddee43bba482ee8b8fb00d324b00aa67c0573d1878973a1b80285505eac39",
+        "artifacts/stage8/attempts/2bebc392-a26a-4b48-83a0-270decea3ca7/input.json": "07247d437a94c4422550d6ba13196aeca6485f8221588fe4273751b19f28d50e",
+        "artifacts/stage8/attempts/2bebc392-a26a-4b48-83a0-270decea3ca7/outcome.json": "cd2cd595652e1d35c42292f2c2afc9bdb1d0741836084182d68e01d59aee7ddc",
+        "artifacts/stage8/attempts/2bebc392-a26a-4b48-83a0-270decea3ca7/result.json": "4ba359c88812810a44076614a4ff38f5e06963a7085bb76551ce96415fda69a6",
+        "artifacts/stage8/attempts/2bebc392-a26a-4b48-83a0-270decea3ca7/traces.json": "c85579e97ed798e5cf7eb724dcea564d92b1b5aa54c12fc5ec7a8ff487ac9e6d",
+        "artifacts/stage8/attempts/2bebc392-a26a-4b48-83a0-270decea3ca7/worker.log": "015310f5ccc0afbb06abdd40974d79844807b54e5d82cacd0968c45d32d16c2d",
+        "artifacts/stage8/attempts/2bebc392-a26a-4b48-83a0-270decea3ca7/worker_claim.json": "47207b7d9d1bb05977e213e2abc59da2e8502b681693212074d2999a1e559022"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+    },
+    {
+      "attempt_id": "73f1b990-7f25-422e-8c96-d82a7302abeb",
+      "case_id": "replay-F-c2-n128",
+      "files": {
+        "artifacts/stage8/attempts/73f1b990-7f25-422e-8c96-d82a7302abeb/command.json": "b256745acc9dc216b8f8234afd2dd1e2b62cf986b135892de67b2130e9eea734",
+        "artifacts/stage8/attempts/73f1b990-7f25-422e-8c96-d82a7302abeb/gpu_samples.json": "966f8015257e503ff7b5b93e179b53ae5e9b8c59584798ea27d31a6f9f987f50",
+        "artifacts/stage8/attempts/73f1b990-7f25-422e-8c96-d82a7302abeb/input.json": "68e683f27f2a6acd8e3da3b523bef94578c71ed1c50b3c0d4169b7ecb6ae5718",
+        "artifacts/stage8/attempts/73f1b990-7f25-422e-8c96-d82a7302abeb/outcome.json": "45d2e3640c9ca62d51f55b43f1d00574b4fa5e88565a70be11fcafbcf84c1d86",
+        "artifacts/stage8/attempts/73f1b990-7f25-422e-8c96-d82a7302abeb/result.json": "d8620850d4db14b6692903fd5eec9a3dea571bc25402661133f60d371c05eb36",
+        "artifacts/stage8/attempts/73f1b990-7f25-422e-8c96-d82a7302abeb/traces.json": "dc30af04de647f97a7e45479af52b8f8f498cca984430931a42a6f8ad9eeff5f",
+        "artifacts/stage8/attempts/73f1b990-7f25-422e-8c96-d82a7302abeb/worker.log": "8508cab4bdae05ea72bb77b8b5bd32c598b957fe8563d393391e3b384ba854a5",
+        "artifacts/stage8/attempts/73f1b990-7f25-422e-8c96-d82a7302abeb/worker_claim.json": "426476eb6e0586df1291737ccdc88c9274248cd5017d3b1944e956fdeb29993b"
+      },
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
     }
   ],
   "commands": [
@@ -110,9 +767,94 @@
     ".venv/bin/python scripts/prepare_stage8.py",
     ".venv/bin/python scripts/run_stage8.py --allocation-check",
     ".venv/bin/python scripts/run_stage8.py --phase diagnostic",
-    "Main not executed",
+    ".venv/bin/python scripts/run_stage8.py --phase main",
     ".venv/bin/python artifacts/stage8/analyze.py"
   ],
+  "data_separation": "Stage7 historical diagnosis; repeated-packet diagnostics; fresh main transmissions and matched controls; replays not independent messages. All contexts development-informed, no pooling into held-out data.",
+  "derived_outputs": {
+    "STAGE8_CAPACITY_COMPARISON_REPORT.md": "daff5197c25b5d29212c33f63b3e9557a6a01ab8a4c88bb9a7a5078a15e029d7",
+    "artifacts/stage8/TEST_ONLY_keys.json": "789340cfc48952b244003723e880f42e6ff6dd9cf65de74fd86333fb5accd5fe",
+    "artifacts/stage8/allocation.json": "1416c5f6621ec5ddce142844053cec396c87785b1644bac8d110266616ae7f19",
+    "artifacts/stage8/allocation_check.txt": "9f161737bb775250fab714fe186f331abb00efe22789e8f28a8b08883c1acc32",
+    "artifacts/stage8/analysis_notes.md": "5c455852a0db3287f9fa8d120fd7469821db8fa1e6eb2c79b8d73038b18fdbd7",
+    "artifacts/stage8/analysis_output.txt": "649f46d237e3e96f2b6fe8da7b843d7eaea8f5ff5b363a06258bb5bfaf902f0f",
+    "artifacts/stage8/analyze.py": "a1ba36d7dac9d9d1a920d355765f800c5a1f396e65ea0fd5b888da3f320ed4d8",
+    "artifacts/stage8/capacity.csv": "5b6a3695f999dec81c062cc2f5d4a195342f870216b561de32b9164d7156e20d",
+    "artifacts/stage8/capacity.json": "0f95e14a31da96e7f5cb5d170af34bfd9713bec8a1739525bd3bb0e90adf2dc6",
+    "artifacts/stage8/cases.jsonl": "e80c94224409e0ed07fee7a8b726a89e750e29aff9ed5750b61df135d89053b7",
+    "artifacts/stage8/checkpoints.csv": "d7863c043eaf3bead80927dac7b8897d14a4f376156f8527ccdf4c107cca7f26",
+    "artifacts/stage8/context_window_check.json": "3c78ecb9782de0cb652b815dd7965e489a658ee89379f72f629ce3489284863c",
+    "artifacts/stage8/costs.csv": "8b75ff23fe56c2b3a9230abecd288c01ed875a9ab0b90d850253a7cf3370369c",
+    "artifacts/stage8/diagnose.py": "77daa6a24a31710faeeb600645f204bbb3f9785be0ad078bd938cddf453a04f6",
+    "artifacts/stage8/diagnosis_output.txt": "8ebf286eb333aa7870d1dd7ed7e25149eae3d452d137f0cab04b4f7666c836ce",
+    "artifacts/stage8/diagnostic.csv": "96e41fa708c2a59ab71048d75b6152c96e6cf107b5203aa7505754c87bc42f1d",
+    "artifacts/stage8/diagnostic_analysis_output.txt": "71c423e292388fc76bb03f912c9ab58aef5296f4c3e0cf3cd99e2735b420f713",
+    "artifacts/stage8/diagnostic_checks.jsonl": "4e7aeb8f435b82198d53d93991315cda002ddb094b0adf7cad74436bad2e29f3",
+    "artifacts/stage8/diagnostic_controller.log": "e9d3b495db5a1511a0f99bdd830ada4237de33370114915b1b81f702f39add7e",
+    "artifacts/stage8/diagnostic_plot_output.txt": "af2fd3262e017421cb255dae05fea3a0c67b3ec55b6c1904954b8d57d53050f5",
+    "artifacts/stage8/diagnostic_status.json": "b78220bfeb8c8c589df7c8c3629a10e969681fe49517ff79946c6760b8c01c35",
+    "artifacts/stage8/environment.json": "53224ff20ce7f8f81d1de3fcb2f0a5bb0165b1fd196e76413c382e27ecb98487",
+    "artifacts/stage8/failures.json": "b1c321007b5b9335c92bd9d165c009f4550dfd97d57e06d11e90c42b501a2fa0",
+    "artifacts/stage8/figures/completion_checkpoints.pdf": "d6fd93c48df9e7b3f11fcf9b5518e62a511d7ace63dc7cd418beab0c7d10448c",
+    "artifacts/stage8/figures/completion_checkpoints.png": "a1bf51c0cffc8fa11ebf3fc148e0d2431facca1776e3f9e8383544ea527db8d2",
+    "artifacts/stage8/figures/conditional_recognition.pdf": "3b9448f41d47100ac8cf43953ccb6f5c697293e5267f1c0d49cc47897fe07262",
+    "artifacts/stage8/figures/conditional_recognition.png": "6de0981ddfebee7fc872eff47de32e2c2864012e01184e200d046dce3d949ec6",
+    "artifacts/stage8/figures/extended_diagnostic_progress.pdf": "d8aff5e10d8b3506e432f0ef0733ef2785666eaeb0358d8d9c36ba0e93661378",
+    "artifacts/stage8/figures/extended_diagnostic_progress.png": "4c5f93c739d05bafac05f5fdd2a5d5fc0177bcc7f110b383a14c5a976bf2e3f8",
+    "artifacts/stage8/figures/fresh_stable_bits.pdf": "99adbf30b6307a6233426990e52a6b5f0f787e1bd0c2ba8e0a72dfcfa26d722c",
+    "artifacts/stage8/figures/fresh_stable_bits.png": "1cde408b0e3d334f67a4106def2fb515b544765556738fbd8953e636c07201d6",
+    "artifacts/stage8/figures/historical_stable_bits.pdf": "a6a39bce706e69126cfbc2de0152d33a0bf3320de028eb9fca7eb093f049d99e",
+    "artifacts/stage8/figures/historical_stable_bits.png": "610b80dc5e81af6f9eab91934c4ced417df0f109f263e18b0ba2a115d4c25fec",
+    "artifacts/stage8/figures/recovery_cost.pdf": "0bb3dcd2316d7a36a672a5b2105894b3201e529c169f3d8f8d1432d1fecf51ee",
+    "artifacts/stage8/figures/recovery_cost.png": "d8487a3bbca60781ee4d954290fdebac61ad570c7ad3a780219420871ca9471a",
+    "artifacts/stage8/finalize_evidence.py": "1467ef0a904457c28b4a19a06e65687532193885068a850ee426ffd435f38a62",
+    "artifacts/stage8/focused_checks.txt": "2f2d71b76cb38573f465395fbaa020a42b0f73978d2d0b4ab0cbbc4a1187078e",
+    "artifacts/stage8/historical_diagnosis.json": "81de404d21d9d85523a6498f637f22e51ba66766603cf116be41524fb9e01e43",
+    "artifacts/stage8/historical_plot_output.txt": "7d2b55cdafd6039da7df8a5ab99e265aac0e1486e1c583ae175bd66cc77efa8a",
+    "artifacts/stage8/historical_progress_qual-HPKE-128.csv": "cf6063066151f712c74473178fd4df6273949506ef3ebeb5228bd4afb94c7445",
+    "artifacts/stage8/historical_progress_qual-HPKE-32.csv": "4ec879db430f37023e04728196418c303bb3e4882aa456bb8e6e9fa135d598fa",
+    "artifacts/stage8/historical_progress_qual-synthetic-128.csv": "7cc16da9f5ce637ecd264ae32315f07c6c488f0fa96b7dae96ae4892bc556b77",
+    "artifacts/stage8/historical_progress_qual-synthetic-32.csv": "756ab58522559a30ca6ce64a82b2df1e213eb171a68cd7e1be59e986ddb84326",
+    "artifacts/stage8/joint_support_recognition.csv": "ea3cc87403fc92616cdaa230aa0359dd100d523061a32f4b19c9a317022bfbd9",
+    "artifacts/stage8/main_controller.log": "d36fe1a03846faa2276822b8fe12ffc9782fd7ba1caf3eee2bc32fd1cc25ae32",
+    "artifacts/stage8/main_release.json": "7aa0bcf26318f187269416792d7be1504bd3c3028e0f433118476343fda67650",
+    "artifacts/stage8/main_release_note.md": "33d2c1e8a53242d69e391600341bd3d7bdfc90bdc55bc6e19b28bd5d674ee455",
+    "artifacts/stage8/main_status.json": "84dc2a3a3f00b19a59859cc5c8ce87e31de5b5658fbadeeaacab75c9400c9bf0",
+    "artifacts/stage8/pid_evidence.json": "268704e7a6613408f4cebc2a00bdf12c87720b2f11968db4acbe5c1fa3530448",
+    "artifacts/stage8/plot.py": "845d3d7201280b2afc8312c65eaeeda5eb5fed96426803a6de42bb0c396fb8ba",
+    "artifacts/stage8/plot_environment.json": "0baf65c607d4df989f592070205ed9c7ca1c086d603383611fff85df0db335c5",
+    "artifacts/stage8/plot_output.txt": "af2fd3262e017421cb255dae05fea3a0c67b3ec55b6c1904954b8d57d53050f5",
+    "artifacts/stage8/preparation_output.txt": "26d4664c8e29a4db97e374c174e4fb4f82640200247d1d09b4e33fa273608a17",
+    "artifacts/stage8/progress_R-c0-n128-r0.csv": "f5d7e54379740df01c41f696b2296bf64f95ee2d327122661f06f00ad651bd85",
+    "artifacts/stage8/progress_R-c0-n32-r0.csv": "03f5ca06b0d3f7797a343381c85978c1c317a10138ec6e7d195f33124170811a",
+    "artifacts/stage8/progress_R-c1-n128-r0.csv": "2b3f051308a53b25b06623736b7ff5dd1df5edaaa12820d01476710660123225",
+    "artifacts/stage8/progress_R-c1-n32-r0.csv": "b7cc857935b69e25c18dfc838405afe45a400bb6515be0783f8a8096f53d88d9",
+    "artifacts/stage8/progress_R-c2-n128-r0.csv": "1ae3b0d80118ad1b5e8a6880fa238b1f5172bb05310438a820b86235bf014863",
+    "artifacts/stage8/progress_R-c2-n32-r0.csv": "c70a907add588c0954be9ff6c1be921924b2fcaf01f7cd7ab4ee039f4d276889",
+    "artifacts/stage8/progress_R-c3-n128-r0.csv": "88d80a9657aad394325120645b9adcd0377a99acee529161c680490ba23656ce",
+    "artifacts/stage8/progress_R-c3-n32-r0.csv": "5975a925afa69b1a5954d6b0120a64a4fbc3d3695263265c6a80a36dc1c33778",
+    "artifacts/stage8/progress_diagnostic-qual-HPKE-128.csv": "e5605c924dabdc4e823194fb214eb2662442a08ef20bc49088ea0a681ae431a2",
+    "artifacts/stage8/progress_diagnostic-qual-HPKE-32.csv": "bc8a1db4b73f9ffc7ffde913cffe9795bd4279e698020f03514ee1bf7430513b",
+    "artifacts/stage8/progress_diagnostic-qual-synthetic-128.csv": "aaf280e89a46f83a157ba8202c482d2796b89ee6ed5c963e25dffb5fb83b14db",
+    "artifacts/stage8/progress_diagnostic-qual-synthetic-32.csv": "756ab58522559a30ca6ce64a82b2df1e213eb171a68cd7e1be59e986ddb84326",
+    "artifacts/stage8/progress_summary.json": "31a322a0c2e08a6356943758c4ca15d36b1f14f73b166289d98c32cc34ff22b1",
+    "artifacts/stage8/recognition.csv": "790fcf8d257087ab9a5b4b52ff5267e5d2862ac3d5113615bf81155e6a6920d0",
+    "artifacts/stage8/recognition.json": "c00f6f38b3578a2b02f72871fb09852cdbc5e968c5198dcd432cee8c202a8340",
+    "artifacts/stage8/recognition_counts.csv": "33cf69d486bf6c2c4d2650df046c48cb626d235cf3e0386252a1ddb5ed369acb",
+    "artifacts/stage8/recovery.csv": "2841a10e89769b89918b701c4a68ac65b7c405d87aff8d41b52115e2c81ce8ad",
+    "artifacts/stage8/release_main.py": "7571cc1cfa66caf0cb8a8a82c7c0c1878e9058731ae2530bdee9b8b08e423979",
+    "artifacts/stage8/release_output.txt": "d5934efb9ec9ec109e33e847d42717fb07c876b236365e873a8d600fd5bf0ef8",
+    "artifacts/stage8/rounding_summary.json": "da95cac94a6499e76a0e855d8ef07c077b5ad69e3d767b1a78cb85788f090b34",
+    "artifacts/stage8/size_recognition.csv": "0a2759c4b6790167de8afae98277ad655480996a95be29cc4b8e50a20e912dfb",
+    "artifacts/stage8/starting_state.json": "9fa1abf3986487b4b9182f929fb8930a3d42168fed5b33b99e662e9d2acd7087",
+    "artifacts/stage8/summary.json": "3505ffc857129ed7017ecd043eb94f152a3ab4a3a1c4cdedf58574f1cff71e6d",
+    "artifacts/stage8/tables.md": "9f5af6371d82eebe875789270525fe9db40d0f0839715478fc08abfcc16286f0",
+    "artifacts/stage8/tables.py": "cb7a74223a2de6e35e4547885aee1138923c2644e08c9d815055f5b5a18dde96",
+    "artifacts/stage8/tables_output.txt": "c4244324e36cda12dc95b33c00059f84435149f31a40ac1b291cedee3a7036e7",
+    "docs/stage8_capacity_diagnosis.md": "91e2cb68eb41f87fa2efc9ef0a1e685510ad0e8f9150ae1ada312c1863b0b6e3",
+    "docs/stage8_claims.md": "f6a100de1c92a714bd9630042fad13ba7b654a09a361728ce965a4221d1cf157",
+    "docs/stage8_study_spec.md": "e85bb51d0ed7fb4e94da79d5297234e63d00048384b67b40456ece2091336ed0"
+  },
   "diagnostic_prefix_and_receiver_checks": {
     "path": "artifacts/stage8/diagnostic_checks.jsonl",
     "sha256": "4e7aeb8f435b82198d53d93991315cda002ddb094b0adf7cad74436bad2e29f3"
@@ -130,6 +872,7 @@
     "requirements-cpu.lock": "e2763b3675b354e9615162a6690a12146bbdf0c2eec69a0b31b186700de72c73"
   },
   "gpu_tested_code_commits": [
+    "78617213825f1163b3692f698e1063ba32a7de73",
     "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
   ],
   "historical_checkpoint": {
@@ -146,17 +889,69 @@
     "path": "artifacts/stage8/historical_diagnosis.json",
     "sha256": "81de404d21d9d85523a6498f637f22e51ba66766603cf116be41524fb9e01e43"
   },
-  "ledger_sha256": "4944e6c70a97dcb83160aac8235d70d061a01e0579498b1edadc5631e4cdd1ca",
+  "ledger_sha256": "63bc3d490d8b977e122785040fbead0429dc2d832c6be0c4e78d0986bdab4561",
   "lifetime_usage": {
-    "cases": 224,
-    "seconds": 8929.578526105983,
-    "tokens": 145042
+    "cases": 261,
+    "seconds": 13152.147518922986,
+    "tokens": 206887
   },
+  "main_release": {
+    "path": "artifacts/stage8/main_release.json",
+    "selected_cases": [
+      "F-c0-n32-r0",
+      "R-c0-n32-r0",
+      "R-c0-n128-r0",
+      "F-c0-n128-r0",
+      "R-c1-n32-r0",
+      "F-c1-n32-r0",
+      "F-c1-n128-r0",
+      "R-c1-n128-r0",
+      "F-c2-n32-r0",
+      "R-c2-n32-r0",
+      "R-c2-n128-r0",
+      "F-c2-n128-r0",
+      "R-c3-n32-r0",
+      "F-c3-n32-r0",
+      "F-c3-n128-r0",
+      "R-c3-n128-r0",
+      "control-F-c0-n32-r0-B",
+      "control-R-c0-n32-r0-B",
+      "control-R-c0-n128-r0-B",
+      "control-F-c0-n128-r0-B",
+      "control-R-c1-n32-r0-B",
+      "control-F-c1-n32-r0-B",
+      "control-F-c1-n128-r0-B",
+      "control-R-c1-n128-r0-B",
+      "control-F-c2-n32-r0-B",
+      "control-R-c2-n32-r0-B",
+      "control-R-c2-n128-r0-B",
+      "control-F-c2-n128-r0-B",
+      "control-R-c3-n32-r0-B",
+      "control-F-c3-n32-r0-B",
+      "control-F-c3-n128-r0-B",
+      "control-R-c3-n128-r0-B",
+      "replay-F-c0-n32",
+      "replay-R-c0-n32",
+      "replay-F-c0-n128",
+      "replay-R-c0-n128",
+      "replay-F-c2-n32",
+      "replay-R-c2-n32",
+      "replay-F-c2-n128",
+      "replay-R-c2-n128"
+    ],
+    "sha256": "7aa0bcf26318f187269416792d7be1504bd3c3028e0f433118476343fda67650"
+  },
+  "main_status": {
+    "path": "artifacts/stage8/main_status.json",
+    "sha256": "84dc2a3a3f00b19a59859cc5c8ce87e31de5b5658fbadeeaacab75c9400c9bf0"
+  },
+  "post_test_work": "Host reconciliation, plots, tables and report; no algorithm, framing, sampling, model, profile or accounting change after the diagnostic freeze.",
+  "qualification_gate_passed": true,
   "schema_version": 1,
   "stage8_usage": {
-    "cases": 6,
-    "seconds": 934.306489325998,
-    "tokens": 13183
+    "cases": 43,
+    "seconds": 5156.875482143001,
+    "tokens": 75028
   },
   "starting_commit": "e55680169ef7c0e7110bfaddc0b5392e28419bb8"
 }

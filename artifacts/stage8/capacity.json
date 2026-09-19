@@ -70,5 +70,149 @@
       "stable_bits": 1529
     },
     "wire_delivered": false
+  },
+  {
+    "carrier_tokens": null,
+    "case_id": "R-c0-n32-r0",
+    "emitted_tokens": 1984,
+    "envelope_bytes": 100,
+    "failure": "capacity_exhaustion",
+    "phase": "main_fixed",
+    "stable_bits": 614,
+    "success": false,
+    "target_bits": 800,
+    "terminal": {
+      "high_inclusive": 3420235588,
+      "low": 935927320,
+      "pending_underflow": 1,
+      "stable_bits": 614
+    },
+    "wire_delivered": false
+  },
+  {
+    "carrier_tokens": null,
+    "case_id": "R-c0-n128-r0",
+    "emitted_tokens": 1984,
+    "envelope_bytes": 196,
+    "failure": "capacity_exhaustion",
+    "phase": "main_fixed",
+    "stable_bits": 889,
+    "success": false,
+    "target_bits": 1568,
+    "terminal": {
+      "high_inclusive": 3613006092,
+      "low": 1447032408,
+      "pending_underflow": 0,
+      "stable_bits": 889
+    },
+    "wire_delivered": false
+  },
+  {
+    "carrier_tokens": null,
+    "case_id": "R-c1-n32-r0",
+    "emitted_tokens": 1984,
+    "envelope_bytes": 100,
+    "failure": "capacity_exhaustion",
+    "phase": "main_fixed",
+    "stable_bits": 476,
+    "success": false,
+    "target_bits": 800,
+    "terminal": {
+      "high_inclusive": 3480238618,
+      "low": 43010304,
+      "pending_underflow": 2,
+      "stable_bits": 476
+    },
+    "wire_delivered": false
+  },
+  {
+    "carrier_tokens": null,
+    "case_id": "R-c1-n128-r0",
+    "emitted_tokens": 1984,
+    "envelope_bytes": 196,
+    "failure": "capacity_exhaustion",
+    "phase": "main_fixed",
+    "stable_bits": 1314,
+    "success": false,
+    "target_bits": 1568,
+    "terminal": {
+      "high_inclusive": 3629378138,
+      "low": 2113143840,
+      "pending_underflow": 2,
+      "stable_bits": 1314
+    },
+    "wire_delivered": false
+  },
+  {
+    "carrier_tokens": 563,
+    "case_id": "R-c2-n32-r0",
+    "emitted_tokens": 563,
+    "envelope_bytes": 100,
+    "failure": null,
+    "phase": "main_fixed",
+    "stable_bits": 800,
+    "success": true,
+    "target_bits": 800,
+    "terminal": {
+      "high_inclusive": 4191127071,
+      "low": 1653008352,
+      "pending_underflow": 1,
+      "stable_bits": 800
+    },
+    "wire_delivered": true
+  },
+  {
+    "carrier_tokens": null,
+    "case_id": "R-c2-n128-r0",
+    "emitted_tokens": 1984,
+    "envelope_bytes": 196,
+    "failure": "capacity_exhaustion",
+    "phase": "main_fixed",
+    "stable_bits": 1067,
+    "success": false,
+    "target_bits": 1568,
+    "terminal": {
+      "high_inclusive": 3854143791,
+      "low": 2042480048,
+      "pending_underflow": 1,
+      "stable_bits": 1067
+    },
+    "wire_delivered": false
+  },
+  {
+    "carrier_tokens": 1783,
+    "case_id": "R-c3-n32-r0",
+    "emitted_tokens": 1783,
+    "envelope_bytes": 100,
+    "failure": null,
+    "phase": "main_fixed",
+    "stable_bits": 800,
+    "success": true,
+    "target_bits": 800,
+    "terminal": {
+      "high_inclusive": 2229989247,
+      "low": 213377760,
+      "pending_underflow": 1,
+      "stable_bits": 800
+    },
+    "wire_delivered": true
+  },
+  {
+    "carrier_tokens": null,
+    "case_id": "R-c3-n128-r0",
+    "emitted_tokens": 1984,
+    "envelope_bytes": 196,
+    "failure": "capacity_exhaustion",
+    "phase": "main_fixed",
+    "stable_bits": 1254,
+    "success": false,
+    "target_bits": 1568,
+    "terminal": {
+      "high_inclusive": 3440202797,
+      "low": 1806092592,
+      "pending_underflow": 0,
+      "stable_bits": 1254
+    },
+    "wire_delivered": false
   }
 ]

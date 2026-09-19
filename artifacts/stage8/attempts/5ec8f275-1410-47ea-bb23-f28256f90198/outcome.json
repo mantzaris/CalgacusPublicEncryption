@@ -1,0 +1,92 @@
+{
+  "attempt_id": "5ec8f275-1410-47ea-bb23-f28256f90198",
+  "attempt_useful_bits_per_transmitted_token": 0.0,
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 21,
+      "examined_total": 31986,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 3,
+        "noncanonical": 225,
+        "special_control": 14
+      },
+      "steps": 1984
+    }
+  },
+  "case_id": "R-c0-n32-r0",
+  "charged_tokens": 1996,
+  "ciphertext_sha256": "45ebda6c1df2d661544da8d50785c0d0769163dd32808f5423ec23404ffc0e0a",
+  "context_index": 0,
+  "context_window_verified": true,
+  "cover_context": "A field guide describing the shape of a maple leaf:",
+  "cumulative_budget": {
+    "cases": 226,
+    "seconds": 9113.530491986981,
+    "tokens": 147674
+  },
+  "encapsulation_hex": "5a68d624e2b20d26d342a4b48fafc7b0d3e5675d163426dd20e614648019cc06",
+  "envelope_bytes": 100,
+  "envelope_sha256": "4ed5efe9b630223b54f42d5a86f49d5c3b7cd3c200daa31b801c67805837057a",
+  "error": "Arithmetic carrier ceiling before complete stable packet",
+  "evidence_dir": "artifacts/stage8/attempts/5ec8f275-1410-47ea-bb23-f28256f90198",
+  "exact_recovery": false,
+  "exception_type": "CapacityError",
+  "exit_code": 0,
+  "expected_outcome_agreement": false,
+  "expected_rejection": false,
+  "failure_category": "capacity_exhaustion",
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "job_elapsed_seconds": 147.16252385199914,
+  "key_id": "STAGE8_TEST_ONLY_0",
+  "kind": "encrypted",
+  "lease_verified": true,
+  "method": "R",
+  "pair_id": "c0-n32-r0",
+  "payload_bytes": 32,
+  "payload_setting_bytes": 32,
+  "payload_sha256": "27fedf62b7eb0791bf6d51dddc81bb855b374641dc927eebf15c6e6e7b6dc003",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 830888,
+  "profile_id": "stage8_public_R_size32_v1",
+  "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A field guide describing the shape of a maple leaf:": [
+      128000,
+      32,
+      2115,
+      8641,
+      23524,
+      279,
+      6211,
+      315,
+      264,
+      55480,
+      16312,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "5d8104dc32cdc639c0b49f0ea8f73d18c3ab2ef7030cae7d4cab45e60f598c07",
+  "schema_version": 1,
+  "serialized_base64": "WmjWJOKyDSbTQqS0j6/HsNPlZ10WNCbdIOYUZIAZzAZHsID4AENyqggsCPXTS/H6IZdkorvav+ydOW6fmgXKiLhYYrKV9PRAQF2ju4Yogn2nV3aA2urlJdL5Krlkg/RNzfrNlw==",
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "success": false,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "timings": {
+    "encode_seconds": 131.66172348799955,
+    "load_and_verify_seconds": 14.467200964001677
+  },
+  "tokens_by_phase": {
+    "encode": 1996
+  },
+  "trace_path": "artifacts/stage8/attempts/5ec8f275-1410-47ea-bb23-f28256f90198/traces.json",
+  "wire_delivered": false,
+  "worker_seconds": 146.41341108100096
+}

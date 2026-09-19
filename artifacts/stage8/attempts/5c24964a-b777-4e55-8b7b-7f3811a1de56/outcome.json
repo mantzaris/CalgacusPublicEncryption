@@ -1,0 +1,152 @@
+{
+  "attempt_id": "5c24964a-b777-4e55-8b7b-7f3811a1de56",
+  "attempt_useful_bits_per_transmitted_token": 2.6122448979591835,
+  "authenticated": true,
+  "authenticated_message_recovery": true,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 18,
+      "examined_total": 6274,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 2,
+        "special_control": 0
+      },
+      "steps": 392
+    },
+    "public_scoring": {
+      "examined_max": 18,
+      "examined_total": 6274,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 2,
+        "special_control": 0
+      },
+      "steps": 392
+    },
+    "receiver": {
+      "examined_max": 18,
+      "examined_total": 6274,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 2,
+        "special_control": 0
+      },
+      "steps": 392
+    }
+  },
+  "carrier_tokens": 392,
+  "case_id": "F-c0-n128-r0",
+  "charged_tokens": 1212,
+  "ciphertext_sha256": "500b2ffbc805e1afe241f93741004f05a7f7874b0da27e7537c3e51696781bfe",
+  "context_index": 0,
+  "context_window_verified": true,
+  "cover_context": "A field guide describing the shape of a maple leaf:",
+  "cumulative_budget": {
+    "cases": 228,
+    "seconds": 9325.83528716498,
+    "tokens": 150882
+  },
+  "encapsulation_hex": "d0b84726a2f289c1f63b1d16a16f499f2991276e978c63090d940b67c58f657e",
+  "envelope_bytes": 196,
+  "envelope_sha256": "037f4da6892416b22994c665e9415c9e9f987f8c38406204a09f0fb78e230083",
+  "evidence_dir": "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56",
+  "exact_recovery": true,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "first_rank_divergence": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 392,
+  "job_elapsed_seconds": 60.340620271999796,
+  "key_id": "STAGE8_TEST_ONLY_1",
+  "kind": "encrypted",
+  "lease_verified": true,
+  "method": "F",
+  "observer": {
+    "all_candidates_member": true,
+    "authenticated": false,
+    "body_region_reason": "No fixed token exclusion applied; complete-message scores are primary for both methods",
+    "body_region_scores": null,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "envelope_bytes": 196,
+    "envelope_sha256": "037f4da6892416b22994c665e9415c9e9f987f8c38406204a09f0fb78e230083",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_admissible_nll_bits": 5.091364801451583,
+    "mean_log2_rank": 2.7822295304662292,
+    "mean_nll_bits": 5.587947896983349,
+    "member_fraction": 1.0,
+    "observer_id": "stage8_complete_public_v1",
+    "probability_rounding_max_tv": 0.000226530621190798,
+    "probability_rounding_mean_tv": 0.00011139936145006201,
+    "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 392,
+    "utf8_bytes": 1754
+  },
+  "pair_id": "c0-n128-r0",
+  "payload_bytes": 128,
+  "payload_setting_bytes": 128,
+  "payload_sha256": "cae7f1d2612c0ed0cbc3c2d753779ab960844474d914d9f7fc91e33be69181fe",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 839629,
+  "profile_id": "stage8_public_F_size128_v1",
+  "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A field guide describing the shape of a maple leaf:": [
+      128000,
+      32,
+      2115,
+      8641,
+      23524,
+      279,
+      6211,
+      315,
+      264,
+      55480,
+      16312,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "f4e73fd37d9114f517e8988a2536f6e88b053c9313adcbe4eb1556d7a5801006",
+  "recovered_sha256": "cae7f1d2612c0ed0cbc3c2d753779ab960844474d914d9f7fc91e33be69181fe",
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "serialized_base64": "0LhHJqLyicH2Ox0WoW9JnymRJ26XjGMJDZQLZ8WPZX7q6DWsGK331VdZT4+tn3hn4++I+vz2eU1Qrfc6Yp+pJ6xCD08wEVhs8O/t0A87s/hZ7PHI0YCcXMy6yur7/JDADnYOIu7Cyv+Rv2IVIM+w35aWYjEjHFolBY1qy/OaiH1LWwwwFTl0weleolXpW18yrkvxb6hfSIYunFFDG+sUepzOFjJ6oAESiAtZSlFpGx9PUIx88lUHO4QckhZ0ULGOfZy6PA==",
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "success": true,
+  "successful_payload_bits_per_token": 2.6122448979591835,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 14.848005619001924,
+    "load_and_verify_seconds": 14.288733969999157,
+    "public_scoring_seconds": 15.335743816998729,
+    "receiver_seconds": 14.821092677997513
+  },
+  "tokens_by_phase": {
+    "encode": 404,
+    "public_scoring": 404,
+    "receiver": 404
+  },
+  "trace_path": "artifacts/stage8/attempts/5c24964a-b777-4e55-8b7b-7f3811a1de56/traces.json",
+  "transport_bytes": 1754,
+  "transport_sha256": "ab79641f84e1a1646cae3911a492d171f42fad713210735f1edee46abbec6de4",
+  "wire_delivered": true,
+  "worker_seconds": 59.47566973400171
+}

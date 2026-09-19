@@ -1,0 +1,35 @@
+{
+  "TEST_ONLY_private_key_hex": "609631f763496e63728d3bfcb31a6809a688dd6f18035d22802081307fcd6a63",
+  "case_id": "F-c1-n32-r0",
+  "context_index": 1,
+  "key_id": "STAGE8_TEST_ONLY_2",
+  "kind": "encrypted",
+  "method": "F",
+  "pair_id": "c1-n32-r0",
+  "payload_bytes": 32,
+  "payload_hex": "17230cdc9f78ee289dd4b53a7c5f6cdb4b1e0bba4118ed4eba80ae7375a265b2",
+  "payload_sha256": "7e421217f9c97a952ec725798cf1123e9b5773cbbdd88b569ea05432c66bb1e9",
+  "profile_path": "configs/stage8/F32.json",
+  "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+  "repetition": 0,
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "78617213825f1163b3692f698e1063ba32a7de73",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "token_reservation": 900,
+  "wall_reservation_seconds": 90
+}

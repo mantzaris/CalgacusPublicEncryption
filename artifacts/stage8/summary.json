@@ -1,7 +1,14 @@
 {
   "all_gpu_lease_phase_provenance_verified": true,
   "all_workers_clean_exit": true,
-  "attempted_cases": 6,
+  "assessment": {
+    "algorithm_defect_found": false,
+    "classification": "useful_but_narrow_capacity_finding_with_delivery_conditioned_comparison",
+    "no_further_execution_authorized_by_report": true,
+    "qualification_passed": true,
+    "regular_paper_readiness": "not established; only two delivered R messages, no128-byte R delivery"
+  },
+  "attempted_cases": 43,
   "bootstrap": {
     "draws": 2000,
     "limits": "conditional descriptive intervals; four contexts; degenerate intervals are not population guarantees",
@@ -12,8 +19,8 @@
   "candidate_search": {
     "all_steps_admitted_16": true,
     "examined_max": 28,
-    "examined_total": 210914,
-    "steps": 13094
+    "examined_total": 1201149,
+    "steps": 74123
   },
   "capacity": [
     {
@@ -85,6 +92,150 @@
         "low": 329813456,
         "pending_underflow": 0,
         "stable_bits": 1529
+      },
+      "wire_delivered": false
+    },
+    {
+      "carrier_tokens": null,
+      "case_id": "R-c0-n32-r0",
+      "emitted_tokens": 1984,
+      "envelope_bytes": 100,
+      "failure": "capacity_exhaustion",
+      "phase": "main_fixed",
+      "stable_bits": 614,
+      "success": false,
+      "target_bits": 800,
+      "terminal": {
+        "high_inclusive": 3420235588,
+        "low": 935927320,
+        "pending_underflow": 1,
+        "stable_bits": 614
+      },
+      "wire_delivered": false
+    },
+    {
+      "carrier_tokens": null,
+      "case_id": "R-c0-n128-r0",
+      "emitted_tokens": 1984,
+      "envelope_bytes": 196,
+      "failure": "capacity_exhaustion",
+      "phase": "main_fixed",
+      "stable_bits": 889,
+      "success": false,
+      "target_bits": 1568,
+      "terminal": {
+        "high_inclusive": 3613006092,
+        "low": 1447032408,
+        "pending_underflow": 0,
+        "stable_bits": 889
+      },
+      "wire_delivered": false
+    },
+    {
+      "carrier_tokens": null,
+      "case_id": "R-c1-n32-r0",
+      "emitted_tokens": 1984,
+      "envelope_bytes": 100,
+      "failure": "capacity_exhaustion",
+      "phase": "main_fixed",
+      "stable_bits": 476,
+      "success": false,
+      "target_bits": 800,
+      "terminal": {
+        "high_inclusive": 3480238618,
+        "low": 43010304,
+        "pending_underflow": 2,
+        "stable_bits": 476
+      },
+      "wire_delivered": false
+    },
+    {
+      "carrier_tokens": null,
+      "case_id": "R-c1-n128-r0",
+      "emitted_tokens": 1984,
+      "envelope_bytes": 196,
+      "failure": "capacity_exhaustion",
+      "phase": "main_fixed",
+      "stable_bits": 1314,
+      "success": false,
+      "target_bits": 1568,
+      "terminal": {
+        "high_inclusive": 3629378138,
+        "low": 2113143840,
+        "pending_underflow": 2,
+        "stable_bits": 1314
+      },
+      "wire_delivered": false
+    },
+    {
+      "carrier_tokens": 563,
+      "case_id": "R-c2-n32-r0",
+      "emitted_tokens": 563,
+      "envelope_bytes": 100,
+      "failure": null,
+      "phase": "main_fixed",
+      "stable_bits": 800,
+      "success": true,
+      "target_bits": 800,
+      "terminal": {
+        "high_inclusive": 4191127071,
+        "low": 1653008352,
+        "pending_underflow": 1,
+        "stable_bits": 800
+      },
+      "wire_delivered": true
+    },
+    {
+      "carrier_tokens": null,
+      "case_id": "R-c2-n128-r0",
+      "emitted_tokens": 1984,
+      "envelope_bytes": 196,
+      "failure": "capacity_exhaustion",
+      "phase": "main_fixed",
+      "stable_bits": 1067,
+      "success": false,
+      "target_bits": 1568,
+      "terminal": {
+        "high_inclusive": 3854143791,
+        "low": 2042480048,
+        "pending_underflow": 1,
+        "stable_bits": 1067
+      },
+      "wire_delivered": false
+    },
+    {
+      "carrier_tokens": 1783,
+      "case_id": "R-c3-n32-r0",
+      "emitted_tokens": 1783,
+      "envelope_bytes": 100,
+      "failure": null,
+      "phase": "main_fixed",
+      "stable_bits": 800,
+      "success": true,
+      "target_bits": 800,
+      "terminal": {
+        "high_inclusive": 2229989247,
+        "low": 213377760,
+        "pending_underflow": 1,
+        "stable_bits": 800
+      },
+      "wire_delivered": true
+    },
+    {
+      "carrier_tokens": null,
+      "case_id": "R-c3-n128-r0",
+      "emitted_tokens": 1984,
+      "envelope_bytes": 196,
+      "failure": "capacity_exhaustion",
+      "phase": "main_fixed",
+      "stable_bits": 1254,
+      "success": false,
+      "target_bits": 1568,
+      "terminal": {
+        "high_inclusive": 3440202797,
+        "low": 1806092592,
+        "pending_underflow": 0,
+        "stable_bits": 1254
       },
       "wire_delivered": false
     }
@@ -329,9 +480,969 @@
       "stable_bits": 1529,
       "successful_payload_bits_per_token": 0,
       "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 512,
+      "case_id": "F-c0-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1024,
+      "case_id": "F-c0-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1536,
+      "case_id": "F-c0-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1984,
+      "case_id": "F-c0-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "R-c0-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 307,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1024,
+      "case_id": "R-c0-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 450,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1536,
+      "case_id": "R-c0-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 569,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1984,
+      "case_id": "R-c0-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 614,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "R-c0-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 295,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1024,
+      "case_id": "R-c0-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 551,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1536,
+      "case_id": "R-c0-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 754,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1984,
+      "case_id": "R-c0-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 889,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 512,
+      "case_id": "F-c0-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1024,
+      "case_id": "F-c0-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1536,
+      "case_id": "F-c0-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1984,
+      "case_id": "F-c0-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "R-c1-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 388,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1024,
+      "case_id": "R-c1-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 418,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1536,
+      "case_id": "R-c1-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 451,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1984,
+      "case_id": "R-c1-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 476,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 512,
+      "case_id": "F-c1-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1024,
+      "case_id": "F-c1-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1536,
+      "case_id": "F-c1-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1984,
+      "case_id": "F-c1-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 512,
+      "case_id": "F-c1-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1024,
+      "case_id": "F-c1-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1536,
+      "case_id": "F-c1-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1984,
+      "case_id": "F-c1-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "R-c1-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 522,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1024,
+      "case_id": "R-c1-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 845,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1536,
+      "case_id": "R-c1-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1095,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1984,
+      "case_id": "R-c1-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1314,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 512,
+      "case_id": "F-c2-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1024,
+      "case_id": "F-c2-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1536,
+      "case_id": "F-c2-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1984,
+      "case_id": "F-c2-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "R-c2-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 746,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1024,
+      "case_id": "R-c2-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 0.4547069271758437,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1536,
+      "case_id": "R-c2-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 0.4547069271758437,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1984,
+      "case_id": "R-c2-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 0.4547069271758437,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "R-c2-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 556,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1024,
+      "case_id": "R-c2-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 815,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1536,
+      "case_id": "R-c2-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 959,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1984,
+      "case_id": "R-c2-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1067,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 512,
+      "case_id": "F-c2-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1024,
+      "case_id": "F-c2-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1536,
+      "case_id": "F-c2-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1984,
+      "case_id": "F-c2-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "R-c3-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 530,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1024,
+      "case_id": "R-c3-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 669,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1536,
+      "case_id": "R-c3-n32-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 742,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1984,
+      "case_id": "R-c3-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 0.1435782389231632,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 512,
+      "case_id": "F-c3-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1024,
+      "case_id": "F-c3-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1536,
+      "case_id": "F-c3-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1984,
+      "case_id": "F-c3-n32-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 32,
+      "phase": "main_fixed",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 1.28,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 512,
+      "case_id": "F-c3-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1024,
+      "case_id": "F-c3-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1536,
+      "case_id": "F-c3-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1984,
+      "case_id": "F-c3-n128-r0",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 1568,
+      "is_hpke": true,
+      "method": "F",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1568,
+      "successful_payload_bits_per_token": 2.6122448979591835,
+      "useful_payload_bits": 1024
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "R-c3-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 550,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1024,
+      "case_id": "R-c3-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 892,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1536,
+      "case_id": "R-c3-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1185,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1984,
+      "case_id": "R-c3-n128-r0",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "main_fixed",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1254,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
     }
   ],
-  "control_attempts": 0,
+  "control_attempts": 16,
   "costs": [
     {
       "attempts": 2,
@@ -383,9 +1494,198 @@
       "payload_bytes": 32,
       "peak_sampled_vram_mib": 5006,
       "phase": "diagnostic"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 148.2947544379931,
+      "evaluated_tokens": 2535,
+      "family": "-",
+      "kind": "encrypted",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 7.061927942249895,
+      "mean_job_seconds": 37.07368860949828,
+      "mean_load_and_verify_seconds": 14.735342914249486,
+      "mean_public_scoring_seconds": 7.3131664722504865,
+      "mean_receiver_seconds": 7.034144338498663,
+      "method": "F",
+      "payload_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "main_fixed"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 741.6998234970051,
+      "evaluated_tokens": 11093,
+      "family": "-",
+      "kind": "encrypted",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 100.8971562347524,
+      "mean_job_seconds": 185.42495587425128,
+      "mean_load_and_verify_seconds": 14.474715823250335,
+      "mean_public_scoring_seconds": 69.82202183600384,
+      "mean_receiver_seconds": 68.28444233649861,
+      "method": "R",
+      "payload_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "main_fixed"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 604.1153538879989,
+      "evaluated_tokens": 7981,
+      "family": "-",
+      "kind": "encrypted",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 135.66996787599965,
+      "mean_job_seconds": 151.02883847199973,
+      "mean_load_and_verify_seconds": 14.46998485900076,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "method": "R",
+      "payload_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "main_fixed"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 242.73759109499952,
+      "evaluated_tokens": 4839,
+      "family": "-",
+      "kind": "encrypted",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 14.969391565749902,
+      "mean_job_seconds": 60.68439777374988,
+      "mean_load_and_verify_seconds": 14.5101008190004,
+      "mean_public_scoring_seconds": 15.45476503224927,
+      "mean_receiver_seconds": 14.962001249249624,
+      "method": "F",
+      "payload_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "main_fixed"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 119.00285832999361,
+      "evaluated_tokens": 1690,
+      "family": "B",
+      "kind": "control",
+      "mean_control_generation_seconds": 7.055315079247521,
+      "mean_encode_seconds": null,
+      "mean_job_seconds": 29.750714582498404,
+      "mean_load_and_verify_seconds": 14.5751124242488,
+      "mean_public_scoring_seconds": 7.261043232500015,
+      "mean_receiver_seconds": null,
+      "method": "F",
+      "payload_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "main_fixed"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 887.9453673520038,
+      "evaluated_tokens": 12718,
+      "family": "B",
+      "kind": "control",
+      "mean_control_generation_seconds": 102.48266190624781,
+      "mean_encode_seconds": null,
+      "mean_job_seconds": 221.98634183800095,
+      "mean_load_and_verify_seconds": 14.451494506249219,
+      "mean_public_scoring_seconds": 104.16463368450059,
+      "mean_receiver_seconds": null,
+      "method": "R",
+      "payload_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "main_fixed"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 1151.3011167410077,
+      "evaluated_tokens": 15962,
+      "family": "B",
+      "kind": "control",
+      "mean_control_generation_seconds": 135.1079991880015,
+      "mean_encode_seconds": null,
+      "mean_job_seconds": 287.82527918525193,
+      "mean_load_and_verify_seconds": 14.501032410253174,
+      "mean_public_scoring_seconds": 137.17433447700205,
+      "mean_receiver_seconds": null,
+      "method": "R",
+      "payload_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "main_fixed"
+    },
+    {
+      "attempts": 4,
+      "charged_seconds": 184.5276280149992,
+      "evaluated_tokens": 3226,
+      "family": "B",
+      "kind": "control",
+      "mean_control_generation_seconds": 15.109372997001628,
+      "mean_encode_seconds": null,
+      "mean_job_seconds": 46.1319070037498,
+      "mean_load_and_verify_seconds": 14.615073503997337,
+      "mean_public_scoring_seconds": 15.541487029995551,
+      "mean_receiver_seconds": null,
+      "method": "F",
+      "payload_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "main_fixed"
+    },
+    {
+      "attempts": 2,
+      "charged_seconds": 44.270154714002274,
+      "evaluated_tokens": 422,
+      "family": "-",
+      "kind": "replay",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": null,
+      "mean_job_seconds": 22.135077357001137,
+      "mean_load_and_verify_seconds": 14.492623074500443,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "method": "F",
+      "payload_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "fresh_receiver"
+    },
+    {
+      "attempts": 2,
+      "charged_seconds": 59.73715006600105,
+      "evaluated_tokens": 806,
+      "family": "-",
+      "kind": "replay",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": null,
+      "mean_job_seconds": 29.868575033000525,
+      "mean_load_and_verify_seconds": 14.36815090050004,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "method": "F",
+      "payload_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "fresh_receiver"
+    },
+    {
+      "attempts": 1,
+      "charged_seconds": 38.9371946809988,
+      "evaluated_tokens": 573,
+      "family": "-",
+      "kind": "replay",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": null,
+      "mean_job_seconds": 38.9371946809988,
+      "mean_load_and_verify_seconds": 14.480657173997315,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "method": "R",
+      "payload_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "fresh_receiver"
     }
   ],
   "diagnostic_attempts": 6,
+  "diagnostic_encoding_attempts": 4,
+  "diagnostic_replay_attempts": 2,
   "diagnostic_status": {
     "allocation_id": "stage8_capacity_comparison_2026-09-18",
     "lifetime_usage": {
@@ -429,10 +1729,53 @@
       "error": "Arithmetic carrier ceiling before complete stable packet",
       "first_transport_divergence": null,
       "serialization": null
+    },
+    {
+      "case_id": "R-c0-n32-r0",
+      "category": "capacity_exhaustion",
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null,
+      "serialization": null
+    },
+    {
+      "case_id": "R-c0-n128-r0",
+      "category": "capacity_exhaustion",
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null,
+      "serialization": null
+    },
+    {
+      "case_id": "R-c1-n32-r0",
+      "category": "capacity_exhaustion",
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null,
+      "serialization": null
+    },
+    {
+      "case_id": "R-c1-n128-r0",
+      "category": "capacity_exhaustion",
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null,
+      "serialization": null
+    },
+    {
+      "case_id": "R-c2-n128-r0",
+      "category": "capacity_exhaustion",
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null,
+      "serialization": null
+    },
+    {
+      "case_id": "R-c3-n128-r0",
+      "category": "capacity_exhaustion",
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null,
+      "serialization": null
     }
   ],
   "focused_cpu_tests": 5,
   "gpu_tested_code_commits": [
+    "78617213825f1163b3692f698e1063ba32a7de73",
     "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
   ],
   "historical_changed_paths": [
@@ -445,197 +1788,203 @@
   "historical_ledger_prefix_preserved": true,
   "joint_support_recognition": [
     {
-      "F_auc": null,
-      "R_auc": null,
-      "R_minus_F": null,
+      "F_auc": 1.0,
+      "R_auc": 0.5,
+      "R_minus_F": -0.5,
+      "bootstrap_valid_draws": 1677,
       "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
       "interval": [
-        null,
-        null
+        -1.0,
+        0.0
       ],
       "metric": "mean_nll_bits",
-      "pair_ids": [],
-      "pairs": 0
+      "pair_ids": [
+        "c2-n32-r0",
+        "c3-n32-r0"
+      ],
+      "pairs": 2
     },
     {
-      "F_auc": null,
-      "R_auc": null,
-      "R_minus_F": null,
+      "F_auc": 1.0,
+      "R_auc": 0.5,
+      "R_minus_F": -0.5,
+      "bootstrap_valid_draws": 1677,
       "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
       "interval": [
-        null,
-        null
+        -1.0,
+        0.0
       ],
       "metric": "mean_log2_rank",
-      "pair_ids": [],
-      "pairs": 0
+      "pair_ids": [
+        "c2-n32-r0",
+        "c3-n32-r0"
+      ],
+      "pairs": 2
     },
     {
-      "F_auc": null,
-      "R_auc": null,
-      "R_minus_F": null,
+      "F_auc": 1.0,
+      "R_auc": 0.5,
+      "R_minus_F": -0.5,
+      "bootstrap_valid_draws": 1677,
       "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
       "interval": [
-        null,
-        null
+        -1.0,
+        0.0
       ],
       "metric": "mean_admissible_nll_bits",
-      "pair_ids": [],
-      "pairs": 0
+      "pair_ids": [
+        "c2-n32-r0",
+        "c3-n32-r0"
+      ],
+      "pairs": 2
     },
     {
-      "F_auc": null,
-      "R_auc": null,
-      "R_minus_F": null,
+      "F_auc": 0.5,
+      "R_auc": 0.5,
+      "R_minus_F": 0.0,
+      "bootstrap_valid_draws": 1677,
       "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
       "interval": [
-        null,
-        null
+        0.0,
+        0.0
       ],
       "metric": "member_fraction",
-      "pair_ids": [],
-      "pairs": 0
+      "pair_ids": [
+        "c2-n32-r0",
+        "c3-n32-r0"
+      ],
+      "pairs": 2
     },
     {
-      "F_auc": null,
-      "R_auc": null,
-      "R_minus_F": null,
+      "F_auc": 0.5,
+      "R_auc": 1.0,
+      "R_minus_F": 0.5,
+      "bootstrap_valid_draws": 1677,
       "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "metric": "format_accepted",
-      "pair_ids": [],
-      "pairs": 0
+      "pair_ids": [
+        "c2-n32-r0",
+        "c3-n32-r0"
+      ],
+      "pairs": 2
     },
     {
-      "F_auc": null,
-      "R_auc": null,
-      "R_minus_F": null,
+      "F_auc": 0.5,
+      "R_auc": 1.0,
+      "R_minus_F": 0.5,
+      "bootstrap_valid_draws": 1677,
       "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "metric": "format_and_kem_canonical",
-      "pair_ids": [],
-      "pairs": 0
+      "pair_ids": [
+        "c2-n32-r0",
+        "c3-n32-r0"
+      ],
+      "pairs": 2
     },
     {
-      "F_auc": null,
-      "R_auc": null,
-      "R_minus_F": null,
+      "F_auc": 0.5,
+      "R_auc": 0.5,
+      "R_minus_F": 0.0,
+      "bootstrap_valid_draws": 1677,
       "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
       "interval": [
-        null,
-        null
+        0.0,
+        0.0
       ],
       "metric": "token_count",
-      "pair_ids": [],
-      "pairs": 0
+      "pair_ids": [
+        "c2-n32-r0",
+        "c3-n32-r0"
+      ],
+      "pairs": 2
     },
     {
-      "F_auc": null,
-      "R_auc": null,
-      "R_minus_F": null,
+      "F_auc": 0.0,
+      "R_auc": 0.5,
+      "R_minus_F": 0.5,
+      "bootstrap_valid_draws": 1677,
       "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
       "interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
       "metric": "utf8_bytes",
-      "pair_ids": [],
-      "pairs": 0
+      "pair_ids": [
+        "c2-n32-r0",
+        "c3-n32-r0"
+      ],
+      "pairs": 2
     }
   ],
-  "ledger_bytes": 120195,
-  "ledger_sha256": "4944e6c70a97dcb83160aac8235d70d061a01e0579498b1edadc5631e4cdd1ca",
+  "ledger_bytes": 140909,
+  "ledger_sha256": "63bc3d490d8b977e122785040fbead0429dc2d832c6be0c4e78d0986bdab4561",
   "lifetime_usage": {
-    "cases": 224,
-    "seconds": 8929.578526105983,
-    "tokens": 145042
+    "cases": 261,
+    "seconds": 13152.147518922986,
+    "tokens": 206887
   },
-  "main_encrypted_attempts": 0,
-  "main_executed": false,
-  "main_independent_recipient_keys": 0,
-  "main_planned_slots": 0,
-  "main_repetitions": 0,
+  "main_encrypted_attempts": 16,
+  "main_executed": true,
+  "main_independent_recipient_keys": 8,
+  "main_planned_slots": 40,
+  "main_repetitions": 1,
+  "main_replay_attempts": 5,
   "main_skipped_by_gate": [
-    "F-c0-n32-r0",
-    "R-c0-n32-r0",
-    "R-c0-n32-r1",
-    "F-c0-n32-r1",
-    "R-c0-n128-r0",
-    "F-c0-n128-r0",
-    "F-c0-n128-r1",
-    "R-c0-n128-r1",
-    "R-c1-n32-r0",
-    "F-c1-n32-r0",
-    "F-c1-n32-r1",
-    "R-c1-n32-r1",
-    "F-c1-n128-r0",
-    "R-c1-n128-r0",
-    "R-c1-n128-r1",
-    "F-c1-n128-r1",
-    "F-c2-n32-r0",
-    "R-c2-n32-r0",
-    "R-c2-n32-r1",
-    "F-c2-n32-r1",
-    "R-c2-n128-r0",
-    "F-c2-n128-r0",
-    "F-c2-n128-r1",
-    "R-c2-n128-r1",
-    "R-c3-n32-r0",
-    "F-c3-n32-r0",
-    "F-c3-n32-r1",
-    "R-c3-n32-r1",
-    "F-c3-n128-r0",
-    "R-c3-n128-r0",
-    "R-c3-n128-r1",
-    "F-c3-n128-r1",
-    "control-F-c0-n32-r0-B",
-    "control-R-c0-n32-r0-B",
-    "control-R-c0-n32-r1-B",
-    "control-F-c0-n32-r1-B",
-    "control-R-c0-n128-r0-B",
-    "control-F-c0-n128-r0-B",
-    "control-F-c0-n128-r1-B",
-    "control-R-c0-n128-r1-B",
-    "control-R-c1-n32-r0-B",
-    "control-F-c1-n32-r0-B",
-    "control-F-c1-n32-r1-B",
-    "control-R-c1-n32-r1-B",
-    "control-F-c1-n128-r0-B",
-    "control-R-c1-n128-r0-B",
-    "control-R-c1-n128-r1-B",
-    "control-F-c1-n128-r1-B",
-    "control-F-c2-n32-r0-B",
-    "control-R-c2-n32-r0-B",
-    "control-R-c2-n32-r1-B",
-    "control-F-c2-n32-r1-B",
-    "control-R-c2-n128-r0-B",
-    "control-F-c2-n128-r0-B",
-    "control-F-c2-n128-r1-B",
-    "control-R-c2-n128-r1-B",
-    "control-R-c3-n32-r0-B",
-    "control-F-c3-n32-r0-B",
-    "control-F-c3-n32-r1-B",
-    "control-R-c3-n32-r1-B",
-    "control-F-c3-n128-r0-B",
-    "control-R-c3-n128-r0-B",
-    "control-R-c3-n128-r1-B",
-    "control-F-c3-n128-r1-B",
-    "replay-F-c0-n32",
     "replay-R-c0-n32",
-    "replay-F-c0-n128",
     "replay-R-c0-n128",
-    "replay-F-c2-n32",
-    "replay-R-c2-n32",
-    "replay-F-c2-n128",
     "replay-R-c2-n128"
   ],
-  "main_unselected_before_release": [],
+  "main_unselected_before_release": [
+    "R-c0-n32-r1",
+    "F-c0-n32-r1",
+    "F-c0-n128-r1",
+    "R-c0-n128-r1",
+    "F-c1-n32-r1",
+    "R-c1-n32-r1",
+    "R-c1-n128-r1",
+    "F-c1-n128-r1",
+    "R-c2-n32-r1",
+    "F-c2-n32-r1",
+    "F-c2-n128-r1",
+    "R-c2-n128-r1",
+    "F-c3-n32-r1",
+    "R-c3-n32-r1",
+    "R-c3-n128-r1",
+    "F-c3-n128-r1",
+    "control-R-c0-n32-r1-B",
+    "control-F-c0-n32-r1-B",
+    "control-F-c0-n128-r1-B",
+    "control-R-c0-n128-r1-B",
+    "control-F-c1-n32-r1-B",
+    "control-R-c1-n32-r1-B",
+    "control-R-c1-n128-r1-B",
+    "control-F-c1-n128-r1-B",
+    "control-R-c2-n32-r1-B",
+    "control-F-c2-n32-r1-B",
+    "control-F-c2-n128-r1-B",
+    "control-R-c2-n128-r1-B",
+    "control-F-c3-n32-r1-B",
+    "control-R-c3-n32-r1-B",
+    "control-R-c3-n128-r1-B",
+    "control-F-c3-n128-r1-B"
+  ],
+  "observer_format_rejections": {
+    "F": {
+      "accepted": 8
+    },
+    "R": {
+      "Incomplete arithmetic final interval": 6,
+      "Trailing arithmetic tokens": 2
+    }
+  },
   "paired_auc_differences": [
     {
       "R_minus_F_auc": null,
@@ -720,9 +2069,12 @@
   ],
   "peak_sampled_vram_mib": 5006,
   "phase_tokens": {
-    "encode": 7055,
-    "fresh_receiver": 3064,
-    "public_fixture_inverse": 3064
+    "control_generation": 16798,
+    "encode": 23853,
+    "fresh_receiver": 4865,
+    "public_fixture_inverse": 3064,
+    "public_scoring": 21623,
+    "receiver": 4825
   },
   "planned_slots": 80,
   "progress_summaries": [
@@ -858,6 +2210,8 @@
         }
       ],
       "case_id": "diagnostic-qual-synthetic-32",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
       "mean_selected_information": 0.730306826837593,
       "mean_table_entropy": 0.6774188595100016,
       "phase": "diagnostic",
@@ -1085,6 +2439,8 @@
         }
       ],
       "case_id": "diagnostic-qual-synthetic-128",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
       "mean_selected_information": 0.7194812782858161,
       "mean_table_entropy": 0.7251762427224718,
       "phase": "diagnostic",
@@ -1312,6 +2668,8 @@
         }
       ],
       "case_id": "diagnostic-qual-HPKE-32",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
       "mean_selected_information": 0.41577522317909654,
       "mean_table_entropy": 0.39896752391221135,
       "phase": "diagnostic",
@@ -1539,479 +2897,2160 @@
         }
       ],
       "case_id": "diagnostic-qual-HPKE-128",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
       "mean_selected_information": 0.7709703706509544,
       "mean_table_entropy": 0.7611515649579912,
       "phase": "diagnostic",
       "tokens": 1984
+    },
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 1.369416251212584,
+          "pending_at_end": 1,
+          "selected_information_bits": 187.38365578245723,
+          "stable_bits_released": 186,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 0.2979681894307196,
+          "pending_at_end": 8,
+          "selected_information_bits": 45.27831232812456,
+          "stable_bits_released": 38,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 0.4056102896963298,
+          "pending_at_end": 1,
+          "selected_information_bits": 41.28019231339099,
+          "stable_bits_released": 48,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.22649602617422798,
+          "pending_at_end": 1,
+          "selected_information_bits": 35.111153604364326,
+          "stable_bits_released": 35,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "mean_table_entropy_bits": 0.010114540024502992,
+          "pending_at_end": 1,
+          "selected_information_bits": 0.15414891059188063,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.7012279933929063,
+          "pending_at_end": 0,
+          "selected_information_bits": 87.87975091956872,
+          "stable_bits_released": 89,
+          "tokens": 128
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "mean_table_entropy_bits": 0.46516977162665885,
+          "pending_at_end": 1,
+          "selected_information_bits": 49.44048200116924,
+          "stable_bits_released": 49,
+          "tokens": 128
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.05900327795592269,
+          "pending_at_end": 0,
+          "selected_information_bits": 5.116520133007436,
+          "stable_bits_released": 5,
+          "tokens": 128
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "mean_table_entropy_bits": 0.3170507729249601,
+          "pending_at_end": 0,
+          "selected_information_bits": 41.113116102465526,
+          "stable_bits_released": 42,
+          "tokens": 128
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.1369069868293969,
+          "pending_at_end": 0,
+          "selected_information_bits": 14.089963273180418,
+          "stable_bits_released": 14,
+          "tokens": 128
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "mean_table_entropy_bits": 0.5238966938153309,
+          "pending_at_end": 2,
+          "selected_information_bits": 55.3065038610756,
+          "stable_bits_released": 53,
+          "tokens": 128
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.09337369870646028,
+          "pending_at_end": 3,
+          "selected_information_bits": 11.04846760090081,
+          "stable_bits_released": 10,
+          "tokens": 128
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1664,
+          "mean_table_entropy_bits": 0.1925010895960522,
+          "pending_at_end": 1,
+          "selected_information_bits": 29.044654420788117,
+          "stable_bits_released": 32,
+          "tokens": 128
+        },
+        {
+          "first_token": 1665,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.06499002880504373,
+          "pending_at_end": 0,
+          "selected_information_bits": 6.435687723563052,
+          "stable_bits_released": 7,
+          "tokens": 128
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1920,
+          "mean_table_entropy_bits": 0.05019397692480597,
+          "pending_at_end": 1,
+          "selected_information_bits": 7.076455985106725,
+          "stable_bits_released": 6,
+          "tokens": 128
+        },
+        {
+          "first_token": 1921,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.005438240614282262,
+          "pending_at_end": 1,
+          "selected_information_bits": 0.030736994292751972,
+          "stable_bits_released": 0,
+          "tokens": 64
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 0.8336922203216507,
+          "pending_at_end": 8,
+          "selected_information_bits": 232.66196811058177,
+          "stable_bits_released": 224,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.31605315793527927,
+          "pending_at_end": 1,
+          "selected_information_bits": 76.39134591775534,
+          "stable_bits_released": 83,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.35567126670870464,
+          "pending_at_end": 0,
+          "selected_information_bits": 88.03389983016059,
+          "stable_bits_released": 89,
+          "tokens": 256
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.26208652479129124,
+          "pending_at_end": 0,
+          "selected_information_bits": 54.557002134176656,
+          "stable_bits_released": 54,
+          "tokens": 256
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.2269788798771786,
+          "pending_at_end": 0,
+          "selected_information_bits": 55.20307937564592,
+          "stable_bits_released": 56,
+          "tokens": 256
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.3086351962608963,
+          "pending_at_end": 3,
+          "selected_information_bits": 66.35497146197649,
+          "stable_bits_released": 63,
+          "tokens": 256
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.12874555920054775,
+          "pending_at_end": 0,
+          "selected_information_bits": 35.48034214435114,
+          "stable_bits_released": 39,
+          "tokens": 256
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.035275398154631404,
+          "pending_at_end": 1,
+          "selected_information_bits": 7.107192979399478,
+          "stable_bits_released": 6,
+          "tokens": 192
+        }
+      ],
+      "case_id": "R-c0-n32-r0",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
+      "mean_selected_information": 0.31037792437199974,
+      "mean_table_entropy": 0.31720249725309957,
+      "phase": "main_fixed",
+      "tokens": 1984
+    },
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 0.6614597320997745,
+          "pending_at_end": 0,
+          "selected_information_bits": 83.2441168791405,
+          "stable_bits_released": 83,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 0.9065055010880205,
+          "pending_at_end": 1,
+          "selected_information_bits": 109.57254827245006,
+          "stable_bits_released": 108,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 0.6747526135777363,
+          "pending_at_end": 1,
+          "selected_information_bits": 79.75392260424186,
+          "stable_bits_released": 79,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.17446670597966565,
+          "pending_at_end": 0,
+          "selected_information_bits": 23.210808336939678,
+          "stable_bits_released": 25,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "mean_table_entropy_bits": 0.3585401663891276,
+          "pending_at_end": 0,
+          "selected_information_bits": 58.37859254579653,
+          "stable_bits_released": 59,
+          "tokens": 128
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.5239652077907515,
+          "pending_at_end": 2,
+          "selected_information_bits": 85.48775338830437,
+          "stable_bits_released": 82,
+          "tokens": 128
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "mean_table_entropy_bits": 0.5143767317370896,
+          "pending_at_end": 0,
+          "selected_information_bits": 70.94698532104462,
+          "stable_bits_released": 74,
+          "tokens": 128
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.37199548257539755,
+          "pending_at_end": 0,
+          "selected_information_bits": 41.355165389337046,
+          "stable_bits_released": 41,
+          "tokens": 128
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "mean_table_entropy_bits": 0.41836344385563096,
+          "pending_at_end": 2,
+          "selected_information_bits": 44.24164741065938,
+          "stable_bits_released": 42,
+          "tokens": 128
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.4126507652777979,
+          "pending_at_end": 1,
+          "selected_information_bits": 56.03411931020275,
+          "stable_bits_released": 58,
+          "tokens": 128
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "mean_table_entropy_bits": 0.28966281493746415,
+          "pending_at_end": 1,
+          "selected_information_bits": 55.91608381449449,
+          "stable_bits_released": 55,
+          "tokens": 128
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.32107243399939617,
+          "pending_at_end": 0,
+          "selected_information_bits": 46.28408609341377,
+          "stable_bits_released": 48,
+          "tokens": 128
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1664,
+          "mean_table_entropy_bits": 0.394814924341686,
+          "pending_at_end": 1,
+          "selected_information_bits": 41.987648388044725,
+          "stable_bits_released": 40,
+          "tokens": 128
+        },
+        {
+          "first_token": 1665,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.4154454980037369,
+          "pending_at_end": 1,
+          "selected_information_bits": 60.521100359318815,
+          "stable_bits_released": 61,
+          "tokens": 128
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1920,
+          "mean_table_entropy_bits": 0.19985665142703168,
+          "pending_at_end": 0,
+          "selected_information_bits": 15.293257999724034,
+          "stable_bits_released": 17,
+          "tokens": 128
+        },
+        {
+          "first_token": 1921,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.3152006824694125,
+          "pending_at_end": 0,
+          "selected_information_bits": 17.759804380238414,
+          "stable_bits_released": 17,
+          "tokens": 64
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 0.7839826165938976,
+          "pending_at_end": 1,
+          "selected_information_bits": 192.81666515159057,
+          "stable_bits_released": 191,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.4246096597787016,
+          "pending_at_end": 0,
+          "selected_information_bits": 102.96473094118176,
+          "stable_bits_released": 104,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.44125268708993964,
+          "pending_at_end": 2,
+          "selected_information_bits": 143.86634593410088,
+          "stable_bits_released": 141,
+          "tokens": 256
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.4431861071562438,
+          "pending_at_end": 0,
+          "selected_information_bits": 112.3021507103818,
+          "stable_bits_released": 115,
+          "tokens": 256
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.4155071045667148,
+          "pending_at_end": 1,
+          "selected_information_bits": 100.27576672086221,
+          "stable_bits_released": 100,
+          "tokens": 256
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.30536762446843047,
+          "pending_at_end": 0,
+          "selected_information_bits": 102.20016990790849,
+          "stable_bits_released": 103,
+          "tokens": 256
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.40513021117271203,
+          "pending_at_end": 1,
+          "selected_information_bits": 102.50874874736371,
+          "stable_bits_released": 101,
+          "tokens": 256
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.23830466177449203,
+          "pending_at_end": 0,
+          "selected_information_bits": 33.05306237996245,
+          "stable_bits_released": 34,
+          "tokens": 192
+        }
+      ],
+      "case_id": "R-c0-n128-r0",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
+      "mean_selected_information": 0.4485824800873746,
+      "mean_table_entropy": 0.4384212267300007,
+      "phase": "main_fixed",
+      "tokens": 1984
+    },
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 0.6979515985849413,
+          "pending_at_end": 0,
+          "selected_information_bits": 102.46655271560503,
+          "stable_bits_released": 101,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 0.934402039617604,
+          "pending_at_end": 3,
+          "selected_information_bits": 107.64566704198914,
+          "stable_bits_released": 106,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 1.0036503141844504,
+          "pending_at_end": 1,
+          "selected_information_bits": 128.03539177308298,
+          "stable_bits_released": 129,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.3939901898732567,
+          "pending_at_end": 0,
+          "selected_information_bits": 50.84622197473867,
+          "stable_bits_released": 52,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "mean_table_entropy_bits": 0.08734338915587665,
+          "pending_at_end": 1,
+          "selected_information_bits": 4.676183265289654,
+          "stable_bits_released": 3,
+          "tokens": 128
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.03775692872640373,
+          "pending_at_end": 1,
+          "selected_information_bits": 1.1437814483004152,
+          "stable_bits_released": 2,
+          "tokens": 128
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "mean_table_entropy_bits": 0.026081794057287493,
+          "pending_at_end": 1,
+          "selected_information_bits": 3.960957743091949,
+          "stable_bits_released": 4,
+          "tokens": 128
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.20382823828709287,
+          "pending_at_end": 0,
+          "selected_information_bits": 19.83878594832919,
+          "stable_bits_released": 21,
+          "tokens": 128
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "mean_table_entropy_bits": 0.1919400535812751,
+          "pending_at_end": 0,
+          "selected_information_bits": 33.37417820292483,
+          "stable_bits_released": 33,
+          "tokens": 128
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.03686699566261401,
+          "pending_at_end": 1,
+          "selected_information_bits": 1.4733220468826123,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "mean_table_entropy_bits": 0.02968433407895448,
+          "pending_at_end": 2,
+          "selected_information_bits": 1.0794574044241667,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.01204421504812518,
+          "pending_at_end": 3,
+          "selected_information_bits": 0.15843698543527035,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1664,
+          "mean_table_entropy_bits": 0.026351997089947638,
+          "pending_at_end": 4,
+          "selected_information_bits": 0.9815945461888526,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1665,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.13760039442209593,
+          "pending_at_end": 0,
+          "selected_information_bits": 21.58678220056887,
+          "stable_bits_released": 25,
+          "tokens": 128
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1920,
+          "mean_table_entropy_bits": 0.02895605875280703,
+          "pending_at_end": 2,
+          "selected_information_bits": 0.9498802822729037,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1921,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.014856950479900247,
+          "pending_at_end": 2,
+          "selected_information_bits": 0.10420646555164192,
+          "stable_bits_released": 0,
+          "tokens": 64
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 0.8161768191012725,
+          "pending_at_end": 3,
+          "selected_information_bits": 210.1122197575943,
+          "stable_bits_released": 207,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.6988202520288529,
+          "pending_at_end": 0,
+          "selected_information_bits": 178.88161374782166,
+          "stable_bits_released": 181,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.06255015894114019,
+          "pending_at_end": 1,
+          "selected_information_bits": 5.819964713590077,
+          "stable_bits_released": 5,
+          "tokens": 256
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.11495501617219017,
+          "pending_at_end": 0,
+          "selected_information_bits": 23.79974369142114,
+          "stable_bits_released": 25,
+          "tokens": 256
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.11440352462194459,
+          "pending_at_end": 1,
+          "selected_information_bits": 34.84750024980745,
+          "stable_bits_released": 33,
+          "tokens": 256
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.020864274563539825,
+          "pending_at_end": 3,
+          "selected_information_bits": 1.237894389859438,
+          "stable_bits_released": 0,
+          "tokens": 256
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.08197619575602176,
+          "pending_at_end": 0,
+          "selected_information_bits": 22.56837674675772,
+          "stable_bits_released": 25,
+          "tokens": 256
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.024256355995171452,
+          "pending_at_end": 2,
+          "selected_information_bits": 1.0540867478245448,
+          "stable_bits_released": 0,
+          "tokens": 192
+        }
+      ],
+      "case_id": "R-c1-n32-r0",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
+      "mean_selected_information": 0.2410894153450988,
+      "mean_table_entropy": 0.24876625912017303,
+      "phase": "main_fixed",
+      "tokens": 1984
+    },
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 1.2254570507506588,
+          "pending_at_end": 1,
+          "selected_information_bits": 139.51504770044724,
+          "stable_bits_released": 138,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.130824459630038,
+          "pending_at_end": 0,
+          "selected_information_bits": 161.69375685541868,
+          "stable_bits_released": 162,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 1.0113901984680689,
+          "pending_at_end": 2,
+          "selected_information_bits": 125.00147040934128,
+          "stable_bits_released": 123,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.8836297886358438,
+          "pending_at_end": 0,
+          "selected_information_bits": 97.68928330589237,
+          "stable_bits_released": 99,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "mean_table_entropy_bits": 0.6184616440373436,
+          "pending_at_end": 1,
+          "selected_information_bits": 71.80250940213057,
+          "stable_bits_released": 72,
+          "tokens": 128
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.7736357279658485,
+          "pending_at_end": 0,
+          "selected_information_bits": 101.39989132044545,
+          "stable_bits_released": 103,
+          "tokens": 128
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "mean_table_entropy_bits": 0.5207117230682192,
+          "pending_at_end": 5,
+          "selected_information_bits": 75.80096477723497,
+          "stable_bits_released": 70,
+          "tokens": 128
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.7624087720090377,
+          "pending_at_end": 6,
+          "selected_information_bits": 78.89000505250299,
+          "stable_bits_released": 78,
+          "tokens": 128
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "mean_table_entropy_bits": 0.6254091107042099,
+          "pending_at_end": 1,
+          "selected_information_bits": 76.57416348021145,
+          "stable_bits_released": 81,
+          "tokens": 128
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.6081618969715102,
+          "pending_at_end": 1,
+          "selected_information_bits": 71.39711232772733,
+          "stable_bits_released": 71,
+          "tokens": 128
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "mean_table_entropy_bits": 0.3896161023211284,
+          "pending_at_end": 0,
+          "selected_information_bits": 35.57196157369716,
+          "stable_bits_released": 38,
+          "tokens": 128
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.42144913140605605,
+          "pending_at_end": 0,
+          "selected_information_bits": 61.44179503130847,
+          "stable_bits_released": 60,
+          "tokens": 128
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1664,
+          "mean_table_entropy_bits": 0.5281894523882075,
+          "pending_at_end": 0,
+          "selected_information_bits": 60.56447905361467,
+          "stable_bits_released": 61,
+          "tokens": 128
+        },
+        {
+          "first_token": 1665,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.5634061575581643,
+          "pending_at_end": 0,
+          "selected_information_bits": 75.48277427475793,
+          "stable_bits_released": 76,
+          "tokens": 128
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1920,
+          "mean_table_entropy_bits": 0.4870474579876766,
+          "pending_at_end": 1,
+          "selected_information_bits": 57.52498623791591,
+          "stable_bits_released": 56,
+          "tokens": 128
+        },
+        {
+          "first_token": 1921,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.5623215571582393,
+          "pending_at_end": 2,
+          "selected_information_bits": 27.15195321259143,
+          "stable_bits_released": 26,
+          "tokens": 64
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.1781407551903478,
+          "pending_at_end": 0,
+          "selected_information_bits": 301.208804555866,
+          "stable_bits_released": 300,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.9475099935519563,
+          "pending_at_end": 0,
+          "selected_information_bits": 222.69075371523388,
+          "stable_bits_released": 222,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.6960486860015961,
+          "pending_at_end": 0,
+          "selected_information_bits": 173.20240072257613,
+          "stable_bits_released": 175,
+          "tokens": 256
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.6415602475386285,
+          "pending_at_end": 6,
+          "selected_information_bits": 154.69096982973792,
+          "stable_bits_released": 148,
+          "tokens": 256
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.6167855038378601,
+          "pending_at_end": 1,
+          "selected_information_bits": 147.97127580793895,
+          "stable_bits_released": 152,
+          "tokens": 256
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.4055326168635926,
+          "pending_at_end": 0,
+          "selected_information_bits": 97.0137566050057,
+          "stable_bits_released": 98,
+          "tokens": 256
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.5457978049731856,
+          "pending_at_end": 0,
+          "selected_information_bits": 136.0472533283727,
+          "stable_bits_released": 137,
+          "tokens": 256
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.5121388243778643,
+          "pending_at_end": 2,
+          "selected_information_bits": 84.67693945050739,
+          "stable_bits_released": 82,
+          "tokens": 192
+        }
+      ],
+      "case_id": "R-c1-n128-r0",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
+      "mean_selected_information": 0.6640635856931641,
+      "mean_table_entropy": 0.6987715775794275,
+      "phase": "main_fixed",
+      "tokens": 1984
+    },
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 1.4666224028791996,
+          "pending_at_end": 1,
+          "selected_information_bits": 183.45591735083227,
+          "stable_bits_released": 181,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.5723696256322797,
+          "pending_at_end": 8,
+          "selected_information_bits": 237.56482488389437,
+          "stable_bits_released": 231,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 1.4810148641585272,
+          "pending_at_end": 2,
+          "selected_information_bits": 176.95283028468899,
+          "stable_bits_released": 183,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 1.1688524314525395,
+          "pending_at_end": 0,
+          "selected_information_bits": 148.44351726350058,
+          "stable_bits_released": 151,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 563,
+          "mean_table_entropy_bits": 1.1878263657542958,
+          "pending_at_end": 1,
+          "selected_information_bits": 55.34179749782077,
+          "stable_bits_released": 54,
+          "tokens": 51
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.5194960142557392,
+          "pending_at_end": 8,
+          "selected_information_bits": 421.02074223472647,
+          "stable_bits_released": 412,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 1.3249336478055331,
+          "pending_at_end": 0,
+          "selected_information_bits": 325.3963475481896,
+          "stable_bits_released": 334,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 563,
+          "mean_table_entropy_bits": 1.1878263657542958,
+          "pending_at_end": 1,
+          "selected_information_bits": 55.34179749782077,
+          "stable_bits_released": 54,
+          "tokens": 51
+        }
+      ],
+      "case_id": "R-c2-n32-r0",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
+      "mean_selected_information": 1.4240832811380764,
+      "mean_table_entropy": 1.4009824833768292,
+      "phase": "main_fixed",
+      "tokens": 563
+    },
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 1.6707590278849178,
+          "pending_at_end": 4,
+          "selected_information_bits": 208.18163419963201,
+          "stable_bits_released": 203,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.094037066739023,
+          "pending_at_end": 2,
+          "selected_information_bits": 134.77708202790046,
+          "stable_bits_released": 137,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 1.1135437878804681,
+          "pending_at_end": 0,
+          "selected_information_bits": 124.30285410541046,
+          "stable_bits_released": 126,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.7346122859744288,
+          "pending_at_end": 0,
+          "selected_information_bits": 89.93418584399045,
+          "stable_bits_released": 90,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "mean_table_entropy_bits": 0.6797384965587234,
+          "pending_at_end": 0,
+          "selected_information_bits": 107.96966081405455,
+          "stable_bits_released": 108,
+          "tokens": 128
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.5841307687294798,
+          "pending_at_end": 2,
+          "selected_information_bits": 68.02065512750717,
+          "stable_bits_released": 66,
+          "tokens": 128
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "mean_table_entropy_bits": 0.5671914955445703,
+          "pending_at_end": 1,
+          "selected_information_bits": 75.59160766984543,
+          "stable_bits_released": 76,
+          "tokens": 128
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.1462757600897793,
+          "pending_at_end": 0,
+          "selected_information_bits": 6.752776320090407,
+          "stable_bits_released": 9,
+          "tokens": 128
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "mean_table_entropy_bits": 0.14358501013088598,
+          "pending_at_end": 1,
+          "selected_information_bits": 25.257799762261087,
+          "stable_bits_released": 24,
+          "tokens": 128
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.14693071323701837,
+          "pending_at_end": 1,
+          "selected_information_bits": 24.610056467151818,
+          "stable_bits_released": 24,
+          "tokens": 128
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "mean_table_entropy_bits": 0.13054053252160233,
+          "pending_at_end": 1,
+          "selected_information_bits": 15.683539024086697,
+          "stable_bits_released": 16,
+          "tokens": 128
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.49706189903674114,
+          "pending_at_end": 0,
+          "selected_information_bits": 79.34436335745512,
+          "stable_bits_released": 80,
+          "tokens": 128
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1664,
+          "mean_table_entropy_bits": 0.13256726371042904,
+          "pending_at_end": 0,
+          "selected_information_bits": 12.081784435904478,
+          "stable_bits_released": 13,
+          "tokens": 128
+        },
+        {
+          "first_token": 1665,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.20394503605913553,
+          "pending_at_end": 0,
+          "selected_information_bits": 16.86983934411792,
+          "stable_bits_released": 16,
+          "tokens": 128
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1920,
+          "mean_table_entropy_bits": 0.2704872873998005,
+          "pending_at_end": 2,
+          "selected_information_bits": 44.3965549090057,
+          "stable_bits_released": 43,
+          "tokens": 128
+        },
+        {
+          "first_token": 1921,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.4995620102426102,
+          "pending_at_end": 1,
+          "selected_information_bits": 35.470941771733166,
+          "stable_bits_released": 36,
+          "tokens": 64
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.3823980473119701,
+          "pending_at_end": 2,
+          "selected_information_bits": 342.95871622753265,
+          "stable_bits_released": 340,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.9240780369274484,
+          "pending_at_end": 0,
+          "selected_information_bits": 214.23703994940078,
+          "stable_bits_released": 216,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.6319346326441015,
+          "pending_at_end": 2,
+          "selected_information_bits": 175.99031594156187,
+          "stable_bits_released": 174,
+          "tokens": 256
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.35673362781717494,
+          "pending_at_end": 0,
+          "selected_information_bits": 82.34438398993584,
+          "stable_bits_released": 85,
+          "tokens": 256
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.14525786168395222,
+          "pending_at_end": 1,
+          "selected_information_bits": 49.867856229412915,
+          "stable_bits_released": 48,
+          "tokens": 256
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.3138012157791717,
+          "pending_at_end": 0,
+          "selected_information_bits": 95.02790238154184,
+          "stable_bits_released": 96,
+          "tokens": 256
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.16825614988478227,
+          "pending_at_end": 0,
+          "selected_information_bits": 28.951623780022405,
+          "stable_bits_released": 29,
+          "tokens": 256
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.3468455283474037,
+          "pending_at_end": 1,
+          "selected_information_bits": 79.86749668073884,
+          "stable_bits_released": 79,
+          "tokens": 192
+        }
+      ],
+      "case_id": "R-c2-n128-r0",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
+      "mean_selected_information": 0.5389341407157999,
+      "mean_table_entropy": 0.5396895120398908,
+      "phase": "main_fixed",
+      "tokens": 1984
+    },
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 1.3063688759545677,
+          "pending_at_end": 1,
+          "selected_information_bits": 176.7327068336638,
+          "stable_bits_released": 175,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.2011517029667576,
+          "pending_at_end": 1,
+          "selected_information_bits": 115.71899336012034,
+          "stable_bits_released": 116,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 0.9612380120656058,
+          "pending_at_end": 1,
+          "selected_information_bits": 119.74749288168599,
+          "stable_bits_released": 119,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.9050834970785898,
+          "pending_at_end": 1,
+          "selected_information_bits": 119.2426911695709,
+          "stable_bits_released": 120,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "mean_table_entropy_bits": 0.5183306466022043,
+          "pending_at_end": 0,
+          "selected_information_bits": 78.26682660448924,
+          "stable_bits_released": 79,
+          "tokens": 128
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.2267153057532539,
+          "pending_at_end": 0,
+          "selected_information_bits": 22.793021950745853,
+          "stable_bits_released": 23,
+          "tokens": 128
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "mean_table_entropy_bits": 0.355035185363128,
+          "pending_at_end": 6,
+          "selected_information_bits": 43.71297051642781,
+          "stable_bits_released": 37,
+          "tokens": 128
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.018865930006936264,
+          "pending_at_end": 6,
+          "selected_information_bits": 0.36822302115921673,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "mean_table_entropy_bits": 0.007734132932279695,
+          "pending_at_end": 6,
+          "selected_information_bits": 0.09481631748582567,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.0058528465029943025,
+          "pending_at_end": 0,
+          "selected_information_bits": 0.06764648303512136,
+          "stable_bits_released": 7,
+          "tokens": 128
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "mean_table_entropy_bits": 0.05706644229489328,
+          "pending_at_end": 0,
+          "selected_information_bits": 9.399174542454578,
+          "stable_bits_released": 9,
+          "tokens": 128
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.5111101214347789,
+          "pending_at_end": 0,
+          "selected_information_bits": 56.78389442149205,
+          "stable_bits_released": 57,
+          "tokens": 128
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1664,
+          "mean_table_entropy_bits": 0.2861351165463874,
+          "pending_at_end": 0,
+          "selected_information_bits": 40.65511550099576,
+          "stable_bits_released": 40,
+          "tokens": 128
+        },
+        {
+          "first_token": 1665,
+          "last_token": 1783,
+          "mean_table_entropy_bits": 0.14686530038703086,
+          "pending_at_end": 1,
+          "selected_information_bits": 18.507145471632946,
+          "stable_bits_released": 18,
+          "tokens": 119
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.2537602894606628,
+          "pending_at_end": 1,
+          "selected_information_bits": 292.45170019378446,
+          "stable_bits_released": 291,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.9331607545720977,
+          "pending_at_end": 1,
+          "selected_information_bits": 238.99018405125696,
+          "stable_bits_released": 239,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.37252297617772934,
+          "pending_at_end": 0,
+          "selected_information_bits": 101.05984855523522,
+          "stable_bits_released": 102,
+          "tokens": 256
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.1869505576850322,
+          "pending_at_end": 6,
+          "selected_information_bits": 44.08119353758705,
+          "stable_bits_released": 37,
+          "tokens": 256
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.006793489717636989,
+          "pending_at_end": 0,
+          "selected_information_bits": 0.16246280052094728,
+          "stable_bits_released": 7,
+          "tokens": 256
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.28408828186483615,
+          "pending_at_end": 0,
+          "selected_information_bits": 66.18306896394681,
+          "stable_bits_released": 66,
+          "tokens": 256
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1783,
+          "mean_table_entropy_bits": 0.21903751280969375,
+          "pending_at_end": 1,
+          "selected_information_bits": 59.1622609726287,
+          "stable_bits_released": 58,
+          "tokens": 247
+        }
+      ],
+      "case_id": "R-c3-n32-r0",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
+      "mean_selected_information": 0.44985458164607933,
+      "mean_table_entropy": 0.4664301801067643,
+      "phase": "main_fixed",
+      "tokens": 1783
+    },
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 1.5275344042688772,
+          "pending_at_end": 1,
+          "selected_information_bits": 189.7375084572086,
+          "stable_bits_released": 188,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.16840504431863,
+          "pending_at_end": 2,
+          "selected_information_bits": 150.02123843868657,
+          "stable_bits_released": 148,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 0.9914547442293242,
+          "pending_at_end": 2,
+          "selected_information_bits": 101.42722735702111,
+          "stable_bits_released": 103,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.9935075803465497,
+          "pending_at_end": 0,
+          "selected_information_bits": 110.08231586326927,
+          "stable_bits_released": 111,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "mean_table_entropy_bits": 0.8057201519167032,
+          "pending_at_end": 5,
+          "selected_information_bits": 103.37987398058078,
+          "stable_bits_released": 98,
+          "tokens": 128
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.659917601197893,
+          "pending_at_end": 2,
+          "selected_information_bits": 91.17595302394467,
+          "stable_bits_released": 95,
+          "tokens": 128
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "mean_table_entropy_bits": 0.5902271748317848,
+          "pending_at_end": 0,
+          "selected_information_bits": 69.30080548288593,
+          "stable_bits_released": 72,
+          "tokens": 128
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.4214482272933694,
+          "pending_at_end": 1,
+          "selected_information_bits": 79.56465969937612,
+          "stable_bits_released": 77,
+          "tokens": 128
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "mean_table_entropy_bits": 0.6662487549492426,
+          "pending_at_end": 1,
+          "selected_information_bits": 92.72298589576349,
+          "stable_bits_released": 94,
+          "tokens": 128
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.48898884720139923,
+          "pending_at_end": 0,
+          "selected_information_bits": 80.14465530100179,
+          "stable_bits_released": 80,
+          "tokens": 128
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "mean_table_entropy_bits": 0.6083011330197806,
+          "pending_at_end": 4,
+          "selected_information_bits": 92.97774803487616,
+          "stable_bits_released": 90,
+          "tokens": 128
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.26326412801743293,
+          "pending_at_end": 0,
+          "selected_information_bits": 24.98556009084847,
+          "stable_bits_released": 29,
+          "tokens": 128
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1664,
+          "mean_table_entropy_bits": 0.4730657705431382,
+          "pending_at_end": 1,
+          "selected_information_bits": 53.82027133960131,
+          "stable_bits_released": 52,
+          "tokens": 128
+        },
+        {
+          "first_token": 1665,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.2393038023041331,
+          "pending_at_end": 0,
+          "selected_information_bits": 15.638309678998006,
+          "stable_bits_released": 17,
+          "tokens": 128
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1920,
+          "mean_table_entropy_bits": 0.01810889443360774,
+          "pending_at_end": 0,
+          "selected_information_bits": 0.27831395850644314,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1921,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.018252483891288345,
+          "pending_at_end": 0,
+          "selected_information_bits": 0.13671088423476463,
+          "stable_bits_released": 0,
+          "tokens": 64
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.3479697242937538,
+          "pending_at_end": 2,
+          "selected_information_bits": 339.7587468958951,
+          "stable_bits_released": 336,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.9924811622879369,
+          "pending_at_end": 0,
+          "selected_information_bits": 211.5095432202904,
+          "stable_bits_released": 214,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.7328188765572978,
+          "pending_at_end": 2,
+          "selected_information_bits": 194.55582700452527,
+          "stable_bits_released": 193,
+          "tokens": 256
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.5058377010625777,
+          "pending_at_end": 1,
+          "selected_information_bits": 148.8654651822622,
+          "stable_bits_released": 149,
+          "tokens": 256
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.5776188010753212,
+          "pending_at_end": 0,
+          "selected_information_bits": 172.86764119676536,
+          "stable_bits_released": 174,
+          "tokens": 256
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.435782630518607,
+          "pending_at_end": 0,
+          "selected_information_bits": 117.96330812572465,
+          "stable_bits_released": 119,
+          "tokens": 256
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.3561847864236357,
+          "pending_at_end": 0,
+          "selected_information_bits": 69.45858101859932,
+          "stable_bits_released": 69,
+          "tokens": 256
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.018156757586167947,
+          "pending_at_end": 0,
+          "selected_information_bits": 0.415024842741208,
+          "stable_bits_released": 0,
+          "tokens": 192
+        }
+      ],
+      "case_id": "R-c3-n128-r0",
+      "independent_interval_agreement": true,
+      "independent_packet_prefix_agreement": true,
+      "mean_selected_information": 0.6327591418784292,
+      "mean_table_entropy": 0.6402982258591943,
+      "phase": "main_fixed",
+      "tokens": 1984
     }
   ],
+  "qualification_gate_passed": true,
   "recognition": [
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 1.0,
+      "bootstrap_valid_draws": 2000,
       "cluster_interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "context_auc": {
-        "0": null,
-        "1": null,
-        "2": null,
-        "3": null
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 1.0992831807620276,
+      "encrypted_mean": 5.816595716796447,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 8,
       "method": "F",
       "metric": "mean_nll_bits"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 1.0,
+      "bootstrap_valid_draws": 2000,
       "cluster_interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "context_auc": {
-        "0": null,
-        "1": null,
-        "2": null,
-        "3": null
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 0.40501081559640534,
+      "encrypted_mean": 2.7437540137231684,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 8,
       "method": "F",
       "metric": "mean_log2_rank"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 1.0,
+      "bootstrap_valid_draws": 2000,
       "cluster_interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "context_auc": {
-        "0": null,
-        "1": null,
-        "2": null,
-        "3": null
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 1.0537141119372373,
+      "encrypted_mean": 5.315413643519258,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 8,
       "method": "F",
       "metric": "mean_admissible_nll_bits"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 0.5,
+      "bootstrap_valid_draws": 2000,
       "cluster_interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "context_auc": {
-        "0": null,
-        "1": null,
-        "2": null,
-        "3": null
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 1.0,
+      "encrypted_mean": 1.0,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 8,
       "method": "F",
       "metric": "member_fraction"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 0.5,
+      "bootstrap_valid_draws": 2000,
       "cluster_interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "context_auc": {
-        "0": null,
-        "1": null,
-        "2": null,
-        "3": null
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 1.0,
+      "encrypted_mean": 1.0,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 8,
       "method": "F",
       "metric": "format_accepted"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 0.5,
+      "bootstrap_valid_draws": 2000,
       "cluster_interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "context_auc": {
-        "0": null,
-        "1": null,
-        "2": null,
-        "3": null
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 1.0,
+      "encrypted_mean": 1.0,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 8,
       "method": "F",
       "metric": "format_and_kem_canonical"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 0.5,
+      "bootstrap_valid_draws": 2000,
       "cluster_interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "context_auc": {
-        "0": null,
-        "1": null,
-        "2": null,
-        "3": null
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.5
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 296.0,
+      "encrypted_mean": 296.0,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 8,
       "method": "F",
       "metric": "token_count"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 0.453125,
+      "bootstrap_valid_draws": 2000,
       "cluster_interval": [
-        null,
-        null
+        0.234375,
+        0.765625
       ],
       "context_auc": {
-        "0": null,
-        "1": null,
-        "2": null,
-        "3": null
+        "0": 0.75,
+        "1": 0.5,
+        "2": 0.25,
+        "3": 0.5
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 1399.75,
+      "encrypted_mean": 1322.75,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 8,
       "method": "F",
       "metric": "utf8_bytes"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 0.5,
+      "bootstrap_valid_draws": 1677,
       "cluster_interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
       "context_auc": {
         "0": null,
         "1": null,
-        "2": null,
-        "3": null
+        "2": 1.0,
+        "3": 0.0
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 0.708308707156398,
+      "encrypted_mean": 0.9821207726750056,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 2,
       "method": "R",
       "metric": "mean_nll_bits"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 0.5,
+      "bootstrap_valid_draws": 1677,
       "cluster_interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
       "context_auc": {
         "0": null,
         "1": null,
-        "2": null,
-        "3": null
+        "2": 1.0,
+        "3": 0.0
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 0.2505900292904537,
+      "encrypted_mean": 0.34401030409253797,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 2,
       "method": "R",
       "metric": "mean_log2_rank"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 0.5,
+      "bootstrap_valid_draws": 1677,
       "cluster_interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
       "context_auc": {
         "0": null,
         "1": null,
-        "2": null,
-        "3": null
+        "2": 1.0,
+        "3": 0.0
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 0.6792410398751716,
+      "encrypted_mean": 0.9368637029333607,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 2,
       "method": "R",
       "metric": "mean_admissible_nll_bits"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 0.5,
+      "bootstrap_valid_draws": 1677,
       "cluster_interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "context_auc": {
         "0": null,
         "1": null,
-        "2": null,
-        "3": null
+        "2": 0.5,
+        "3": 0.5
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 1.0,
+      "encrypted_mean": 1.0,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 2,
       "method": "R",
       "metric": "member_fraction"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 1.0,
+      "bootstrap_valid_draws": 1677,
       "cluster_interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "context_auc": {
         "0": null,
         "1": null,
-        "2": null,
-        "3": null
+        "2": 1.0,
+        "3": 1.0
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 0.0,
+      "encrypted_mean": 1.0,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 2,
       "method": "R",
       "metric": "format_accepted"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 1.0,
+      "bootstrap_valid_draws": 1677,
       "cluster_interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "context_auc": {
         "0": null,
         "1": null,
-        "2": null,
-        "3": null
+        "2": 1.0,
+        "3": 1.0
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 0.0,
+      "encrypted_mean": 1.0,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 2,
       "method": "R",
       "metric": "format_and_kem_canonical"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 0.5,
+      "bootstrap_valid_draws": 1677,
       "cluster_interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "context_auc": {
         "0": null,
         "1": null,
-        "2": null,
-        "3": null
+        "2": 0.5,
+        "3": 0.5
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 1173.0,
+      "encrypted_mean": 1173.0,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 2,
       "method": "R",
       "metric": "token_count"
     },
     {
-      "auc_higher_is_carrier": null,
+      "auc_higher_is_carrier": 0.5,
+      "bootstrap_valid_draws": 1677,
       "cluster_interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
       "context_auc": {
         "0": null,
         "1": null,
-        "2": null,
-        "3": null
+        "2": 1.0,
+        "3": 0.0
       },
-      "control_mean": null,
-      "encrypted_mean": null,
+      "control_mean": 5535.5,
+      "encrypted_mean": 4574.0,
       "family": "B",
-      "matched_scorable_pairs": 0,
+      "matched_scorable_pairs": 2,
       "method": "R",
       "metric": "utf8_bytes"
     }
   ],
   "recognition_counts": [
     {
-      "all_candidates_member": 0,
-      "attempted": 0,
+      "all_candidates_member": 8,
+      "attempted": 8,
       "capacity_failures": 0,
-      "delivered": 0,
+      "delivered": 8,
       "family": "B",
-      "format_accepted": 0,
-      "format_and_kem_canonical": 0,
+      "format_accepted": 8,
+      "format_and_kem_canonical": 8,
       "invalid_utf8": 0,
       "method": "F",
       "retokenization_drift": 0,
       "role": "encrypted",
-      "scorable": 0
+      "scorable": 8
     },
     {
-      "all_candidates_member": 0,
-      "attempted": 0,
+      "all_candidates_member": 8,
+      "attempted": 8,
       "capacity_failures": 0,
-      "delivered": 0,
+      "delivered": 8,
       "family": "B",
-      "format_accepted": 0,
-      "format_and_kem_canonical": 0,
+      "format_accepted": 8,
+      "format_and_kem_canonical": 8,
       "invalid_utf8": 0,
       "method": "F",
       "retokenization_drift": 0,
       "role": "control",
-      "scorable": 0
+      "scorable": 8
     },
     {
-      "all_candidates_member": 0,
-      "attempted": 0,
+      "all_candidates_member": 2,
+      "attempted": 8,
+      "capacity_failures": 6,
+      "delivered": 2,
+      "family": "B",
+      "format_accepted": 2,
+      "format_and_kem_canonical": 2,
+      "invalid_utf8": 0,
+      "method": "R",
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 2
+    },
+    {
+      "all_candidates_member": 8,
+      "attempted": 8,
       "capacity_failures": 0,
-      "delivered": 0,
+      "delivered": 8,
       "family": "B",
       "format_accepted": 0,
       "format_and_kem_canonical": 0,
       "invalid_utf8": 0,
       "method": "R",
       "retokenization_drift": 0,
-      "role": "encrypted",
-      "scorable": 0
-    },
-    {
-      "all_candidates_member": 0,
-      "attempted": 0,
-      "capacity_failures": 0,
-      "delivered": 0,
-      "family": "B",
-      "format_accepted": 0,
-      "format_and_kem_canonical": 0,
-      "invalid_utf8": 0,
-      "method": "R",
-      "retokenization_drift": 0,
       "role": "control",
-      "scorable": 0
+      "scorable": 8
     }
   ],
   "recovery": [
     {
-      "aggregate_recovered_bits_per_delivered_token": null,
-      "attempted": 0,
-      "authenticated_exact": 0,
+      "aggregate_recovered_bits_per_delivered_token": 1.28,
+      "attempted": 4,
+      "authenticated_exact": 4,
       "capacity_failures": 0,
-      "carrier_token_max": null,
-      "carrier_token_min": null,
-      "mean_attempt_useful_bits_per_token": null,
-      "mean_success_payload_bits_per_token": null,
+      "carrier_token_max": 200,
+      "carrier_token_min": 200,
+      "mean_attempt_useful_bits_per_token": 1.28,
+      "mean_success_payload_bits_per_token": 1.28,
       "method": "F",
       "payload_bytes": 32,
-      "planned": 0,
-      "recovered_bytes_per_charged_second": null,
+      "planned": 4,
+      "recovered_bytes_per_charged_second": 0.8631458373904991,
       "recovery_cluster_interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
-      "recovery_fraction": null,
+      "recovery_fraction": 1.0,
       "useful_rate_cluster_interval": [
-        null,
-        null
+        1.28,
+        1.28
       ]
     },
     {
-      "aggregate_recovered_bits_per_delivered_token": null,
-      "attempted": 0,
-      "authenticated_exact": 0,
+      "aggregate_recovered_bits_per_delivered_token": 2.6122448979591835,
+      "attempted": 4,
+      "authenticated_exact": 4,
       "capacity_failures": 0,
-      "carrier_token_max": null,
-      "carrier_token_min": null,
-      "mean_attempt_useful_bits_per_token": null,
-      "mean_success_payload_bits_per_token": null,
+      "carrier_token_max": 392,
+      "carrier_token_min": 392,
+      "mean_attempt_useful_bits_per_token": 2.6122448979591835,
+      "mean_success_payload_bits_per_token": 2.6122448979591835,
       "method": "F",
       "payload_bytes": 128,
-      "planned": 0,
-      "recovered_bytes_per_charged_second": null,
+      "planned": 4,
+      "recovered_bytes_per_charged_second": 2.1092736303855797,
       "recovery_cluster_interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
-      "recovery_fraction": null,
+      "recovery_fraction": 1.0,
       "useful_rate_cluster_interval": [
-        null,
-        null
+        2.6122448979591835,
+        2.6122448979591835
       ]
     },
     {
-      "aggregate_recovered_bits_per_delivered_token": null,
-      "attempted": 0,
-      "authenticated_exact": 0,
-      "capacity_failures": 0,
-      "carrier_token_max": null,
-      "carrier_token_min": null,
-      "mean_attempt_useful_bits_per_token": null,
-      "mean_success_payload_bits_per_token": null,
+      "aggregate_recovered_bits_per_delivered_token": 0.21824381926683717,
+      "attempted": 4,
+      "authenticated_exact": 2,
+      "capacity_failures": 2,
+      "carrier_token_max": 1783,
+      "carrier_token_min": 563,
+      "mean_attempt_useful_bits_per_token": 0.14957129152475174,
+      "mean_success_payload_bits_per_token": 0.2991425830495035,
       "method": "R",
       "payload_bytes": 32,
-      "planned": 0,
-      "recovered_bytes_per_charged_second": null,
+      "planned": 4,
+      "recovered_bytes_per_charged_second": 0.08628827724166017,
       "recovery_cluster_interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
-      "recovery_fraction": null,
+      "recovery_fraction": 0.5,
       "useful_rate_cluster_interval": [
-        null,
-        null
+        0.0,
+        0.3410301953818828
       ]
     },
     {
       "aggregate_recovered_bits_per_delivered_token": null,
-      "attempted": 0,
+      "attempted": 4,
       "authenticated_exact": 0,
-      "capacity_failures": 0,
+      "capacity_failures": 4,
       "carrier_token_max": null,
       "carrier_token_min": null,
-      "mean_attempt_useful_bits_per_token": null,
+      "mean_attempt_useful_bits_per_token": 0.0,
       "mean_success_payload_bits_per_token": null,
       "method": "R",
       "payload_bytes": 128,
-      "planned": 0,
-      "recovered_bytes_per_charged_second": null,
+      "planned": 4,
+      "recovered_bytes_per_charged_second": 0.0,
       "recovery_cluster_interval": [
-        null,
-        null
+        0.0,
+        0.0
       ],
-      "recovery_fraction": null,
+      "recovery_fraction": 0.0,
       "useful_rate_cluster_interval": [
-        null,
-        null
+        0.0,
+        0.0
       ]
     }
   ],
   "remaining_parent_allowance": {
-    "cases": 118,
-    "seconds": 13012.306359257,
-    "tokens": 279952
+    "cases": 81,
+    "seconds": 8789.737366439997,
+    "tokens": 218107
   },
   "replays": [
     {
       "authenticated_exact": true,
       "case_id": "diagnostic-replay-qual-HPKE-32",
+      "independent_trace_agreement": true,
       "original_binding_authenticated": true,
       "phase": "diagnostic",
       "raw_envelope_exact": true
@@ -2019,9 +5058,50 @@
     {
       "authenticated_exact": false,
       "case_id": "diagnostic-replay-qual-synthetic-32",
+      "independent_trace_agreement": true,
       "original_binding_authenticated": false,
       "phase": "diagnostic",
       "raw_envelope_exact": true
+    },
+    {
+      "authenticated_exact": true,
+      "case_id": "replay-F-c0-n32",
+      "independent_trace_agreement": true,
+      "original_binding_authenticated": false,
+      "phase": "fresh_receiver",
+      "raw_envelope_exact": null
+    },
+    {
+      "authenticated_exact": true,
+      "case_id": "replay-F-c0-n128",
+      "independent_trace_agreement": true,
+      "original_binding_authenticated": false,
+      "phase": "fresh_receiver",
+      "raw_envelope_exact": null
+    },
+    {
+      "authenticated_exact": true,
+      "case_id": "replay-F-c2-n32",
+      "independent_trace_agreement": true,
+      "original_binding_authenticated": false,
+      "phase": "fresh_receiver",
+      "raw_envelope_exact": null
+    },
+    {
+      "authenticated_exact": true,
+      "case_id": "replay-R-c2-n32",
+      "independent_trace_agreement": true,
+      "original_binding_authenticated": false,
+      "phase": "fresh_receiver",
+      "raw_envelope_exact": null
+    },
+    {
+      "authenticated_exact": true,
+      "case_id": "replay-F-c2-n128",
+      "independent_trace_agreement": true,
+      "original_binding_authenticated": false,
+      "phase": "fresh_receiver",
+      "raw_envelope_exact": null
     }
   ],
   "schema_version": 1,
@@ -2034,271 +5114,296 @@
   },
   "size_recognition": [
     {
-      "auc": null,
+      "auc": 1.0,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "method": "F",
       "metric": "mean_nll_bits",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 1.0,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "method": "F",
       "metric": "mean_log2_rank",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 1.0,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "method": "F",
       "metric": "mean_admissible_nll_bits",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "method": "F",
       "metric": "member_fraction",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "method": "F",
       "metric": "format_accepted",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "method": "F",
       "metric": "format_and_kem_canonical",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "method": "F",
       "metric": "token_count",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 0.375,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
       "method": "F",
       "metric": "utf8_bytes",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 1.0,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "method": "F",
       "metric": "mean_nll_bits",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 128
     },
     {
-      "auc": null,
+      "auc": 1.0,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "method": "F",
       "metric": "mean_log2_rank",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 128
     },
     {
-      "auc": null,
+      "auc": 1.0,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "method": "F",
       "metric": "mean_admissible_nll_bits",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 128
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "method": "F",
       "metric": "member_fraction",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 128
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "method": "F",
       "metric": "format_accepted",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 128
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "method": "F",
       "metric": "format_and_kem_canonical",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 128
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "method": "F",
       "metric": "token_count",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 128
     },
     {
-      "auc": null,
+      "auc": 0.4375,
+      "bootstrap_valid_draws": 2000,
       "interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
       "method": "F",
       "metric": "utf8_bytes",
-      "pairs": 0,
+      "pairs": 4,
       "payload_bytes": 128
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 1856,
       "interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
       "method": "R",
       "metric": "mean_nll_bits",
-      "pairs": 0,
+      "pairs": 2,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 1856,
       "interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
       "method": "R",
       "metric": "mean_log2_rank",
-      "pairs": 0,
+      "pairs": 2,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 1856,
       "interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
       "method": "R",
       "metric": "mean_admissible_nll_bits",
-      "pairs": 0,
+      "pairs": 2,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 1856,
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "method": "R",
       "metric": "member_fraction",
-      "pairs": 0,
+      "pairs": 2,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 1.0,
+      "bootstrap_valid_draws": 1856,
       "interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "method": "R",
       "metric": "format_accepted",
-      "pairs": 0,
+      "pairs": 2,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 1.0,
+      "bootstrap_valid_draws": 1856,
       "interval": [
-        null,
-        null
+        1.0,
+        1.0
       ],
       "method": "R",
       "metric": "format_and_kem_canonical",
-      "pairs": 0,
+      "pairs": 2,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 1856,
       "interval": [
-        null,
-        null
+        0.5,
+        0.5
       ],
       "method": "R",
       "metric": "token_count",
-      "pairs": 0,
+      "pairs": 2,
       "payload_bytes": 32
     },
     {
-      "auc": null,
+      "auc": 0.5,
+      "bootstrap_valid_draws": 1856,
       "interval": [
-        null,
-        null
+        0.0,
+        1.0
       ],
       "method": "R",
       "metric": "utf8_bytes",
-      "pairs": 0,
+      "pairs": 2,
       "payload_bytes": 32
     },
     {
       "auc": null,
+      "bootstrap_valid_draws": 0,
       "interval": [
         null,
         null
@@ -2310,6 +5415,7 @@
     },
     {
       "auc": null,
+      "bootstrap_valid_draws": 0,
       "interval": [
         null,
         null
@@ -2321,6 +5427,7 @@
     },
     {
       "auc": null,
+      "bootstrap_valid_draws": 0,
       "interval": [
         null,
         null
@@ -2332,6 +5439,7 @@
     },
     {
       "auc": null,
+      "bootstrap_valid_draws": 0,
       "interval": [
         null,
         null
@@ -2343,6 +5451,7 @@
     },
     {
       "auc": null,
+      "bootstrap_valid_draws": 0,
       "interval": [
         null,
         null
@@ -2354,6 +5463,7 @@
     },
     {
       "auc": null,
+      "bootstrap_valid_draws": 0,
       "interval": [
         null,
         null
@@ -2365,6 +5475,7 @@
     },
     {
       "auc": null,
+      "bootstrap_valid_draws": 0,
       "interval": [
         null,
         null
@@ -2376,6 +5487,7 @@
     },
     {
       "auc": null,
+      "bootstrap_valid_draws": 0,
       "interval": [
         null,
         null
@@ -2394,20 +5506,32 @@
     {
       "case_id": "diagnostic-replay-qual-synthetic-128",
       "reason": "Predetermined source unavailable; no replacement"
+    },
+    {
+      "case_id": "replay-R-c0-n32",
+      "reason": "Predetermined source unavailable; no replacement"
+    },
+    {
+      "case_id": "replay-R-c0-n128",
+      "reason": "Predetermined source unavailable; no replacement"
+    },
+    {
+      "case_id": "replay-R-c2-n128",
+      "reason": "Predetermined source unavailable; no replacement"
     }
   ],
   "stage8_usage": {
-    "cases": 6,
-    "seconds": 934.306489325998,
-    "tokens": 13183
+    "cases": 43,
+    "seconds": 5156.875482143001,
+    "tokens": 75028
   },
   "starting_commit": "e55680169ef7c0e7110bfaddc0b5392e28419bb8",
   "stop_reason": "Frozen phase completed",
-  "unique_worker_pids": 6,
+  "unique_worker_pids": 43,
   "unsettled_attempts": [],
   "unused_stage8_allowance": {
-    "cases": 82,
-    "seconds": 9865.693510674002,
-    "tokens": 216817
+    "cases": 45,
+    "seconds": 5643.124517856999,
+    "tokens": 154972
   }
 }

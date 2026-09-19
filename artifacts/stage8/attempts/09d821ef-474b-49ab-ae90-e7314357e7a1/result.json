@@ -1,0 +1,134 @@
+{
+  "attempt_id": "09d821ef-474b-49ab-ae90-e7314357e7a1",
+  "attempt_useful_bits_per_transmitted_token": 2.6122448979591835,
+  "authenticated": true,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 17,
+      "examined_total": 6273,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 1,
+        "special_control": 0
+      },
+      "steps": 392
+    },
+    "public_scoring": {
+      "examined_max": 17,
+      "examined_total": 6273,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 1,
+        "special_control": 0
+      },
+      "steps": 392
+    },
+    "receiver": {
+      "examined_max": 17,
+      "examined_total": 6273,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 1,
+        "special_control": 0
+      },
+      "steps": 392
+    }
+  },
+  "carrier_tokens": 392,
+  "case_id": "F-c2-n128-r0",
+  "charged_tokens": 1206,
+  "ciphertext_sha256": "25f575e760bcfefc00c44e278c7f6c8a701577839e6bce2aa9c9e5ae22b85c62",
+  "context_index": 2,
+  "context_window_verified": true,
+  "cover_context": "A station bulletin about maintaining a platform clock:",
+  "encapsulation_hex": "cf9dfcde1fe1388eea6ed27f74097a1082ba03ccf56ce80b3c7a9a9742895f12",
+  "envelope_bytes": 196,
+  "envelope_sha256": "2ebcf118f3868a880b317cd612496a035eae0d5ab510bcf9ece4148c58c7d343",
+  "exact_recovery": true,
+  "failure_category": null,
+  "family": null,
+  "first_rank_divergence": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "intended_carrier_tokens": 392,
+  "key_id": "STAGE8_TEST_ONLY_5",
+  "kind": "encrypted",
+  "method": "F",
+  "observer": {
+    "all_candidates_member": true,
+    "authenticated": false,
+    "body_region_reason": "No fixed token exclusion applied; complete-message scores are primary for both methods",
+    "body_region_scores": null,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "envelope_bytes": 196,
+    "envelope_sha256": "2ebcf118f3868a880b317cd612496a035eae0d5ab510bcf9ece4148c58c7d343",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_admissible_nll_bits": 4.936764739911924,
+    "mean_log2_rank": 2.7778329913208246,
+    "mean_nll_bits": 5.334132011249353,
+    "member_fraction": 1.0,
+    "observer_id": "stage8_complete_public_v1",
+    "probability_rounding_max_tv": 0.00022610077171699355,
+    "probability_rounding_mean_tv": 0.00010027087818077097,
+    "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 392,
+    "utf8_bytes": 1630
+  },
+  "pair_id": "c2-n128-r0",
+  "payload_bytes": 128,
+  "payload_setting_bytes": 128,
+  "payload_sha256": "02adaabc3597966fb6d41803e9570b178f7b27daa11eee70e74863673c17e648",
+  "pid": 860115,
+  "profile_id": "stage8_public_F_size128_v1",
+  "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+  "public_context_token_ids": {
+    "A station bulletin about maintaining a platform clock:": [
+      128000,
+      32,
+      8216,
+      75829,
+      922,
+      20958,
+      264,
+      5452,
+      9042,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "45493b7db1a7392cc0b6c4c251ef1195c9e02f2a0d27e0262e59d657b5c1f740",
+  "recovered_sha256": "02adaabc3597966fb6d41803e9570b178f7b27daa11eee70e74863673c17e648",
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "serialized_base64": "z5383h/hOI7qbtJ/dAl6EIK6A8z1bOgLPHqal0KJXxJQtddceF7izTiz1j0UiomI7EvITHYAePCzGjQfZxpIpriwu6PCb+QzZ26CjWD1gzGESX/kUAPFCxgZ8xDKSPduH1/2600a+u4Pqfjb8lSIFYpFqieiNoJPVue+WldkyRCVQlezZ294NklJL8mcbmSMW7gH4EW1owXA4w05kdTLRUFlkpp9QUJ+c4bny+ewVOZdq6IR0xQHuyC+WY7p67O3lwsK/Q==",
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "success": true,
+  "successful_payload_bits_per_token": 2.6122448979591835,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 14.887158865996753,
+    "load_and_verify_seconds": 14.572463297998183,
+    "public_scoring_seconds": 15.374080599998706,
+    "receiver_seconds": 14.902757356998336
+  },
+  "tokens_by_phase": {
+    "encode": 402,
+    "public_scoring": 402,
+    "receiver": 402
+  },
+  "trace_path": "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/traces.json",
+  "transport_bytes": 1630,
+  "transport_sha256": "715e7af70119aa5a6f5bcaf06265cbf78e5624797a00de7d9c35133fb00c6a0c",
+  "wire_delivered": true,
+  "worker_seconds": 59.91921965999791
+}

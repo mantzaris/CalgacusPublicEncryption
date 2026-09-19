@@ -1,0 +1,25 @@
+{
+  "attempts": 43,
+  "checks": "Every frozen input, retained attempt file and derived-output digest; report completion; ledger reconciliation; distinct stages and tested sources",
+  "gpu_tested_source_revisions": [
+    "78617213825f1163b3692f698e1063ba32a7de73",
+    "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
+  ],
+  "historical_ledger_prefix_preserved": true,
+  "ledger_sha256": "63bc3d490d8b977e122785040fbead0429dc2d832c6be0c4e78d0986bdab4561",
+  "lifetime_usage": {
+    "cases": 261,
+    "seconds": 13152.147518922986,
+    "tokens": 206887
+  },
+  "manifest_sha256": "eef9bbfa2d2e417ad05161c3bcf55a5a583544c32cbbbd8b06a66f650ca87d79",
+  "no_broad_cpu_suite": true,
+  "no_new_inference": true,
+  "schema_version": 1,
+  "stage8_usage": {
+    "cases": 43,
+    "seconds": 5156.875482143001,
+    "tokens": 75028
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,31 @@
+{
+  "TEST_ONLY_private_key_hex": "2843495a85db58a955d5a00196543297793991f93ffb2e5ec65902841669275a",
+  "carrier_path": "artifacts/stage8/attempts/09d821ef-474b-49ab-ae90-e7314357e7a1/carrier.txt",
+  "case_id": "replay-F-c2-n128",
+  "context_index": 2,
+  "key_id": "STAGE8_TEST_ONLY_5",
+  "kind": "replay",
+  "method": "F",
+  "profile_path": "configs/stage8/F128.json",
+  "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "78617213825f1163b3692f698e1063ba32a7de73",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "fresh_receiver",
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "token_reservation": 512,
+  "wall_reservation_seconds": 65
+}

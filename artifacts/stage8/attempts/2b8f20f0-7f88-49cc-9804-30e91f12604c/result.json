@@ -1,0 +1,76 @@
+{
+  "attempt_id": "2b8f20f0-7f88-49cc-9804-30e91f12604c",
+  "attempt_useful_bits_per_transmitted_token": 0.0,
+  "authenticated": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 24,
+      "examined_total": 32272,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 240,
+        "noncanonical": 163,
+        "special_control": 125
+      },
+      "steps": 1984
+    }
+  },
+  "case_id": "R-c1-n128-r0",
+  "charged_tokens": 1996,
+  "ciphertext_sha256": "2f7a6862d722768749e138f2a534b3dec3aeba76547d244630694d353ab69f81",
+  "context_index": 1,
+  "context_window_verified": true,
+  "cover_context": "A kitchen note on arranging clean cups on a shelf:",
+  "encapsulation_hex": "2d0ae7a710d340f408ff234f6744c61487a68afda0a5a104790618c2999cde6e",
+  "envelope_bytes": 196,
+  "envelope_sha256": "27250dc2f183fb0519ab03f6cfbe497d9934ae13d745535cbc657d396970ab68",
+  "error": "Arithmetic carrier ceiling before complete stable packet",
+  "exact_recovery": false,
+  "exception_type": "CapacityError",
+  "failure_category": "capacity_exhaustion",
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "key_id": "STAGE8_TEST_ONLY_3",
+  "kind": "encrypted",
+  "method": "R",
+  "pair_id": "c1-n128-r0",
+  "payload_bytes": 128,
+  "payload_setting_bytes": 128,
+  "payload_sha256": "3a28f683ed07aeb65da323f1a4af27648f2c17502eed2ca32aae4c5ac1928b21",
+  "pid": 848319,
+  "profile_id": "stage8_public_R_size128_v1",
+  "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+  "public_context_token_ids": {
+    "A kitchen note on arranging clean cups on a shelf:": [
+      128000,
+      32,
+      9979,
+      5296,
+      389,
+      77218,
+      4335,
+      26446,
+      389,
+      264,
+      28745,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "6e07a42b9009a6b2db4f8da1dd3fb53af193984ca3ffdcc66ff5c85117842c2e",
+  "schema_version": 1,
+  "serialized_base64": "LQrnpxDTQPQI/yNPZ0TGFIemiv2gpaEEeQYYwpmc3m4Px9wetIhmgP2s2GWp0mnIjJvFpsz4ItQf6qcA/dY8IWVkFcy8hH0qkbCkfudlafy4m8zE7dRdG+SahWnPCKbE/YSL6uEV5rvwS/7kKOPuOhn6QuWsJI6Y/WSMU7QLVfaAt0Qyw5tC0t64Du7udJl+m/xBjPlZ7Bcl2WDDwpWVqUWJF3CkuUOhzkWJJxxcLgrEntI4NGdZOafgpJcoehwCdh9IBQ==",
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "success": false,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "timings": {
+    "encode_seconds": 134.45822213300198,
+    "load_and_verify_seconds": 14.5407181269984
+  },
+  "tokens_by_phase": {
+    "encode": 1996
+  },
+  "trace_path": "artifacts/stage8/attempts/2b8f20f0-7f88-49cc-9804-30e91f12604c/traces.json",
+  "wire_delivered": false,
+  "worker_seconds": 149.26757399200142
+}

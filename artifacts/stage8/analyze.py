@@ -66,6 +66,12 @@ def main():
             if r.get('original_binding_authenticated'):assert r['recovered_sha256']==old['payload_sha256']
         if r['kind']=='replay':
             assert not any(k in j for k in ['payload_hex','payload_sha256','payload_bytes','expected_length','encoder_trace','target_tokens'])
+            source=byid[slots[r['case_id']]['source_case_id']]
+            encoder=read(ROOT/source['trace_path'])['encode'];receiver=tr['fresh_receiver']
+            for field in ['advanced_ids','symbols']:
+                assert encoder[field]==receiver[field],(r['case_id'],field)
+            assert [x['ordered_ids_sha256'] for x in encoder['candidate_steps']]==[x['ordered_ids_sha256'] for x in receiver['candidate_steps']]
+            if r['method']=='R':assert encoder['arithmetic_steps']==receiver['arithmetic_steps']
             if r.get('authenticated_message_recovery'):
                 expected=(oldbyid[slots[r['case_id']]['historical_attempt_id']]['payload_sha256'] if r['stage8_phase']=='diagnostic' else byid[slots[r['case_id']]['source_case_id']]['payload_sha256'])
                 assert r['recovered_sha256']==expected
@@ -115,11 +121,14 @@ def main():
             if r['method']=='R':
                 from diagnose import reference,blocks
                 bits,reconstructed=reference(enc['symbols'],[x['frequencies'] for x in steps])
+                packet=base64.b64decode(r['serialized_base64'],validate=True) if r['kind']=='encrypted' else bytes.fromhex(j['historical_envelope_hex'])
+                expected=[(v>>shift)&1 for v in packet for shift in range(7,-1,-1)]+[1]+[0]*64
+                assert bits==expected[:len(bits)] and len(reconstructed)==len(steps)==len(ids)
                 for stored,rebuilt in zip(steps,reconstructed):
                     assert all(stored[k]==rebuilt[k] for k in ['low','high_inclusive','pending_underflow','stable_bits'])
                 table('progress_'+r['case_id']+'.csv',reconstructed)
                 progress_summaries.append({'case_id':r['case_id'],'phase':r['stage8_phase'],'tokens':len(ids),'mean_table_entropy':avg([x['table_entropy_bits'] for x in reconstructed]),
-                    'mean_selected_information':avg([x['selected_information_bits'] for x in reconstructed]),'blocks128':blocks(reconstructed,128),'blocks256':blocks(reconstructed,256)})
+                    'mean_selected_information':avg([x['selected_information_bits'] for x in reconstructed]),'independent_packet_prefix_agreement':True,'independent_interval_agreement':True,'blocks128':blocks(reconstructed,128),'blocks256':blocks(reconstructed,256)})
         manifests.append({'case_id':r['case_id'],'attempt_id':r['attempt_id'],'tested_code_commit':r['tested_code_commit'],'profile_sha256':r['profile_sha256'],
             'files':{str(p.relative_to(ROOT)):sha(p) for p in d.iterdir() if p.is_file()}})
         checks.append({'case_id':r['case_id'],'pid':r['pid'],'gpu_uuid':r['gpu_uuid'],'peak_sampled_vram_mib':r['peak_sampled_process_vram_mib']})
@@ -135,7 +144,9 @@ def main():
         for r in rr:groups[(r['context_index'],r['payload_setting_bytes'])].append(r)
         rates=[];useful=[]
         for draw in draws:
-            sample=[r for group in draw for r in groups[group]]
+            # This table is already payload-size stratified: resample contexts
+            # only, retaining all repetitions of each size/key group.
+            sample=[r for c,_ in draw[::2] for r in rr if r['context_index']==c]
             if sample:
                 rates.append(sum(r.get('authenticated_message_recovery',False) for r in sample)/len(sample))
                 useful.append(avg([r.get('attempt_useful_bits_per_transmitted_token',0) for r in sample]))
@@ -171,7 +182,7 @@ def main():
                 bs.append(auc([x for x,y in sample],[y for x,y in sample]))
             xs=[xy[0] for p,xy in pairs];ys=[xy[1] for p,xy in pairs];boots[(m,family,metric)]=bs
             recognition.append({'method':m,'family':family,'metric':metric,'matched_scorable_pairs':len(pairs),'encrypted_mean':avg(xs),'control_mean':avg(ys),
-                'auc_higher_is_carrier':auc(xs,ys),'cluster_interval':interval([v for v in bs if v is not None]),
+                'auc_higher_is_carrier':auc(xs,ys),'cluster_interval':interval([v for v in bs if v is not None]),'bootstrap_valid_draws':sum(v is not None for v in bs),
                 'context_auc':{str(c):auc([xy[0] for p,xy in pairs if p['context_index']==c],[xy[1] for p,xy in pairs if p['context_index']==c]) for c in range(4)}})
     deltas=[]
     for fam in 'B':
@@ -198,7 +209,7 @@ def main():
             # within this already size-conditioned stratum.
             sample=[x for c,_ in draw[::2] for x in pp if x[0]['context_index']==c]
             if sample:bs.append(auc([x[1] for x in sample],[x[2] for x in sample]))
-        size_recognition.append({'method':method,'payload_bytes':size,'metric':metric,'pairs':len(pp),'auc':auc([x for r,x,y in pp],[y for r,x,y in pp]),'interval':interval(bs)})
+        size_recognition.append({'method':method,'payload_bytes':size,'metric':metric,'pairs':len(pp),'auc':auc([x for r,x,y in pp],[y for r,x,y in pp]),'interval':interval(bs),'bootstrap_valid_draws':len(bs)})
     for metric in metrics:
         ff={r['pair_id']:(r,x,y) for r,x,y in metric_pairs('F',metric)};rr={r['pair_id']:(r,x,y) for r,x,y in metric_pairs('R',metric)}
         common=sorted(set(ff)&set(rr));groups=collections.defaultdict(list)
@@ -208,7 +219,7 @@ def main():
             sample=[k for group in draw for k in groups[group]]
             if sample:bs.append(auc([rr[k][1] for k in sample],[rr[k][2] for k in sample])-auc([ff[k][1] for k in sample],[ff[k][2] for k in sample]))
         fa=auc([ff[k][1] for k in common],[ff[k][2] for k in common]);ra=auc([rr[k][1] for k in common],[rr[k][2] for k in common])
-        joint_recognition.append({'metric':metric,'pairs':len(common),'pair_ids':common,'F_auc':fa,'R_auc':ra,'R_minus_F':ra-fa if fa is not None else None,'interval':interval(bs),
+        joint_recognition.append({'metric':metric,'pairs':len(common),'pair_ids':common,'F_auc':fa,'R_auc':ra,'R_minus_F':ra-fa if fa is not None else None,'interval':interval(bs),'bootstrap_valid_draws':len(bs),
           'conditioning':'both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter'})
     costgroups=collections.defaultdict(list)
     for r in records:costgroups[(r['stage8_phase'],r['kind'],r['method'],r.get('family') or '-',r['payload_setting_bytes'])].append(r)
@@ -224,7 +235,7 @@ def main():
     summary={'schema_version':1,'starting_commit':auth['starting_commit'],'gpu_tested_code_commits':sorted({r['tested_code_commit'] for r in records}),
         'diagnostic_status':qual,'planned_slots':80,'main_planned_slots':len(selected),'diagnostic_attempts':len([r for r in records if r['stage8_phase']=='diagnostic']),'main_repetitions':repetitions,'main_executed':bool(mainrows),'attempted_cases':len(records),'main_encrypted_attempts':len(mainrows),'control_attempts':len(controls),
         'main_independent_recipient_keys':len({r['receiver_public_key_hex'] for r in mainrows}),
-        'replays':[{'case_id':r['case_id'],'phase':r['stage8_phase'],'authenticated_exact':r.get('authenticated_message_recovery',False),'raw_envelope_exact':r.get('exact_recovery',False) if r['stage8_phase']=='diagnostic' else None,'original_binding_authenticated':r.get('original_binding_authenticated',False)} for r in records if r['kind']=='replay'],
+        'replays':[{'case_id':r['case_id'],'phase':r['stage8_phase'],'authenticated_exact':r.get('authenticated_message_recovery',False),'raw_envelope_exact':r.get('exact_recovery',False) if r['stage8_phase']=='diagnostic' else None,'original_binding_authenticated':r.get('original_binding_authenticated',False),'independent_trace_agreement':True} for r in records if r['kind']=='replay'],
         'recovery':recovery,'size_recognition':size_recognition,'joint_support_recognition':joint_recognition,'recognition':recognition,'recognition_counts':outcomes,'paired_auc_differences':deltas,'capacity':capacity,'costs':costs,'failures':failures,
         'candidate_search':{'steps':len(candidate_steps),'examined_total':sum(x['examined'] for x in candidate_steps),'examined_max':max((x['examined'] for x in candidate_steps),default=None),'all_steps_admitted_16':all(x['eligible_found_capped_at_16']==16 for x in candidate_steps)},
         'stage8_usage':usage,'lifetime_usage':lifetime,'unused_stage8_allowance':{k:auth['additional_limits'][k]-usage[k] for k in usage},
@@ -239,6 +250,12 @@ def main():
         'main_unselected_before_release':[s['case_id'] for s in allocation['slots'] if s['stage8_phase']!='diagnostic' and release and s['case_id'] not in selected],
         'checkpoints':checkpoints,'progress_summaries':progress_summaries,'remaining_parent_allowance':{k:auth['lifetime_limits'][k]-lifetime[k] for k in lifetime},
         'focused_cpu_tests':5,'broad_cpu_suite':False,'bootstrap':{'draws':2000,'seed':2026092008,'unit':'four contexts then size/recipient-key groups; repetitions/methods/controls/checkpoints retained jointly','limits':'conditional descriptive intervals; four contexts; degenerate intervals are not population guarantees'}}
+    summary.update(qualification_gate_passed=qual['qualification_passed'],
+        main_replay_attempts=sum(r['kind']=='replay' and r['stage8_phase']!='diagnostic' for r in records),
+        diagnostic_encoding_attempts=sum(r['kind']=='fixture' for r in records),
+        diagnostic_replay_attempts=sum(r['kind']=='replay' and r['stage8_phase']=='diagnostic' for r in records),
+        observer_format_rejections={m:dict(collections.Counter(r['observer'].get('format_error','accepted') for r in controls if r['method']==m and r.get('observer',{}).get('scorable'))) for m in ['F','R']},
+        assessment={'classification':'useful_but_narrow_capacity_finding_with_delivery_conditioned_comparison','algorithm_defect_found':False,'qualification_passed':qual['qualification_passed'],'regular_paper_readiness':'not established; only two delivered R messages, no128-byte R delivery','no_further_execution_authorized_by_report':True})
     for name,obj in [('summary.json',summary),('recognition.json',recognition),('capacity.json',capacity),('failures.json',failures),('pid_evidence.json',checks)]:write(ART/name,obj)
     for name,rr in [('recovery.csv',recovery),('recognition.csv',recognition),('recognition_counts.csv',outcomes),('costs.csv',costs),('capacity.csv',capacity)]:table(name,rr)
     manifest={'schema_version':1,'starting_commit':auth['starting_commit'],'gpu_tested_code_commits':summary['gpu_tested_code_commits'],'historical_checkpoint':anchor,'ledger_sha256':summary['ledger_sha256'],

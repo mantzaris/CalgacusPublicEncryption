@@ -1,0 +1,42 @@
+[
+  {
+    "method": "F",
+    "kind": "encrypted",
+    "messages": 8,
+    "steps": 2368,
+    "mean_message_tv": 0.00011950942166836686,
+    "max_step_tv": 0.00023331601741866922,
+    "mean_message_integer_entropy": 2.8478165943857174,
+    "mean_message_unrounded_entropy": 2.8472018065483575
+  },
+  {
+    "method": "F",
+    "kind": "control",
+    "messages": 8,
+    "steps": 2368,
+    "mean_message_tv": 0.00019457495738833597,
+    "max_step_tv": 0.00023684323681101376,
+    "mean_message_integer_entropy": 1.060608944146689,
+    "mean_message_unrounded_entropy": 1.0583631466042385
+  },
+  {
+    "method": "R",
+    "kind": "encrypted",
+    "messages": 2,
+    "steps": 2346,
+    "mean_message_tv": 0.00019805558565974007,
+    "max_step_tv": 0.0002373297256095953,
+    "mean_message_integer_entropy": 0.9337063317417967,
+    "mean_message_unrounded_entropy": 0.9312762591291797
+  },
+  {
+    "method": "R",
+    "kind": "control",
+    "messages": 8,
+    "steps": 14250,
+    "mean_message_tv": 0.000214428495471785,
+    "max_step_tv": 0.00023872505356349223,
+    "mean_message_integer_entropy": 0.4370191291787079,
+    "mean_message_unrounded_entropy": 0.4339739268810318
+  }
+]

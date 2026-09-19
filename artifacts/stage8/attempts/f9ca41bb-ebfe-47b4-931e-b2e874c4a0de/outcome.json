@@ -1,0 +1,135 @@
+{
+  "attempt_id": "f9ca41bb-ebfe-47b4-931e-b2e874c4a0de",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": 19,
+      "examined_total": 32036,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 4,
+        "noncanonical": 248,
+        "special_control": 40
+      },
+      "steps": 1984
+    },
+    "public_scoring": {
+      "examined_max": 19,
+      "examined_total": 32036,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 4,
+        "noncanonical": 248,
+        "special_control": 40
+      },
+      "steps": 1984
+    }
+  },
+  "carrier_tokens": 1984,
+  "case_id": "control-R-c0-n32-r0-B",
+  "charged_tokens": 3992,
+  "context_index": 0,
+  "context_window_verified": true,
+  "cover_context": "A field guide describing the shape of a maple leaf:",
+  "cumulative_budget": {
+    "cases": 242,
+    "seconds": 10984.905666020979,
+    "tokens": 175906
+  },
+  "evidence_dir": "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de",
+  "exact_recovery": false,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": "B",
+  "first_transport_divergence": null,
+  "generated_tokens": 1984,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 1984,
+  "job_elapsed_seconds": 288.59358555400104,
+  "kind": "control",
+  "lease_verified": true,
+  "method": "R",
+  "observer": {
+    "all_candidates_member": true,
+    "arithmetic_terminal": {
+      "high_inclusive": 2176315004,
+      "low": 486360064,
+      "pending_underflow": 1,
+      "stable_bits": 583
+    },
+    "authenticated": false,
+    "body_region_reason": "No fixed token exclusion applied; complete-message scores are primary for both methods",
+    "body_region_scores": null,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "format_accepted": false,
+    "format_and_kem_canonical": false,
+    "format_error": "Incomplete arithmetic final interval",
+    "format_failure_category": "framing_failure",
+    "kem_canonical": null,
+    "mean_admissible_nll_bits": 0.2947449354758008,
+    "mean_log2_rank": 0.11669177572250225,
+    "mean_nll_bits": 0.30955579677058087,
+    "member_fraction": 1.0,
+    "observer_id": "stage8_complete_public_v1",
+    "probability_rounding_max_tv": 0.00023806465625222212,
+    "probability_rounding_mean_tv": 0.00021808034212470232,
+    "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 1984,
+    "utf8_bytes": 11259
+  },
+  "pair_id": "c0-n32-r0",
+  "payload_setting_bytes": 32,
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 879842,
+  "profile_id": "stage8_public_R_size32_v1",
+  "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A field guide describing the shape of a maple leaf:": [
+      128000,
+      32,
+      2115,
+      8641,
+      23524,
+      279,
+      6211,
+      315,
+      264,
+      55480,
+      16312,
+      25
+    ]
+  },
+  "sampling_seed": 202609200001,
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "success": true,
+  "target_tokens": 1984,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "text_retokenizes": true,
+  "timings": {
+    "control_generation_seconds": 135.37714980499732,
+    "load_and_verify_seconds": 14.587096977993497,
+    "public_scoring_seconds": 137.43533792700327
+  },
+  "tokens_by_phase": {
+    "control_generation": 1996,
+    "public_scoring": 1996
+  },
+  "trace_path": "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/traces.json",
+  "transport_bytes": 11259,
+  "transport_sha256": "c4f3d7afc87ff01eeba20fbcdad2d4c653818eb619e6b636516adfbc2887bfe3",
+  "wire_delivered": true,
+  "worker_seconds": 287.72627320599713
+}

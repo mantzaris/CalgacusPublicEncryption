@@ -1,0 +1,37 @@
+{
+  "associated_encrypted_case_id": "R-c2-n128-r0",
+  "case_id": "control-R-c2-n128-r0-B",
+  "context_index": 2,
+  "family": "B",
+  "kind": "control",
+  "length_assignment": "predeclared_failed_source_fallback",
+  "method": "R",
+  "pair_id": "c2-n128-r0",
+  "payload_setting_bytes": 128,
+  "profile_path": "configs/stage8/R128.json",
+  "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+  "recipient_public_key_hex": "45493b7db1a7392cc0b6c4c251ef1195c9e02f2a0d27e0262e59d657b5c1f740",
+  "repetition": 0,
+  "sampling_seed": 202609200020,
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "78617213825f1163b3692f698e1063ba32a7de73",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "target_tokens": 1984,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "token_reservation": 4200,
+  "wall_reservation_seconds": 360
+}

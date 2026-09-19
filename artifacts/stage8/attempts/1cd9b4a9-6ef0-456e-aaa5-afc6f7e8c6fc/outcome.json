@@ -1,0 +1,157 @@
+{
+  "attempt_id": "1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc",
+  "attempt_useful_bits_per_transmitted_token": 0.1435782389231632,
+  "authenticated": true,
+  "authenticated_message_recovery": true,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 24,
+      "examined_total": 29334,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 23,
+        "noncanonical": 780,
+        "special_control": 3
+      },
+      "steps": 1783
+    },
+    "public_scoring": {
+      "examined_max": 24,
+      "examined_total": 29334,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 23,
+        "noncanonical": 780,
+        "special_control": 3
+      },
+      "steps": 1783
+    },
+    "receiver": {
+      "examined_max": 24,
+      "examined_total": 29334,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 23,
+        "noncanonical": 780,
+        "special_control": 3
+      },
+      "steps": 1783
+    }
+  },
+  "carrier_tokens": 1783,
+  "case_id": "R-c3-n32-r0",
+  "charged_tokens": 5382,
+  "ciphertext_sha256": "6b839a67ce6486417aa951becfe1dbfb1cc18061045dba9db4f50629e19c1076",
+  "context_index": 3,
+  "context_window_verified": true,
+  "cover_context": "A garden journal describing rain beside a clay pot:",
+  "cumulative_budget": {
+    "cases": 237,
+    "seconds": 10412.063266873974,
+    "tokens": 167653
+  },
+  "encapsulation_hex": "d2af4ea750870509a6630dce4ea1ff0b8a255b6060f4e6fe4e4d5b6781223000",
+  "envelope_bytes": 100,
+  "envelope_sha256": "c30445394ebdbf7c065f8f9c7966aca843ae409ee908dc4eb3e0abf017f59cd8",
+  "evidence_dir": "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc",
+  "exact_recovery": true,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "first_rank_divergence": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 1783,
+  "job_elapsed_seconds": 356.71674142800475,
+  "key_id": "STAGE8_TEST_ONLY_6",
+  "kind": "encrypted",
+  "lease_verified": true,
+  "method": "R",
+  "observer": {
+    "all_candidates_member": true,
+    "arithmetic_terminal": {
+      "high_inclusive": 2229989247,
+      "low": 213377760,
+      "pending_underflow": 1,
+      "stable_bits": 800
+    },
+    "authenticated": false,
+    "body_region_reason": "No fixed token exclusion applied; complete-message scores are primary for both methods",
+    "body_region_scores": null,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "envelope_bytes": 100,
+    "envelope_sha256": "c30445394ebdbf7c065f8f9c7966aca843ae409ee908dc4eb3e0abf017f59cd8",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_admissible_nll_bits": 0.44971140797010184,
+    "mean_log2_rank": 0.15085534794491412,
+    "mean_nll_bits": 0.46826526312332883,
+    "member_fraction": 1.0,
+    "observer_id": "stage8_complete_public_v1",
+    "probability_rounding_max_tv": 0.0002373297256095953,
+    "probability_rounding_mean_tv": 0.00021328686739855563,
+    "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 1783,
+    "utf8_bytes": 6372
+  },
+  "pair_id": "c3-n32-r0",
+  "payload_bytes": 32,
+  "payload_setting_bytes": 32,
+  "payload_sha256": "4b5646d7b6caca3acb6090687fa6b6da1c590bc1aae7e5631e493f802a40130f",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 861860,
+  "profile_id": "stage8_public_R_size32_v1",
+  "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A garden journal describing rain beside a clay pot:": [
+      128000,
+      32,
+      13863,
+      8486,
+      23524,
+      11422,
+      30488,
+      264,
+      37148,
+      3419,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "b4bf795b3609adae92d655650346c6c8671f013c15d049e1301ec0f08e33212c",
+  "recovered_sha256": "4b5646d7b6caca3acb6090687fa6b6da1c590bc1aae7e5631e493f802a40130f",
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "serialized_base64": "0q9Op1CHBQmmYw3OTqH/C4olW2Bg9Ob+Tk1bZ4EiMACT1TXtzvUEJbutZTzmAY0pIrhHpuEwOXFAaMkeewpbJJk+FlLvJNa/Irn1MVwhsmeYP7Gb/9Sm0Hke/mWaW6GJwG745Q==",
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "success": true,
+  "successful_payload_bits_per_token": 0.1435782389231632,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 112.5548633760045,
+    "load_and_verify_seconds": 14.559046137001133,
+    "public_scoring_seconds": 115.43611248700472,
+    "receiver_seconds": 113.01138758900197
+  },
+  "tokens_by_phase": {
+    "encode": 1794,
+    "public_scoring": 1794,
+    "receiver": 1794
+  },
+  "trace_path": "artifacts/stage8/attempts/1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc/traces.json",
+  "transport_bytes": 6372,
+  "transport_sha256": "03e8e3b7904b6bd156935f438afa934b427c895916c010e4518e83e2a0e58de1",
+  "wire_delivered": true,
+  "worker_seconds": 355.9930130930006
+}

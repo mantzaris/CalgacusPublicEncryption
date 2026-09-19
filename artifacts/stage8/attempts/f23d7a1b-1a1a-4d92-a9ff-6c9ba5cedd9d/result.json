@@ -1,0 +1,76 @@
+{
+  "attempt_id": "f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d",
+  "attempt_useful_bits_per_transmitted_token": 0.0,
+  "authenticated": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 22,
+      "examined_total": 32005,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 199,
+        "special_control": 62
+      },
+      "steps": 1984
+    }
+  },
+  "case_id": "R-c0-n128-r0",
+  "charged_tokens": 1996,
+  "ciphertext_sha256": "35a76c520cceeb0a328cc8f77f4841965fddbf5a3b9dfbf868fb29d631fe448a",
+  "context_index": 0,
+  "context_window_verified": true,
+  "cover_context": "A field guide describing the shape of a maple leaf:",
+  "encapsulation_hex": "66147aa51b2a0a8bdc542c3dcda7ba58a30379d854ff85654f8b648cb225b602",
+  "envelope_bytes": 196,
+  "envelope_sha256": "64307ac1d5df7958a294e999660443f4d475fb66043a6ff7c1b5e0ead3834567",
+  "error": "Arithmetic carrier ceiling before complete stable packet",
+  "exact_recovery": false,
+  "exception_type": "CapacityError",
+  "failure_category": "capacity_exhaustion",
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "key_id": "STAGE8_TEST_ONLY_1",
+  "kind": "encrypted",
+  "method": "R",
+  "pair_id": "c0-n128-r0",
+  "payload_bytes": 128,
+  "payload_setting_bytes": 128,
+  "payload_sha256": "cae7f1d2612c0ed0cbc3c2d753779ab960844474d914d9f7fc91e33be69181fe",
+  "pid": 835342,
+  "profile_id": "stage8_public_R_size128_v1",
+  "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+  "public_context_token_ids": {
+    "A field guide describing the shape of a maple leaf:": [
+      128000,
+      32,
+      2115,
+      8641,
+      23524,
+      279,
+      6211,
+      315,
+      264,
+      55480,
+      16312,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "f4e73fd37d9114f517e8988a2536f6e88b053c9313adcbe4eb1556d7a5801006",
+  "schema_version": 1,
+  "serialized_base64": "ZhR6pRsqCovcVCw9zae6WKMDedhU/4VlT4tkjLIltgI0HbNGl3CiVf9I48scvJrjmj6WD2Cg+QazYy6pHiAE9QSvS8dg8y0mQaLFXlWJmf7I7gia4jBi2Sq7fPApnLIr+nM7IbAp5gV/KPcN2tlaKztN07oqIemTa9R51nqOzWhr+SHeFrSfkYyaShg9pyy6YoqeAAFtxWgbJm0k55Fr+Y3BPLK49j+kcrQ+Vc2aqcGoceRQvRszm4ktmdPWYAbzPypEJg==",
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "success": false,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "timings": {
+    "encode_seconds": 136.78256212600172,
+    "load_and_verify_seconds": 14.249843764002435
+  },
+  "tokens_by_phase": {
+    "encode": 1996
+  },
+  "trace_path": "artifacts/stage8/attempts/f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d/traces.json",
+  "wire_delivered": false,
+  "worker_seconds": 151.2258283950032
+}

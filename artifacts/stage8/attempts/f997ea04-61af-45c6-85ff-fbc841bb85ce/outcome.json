@@ -1,0 +1,84 @@
+{
+  "attempt_id": "f997ea04-61af-45c6-85ff-fbc841bb85ce",
+  "authenticated": true,
+  "authenticated_message_recovery": true,
+  "candidate_costs": {
+    "fresh_receiver": {
+      "examined_max": 17,
+      "examined_total": 3203,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 3,
+        "special_control": 0
+      },
+      "steps": 200
+    }
+  },
+  "carrier_tokens": 200,
+  "case_id": "replay-F-c2-n32",
+  "charged_tokens": 210,
+  "context_index": 2,
+  "context_window_verified": true,
+  "cover_context": "A station bulletin about maintaining a platform clock:",
+  "cumulative_budget": {
+    "cases": 259,
+    "seconds": 13083.342447942985,
+    "tokens": 205912
+  },
+  "evidence_dir": "artifacts/stage8/attempts/f997ea04-61af-45c6-85ff-fbc841bb85ce",
+  "exact_recovery": true,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "job_elapsed_seconds": 21.86415261300135,
+  "kind": "replay",
+  "lease_verified": true,
+  "method": "F",
+  "pair_id": null,
+  "payload_setting_bytes": 32,
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 945476,
+  "profile_id": "stage8_public_F_size32_v1",
+  "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A station bulletin about maintaining a platform clock:": [
+      128000,
+      32,
+      8216,
+      75829,
+      922,
+      20958,
+      264,
+      5452,
+      9042,
+      25
+    ]
+  },
+  "recovered_bytes": 32,
+  "recovered_sha256": "baed760ca272344456d3eaa6254d2344ca01d21c1860e90d1f2017d4308c586c",
+  "schema_version": 1,
+  "source_attempt_id": "0955c817-980e-479d-9bad-3234f8fe04ff",
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "fresh_receiver",
+  "success": true,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "timings": {
+    "fresh_receiver_seconds": 7.078250378006487,
+    "load_and_verify_seconds": 14.276571459005936
+  },
+  "tokens_by_phase": {
+    "fresh_receiver": 210
+  },
+  "trace_path": "artifacts/stage8/attempts/f997ea04-61af-45c6-85ff-fbc841bb85ce/traces.json",
+  "transport_bytes": 1014,
+  "transport_sha256": "31166c0d579148ceb01670dc0886944d547d4888800814d01fa36a8362f08ca6",
+  "wire_delivered": true,
+  "worker_seconds": 21.43320574700192
+}

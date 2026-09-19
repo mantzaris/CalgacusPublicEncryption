@@ -1,0 +1,67 @@
+{
+  "attempt_id": "73f1b990-7f25-422e-8c96-d82a7302abeb",
+  "authenticated": true,
+  "candidate_costs": {
+    "fresh_receiver": {
+      "examined_max": 17,
+      "examined_total": 6273,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 1,
+        "special_control": 0
+      },
+      "steps": 392
+    }
+  },
+  "carrier_tokens": 392,
+  "case_id": "replay-F-c2-n128",
+  "charged_tokens": 402,
+  "context_index": 2,
+  "context_window_verified": true,
+  "cover_context": "A station bulletin about maintaining a platform clock:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "replay",
+  "method": "F",
+  "pair_id": null,
+  "payload_setting_bytes": 128,
+  "pid": 947171,
+  "profile_id": "stage8_public_F_size128_v1",
+  "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+  "public_context_token_ids": {
+    "A station bulletin about maintaining a platform clock:": [
+      128000,
+      32,
+      8216,
+      75829,
+      922,
+      20958,
+      264,
+      5452,
+      9042,
+      25
+    ]
+  },
+  "recovered_bytes": 128,
+  "recovered_sha256": "02adaabc3597966fb6d41803e9570b178f7b27daa11eee70e74863673c17e648",
+  "schema_version": 1,
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "fresh_receiver",
+  "success": true,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "timings": {
+    "fresh_receiver_seconds": 14.858191488005104,
+    "load_and_verify_seconds": 14.413111105001008
+  },
+  "tokens_by_phase": {
+    "fresh_receiver": 402
+  },
+  "trace_path": "artifacts/stage8/attempts/73f1b990-7f25-422e-8c96-d82a7302abeb/traces.json",
+  "transport_bytes": 1630,
+  "transport_sha256": "715e7af70119aa5a6f5bcaf06265cbf78e5624797a00de7d9c35133fb00c6a0c",
+  "wire_delivered": true,
+  "worker_seconds": 29.43724132599891
+}

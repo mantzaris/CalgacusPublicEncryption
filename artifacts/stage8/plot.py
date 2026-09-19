@@ -44,6 +44,18 @@ axes[0].set(ylabel='Authenticated recovery / attempted packets',ylim=(-.05,1.05)
 for ax in axes:ax.set(xlabel='Carrier-token budget',xticks=[512,1024,1536,1984]);ax.grid(alpha=.2)
 axes[0].legend(fontsize=8);save(fig,'completion_checkpoints')
 if s['main_executed']:
+    fig,axes=plt.subplots(2,2,figsize=(10,7))
+    cases={x['case_id']:x for x in s['capacity'] if x['phase']=='main_fixed'}
+    for context,ax in enumerate(axes.flat):
+        for size,style in [(32,'-'),(128,'--')]:
+            case_id=f'R-c{context}-n{size}-r0'
+            if case_id not in cases:continue
+            rows=read_csv(ART/('progress_'+case_id+'.csv'))
+            ax.plot([int(x['position']) for x in rows],[int(x['stable_bits']) for x in rows],linestyle=style,label=f'{size}-byte payload')
+        for target in [800,1568]:ax.axhline(target,color='grey',linestyle=':',alpha=.6)
+        for budget in [512,1024,1536,1984]:ax.axvline(budget,color='grey',linestyle=':',alpha=.2)
+        ax.set(title=f'Context{context}: separate fresh packets',xlabel='Carrier-token position',ylabel='Stable envelope bits',xlim=(0,2010))
+    axes[0,0].legend(fontsize=8);save(fig,'fresh_stable_bits')
     fig,axes=plt.subplots(1,2,figsize=(10,4));r=s['recovery'];labels=[f"{v['method']} / {v['payload_bytes']} B" for v in r]
     axes[0].bar(labels,[x['recovery_fraction'] for x in r]);axes[0].set(ylabel='Exact / attempted fresh packets',ylim=(0,1.1))
     for i,x in enumerate(r):axes[0].text(i,x['recovery_fraction']+.025,f"{x['authenticated_exact']}/{x['attempted']}",ha='center')
@@ -55,5 +67,6 @@ if s['main_executed']:
     ax.set(ylabel='Descriptive AUC; higher is carrier',ylim=(0,1.07),title='B controls: length- and delivery-conditioned comparison')
     for i,x in enumerate(rr):
         if x['auc_higher_is_carrier'] is None:ax.text(i,.03,'NA',ha='center')
+        else:ax.text(i,x['auc_higher_is_carrier']+.025,f"n={x['matched_scorable_pairs']}",ha='center',fontsize=8)
     save(fig,'conditional_recognition')
 print('Figures generated from retained evidence; no inference')

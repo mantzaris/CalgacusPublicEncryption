@@ -1,0 +1,152 @@
+{
+  "attempt_id": "86619577-96b5-4881-9316-ac1984b33afc",
+  "attempt_useful_bits_per_transmitted_token": 2.6122448979591835,
+  "authenticated": true,
+  "authenticated_message_recovery": true,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 16,
+      "examined_total": 6272,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 392
+    },
+    "public_scoring": {
+      "examined_max": 16,
+      "examined_total": 6272,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 392
+    },
+    "receiver": {
+      "examined_max": 16,
+      "examined_total": 6272,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 0,
+        "special_control": 0
+      },
+      "steps": 392
+    }
+  },
+  "carrier_tokens": 392,
+  "case_id": "F-c1-n128-r0",
+  "charged_tokens": 1212,
+  "ciphertext_sha256": "05b75c40f0b387497d4aae330152b993a0e060391758717577ae2a6b4f70d9af",
+  "context_index": 1,
+  "context_window_verified": true,
+  "cover_context": "A kitchen note on arranging clean cups on a shelf:",
+  "cumulative_budget": {
+    "cases": 231,
+    "seconds": 9574.347009433975,
+    "tokens": 154726
+  },
+  "encapsulation_hex": "e1bb28dbf194bfa372da54c3295c9bdd17d6db999d5ce2fa2568f498349e963d",
+  "envelope_bytes": 196,
+  "envelope_sha256": "383121512727bb865a6c82f5e1a8aa766c3484eb806f533dea137314735524bf",
+  "evidence_dir": "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc",
+  "exact_recovery": true,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "first_rank_divergence": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 392,
+  "job_elapsed_seconds": 60.275291277997894,
+  "key_id": "STAGE8_TEST_ONLY_3",
+  "kind": "encrypted",
+  "lease_verified": true,
+  "method": "F",
+  "observer": {
+    "all_candidates_member": true,
+    "authenticated": false,
+    "body_region_reason": "No fixed token exclusion applied; complete-message scores are primary for both methods",
+    "body_region_scores": null,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "envelope_bytes": 196,
+    "envelope_sha256": "383121512727bb865a6c82f5e1a8aa766c3484eb806f533dea137314735524bf",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_admissible_nll_bits": 4.824125851902046,
+    "mean_log2_rank": 2.8092617177493353,
+    "mean_nll_bits": 5.3375366234926895,
+    "member_fraction": 1.0,
+    "observer_id": "stage8_complete_public_v1",
+    "probability_rounding_max_tv": 0.0002314942118316669,
+    "probability_rounding_mean_tv": 0.00010187844677938541,
+    "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 392,
+    "utf8_bytes": 1743
+  },
+  "pair_id": "c1-n128-r0",
+  "payload_bytes": 128,
+  "payload_setting_bytes": 128,
+  "payload_sha256": "3a28f683ed07aeb65da323f1a4af27648f2c17502eed2ca32aae4c5ac1928b21",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 846653,
+  "profile_id": "stage8_public_F_size128_v1",
+  "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A kitchen note on arranging clean cups on a shelf:": [
+      128000,
+      32,
+      9979,
+      5296,
+      389,
+      77218,
+      4335,
+      26446,
+      389,
+      264,
+      28745,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "6e07a42b9009a6b2db4f8da1dd3fb53af193984ca3ffdcc66ff5c85117842c2e",
+  "recovered_sha256": "3a28f683ed07aeb65da323f1a4af27648f2c17502eed2ca32aae4c5ac1928b21",
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "serialized_base64": "4bso2/GUv6Ny2lTDKVyb3RfW25mdXOL6JWj0mDSelj2tsTwyI6iivtK9v4S5KRGbTn8qS2iFLWJOwCdm53v9fcdkYkI2k7ai8yibV0YbSVCVOsd2D6iMJHRALhCMQqqFhev+ckH8DXGvwboJ4uG3aaGKtwUkOsxToMzugRmH7rdlRbjjeVKg5z3MN+cBOUqZceP2lJP5PPJAmzF+DBO6X/q9qG3THlae6VFa7KB4yjtJibbljUnYHxUHpG4PLkNQFze7Nw==",
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "success": true,
+  "successful_payload_bits_per_token": 2.6122448979591835,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 14.822746956000628,
+    "load_and_verify_seconds": 14.622950960001617,
+    "public_scoring_seconds": 15.282568618000369,
+    "receiver_seconds": 14.776019928001915
+  },
+  "tokens_by_phase": {
+    "encode": 404,
+    "public_scoring": 404,
+    "receiver": 404
+  },
+  "trace_path": "artifacts/stage8/attempts/86619577-96b5-4881-9316-ac1984b33afc/traces.json",
+  "transport_bytes": 1743,
+  "transport_sha256": "413fea0dbef6121ad4c7f1fdae8b62f2ef82c8c420f95af97f7525739fa9746d",
+  "wire_delivered": true,
+  "worker_seconds": 59.70685636000053
+}

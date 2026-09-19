@@ -1,0 +1,166 @@
+{
+  "reconciliation": "PASS",
+  "attempts": 43,
+  "usage": {
+    "seconds": 5156.875482143001,
+    "tokens": 75028,
+    "cases": 43
+  },
+  "lifetime": {
+    "seconds": 13152.147518922986,
+    "tokens": 206887,
+    "cases": 261
+  },
+  "recovery": [
+    {
+      "method": "F",
+      "payload_bytes": 32,
+      "planned": 4,
+      "attempted": 4,
+      "authenticated_exact": 4,
+      "capacity_failures": 0,
+      "recovery_fraction": 1.0,
+      "recovery_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "carrier_token_min": 200,
+      "carrier_token_max": 200,
+      "mean_success_payload_bits_per_token": 1.28,
+      "mean_attempt_useful_bits_per_token": 1.28,
+      "useful_rate_cluster_interval": [
+        1.28,
+        1.28
+      ],
+      "aggregate_recovered_bits_per_delivered_token": 1.28,
+      "recovered_bytes_per_charged_second": 0.8631458373904991
+    },
+    {
+      "method": "F",
+      "payload_bytes": 128,
+      "planned": 4,
+      "attempted": 4,
+      "authenticated_exact": 4,
+      "capacity_failures": 0,
+      "recovery_fraction": 1.0,
+      "recovery_cluster_interval": [
+        1.0,
+        1.0
+      ],
+      "carrier_token_min": 392,
+      "carrier_token_max": 392,
+      "mean_success_payload_bits_per_token": 2.6122448979591835,
+      "mean_attempt_useful_bits_per_token": 2.6122448979591835,
+      "useful_rate_cluster_interval": [
+        2.6122448979591835,
+        2.6122448979591835
+      ],
+      "aggregate_recovered_bits_per_delivered_token": 2.6122448979591835,
+      "recovered_bytes_per_charged_second": 2.1092736303855797
+    },
+    {
+      "method": "R",
+      "payload_bytes": 32,
+      "planned": 4,
+      "attempted": 4,
+      "authenticated_exact": 2,
+      "capacity_failures": 2,
+      "recovery_fraction": 0.5,
+      "recovery_cluster_interval": [
+        0.0,
+        1.0
+      ],
+      "carrier_token_min": 563,
+      "carrier_token_max": 1783,
+      "mean_success_payload_bits_per_token": 0.2991425830495035,
+      "mean_attempt_useful_bits_per_token": 0.14957129152475174,
+      "useful_rate_cluster_interval": [
+        0.0,
+        0.3410301953818828
+      ],
+      "aggregate_recovered_bits_per_delivered_token": 0.21824381926683717,
+      "recovered_bytes_per_charged_second": 0.08628827724166017
+    },
+    {
+      "method": "R",
+      "payload_bytes": 128,
+      "planned": 4,
+      "attempted": 4,
+      "authenticated_exact": 0,
+      "capacity_failures": 4,
+      "recovery_fraction": 0.0,
+      "recovery_cluster_interval": [
+        0.0,
+        0.0
+      ],
+      "carrier_token_min": null,
+      "carrier_token_max": null,
+      "mean_success_payload_bits_per_token": null,
+      "mean_attempt_useful_bits_per_token": 0.0,
+      "useful_rate_cluster_interval": [
+        0.0,
+        0.0
+      ],
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "recovered_bytes_per_charged_second": 0.0
+    }
+  ],
+  "failures": [
+    {
+      "case_id": "diagnostic-qual-synthetic-128",
+      "category": "capacity_exhaustion",
+      "serialization": null,
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null
+    },
+    {
+      "case_id": "diagnostic-qual-HPKE-128",
+      "category": "capacity_exhaustion",
+      "serialization": null,
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null
+    },
+    {
+      "case_id": "R-c0-n32-r0",
+      "category": "capacity_exhaustion",
+      "serialization": null,
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null
+    },
+    {
+      "case_id": "R-c0-n128-r0",
+      "category": "capacity_exhaustion",
+      "serialization": null,
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null
+    },
+    {
+      "case_id": "R-c1-n32-r0",
+      "category": "capacity_exhaustion",
+      "serialization": null,
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null
+    },
+    {
+      "case_id": "R-c1-n128-r0",
+      "category": "capacity_exhaustion",
+      "serialization": null,
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null
+    },
+    {
+      "case_id": "R-c2-n128-r0",
+      "category": "capacity_exhaustion",
+      "serialization": null,
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null
+    },
+    {
+      "case_id": "R-c3-n128-r0",
+      "category": "capacity_exhaustion",
+      "serialization": null,
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null
+    }
+  ]
+}

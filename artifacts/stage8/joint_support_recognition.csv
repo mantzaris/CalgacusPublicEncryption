@@ -1,9 +1,9 @@
-metric,pairs,pair_ids,F_auc,R_auc,R_minus_F,interval,conditioning
-mean_nll_bits,0,[],,,,"[None, None]","both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
-mean_log2_rank,0,[],,,,"[None, None]","both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
-mean_admissible_nll_bits,0,[],,,,"[None, None]","both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
-member_fraction,0,[],,,,"[None, None]","both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
-format_accepted,0,[],,,,"[None, None]","both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
-format_and_kem_canonical,0,[],,,,"[None, None]","both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
-token_count,0,[],,,,"[None, None]","both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
-utf8_bytes,0,[],,,,"[None, None]","both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
+metric,pairs,pair_ids,F_auc,R_auc,R_minus_F,interval,bootstrap_valid_draws,conditioning
+mean_nll_bits,2,"['c2-n32-r0', 'c3-n32-r0']",1.0,0.5,-0.5,"[-1.0, 0.0]",1677,"both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
+mean_log2_rank,2,"['c2-n32-r0', 'c3-n32-r0']",1.0,0.5,-0.5,"[-1.0, 0.0]",1677,"both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
+mean_admissible_nll_bits,2,"['c2-n32-r0', 'c3-n32-r0']",1.0,0.5,-0.5,"[-1.0, 0.0]",1677,"both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
+member_fraction,2,"['c2-n32-r0', 'c3-n32-r0']",0.5,0.5,0.0,"[0.0, 0.0]",1677,"both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
+format_accepted,2,"['c2-n32-r0', 'c3-n32-r0']",0.5,1.0,0.5,"[0.5, 0.5]",1677,"both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
+format_and_kem_canonical,2,"['c2-n32-r0', 'c3-n32-r0']",0.5,1.0,0.5,"[0.5, 0.5]",1677,"both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
+token_count,2,"['c2-n32-r0', 'c3-n32-r0']",0.5,0.5,0.0,"[0.0, 0.0]",1677,"both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"
+utf8_bytes,2,"['c2-n32-r0', 'c3-n32-r0']",0.0,0.5,0.5,"[0.0, 1.0]",1677,"both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter"

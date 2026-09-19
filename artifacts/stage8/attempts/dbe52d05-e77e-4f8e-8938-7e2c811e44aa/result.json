@@ -1,0 +1,69 @@
+{
+  "attempt_id": "dbe52d05-e77e-4f8e-8938-7e2c811e44aa",
+  "authenticated": true,
+  "candidate_costs": {
+    "fresh_receiver": {
+      "examined_max": 17,
+      "examined_total": 3204,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 4,
+        "special_control": 0
+      },
+      "steps": 200
+    }
+  },
+  "carrier_tokens": 200,
+  "case_id": "replay-F-c0-n32",
+  "charged_tokens": 212,
+  "context_index": 0,
+  "context_window_verified": true,
+  "cover_context": "A field guide describing the shape of a maple leaf:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "replay",
+  "method": "F",
+  "pair_id": null,
+  "payload_setting_bytes": 32,
+  "pid": 943959,
+  "profile_id": "stage8_public_F_size32_v1",
+  "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+  "public_context_token_ids": {
+    "A field guide describing the shape of a maple leaf:": [
+      128000,
+      32,
+      2115,
+      8641,
+      23524,
+      279,
+      6211,
+      315,
+      264,
+      55480,
+      16312,
+      25
+    ]
+  },
+  "recovered_bytes": 32,
+  "recovered_sha256": "27fedf62b7eb0791bf6d51dddc81bb855b374641dc927eebf15c6e6e7b6dc003",
+  "schema_version": 1,
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "fresh_receiver",
+  "success": true,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "timings": {
+    "fresh_receiver_seconds": 7.1183815599943046,
+    "load_and_verify_seconds": 14.70867468999495
+  },
+  "tokens_by_phase": {
+    "fresh_receiver": 212
+  },
+  "trace_path": "artifacts/stage8/attempts/dbe52d05-e77e-4f8e-8938-7e2c811e44aa/traces.json",
+  "transport_bytes": 965,
+  "transport_sha256": "e9a7d6a6af972e7c2ec159b330936af715106023b4641eb271ea97fa3b7911c4",
+  "wire_delivered": true,
+  "worker_seconds": 21.997570031999203
+}

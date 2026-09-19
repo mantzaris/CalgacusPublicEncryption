@@ -1,0 +1,150 @@
+{
+  "attempt_id": "0955c817-980e-479d-9bad-3234f8fe04ff",
+  "attempt_useful_bits_per_transmitted_token": 1.28,
+  "authenticated": true,
+  "authenticated_message_recovery": true,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 17,
+      "examined_total": 3203,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 3,
+        "special_control": 0
+      },
+      "steps": 200
+    },
+    "public_scoring": {
+      "examined_max": 17,
+      "examined_total": 3203,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 3,
+        "special_control": 0
+      },
+      "steps": 200
+    },
+    "receiver": {
+      "examined_max": 17,
+      "examined_total": 3203,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 3,
+        "special_control": 0
+      },
+      "steps": 200
+    }
+  },
+  "carrier_tokens": 200,
+  "case_id": "F-c2-n32-r0",
+  "charged_tokens": 630,
+  "ciphertext_sha256": "3f58b9d36bd0b30daec1c361486babb0b7e3f2d3b90b76d93e00f89b486b757d",
+  "context_index": 2,
+  "context_window_verified": true,
+  "cover_context": "A station bulletin about maintaining a platform clock:",
+  "cumulative_budget": {
+    "cases": 233,
+    "seconds": 9760.983740635973,
+    "tokens": 157352
+  },
+  "encapsulation_hex": "0f054fed477191ce26921004fc217c4565f6b2e9f5cf7c9e35648304d5803c12",
+  "envelope_bytes": 100,
+  "envelope_sha256": "e83d8efe9f504756fd52147c0ea8071f1175a572458fa7afd94b4607a2c8a010",
+  "evidence_dir": "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff",
+  "exact_recovery": true,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "first_rank_divergence": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 200,
+  "job_elapsed_seconds": 36.81155096299699,
+  "key_id": "STAGE8_TEST_ONLY_4",
+  "kind": "encrypted",
+  "lease_verified": true,
+  "method": "F",
+  "observer": {
+    "all_candidates_member": true,
+    "authenticated": false,
+    "body_region_reason": "No fixed token exclusion applied; complete-message scores are primary for both methods",
+    "body_region_scores": null,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "envelope_bytes": 100,
+    "envelope_sha256": "e83d8efe9f504756fd52147c0ea8071f1175a572458fa7afd94b4607a2c8a010",
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_admissible_nll_bits": 5.401630416712111,
+    "mean_log2_rank": 2.580880643444821,
+    "mean_nll_bits": 5.8136566878228875,
+    "member_fraction": 1.0,
+    "observer_id": "stage8_complete_public_v1",
+    "probability_rounding_max_tv": 0.0002331147116824713,
+    "probability_rounding_mean_tv": 0.0001339913432490517,
+    "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+    "schema_version": 1,
+    "scorable": true,
+    "status": "scored",
+    "token_count": 200,
+    "utf8_bytes": 1014
+  },
+  "pair_id": "c2-n32-r0",
+  "payload_bytes": 32,
+  "payload_setting_bytes": 32,
+  "payload_sha256": "baed760ca272344456d3eaa6254d2344ca01d21c1860e90d1f2017d4308c586c",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 852506,
+  "profile_id": "stage8_public_F_size32_v1",
+  "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A station bulletin about maintaining a platform clock:": [
+      128000,
+      32,
+      8216,
+      75829,
+      922,
+      20958,
+      264,
+      5452,
+      9042,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "02b63085d56de57ebb47e211428159cc9199769ed06633564790e2a79c8f7e44",
+  "recovered_sha256": "baed760ca272344456d3eaa6254d2344ca01d21c1860e90d1f2017d4308c586c",
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "serialized_base64": "DwVP7Udxkc4mkhAE/CF8RWX2sun1z3yeNWSDBNWAPBIHGZ4nh+CmtdAnslo/yBtCtBTdKvcqfVgtQe0zpVeUCChXPhBh6jaLunFimPyHc1cRqAHiYAF5jrBD1ocdoLSe2yGtQg==",
+  "split": "stage8_prospective_development_informed_not_final_test",
+  "stage8_phase": "main_fixed",
+  "success": true,
+  "successful_payload_bits_per_token": 1.28,
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 7.038724327001546,
+    "load_and_verify_seconds": 14.489495570000145,
+    "public_scoring_seconds": 7.2960250150026695,
+    "receiver_seconds": 7.032326150998415
+  },
+  "tokens_by_phase": {
+    "encode": 210,
+    "public_scoring": 210,
+    "receiver": 210
+  },
+  "trace_path": "artifacts/stage8/attempts/0955c817-980e-479d-9bad-3234f8fe04ff/traces.json",
+  "transport_bytes": 1014,
+  "transport_sha256": "31166c0d579148ceb01670dc0886944d547d4888800814d01fa36a8362f08ca6",
+  "wire_delivered": true,
+  "worker_seconds": 36.04042792400287
+}

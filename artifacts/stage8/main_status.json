@@ -1,0 +1,33 @@
+{
+  "allocation_id": "stage8_capacity_comparison_2026-09-18",
+  "lifetime_usage": {
+    "cases": 261,
+    "seconds": 13152.147518922986,
+    "tokens": 206887
+  },
+  "phase": "main",
+  "qualification_passed": false,
+  "recorded_outcomes": 43,
+  "schema_version": 1,
+  "skipped": [
+    {
+      "case_id": "replay-R-c0-n32",
+      "reason": "Predetermined source unavailable; no replacement"
+    },
+    {
+      "case_id": "replay-R-c0-n128",
+      "reason": "Predetermined source unavailable; no replacement"
+    },
+    {
+      "case_id": "replay-R-c2-n128",
+      "reason": "Predetermined source unavailable; no replacement"
+    }
+  ],
+  "stage8_usage": {
+    "cases": 43,
+    "seconds": 5156.875482143001,
+    "tokens": 75028
+  },
+  "stop_reason": "Frozen phase completed",
+  "tested_code_commit": "78617213825f1163b3692f698e1063ba32a7de73"
+}
