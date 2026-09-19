@@ -1,0 +1,151 @@
+{
+  "attempt_id": "81c2d1d9-1365-4fb7-a307-6253a842310c",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": 21,
+      "examined_total": 14013,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 19,
+        "noncanonical": 153,
+        "special_control": 49
+      },
+      "steps": 862
+    },
+    "public_scoring": {
+      "examined_max": 21,
+      "examined_total": 14013,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 19,
+        "noncanonical": 153,
+        "special_control": 49
+      },
+      "steps": 862
+    }
+  },
+  "carrier_tokens": 862,
+  "case_id": "B-fixed-c0",
+  "charged_tokens": 1742,
+  "context_index": 0,
+  "context_window_verified": true,
+  "cover_context": "A museum note about a copper bell:",
+  "cumulative_budget": {
+    "cases": 265,
+    "seconds": 13576.145209887978,
+    "tokens": 213955
+  },
+  "evidence_dir": "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c",
+  "exact_recovery": false,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": "B-fixed",
+  "first_transport_divergence": null,
+  "generated_tokens": 862,
+  "generation_completion": {
+    "first_completion_token": null,
+    "high_inclusive": 3439650676,
+    "low": 1069936064,
+    "pending_underflow": 1,
+    "stable_bits": 235
+  },
+  "generation_target_reached": false,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 862,
+  "job_elapsed_seconds": 94.40634885300096,
+  "kind": "control",
+  "lease_verified": true,
+  "method": "R",
+  "observer": {
+    "all_candidates_member": true,
+    "arithmetic_terminal": {
+      "high_inclusive": 3439650676,
+      "low": 1069936064,
+      "pending_underflow": 1,
+      "stable_bits": 235
+    },
+    "authenticated": false,
+    "body_region_reason": "No fixed token exclusion applied; complete-message scores are primary for both methods",
+    "body_region_scores": null,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "canonical_replay_consistent": null,
+    "ends_at_first_completion": null,
+    "filler_consistent": null,
+    "first_completion_token": null,
+    "format_accepted": false,
+    "format_and_kem_canonical": false,
+    "kem_canonical": null,
+    "mean_admissible_nll_bits": 0.2746108503728439,
+    "mean_log2_rank": 0.09980721816036424,
+    "mean_nll_bits": 0.2938477593919544,
+    "member_fraction": 1.0,
+    "observer_id": "stage9_decomposed_public_v1",
+    "probability_rounding_max_tv": 0.00023661336860646351,
+    "probability_rounding_mean_tv": 0.00021853456328512651,
+    "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+    "schema_version": 1,
+    "scorable": true,
+    "stable_bits": 235,
+    "stable_target_reached": false,
+    "status": "scored",
+    "token_count": 862,
+    "unavailable_reasons": {
+      "canonical_replay_consistent": "Required stable bits not reached",
+      "ends_at_first_completion": "Required stable bits not reached",
+      "filler_consistent": "Required stable bits not reached",
+      "kem_canonical": "Required stable bits not reached"
+    },
+    "utf8_bytes": 2457,
+    "valid_utf8": true
+  },
+  "pair_id": "c0",
+  "payload_setting_bytes": 32,
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 1103029,
+  "profile_id": "stage9_public_R_size32_v1",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A museum note about a copper bell:": [
+      128000,
+      32,
+      24925,
+      5296,
+      922,
+      264,
+      24166,
+      29519,
+      25
+    ]
+  },
+  "sampling_seed": 202609210000,
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "prospective",
+  "success": true,
+  "target_tokens": 862,
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "text_retokenizes": true,
+  "timings": {
+    "control_generation_seconds": 39.14719108400459,
+    "load_and_verify_seconds": 14.464639441001054,
+    "public_scoring_seconds": 40.201720834003936
+  },
+  "tokens_by_phase": {
+    "control_generation": 871,
+    "public_scoring": 871
+  },
+  "trace_path": "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c/traces.json",
+  "transport_bytes": 2457,
+  "transport_sha256": "59f56695be655b1ee07eec0095cb6234eb6e96c692a9c20683486a40210bbeea",
+  "wire_delivered": true,
+  "worker_seconds": 94.02528877899749
+}

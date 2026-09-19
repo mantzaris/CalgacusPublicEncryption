@@ -1,0 +1,66 @@
+{
+  "attempt_id": "135b0562-f114-4572-8497-376d80a6b4fe",
+  "authenticated": true,
+  "candidate_costs": {
+    "fresh_receiver": {
+      "examined_max": 20,
+      "examined_total": 13873,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 13,
+        "noncanonical": 32,
+        "special_control": 36
+      },
+      "steps": 862
+    }
+  },
+  "carrier_tokens": 862,
+  "case_id": "replay-R-c0",
+  "charged_tokens": 871,
+  "context_index": 0,
+  "context_window_verified": true,
+  "cover_context": "A museum note about a copper bell:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "replay",
+  "method": "R",
+  "pair_id": null,
+  "payload_setting_bytes": 32,
+  "pid": 1173267,
+  "profile_id": "stage9_public_R_size32_v1",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "public_context_token_ids": {
+    "A museum note about a copper bell:": [
+      128000,
+      32,
+      24925,
+      5296,
+      922,
+      264,
+      24166,
+      29519,
+      25
+    ]
+  },
+  "recovered_bytes": 32,
+  "recovered_sha256": "77d2b7aebebd0156d1023cbf5e9c7d92f954265af7b917cb1e3ae0ab7eee2118",
+  "schema_version": 1,
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "fresh_receiver",
+  "success": true,
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "timings": {
+    "fresh_receiver_seconds": 40.55564504599897,
+    "load_and_verify_seconds": 14.677145975001622
+  },
+  "tokens_by_phase": {
+    "fresh_receiver": 871
+  },
+  "trace_path": "artifacts/stage9/attempts/135b0562-f114-4572-8497-376d80a6b4fe/traces.json",
+  "transport_bytes": 3909,
+  "transport_sha256": "063ad7df35fda25be96a2a686f0b3cd4e7c7ade26701c22efecfef27f461f6ae",
+  "wire_delivered": true,
+  "worker_seconds": 55.35767819100147
+}

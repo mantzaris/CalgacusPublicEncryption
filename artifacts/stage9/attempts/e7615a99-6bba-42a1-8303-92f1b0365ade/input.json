@@ -1,0 +1,34 @@
+{
+  "TEST_ONLY_private_key_hex": "98d0dc0b72b632fcc17e9775d5aa4ec359b718b09f8607ec0231ae25706cda46",
+  "case_id": "R-c0",
+  "context_index": 0,
+  "key_id": "STAGE9_TEST_ONLY_0",
+  "kind": "encrypted",
+  "method": "R",
+  "pair_id": "c0",
+  "payload_bytes": 32,
+  "payload_hex": "03a4ceb0c30317da1af543cb0d1674d96ba0032ce6a79ea074d6f6c0b67d8a09",
+  "payload_sha256": "77d2b7aebebd0156d1023cbf5e9c7d92f954265af7b917cb1e3ae0ab7eee2118",
+  "profile_path": "configs/stage9/R32.json",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "prospective",
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "token_reservation": 6200,
+  "wall_reservation_seconds": 540
+}

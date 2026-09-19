@@ -1,0 +1,134 @@
+{
+  "attempt_id": "949b4c88-db26-48a8-8a61-1f4502f910a4",
+  "authenticated": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": 22,
+      "examined_total": 19045,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 59,
+        "special_control": 10
+      },
+      "steps": 1186
+    },
+    "public_scoring": {
+      "examined_max": 22,
+      "examined_total": 19045,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 59,
+        "special_control": 10
+      },
+      "steps": 1186
+    }
+  },
+  "carrier_tokens": 1186,
+  "case_id": "B-stop-c1",
+  "charged_tokens": 2390,
+  "context_index": 1,
+  "context_window_verified": true,
+  "cover_context": "A workshop note about a wooden ruler:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": "B-stop",
+  "first_transport_divergence": null,
+  "generated_tokens": 1186,
+  "generation_completion": {
+    "first_completion_token": 1186,
+    "high_inclusive": 3931930523,
+    "low": 435989120,
+    "pending_underflow": 0,
+    "stable_bits": 803
+  },
+  "generation_target_reached": true,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "intended_carrier_tokens": 1186,
+  "kind": "control",
+  "method": "R",
+  "observer": {
+    "all_candidates_member": true,
+    "arithmetic_terminal": {
+      "high_inclusive": 3931930523,
+      "low": 435989120,
+      "pending_underflow": 0,
+      "stable_bits": 803
+    },
+    "authenticated": false,
+    "body_region_reason": "No fixed token exclusion applied; complete-message scores are primary for both methods",
+    "body_region_scores": null,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "canonical_replay_consistent": false,
+    "ends_at_first_completion": true,
+    "envelope_bytes": 100,
+    "envelope_sha256": "41772cd7431eabf6b62f131acc228ac666f54fc37c431e58ad98ffd786e83faa",
+    "filler_consistent": false,
+    "first_completion_token": 1186,
+    "first_replay_divergence": 1182,
+    "format_accepted": false,
+    "format_and_kem_canonical": false,
+    "kem_canonical": true,
+    "mean_admissible_nll_bits": 0.6770821375320352,
+    "mean_log2_rank": 0.22932657151628935,
+    "mean_nll_bits": 0.7026720540696247,
+    "member_fraction": 1.0,
+    "observer_id": "stage9_decomposed_public_v1",
+    "probability_rounding_max_tv": 0.00023638196132094133,
+    "probability_rounding_mean_tv": 0.00020618190158681857,
+    "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+    "schema_version": 1,
+    "scorable": true,
+    "stable_bits": 803,
+    "stable_overshoot_bits": 3,
+    "stable_target_reached": true,
+    "status": "scored",
+    "token_count": 1186,
+    "unavailable_reasons": {},
+    "utf8_bytes": 5297,
+    "valid_utf8": true
+  },
+  "pair_id": "c1",
+  "payload_setting_bytes": 32,
+  "pid": 1115398,
+  "profile_id": "stage9_public_R_size32_v1",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "public_context_token_ids": {
+    "A workshop note about a wooden ruler:": [
+      128000,
+      32,
+      26129,
+      5296,
+      922,
+      264,
+      23162,
+      49080,
+      25
+    ]
+  },
+  "sampling_seed": 202609210001,
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "prospective",
+  "success": true,
+  "target_tokens": 1984,
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "text_retokenizes": true,
+  "timings": {
+    "control_generation_seconds": 61.876805763997254,
+    "load_and_verify_seconds": 14.757491297001252,
+    "public_scoring_seconds": 63.56807300999935
+  },
+  "tokens_by_phase": {
+    "control_generation": 1195,
+    "public_scoring": 1195
+  },
+  "trace_path": "artifacts/stage9/attempts/949b4c88-db26-48a8-8a61-1f4502f910a4/traces.json",
+  "transport_bytes": 5297,
+  "transport_sha256": "30bf1f23ff0a33f08cdc257c5957e12b31e21d1ba0dbe0d02343ac50313202fa",
+  "wire_delivered": true,
+  "worker_seconds": 140.44311970099807
+}

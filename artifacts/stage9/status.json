@@ -1,0 +1,18 @@
+{
+  "allocation_id": "stage9_stopping_rule_20260918",
+  "lifetime_usage": {
+    "cases": 283,
+    "seconds": 16079.239397774993,
+    "tokens": 252875
+  },
+  "recorded_outcomes": 22,
+  "schema_version": 1,
+  "skipped": [],
+  "stage9_usage": {
+    "cases": 22,
+    "seconds": 2927.0918788520066,
+    "tokens": 45988
+  },
+  "stop_reason": "Frozen Stage9 study completed",
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+}

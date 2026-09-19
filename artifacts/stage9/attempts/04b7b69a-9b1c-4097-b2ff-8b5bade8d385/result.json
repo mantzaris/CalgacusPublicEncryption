@@ -1,0 +1,73 @@
+{
+  "attempt_id": "04b7b69a-9b1c-4097-b2ff-8b5bade8d385",
+  "attempt_useful_bits_per_transmitted_token": 0.0,
+  "authenticated": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 23,
+      "examined_total": 32308,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 138,
+        "noncanonical": 414,
+        "special_control": 12
+      },
+      "steps": 1984
+    }
+  },
+  "case_id": "R-c2",
+  "charged_tokens": 1993,
+  "ciphertext_sha256": "1ea0811f142ffaa3e35261c119a0cc8064b2613347fdbd57fe17c626717b5d43",
+  "context_index": 2,
+  "context_window_verified": true,
+  "cover_context": "A library note about a folded map:",
+  "encapsulation_hex": "92142f416011822aed030c8d7e1036d9791cff4cb18d62c78c7b39b1ad28a021",
+  "envelope_bytes": 100,
+  "envelope_sha256": "c3b51d911a91f9b11665c33cc9ef43cef4d9b5a91070ccfda9e6ed8473545d65",
+  "error": "Arithmetic carrier ceiling before complete stable packet",
+  "exact_recovery": false,
+  "exception_type": "CapacityError",
+  "failure_category": "capacity_exhaustion",
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "key_id": "STAGE9_TEST_ONLY_2",
+  "kind": "encrypted",
+  "method": "R",
+  "pair_id": "c2",
+  "payload_bytes": 32,
+  "payload_setting_bytes": 32,
+  "payload_sha256": "091e4840ad8807db536b9207d93d3a9162c4ce75b321fb240812026c9d2b5bd1",
+  "pid": 1119943,
+  "profile_id": "stage9_public_R_size32_v1",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "public_context_token_ids": {
+    "A library note about a folded map:": [
+      128000,
+      32,
+      6875,
+      5296,
+      922,
+      264,
+      48135,
+      2472,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "b1da7d6f3c3c2f6be64a501185fd743ba7327076b958a6889aa2f1841b718042",
+  "schema_version": 1,
+  "serialized_base64": "khQvQWARgirtAwyNfhA22Xkc/0yxjWLHjHs5sa0ooCG5ElzxNyJjlyHJalWmuNVNbUMN/vFbBHUuM/PC8TDYJpFJXXZGnh4L+cTfvHPeEt6W67OGjFjuqvg24Q2YD0/+EL0FUg==",
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "prospective",
+  "success": false,
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "timings": {
+    "encode_seconds": 141.02339098200173,
+    "load_and_verify_seconds": 14.724864450996392
+  },
+  "tokens_by_phase": {
+    "encode": 1993
+  },
+  "trace_path": "artifacts/stage9/attempts/04b7b69a-9b1c-4097-b2ff-8b5bade8d385/traces.json",
+  "wire_delivered": false,
+  "worker_seconds": 156.04368686799717
+}

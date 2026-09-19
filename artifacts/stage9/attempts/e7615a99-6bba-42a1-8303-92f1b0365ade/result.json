@@ -1,0 +1,148 @@
+{
+  "attempt_id": "e7615a99-6bba-42a1-8303-92f1b0365ade",
+  "attempt_useful_bits_per_transmitted_token": 0.29698375870069604,
+  "authenticated": true,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 20,
+      "examined_total": 13873,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 13,
+        "noncanonical": 32,
+        "special_control": 36
+      },
+      "steps": 862
+    },
+    "public_scoring": {
+      "examined_max": 20,
+      "examined_total": 13873,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 13,
+        "noncanonical": 32,
+        "special_control": 36
+      },
+      "steps": 862
+    },
+    "receiver": {
+      "examined_max": 20,
+      "examined_total": 13873,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 13,
+        "noncanonical": 32,
+        "special_control": 36
+      },
+      "steps": 862
+    }
+  },
+  "carrier_tokens": 862,
+  "case_id": "R-c0",
+  "charged_tokens": 2613,
+  "ciphertext_sha256": "6253c968f4bd323bef460763178da0eaaead4638a64673721ea54c1d8771ec5c",
+  "context_index": 0,
+  "context_window_verified": true,
+  "cover_context": "A museum note about a copper bell:",
+  "encapsulation_hex": "b8d9cfdd7a217d61c000aafe4bc80da97a0e77072183861e8a960e7effaa5b10",
+  "envelope_bytes": 100,
+  "envelope_sha256": "2878da999eb43806e37ea29a2760eae0f9c884198b9cf22066eb97b79895283a",
+  "exact_recovery": true,
+  "failure_category": null,
+  "family": null,
+  "first_rank_divergence": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "intended_carrier_tokens": 862,
+  "key_id": "STAGE9_TEST_ONLY_0",
+  "kind": "encrypted",
+  "method": "R",
+  "observer": {
+    "all_candidates_member": true,
+    "arithmetic_terminal": {
+      "high_inclusive": 4137810431,
+      "low": 661566016,
+      "pending_underflow": 2,
+      "stable_bits": 800
+    },
+    "authenticated": false,
+    "body_region_reason": "No fixed token exclusion applied; complete-message scores are primary for both methods",
+    "body_region_scores": null,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "canonical_replay_consistent": true,
+    "ends_at_first_completion": true,
+    "envelope_bytes": 100,
+    "envelope_sha256": "2878da999eb43806e37ea29a2760eae0f9c884198b9cf22066eb97b79895283a",
+    "filler_consistent": true,
+    "first_completion_token": 862,
+    "format_accepted": true,
+    "format_and_kem_canonical": true,
+    "kem_canonical": true,
+    "mean_admissible_nll_bits": 0.9306486747233877,
+    "mean_log2_rank": 0.34171916005320707,
+    "mean_nll_bits": 0.9700918021950395,
+    "member_fraction": 1.0,
+    "observer_id": "stage9_decomposed_public_v1",
+    "probability_rounding_max_tv": 0.00023745770879681483,
+    "probability_rounding_mean_tv": 0.00019969714544924958,
+    "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+    "schema_version": 1,
+    "scorable": true,
+    "stable_bits": 800,
+    "stable_overshoot_bits": 0,
+    "stable_target_reached": true,
+    "status": "scored",
+    "token_count": 862,
+    "unavailable_reasons": {},
+    "utf8_bytes": 3909,
+    "valid_utf8": true
+  },
+  "pair_id": "c0",
+  "payload_bytes": 32,
+  "payload_setting_bytes": 32,
+  "payload_sha256": "77d2b7aebebd0156d1023cbf5e9c7d92f954265af7b917cb1e3ae0ab7eee2118",
+  "pid": 1099167,
+  "profile_id": "stage9_public_R_size32_v1",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "public_context_token_ids": {
+    "A museum note about a copper bell:": [
+      128000,
+      32,
+      24925,
+      5296,
+      922,
+      264,
+      24166,
+      29519,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "c11dcd9c204c9ea875e976d35c0709e6c3fb74c7c0110c74f1982fe201d72b3e",
+  "recovered_sha256": "77d2b7aebebd0156d1023cbf5e9c7d92f954265af7b917cb1e3ae0ab7eee2118",
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "serialized_base64": "uNnP3XohfWHAAKr+S8gNqXoOdwchg4YeipYOfv+qWxAjqwskUyyzKy1sIQwtQSQHoIPqIi419ml/pRNUw4JxdbvmYsQbFnAP5knqfDrxBIYF02VxqEgqSKMG/u5P+dtwDr/0HA==",
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "prospective",
+  "success": true,
+  "successful_payload_bits_per_token": 0.29698375870069604,
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 40.51752259199566,
+    "load_and_verify_seconds": 14.440519333002158,
+    "public_scoring_seconds": 41.632472820005205,
+    "receiver_seconds": 40.63578780899843
+  },
+  "tokens_by_phase": {
+    "encode": 871,
+    "public_scoring": 871,
+    "receiver": 871
+  },
+  "trace_path": "artifacts/stage9/attempts/e7615a99-6bba-42a1-8303-92f1b0365ade/traces.json",
+  "transport_bytes": 3909,
+  "transport_sha256": "063ad7df35fda25be96a2a686f0b3cd4e7c7ade26701c22efecfef27f461f6ae",
+  "wire_delivered": true,
+  "worker_seconds": 137.53726580399962
+}

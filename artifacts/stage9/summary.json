@@ -1,0 +1,321 @@
+{
+  "completion_uncertainty": {
+    "B-fixed": {
+      "context_bootstrap_interval": [
+        0.0,
+        0.0
+      ],
+      "warning": "Six selected contexts; empirical cluster interval is not a population guarantee"
+    },
+    "B-stop": {
+      "context_bootstrap_interval": [
+        0.16666666666666666,
+        0.8333333333333334
+      ],
+      "warning": "Six selected contexts; empirical cluster interval is not a population guarantee"
+    },
+    "R": {
+      "context_bootstrap_interval": [
+        0.3333333333333333,
+        1.0
+      ],
+      "warning": "Six selected contexts; empirical cluster interval is not a population guarantee"
+    }
+  },
+  "counts": {
+    "B-fixed": {
+      "attempted": 6,
+      "authenticated_exact": 0,
+      "capacity_aborts": 0,
+      "delivered": 6,
+      "planned": 6,
+      "scorable": 6,
+      "stable_packet_completed": 0,
+      "successful_generation": 6
+    },
+    "B-stop": {
+      "attempted": 6,
+      "authenticated_exact": 0,
+      "capacity_aborts": 3,
+      "delivered": 3,
+      "planned": 6,
+      "scorable": 3,
+      "stable_packet_completed": 3,
+      "successful_generation": 3
+    },
+    "R": {
+      "attempted": 6,
+      "authenticated_exact": 4,
+      "capacity_aborts": 2,
+      "delivered": 4,
+      "planned": 6,
+      "scorable": 4,
+      "stable_packet_completed": 4,
+      "successful_generation": 4
+    }
+  },
+  "failures": {
+    "capacity_exhaustion": 5
+  },
+  "fresh_receiver_attempts": 2,
+  "fresh_receiver_recoveries": 2,
+  "gpu": {
+    "driver": "590.48.01",
+    "index": "1",
+    "name": "NVIDIA RTX 5000 Ada Generation",
+    "uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "vram_mib": "32760"
+  },
+  "gpu_tested_revisions": [
+    "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+  ],
+  "lifetime_usage": {
+    "cases": 283,
+    "seconds": 16079.239397774993,
+    "tokens": 252875
+  },
+  "parent_remaining": {
+    "cases": 59,
+    "seconds": 5862.64548758799,
+    "tokens": 172119
+  },
+  "peak_sampled_vram_mib": 5006,
+  "predicate_counts": {
+    "B-fixed": {
+      "all_candidates_member": {
+        "delivered_scorable_denominator": 6,
+        "false": 0,
+        "true": 6,
+        "unavailable": 0
+      },
+      "canonical_bytes": {
+        "delivered_scorable_denominator": 6,
+        "false": 0,
+        "true": 6,
+        "unavailable": 0
+      },
+      "canonical_replay_consistent": {
+        "delivered_scorable_denominator": 6,
+        "false": 0,
+        "true": 0,
+        "unavailable": 6
+      },
+      "ends_at_first_completion": {
+        "delivered_scorable_denominator": 6,
+        "false": 0,
+        "true": 0,
+        "unavailable": 6
+      },
+      "filler_consistent": {
+        "delivered_scorable_denominator": 6,
+        "false": 0,
+        "true": 0,
+        "unavailable": 6
+      },
+      "format_accepted": {
+        "delivered_scorable_denominator": 6,
+        "false": 6,
+        "true": 0,
+        "unavailable": 0
+      },
+      "format_and_kem_canonical": {
+        "delivered_scorable_denominator": 6,
+        "false": 6,
+        "true": 0,
+        "unavailable": 0
+      },
+      "kem_canonical": {
+        "delivered_scorable_denominator": 6,
+        "false": 0,
+        "true": 0,
+        "unavailable": 6
+      },
+      "stable_target_reached": {
+        "delivered_scorable_denominator": 6,
+        "false": 6,
+        "true": 0,
+        "unavailable": 0
+      },
+      "valid_utf8": {
+        "delivered_scorable_denominator": 6,
+        "false": 0,
+        "true": 6,
+        "unavailable": 0
+      }
+    },
+    "B-stop": {
+      "all_candidates_member": {
+        "delivered_scorable_denominator": 3,
+        "false": 0,
+        "true": 3,
+        "unavailable": 0
+      },
+      "canonical_bytes": {
+        "delivered_scorable_denominator": 3,
+        "false": 0,
+        "true": 3,
+        "unavailable": 0
+      },
+      "canonical_replay_consistent": {
+        "delivered_scorable_denominator": 3,
+        "false": 3,
+        "true": 0,
+        "unavailable": 0
+      },
+      "ends_at_first_completion": {
+        "delivered_scorable_denominator": 3,
+        "false": 0,
+        "true": 3,
+        "unavailable": 0
+      },
+      "filler_consistent": {
+        "delivered_scorable_denominator": 3,
+        "false": 2,
+        "true": 1,
+        "unavailable": 0
+      },
+      "format_accepted": {
+        "delivered_scorable_denominator": 3,
+        "false": 3,
+        "true": 0,
+        "unavailable": 0
+      },
+      "format_and_kem_canonical": {
+        "delivered_scorable_denominator": 3,
+        "false": 3,
+        "true": 0,
+        "unavailable": 0
+      },
+      "kem_canonical": {
+        "delivered_scorable_denominator": 3,
+        "false": 2,
+        "true": 1,
+        "unavailable": 0
+      },
+      "stable_target_reached": {
+        "delivered_scorable_denominator": 3,
+        "false": 0,
+        "true": 3,
+        "unavailable": 0
+      },
+      "valid_utf8": {
+        "delivered_scorable_denominator": 3,
+        "false": 0,
+        "true": 3,
+        "unavailable": 0
+      }
+    },
+    "R": {
+      "all_candidates_member": {
+        "delivered_scorable_denominator": 4,
+        "false": 0,
+        "true": 4,
+        "unavailable": 0
+      },
+      "canonical_bytes": {
+        "delivered_scorable_denominator": 4,
+        "false": 0,
+        "true": 4,
+        "unavailable": 0
+      },
+      "canonical_replay_consistent": {
+        "delivered_scorable_denominator": 4,
+        "false": 0,
+        "true": 4,
+        "unavailable": 0
+      },
+      "ends_at_first_completion": {
+        "delivered_scorable_denominator": 4,
+        "false": 0,
+        "true": 4,
+        "unavailable": 0
+      },
+      "filler_consistent": {
+        "delivered_scorable_denominator": 4,
+        "false": 0,
+        "true": 4,
+        "unavailable": 0
+      },
+      "format_accepted": {
+        "delivered_scorable_denominator": 4,
+        "false": 0,
+        "true": 4,
+        "unavailable": 0
+      },
+      "format_and_kem_canonical": {
+        "delivered_scorable_denominator": 4,
+        "false": 0,
+        "true": 4,
+        "unavailable": 0
+      },
+      "kem_canonical": {
+        "delivered_scorable_denominator": 4,
+        "false": 0,
+        "true": 4,
+        "unavailable": 0
+      },
+      "stable_target_reached": {
+        "delivered_scorable_denominator": 4,
+        "false": 0,
+        "true": 4,
+        "unavailable": 0
+      },
+      "valid_utf8": {
+        "delivered_scorable_denominator": 4,
+        "false": 0,
+        "true": 4,
+        "unavailable": 0
+      }
+    }
+  },
+  "probability_rounding": {
+    "B-fixed": {
+      "max_step_tv": 0.00023833930238110378,
+      "mean_message_tv": 0.00021135533647332656
+    },
+    "B-stop": {
+      "max_step_tv": 0.00023661979822949051,
+      "mean_message_tv": 0.00020615621699612429
+    },
+    "R": {
+      "max_step_tv": 0.00023821399447228537,
+      "mean_message_tv": 0.0001992042104681604
+    }
+  },
+  "retrospective_jobs": 2,
+  "schema_version": 1,
+  "skipped": [],
+  "split": "prospective development; no historical pooling; not final held-out evaluation",
+  "stage9_remaining": {
+    "cases": 10,
+    "seconds": 5712.908121147993,
+    "tokens": 74012
+  },
+  "starting_commit": "5400c9bf7ff03e9d10a913674bbc8399bd4df7da",
+  "status": "Frozen Stage9 study completed",
+  "tokens_by_phase": {
+    "control_generation": 16661,
+    "encode": 7373,
+    "fresh_receiver": 1785,
+    "public_scoring": 16782,
+    "receiver": 3387
+  },
+  "usage": {
+    "cases": 22,
+    "seconds": 2927.0918788520066,
+    "tokens": 45988
+  },
+  "useful_rate": {
+    "mean_attempt_bits_per_token": 0.20466242108078217,
+    "mean_success_bits_per_token": 0.3069936316211732,
+    "recovered_bytes_per_job_second": 0.15066175517788138
+  },
+  "verification": {
+    "all_gpu_lease_phase_provenance_verified": true,
+    "all_reservations_settled": true,
+    "historical_files_unchanged": 2646,
+    "historical_ledger_prefix_preserved": true,
+    "independent_arithmetic_checks": true,
+    "paired_prefix_checks": 6
+  }
+}

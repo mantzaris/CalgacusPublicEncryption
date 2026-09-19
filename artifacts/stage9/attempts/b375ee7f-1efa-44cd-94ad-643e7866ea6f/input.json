@@ -1,0 +1,31 @@
+{
+  "case_id": "historical-prefix-c1",
+  "context_index": 1,
+  "kind": "historical_prefix",
+  "method": "R",
+  "original_carrier_path": "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/carrier.txt",
+  "original_carrier_sha256": "545df43c90efed5ab1540d8eb76f0270880b1e80ffbee83c3297b64c8e84ebd8",
+  "prefix_tokens": 1752,
+  "profile_path": "configs/stage8/R32.json",
+  "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "retrospective_derived_historical_prefix",
+  "stage9_phase": "retrospective",
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "token_reservation": 2100,
+  "wall_reservation_seconds": 210
+}

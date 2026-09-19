@@ -1,0 +1,91 @@
+{
+  "attempt_id": "12d0c064-7f8a-412e-95a2-2c5c0dc20ebe",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": 26,
+      "examined_total": 32073,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 46,
+        "noncanonical": 263,
+        "special_control": 20
+      },
+      "steps": 1984
+    }
+  },
+  "case_id": "B-stop-c4",
+  "charged_tokens": 1993,
+  "context_index": 4,
+  "context_window_verified": true,
+  "cover_context": "A harbor note about a painted buoy:",
+  "cumulative_budget": {
+    "cases": 278,
+    "seconds": 15620.014728748993,
+    "tokens": 244779
+  },
+  "error": "B-stop stable packet target not reached at frozen ceiling",
+  "evidence_dir": "artifacts/stage9/attempts/12d0c064-7f8a-412e-95a2-2c5c0dc20ebe",
+  "exact_recovery": false,
+  "exception_type": "CapacityError",
+  "exit_code": 0,
+  "expected_outcome_agreement": false,
+  "expected_rejection": false,
+  "failure_category": "capacity_exhaustion",
+  "family": "B-stop",
+  "generated_tokens": 1984,
+  "generation_completion": {
+    "first_completion_token": null,
+    "high_inclusive": 3639048514,
+    "low": 1943890574,
+    "pending_underflow": 5,
+    "stable_bits": 613
+  },
+  "generation_target_reached": false,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "job_elapsed_seconds": 150.89582799599884,
+  "kind": "control",
+  "lease_verified": true,
+  "method": "R",
+  "pair_id": "c4",
+  "partial_emission_canonical": true,
+  "payload_setting_bytes": 32,
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 1159475,
+  "profile_id": "stage9_public_R_size32_v1",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A harbor note about a painted buoy:": [
+      128000,
+      32,
+      57511,
+      5296,
+      922,
+      264,
+      24937,
+      75720,
+      25
+    ]
+  },
+  "sampling_seed": 202609210004,
+  "schema_version": 1,
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "prospective",
+  "success": false,
+  "target_tokens": 1984,
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "timings": {
+    "control_generation_seconds": 135.13417201899574,
+    "load_and_verify_seconds": 14.855862543001422
+  },
+  "tokens_by_phase": {
+    "control_generation": 1993
+  },
+  "trace_path": "artifacts/stage9/attempts/12d0c064-7f8a-412e-95a2-2c5c0dc20ebe/traces.json",
+  "wire_delivered": false,
+  "worker_seconds": 150.2181476839978
+}

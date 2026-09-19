@@ -1,0 +1,533 @@
+{
+  "allocation_path": "artifacts/stage9/allocation.json",
+  "attempts": [
+    {
+      "attempt_id": "b375ee7f-1efa-44cd-94ad-643e7866ea6f",
+      "case_id": "historical-prefix-c1",
+      "files": {
+        "artifacts/stage9/attempts/b375ee7f-1efa-44cd-94ad-643e7866ea6f/carrier.txt": "8e41f4e766964c92609670edfc8d023859bb174c5861e5385f211029fb5c483c",
+        "artifacts/stage9/attempts/b375ee7f-1efa-44cd-94ad-643e7866ea6f/command.json": "eddecdc5565a5bbd92aa5e2a4b01f74eec462ab84d44d281ebc377f987839cbb",
+        "artifacts/stage9/attempts/b375ee7f-1efa-44cd-94ad-643e7866ea6f/gpu_samples.json": "ca9f55ee3847090369738dc9f05193686a3ae773fc4c9a290b470d1f8d67c0c6",
+        "artifacts/stage9/attempts/b375ee7f-1efa-44cd-94ad-643e7866ea6f/input.json": "4cbd7a17964c8d56b8befb3de6af0686e526cd33e7df647d3335dd0c5a572f47",
+        "artifacts/stage9/attempts/b375ee7f-1efa-44cd-94ad-643e7866ea6f/outcome.json": "03949d7016d8c55f873d9a5a399a039b5786d80c810969e10f05b455567ddf4c",
+        "artifacts/stage9/attempts/b375ee7f-1efa-44cd-94ad-643e7866ea6f/result.json": "f3652164642a973e3ff8672d3336432d5fd345fd697ca7c529fa97d081cfe039",
+        "artifacts/stage9/attempts/b375ee7f-1efa-44cd-94ad-643e7866ea6f/traces.json": "ee609816889594cffa807e97f5ee32a765dc7351487d55c16323b74af99d2aef",
+        "artifacts/stage9/attempts/b375ee7f-1efa-44cd-94ad-643e7866ea6f/worker.log": "6c59a34df84681674030b980bbef23a79996121129f4b13b50b06434d507ddc5",
+        "artifacts/stage9/attempts/b375ee7f-1efa-44cd-94ad-643e7866ea6f/worker_claim.json": "ddfdacbaa1618136e7bbe70e800bd358108ca59f5661fcc4207849a96ed8d031"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "23ded74f-f34f-4ade-aeac-ecd4d16237b9",
+      "case_id": "historical-prefix-c3",
+      "files": {
+        "artifacts/stage9/attempts/23ded74f-f34f-4ade-aeac-ecd4d16237b9/carrier.txt": "39ef97de959b8bd328e942c4562649a06d2184998c80a8d44fab37c9685abcb9",
+        "artifacts/stage9/attempts/23ded74f-f34f-4ade-aeac-ecd4d16237b9/command.json": "b627259dd5ac71a862e544378039057b684dae17e00c5218a08ab5e0ed16f00d",
+        "artifacts/stage9/attempts/23ded74f-f34f-4ade-aeac-ecd4d16237b9/gpu_samples.json": "e50aecdeb6946be13ad7791d5286f1d66660d2fe1ab4ac3a374a3dbbb1bdc2f6",
+        "artifacts/stage9/attempts/23ded74f-f34f-4ade-aeac-ecd4d16237b9/input.json": "fb0f790319458f5f144c2cead819f8ceb8ff63b47c531fef4e5d65d4d3ab249d",
+        "artifacts/stage9/attempts/23ded74f-f34f-4ade-aeac-ecd4d16237b9/outcome.json": "536371ec100e957c657e7c036a1f2983f6eb9293729e2333212b3a7b97f3d0de",
+        "artifacts/stage9/attempts/23ded74f-f34f-4ade-aeac-ecd4d16237b9/result.json": "f8fba3c6fe88ccf883fac3914be77e23921801909e9bbce5c336c74038916318",
+        "artifacts/stage9/attempts/23ded74f-f34f-4ade-aeac-ecd4d16237b9/traces.json": "1d00f3ee2e373733886ca25df002e24dd6019c07ef946b31673b5c8e1f2804d4",
+        "artifacts/stage9/attempts/23ded74f-f34f-4ade-aeac-ecd4d16237b9/worker.log": "58a5c20bb83e2747ba5dcfd21e7375b53c5c957d533fc73763e25beb447d0c77",
+        "artifacts/stage9/attempts/23ded74f-f34f-4ade-aeac-ecd4d16237b9/worker_claim.json": "4416f7fea9ab8f38df83f8421d13852529ddef2a6a51955720e8dbb6c8cf395f"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "e7615a99-6bba-42a1-8303-92f1b0365ade",
+      "case_id": "R-c0",
+      "files": {
+        "artifacts/stage9/attempts/e7615a99-6bba-42a1-8303-92f1b0365ade/carrier.txt": "063ad7df35fda25be96a2a686f0b3cd4e7c7ade26701c22efecfef27f461f6ae",
+        "artifacts/stage9/attempts/e7615a99-6bba-42a1-8303-92f1b0365ade/command.json": "d0b87ce44d1f7ed87aa5f3c44a2e6ab9d91c465456ddf624889e4f0d84b7706d",
+        "artifacts/stage9/attempts/e7615a99-6bba-42a1-8303-92f1b0365ade/gpu_samples.json": "d18b50accadcb63d4c37cb846e6ba8547373b0998108e4afbde40e7787606794",
+        "artifacts/stage9/attempts/e7615a99-6bba-42a1-8303-92f1b0365ade/input.json": "4a914ac83d9456aed00fc0432f1d6e4a6ba9a671855a5ce25ad1abefafbc0b59",
+        "artifacts/stage9/attempts/e7615a99-6bba-42a1-8303-92f1b0365ade/outcome.json": "0911da8d53cffc567a21f91ebd3811743b3f1004daa8ee78ff635274dcea80de",
+        "artifacts/stage9/attempts/e7615a99-6bba-42a1-8303-92f1b0365ade/partial_emission.bin": "063ad7df35fda25be96a2a686f0b3cd4e7c7ade26701c22efecfef27f461f6ae",
+        "artifacts/stage9/attempts/e7615a99-6bba-42a1-8303-92f1b0365ade/result.json": "cb3e9c41816b22950a96ef663b476dd33afce49f015463c3501bb00f7da20c81",
+        "artifacts/stage9/attempts/e7615a99-6bba-42a1-8303-92f1b0365ade/traces.json": "9dddc9881892b192023e1a42da190f58500b642c4ca08ff26e75d5addbe320df",
+        "artifacts/stage9/attempts/e7615a99-6bba-42a1-8303-92f1b0365ade/worker.log": "07dfb14aa4b998ac01ceacbd5b943533a3d32c143283558e341ac4aff0a2d5ee",
+        "artifacts/stage9/attempts/e7615a99-6bba-42a1-8303-92f1b0365ade/worker_claim.json": "ae90e91c98dc3d9b7618654095f6fa6e410cc0cedef6355eb861151cfa5a022c"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "81c2d1d9-1365-4fb7-a307-6253a842310c",
+      "case_id": "B-fixed-c0",
+      "files": {
+        "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c/carrier.txt": "59f56695be655b1ee07eec0095cb6234eb6e96c692a9c20683486a40210bbeea",
+        "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c/command.json": "6bc267a0dba4bb196a4f1f1d2f600f0677290a1dc0bc979813750ba39571a83d",
+        "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c/gpu_samples.json": "11d2c6bd13b2f32db0f84267923f85035a0ef269fec42609f3340ceef1d2ca42",
+        "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c/input.json": "df5c9cb882e9869f5fda66910e6e0dc07ddaeb3d7ec780a52736e9c6adeadeb7",
+        "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c/outcome.json": "49f4daa1fd0fefe667abba02fdd1df13e49076951f2583f110b4776d6d7fed1c",
+        "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c/partial_emission.bin": "59f56695be655b1ee07eec0095cb6234eb6e96c692a9c20683486a40210bbeea",
+        "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c/result.json": "b8b25be001095b6e47874ca00484fe41eb1e43d850982d94beb4353b93dce8b5",
+        "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c/traces.json": "b06a584c793d96cfed403f89cd84ec6ec29e6efd70f4f748362cdd3628610b4c",
+        "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c/worker.log": "954a2b6dee55419d5bfeacf945422113afd4b2d1c06e95d20a9ed55b4a8a4aa7",
+        "artifacts/stage9/attempts/81c2d1d9-1365-4fb7-a307-6253a842310c/worker_claim.json": "45bd1c949da43f59f84db74e5a68c9a96ea6040c2a3c2ca0f88eb42a78744f4a"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "7d137c82-cb2a-4e70-aace-516389d652d6",
+      "case_id": "B-stop-c0",
+      "files": {
+        "artifacts/stage9/attempts/7d137c82-cb2a-4e70-aace-516389d652d6/command.json": "6a9650882f4a4d34e11daea14b105cd203194385a2c0cf524535340ddc2ca542",
+        "artifacts/stage9/attempts/7d137c82-cb2a-4e70-aace-516389d652d6/gpu_samples.json": "c871e51c40abde4f250e42a3ca0aa4412365d5ad3145062055b0f7f220403ed8",
+        "artifacts/stage9/attempts/7d137c82-cb2a-4e70-aace-516389d652d6/input.json": "8e2ab0a15b0b1f8fef7185b7f76d6a3a7936ac6c22dcc40f14f2eb2e14bfcc8b",
+        "artifacts/stage9/attempts/7d137c82-cb2a-4e70-aace-516389d652d6/outcome.json": "096216237d8d57bad34f8a1d775b05ea333ef82c52fd614f35e7fb6796558115",
+        "artifacts/stage9/attempts/7d137c82-cb2a-4e70-aace-516389d652d6/partial_emission.bin": "77121c891b1b5d8c847ea38a32c4dd7fbefeac7f3a33101a7418f85da872d2ea",
+        "artifacts/stage9/attempts/7d137c82-cb2a-4e70-aace-516389d652d6/result.json": "20f5b9ec95ab35a9dce37f5bf0b8e88d1d57c7681eff9c2972add6262b9c0b21",
+        "artifacts/stage9/attempts/7d137c82-cb2a-4e70-aace-516389d652d6/traces.json": "ecec2ce3a4d17fe3dd75dbc244ef71368f1bb714494bcdc5996c65eb33a6e971",
+        "artifacts/stage9/attempts/7d137c82-cb2a-4e70-aace-516389d652d6/worker.log": "40506116cd98a4aa902daf1edc0a3c5deb619baab3061803150c0bfefebcdd7e",
+        "artifacts/stage9/attempts/7d137c82-cb2a-4e70-aace-516389d652d6/worker_claim.json": "3cfe935beb04fdb27b1c99bab80d5dd43b9cca00618c312e02ea2cda359974f7"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "a7068080-bac5-4eae-a3aa-75543980fe64",
+      "case_id": "R-c1",
+      "files": {
+        "artifacts/stage9/attempts/a7068080-bac5-4eae-a3aa-75543980fe64/carrier.txt": "32313640b48ad650184b5aaebe5afd8c2f411250a190caae082d6c3728f64fe3",
+        "artifacts/stage9/attempts/a7068080-bac5-4eae-a3aa-75543980fe64/command.json": "09b45f02d77700028a799e3648178784d9fd0ae7418f3a4f1b26357a480464db",
+        "artifacts/stage9/attempts/a7068080-bac5-4eae-a3aa-75543980fe64/gpu_samples.json": "d212aaa669240591280079b2883dcef65c5f3da6d5d25e4b2a7ed92e1c195a43",
+        "artifacts/stage9/attempts/a7068080-bac5-4eae-a3aa-75543980fe64/input.json": "c3bf171468e4e15d5e8c4b1cea1cf4030176ec37cb616b805378897e82591e8e",
+        "artifacts/stage9/attempts/a7068080-bac5-4eae-a3aa-75543980fe64/outcome.json": "2265199aef5583ca82e23052dabe29be41ad7890e8b5abbd3eae79449fbb19c0",
+        "artifacts/stage9/attempts/a7068080-bac5-4eae-a3aa-75543980fe64/partial_emission.bin": "32313640b48ad650184b5aaebe5afd8c2f411250a190caae082d6c3728f64fe3",
+        "artifacts/stage9/attempts/a7068080-bac5-4eae-a3aa-75543980fe64/result.json": "2b9fb944596f2544851e152e1d8113b1271d2d29294625b4dbfe253fded22e2d",
+        "artifacts/stage9/attempts/a7068080-bac5-4eae-a3aa-75543980fe64/traces.json": "8354805bbfa46e90bacaf576da30cb1767bbed5e12fccab9d004484e3dde7ddf",
+        "artifacts/stage9/attempts/a7068080-bac5-4eae-a3aa-75543980fe64/worker.log": "8c95ca3785428d5b2828f39d9625a797650a1bd101019f934b672ad9d943f86d",
+        "artifacts/stage9/attempts/a7068080-bac5-4eae-a3aa-75543980fe64/worker_claim.json": "438f2b41b9f14c1f762f49b93694a319c51151688ac8108bfbc7b44e20fe0f9f"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "71e21623-1fbb-4f73-b902-d0c444adc50c",
+      "case_id": "B-fixed-c1",
+      "files": {
+        "artifacts/stage9/attempts/71e21623-1fbb-4f73-b902-d0c444adc50c/carrier.txt": "3518e54dcc3fc874916c490050a160bbbe9e1a9c2d6fe29b0f0aadb651add93b",
+        "artifacts/stage9/attempts/71e21623-1fbb-4f73-b902-d0c444adc50c/command.json": "d6aeeebf61f2cff5fe02d9ad1805a16c769aef89b965baebcd70252427c97e9e",
+        "artifacts/stage9/attempts/71e21623-1fbb-4f73-b902-d0c444adc50c/gpu_samples.json": "ade3b8976e49458a58dfc64fdc157b5533f66614009ba9112615fa58302b62f3",
+        "artifacts/stage9/attempts/71e21623-1fbb-4f73-b902-d0c444adc50c/input.json": "b5f53f6b57686dd878feff1b2d90c76281c2c10c9245fa17aa095c2aa33868c0",
+        "artifacts/stage9/attempts/71e21623-1fbb-4f73-b902-d0c444adc50c/outcome.json": "eca2d2f4ee203442e4963aac65b8345c85651de6ff4f36dbca94d8c530192b5a",
+        "artifacts/stage9/attempts/71e21623-1fbb-4f73-b902-d0c444adc50c/partial_emission.bin": "3518e54dcc3fc874916c490050a160bbbe9e1a9c2d6fe29b0f0aadb651add93b",
+        "artifacts/stage9/attempts/71e21623-1fbb-4f73-b902-d0c444adc50c/result.json": "bfaf0a6690ec9fec79c4803b0ea128d7fc7e7da25d66e276e2391695c928b011",
+        "artifacts/stage9/attempts/71e21623-1fbb-4f73-b902-d0c444adc50c/traces.json": "e1376454cf3900bc45653d38dbe8a5f6a03875f7e31dd96c6cb513cd68c3ec43",
+        "artifacts/stage9/attempts/71e21623-1fbb-4f73-b902-d0c444adc50c/worker.log": "db9dcd547293962457e84f4fb06a3a30b345281c5642ab83546691d13be411a9",
+        "artifacts/stage9/attempts/71e21623-1fbb-4f73-b902-d0c444adc50c/worker_claim.json": "70485bf301412a0f65d2a981e34fdfed76eef758211e248c969e0cb842d0775a"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "949b4c88-db26-48a8-8a61-1f4502f910a4",
+      "case_id": "B-stop-c1",
+      "files": {
+        "artifacts/stage9/attempts/949b4c88-db26-48a8-8a61-1f4502f910a4/carrier.txt": "30bf1f23ff0a33f08cdc257c5957e12b31e21d1ba0dbe0d02343ac50313202fa",
+        "artifacts/stage9/attempts/949b4c88-db26-48a8-8a61-1f4502f910a4/command.json": "177266992f85f1f243d11a2c3328a2cbd1c28704191cd590d11d812dc80dbc2e",
+        "artifacts/stage9/attempts/949b4c88-db26-48a8-8a61-1f4502f910a4/gpu_samples.json": "44fa123e53cc2319887777d69ea6463b4b11377ff1d745da734789e4719e6f15",
+        "artifacts/stage9/attempts/949b4c88-db26-48a8-8a61-1f4502f910a4/input.json": "ae0a7ac8353ffdad1b52687d036be4570ced522f32ad6cebf4607a933917f484",
+        "artifacts/stage9/attempts/949b4c88-db26-48a8-8a61-1f4502f910a4/outcome.json": "22532b9a2dbbccd249d0f68b71e2b099eab435ded5aeba59138a9bd3dc12d146",
+        "artifacts/stage9/attempts/949b4c88-db26-48a8-8a61-1f4502f910a4/partial_emission.bin": "30bf1f23ff0a33f08cdc257c5957e12b31e21d1ba0dbe0d02343ac50313202fa",
+        "artifacts/stage9/attempts/949b4c88-db26-48a8-8a61-1f4502f910a4/result.json": "74f987249b13423a6cd7d73047f02a9ce084119e57d0d0d92c0a520b961f3f9f",
+        "artifacts/stage9/attempts/949b4c88-db26-48a8-8a61-1f4502f910a4/traces.json": "4ed750f9cfa4a02928353a938ca7bd0bdc54089026ea15197ec291b6a136a694",
+        "artifacts/stage9/attempts/949b4c88-db26-48a8-8a61-1f4502f910a4/worker.log": "a945e998d58a43cb8f15dc8a82a790f954f80342d2ce688f0aa5eb98696a89f7",
+        "artifacts/stage9/attempts/949b4c88-db26-48a8-8a61-1f4502f910a4/worker_claim.json": "09fc6f5ae7d31e8656371d7926d3e63ac1220efeddf2cbe567ef652994f8a408"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "04b7b69a-9b1c-4097-b2ff-8b5bade8d385",
+      "case_id": "R-c2",
+      "files": {
+        "artifacts/stage9/attempts/04b7b69a-9b1c-4097-b2ff-8b5bade8d385/command.json": "5e15e1c32bd9bcdc51317382c0a2524b7857e951ded88a90546c0fbafc160e7b",
+        "artifacts/stage9/attempts/04b7b69a-9b1c-4097-b2ff-8b5bade8d385/gpu_samples.json": "4913f7f2ce368f7536b5dd20126503bb1f4c56dbac7cccccf990b6f3228b143e",
+        "artifacts/stage9/attempts/04b7b69a-9b1c-4097-b2ff-8b5bade8d385/input.json": "d11d40fc950d2a750899fadca1cea253c34d34631a326b495719fefc69b2ecd6",
+        "artifacts/stage9/attempts/04b7b69a-9b1c-4097-b2ff-8b5bade8d385/outcome.json": "f2049ae07eb8b401d1ae2d0c0e0a6db6ff141d6da4285d2e60be7f58ffc2ce4e",
+        "artifacts/stage9/attempts/04b7b69a-9b1c-4097-b2ff-8b5bade8d385/partial_emission.bin": "d7f2e78b6816456af72337d28a487d8d04bb3f4c1da9c8e694324bef0033d1d2",
+        "artifacts/stage9/attempts/04b7b69a-9b1c-4097-b2ff-8b5bade8d385/result.json": "0b1d7206f4bd4230e3a12d1dad40fe97d7bdde6c4c86a72456384a4e1bbcd76f",
+        "artifacts/stage9/attempts/04b7b69a-9b1c-4097-b2ff-8b5bade8d385/traces.json": "f60e3ea521621750f3ca9b7787f18cba571b436699dcabece3f209392df1cb29",
+        "artifacts/stage9/attempts/04b7b69a-9b1c-4097-b2ff-8b5bade8d385/worker.log": "6bcb09fae5202e7fdb520bb1a4d6bbd354ba5f45cb91ab0a062a3307aac19344",
+        "artifacts/stage9/attempts/04b7b69a-9b1c-4097-b2ff-8b5bade8d385/worker_claim.json": "879cdb545186dba838d8f9f2f10b8b2920d0c50800aed1d3c698de983ed29b18"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "9f511502-ac51-4717-a4fd-da5bcd0a22e4",
+      "case_id": "B-fixed-c2",
+      "files": {
+        "artifacts/stage9/attempts/9f511502-ac51-4717-a4fd-da5bcd0a22e4/carrier.txt": "d7762989010ba0ecc6fa3644c837c85ef33fecc6db60a4183aceb1cabc074dfe",
+        "artifacts/stage9/attempts/9f511502-ac51-4717-a4fd-da5bcd0a22e4/command.json": "465b2b9996bf8f94eb8adabe2a18b6ff6950a177c9d2e9bc8c3ed5da35252423",
+        "artifacts/stage9/attempts/9f511502-ac51-4717-a4fd-da5bcd0a22e4/gpu_samples.json": "6066b93c899c10c145d05d9f42ae1597465c1e88421b459699deb3f25b79e858",
+        "artifacts/stage9/attempts/9f511502-ac51-4717-a4fd-da5bcd0a22e4/input.json": "c8847848590f5fb08b1c10639fb4270512ab03a6ebe3339f81cb33a3a9145507",
+        "artifacts/stage9/attempts/9f511502-ac51-4717-a4fd-da5bcd0a22e4/outcome.json": "fe78431b49f561e15b9b4c87c484ca872a7f29c2afa2b274ea44bb710755d001",
+        "artifacts/stage9/attempts/9f511502-ac51-4717-a4fd-da5bcd0a22e4/partial_emission.bin": "d7762989010ba0ecc6fa3644c837c85ef33fecc6db60a4183aceb1cabc074dfe",
+        "artifacts/stage9/attempts/9f511502-ac51-4717-a4fd-da5bcd0a22e4/result.json": "a01fb328fd56f66b27e9d5bef5c9b7d43def469bc392f238f5f7d8d48150c159",
+        "artifacts/stage9/attempts/9f511502-ac51-4717-a4fd-da5bcd0a22e4/traces.json": "3fafe0230c7d6c47c9fe084c0a42cbb4edf30dfd243e83b8d41e266a3c561c50",
+        "artifacts/stage9/attempts/9f511502-ac51-4717-a4fd-da5bcd0a22e4/worker.log": "0401bc608cab15a1d575e7bf83aa32939a548751f7b2061fca321d776a7b5e70",
+        "artifacts/stage9/attempts/9f511502-ac51-4717-a4fd-da5bcd0a22e4/worker_claim.json": "ae1e73ea6e05170671dfdb41e19bfc08895732be275255e66f678eb10223d343"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "299351c1-2836-4c40-a03d-c0343ec32ef4",
+      "case_id": "B-stop-c2",
+      "files": {
+        "artifacts/stage9/attempts/299351c1-2836-4c40-a03d-c0343ec32ef4/command.json": "83b9586df0670e1add833de842e7b5d0bc5273e746ffc7a8da8d3c75335d5178",
+        "artifacts/stage9/attempts/299351c1-2836-4c40-a03d-c0343ec32ef4/gpu_samples.json": "e0e21f951a04c623360ceda121f5a69f9905d02d25fbe723d8a702aa3529a530",
+        "artifacts/stage9/attempts/299351c1-2836-4c40-a03d-c0343ec32ef4/input.json": "1c864892f8506c5e182058f49087a1352f372fc540ea29a04ed73cbf334ad8ff",
+        "artifacts/stage9/attempts/299351c1-2836-4c40-a03d-c0343ec32ef4/outcome.json": "10e0bb4d640ee292d1a87c98ece7dc778e2c3a53686b2ace6bee8a69542f8eaa",
+        "artifacts/stage9/attempts/299351c1-2836-4c40-a03d-c0343ec32ef4/partial_emission.bin": "d7762989010ba0ecc6fa3644c837c85ef33fecc6db60a4183aceb1cabc074dfe",
+        "artifacts/stage9/attempts/299351c1-2836-4c40-a03d-c0343ec32ef4/result.json": "01be08f0c8f9c331d5033f1c1a009761bddbdbeae0fa539df99f2d56ef36bde2",
+        "artifacts/stage9/attempts/299351c1-2836-4c40-a03d-c0343ec32ef4/traces.json": "d49b8330060fd3db7a7c7579e50729b874bc83948c6efc34693c2af1b8baaa74",
+        "artifacts/stage9/attempts/299351c1-2836-4c40-a03d-c0343ec32ef4/worker.log": "5f179a6c0cc82acd27f2ea74680716346b79785870921841f087d1a077c52243",
+        "artifacts/stage9/attempts/299351c1-2836-4c40-a03d-c0343ec32ef4/worker_claim.json": "99470d70374ee667bb44aec1aec03d1e4d4aa0542ac98eb9ee8c23f9421a585c"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "92d74510-a457-4f1b-bb01-0c78cdc0e187",
+      "case_id": "R-c3",
+      "files": {
+        "artifacts/stage9/attempts/92d74510-a457-4f1b-bb01-0c78cdc0e187/carrier.txt": "0efcddeef9df88b36a10d715596d771ce4f8e18abf1623dd83e7c1e4c2a0d9b8",
+        "artifacts/stage9/attempts/92d74510-a457-4f1b-bb01-0c78cdc0e187/command.json": "f3db7c6e9aa1793b1f40100ff9e2c6d459112eb1b37f604ca9ea222ab054101e",
+        "artifacts/stage9/attempts/92d74510-a457-4f1b-bb01-0c78cdc0e187/gpu_samples.json": "4b8c580c04b0e82956c4004661bb2dcd05e3e0a013a4bca5cc9c5cf664fe175e",
+        "artifacts/stage9/attempts/92d74510-a457-4f1b-bb01-0c78cdc0e187/input.json": "04d21c6aa8001d8789317b55eec71e88fac7a60658402a10f5fd824761b3f4b8",
+        "artifacts/stage9/attempts/92d74510-a457-4f1b-bb01-0c78cdc0e187/outcome.json": "6adc6b504057c3a63b5ca60abc25f8ead55102946942f6522b7b97de5177f0cd",
+        "artifacts/stage9/attempts/92d74510-a457-4f1b-bb01-0c78cdc0e187/partial_emission.bin": "0efcddeef9df88b36a10d715596d771ce4f8e18abf1623dd83e7c1e4c2a0d9b8",
+        "artifacts/stage9/attempts/92d74510-a457-4f1b-bb01-0c78cdc0e187/result.json": "f4b5d93164c75dfdf2c31335139d333f01c5d25d477bc283024d4fb16e57e229",
+        "artifacts/stage9/attempts/92d74510-a457-4f1b-bb01-0c78cdc0e187/traces.json": "6f032cec35fd16c71e4d2c5c075cbabb77a9c4735e8fb0fac1c148293d5383be",
+        "artifacts/stage9/attempts/92d74510-a457-4f1b-bb01-0c78cdc0e187/worker.log": "8e676d0b0d0c17e83fdb6e36bbfbf69f7d0b17235f9a7c7897ae77579de268a3",
+        "artifacts/stage9/attempts/92d74510-a457-4f1b-bb01-0c78cdc0e187/worker_claim.json": "3149556d4281187fc5e0e391e2fe6c9df729381bd58d9d0a35eef2f80c776be7"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "a1bca511-262e-44d2-8819-c5509cb0b564",
+      "case_id": "B-fixed-c3",
+      "files": {
+        "artifacts/stage9/attempts/a1bca511-262e-44d2-8819-c5509cb0b564/carrier.txt": "32e1eba4386fdce9f25e52003cd162eb0f26c3dec8a03b80e1c80b8c3a6dcd2b",
+        "artifacts/stage9/attempts/a1bca511-262e-44d2-8819-c5509cb0b564/command.json": "5cc51d25c634804c856775eeb9e362cf4a0f3835dc6b3f8b48667e2b85745937",
+        "artifacts/stage9/attempts/a1bca511-262e-44d2-8819-c5509cb0b564/gpu_samples.json": "4255c005b292ff502a88f90741bf5a15a406a08cb9b611b67962138519204bbb",
+        "artifacts/stage9/attempts/a1bca511-262e-44d2-8819-c5509cb0b564/input.json": "53523fd69b5eb0c4dc90bba8ad8536426254428fdefa5f04ee3735b6ce0681de",
+        "artifacts/stage9/attempts/a1bca511-262e-44d2-8819-c5509cb0b564/outcome.json": "a96a962794c6a0c25a34c2de88e78c9f4c0a2dabb5bc9a7fb89ec5915dca0588",
+        "artifacts/stage9/attempts/a1bca511-262e-44d2-8819-c5509cb0b564/partial_emission.bin": "32e1eba4386fdce9f25e52003cd162eb0f26c3dec8a03b80e1c80b8c3a6dcd2b",
+        "artifacts/stage9/attempts/a1bca511-262e-44d2-8819-c5509cb0b564/result.json": "f86806d1f915c49e17b878412687fea945d0cd861eb679e487dc50be391ac8aa",
+        "artifacts/stage9/attempts/a1bca511-262e-44d2-8819-c5509cb0b564/traces.json": "a6ffcdfb999906e24a51a0ef70920c5bf85365ae05e293b4c0d5c05a44ce9c8e",
+        "artifacts/stage9/attempts/a1bca511-262e-44d2-8819-c5509cb0b564/worker.log": "52b9b0bef8e96098aaa14321f36846282f6cd8b3ec7e1b946c200117cb50dd65",
+        "artifacts/stage9/attempts/a1bca511-262e-44d2-8819-c5509cb0b564/worker_claim.json": "972b60463692105401c9ad2d86e230526d690bc9c14a1fd49cfe50ab19266397"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "8004d2da-cd09-46bb-bd4f-1a662204f6b6",
+      "case_id": "B-stop-c3",
+      "files": {
+        "artifacts/stage9/attempts/8004d2da-cd09-46bb-bd4f-1a662204f6b6/carrier.txt": "5afb9db20abee240a5a086baaa24a661960e15a5b58f1cc44b955d65947c4b89",
+        "artifacts/stage9/attempts/8004d2da-cd09-46bb-bd4f-1a662204f6b6/command.json": "4bfe6b1dea777e03132f2d90250a19e81f901aeae472833657a9d65252ac583e",
+        "artifacts/stage9/attempts/8004d2da-cd09-46bb-bd4f-1a662204f6b6/gpu_samples.json": "e8f9262c1c0ed8ee572ffdf297fc145a191a9da94e845d7f404f8fd65c855655",
+        "artifacts/stage9/attempts/8004d2da-cd09-46bb-bd4f-1a662204f6b6/input.json": "546271b5b1416675fd091995c34a0d529e1eaf3457288a05192fbd90c14f31d8",
+        "artifacts/stage9/attempts/8004d2da-cd09-46bb-bd4f-1a662204f6b6/outcome.json": "caeafa7f82530336a3aabec38eedfbb302f1997843096c4d552debad3d74a35b",
+        "artifacts/stage9/attempts/8004d2da-cd09-46bb-bd4f-1a662204f6b6/partial_emission.bin": "5afb9db20abee240a5a086baaa24a661960e15a5b58f1cc44b955d65947c4b89",
+        "artifacts/stage9/attempts/8004d2da-cd09-46bb-bd4f-1a662204f6b6/result.json": "7ee97d7d2af66193355698a18792412260be2aa3ea1d0f1df898bda8c0a52cfd",
+        "artifacts/stage9/attempts/8004d2da-cd09-46bb-bd4f-1a662204f6b6/traces.json": "773f83fceed8a68951605f42681b735dcb195e9c520ec98b219053bd2be416c0",
+        "artifacts/stage9/attempts/8004d2da-cd09-46bb-bd4f-1a662204f6b6/worker.log": "b66b7955edc1978d34a65bf37557b5a6cb806969dab223d9f189ec0ab37d41eb",
+        "artifacts/stage9/attempts/8004d2da-cd09-46bb-bd4f-1a662204f6b6/worker_claim.json": "48eeba3fb4d41195a7196300bb2813aac8403b1e7a047786c92cbce32099ff06"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "a2b400e3-3b75-4947-b95e-8d0e65ada9da",
+      "case_id": "R-c4",
+      "files": {
+        "artifacts/stage9/attempts/a2b400e3-3b75-4947-b95e-8d0e65ada9da/command.json": "591d8a4e8ffe9d9408599c8f767b8e86cf08f8765224a2a289163d268645f808",
+        "artifacts/stage9/attempts/a2b400e3-3b75-4947-b95e-8d0e65ada9da/gpu_samples.json": "f2420ab499d087047a8af9b64c573fded048b3556bc4430ec0d8020e1cc9c5aa",
+        "artifacts/stage9/attempts/a2b400e3-3b75-4947-b95e-8d0e65ada9da/input.json": "58e591061b98f11cb4aecb99fa59848d57b59586da8a4bbdb659ac906881821d",
+        "artifacts/stage9/attempts/a2b400e3-3b75-4947-b95e-8d0e65ada9da/outcome.json": "982037ba92f4405ab111888887830009d2810ea00cf97d60805e6d098eeca794",
+        "artifacts/stage9/attempts/a2b400e3-3b75-4947-b95e-8d0e65ada9da/partial_emission.bin": "8baef51ff1dab053b847f1d7049aabf924a388a6e0fa50f795f9d31e8b326df5",
+        "artifacts/stage9/attempts/a2b400e3-3b75-4947-b95e-8d0e65ada9da/result.json": "2f1cc8d22f73ddb66a4e16fc7da12fb47aaed763ca5e793bd00e75a02b221cf2",
+        "artifacts/stage9/attempts/a2b400e3-3b75-4947-b95e-8d0e65ada9da/traces.json": "bc1d6ed2e54ba1d89fe8a030f229d1404b0e88003017ee29f4ed80e4d6bbede2",
+        "artifacts/stage9/attempts/a2b400e3-3b75-4947-b95e-8d0e65ada9da/worker.log": "e4171c119255df1d1231b8800ca9615f76eaa9f5ece6cc5837b644885c5d6d43",
+        "artifacts/stage9/attempts/a2b400e3-3b75-4947-b95e-8d0e65ada9da/worker_claim.json": "696cf07f3a33f7644d88453d311827e4113cd2baf803571f6cdea897d8d5e629"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "559f41ea-7595-4e49-9e37-10ba0a6dd01c",
+      "case_id": "B-fixed-c4",
+      "files": {
+        "artifacts/stage9/attempts/559f41ea-7595-4e49-9e37-10ba0a6dd01c/carrier.txt": "60e575dd4b690aa797e77d16c4f5048376cc0c9d14e15468d6b75a5ca0cf166d",
+        "artifacts/stage9/attempts/559f41ea-7595-4e49-9e37-10ba0a6dd01c/command.json": "b6cac2ec345ae3bd0736b4e9076ccb47d782949228347701060a8e3fd90b4afb",
+        "artifacts/stage9/attempts/559f41ea-7595-4e49-9e37-10ba0a6dd01c/gpu_samples.json": "d0652f9fa60028895011337a647eac594056497c965495b350899742293a2175",
+        "artifacts/stage9/attempts/559f41ea-7595-4e49-9e37-10ba0a6dd01c/input.json": "6f25bf09e57c99aff44c43f2e8fc8fe2b67184ffed17e38b1a4eb3e409823399",
+        "artifacts/stage9/attempts/559f41ea-7595-4e49-9e37-10ba0a6dd01c/outcome.json": "cf147f7dfa722b17fb65ced3eb0a23cf15dd8f4b9107a8174a5baadae1d6407d",
+        "artifacts/stage9/attempts/559f41ea-7595-4e49-9e37-10ba0a6dd01c/partial_emission.bin": "60e575dd4b690aa797e77d16c4f5048376cc0c9d14e15468d6b75a5ca0cf166d",
+        "artifacts/stage9/attempts/559f41ea-7595-4e49-9e37-10ba0a6dd01c/result.json": "d1bbcf7f7de88e6234a792e98adc9f931b6ffbf91364836ef93c93002585d811",
+        "artifacts/stage9/attempts/559f41ea-7595-4e49-9e37-10ba0a6dd01c/traces.json": "12d461d5faacb8e27d319367506d5f27c4adfe1cbdb2d296d9c226d7012a8a9c",
+        "artifacts/stage9/attempts/559f41ea-7595-4e49-9e37-10ba0a6dd01c/worker.log": "a91cd030bacc8c2d1d39dadd7903beecd34d1d3661127a5ad1e99138f87a19db",
+        "artifacts/stage9/attempts/559f41ea-7595-4e49-9e37-10ba0a6dd01c/worker_claim.json": "ed2ed3be29be684abdea1fbf7e95ff7b71d382329c0ea7f25967649e3f51d8f5"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "12d0c064-7f8a-412e-95a2-2c5c0dc20ebe",
+      "case_id": "B-stop-c4",
+      "files": {
+        "artifacts/stage9/attempts/12d0c064-7f8a-412e-95a2-2c5c0dc20ebe/command.json": "b921d5855f8a059fdab6fdcbebda61d850e4b1ba6e7fbaeee57466c3c3a69760",
+        "artifacts/stage9/attempts/12d0c064-7f8a-412e-95a2-2c5c0dc20ebe/gpu_samples.json": "dea55c1d1677d8416d4ac63b6d4828526c81e22fd3712c1b565653caf9764f44",
+        "artifacts/stage9/attempts/12d0c064-7f8a-412e-95a2-2c5c0dc20ebe/input.json": "993f83fe91e1071711b4035854e12bbbf73e964c610d9b2b6f89f25841420c6e",
+        "artifacts/stage9/attempts/12d0c064-7f8a-412e-95a2-2c5c0dc20ebe/outcome.json": "b8153238dd1be22176ca0fa99140771561d4d4efe28b90ebc31739a5149bc950",
+        "artifacts/stage9/attempts/12d0c064-7f8a-412e-95a2-2c5c0dc20ebe/partial_emission.bin": "60e575dd4b690aa797e77d16c4f5048376cc0c9d14e15468d6b75a5ca0cf166d",
+        "artifacts/stage9/attempts/12d0c064-7f8a-412e-95a2-2c5c0dc20ebe/result.json": "f02f497408d44406ccb406b36ae5da577aaa7a70b89bfd2670acbc7e9b33b5a4",
+        "artifacts/stage9/attempts/12d0c064-7f8a-412e-95a2-2c5c0dc20ebe/traces.json": "5eceb519092c8e1507ecd2e1ff39b48379691307295047cea4e9c83cc6c7d98c",
+        "artifacts/stage9/attempts/12d0c064-7f8a-412e-95a2-2c5c0dc20ebe/worker.log": "fbb4fdc5918d9edd44ddbc3fa68985068fbba42d78b8c277ff517cefc070258e",
+        "artifacts/stage9/attempts/12d0c064-7f8a-412e-95a2-2c5c0dc20ebe/worker_claim.json": "867e728ef0607df85114782a188114c7dd4a062ed705d847d505a6aceee9c07d"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "2a68aaf4-e91f-4f19-a426-f55a22182442",
+      "case_id": "R-c5",
+      "files": {
+        "artifacts/stage9/attempts/2a68aaf4-e91f-4f19-a426-f55a22182442/carrier.txt": "f2c7ad004f2a26818f8f027976b5825bfdd4ba27aa978577fec696b0ec47d028",
+        "artifacts/stage9/attempts/2a68aaf4-e91f-4f19-a426-f55a22182442/command.json": "66404c5913a91e265bdf49dc36b671b41148f3eae04c8b70c2593334d0501078",
+        "artifacts/stage9/attempts/2a68aaf4-e91f-4f19-a426-f55a22182442/gpu_samples.json": "6cc2a6068863d4b9a4d590c52f85cbe62c4b354e328433422a755e34e2b6e28b",
+        "artifacts/stage9/attempts/2a68aaf4-e91f-4f19-a426-f55a22182442/input.json": "81a7ab6dc0112537b353e6a083a9bc1ffd891ea80f09f035e738575d87588878",
+        "artifacts/stage9/attempts/2a68aaf4-e91f-4f19-a426-f55a22182442/outcome.json": "ad8bde978c3ada5d8d7cec18905246f40ca4f7ac1d34a43452a06df5eec6a4f1",
+        "artifacts/stage9/attempts/2a68aaf4-e91f-4f19-a426-f55a22182442/partial_emission.bin": "f2c7ad004f2a26818f8f027976b5825bfdd4ba27aa978577fec696b0ec47d028",
+        "artifacts/stage9/attempts/2a68aaf4-e91f-4f19-a426-f55a22182442/result.json": "aec94087c32690b048c4c69c4e47c1ed43c277741e252554550655edadbda36a",
+        "artifacts/stage9/attempts/2a68aaf4-e91f-4f19-a426-f55a22182442/traces.json": "f6eff9afd346a7e3528cddd2183e908b3e259cfc34a4ff716c38933d0fba9745",
+        "artifacts/stage9/attempts/2a68aaf4-e91f-4f19-a426-f55a22182442/worker.log": "62ced9c0a80e1a5dd64026abfde5c04e48c56614a05bd0b31a697973bd9fac91",
+        "artifacts/stage9/attempts/2a68aaf4-e91f-4f19-a426-f55a22182442/worker_claim.json": "71c0a91807d22108a971e317757ca263c54671d5a7eafd523260cb5f284a50eb"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4",
+      "case_id": "B-fixed-c5",
+      "files": {
+        "artifacts/stage9/attempts/bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4/carrier.txt": "afe9e37139d084c38a2a369cc95d4db7d604d2dcd6bea4da8762c3513c4bde29",
+        "artifacts/stage9/attempts/bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4/command.json": "1ff52d23d66c3940b5c1ddf90dd735e3ef41bb3bb1430502b993bf1baf8b6dfe",
+        "artifacts/stage9/attempts/bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4/gpu_samples.json": "30a18c9fcd80b85173df44f55ae2cc20ca3793ad6bfab97563217fb437b7c494",
+        "artifacts/stage9/attempts/bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4/input.json": "b90175cddd774dadb74d3d0cae052c5c4aef53060bf747c749e02e3d0226b049",
+        "artifacts/stage9/attempts/bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4/outcome.json": "30b1ac7c4d7b267876dd6c161a2747bd565019eba6c7941b73793b5d94dd7c15",
+        "artifacts/stage9/attempts/bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4/partial_emission.bin": "afe9e37139d084c38a2a369cc95d4db7d604d2dcd6bea4da8762c3513c4bde29",
+        "artifacts/stage9/attempts/bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4/result.json": "a36c9367b70770658d615bfc10b247d05fb6323cb3ed939934ad0fd82d425147",
+        "artifacts/stage9/attempts/bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4/traces.json": "98a7bba1e00f14a19fd0043674ede7650df54abacc379242564921df2ff28fdd",
+        "artifacts/stage9/attempts/bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4/worker.log": "53976f0d0d1d25c04c10a46d372eaf7dbc24ff456349bdedd511f6d31d959448",
+        "artifacts/stage9/attempts/bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4/worker_claim.json": "41373ef851a9e2c1246c9e0e583eb8bb952033fbbda78144cf964555aa718a9a"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "12fc8560-865f-4c4b-b550-3c6bef01785c",
+      "case_id": "B-stop-c5",
+      "files": {
+        "artifacts/stage9/attempts/12fc8560-865f-4c4b-b550-3c6bef01785c/carrier.txt": "f0b6c6ac7feeccfa1d96b8a6ceb227b2443ac5c73c2acde9d7bf4f85a384ae32",
+        "artifacts/stage9/attempts/12fc8560-865f-4c4b-b550-3c6bef01785c/command.json": "1224471ccc462b1cd3035c163f7a3787c2c44fffc61ceb3d9ee6f225c9f47ba1",
+        "artifacts/stage9/attempts/12fc8560-865f-4c4b-b550-3c6bef01785c/gpu_samples.json": "bf36942cbbc8bbd6e8cc64159164747e6802cca3f527b86d2603deb0e35727b4",
+        "artifacts/stage9/attempts/12fc8560-865f-4c4b-b550-3c6bef01785c/input.json": "a4049a4933ad29fffe73584e9dfded9586a77e51a69c3417ce626a1eeb96751c",
+        "artifacts/stage9/attempts/12fc8560-865f-4c4b-b550-3c6bef01785c/outcome.json": "3fe90deb61268a84a7751d214eec79a144cb0113e1a0e01817a66d7c2e639ddc",
+        "artifacts/stage9/attempts/12fc8560-865f-4c4b-b550-3c6bef01785c/partial_emission.bin": "f0b6c6ac7feeccfa1d96b8a6ceb227b2443ac5c73c2acde9d7bf4f85a384ae32",
+        "artifacts/stage9/attempts/12fc8560-865f-4c4b-b550-3c6bef01785c/result.json": "db0c1fdef1983d41f3928e7fde929714f85ae9e6678ff0582bf39469c7611ff7",
+        "artifacts/stage9/attempts/12fc8560-865f-4c4b-b550-3c6bef01785c/traces.json": "8066417b57e6d76367f0e3a8226162fef81acd0db1c6ae988aff3da4b5b3865b",
+        "artifacts/stage9/attempts/12fc8560-865f-4c4b-b550-3c6bef01785c/worker.log": "3f840d8c32c812851f07bec68fd4e59de1ea20754d217cca508d5844c40bc16f",
+        "artifacts/stage9/attempts/12fc8560-865f-4c4b-b550-3c6bef01785c/worker_claim.json": "9d3e67855b66a5f7b26f1b264bcf51f34dbb5f027e685768098c060d5b353cb7"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "135b0562-f114-4572-8497-376d80a6b4fe",
+      "case_id": "replay-R-c0",
+      "files": {
+        "artifacts/stage9/attempts/135b0562-f114-4572-8497-376d80a6b4fe/command.json": "111e1551491d32d1c49e17c9012915725d5269c202599b544374535799483924",
+        "artifacts/stage9/attempts/135b0562-f114-4572-8497-376d80a6b4fe/gpu_samples.json": "75d84d4c13ffcb436f7053dfa137bf77fa4952616e317ab76df69ea4c0c06922",
+        "artifacts/stage9/attempts/135b0562-f114-4572-8497-376d80a6b4fe/input.json": "c237628c74630d03423f2a1e3e431197bb256ddb6e76640748813aaef1f5457d",
+        "artifacts/stage9/attempts/135b0562-f114-4572-8497-376d80a6b4fe/outcome.json": "c3d7fc16eade4ecb9072e00a0fb3a5bbb9ad13a59ab3b9af16c99baa5529e30d",
+        "artifacts/stage9/attempts/135b0562-f114-4572-8497-376d80a6b4fe/result.json": "8d1b15b8d03ee452dea62c9b01b35ef2730f1b58a0754414ae99595851effa4d",
+        "artifacts/stage9/attempts/135b0562-f114-4572-8497-376d80a6b4fe/traces.json": "c9c2875c4413e29e4595c003c65bced00802047eca587a8689503f85697d5422",
+        "artifacts/stage9/attempts/135b0562-f114-4572-8497-376d80a6b4fe/worker.log": "6c59a34df84681674030b980bbef23a79996121129f4b13b50b06434d507ddc5",
+        "artifacts/stage9/attempts/135b0562-f114-4572-8497-376d80a6b4fe/worker_claim.json": "64bfe8b11479e564ab2e21aa0b8e5f2c23afb6dc134bc7ff3faf38de3001a449"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    },
+    {
+      "attempt_id": "975a7df9-b820-44e4-8371-a94a3254637d",
+      "case_id": "replay-R-c3",
+      "files": {
+        "artifacts/stage9/attempts/975a7df9-b820-44e4-8371-a94a3254637d/command.json": "83c010e141a655ceaab3d25332a0f8dff5c78b69025cd18ebf23a99f52c4d25b",
+        "artifacts/stage9/attempts/975a7df9-b820-44e4-8371-a94a3254637d/gpu_samples.json": "409e590751949b9cada8090703f46282fff8998b863f915ffd74f2bd7d89cb86",
+        "artifacts/stage9/attempts/975a7df9-b820-44e4-8371-a94a3254637d/input.json": "ee53ba40273ec71d37a9bd616bd7151daa2b2ba20954a97684404717cb4cd8ad",
+        "artifacts/stage9/attempts/975a7df9-b820-44e4-8371-a94a3254637d/outcome.json": "4cc3a373ff68249969c7bc2c69f005ed3c12fa86ed2c9ebc75f5998d0b5e9a8c",
+        "artifacts/stage9/attempts/975a7df9-b820-44e4-8371-a94a3254637d/result.json": "dc46a1bddb8a7db88e49c1aff1805f22e96a6035b11b01a5a1988be7fa30770c",
+        "artifacts/stage9/attempts/975a7df9-b820-44e4-8371-a94a3254637d/traces.json": "e2cdf4d886a0cfea4c43f287810e210316b1af732de34d492cc8c4e88e9b05cd",
+        "artifacts/stage9/attempts/975a7df9-b820-44e4-8371-a94a3254637d/worker.log": "a751e3e99d97e3cd4af71ded3876d47c427a11de6c1b0ec9eddda0aa47bcb6d8",
+        "artifacts/stage9/attempts/975a7df9-b820-44e4-8371-a94a3254637d/worker_claim.json": "bbb13774b1ed327c29910c851c8cc70e9358ab0e1e1768809a5bec46695c2788"
+      },
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    }
+  ],
+  "authorization": "configs/stage9/authorization.json",
+  "commands": [
+    ".venv/bin/python scripts/prepare_stage9.py",
+    ".venv/bin/python -m pytest -q tests/test_stage9.py",
+    ".venv/bin/python scripts/run_stage9.py",
+    ".venv/bin/python artifacts/stage9/analyze.py",
+    ".venv/bin/python artifacts/stage9/reanalyze_history.py",
+    ".venv/bin/python scripts/run_stage9.py --allocation-check",
+    ".venv/bin/python artifacts/stage9/tables.py",
+    "MPLCONFIGDIR=/tmp/stage9-mpl ../llm-rankcloak/.venv/bin/python artifacts/stage9/plot.py",
+    ".venv/bin/python artifacts/stage9/finalize_manifest.py"
+  ],
+  "dependency_identity": "artifacts/stage9/environment.json",
+  "files": {
+    "STAGE9_STOPPING_RULE_REPORT.md": "d00b02ec8a9652157d4ef2772d413e8a3e7d38559c66dad525e737b460491529",
+    "artifacts/stage9/TEST_ONLY_keys.json": "6ceedc151a618ad7b8ce588682860d7f808aadff5715cd718076053cbd2a00f4",
+    "artifacts/stage9/allocation.json": "868c2e3cd3b349d224d1cfa8a02101a66565cbb0b3f3658f4a47cdbef31c8af9",
+    "artifacts/stage9/allocation_check.txt": "ccac7ff5ded06b32956e35abce9845d65435c1b12a1f67453680eeceea25d90f",
+    "artifacts/stage9/analysis_output.txt": "89e6997a3bc4e2cca4084f65a17d4e2d88fa673523b4023c07ed8adbbbac4220",
+    "artifacts/stage9/analyze.py": "649aef60e3606466632f64f1a19c01f8df7beeffd77e65b0e19b5c4be42ec3b7",
+    "artifacts/stage9/cases.jsonl": "dcf6fde4436656a0990a40b120ec65a666251c19f44ef2fc0051144fb1bfb37f",
+    "artifacts/stage9/context_window_check.json": "e5a4a461b95a21acf582ed029737cd342c3071cd7c8b652f7607e280387d217c",
+    "artifacts/stage9/controller_output.txt": "7a234390e9cbe170ea60287439f77ac27f1e6aa60f2831a21f5bdbaaeb956016",
+    "artifacts/stage9/costs.csv": "84df5e6b52e16b5041aaabb02c72e4782903c119d3b304875337013cd4c01d73",
+    "artifacts/stage9/environment.json": "53224ff20ce7f8f81d1de3fcb2f0a5bb0165b1fd196e76413c382e27ecb98487",
+    "artifacts/stage9/figures/boundaries_costs.png": "74a461174115b9c8b744e2d44f1079d8fb7a2cd7cee3c327a92aca2550126901",
+    "artifacts/stage9/figures/boundaries_costs.svg": "56da09fa0428c387f7d85ff9f270354b302d37e3f8a8864754ab7b29b03c17dc",
+    "artifacts/stage9/figures/completion_format.png": "d201f69a8d72812b2ed9fa5f38dd72686497a0cbaa2d7e3045cc494848d9eedf",
+    "artifacts/stage9/figures/completion_format.svg": "638d4a85554f902f157eaa7530e6c6e64838a4e5fa7e33696ab9a49bd2cb373d",
+    "artifacts/stage9/figures/stable_progress.png": "1c22d6925102a59680f9a2aa56795ea5518ada96fd7c6431de598dfecf6b881b",
+    "artifacts/stage9/figures/stable_progress.svg": "899cd10e7b6fa99062e51ef5d40da9f0ec8470b89e61f5d8a49e3c195e5fbb09",
+    "artifacts/stage9/finalize_manifest.py": "cd7d50a8abe5a2bb1e902f3082ebba232638b8429c7c8a7ba964b4061869fbd2",
+    "artifacts/stage9/focused_checks.txt": "aa779ab29c79464be52ac99280231538603b6da668a0df6198c317b8cd352bc7",
+    "artifacts/stage9/historical_live_checks.jsonl": "96be224cf2d26be7108964c033d4a38e73ffe760f8198909ead2e2769d831b14",
+    "artifacts/stage9/historical_reanalysis.json": "a2608b94ed9f69e3f74eb2b042b41cb47845aab16b48a62adac75f1e082c82c9",
+    "artifacts/stage9/historical_reanalysis_output.txt": "4055989350e1dac04a43a27d2a612ebfa3505c8e8fdab36b9aeade766c9b2e29",
+    "artifacts/stage9/paired_checks.jsonl": "e22c3b5ff61f3aaf560a41a2bc08cd1e907a29b90ec6b25fd1ab846bfcd2aff7",
+    "artifacts/stage9/paired_trajectories.csv": "9200ecded9c67b5e0ce75991c9beb0642944d0b001cdf71571d6af24e7ff790f",
+    "artifacts/stage9/paired_trajectories.json": "9cbed19411c9f23e551d4901ca968191e3dcbd6645ff7bc283cd7d84c6f4e28f",
+    "artifacts/stage9/plot.py": "39580b0d503b9b89f24be22ce6483ba6f5274926af8fb8a31ff12dba8f2a5233",
+    "artifacts/stage9/plot_output.txt": "02046bae41016b10e76f214c01662746f2e1e84771b0d94ef36defe6cace4e46",
+    "artifacts/stage9/predicates.csv": "9c8896a8dce754946474bcb38fb859f4fe2bbec1c9ed40f8d1a52eb3486b6630",
+    "artifacts/stage9/preparation_output.txt": "5ee52ae99168a5dee89f702d98035a697b9b1151e992b3d1401c17ee519d1c13",
+    "artifacts/stage9/progress.json": "97e0c2f55e5b38b6f8509fd9ccaf70c2a3d2da6210e34396bf52e80fab7a1573",
+    "artifacts/stage9/reanalyze_history.py": "06ef495de979e2ea0874ef64fd5c080f5ec7cf8fbed6e5dab545ec2e0b0470f5",
+    "artifacts/stage9/recognition.json": "fe1281d645367b92dd90a2f51baf3eaf3c913af4e615734f80baf79419d5374e",
+    "artifacts/stage9/starting_state.json": "4514aa013bfb4bd33b8ab48f6e3f4f4494ffeb33adbbf5ded722b16f69811ec1",
+    "artifacts/stage9/status.json": "3188c3f201001287b2072de0d0a93dc40420f4d6320fe04908590081e590fa9e",
+    "artifacts/stage9/summary.json": "99b70b8e24b0715d3348578b38df3fe783a582fb82ac2e4260717ce783dda27f",
+    "artifacts/stage9/tables.md": "e4afc4432611b086bff45c903bc31d56aa82df4181000bd9c74b57099317f12e",
+    "artifacts/stage9/tables.py": "e0dc4f496dca81f60258e715ee6d4e274f011da22334088402ebebfd7a214942",
+    "artifacts/stage9/tables_output.txt": "5699c27db121762a85d007fbbcb287030162a872bb2a9c846677c2093b2b7634",
+    "artifacts/stage9/tokenizer_check.txt": "c7fdcfb94e0b1b55c29061dcd38bd647400508021339b6b6274e07ceb85513dd",
+    "artifacts/stage9/venue_sources.json": "957ffcc0579b79d6af2c99f17bb1abfb751d1fd6f7e113f3b3d712ee2a527f3e",
+    "configs/local_runtime.json": "bd7d1dd4567a341b5faa16f06766e703f23eb9031daa60e5bc345f6520d7e775",
+    "configs/stage9/R32.json": "41c5a797704f77ead16838de681b803fcde2f58a6d63dba98ca77193abe2fc3b",
+    "configs/stage9/authorization.json": "b0d947e96664511b5047f686d1701e7b518a1e6a89b91793037ff7605cdb9146",
+    "docs/stage9_observer_contract.md": "abd73d8637f44d06277b2ab52437b149f2456ee924475a375fd35735c846f95c",
+    "docs/stage9_study_spec.md": "577886c10115a9ec03c4046352aa2f10a0fbaa8227ed4bd58f6a591135ea6066",
+    "paper/CLAIM_EVIDENCE_MATRIX.md": "da634ce5053ae18cc204689f03d36250c1c9c81d09fc5996ea688598f425be54",
+    "paper/PAPER_BLUEPRINT.md": "185ba67e65722f24ad5991980e19c72dd8cf64ac39a487eb66f6497adc73af94",
+    "pyproject.toml": "466136c76b5e8cd6218c936da0c410acce20805a9fdbca4c8f97fc5b0cdc862c",
+    "requirements-cpu.lock": "e2763b3675b354e9615162a6690a12146bbdf0c2eec69a0b31b186700de72c73",
+    "scripts/gpu_stage9_worker.py": "d1f6378f63e8556f5906899e6e8513415cdd567320214fd948626823d6a8daf0",
+    "scripts/prepare_stage9.py": "0607258b97a898518015e3a47959fa04ebb51f0e0fec2890224f9669577cd7d1",
+    "scripts/run_stage9.py": "862514a9135857f11f24318ec81bf02e216b211f3b7b37673103cb22123c926d",
+    "scripts/stage9_tokenizer_check.py": "0a3908506f7fb7c5fc9273709de5bc032a7cc039d76703901131965450c7bd0c",
+    "src/llm_stego_public_key/__init__.py": "39d2a6a1820855addc5565554d28986c459fffd8c450c3e4067a38dd89c20ce7",
+    "src/llm_stego_public_key/codecs/__init__.py": "cc7f2ba407e164b30574f172563664aaf065f2ccfce04d4a00ecd89efa3cac73",
+    "src/llm_stego_public_key/codecs/arithmetic_core.py": "b6b777b480382c54b0e61c89274074082d2967972e919536a7941d5e96a65b98",
+    "src/llm_stego_public_key/codecs/calgacus.py": "567806ce10a83c029b37df0965310408e93a52bb0d06b36c8842f97528fda148",
+    "src/llm_stego_public_key/codecs/inferred_rank16.py": "92ec5e78bb778cca95c473c94ff46b35f875ee66ac4fe62a8822a3b67f5aaabd",
+    "src/llm_stego_public_key/codecs/interfaces.py": "e672ea3fb51e867f2b48bc04a0bebe6a5e488ba3204039f1ca92b17f14494247",
+    "src/llm_stego_public_key/codecs/llama_backend.py": "4205b97d5d4d0c718cb4fbaada4ca9a0f7f544bdaddd61c8d8cb5b530fe40b8b",
+    "src/llm_stego_public_key/codecs/public_utf8_rank16.py": "1e73badae289b2c2d5ea505352c52655213d3fd070e785679e0d02adb0ba5ad5",
+    "src/llm_stego_public_key/codecs/stage7_transport.py": "dbe61c56dca1025563648e58f3fd476202de2ea48028521f895fcc058768654f",
+    "src/llm_stego_public_key/cryptography/__init__.py": "aa2b571500e6f8cb7885de71ed0286d4423f7d1950da08172e5452a66eaec5ae",
+    "src/llm_stego_public_key/cryptography/hpke.py": "53a0835f463f803d9c88d8c349779f58ff89a6c38ae741b2e03e8dcd176ac2b2",
+    "src/llm_stego_public_key/errors.py": "4347658317fb0cfa19d9d648197e4bcad4ea4fe04b95dd2920890f55075dd66a",
+    "src/llm_stego_public_key/evaluation/__init__.py": "32ee53fcb431bd3f2e12a7676f449ee91409ba7de6df24ec8cd63fbacce6cba5",
+    "src/llm_stego_public_key/evaluation/budget.py": "d26a61bce9c7a36397ecd838ec704a1d3de77f5193589d81858620acdabe3c09",
+    "src/llm_stego_public_key/evaluation/full_text_observer.py": "454bfd06a759979e89805d56ed6b8bcc0271e74293e77726bcfd4c5ffea78c36",
+    "src/llm_stego_public_key/evaluation/observer.py": "2670f4a50a4312c7150679461d132d142dde7522a39c026245fda8d057075fa4",
+    "src/llm_stego_public_key/evaluation/process_guard.py": "4ffeb093f7a83ae0527d14e6dc099209cda57671dcb9be53108bc8bdb28a69b8",
+    "src/llm_stego_public_key/evaluation/public_prefix.py": "c8d1f52acc2dd3ea4df1bc1363f9ae8b8806f284cce218dd8d38c68d9550e143",
+    "src/llm_stego_public_key/evaluation/rank16_observer.py": "5e64a146ee451287a9aec27b9983b85d8e41c30872c8f1bb4ad150beedfbf77f",
+    "src/llm_stego_public_key/evaluation/stage7_observer.py": "89c83864ab0e5cc9c4cb9a07cc35c94904456aa765113087862cdc8d2b1a1a9d",
+    "src/llm_stego_public_key/evaluation/stage8_observer.py": "6042435bddd4ca8133da73326717a7c0e40299dbfc75c39ff3084e04a8db62f7",
+    "src/llm_stego_public_key/evaluation/stage9_observer.py": "458a654bebbee8444affcdf410d4c7d7f37ada8656b42d8df5bf02151bf28561",
+    "src/llm_stego_public_key/evaluation/stopping_rule.py": "f7d3d1f76f8532f64117c9e4459847ea4d8a0ffe75fa398b3ef7e80821768a2d",
+    "src/llm_stego_public_key/evaluation/worker_lease.py": "a2d6da8e39ccb2c9eec6e62a175f8ce7436e98b408913d59b116d962c80f3e92",
+    "src/llm_stego_public_key/profile.py": "64dfd60f82773d681451f7e7e14e6fb3ce4eff8f5d74e02ed271611e255e419a",
+    "src/llm_stego_public_key/transport/__init__.py": "60394658a5e199fbd210b37c04e4a01a98766513ff4de42dde364d9be6975a79",
+    "src/llm_stego_public_key/transport/envelope_receiver.py": "280316258e027b79085b96c419bab0718f127773432420b2b5e1c4933f8fbd80",
+    "src/llm_stego_public_key/transport/receiver.py": "a20db073e75e2c748bb6ae7954f82b7e76471e996de83fe45ac019cae93a8c84",
+    "tests/test_stage9.py": "fa6b8d2d6a8ed79b4c1c67eff399feab6f90abfc944543f8e6adc214d018aa2f"
+  },
+  "host_analysis_and_reporting": "Added after GPU revision; file hashes identify exact analysis. Final commit is reported in the completion response, avoiding a self-referential commit field.",
+  "ledger_anchor": {
+    "bytes": 140909,
+    "limits": {
+      "cases": 342,
+      "seconds": 21941.884885362982,
+      "tokens": 424994
+    },
+    "schema_version": 1,
+    "sha256": "63bc3d490d8b977e122785040fbead0429dc2d832c6be0c4e78d0986bdab4561"
+  },
+  "ledger_final_checkpoint": {
+    "bytes": 152923,
+    "limits": {
+      "cases": 342,
+      "seconds": 21941.884885362982,
+      "tokens": 424994
+    },
+    "schema_version": 1,
+    "sha256": "e6df99cf56ac526bd38f1f92de2c65921b24e6c6f8045484d546242c660a51ae"
+  },
+  "ledger_path": "artifacts/project_budget.jsonl",
+  "paper_recommendation": "Proceed to a narrowly scoped regular-paper draft; novelty and submission readiness unconfirmed; no additional experiments prescribed",
+  "remaining_parent": {
+    "cases": 59,
+    "seconds": 5862.64548758799,
+    "tokens": 172119
+  },
+  "schema_version": 1,
+  "source_attribution": "docs/stage7_comparator_audit.md",
+  "starting_commit": "5400c9bf7ff03e9d10a913674bbc8399bd4df7da",
+  "tested_revisions": [
+    "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+  ],
+  "verification": {
+    "all_attempt_hashes_verified": true,
+    "all_new_markdown_local_links_exist": true,
+    "expected_modified_prior_files": [
+      "artifacts/project_budget.checkpoint.json",
+      "artifacts/project_budget.jsonl",
+      "src/llm_stego_public_key/evaluation/budget.py",
+      "src/llm_stego_public_key/profile.py"
+    ],
+    "no_inference_source_changes_after_freeze": true,
+    "unchanged_prior_files": 2775
+  }
+}

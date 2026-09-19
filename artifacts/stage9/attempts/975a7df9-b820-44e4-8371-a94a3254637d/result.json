@@ -1,0 +1,66 @@
+{
+  "attempt_id": "975a7df9-b820-44e4-8371-a94a3254637d",
+  "authenticated": true,
+  "candidate_costs": {
+    "fresh_receiver": {
+      "examined_max": 20,
+      "examined_total": 14538,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 4,
+        "noncanonical": 44,
+        "special_control": 10
+      },
+      "steps": 905
+    }
+  },
+  "carrier_tokens": 905,
+  "case_id": "replay-R-c3",
+  "charged_tokens": 914,
+  "context_index": 3,
+  "context_window_verified": true,
+  "cover_context": "A park note about a stone bench:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "replay",
+  "method": "R",
+  "pair_id": null,
+  "payload_setting_bytes": 32,
+  "pid": 1174994,
+  "profile_id": "stage9_public_R_size32_v1",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "public_context_token_ids": {
+    "A park note about a stone bench:": [
+      128000,
+      32,
+      6246,
+      5296,
+      922,
+      264,
+      9998,
+      13731,
+      25
+    ]
+  },
+  "recovered_bytes": 32,
+  "recovered_sha256": "056afe5c4cd23ea15ef9f8ca6c2e5bc041ea099fce600e79201709b8a41a9ce0",
+  "schema_version": 1,
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "fresh_receiver",
+  "success": true,
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "timings": {
+    "fresh_receiver_seconds": 42.58903244999965,
+    "load_and_verify_seconds": 14.83317973499652
+  },
+  "tokens_by_phase": {
+    "fresh_receiver": 914
+  },
+  "trace_path": "artifacts/stage9/attempts/975a7df9-b820-44e4-8371-a94a3254637d/traces.json",
+  "transport_bytes": 4489,
+  "transport_sha256": "0efcddeef9df88b36a10d715596d771ce4f8e18abf1623dd83e7c1e4c2a0d9b8",
+  "wire_delivered": true,
+  "worker_seconds": 57.55192610700033
+}

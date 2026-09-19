@@ -1,0 +1,75 @@
+{
+  "attempt_id": "299351c1-2836-4c40-a03d-c0343ec32ef4",
+  "authenticated": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": 19,
+      "examined_total": 31881,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 101,
+        "special_control": 36
+      },
+      "steps": 1984
+    }
+  },
+  "case_id": "B-stop-c2",
+  "charged_tokens": 1993,
+  "context_index": 2,
+  "context_window_verified": true,
+  "cover_context": "A library note about a folded map:",
+  "error": "B-stop stable packet target not reached at frozen ceiling",
+  "exact_recovery": false,
+  "exception_type": "CapacityError",
+  "failure_category": "capacity_exhaustion",
+  "family": "B-stop",
+  "generated_tokens": 1984,
+  "generation_completion": {
+    "first_completion_token": null,
+    "high_inclusive": 2800868757,
+    "low": 564035840,
+    "pending_underflow": 0,
+    "stable_bits": 658
+  },
+  "generation_target_reached": false,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "control",
+  "method": "R",
+  "pair_id": "c2",
+  "partial_emission_canonical": true,
+  "payload_setting_bytes": 32,
+  "pid": 1132418,
+  "profile_id": "stage9_public_R_size32_v1",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "public_context_token_ids": {
+    "A library note about a folded map:": [
+      128000,
+      32,
+      6875,
+      5296,
+      922,
+      264,
+      48135,
+      2472,
+      25
+    ]
+  },
+  "sampling_seed": 202609210002,
+  "schema_version": 1,
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "prospective",
+  "success": false,
+  "target_tokens": 1984,
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "timings": {
+    "control_generation_seconds": 135.54952199800027,
+    "load_and_verify_seconds": 14.525013111997396
+  },
+  "tokens_by_phase": {
+    "control_generation": 1993
+  },
+  "trace_path": "artifacts/stage9/attempts/299351c1-2836-4c40-a03d-c0343ec32ef4/traces.json",
+  "wire_delivered": false,
+  "worker_seconds": 150.2945120669974
+}

@@ -1,0 +1,377 @@
+[
+  {
+    "auc": 1.0,
+    "bootstrap_valid": 1998,
+    "cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "control_family": "B-fixed",
+    "matched_contexts": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "metric": "mean_nll_bits",
+    "orientation": "higher_is_R",
+    "paired_differences": {
+      "0": 0.6762440428030851,
+      "1": 0.47941235724694664,
+      "3": 0.07937722572522998,
+      "5": 0.11815555805398048
+    },
+    "pairs": 4,
+    "raw_context_pairs": {
+      "0": [
+        0.9700918021950395,
+        0.2938477593919544
+      ],
+      "1": [
+        1.113110725801957,
+        0.6336983685550104
+      ],
+      "3": [
+        0.9052343309008019,
+        0.8258571051755719
+      ],
+      "5": [
+        0.9943417586191833,
+        0.8761862005652028
+      ]
+    }
+  },
+  {
+    "auc": 1.0,
+    "bootstrap_valid": 1998,
+    "cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "control_family": "B-fixed",
+    "matched_contexts": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "metric": "mean_log2_rank",
+    "orientation": "higher_is_R",
+    "paired_differences": {
+      "0": 0.24191194189284282,
+      "1": 0.17678297684267386,
+      "3": 0.027729941891941556,
+      "5": 0.025673524283010007
+    },
+    "pairs": 4,
+    "raw_context_pairs": {
+      "0": [
+        0.34171916005320707,
+        0.09980721816036424
+      ],
+      "1": [
+        0.38594851067534813,
+        0.20916553383267428
+      ],
+      "3": [
+        0.31243047952420056,
+        0.284700537632259
+      ],
+      "5": [
+        0.3335113708157685,
+        0.3078378465327585
+      ]
+    }
+  },
+  {
+    "auc": 1.0,
+    "bootstrap_valid": 1998,
+    "cluster_interval": [
+      1.0,
+      1.0
+    ],
+    "control_family": "B-fixed",
+    "matched_contexts": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "metric": "mean_admissible_nll_bits",
+    "orientation": "higher_is_R",
+    "paired_differences": {
+      "0": 0.6560378243505438,
+      "1": 0.46586337745379947,
+      "3": 0.07178922476485894,
+      "5": 0.1102009163602049
+    },
+    "pairs": 4,
+    "raw_context_pairs": {
+      "0": [
+        0.9306486747233877,
+        0.2746108503728439
+      ],
+      "1": [
+        1.0655605093110487,
+        0.5996971318572493
+      ],
+      "3": [
+        0.8854166993036063,
+        0.8136274745387474
+      ],
+      "5": [
+        0.9673840035313513,
+        0.8571830871711464
+      ]
+    }
+  },
+  {
+    "auc": 0.5,
+    "bootstrap_valid": 1998,
+    "cluster_interval": [
+      0.5,
+      0.5
+    ],
+    "control_family": "B-fixed",
+    "matched_contexts": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "metric": "token_count",
+    "orientation": "higher_is_R",
+    "paired_differences": {
+      "0": 0,
+      "1": 0,
+      "3": 0,
+      "5": 0
+    },
+    "pairs": 4,
+    "raw_context_pairs": {
+      "0": [
+        862,
+        862
+      ],
+      "1": [
+        752,
+        752
+      ],
+      "3": [
+        905,
+        905
+      ],
+      "5": [
+        832,
+        832
+      ]
+    }
+  },
+  {
+    "auc": 0.625,
+    "bootstrap_valid": 1998,
+    "cluster_interval": [
+      0.25,
+      1.0
+    ],
+    "control_family": "B-fixed",
+    "matched_contexts": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "metric": "utf8_bytes",
+    "orientation": "higher_is_R",
+    "paired_differences": {
+      "0": 1452,
+      "1": 122,
+      "3": 361,
+      "5": -439
+    },
+    "pairs": 4,
+    "raw_context_pairs": {
+      "0": [
+        3909,
+        2457
+      ],
+      "1": [
+        3297,
+        3175
+      ],
+      "3": [
+        4489,
+        4128
+      ],
+      "5": [
+        3748,
+        4187
+      ]
+    }
+  },
+  {
+    "auc": null,
+    "cluster_interval": null,
+    "control_family": "B-stop",
+    "matched_contexts": [
+      1,
+      3,
+      5
+    ],
+    "metric": "mean_nll_bits",
+    "orientation": "higher_is_R",
+    "paired_differences": {
+      "1": 0.4104386717323323,
+      "3": 0.1322616533309271,
+      "5": 0.1981659348743393
+    },
+    "pairs": 3,
+    "raw_context_pairs": {
+      "1": [
+        1.113110725801957,
+        0.7026720540696247
+      ],
+      "3": [
+        0.9052343309008019,
+        0.7729726775698748
+      ],
+      "5": [
+        0.9943417586191833,
+        0.796175823744844
+      ]
+    },
+    "reason": "Fewer than four delivered paired contexts; raw scores only as frozen"
+  },
+  {
+    "auc": null,
+    "cluster_interval": null,
+    "control_family": "B-stop",
+    "matched_contexts": [
+      1,
+      3,
+      5
+    ],
+    "metric": "mean_log2_rank",
+    "orientation": "higher_is_R",
+    "paired_differences": {
+      "1": 0.15662193915905878,
+      "3": 0.04437550180549421,
+      "5": 0.051986323469051965
+    },
+    "pairs": 3,
+    "raw_context_pairs": {
+      "1": [
+        0.38594851067534813,
+        0.22932657151628935
+      ],
+      "3": [
+        0.31243047952420056,
+        0.26805497771870634
+      ],
+      "5": [
+        0.3335113708157685,
+        0.2815250473467165
+      ]
+    },
+    "reason": "Fewer than four delivered paired contexts; raw scores only as frozen"
+  },
+  {
+    "auc": null,
+    "cluster_interval": null,
+    "control_family": "B-stop",
+    "matched_contexts": [
+      1,
+      3,
+      5
+    ],
+    "metric": "mean_admissible_nll_bits",
+    "orientation": "higher_is_R",
+    "paired_differences": {
+      "1": 0.38847837177901356,
+      "3": 0.12308515935914899,
+      "5": 0.18720825359727644
+    },
+    "pairs": 3,
+    "raw_context_pairs": {
+      "1": [
+        1.0655605093110487,
+        0.6770821375320352
+      ],
+      "3": [
+        0.8854166993036063,
+        0.7623315399444573
+      ],
+      "5": [
+        0.9673840035313513,
+        0.7801757499340749
+      ]
+    },
+    "reason": "Fewer than four delivered paired contexts; raw scores only as frozen"
+  },
+  {
+    "auc": null,
+    "cluster_interval": null,
+    "control_family": "B-stop",
+    "matched_contexts": [
+      1,
+      3,
+      5
+    ],
+    "metric": "token_count",
+    "orientation": "higher_is_R",
+    "paired_differences": {
+      "1": -434,
+      "3": -147,
+      "5": -212
+    },
+    "pairs": 3,
+    "raw_context_pairs": {
+      "1": [
+        752,
+        1186
+      ],
+      "3": [
+        905,
+        1052
+      ],
+      "5": [
+        832,
+        1044
+      ]
+    },
+    "reason": "Fewer than four delivered paired contexts; raw scores only as frozen"
+  },
+  {
+    "auc": null,
+    "cluster_interval": null,
+    "control_family": "B-stop",
+    "matched_contexts": [
+      1,
+      3,
+      5
+    ],
+    "metric": "utf8_bytes",
+    "orientation": "higher_is_R",
+    "paired_differences": {
+      "1": -2000,
+      "3": -330,
+      "5": -1524
+    },
+    "pairs": 3,
+    "raw_context_pairs": {
+      "1": [
+        3297,
+        5297
+      ],
+      "3": [
+        4489,
+        4819
+      ],
+      "5": [
+        3748,
+        5272
+      ]
+    },
+    "reason": "Fewer than four delivered paired contexts; raw scores only as frozen"
+  }
+]

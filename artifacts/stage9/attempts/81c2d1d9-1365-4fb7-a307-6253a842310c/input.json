@@ -1,0 +1,34 @@
+{
+  "associated_encrypted_case_id": "R-c0",
+  "case_id": "B-fixed-c0",
+  "context_index": 0,
+  "family": "B-fixed",
+  "kind": "control",
+  "length_assignment": "delivered_R_length",
+  "method": "R",
+  "pair_id": "c0",
+  "profile_path": "configs/stage9/R32.json",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "sampling_seed": 202609210000,
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "prospective",
+  "target_tokens": 862,
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "token_reservation": 4200,
+  "wall_reservation_seconds": 360
+}

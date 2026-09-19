@@ -1,0 +1,135 @@
+{
+  "attempt_id": "bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4",
+  "authenticated": false,
+  "candidate_costs": {
+    "control_generation": {
+      "examined_max": 24,
+      "examined_total": 13380,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 61,
+        "special_control": 7
+      },
+      "steps": 832
+    },
+    "public_scoring": {
+      "examined_max": 24,
+      "examined_total": 13380,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 61,
+        "special_control": 7
+      },
+      "steps": 832
+    }
+  },
+  "carrier_tokens": 832,
+  "case_id": "B-fixed-c5",
+  "charged_tokens": 1682,
+  "context_index": 5,
+  "context_window_verified": true,
+  "cover_context": "A classroom note about a glass prism:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": "B-fixed",
+  "first_transport_divergence": null,
+  "generated_tokens": 832,
+  "generation_completion": {
+    "first_completion_token": null,
+    "high_inclusive": 3689620741,
+    "low": 1970378592,
+    "pending_underflow": 1,
+    "stable_bits": 711
+  },
+  "generation_target_reached": false,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "intended_carrier_tokens": 832,
+  "kind": "control",
+  "method": "R",
+  "observer": {
+    "all_candidates_member": true,
+    "arithmetic_terminal": {
+      "high_inclusive": 3689620741,
+      "low": 1970378592,
+      "pending_underflow": 1,
+      "stable_bits": 711
+    },
+    "authenticated": false,
+    "body_region_reason": "No fixed token exclusion applied; complete-message scores are primary for both methods",
+    "body_region_scores": null,
+    "candidate_unavailable_positions": [],
+    "canonical_bytes": true,
+    "canonical_replay_consistent": null,
+    "ends_at_first_completion": null,
+    "filler_consistent": null,
+    "first_completion_token": null,
+    "format_accepted": false,
+    "format_and_kem_canonical": false,
+    "kem_canonical": null,
+    "mean_admissible_nll_bits": 0.8571830871711464,
+    "mean_log2_rank": 0.3078378465327585,
+    "mean_nll_bits": 0.8761862005652028,
+    "member_fraction": 1.0,
+    "observer_id": "stage9_decomposed_public_v1",
+    "probability_rounding_max_tv": 0.00023643046648990268,
+    "probability_rounding_mean_tv": 0.00020356641045382015,
+    "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+    "schema_version": 1,
+    "scorable": true,
+    "stable_bits": 711,
+    "stable_target_reached": false,
+    "status": "scored",
+    "token_count": 832,
+    "unavailable_reasons": {
+      "canonical_replay_consistent": "Required stable bits not reached",
+      "ends_at_first_completion": "Required stable bits not reached",
+      "filler_consistent": "Required stable bits not reached",
+      "kem_canonical": "Required stable bits not reached"
+    },
+    "utf8_bytes": 4187,
+    "valid_utf8": true
+  },
+  "pair_id": "c5",
+  "payload_setting_bytes": 32,
+  "pid": 1167288,
+  "profile_id": "stage9_public_R_size32_v1",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "public_context_token_ids": {
+    "A classroom note about a glass prism:": [
+      128000,
+      32,
+      24978,
+      5296,
+      922,
+      264,
+      9168,
+      94710,
+      25
+    ]
+  },
+  "sampling_seed": 202609210005,
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "prospective",
+  "success": true,
+  "target_tokens": 832,
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "text_retokenizes": true,
+  "timings": {
+    "control_generation_seconds": 38.443486235999444,
+    "load_and_verify_seconds": 14.797245866000594,
+    "public_scoring_seconds": 39.37034753300395
+  },
+  "tokens_by_phase": {
+    "control_generation": 841,
+    "public_scoring": 841
+  },
+  "trace_path": "artifacts/stage9/attempts/bf332bb6-ffa9-468f-a8f6-ec497cf8fbf4/traces.json",
+  "transport_bytes": 4187,
+  "transport_sha256": "afe9e37139d084c38a2a369cc95d4db7d604d2dcd6bea4da8762c3513c4bde29",
+  "wire_delivered": true,
+  "worker_seconds": 92.82186834100139
+}

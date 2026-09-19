@@ -1,0 +1,31 @@
+{
+  "TEST_ONLY_private_key_hex": "e0e1d3a0eece31db4b3a47bb6559ba1bab8a67eafc75e131f5b6c13db87dbc7e",
+  "carrier_path": "artifacts/stage9/attempts/92d74510-a457-4f1b-bb01-0c78cdc0e187/carrier.txt",
+  "case_id": "replay-R-c3",
+  "context_index": 3,
+  "key_id": "STAGE9_TEST_ONLY_3",
+  "kind": "replay",
+  "method": "R",
+  "profile_path": "configs/stage9/R32.json",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "fresh_receiver",
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "token_reservation": 2100,
+  "wall_reservation_seconds": 210
+}

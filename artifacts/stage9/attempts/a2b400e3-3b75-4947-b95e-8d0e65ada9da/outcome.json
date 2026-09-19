@@ -1,0 +1,89 @@
+{
+  "attempt_id": "a2b400e3-3b75-4947-b95e-8d0e65ada9da",
+  "attempt_useful_bits_per_transmitted_token": 0.0,
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 21,
+      "examined_total": 32113,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 26,
+        "noncanonical": 336,
+        "special_control": 7
+      },
+      "steps": 1984
+    }
+  },
+  "case_id": "R-c4",
+  "charged_tokens": 1993,
+  "ciphertext_sha256": "483aa654423f57932a6fbcbfe4a182f1c686798ee5adec922b9217ab02b93d61",
+  "context_index": 4,
+  "context_window_verified": true,
+  "cover_context": "A harbor note about a painted buoy:",
+  "cumulative_budget": {
+    "cases": 276,
+    "seconds": 15181.656283432992,
+    "tokens": 238800
+  },
+  "encapsulation_hex": "047c3feeec2f7f43829cf1e926303e9295ce468c84f4b5cc49ea93c82201ae66",
+  "envelope_bytes": 100,
+  "envelope_sha256": "616ed3615a4e4edf5e870c93c1df6195ec23281a2069ab5e8eb86f357bcc42cf",
+  "error": "Arithmetic carrier ceiling before complete stable packet",
+  "evidence_dir": "artifacts/stage9/attempts/a2b400e3-3b75-4947-b95e-8d0e65ada9da",
+  "exact_recovery": false,
+  "exception_type": "CapacityError",
+  "exit_code": 0,
+  "expected_outcome_agreement": false,
+  "expected_rejection": false,
+  "failure_category": "capacity_exhaustion",
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "job_elapsed_seconds": 162.64895545600302,
+  "key_id": "STAGE9_TEST_ONLY_4",
+  "kind": "encrypted",
+  "lease_verified": true,
+  "method": "R",
+  "pair_id": "c4",
+  "payload_bytes": 32,
+  "payload_setting_bytes": 32,
+  "payload_sha256": "321d03a1c75346a75e98b689f315f558bb1b3ec7474d4240b1a41031ee541886",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 1146898,
+  "profile_id": "stage9_public_R_size32_v1",
+  "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A harbor note about a painted buoy:": [
+      128000,
+      32,
+      57511,
+      5296,
+      922,
+      264,
+      24937,
+      75720,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "bab7e148a6d80d24a1ab0720d429bf9f3967be670459a66052ef1c326315103b",
+  "schema_version": 1,
+  "serialized_base64": "BHw/7uwvf0OCnPHpJjA+kpXORoyE9LXMSeqTyCIBrmZhsx+MP/gY+wHGQmISS16oq+zX0/ua08qFkYiAnLJy+OUq1QvphyKTmo2Co+wHjAPz0coOlAQUBef4at0DBrvpbnxf0Q==",
+  "split": "stage9_prospective_development_not_final_test",
+  "stage9_phase": "prospective",
+  "success": false,
+  "tested_code_commit": "a0e790647fe1b8dc052d9ac568b0733d25e309f7",
+  "timings": {
+    "encode_seconds": 146.88289350999548,
+    "load_and_verify_seconds": 15.048619733999658
+  },
+  "tokens_by_phase": {
+    "encode": 1993
+  },
+  "trace_path": "artifacts/stage9/attempts/a2b400e3-3b75-4947-b95e-8d0e65ada9da/traces.json",
+  "wire_delivered": false,
+  "worker_seconds": 162.19679927600373
+}
