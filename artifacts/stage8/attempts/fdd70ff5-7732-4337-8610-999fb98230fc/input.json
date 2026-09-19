@@ -1,0 +1,31 @@
+{
+  "TEST_ONLY_private_key_hex": "f82f47c4a0c7fd1811d493b57ce50d32beff860b1877a4d710cbde29cace545d",
+  "carrier_path": "artifacts/stage8/attempts/43503fb8-b451-44bd-b9a7-61d203f0ad20/carrier.txt",
+  "case_id": "diagnostic-replay-qual-HPKE-32",
+  "context_index": 2,
+  "kind": "replay",
+  "method": "R",
+  "original_binding_profile_path": "configs/stage7/R32.json",
+  "profile_path": "configs/stage8/R32.json",
+  "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "repeated_historical_packet_development_only",
+  "stage8_phase": "diagnostic",
+  "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+  "token_reservation": 2100,
+  "wall_reservation_seconds": 210
+}

@@ -1,0 +1,124 @@
+{
+  "reconciliation": "PASS",
+  "attempts": 6,
+  "usage": {
+    "seconds": 934.306489325998,
+    "tokens": 13183,
+    "cases": 6
+  },
+  "lifetime": {
+    "seconds": 8929.578526105983,
+    "tokens": 145042,
+    "cases": 224
+  },
+  "recovery": [
+    {
+      "method": "F",
+      "payload_bytes": 32,
+      "planned": 0,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "recovery_fraction": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "carrier_token_min": null,
+      "carrier_token_max": null,
+      "mean_success_payload_bits_per_token": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ],
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "recovered_bytes_per_charged_second": null
+    },
+    {
+      "method": "F",
+      "payload_bytes": 128,
+      "planned": 0,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "recovery_fraction": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "carrier_token_min": null,
+      "carrier_token_max": null,
+      "mean_success_payload_bits_per_token": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ],
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "recovered_bytes_per_charged_second": null
+    },
+    {
+      "method": "R",
+      "payload_bytes": 32,
+      "planned": 0,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "recovery_fraction": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "carrier_token_min": null,
+      "carrier_token_max": null,
+      "mean_success_payload_bits_per_token": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ],
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "recovered_bytes_per_charged_second": null
+    },
+    {
+      "method": "R",
+      "payload_bytes": 128,
+      "planned": 0,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "recovery_fraction": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "carrier_token_min": null,
+      "carrier_token_max": null,
+      "mean_success_payload_bits_per_token": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ],
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "recovered_bytes_per_charged_second": null
+    }
+  ],
+  "failures": [
+    {
+      "case_id": "diagnostic-qual-synthetic-128",
+      "category": "capacity_exhaustion",
+      "serialization": null,
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null
+    },
+    {
+      "case_id": "diagnostic-qual-HPKE-128",
+      "category": "capacity_exhaustion",
+      "serialization": null,
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null
+    }
+  ]
+}

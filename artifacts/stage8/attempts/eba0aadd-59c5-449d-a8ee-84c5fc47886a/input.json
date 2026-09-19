@@ -1,0 +1,29 @@
+{
+  "case_id": "diagnostic-qual-synthetic-128",
+  "context_index": 1,
+  "historical_envelope_hex": "0a9d94951a6bc6e50d63d5407ffaee7cdf59732398c292ad897418102f56e81fd26d8686302e9144ecb5dfd99419e43650246eace492831878bb1829a9be69e476458fcbfab1c6a5b4a4018018c2d83b7dcd125eddd2140654f28c9d9ca3c9f43d53f384d38818e25d274a35292c7b698749e04e958a79025e486b61b46bcfdf806cc8c0ad02baaf28cedb5623e19ed7f5c79cbe5aa4bc047a8fef92e3a5066cf701df1378faeecb7b23cb1c6b33938ad776d0639a6cadcc94bf76b49fedb585f77f5271",
+  "kind": "fixture",
+  "method": "R",
+  "profile_path": "configs/stage8/R128.json",
+  "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "repeated_historical_packet_development_only",
+  "stage8_phase": "diagnostic",
+  "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+  "token_reservation": 4200,
+  "wall_reservation_seconds": 360
+}

@@ -1,0 +1,29 @@
+{
+  "case_id": "diagnostic-qual-synthetic-32",
+  "context_index": 0,
+  "historical_envelope_hex": "a7aab60f6441a81716b093aa05192633c62abfbf6fd03220ebe8600cf822a3e96eef455f248ec5b076a4638f8e3d631c1f674df69c0f698033ebf2c22fa54af36c29916c928d706822f98005903ae17549e21549d9b9889b05bf1e9916cbac6775239f43",
+  "kind": "fixture",
+  "method": "R",
+  "profile_path": "configs/stage8/R32.json",
+  "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "repeated_historical_packet_development_only",
+  "stage8_phase": "diagnostic",
+  "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+  "token_reservation": 4200,
+  "wall_reservation_seconds": 360
+}

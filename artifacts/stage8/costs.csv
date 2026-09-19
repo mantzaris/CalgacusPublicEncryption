@@ -1,0 +1,4 @@
+phase,kind,method,family,payload_bytes,attempts,charged_seconds,evaluated_tokens,mean_job_seconds,peak_sampled_vram_mib,mean_load_and_verify_seconds,mean_encode_seconds,mean_receiver_seconds,mean_public_scoring_seconds,mean_control_generation_seconds
+diagnostic,fixture,R,-,32,2,404.290168083,6128,202.1450840415,5006,14.625726309499441,93.19846059200063,,,
+diagnostic,fixture,R,-,128,2,312.4327731779995,3991,156.21638658899974,5006,14.885870977497689,140.3925068085009,,,
+diagnostic,replay,R,-,32,2,217.58354806499847,3064,108.79177403249923,5006,14.532383495998147,,,,

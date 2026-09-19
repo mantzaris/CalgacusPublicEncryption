@@ -1,0 +1,86 @@
+{
+  "attempt_id": "fdd70ff5-7732-4337-8610-999fb98230fc",
+  "authenticated": true,
+  "authenticated_message_recovery": true,
+  "candidate_costs": {
+    "fresh_receiver": {
+      "examined_max": 20,
+      "examined_total": 31272,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 1,
+        "noncanonical": 183,
+        "special_control": 16
+      },
+      "steps": 1942
+    }
+  },
+  "carrier_tokens": 1942,
+  "case_id": "diagnostic-replay-qual-HPKE-32",
+  "charged_tokens": 1952,
+  "context_index": 2,
+  "context_window_verified": true,
+  "cover_context": "A station bulletin about maintaining a platform clock:",
+  "cumulative_budget": {
+    "cases": 223,
+    "seconds": 8858.127152597983,
+    "tokens": 143930
+  },
+  "evidence_dir": "artifacts/stage8/attempts/fdd70ff5-7732-4337-8610-999fb98230fc",
+  "exact_recovery": true,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "job_elapsed_seconds": 146.1321745569985,
+  "kind": "replay",
+  "lease_verified": true,
+  "method": "R",
+  "original_binding_authenticated": true,
+  "pair_id": null,
+  "payload_setting_bytes": 32,
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 818614,
+  "profile_id": "stage8_public_R_size32_v1",
+  "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A station bulletin about maintaining a platform clock:": [
+      128000,
+      32,
+      8216,
+      75829,
+      922,
+      20958,
+      264,
+      5452,
+      9042,
+      25
+    ]
+  },
+  "recovered_bytes": 32,
+  "recovered_envelope_sha256": "ad638ca59c94fd6bb86bef814afd09513e410927074a897b00ed99e087a9b1cc",
+  "recovered_sha256": "27df4e8688c465b8d408b801fe10f274a77d0d7620dbb3e096ce22cc735444b2",
+  "schema_version": 1,
+  "source_attempt_id": "43503fb8-b451-44bd-b9a7-61d203f0ad20",
+  "split": "repeated_historical_packet_development_only",
+  "stage8_phase": "diagnostic",
+  "success": true,
+  "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+  "timings": {
+    "fresh_receiver_seconds": 130.85827293799957,
+    "load_and_verify_seconds": 14.64322979699864
+  },
+  "tokens_by_phase": {
+    "fresh_receiver": 1952
+  },
+  "trace_path": "artifacts/stage8/attempts/fdd70ff5-7732-4337-8610-999fb98230fc/traces.json",
+  "transport_bytes": 9502,
+  "transport_sha256": "3856663257bd1a16e93fb4dccc35f791a3380ff6a8b7544eeeabc7503d35ab5b",
+  "wire_delivered": true,
+  "worker_seconds": 145.7654104059984
+}

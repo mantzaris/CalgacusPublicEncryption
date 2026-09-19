@@ -1,0 +1,2413 @@
+{
+  "all_gpu_lease_phase_provenance_verified": true,
+  "all_workers_clean_exit": true,
+  "attempted_cases": 6,
+  "bootstrap": {
+    "draws": 2000,
+    "limits": "conditional descriptive intervals; four contexts; degenerate intervals are not population guarantees",
+    "seed": 2026092008,
+    "unit": "four contexts then size/recipient-key groups; repetitions/methods/controls/checkpoints retained jointly"
+  },
+  "broad_cpu_suite": false,
+  "candidate_search": {
+    "all_steps_admitted_16": true,
+    "examined_max": 28,
+    "examined_total": 210914,
+    "steps": 13094
+  },
+  "capacity": [
+    {
+      "carrier_tokens": 1100,
+      "case_id": "diagnostic-qual-synthetic-32",
+      "emitted_tokens": 1100,
+      "envelope_bytes": 100,
+      "failure": null,
+      "phase": "diagnostic",
+      "stable_bits": 800,
+      "success": true,
+      "target_bits": 800,
+      "terminal": {
+        "high_inclusive": 3605400159,
+        "low": 1905855568,
+        "pending_underflow": 2,
+        "stable_bits": 800
+      },
+      "wire_delivered": true
+    },
+    {
+      "carrier_tokens": null,
+      "case_id": "diagnostic-qual-synthetic-128",
+      "emitted_tokens": 1984,
+      "envelope_bytes": 196,
+      "failure": "capacity_exhaustion",
+      "phase": "diagnostic",
+      "stable_bits": 1426,
+      "success": false,
+      "target_bits": 1568,
+      "terminal": {
+        "high_inclusive": 2598561691,
+        "low": 1027418000,
+        "pending_underflow": 0,
+        "stable_bits": 1426
+      },
+      "wire_delivered": false
+    },
+    {
+      "carrier_tokens": 1942,
+      "case_id": "diagnostic-qual-HPKE-32",
+      "emitted_tokens": 1942,
+      "envelope_bytes": 100,
+      "failure": null,
+      "phase": "diagnostic",
+      "stable_bits": 800,
+      "success": true,
+      "target_bits": 800,
+      "terminal": {
+        "high_inclusive": 3907208959,
+        "low": 731354368,
+        "pending_underflow": 7,
+        "stable_bits": 800
+      },
+      "wire_delivered": true
+    },
+    {
+      "carrier_tokens": null,
+      "case_id": "diagnostic-qual-HPKE-128",
+      "emitted_tokens": 1984,
+      "envelope_bytes": 196,
+      "failure": "capacity_exhaustion",
+      "phase": "diagnostic",
+      "stable_bits": 1529,
+      "success": false,
+      "target_bits": 1568,
+      "terminal": {
+        "high_inclusive": 3153209095,
+        "low": 329813456,
+        "pending_underflow": 0,
+        "stable_bits": 1529
+      },
+      "wire_delivered": false
+    }
+  ],
+  "checkpoints": [
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "diagnostic-qual-synthetic-32",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": false,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "diagnostic",
+      "required_envelope_bits": 800,
+      "stable_bits": 552,
+      "successful_payload_bits_per_token": null,
+      "useful_payload_bits": null
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1024,
+      "case_id": "diagnostic-qual-synthetic-32",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": false,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "diagnostic",
+      "required_envelope_bits": 800,
+      "stable_bits": 740,
+      "successful_payload_bits_per_token": null,
+      "useful_payload_bits": null
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1536,
+      "case_id": "diagnostic-qual-synthetic-32",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": false,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "diagnostic",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": null,
+      "useful_payload_bits": null
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1984,
+      "case_id": "diagnostic-qual-synthetic-32",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": false,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "diagnostic",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": null,
+      "useful_payload_bits": null
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "diagnostic-qual-synthetic-128",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": false,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "diagnostic",
+      "required_envelope_bits": 1568,
+      "stable_bits": 556,
+      "successful_payload_bits_per_token": null,
+      "useful_payload_bits": null
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1024,
+      "case_id": "diagnostic-qual-synthetic-128",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": false,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "diagnostic",
+      "required_envelope_bits": 1568,
+      "stable_bits": 910,
+      "successful_payload_bits_per_token": null,
+      "useful_payload_bits": null
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1536,
+      "case_id": "diagnostic-qual-synthetic-128",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": false,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "diagnostic",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1229,
+      "successful_payload_bits_per_token": null,
+      "useful_payload_bits": null
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1984,
+      "case_id": "diagnostic-qual-synthetic-128",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": false,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "diagnostic",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1426,
+      "successful_payload_bits_per_token": null,
+      "useful_payload_bits": null
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "diagnostic-qual-HPKE-32",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "diagnostic",
+      "required_envelope_bits": 800,
+      "stable_bits": 358,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1024,
+      "case_id": "diagnostic-qual-HPKE-32",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "diagnostic",
+      "required_envelope_bits": 800,
+      "stable_bits": 419,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1536,
+      "case_id": "diagnostic-qual-HPKE-32",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "diagnostic",
+      "required_envelope_bits": 800,
+      "stable_bits": 705,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": true,
+      "budget": 1984,
+      "case_id": "diagnostic-qual-HPKE-32",
+      "complete_envelope_by_budget": true,
+      "envelope_bits_recovered": 800,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 32,
+      "phase": "diagnostic",
+      "required_envelope_bits": 800,
+      "stable_bits": 800,
+      "successful_payload_bits_per_token": 0.13182286302780638,
+      "useful_payload_bits": 256
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 512,
+      "case_id": "diagnostic-qual-HPKE-128",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "diagnostic",
+      "required_envelope_bits": 1568,
+      "stable_bits": 569,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1024,
+      "case_id": "diagnostic-qual-HPKE-128",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "diagnostic",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1063,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1536,
+      "case_id": "diagnostic-qual-HPKE-128",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "diagnostic",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1408,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    },
+    {
+      "authenticated_by_budget": false,
+      "budget": 1984,
+      "case_id": "diagnostic-qual-HPKE-128",
+      "complete_envelope_by_budget": false,
+      "envelope_bits_recovered": 0,
+      "is_hpke": true,
+      "method": "R",
+      "payload_class_bytes": 128,
+      "phase": "diagnostic",
+      "required_envelope_bits": 1568,
+      "stable_bits": 1529,
+      "successful_payload_bits_per_token": 0,
+      "useful_payload_bits": 0
+    }
+  ],
+  "control_attempts": 0,
+  "costs": [
+    {
+      "attempts": 2,
+      "charged_seconds": 404.290168083,
+      "evaluated_tokens": 6128,
+      "family": "-",
+      "kind": "fixture",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 93.19846059200063,
+      "mean_job_seconds": 202.1450840415,
+      "mean_load_and_verify_seconds": 14.625726309499441,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "method": "R",
+      "payload_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "diagnostic"
+    },
+    {
+      "attempts": 2,
+      "charged_seconds": 312.4327731779995,
+      "evaluated_tokens": 3991,
+      "family": "-",
+      "kind": "fixture",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 140.3925068085009,
+      "mean_job_seconds": 156.21638658899974,
+      "mean_load_and_verify_seconds": 14.885870977497689,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "method": "R",
+      "payload_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "diagnostic"
+    },
+    {
+      "attempts": 2,
+      "charged_seconds": 217.58354806499847,
+      "evaluated_tokens": 3064,
+      "family": "-",
+      "kind": "replay",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": null,
+      "mean_job_seconds": 108.79177403249923,
+      "mean_load_and_verify_seconds": 14.532383495998147,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "method": "R",
+      "payload_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "diagnostic"
+    }
+  ],
+  "diagnostic_attempts": 6,
+  "diagnostic_status": {
+    "allocation_id": "stage8_capacity_comparison_2026-09-18",
+    "lifetime_usage": {
+      "cases": 224,
+      "seconds": 8929.578526105983,
+      "tokens": 145042
+    },
+    "phase": "diagnostic",
+    "qualification_passed": true,
+    "recorded_outcomes": 6,
+    "schema_version": 1,
+    "skipped": [
+      {
+        "case_id": "diagnostic-replay-qual-HPKE-128",
+        "reason": "Predetermined source unavailable; no replacement"
+      },
+      {
+        "case_id": "diagnostic-replay-qual-synthetic-128",
+        "reason": "Predetermined source unavailable; no replacement"
+      }
+    ],
+    "stage8_usage": {
+      "cases": 6,
+      "seconds": 934.306489325998,
+      "tokens": 13183
+    },
+    "stop_reason": "Frozen phase completed",
+    "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
+  },
+  "failures": [
+    {
+      "case_id": "diagnostic-qual-synthetic-128",
+      "category": "capacity_exhaustion",
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null,
+      "serialization": null
+    },
+    {
+      "case_id": "diagnostic-qual-HPKE-128",
+      "category": "capacity_exhaustion",
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null,
+      "serialization": null
+    }
+  ],
+  "focused_cpu_tests": 5,
+  "gpu_tested_code_commits": [
+    "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
+  ],
+  "historical_changed_paths": [
+    "artifacts/project_budget.checkpoint.json",
+    "artifacts/project_budget.jsonl",
+    "src/llm_stego_public_key/evaluation/budget.py",
+    "src/llm_stego_public_key/profile.py"
+  ],
+  "historical_data_pooled": false,
+  "historical_ledger_prefix_preserved": true,
+  "joint_support_recognition": [
+    {
+      "F_auc": null,
+      "R_auc": null,
+      "R_minus_F": null,
+      "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
+      "interval": [
+        null,
+        null
+      ],
+      "metric": "mean_nll_bits",
+      "pair_ids": [],
+      "pairs": 0
+    },
+    {
+      "F_auc": null,
+      "R_auc": null,
+      "R_minus_F": null,
+      "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
+      "interval": [
+        null,
+        null
+      ],
+      "metric": "mean_log2_rank",
+      "pair_ids": [],
+      "pairs": 0
+    },
+    {
+      "F_auc": null,
+      "R_auc": null,
+      "R_minus_F": null,
+      "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
+      "interval": [
+        null,
+        null
+      ],
+      "metric": "mean_admissible_nll_bits",
+      "pair_ids": [],
+      "pairs": 0
+    },
+    {
+      "F_auc": null,
+      "R_auc": null,
+      "R_minus_F": null,
+      "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
+      "interval": [
+        null,
+        null
+      ],
+      "metric": "member_fraction",
+      "pair_ids": [],
+      "pairs": 0
+    },
+    {
+      "F_auc": null,
+      "R_auc": null,
+      "R_minus_F": null,
+      "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
+      "interval": [
+        null,
+        null
+      ],
+      "metric": "format_accepted",
+      "pair_ids": [],
+      "pairs": 0
+    },
+    {
+      "F_auc": null,
+      "R_auc": null,
+      "R_minus_F": null,
+      "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
+      "interval": [
+        null,
+        null
+      ],
+      "metric": "format_and_kem_canonical",
+      "pair_ids": [],
+      "pairs": 0
+    },
+    {
+      "F_auc": null,
+      "R_auc": null,
+      "R_minus_F": null,
+      "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
+      "interval": [
+        null,
+        null
+      ],
+      "metric": "token_count",
+      "pair_ids": [],
+      "pairs": 0
+    },
+    {
+      "F_auc": null,
+      "R_auc": null,
+      "R_minus_F": null,
+      "conditioning": "both methods and their length-matched B controls delivered/scorable, metric available; no authentication filter",
+      "interval": [
+        null,
+        null
+      ],
+      "metric": "utf8_bytes",
+      "pair_ids": [],
+      "pairs": 0
+    }
+  ],
+  "ledger_bytes": 120195,
+  "ledger_sha256": "4944e6c70a97dcb83160aac8235d70d061a01e0579498b1edadc5631e4cdd1ca",
+  "lifetime_usage": {
+    "cases": 224,
+    "seconds": 8929.578526105983,
+    "tokens": 145042
+  },
+  "main_encrypted_attempts": 0,
+  "main_executed": false,
+  "main_independent_recipient_keys": 0,
+  "main_planned_slots": 0,
+  "main_repetitions": 0,
+  "main_skipped_by_gate": [
+    "F-c0-n32-r0",
+    "R-c0-n32-r0",
+    "R-c0-n32-r1",
+    "F-c0-n32-r1",
+    "R-c0-n128-r0",
+    "F-c0-n128-r0",
+    "F-c0-n128-r1",
+    "R-c0-n128-r1",
+    "R-c1-n32-r0",
+    "F-c1-n32-r0",
+    "F-c1-n32-r1",
+    "R-c1-n32-r1",
+    "F-c1-n128-r0",
+    "R-c1-n128-r0",
+    "R-c1-n128-r1",
+    "F-c1-n128-r1",
+    "F-c2-n32-r0",
+    "R-c2-n32-r0",
+    "R-c2-n32-r1",
+    "F-c2-n32-r1",
+    "R-c2-n128-r0",
+    "F-c2-n128-r0",
+    "F-c2-n128-r1",
+    "R-c2-n128-r1",
+    "R-c3-n32-r0",
+    "F-c3-n32-r0",
+    "F-c3-n32-r1",
+    "R-c3-n32-r1",
+    "F-c3-n128-r0",
+    "R-c3-n128-r0",
+    "R-c3-n128-r1",
+    "F-c3-n128-r1",
+    "control-F-c0-n32-r0-B",
+    "control-R-c0-n32-r0-B",
+    "control-R-c0-n32-r1-B",
+    "control-F-c0-n32-r1-B",
+    "control-R-c0-n128-r0-B",
+    "control-F-c0-n128-r0-B",
+    "control-F-c0-n128-r1-B",
+    "control-R-c0-n128-r1-B",
+    "control-R-c1-n32-r0-B",
+    "control-F-c1-n32-r0-B",
+    "control-F-c1-n32-r1-B",
+    "control-R-c1-n32-r1-B",
+    "control-F-c1-n128-r0-B",
+    "control-R-c1-n128-r0-B",
+    "control-R-c1-n128-r1-B",
+    "control-F-c1-n128-r1-B",
+    "control-F-c2-n32-r0-B",
+    "control-R-c2-n32-r0-B",
+    "control-R-c2-n32-r1-B",
+    "control-F-c2-n32-r1-B",
+    "control-R-c2-n128-r0-B",
+    "control-F-c2-n128-r0-B",
+    "control-F-c2-n128-r1-B",
+    "control-R-c2-n128-r1-B",
+    "control-R-c3-n32-r0-B",
+    "control-F-c3-n32-r0-B",
+    "control-F-c3-n32-r1-B",
+    "control-R-c3-n32-r1-B",
+    "control-F-c3-n128-r0-B",
+    "control-R-c3-n128-r0-B",
+    "control-R-c3-n128-r1-B",
+    "control-F-c3-n128-r1-B",
+    "replay-F-c0-n32",
+    "replay-R-c0-n32",
+    "replay-F-c0-n128",
+    "replay-R-c0-n128",
+    "replay-F-c2-n32",
+    "replay-R-c2-n32",
+    "replay-F-c2-n128",
+    "replay-R-c2-n128"
+  ],
+  "main_unselected_before_release": [],
+  "paired_auc_differences": [
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "mean_nll_bits",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "mean_log2_rank",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "mean_admissible_nll_bits",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "member_fraction",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "format_accepted",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "format_and_kem_canonical",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "token_count",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "utf8_bytes",
+      "paired_interval": [
+        null,
+        null
+      ]
+    }
+  ],
+  "peak_sampled_vram_mib": 5006,
+  "phase_tokens": {
+    "encode": 7055,
+    "fresh_receiver": 3064,
+    "public_fixture_inverse": 3064
+  },
+  "planned_slots": 80,
+  "progress_summaries": [
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 0.9112254783201621,
+          "pending_at_end": 0,
+          "selected_information_bits": 111.06735882745161,
+          "stable_bits_released": 110,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.2525986143152348,
+          "pending_at_end": 1,
+          "selected_information_bits": 185.4905811819959,
+          "stable_bits_released": 185,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 0.8126086010973095,
+          "pending_at_end": 0,
+          "selected_information_bits": 108.38487535152964,
+          "stable_bits_released": 109,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.9460902608198748,
+          "pending_at_end": 0,
+          "selected_information_bits": 148.17919584424277,
+          "stable_bits_released": 148,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "mean_table_entropy_bits": 0.46108126097451463,
+          "pending_at_end": 0,
+          "selected_information_bits": 52.19374691477702,
+          "stable_bits_released": 52,
+          "tokens": 128
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.7847292868839646,
+          "pending_at_end": 1,
+          "selected_information_bits": 123.30768399905654,
+          "stable_bits_released": 123,
+          "tokens": 128
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "mean_table_entropy_bits": 0.1076799997740835,
+          "pending_at_end": 1,
+          "selected_information_bits": 3.5249741937856727,
+          "stable_bits_released": 3,
+          "tokens": 128
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.09326598836211634,
+          "pending_at_end": 1,
+          "selected_information_bits": 9.7304079233193,
+          "stable_bits_released": 10,
+          "tokens": 128
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1100,
+          "mean_table_entropy_bits": 0.7617496140914792,
+          "pending_at_end": 2,
+          "selected_information_bits": 61.458685285193944,
+          "stable_bits_released": 60,
+          "tokens": 76
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.081912046317698,
+          "pending_at_end": 1,
+          "selected_information_bits": 296.55794000944735,
+          "stable_bits_released": 295,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.8793494309585926,
+          "pending_at_end": 0,
+          "selected_information_bits": 256.5640711957723,
+          "stable_bits_released": 257,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.6229052739292393,
+          "pending_at_end": 1,
+          "selected_information_bits": 175.5014309138336,
+          "stable_bits_released": 175,
+          "tokens": 256
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.10047299406809987,
+          "pending_at_end": 1,
+          "selected_information_bits": 13.255382117104967,
+          "stable_bits_released": 13,
+          "tokens": 256
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1100,
+          "mean_table_entropy_bits": 0.7617496140914792,
+          "pending_at_end": 2,
+          "selected_information_bits": 61.458685285193944,
+          "stable_bits_released": 60,
+          "tokens": 76
+        }
+      ],
+      "case_id": "diagnostic-qual-synthetic-32",
+      "mean_selected_information": 0.730306826837593,
+      "mean_table_entropy": 0.6774188595100016,
+      "phase": "diagnostic",
+      "tokens": 1100
+    },
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 1.3468973534692525,
+          "pending_at_end": 2,
+          "selected_information_bits": 172.30775293636177,
+          "stable_bits_released": 169,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.122073937355422,
+          "pending_at_end": 1,
+          "selected_information_bits": 140.43642964651394,
+          "stable_bits_released": 142,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 0.9336063475499641,
+          "pending_at_end": 2,
+          "selected_information_bits": 134.46096243638078,
+          "stable_bits_released": 133,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.852300871455007,
+          "pending_at_end": 0,
+          "selected_information_bits": 109.64592087908882,
+          "stable_bits_released": 112,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "mean_table_entropy_bits": 0.7771004050282313,
+          "pending_at_end": 2,
+          "selected_information_bits": 91.88312639337641,
+          "stable_bits_released": 90,
+          "tokens": 128
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.7157487487736373,
+          "pending_at_end": 2,
+          "selected_information_bits": 84.12500002102554,
+          "stable_bits_released": 84,
+          "tokens": 128
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "mean_table_entropy_bits": 0.7254565232718811,
+          "pending_at_end": 2,
+          "selected_information_bits": 93.03090778922943,
+          "stable_bits_released": 93,
+          "tokens": 128
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.6946257148172922,
+          "pending_at_end": 0,
+          "selected_information_bits": 85.12991083830161,
+          "stable_bits_released": 87,
+          "tokens": 128
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "mean_table_entropy_bits": 0.6562577945581457,
+          "pending_at_end": 0,
+          "selected_information_bits": 86.94249617874033,
+          "stable_bits_released": 87,
+          "tokens": 128
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.6232150616594335,
+          "pending_at_end": 0,
+          "selected_information_bits": 70.85745038923184,
+          "stable_bits_released": 71,
+          "tokens": 128
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "mean_table_entropy_bits": 0.6506859046308138,
+          "pending_at_end": 5,
+          "selected_information_bits": 85.02710635591575,
+          "stable_bits_released": 80,
+          "tokens": 128
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.5574154722904612,
+          "pending_at_end": 0,
+          "selected_information_bits": 76.04578590573723,
+          "stable_bits_released": 81,
+          "tokens": 128
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1664,
+          "mean_table_entropy_bits": 0.5783707167417955,
+          "pending_at_end": 1,
+          "selected_information_bits": 78.3889582274177,
+          "stable_bits_released": 78,
+          "tokens": 128
+        },
+        {
+          "first_token": 1665,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.5468789360364893,
+          "pending_at_end": 0,
+          "selected_information_bits": 62.57683202457379,
+          "stable_bits_released": 63,
+          "tokens": 128
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1920,
+          "mean_table_entropy_bits": 0.3243860129254236,
+          "pending_at_end": 0,
+          "selected_information_bits": 40.45750544449988,
+          "stable_bits_released": 40,
+          "tokens": 128
+        },
+        {
+          "first_token": 1921,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.270423923270128,
+          "pending_at_end": 0,
+          "selected_information_bits": 16.13471065266448,
+          "stable_bits_released": 16,
+          "tokens": 64
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.2344856454123365,
+          "pending_at_end": 1,
+          "selected_information_bits": 312.7441825828759,
+          "stable_bits_released": 311,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.8929536095024856,
+          "pending_at_end": 0,
+          "selected_information_bits": 244.1068833154699,
+          "stable_bits_released": 245,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.746424576900935,
+          "pending_at_end": 2,
+          "selected_information_bits": 176.008126414402,
+          "stable_bits_released": 174,
+          "tokens": 256
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.7100411190445863,
+          "pending_at_end": 0,
+          "selected_information_bits": 178.16081862753117,
+          "stable_bits_released": 180,
+          "tokens": 256
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.6397364281087897,
+          "pending_at_end": 0,
+          "selected_information_bits": 157.7999465679723,
+          "stable_bits_released": 158,
+          "tokens": 256
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.604050688460638,
+          "pending_at_end": 0,
+          "selected_information_bits": 161.072892261653,
+          "stable_bits_released": 161,
+          "tokens": 256
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.5626248263891424,
+          "pending_at_end": 0,
+          "selected_information_bits": 140.96579025199148,
+          "stable_bits_released": 141,
+          "tokens": 256
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.30639864970699177,
+          "pending_at_end": 0,
+          "selected_information_bits": 56.592216097164375,
+          "stable_bits_released": 56,
+          "tokens": 192
+        }
+      ],
+      "case_id": "diagnostic-qual-synthetic-128",
+      "mean_selected_information": 0.7194812782858161,
+      "mean_table_entropy": 0.7251762427224718,
+      "phase": "diagnostic",
+      "tokens": 1984
+    },
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 1.0478909520241657,
+          "pending_at_end": 2,
+          "selected_information_bits": 126.435820026269,
+          "stable_bits_released": 124,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 0.5942570037333924,
+          "pending_at_end": 0,
+          "selected_information_bits": 62.75427761219684,
+          "stable_bits_released": 65,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 0.6358156205305595,
+          "pending_at_end": 0,
+          "selected_information_bits": 78.85161052203203,
+          "stable_bits_released": 78,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.5867390341582979,
+          "pending_at_end": 0,
+          "selected_information_bits": 90.65755010591516,
+          "stable_bits_released": 91,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "mean_table_entropy_bits": 0.5674172297572093,
+          "pending_at_end": 1,
+          "selected_information_bits": 62.045437965826544,
+          "stable_bits_released": 61,
+          "tokens": 128
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.01589550329119454,
+          "pending_at_end": 2,
+          "selected_information_bits": 0.6819565155360925,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "mean_table_entropy_bits": 0.005172518017639114,
+          "pending_at_end": 2,
+          "selected_information_bits": 0.05874806459162721,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.0050639136709814065,
+          "pending_at_end": 2,
+          "selected_information_bits": 0.05632254930538845,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "mean_table_entropy_bits": 0.004837271660199945,
+          "pending_at_end": 2,
+          "selected_information_bits": 0.05334934321138932,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.25025261960014467,
+          "pending_at_end": 0,
+          "selected_information_bits": 47.835732201182005,
+          "stable_bits_released": 49,
+          "tokens": 128
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "mean_table_entropy_bits": 0.6922194510072835,
+          "pending_at_end": 0,
+          "selected_information_bits": 94.02486805261287,
+          "stable_bits_released": 94,
+          "tokens": 128
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 1.065791224761068,
+          "pending_at_end": 0,
+          "selected_information_bits": 142.0204338357284,
+          "stable_bits_released": 143,
+          "tokens": 128
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1664,
+          "mean_table_entropy_bits": 0.38577568893477315,
+          "pending_at_end": 3,
+          "selected_information_bits": 61.837580779390066,
+          "stable_bits_released": 59,
+          "tokens": 128
+        },
+        {
+          "first_token": 1665,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.07817236254529844,
+          "pending_at_end": 0,
+          "selected_information_bits": 20.185193129475632,
+          "stable_bits_released": 23,
+          "tokens": 128
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1920,
+          "mean_table_entropy_bits": 0.016235237201682663,
+          "pending_at_end": 0,
+          "selected_information_bits": 0.2618724534586819,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1921,
+          "last_token": 1942,
+          "mean_table_entropy_bits": 0.5908350310498491,
+          "pending_at_end": 7,
+          "selected_information_bits": 19.674730257073975,
+          "stable_bits_released": 13,
+          "tokens": 22
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 0.821073977878779,
+          "pending_at_end": 0,
+          "selected_information_bits": 189.19009763846586,
+          "stable_bits_released": 189,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.6112773273444285,
+          "pending_at_end": 0,
+          "selected_information_bits": 169.50916062794715,
+          "stable_bits_released": 169,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.2916563665242025,
+          "pending_at_end": 2,
+          "selected_information_bits": 62.72739448136258,
+          "stable_bits_released": 61,
+          "tokens": 256
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 0.0051182158443102595,
+          "pending_at_end": 2,
+          "selected_information_bits": 0.11507061389701567,
+          "stable_bits_released": 0,
+          "tokens": 256
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 0.1275449456301723,
+          "pending_at_end": 0,
+          "selected_information_bits": 47.8890815443934,
+          "stable_bits_released": 49,
+          "tokens": 256
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.8790053378841759,
+          "pending_at_end": 0,
+          "selected_information_bits": 236.04530188834113,
+          "stable_bits_released": 237,
+          "tokens": 256
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.23197402574003648,
+          "pending_at_end": 0,
+          "selected_information_bits": 82.02277390886566,
+          "stable_bits_released": 82,
+          "tokens": 256
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1942,
+          "mean_table_entropy_bits": 0.10050987363274708,
+          "pending_at_end": 7,
+          "selected_information_bits": 19.936602710532654,
+          "stable_bits_released": 13,
+          "tokens": 150
+        }
+      ],
+      "case_id": "diagnostic-qual-HPKE-32",
+      "mean_selected_information": 0.41577522317909654,
+      "mean_table_entropy": 0.39896752391221135,
+      "phase": "diagnostic",
+      "tokens": 1942
+    },
+    {
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "mean_table_entropy_bits": 1.6843349424076217,
+          "pending_at_end": 0,
+          "selected_information_bits": 178.55313030326607,
+          "stable_bits_released": 178,
+          "tokens": 128
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.0588371257139713,
+          "pending_at_end": 0,
+          "selected_information_bits": 113.08786868729807,
+          "stable_bits_released": 113,
+          "tokens": 128
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "mean_table_entropy_bits": 1.0049583157535058,
+          "pending_at_end": 1,
+          "selected_information_bits": 140.74306617504425,
+          "stable_bits_released": 139,
+          "tokens": 128
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.9755455445216231,
+          "pending_at_end": 0,
+          "selected_information_bits": 138.17577620974689,
+          "stable_bits_released": 139,
+          "tokens": 128
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "mean_table_entropy_bits": 0.6843104450603996,
+          "pending_at_end": 1,
+          "selected_information_bits": 79.77377116271576,
+          "stable_bits_released": 79,
+          "tokens": 128
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.8595611912347633,
+          "pending_at_end": 0,
+          "selected_information_bits": 132.16489142284826,
+          "stable_bits_released": 134,
+          "tokens": 128
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "mean_table_entropy_bits": 1.0921165149281928,
+          "pending_at_end": 0,
+          "selected_information_bits": 151.53629503798322,
+          "stable_bits_released": 151,
+          "tokens": 128
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 1.0807834576457163,
+          "pending_at_end": 1,
+          "selected_information_bits": 131.71806937732367,
+          "stable_bits_released": 130,
+          "tokens": 128
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "mean_table_entropy_bits": 0.8475770868625068,
+          "pending_at_end": 0,
+          "selected_information_bits": 113.56344861830208,
+          "stable_bits_released": 115,
+          "tokens": 128
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 1.17262240023265,
+          "pending_at_end": 0,
+          "selected_information_bits": 162.6299483981954,
+          "stable_bits_released": 163,
+          "tokens": 128
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "mean_table_entropy_bits": 0.5227515326880928,
+          "pending_at_end": 2,
+          "selected_information_bits": 68.36525822130427,
+          "stable_bits_released": 67,
+          "tokens": 128
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.01957348222743795,
+          "pending_at_end": 2,
+          "selected_information_bits": 0.4860443606382708,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1664,
+          "mean_table_entropy_bits": 0.006034925365605001,
+          "pending_at_end": 2,
+          "selected_information_bits": 0.0859160617145359,
+          "stable_bits_released": 0,
+          "tokens": 128
+        },
+        {
+          "first_token": 1665,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.024024983714146384,
+          "pending_at_end": 0,
+          "selected_information_bits": 0.7110614429751303,
+          "stable_bits_released": 3,
+          "tokens": 128
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1920,
+          "mean_table_entropy_bits": 0.35558210796439127,
+          "pending_at_end": 0,
+          "selected_information_bits": 45.66417461782374,
+          "stable_bits_released": 46,
+          "tokens": 128
+        },
+        {
+          "first_token": 1921,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.8184704010564805,
+          "pending_at_end": 0,
+          "selected_information_bits": 72.34649527431417,
+          "stable_bits_released": 72,
+          "tokens": 64
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "mean_table_entropy_bits": 1.3715860340607966,
+          "pending_at_end": 0,
+          "selected_information_bits": 291.64099899056407,
+          "stable_bits_released": 291,
+          "tokens": 256
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "mean_table_entropy_bits": 0.9902519301375644,
+          "pending_at_end": 0,
+          "selected_information_bits": 278.9188423847909,
+          "stable_bits_released": 278,
+          "tokens": 256
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "mean_table_entropy_bits": 0.7719358181475814,
+          "pending_at_end": 0,
+          "selected_information_bits": 211.93866258556395,
+          "stable_bits_released": 213,
+          "tokens": 256
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "mean_table_entropy_bits": 1.086449986286954,
+          "pending_at_end": 1,
+          "selected_information_bits": 283.254364415307,
+          "stable_bits_released": 281,
+          "tokens": 256
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "mean_table_entropy_bits": 1.010099743547578,
+          "pending_at_end": 0,
+          "selected_information_bits": 276.1933970164975,
+          "stable_bits_released": 278,
+          "tokens": 256
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "mean_table_entropy_bits": 0.27116250745776627,
+          "pending_at_end": 2,
+          "selected_information_bits": 68.8513025819427,
+          "stable_bits_released": 67,
+          "tokens": 256
+        },
+        {
+          "first_token": 1537,
+          "last_token": 1792,
+          "mean_table_entropy_bits": 0.015029954539875691,
+          "pending_at_end": 0,
+          "selected_information_bits": 0.7969775046896665,
+          "stable_bits_released": 3,
+          "tokens": 256
+        },
+        {
+          "first_token": 1793,
+          "last_token": 1984,
+          "mean_table_entropy_bits": 0.5098782056617542,
+          "pending_at_end": 0,
+          "selected_information_bits": 118.01066989213791,
+          "stable_bits_released": 118,
+          "tokens": 192
+        }
+      ],
+      "case_id": "diagnostic-qual-HPKE-128",
+      "mean_selected_information": 0.7709703706509544,
+      "mean_table_entropy": 0.7611515649579912,
+      "phase": "diagnostic",
+      "tokens": 1984
+    }
+  ],
+  "recognition": [
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "mean_admissible_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "token_count"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "utf8_bytes"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "mean_admissible_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "token_count"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "utf8_bytes"
+    }
+  ],
+  "recognition_counts": [
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "B",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "F",
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 0
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "B",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "F",
+      "retokenization_drift": 0,
+      "role": "control",
+      "scorable": 0
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "B",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "R",
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 0
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "B",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "R",
+      "retokenization_drift": 0,
+      "role": "control",
+      "scorable": 0
+    }
+  ],
+  "recovery": [
+    {
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "carrier_token_max": null,
+      "carrier_token_min": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "mean_success_payload_bits_per_token": null,
+      "method": "F",
+      "payload_bytes": 32,
+      "planned": 0,
+      "recovered_bytes_per_charged_second": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "recovery_fraction": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "carrier_token_max": null,
+      "carrier_token_min": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "mean_success_payload_bits_per_token": null,
+      "method": "F",
+      "payload_bytes": 128,
+      "planned": 0,
+      "recovered_bytes_per_charged_second": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "recovery_fraction": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "carrier_token_max": null,
+      "carrier_token_min": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "mean_success_payload_bits_per_token": null,
+      "method": "R",
+      "payload_bytes": 32,
+      "planned": 0,
+      "recovered_bytes_per_charged_second": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "recovery_fraction": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "carrier_token_max": null,
+      "carrier_token_min": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "mean_success_payload_bits_per_token": null,
+      "method": "R",
+      "payload_bytes": 128,
+      "planned": 0,
+      "recovered_bytes_per_charged_second": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "recovery_fraction": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ]
+    }
+  ],
+  "remaining_parent_allowance": {
+    "cases": 118,
+    "seconds": 13012.306359257,
+    "tokens": 279952
+  },
+  "replays": [
+    {
+      "authenticated_exact": true,
+      "case_id": "diagnostic-replay-qual-HPKE-32",
+      "original_binding_authenticated": true,
+      "phase": "diagnostic",
+      "raw_envelope_exact": true
+    },
+    {
+      "authenticated_exact": false,
+      "case_id": "diagnostic-replay-qual-synthetic-32",
+      "original_binding_authenticated": false,
+      "phase": "diagnostic",
+      "raw_envelope_exact": true
+    }
+  ],
+  "schema_version": 1,
+  "selected_gpu": {
+    "driver": "590.48.01",
+    "index": "1",
+    "name": "NVIDIA RTX 5000 Ada Generation",
+    "uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "vram_mib": "32760"
+  },
+  "size_recognition": [
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "mean_nll_bits",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "mean_log2_rank",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "mean_admissible_nll_bits",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "member_fraction",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "format_accepted",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "format_and_kem_canonical",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "token_count",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "utf8_bytes",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "mean_nll_bits",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "mean_log2_rank",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "mean_admissible_nll_bits",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "member_fraction",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "format_accepted",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "format_and_kem_canonical",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "token_count",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "F",
+      "metric": "utf8_bytes",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "mean_nll_bits",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "mean_log2_rank",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "mean_admissible_nll_bits",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "member_fraction",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "format_accepted",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "format_and_kem_canonical",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "token_count",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "utf8_bytes",
+      "pairs": 0,
+      "payload_bytes": 32
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "mean_nll_bits",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "mean_log2_rank",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "mean_admissible_nll_bits",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "member_fraction",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "format_accepted",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "format_and_kem_canonical",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "token_count",
+      "pairs": 0,
+      "payload_bytes": 128
+    },
+    {
+      "auc": null,
+      "interval": [
+        null,
+        null
+      ],
+      "method": "R",
+      "metric": "utf8_bytes",
+      "pairs": 0,
+      "payload_bytes": 128
+    }
+  ],
+  "skipped": [
+    {
+      "case_id": "diagnostic-replay-qual-HPKE-128",
+      "reason": "Predetermined source unavailable; no replacement"
+    },
+    {
+      "case_id": "diagnostic-replay-qual-synthetic-128",
+      "reason": "Predetermined source unavailable; no replacement"
+    }
+  ],
+  "stage8_usage": {
+    "cases": 6,
+    "seconds": 934.306489325998,
+    "tokens": 13183
+  },
+  "starting_commit": "e55680169ef7c0e7110bfaddc0b5392e28419bb8",
+  "stop_reason": "Frozen phase completed",
+  "unique_worker_pids": 6,
+  "unsettled_attempts": [],
+  "unused_stage8_allowance": {
+    "cases": 82,
+    "seconds": 9865.693510674002,
+    "tokens": 216817
+  }
+}

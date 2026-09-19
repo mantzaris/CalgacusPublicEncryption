@@ -1,0 +1,31 @@
+{
+  "TEST_ONLY_private_key_hex": "f82f47c4a0c7fd1811d493b57ce50d32beff860b1877a4d710cbde29cace545d",
+  "case_id": "diagnostic-qual-HPKE-128",
+  "context_index": 3,
+  "historical_envelope_hex": "0af7ab869523d51d9ff1ee9283acc0585f26f5a4fd7a3069087cd98d4650f810d59a89caeb53e2a0880de690a42361b74ec66a2a6b7e0e60d3c5dc6af4a53124b496091d8976c145a1c527eb31e2de0ece77a44237eee6b613bd5343566298312e8200fbc6af39313ad84dd05bbc5ad4a01d93323b1ed88c07b21b0e1dd68b5c728692cdf4c8be378e0e5629a8dd0cb4b7d7fd5b1d255c962dab95313de955202322f83d08739aabbfa2dac338756d70637bbf9fdbc5de43eaa93fb8b0fb5a1d33bff311",
+  "kind": "fixture",
+  "method": "R",
+  "original_binding_profile_path": "configs/stage7/R128.json",
+  "profile_path": "configs/stage8/R128.json",
+  "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "repeated_historical_packet_development_only",
+  "stage8_phase": "diagnostic",
+  "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+  "token_reservation": 4200,
+  "wall_reservation_seconds": 360
+}

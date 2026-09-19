@@ -1,0 +1,17 @@
+case_id,phase,method,payload_class_bytes,budget,stable_bits,required_envelope_bits,complete_envelope_by_budget,authenticated_by_budget,useful_payload_bits,successful_payload_bits_per_token,envelope_bits_recovered,is_hpke
+diagnostic-qual-synthetic-32,diagnostic,R,32,512,552,800,False,False,,,0,False
+diagnostic-qual-synthetic-32,diagnostic,R,32,1024,740,800,False,False,,,0,False
+diagnostic-qual-synthetic-32,diagnostic,R,32,1536,800,800,True,False,,,800,False
+diagnostic-qual-synthetic-32,diagnostic,R,32,1984,800,800,True,False,,,800,False
+diagnostic-qual-synthetic-128,diagnostic,R,128,512,556,1568,False,False,,,0,False
+diagnostic-qual-synthetic-128,diagnostic,R,128,1024,910,1568,False,False,,,0,False
+diagnostic-qual-synthetic-128,diagnostic,R,128,1536,1229,1568,False,False,,,0,False
+diagnostic-qual-synthetic-128,diagnostic,R,128,1984,1426,1568,False,False,,,0,False
+diagnostic-qual-HPKE-32,diagnostic,R,32,512,358,800,False,False,0,0,0,True
+diagnostic-qual-HPKE-32,diagnostic,R,32,1024,419,800,False,False,0,0,0,True
+diagnostic-qual-HPKE-32,diagnostic,R,32,1536,705,800,False,False,0,0,0,True
+diagnostic-qual-HPKE-32,diagnostic,R,32,1984,800,800,True,True,256,0.13182286302780638,800,True
+diagnostic-qual-HPKE-128,diagnostic,R,128,512,569,1568,False,False,0,0,0,True
+diagnostic-qual-HPKE-128,diagnostic,R,128,1024,1063,1568,False,False,0,0,0,True
+diagnostic-qual-HPKE-128,diagnostic,R,128,1536,1408,1568,False,False,0,0,0,True
+diagnostic-qual-HPKE-128,diagnostic,R,128,1984,1529,1568,False,False,0,0,0,True

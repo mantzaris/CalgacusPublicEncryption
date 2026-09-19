@@ -1,0 +1,162 @@
+{
+  "analysis_note": "Host-only implementation after GPU freeze; no model inference; earlier CPU results retain their original revisions",
+  "analysis_source_sha256": "5448caf9f9f618d3ed41afdca8249581210c721d0febce7e9fd293c89e644010",
+  "attempts": [
+    {
+      "attempt_id": "45aac5b9-103b-44d6-9230-5bb7ebf3beaf",
+      "case_id": "diagnostic-qual-synthetic-32",
+      "files": {
+        "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/carrier.txt": "7be74dd29f108de70f68c3af78e07df9db7e70267f86460f7077a67c68109e8c",
+        "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/command.json": "3bcabc32f538c6ba47136abd6e4ccd813ad37809778093bd7783b1a8da8926d2",
+        "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/gpu_samples.json": "85e462c1ed2c1cc3bd40a6825c49b0b6e8d72a8278b237cb319e1cc700264b32",
+        "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/input.json": "718fa5b360cc362f5f8c0870a9e7f1c7b92f9060026fe28823f0d13b0c45b41e",
+        "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/outcome.json": "ee460847771df82f8988f512aaccbcf1f9335fb25726817ad293318b00acb562",
+        "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/partial_emission.bin": "7be74dd29f108de70f68c3af78e07df9db7e70267f86460f7077a67c68109e8c",
+        "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/result.json": "c81ea73ed82b695b0efa985fdac2671d0ab3c40fd77104c11fd7eb52defda738",
+        "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/traces.json": "26b4e4c66ad373328e7c49249ab553e3d878fa28b494875627fe0fa9e55d978d",
+        "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/worker.log": "f0293fec9aea2b90cf630b55bc69d4463354ae76400dc5e6aaed4e86fe49c1d8",
+        "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/worker_claim.json": "2f46b9b63b2ef2534a6d6e308790e031374ce0713764b4237f3155c8f31514a2"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
+    },
+    {
+      "attempt_id": "eba0aadd-59c5-449d-a8ee-84c5fc47886a",
+      "case_id": "diagnostic-qual-synthetic-128",
+      "files": {
+        "artifacts/stage8/attempts/eba0aadd-59c5-449d-a8ee-84c5fc47886a/command.json": "049ff958ee67c615bbb64994fefd49a6b1ef699404c4c0c79c66aadbbfa2ac57",
+        "artifacts/stage8/attempts/eba0aadd-59c5-449d-a8ee-84c5fc47886a/gpu_samples.json": "97899757f9385d0e22e4341f519837b68b2fa655615632f3f47df73cfc6c8be3",
+        "artifacts/stage8/attempts/eba0aadd-59c5-449d-a8ee-84c5fc47886a/input.json": "183e0e74d3e916b3a31eb73c609bd593af460f3892da954df3c38ea9725174ac",
+        "artifacts/stage8/attempts/eba0aadd-59c5-449d-a8ee-84c5fc47886a/outcome.json": "3f3ba472da40076464367f81c54faeebef6891bc332768a9e41bf66251691ebd",
+        "artifacts/stage8/attempts/eba0aadd-59c5-449d-a8ee-84c5fc47886a/partial_emission.bin": "17a123aee0601d9a1581ecd61ea6699fa99f0a9c11160115f28ac1ea92e11cda",
+        "artifacts/stage8/attempts/eba0aadd-59c5-449d-a8ee-84c5fc47886a/result.json": "1e562273b156390fe5d7bf166ee2b7b6f8c45f82c6d2cf7a7cbf6f5cc5832bbe",
+        "artifacts/stage8/attempts/eba0aadd-59c5-449d-a8ee-84c5fc47886a/traces.json": "d4dfca7b23c63dbbb4457873bca834eb9ed6c23aeb6329855ff1bf87a6a6de80",
+        "artifacts/stage8/attempts/eba0aadd-59c5-449d-a8ee-84c5fc47886a/worker.log": "6ccadc0688fbbb0099d84198aec601f376efc0bfa9194f51be1114e8cb6697c6",
+        "artifacts/stage8/attempts/eba0aadd-59c5-449d-a8ee-84c5fc47886a/worker_claim.json": "b9ddbba58d5c7454bdeb52fab7b336ef048d53f3edf46558651dbd5aeff9f185"
+      },
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
+    },
+    {
+      "attempt_id": "43503fb8-b451-44bd-b9a7-61d203f0ad20",
+      "case_id": "diagnostic-qual-HPKE-32",
+      "files": {
+        "artifacts/stage8/attempts/43503fb8-b451-44bd-b9a7-61d203f0ad20/carrier.txt": "3856663257bd1a16e93fb4dccc35f791a3380ff6a8b7544eeeabc7503d35ab5b",
+        "artifacts/stage8/attempts/43503fb8-b451-44bd-b9a7-61d203f0ad20/command.json": "e0ab71dfaae64e4f1bfff38a677203bfd5baaa3e28aecdfc6bb2dbfda4a7a6f6",
+        "artifacts/stage8/attempts/43503fb8-b451-44bd-b9a7-61d203f0ad20/gpu_samples.json": "e04a4707f7aa40ac3edbb797a5c1bb4f8c8d63480065e6e533915619ad2184b0",
+        "artifacts/stage8/attempts/43503fb8-b451-44bd-b9a7-61d203f0ad20/input.json": "597a72d43a3816109983f6f4a7ccb3e694533b40698da63e2656e29c35489bdd",
+        "artifacts/stage8/attempts/43503fb8-b451-44bd-b9a7-61d203f0ad20/outcome.json": "6e9a2b6f16739e2e6de513a9c7677d9ec65ab03896fe70330a913b96d1219b83",
+        "artifacts/stage8/attempts/43503fb8-b451-44bd-b9a7-61d203f0ad20/partial_emission.bin": "3856663257bd1a16e93fb4dccc35f791a3380ff6a8b7544eeeabc7503d35ab5b",
+        "artifacts/stage8/attempts/43503fb8-b451-44bd-b9a7-61d203f0ad20/result.json": "754881644abc638c3288ee2581610eb6b87754fe678adc142fd13dfe6c6a0c6e",
+        "artifacts/stage8/attempts/43503fb8-b451-44bd-b9a7-61d203f0ad20/traces.json": "65c2e8fbad6fba548c1779bbdbb43a79b17516aa05fd4b6a444a29a7031be3f9",
+        "artifacts/stage8/attempts/43503fb8-b451-44bd-b9a7-61d203f0ad20/worker.log": "0b76797440fe72d31ccb144e787aca778d5446edd171fb395510ada42f7c1f5d",
+        "artifacts/stage8/attempts/43503fb8-b451-44bd-b9a7-61d203f0ad20/worker_claim.json": "bbc9a36f6ac013fefd520a1fe5a5225347ffb4e455f48db4f7dad5fffeda8758"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
+    },
+    {
+      "attempt_id": "69d7038b-08d3-43c1-8459-29591b1a5117",
+      "case_id": "diagnostic-qual-HPKE-128",
+      "files": {
+        "artifacts/stage8/attempts/69d7038b-08d3-43c1-8459-29591b1a5117/command.json": "c4950707af96e0e892838a880067b79abd5122d3d3abe2a118cfd46141aa8aa6",
+        "artifacts/stage8/attempts/69d7038b-08d3-43c1-8459-29591b1a5117/gpu_samples.json": "d120a33176de6d8c51394158a5dd97501222b58d78d06bdb09c79e7cd54be4af",
+        "artifacts/stage8/attempts/69d7038b-08d3-43c1-8459-29591b1a5117/input.json": "394ebf3cfd82e7f27f115cc881e6e9b4fa99d5cdaffb8f9df7564b64e9cc2f12",
+        "artifacts/stage8/attempts/69d7038b-08d3-43c1-8459-29591b1a5117/outcome.json": "7aa75f889da17c82984af1a4dcbf55f70a98c99d66b6aecb47a43c8409440790",
+        "artifacts/stage8/attempts/69d7038b-08d3-43c1-8459-29591b1a5117/partial_emission.bin": "eda2b5978692ee914c89086ffe355c8cf365e03991ceffaa5ed1b8cc13fba18d",
+        "artifacts/stage8/attempts/69d7038b-08d3-43c1-8459-29591b1a5117/result.json": "879749e4dd49b6c5945c68b98f89d25581d716a32f7527f597289ddcfd014d5e",
+        "artifacts/stage8/attempts/69d7038b-08d3-43c1-8459-29591b1a5117/traces.json": "f7d8c634ae239894531519eca781ec2cba495c53b4d721ebd3133b738467e400",
+        "artifacts/stage8/attempts/69d7038b-08d3-43c1-8459-29591b1a5117/worker.log": "3f72b42c7b5701dd66af84abbd68b72d1e193aa3c3d840320ee0130f7ba61646",
+        "artifacts/stage8/attempts/69d7038b-08d3-43c1-8459-29591b1a5117/worker_claim.json": "0cb86bcc4cbd82e1fbd72d6a44cb9549ffc67590c82aee6cb3dd38dd97e5b526"
+      },
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
+    },
+    {
+      "attempt_id": "fdd70ff5-7732-4337-8610-999fb98230fc",
+      "case_id": "diagnostic-replay-qual-HPKE-32",
+      "files": {
+        "artifacts/stage8/attempts/fdd70ff5-7732-4337-8610-999fb98230fc/command.json": "621222b2814dc23e6a40e02f07461aa4d7b41618609f8f1971deb3401223f78f",
+        "artifacts/stage8/attempts/fdd70ff5-7732-4337-8610-999fb98230fc/gpu_samples.json": "de3b0bad206eb38f5b8c60ee6e20892eaa02245d0a74c17b30185804b11d8638",
+        "artifacts/stage8/attempts/fdd70ff5-7732-4337-8610-999fb98230fc/input.json": "04cbaf9da1c56728697a17f45f9d54cff87da9e2d5461b181611eb711cbfa929",
+        "artifacts/stage8/attempts/fdd70ff5-7732-4337-8610-999fb98230fc/outcome.json": "2e184334b30618df988de1147024f2d6b346718f49c851bd45b9f3f59d753169",
+        "artifacts/stage8/attempts/fdd70ff5-7732-4337-8610-999fb98230fc/result.json": "b1d1422e20b775aab3d82c290155fd2bded093cfe33bac9a8e9ab1d4aaa2a781",
+        "artifacts/stage8/attempts/fdd70ff5-7732-4337-8610-999fb98230fc/traces.json": "fe90a2d0cc97ceb72208a029fd72d2278406ef995c00768e2df0a9b7dd202156",
+        "artifacts/stage8/attempts/fdd70ff5-7732-4337-8610-999fb98230fc/worker.log": "4d13b44be0a192ef571fd873df7b1baa954e8ac572ba473cfce71ded5ed64528",
+        "artifacts/stage8/attempts/fdd70ff5-7732-4337-8610-999fb98230fc/worker_claim.json": "30fbb633e6cd9275827b07c4beb8804e999289d9a2bbb4b7f64fef67fa465806"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
+    },
+    {
+      "attempt_id": "92d8b769-f975-45d4-b0a4-21fe263c103d",
+      "case_id": "diagnostic-replay-qual-synthetic-32",
+      "files": {
+        "artifacts/stage8/attempts/92d8b769-f975-45d4-b0a4-21fe263c103d/command.json": "b1f4862e342ba6828634afee3906835c57fd3413a293d25f02625f6cf63d3965",
+        "artifacts/stage8/attempts/92d8b769-f975-45d4-b0a4-21fe263c103d/gpu_samples.json": "ed0338e76658c8b47daa1c51d1699bd69d22998afd1e2190080a35f868523aab",
+        "artifacts/stage8/attempts/92d8b769-f975-45d4-b0a4-21fe263c103d/input.json": "8bb1ecb54df12c8f9de5bfdc4014364e49086e45582f1ebd5f4c54e7651e2eda",
+        "artifacts/stage8/attempts/92d8b769-f975-45d4-b0a4-21fe263c103d/outcome.json": "a148042ac8dc7278a586eb795c09c43bf1bf2979eaa68a1ffaa165467824d8e0",
+        "artifacts/stage8/attempts/92d8b769-f975-45d4-b0a4-21fe263c103d/result.json": "74cbaa14874330ff716191148fab5b54204425e7377ad88a88dc48c3f0ca1d77",
+        "artifacts/stage8/attempts/92d8b769-f975-45d4-b0a4-21fe263c103d/traces.json": "cc76aa1e3156606173a35b8332f38aebbd29fdafb437b10fe908948e1cf7d073",
+        "artifacts/stage8/attempts/92d8b769-f975-45d4-b0a4-21fe263c103d/worker.log": "0b76797440fe72d31ccb144e787aca778d5446edd171fb395510ada42f7c1f5d",
+        "artifacts/stage8/attempts/92d8b769-f975-45d4-b0a4-21fe263c103d/worker_claim.json": "7279faf1371abe877123dfb4d73051a21bf607edc6f3fd70055951534a3b1108"
+      },
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
+    }
+  ],
+  "commands": [
+    ".venv/bin/python -m pytest -q tests/test_stage8.py",
+    ".venv/bin/python scripts/prepare_stage8.py",
+    ".venv/bin/python scripts/run_stage8.py --allocation-check",
+    ".venv/bin/python scripts/run_stage8.py --phase diagnostic",
+    "Main not executed",
+    ".venv/bin/python artifacts/stage8/analyze.py"
+  ],
+  "diagnostic_prefix_and_receiver_checks": {
+    "path": "artifacts/stage8/diagnostic_checks.jsonl",
+    "sha256": "4e7aeb8f435b82198d53d93991315cda002ddb094b0adf7cad74436bad2e29f3"
+  },
+  "frozen_inputs": {
+    "artifacts/stage8/TEST_ONLY_keys.json": "789340cfc48952b244003723e880f42e6ff6dd9cf65de74fd86333fb5accd5fe",
+    "artifacts/stage8/allocation.json": "1416c5f6621ec5ddce142844053cec396c87785b1644bac8d110266616ae7f19",
+    "artifacts/stage8/environment.json": "53224ff20ce7f8f81d1de3fcb2f0a5bb0165b1fd196e76413c382e27ecb98487",
+    "configs/stage8/F128.json": "b585b8032e899ec664c5329a41b109136e4253cae913f03bdf7330f7953c1386",
+    "configs/stage8/F32.json": "633db9c1ec14f5b5efa328487516427a6fe3419f3704f0980ae5e8c9d1d6de47",
+    "configs/stage8/R128.json": "4143fd29bc65598e8ccf0dfebabed02ae3de9ea117fbc86f77710fa9b103c83f",
+    "configs/stage8/R32.json": "2fefbd29287eea6667720eb2252bb1320d9ad311f493c363475c2cffa4465ed2",
+    "configs/stage8/authorization.json": "c2eba5fbe07e52ebf10c0f98031500b49aaa7001d2b105e580ccd69ce474dd48",
+    "docs/stage8_study_spec.md": "e85bb51d0ed7fb4e94da79d5297234e63d00048384b67b40456ece2091336ed0",
+    "requirements-cpu.lock": "e2763b3675b354e9615162a6690a12146bbdf0c2eec69a0b31b186700de72c73"
+  },
+  "gpu_tested_code_commits": [
+    "a97c75911b0ae5105bbc1fbb869a37fe9166306a"
+  ],
+  "historical_checkpoint": {
+    "bytes": 116766,
+    "limits": {
+      "cases": 342,
+      "seconds": 21941.884885362982,
+      "tokens": 424994
+    },
+    "schema_version": 1,
+    "sha256": "64e752c7c0ad3816e3a499ace125cacb0ae553f3e0840dedfbcf4c38a2386083"
+  },
+  "historical_diagnosis": {
+    "path": "artifacts/stage8/historical_diagnosis.json",
+    "sha256": "81de404d21d9d85523a6498f637f22e51ba66766603cf116be41524fb9e01e43"
+  },
+  "ledger_sha256": "4944e6c70a97dcb83160aac8235d70d061a01e0579498b1edadc5631e4cdd1ca",
+  "lifetime_usage": {
+    "cases": 224,
+    "seconds": 8929.578526105983,
+    "tokens": 145042
+  },
+  "schema_version": 1,
+  "stage8_usage": {
+    "cases": 6,
+    "seconds": 934.306489325998,
+    "tokens": 13183
+  },
+  "starting_commit": "e55680169ef7c0e7110bfaddc0b5392e28419bb8"
+}

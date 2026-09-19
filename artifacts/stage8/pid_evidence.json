@@ -1,0 +1,38 @@
+[
+  {
+    "case_id": "diagnostic-qual-synthetic-32",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "pid": 797893
+  },
+  {
+    "case_id": "diagnostic-qual-synthetic-128",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "pid": 801566
+  },
+  {
+    "case_id": "diagnostic-qual-HPKE-32",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "pid": 805986
+  },
+  {
+    "case_id": "diagnostic-qual-HPKE-128",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "pid": 814048
+  },
+  {
+    "case_id": "diagnostic-replay-qual-HPKE-32",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "pid": 818614
+  },
+  {
+    "case_id": "diagnostic-replay-qual-synthetic-32",
+    "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "peak_sampled_vram_mib": 5006,
+    "pid": 822694
+  }
+]

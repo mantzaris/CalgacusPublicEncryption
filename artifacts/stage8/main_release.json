@@ -1,0 +1,88 @@
+{
+  "basis": {
+    "F_historical_phase_seconds": {
+      "32": 7.264773768125451,
+      "128": 15.454378411125617
+    },
+    "R_full_1984_pass_seconds": 140.9430906990019,
+    "limitation": "Not a timing guarantee; unchanged full per-case reservations and deadlines remain authoritative",
+    "load_plus_shutdown_seconds": 17.23512395599755,
+    "margins": "10% overall plus10% extra codec-pass cost for public observer; all R carriers charged in forecast as complete1984 three/two/one-pass jobs, not cheap aborts",
+    "max_observed_long_prefix_seconds_per_token": 0.07103986426360984
+  },
+  "decision": "proceed_fixed_matrix",
+  "diagnostic_cases_sha256": "7f05ca3ca4aa7f5b364471cea27b17a99d736547a38c1f6c4f0b534556d4b957",
+  "diagnostic_source_revision": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+  "forecast": [
+    {
+      "cases": 72,
+      "conservative_evaluated_token_bound": 200348,
+      "fits_stage8": false,
+      "forecast_seconds": 15973.893615680143,
+      "full_reservations": {
+        "cases": 72,
+        "seconds": 18390,
+        "tokens": 211664
+      },
+      "repetitions": 2
+    },
+    {
+      "cases": 40,
+      "conservative_evaluated_token_bound": 104948,
+      "fits_stage8": true,
+      "forecast_seconds": 8397.847220181444,
+      "full_reservations": {
+        "cases": 40,
+        "seconds": 9730,
+        "tokens": 110864
+      },
+      "repetitions": 1
+    }
+  ],
+  "profile_and_inference_change_after_diagnostic": false,
+  "reduction_reason": "Two repetitions do not fit conservative startup-inclusive time forecast",
+  "repetitions": 1,
+  "schema_version": 1,
+  "selected_case_ids": [
+    "F-c0-n32-r0",
+    "R-c0-n32-r0",
+    "R-c0-n128-r0",
+    "F-c0-n128-r0",
+    "R-c1-n32-r0",
+    "F-c1-n32-r0",
+    "F-c1-n128-r0",
+    "R-c1-n128-r0",
+    "F-c2-n32-r0",
+    "R-c2-n32-r0",
+    "R-c2-n128-r0",
+    "F-c2-n128-r0",
+    "R-c3-n32-r0",
+    "F-c3-n32-r0",
+    "F-c3-n128-r0",
+    "R-c3-n128-r0",
+    "control-F-c0-n32-r0-B",
+    "control-R-c0-n32-r0-B",
+    "control-R-c0-n128-r0-B",
+    "control-F-c0-n128-r0-B",
+    "control-R-c1-n32-r0-B",
+    "control-F-c1-n32-r0-B",
+    "control-F-c1-n128-r0-B",
+    "control-R-c1-n128-r0-B",
+    "control-F-c2-n32-r0-B",
+    "control-R-c2-n32-r0-B",
+    "control-R-c2-n128-r0-B",
+    "control-F-c2-n128-r0-B",
+    "control-R-c3-n32-r0-B",
+    "control-F-c3-n32-r0-B",
+    "control-F-c3-n128-r0-B",
+    "control-R-c3-n128-r0-B",
+    "replay-F-c0-n32",
+    "replay-R-c0-n32",
+    "replay-F-c0-n128",
+    "replay-R-c0-n128",
+    "replay-F-c2-n32",
+    "replay-R-c2-n32",
+    "replay-F-c2-n128",
+    "replay-R-c2-n128"
+  ]
+}

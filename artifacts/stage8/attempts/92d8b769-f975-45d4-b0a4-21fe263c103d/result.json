@@ -1,0 +1,71 @@
+{
+  "attempt_id": "92d8b769-f975-45d4-b0a4-21fe263c103d",
+  "authenticated": false,
+  "candidate_costs": {
+    "fresh_receiver": {
+      "examined_max": 19,
+      "examined_total": 17655,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 52,
+        "special_control": 3
+      },
+      "steps": 1100
+    }
+  },
+  "carrier_tokens": 1100,
+  "case_id": "diagnostic-replay-qual-synthetic-32",
+  "charged_tokens": 1112,
+  "context_index": 0,
+  "context_window_verified": true,
+  "cover_context": "A field guide describing the shape of a maple leaf:",
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "kind": "replay",
+  "method": "R",
+  "original_binding_authenticated": false,
+  "pair_id": null,
+  "payload_setting_bytes": 32,
+  "pid": 822694,
+  "profile_id": "stage8_public_R_size32_v1",
+  "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+  "public_context_token_ids": {
+    "A field guide describing the shape of a maple leaf:": [
+      128000,
+      32,
+      2115,
+      8641,
+      23524,
+      279,
+      6211,
+      315,
+      264,
+      55480,
+      16312,
+      25
+    ]
+  },
+  "recovered_bytes": 100,
+  "recovered_envelope_sha256": "00b8e2f2a30f7075604c983474938e1a559be44b1ec979b731d242fccebe881f",
+  "recovered_sha256": "00b8e2f2a30f7075604c983474938e1a559be44b1ec979b731d242fccebe881f",
+  "schema_version": 1,
+  "split": "repeated_historical_packet_development_only",
+  "stage8_phase": "diagnostic",
+  "success": true,
+  "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+  "timings": {
+    "fresh_receiver_seconds": 56.216011284999695,
+    "load_and_verify_seconds": 14.421537194997654
+  },
+  "tokens_by_phase": {
+    "fresh_receiver": 1112
+  },
+  "trace_path": "artifacts/stage8/attempts/92d8b769-f975-45d4-b0a4-21fe263c103d/traces.json",
+  "transport_bytes": 5278,
+  "transport_sha256": "7be74dd29f108de70f68c3af78e07df9db7e70267f86460f7077a67c68109e8c",
+  "wire_delivered": true,
+  "worker_seconds": 70.84234046100028
+}

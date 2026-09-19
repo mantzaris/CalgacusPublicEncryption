@@ -1,0 +1,70 @@
+{
+  "attempt_id": "eba0aadd-59c5-449d-a8ee-84c5fc47886a",
+  "authenticated": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 28,
+      "examined_total": 32236,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 125,
+        "noncanonical": 307,
+        "special_control": 60
+      },
+      "steps": 1984
+    }
+  },
+  "case_id": "diagnostic-qual-synthetic-128",
+  "charged_tokens": 1996,
+  "context_index": 1,
+  "context_window_verified": true,
+  "cover_context": "A kitchen note on arranging clean cups on a shelf:",
+  "envelope_bytes": 196,
+  "envelope_sha256": "22d8a4c93fe4dee9eaba346d7455e823c2a5c040d5078bdad148f7aa78a4a63f",
+  "error": "Arithmetic carrier ceiling before complete stable packet",
+  "exact_recovery": false,
+  "exception_type": "CapacityError",
+  "failure_category": "capacity_exhaustion",
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "historical_packet": true,
+  "kind": "fixture",
+  "method": "R",
+  "original_binding_authenticated": false,
+  "pair_id": null,
+  "payload_setting_bytes": 128,
+  "pid": 801566,
+  "profile_id": "stage8_public_R_size128_v1",
+  "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+  "public_context_token_ids": {
+    "A kitchen note on arranging clean cups on a shelf:": [
+      128000,
+      32,
+      9979,
+      5296,
+      389,
+      77218,
+      4335,
+      26446,
+      389,
+      264,
+      28745,
+      25
+    ]
+  },
+  "schema_version": 1,
+  "split": "repeated_historical_packet_development_only",
+  "stage8_phase": "diagnostic",
+  "success": false,
+  "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+  "timings": {
+    "encode_seconds": 140.9430906990019,
+    "load_and_verify_seconds": 15.235123955997551
+  },
+  "tokens_by_phase": {
+    "encode": 1996
+  },
+  "trace_path": "artifacts/stage8/attempts/eba0aadd-59c5-449d-a8ee-84c5fc47886a/traces.json",
+  "wire_delivered": false,
+  "worker_seconds": 156.43247870499908
+}

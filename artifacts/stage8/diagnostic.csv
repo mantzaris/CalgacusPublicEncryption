@@ -1,0 +1,7 @@
+case_id,kind,payload_class_bytes,envelope_bytes,authenticated_exact,raw_envelope_exact,failure_category,wire_delivered,job_seconds,evaluated_tokens
+diagnostic-qual-synthetic-32,fixture,32,100,False,True,,True,128.0690921360001,2224
+diagnostic-qual-synthetic-128,fixture,128,196,False,False,capacity_exhaustion,False,157.28724404400054,1996
+diagnostic-qual-HPKE-32,fixture,32,100,True,True,,True,276.2210759469999,3904
+diagnostic-qual-HPKE-128,fixture,128,196,False,False,capacity_exhaustion,False,155.14552913399893,1995
+diagnostic-replay-qual-HPKE-32,replay,32,,True,True,,True,146.1321745569985,1952
+diagnostic-replay-qual-synthetic-32,replay,32,,False,True,,True,71.45137350799996,1112

@@ -1,0 +1,29 @@
+{
+  "carrier_path": "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/carrier.txt",
+  "case_id": "diagnostic-replay-qual-synthetic-32",
+  "context_index": 0,
+  "kind": "replay",
+  "method": "R",
+  "profile_path": "configs/stage8/R32.json",
+  "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "repeated_historical_packet_development_only",
+  "stage8_phase": "diagnostic",
+  "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+  "token_reservation": 2100,
+  "wall_reservation_seconds": 210
+}

@@ -1,0 +1,5 @@
+method,payload_bytes,planned,attempted,authenticated_exact,capacity_failures,recovery_fraction,recovery_cluster_interval,carrier_token_min,carrier_token_max,mean_success_payload_bits_per_token,mean_attempt_useful_bits_per_token,useful_rate_cluster_interval,aggregate_recovered_bits_per_delivered_token,recovered_bytes_per_charged_second
+F,32,0,0,0,0,,"[None, None]",,,,,"[None, None]",,
+F,128,0,0,0,0,,"[None, None]",,,,,"[None, None]",,
+R,32,0,0,0,0,,"[None, None]",,,,,"[None, None]",,
+R,128,0,0,0,0,,"[None, None]",,,,,"[None, None]",,

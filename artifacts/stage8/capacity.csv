@@ -1,0 +1,5 @@
+case_id,phase,envelope_bytes,success,failure,emitted_tokens,stable_bits,target_bits,terminal,wire_delivered,carrier_tokens
+diagnostic-qual-synthetic-32,diagnostic,100,True,,1100,800,800,"{'high_inclusive': 3605400159, 'low': 1905855568, 'pending_underflow': 2, 'stable_bits': 800}",True,1100
+diagnostic-qual-synthetic-128,diagnostic,196,False,capacity_exhaustion,1984,1426,1568,"{'high_inclusive': 2598561691, 'low': 1027418000, 'pending_underflow': 0, 'stable_bits': 1426}",False,
+diagnostic-qual-HPKE-32,diagnostic,100,True,,1942,800,800,"{'high_inclusive': 3907208959, 'low': 731354368, 'pending_underflow': 7, 'stable_bits': 800}",True,1942
+diagnostic-qual-HPKE-128,diagnostic,196,False,capacity_exhaustion,1984,1529,1568,"{'high_inclusive': 3153209095, 'low': 329813456, 'pending_underflow': 0, 'stable_bits': 1529}",False,

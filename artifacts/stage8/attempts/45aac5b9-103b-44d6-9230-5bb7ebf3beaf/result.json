@@ -1,0 +1,90 @@
+{
+  "attempt_id": "45aac5b9-103b-44d6-9230-5bb7ebf3beaf",
+  "authenticated": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 19,
+      "examined_total": 17655,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 52,
+        "special_control": 3
+      },
+      "steps": 1100
+    },
+    "public_fixture_inverse": {
+      "examined_max": 19,
+      "examined_total": 17655,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 52,
+        "special_control": 3
+      },
+      "steps": 1100
+    }
+  },
+  "carrier_tokens": 1100,
+  "case_id": "diagnostic-qual-synthetic-32",
+  "charged_tokens": 2224,
+  "context_index": 0,
+  "context_window_verified": true,
+  "cover_context": "A field guide describing the shape of a maple leaf:",
+  "envelope_bytes": 100,
+  "envelope_sha256": "00b8e2f2a30f7075604c983474938e1a559be44b1ec979b731d242fccebe881f",
+  "exact_envelope_recovery": true,
+  "exact_recovery": false,
+  "failure_category": null,
+  "family": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "historical_packet": true,
+  "intended_carrier_tokens": 1100,
+  "kind": "fixture",
+  "method": "R",
+  "original_binding_authenticated": false,
+  "pair_id": null,
+  "payload_setting_bytes": 32,
+  "pid": 797893,
+  "profile_id": "stage8_public_R_size32_v1",
+  "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+  "public_context_token_ids": {
+    "A field guide describing the shape of a maple leaf:": [
+      128000,
+      32,
+      2115,
+      8641,
+      23524,
+      279,
+      6211,
+      315,
+      264,
+      55480,
+      16312,
+      25
+    ]
+  },
+  "recovered_envelope_sha256": "00b8e2f2a30f7075604c983474938e1a559be44b1ec979b731d242fccebe881f",
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "repeated_historical_packet_development_only",
+  "stage8_phase": "diagnostic",
+  "success": true,
+  "tested_code_commit": "a97c75911b0ae5105bbc1fbb869a37fe9166306a",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 56.08509743399918,
+    "load_and_verify_seconds": 14.706708091001929,
+    "public_fixture_inverse_seconds": 56.1341492169995
+  },
+  "tokens_by_phase": {
+    "encode": 1112,
+    "public_fixture_inverse": 1112
+  },
+  "trace_path": "artifacts/stage8/attempts/45aac5b9-103b-44d6-9230-5bb7ebf3beaf/traces.json",
+  "transport_bytes": 5278,
+  "transport_sha256": "7be74dd29f108de70f68c3af78e07df9db7e70267f86460f7077a67c68109e8c",
+  "wire_delivered": true,
+  "worker_seconds": 127.21626047999962
+}
