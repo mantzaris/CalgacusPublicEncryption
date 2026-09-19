@@ -1,0 +1,29 @@
+{
+  "allocation_id": "stage7_public_arithmetic_comparison_2026-09-18",
+  "lifetime_usage": {
+    "cases": 218,
+    "seconds": 7995.272036779985,
+    "tokens": 131859
+  },
+  "phase": "qualification",
+  "qualification_passed": false,
+  "recorded_outcomes": 4,
+  "schema_version": 1,
+  "skipped": [
+    {
+      "case_id": "qual-replay-32",
+      "reason": "Predetermined source unavailable; no substitution"
+    },
+    {
+      "case_id": "qual-replay-128",
+      "reason": "Predetermined source unavailable; no substitution"
+    }
+  ],
+  "stage7_usage": {
+    "cases": 4,
+    "seconds": 453.3871514170023,
+    "tokens": 6865
+  },
+  "stop_reason": "No qualified meaningful small payload; comparative GPU study blocked",
+  "tested_code_commit": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2"
+}

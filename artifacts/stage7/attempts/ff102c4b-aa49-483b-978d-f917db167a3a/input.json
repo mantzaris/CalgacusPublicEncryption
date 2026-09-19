@@ -1,0 +1,32 @@
+{
+  "TEST_ONLY_private_key_hex": "f82f47c4a0c7fd1811d493b57ce50d32beff860b1877a4d710cbde29cace545d",
+  "case_id": "qual-HPKE-32",
+  "context_index": 2,
+  "key_id": "STAGE7_TEST_ONLY_8",
+  "kind": "encrypted",
+  "method": "R",
+  "payload_bytes": 32,
+  "payload_hex": "d3e519c2cedfc91007b4ee615ddeb7289cf6b3da8b9d5378f042d1bc9903cf3a",
+  "profile_path": "configs/stage7/R32.json",
+  "profile_sha256": "c581c623f4eb99e0043af0f415d0215585626bd0d65e377a3d06dcfe40923acf",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage7_qualification_development_only",
+  "stage7_phase": "qualification",
+  "tested_code_commit": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+  "token_reservation": 5000,
+  "wall_reservation_seconds": 420
+}

@@ -1,0 +1,90 @@
+{
+  "attempt_id": "42446993-c808-40ef-b9b4-6e74deb256d1",
+  "attempt_useful_bits_per_transmitted_token": 0.0,
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 23,
+      "examined_total": 24657,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 1,
+        "noncanonical": 71,
+        "special_control": 9
+      },
+      "steps": 1536
+    }
+  },
+  "case_id": "qual-HPKE-128",
+  "charged_tokens": 1547,
+  "ciphertext_sha256": "e6895711bec6a54192e03101c7efebccd525a4bd72fb9426bb32d70d88529d55",
+  "context_index": 3,
+  "cover_context": "A garden journal describing rain beside a clay pot:",
+  "cumulative_budget": {
+    "cases": 218,
+    "seconds": 7995.272036779985,
+    "tokens": 131859
+  },
+  "encapsulation_hex": "0af7ab869523d51d9ff1ee9283acc0585f26f5a4fd7a3069087cd98d4650f810",
+  "envelope_bytes": 196,
+  "envelope_sha256": "b279a5cf8e20656201fcc0f3bb19dcb5c4cf83e260c2af8f816fb15ecd7b3cfd",
+  "error": "Arithmetic carrier ceiling before complete stable packet",
+  "evidence_dir": "artifacts/stage7/attempts/42446993-c808-40ef-b9b4-6e74deb256d1",
+  "exact_recovery": false,
+  "exception_type": "CapacityError",
+  "exit_code": 0,
+  "expected_outcome_agreement": false,
+  "expected_rejection": false,
+  "failure_category": "capacity_exhaustion",
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "job_elapsed_seconds": 109.34530819900101,
+  "key_id": "STAGE7_TEST_ONLY_8",
+  "kind": "encrypted",
+  "lease_verified": true,
+  "method": "R",
+  "pair_id": null,
+  "payload_bytes": 128,
+  "payload_setting_bytes": 128,
+  "payload_sha256": "168b8f925870f9814c3083e02c67ea4914628e28ef95def45762738c4777ea5c",
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 737644,
+  "profile_id": "stage7_public_R_size128_v1",
+  "profile_sha256": "e1f2a4e90bfadca57a196cb364775030748cf223a70de9e1877b51fe3a8c843a",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A garden journal describing rain beside a clay pot:": [
+      128000,
+      32,
+      13863,
+      8486,
+      23524,
+      11422,
+      30488,
+      264,
+      37148,
+      3419,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "e536a08415874b9942f1b294eaa422d0d4e11dd1db0a138ec7440e06f3a01220",
+  "schema_version": 1,
+  "serialized_base64": "CverhpUj1R2f8e6Sg6zAWF8m9aT9ejBpCHzZjUZQ+BDVmonK61PioIgN5pCkI2G3TsZqKmt+DmDTxdxq9KUxJLSWCR2JdsFFocUn6zHi3g7Od6RCN+7mthO9U0NWYpgxLoIA+8avOTE62E3QW7xa1KAdkzI7HtiMB7IbDh3Wi1xyhpLN9Mi+N44OVimo3Qy0t9f9Wx0lXJYtq5UxPelVICMi+D0Ic5qrv6Lawzh1bXBje7+f28XeQ+qpP7iw+1odM7/zEQ==",
+  "split": "stage7_qualification_development_only",
+  "stage7_phase": "qualification",
+  "success": false,
+  "tested_code_commit": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+  "timings": {
+    "encode_seconds": 93.66104507800264,
+    "load_and_verify_seconds": 14.659766942997521
+  },
+  "tokens_by_phase": {
+    "encode": 1547
+  },
+  "trace_path": "artifacts/stage7/attempts/42446993-c808-40ef-b9b4-6e74deb256d1/traces.json",
+  "wire_delivered": false,
+  "worker_seconds": 108.58846526199704
+}

@@ -1,0 +1,102 @@
+{
+  "attempt_id": "a3c3f629-aafa-4468-a29b-93286e001878",
+  "authenticated": false,
+  "authenticated_message_recovery": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 19,
+      "examined_total": 17655,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 52,
+        "special_control": 3
+      },
+      "steps": 1100
+    },
+    "public_fixture_inverse": {
+      "examined_max": 19,
+      "examined_total": 17655,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 0,
+        "noncanonical": 52,
+        "special_control": 3
+      },
+      "steps": 1100
+    }
+  },
+  "carrier_tokens": 1100,
+  "case_id": "qual-synthetic-32",
+  "charged_tokens": 2224,
+  "context_index": 0,
+  "cover_context": "A field guide describing the shape of a maple leaf:",
+  "cumulative_budget": {
+    "cases": 215,
+    "seconds": 7669.350889431982,
+    "tokens": 127218
+  },
+  "envelope_bytes": 100,
+  "envelope_sha256": "00b8e2f2a30f7075604c983474938e1a559be44b1ec979b731d242fccebe881f",
+  "evidence_dir": "artifacts/stage7/attempts/a3c3f629-aafa-4468-a29b-93286e001878",
+  "exact_envelope_recovery": true,
+  "exact_recovery": false,
+  "exit_code": 0,
+  "expected_outcome_agreement": true,
+  "expected_rejection": false,
+  "failure_category": null,
+  "family": null,
+  "first_transport_divergence": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "gpu_verified": true,
+  "intended_carrier_tokens": 1100,
+  "job_elapsed_seconds": 127.46600406899961,
+  "kind": "fixture",
+  "lease_verified": true,
+  "method": "R",
+  "pair_id": null,
+  "payload_setting_bytes": 32,
+  "peak_sampled_process_vram_mib": 5006,
+  "phase_meter_verified": true,
+  "pid": 727604,
+  "profile_id": "stage7_public_R_size32_v1",
+  "profile_sha256": "c581c623f4eb99e0043af0f415d0215585626bd0d65e377a3d06dcfe40923acf",
+  "provenance_verified": true,
+  "public_context_token_ids": {
+    "A field guide describing the shape of a maple leaf:": [
+      128000,
+      32,
+      2115,
+      8641,
+      23524,
+      279,
+      6211,
+      315,
+      264,
+      55480,
+      16312,
+      25
+    ]
+  },
+  "schema_version": 1,
+  "serialization_status": "canonical",
+  "split": "stage7_qualification_development_only",
+  "stage7_phase": "qualification",
+  "success": true,
+  "tested_code_commit": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+  "text_retokenizes": true,
+  "timings": {
+    "encode_seconds": 56.28090073099884,
+    "load_and_verify_seconds": 14.44845990900285,
+    "public_fixture_inverse_seconds": 56.00573007099956
+  },
+  "tokens_by_phase": {
+    "encode": 1112,
+    "public_fixture_inverse": 1112
+  },
+  "trace_path": "artifacts/stage7/attempts/a3c3f629-aafa-4468-a29b-93286e001878/traces.json",
+  "transport_bytes": 5278,
+  "transport_sha256": "7be74dd29f108de70f68c3af78e07df9db7e70267f86460f7077a67c68109e8c",
+  "wire_delivered": true,
+  "worker_seconds": 127.0216785340017
+}

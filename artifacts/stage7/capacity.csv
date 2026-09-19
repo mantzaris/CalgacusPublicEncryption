@@ -1,0 +1,5 @@
+case_id,phase,envelope_bytes,success,failure,emitted_tokens,stable_bits,target_bits,terminal,wire_delivered,carrier_tokens
+qual-synthetic-32,qualification,100,True,,1100,800,800,"{'high_inclusive': 3605400159, 'low': 1905855568, 'pending_underflow': 2, 'stable_bits': 800}",True,1100
+qual-synthetic-128,qualification,196,False,capacity_exhaustion,1536,1229,1568,"{'high_inclusive': 4292385937, 'low': 1979295680, 'pending_underflow': 0, 'stable_bits': 1229}",False,
+qual-HPKE-32,qualification,100,False,capacity_exhaustion,1536,705,800,"{'high_inclusive': 3864848667, 'low': 777130880, 'pending_underflow': 0, 'stable_bits': 705}",False,
+qual-HPKE-128,qualification,196,False,capacity_exhaustion,1536,1408,1568,"{'high_inclusive': 2651035032, 'low': 180062752, 'pending_underflow': 2, 'stable_bits': 1408}",False,

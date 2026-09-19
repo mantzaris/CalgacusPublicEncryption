@@ -1,0 +1,74 @@
+[
+  {
+    "carrier_tokens": 1100,
+    "case_id": "qual-synthetic-32",
+    "emitted_tokens": 1100,
+    "envelope_bytes": 100,
+    "failure": null,
+    "phase": "qualification",
+    "stable_bits": 800,
+    "success": true,
+    "target_bits": 800,
+    "terminal": {
+      "high_inclusive": 3605400159,
+      "low": 1905855568,
+      "pending_underflow": 2,
+      "stable_bits": 800
+    },
+    "wire_delivered": true
+  },
+  {
+    "carrier_tokens": null,
+    "case_id": "qual-synthetic-128",
+    "emitted_tokens": 1536,
+    "envelope_bytes": 196,
+    "failure": "capacity_exhaustion",
+    "phase": "qualification",
+    "stable_bits": 1229,
+    "success": false,
+    "target_bits": 1568,
+    "terminal": {
+      "high_inclusive": 4292385937,
+      "low": 1979295680,
+      "pending_underflow": 0,
+      "stable_bits": 1229
+    },
+    "wire_delivered": false
+  },
+  {
+    "carrier_tokens": null,
+    "case_id": "qual-HPKE-32",
+    "emitted_tokens": 1536,
+    "envelope_bytes": 100,
+    "failure": "capacity_exhaustion",
+    "phase": "qualification",
+    "stable_bits": 705,
+    "success": false,
+    "target_bits": 800,
+    "terminal": {
+      "high_inclusive": 3864848667,
+      "low": 777130880,
+      "pending_underflow": 0,
+      "stable_bits": 705
+    },
+    "wire_delivered": false
+  },
+  {
+    "carrier_tokens": null,
+    "case_id": "qual-HPKE-128",
+    "emitted_tokens": 1536,
+    "envelope_bytes": 196,
+    "failure": "capacity_exhaustion",
+    "phase": "qualification",
+    "stable_bits": 1408,
+    "success": false,
+    "target_bits": 1568,
+    "terminal": {
+      "high_inclusive": 2651035032,
+      "low": 180062752,
+      "pending_underflow": 2,
+      "stable_bits": 1408
+    },
+    "wire_delivered": false
+  }
+]

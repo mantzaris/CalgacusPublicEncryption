@@ -1,0 +1,1365 @@
+{
+  "all_gpu_lease_phase_provenance_verified": true,
+  "all_workers_clean_exit": true,
+  "attempted_cases": 4,
+  "bootstrap": {
+    "draws": 2000,
+    "limits": "conditional descriptive intervals; four contexts; degenerate intervals are not population guarantees",
+    "seed": 2026091907,
+    "unit": "four contexts then repetition/key blocks; related sizes/methods/controls retained jointly"
+  },
+  "broad_cpu_suite": false,
+  "candidate_search": {
+    "all_steps_admitted_16": true,
+    "examined_max": 28,
+    "examined_total": 109607,
+    "steps": 6808
+  },
+  "capacity": [
+    {
+      "carrier_tokens": 1100,
+      "case_id": "qual-synthetic-32",
+      "emitted_tokens": 1100,
+      "envelope_bytes": 100,
+      "failure": null,
+      "phase": "qualification",
+      "stable_bits": 800,
+      "success": true,
+      "target_bits": 800,
+      "terminal": {
+        "high_inclusive": 3605400159,
+        "low": 1905855568,
+        "pending_underflow": 2,
+        "stable_bits": 800
+      },
+      "wire_delivered": true
+    },
+    {
+      "carrier_tokens": null,
+      "case_id": "qual-synthetic-128",
+      "emitted_tokens": 1536,
+      "envelope_bytes": 196,
+      "failure": "capacity_exhaustion",
+      "phase": "qualification",
+      "stable_bits": 1229,
+      "success": false,
+      "target_bits": 1568,
+      "terminal": {
+        "high_inclusive": 4292385937,
+        "low": 1979295680,
+        "pending_underflow": 0,
+        "stable_bits": 1229
+      },
+      "wire_delivered": false
+    },
+    {
+      "carrier_tokens": null,
+      "case_id": "qual-HPKE-32",
+      "emitted_tokens": 1536,
+      "envelope_bytes": 100,
+      "failure": "capacity_exhaustion",
+      "phase": "qualification",
+      "stable_bits": 705,
+      "success": false,
+      "target_bits": 800,
+      "terminal": {
+        "high_inclusive": 3864848667,
+        "low": 777130880,
+        "pending_underflow": 0,
+        "stable_bits": 705
+      },
+      "wire_delivered": false
+    },
+    {
+      "carrier_tokens": null,
+      "case_id": "qual-HPKE-128",
+      "emitted_tokens": 1536,
+      "envelope_bytes": 196,
+      "failure": "capacity_exhaustion",
+      "phase": "qualification",
+      "stable_bits": 1408,
+      "success": false,
+      "target_bits": 1568,
+      "terminal": {
+        "high_inclusive": 2651035032,
+        "low": 180062752,
+        "pending_underflow": 2,
+        "stable_bits": 1408
+      },
+      "wire_delivered": false
+    }
+  ],
+  "control_attempts": 0,
+  "costs": [
+    {
+      "attempts": 1,
+      "charged_seconds": 127.46600406899961,
+      "evaluated_tokens": 2224,
+      "family": "-",
+      "kind": "fixture",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 56.28090073099884,
+      "mean_job_seconds": 127.46600406899961,
+      "mean_load_and_verify_seconds": 14.44845990900285,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "method": "R",
+      "payload_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "qualification"
+    },
+    {
+      "attempts": 1,
+      "charged_seconds": 109.32615885500127,
+      "evaluated_tokens": 1548,
+      "family": "-",
+      "kind": "fixture",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 94.07465226500062,
+      "mean_job_seconds": 109.32615885500127,
+      "mean_load_and_verify_seconds": 14.335305447002611,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "method": "R",
+      "payload_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "qualification"
+    },
+    {
+      "attempts": 1,
+      "charged_seconds": 107.24968029400043,
+      "evaluated_tokens": 1546,
+      "family": "-",
+      "kind": "encrypted",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 91.77171455699863,
+      "mean_job_seconds": 107.24968029400043,
+      "mean_load_and_verify_seconds": 14.336558189999778,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "method": "R",
+      "payload_bytes": 32,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "qualification"
+    },
+    {
+      "attempts": 1,
+      "charged_seconds": 109.34530819900101,
+      "evaluated_tokens": 1547,
+      "family": "-",
+      "kind": "encrypted",
+      "mean_control_generation_seconds": null,
+      "mean_encode_seconds": 93.66104507800264,
+      "mean_job_seconds": 109.34530819900101,
+      "mean_load_and_verify_seconds": 14.659766942997521,
+      "mean_public_scoring_seconds": null,
+      "mean_receiver_seconds": null,
+      "method": "R",
+      "payload_bytes": 128,
+      "peak_sampled_vram_mib": 5006,
+      "phase": "qualification"
+    }
+  ],
+  "failures": [
+    {
+      "case_id": "qual-synthetic-128",
+      "category": "capacity_exhaustion",
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null,
+      "serialization": null
+    },
+    {
+      "case_id": "qual-HPKE-32",
+      "category": "capacity_exhaustion",
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null,
+      "serialization": null
+    },
+    {
+      "case_id": "qual-HPKE-128",
+      "category": "capacity_exhaustion",
+      "error": "Arithmetic carrier ceiling before complete stable packet",
+      "first_transport_divergence": null,
+      "serialization": null
+    }
+  ],
+  "focused_cpu_tests": 15,
+  "gpu_tested_code_commits": [
+    "0fc812f7a71e80aa8d2c831d26c1c99202171cf2"
+  ],
+  "historical_changed_paths": [
+    "THIRD_PARTY_NOTICES.md",
+    "artifacts/project_budget.checkpoint.json",
+    "artifacts/project_budget.jsonl",
+    "src/llm_stego_public_key/evaluation/budget.py",
+    "src/llm_stego_public_key/profile.py"
+  ],
+  "historical_data_pooled": false,
+  "historical_ledger_prefix_preserved": true,
+  "ledger_bytes": 116766,
+  "ledger_sha256": "64e752c7c0ad3816e3a499ace125cacb0ae553f3e0840dedfbcf4c38a2386083",
+  "lifetime_usage": {
+    "cases": 218,
+    "seconds": 7995.272036779985,
+    "tokens": 131859
+  },
+  "main_encrypted_attempts": 0,
+  "main_executed": false,
+  "main_independent_recipient_keys": 0,
+  "main_planned_slots": 104,
+  "main_skipped_by_gate": [
+    "F-c0-n32-r0",
+    "R-c0-n32-r0",
+    "R-c0-n32-r1",
+    "F-c0-n32-r1",
+    "R-c0-n128-r0",
+    "F-c0-n128-r0",
+    "F-c0-n128-r1",
+    "R-c0-n128-r1",
+    "R-c1-n32-r0",
+    "F-c1-n32-r0",
+    "F-c1-n32-r1",
+    "R-c1-n32-r1",
+    "F-c1-n128-r0",
+    "R-c1-n128-r0",
+    "R-c1-n128-r1",
+    "F-c1-n128-r1",
+    "F-c2-n32-r0",
+    "R-c2-n32-r0",
+    "R-c2-n32-r1",
+    "F-c2-n32-r1",
+    "R-c2-n128-r0",
+    "F-c2-n128-r0",
+    "F-c2-n128-r1",
+    "R-c2-n128-r1",
+    "R-c3-n32-r0",
+    "F-c3-n32-r0",
+    "F-c3-n32-r1",
+    "R-c3-n32-r1",
+    "F-c3-n128-r0",
+    "R-c3-n128-r0",
+    "R-c3-n128-r1",
+    "F-c3-n128-r1",
+    "control-F-c0-n32-r0-A",
+    "control-F-c0-n32-r0-B",
+    "control-R-c0-n32-r0-A",
+    "control-R-c0-n32-r0-B",
+    "control-R-c0-n32-r1-A",
+    "control-R-c0-n32-r1-B",
+    "control-F-c0-n32-r1-A",
+    "control-F-c0-n32-r1-B",
+    "control-R-c0-n128-r0-A",
+    "control-R-c0-n128-r0-B",
+    "control-F-c0-n128-r0-A",
+    "control-F-c0-n128-r0-B",
+    "control-F-c0-n128-r1-A",
+    "control-F-c0-n128-r1-B",
+    "control-R-c0-n128-r1-A",
+    "control-R-c0-n128-r1-B",
+    "control-R-c1-n32-r0-A",
+    "control-R-c1-n32-r0-B",
+    "control-F-c1-n32-r0-A",
+    "control-F-c1-n32-r0-B",
+    "control-F-c1-n32-r1-A",
+    "control-F-c1-n32-r1-B",
+    "control-R-c1-n32-r1-A",
+    "control-R-c1-n32-r1-B",
+    "control-F-c1-n128-r0-A",
+    "control-F-c1-n128-r0-B",
+    "control-R-c1-n128-r0-A",
+    "control-R-c1-n128-r0-B",
+    "control-R-c1-n128-r1-A",
+    "control-R-c1-n128-r1-B",
+    "control-F-c1-n128-r1-A",
+    "control-F-c1-n128-r1-B",
+    "control-F-c2-n32-r0-A",
+    "control-F-c2-n32-r0-B",
+    "control-R-c2-n32-r0-A",
+    "control-R-c2-n32-r0-B",
+    "control-R-c2-n32-r1-A",
+    "control-R-c2-n32-r1-B",
+    "control-F-c2-n32-r1-A",
+    "control-F-c2-n32-r1-B",
+    "control-R-c2-n128-r0-A",
+    "control-R-c2-n128-r0-B",
+    "control-F-c2-n128-r0-A",
+    "control-F-c2-n128-r0-B",
+    "control-F-c2-n128-r1-A",
+    "control-F-c2-n128-r1-B",
+    "control-R-c2-n128-r1-A",
+    "control-R-c2-n128-r1-B",
+    "control-R-c3-n32-r0-A",
+    "control-R-c3-n32-r0-B",
+    "control-F-c3-n32-r0-A",
+    "control-F-c3-n32-r0-B",
+    "control-F-c3-n32-r1-A",
+    "control-F-c3-n32-r1-B",
+    "control-R-c3-n32-r1-A",
+    "control-R-c3-n32-r1-B",
+    "control-F-c3-n128-r0-A",
+    "control-F-c3-n128-r0-B",
+    "control-R-c3-n128-r0-A",
+    "control-R-c3-n128-r0-B",
+    "control-R-c3-n128-r1-A",
+    "control-R-c3-n128-r1-B",
+    "control-F-c3-n128-r1-A",
+    "control-F-c3-n128-r1-B",
+    "replay-F-c0-n32",
+    "replay-R-c0-n32",
+    "replay-F-c0-n128",
+    "replay-R-c0-n128",
+    "replay-F-c2-n32",
+    "replay-R-c2-n32",
+    "replay-F-c2-n128",
+    "replay-R-c2-n128"
+  ],
+  "paired_auc_differences": [
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "A",
+      "metric": "mean_nll_bits",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "A",
+      "metric": "mean_log2_rank",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "A",
+      "metric": "mean_admissible_nll_bits",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "A",
+      "metric": "member_fraction",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "A",
+      "metric": "format_accepted",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "A",
+      "metric": "format_and_kem_canonical",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "A",
+      "metric": "token_count",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "A",
+      "metric": "utf8_bytes",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "mean_nll_bits",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "mean_log2_rank",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "mean_admissible_nll_bits",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "member_fraction",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "format_accepted",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "format_and_kem_canonical",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "token_count",
+      "paired_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "R_minus_F_auc": null,
+      "complete_support": false,
+      "family": "B",
+      "metric": "utf8_bytes",
+      "paired_interval": [
+        null,
+        null
+      ]
+    }
+  ],
+  "peak_sampled_vram_mib": 5006,
+  "phase_tokens": {
+    "encode": 5753,
+    "public_fixture_inverse": 1112
+  },
+  "planned_slots": 110,
+  "qualification": {
+    "allocation_id": "stage7_public_arithmetic_comparison_2026-09-18",
+    "lifetime_usage": {
+      "cases": 218,
+      "seconds": 7995.272036779985,
+      "tokens": 131859
+    },
+    "phase": "qualification",
+    "qualification_passed": false,
+    "recorded_outcomes": 4,
+    "schema_version": 1,
+    "skipped": [
+      {
+        "case_id": "qual-replay-32",
+        "reason": "Predetermined source unavailable; no substitution"
+      },
+      {
+        "case_id": "qual-replay-128",
+        "reason": "Predetermined source unavailable; no substitution"
+      }
+    ],
+    "stage7_usage": {
+      "cases": 4,
+      "seconds": 453.3871514170023,
+      "tokens": 6865
+    },
+    "stop_reason": "No qualified meaningful small payload; comparative GPU study blocked",
+    "tested_code_commit": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2"
+  },
+  "qualification_attempts": 4,
+  "recognition": [
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "mean_admissible_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "token_count"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "utf8_bytes"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "mean_admissible_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "token_count"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "F",
+      "metric": "utf8_bytes"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "mean_admissible_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "token_count"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "A",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "utf8_bytes"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "mean_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "mean_log2_rank"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "mean_admissible_nll_bits"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "member_fraction"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "format_accepted"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "format_and_kem_canonical"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "token_count"
+    },
+    {
+      "auc_higher_is_carrier": null,
+      "cluster_interval": [
+        null,
+        null
+      ],
+      "context_auc": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "control_mean": null,
+      "encrypted_mean": null,
+      "family": "B",
+      "matched_scorable_pairs": 0,
+      "method": "R",
+      "metric": "utf8_bytes"
+    }
+  ],
+  "recognition_counts": [
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "A",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "F",
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 0
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "A",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "F",
+      "retokenization_drift": 0,
+      "role": "control",
+      "scorable": 0
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "B",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "F",
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 0
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "B",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "F",
+      "retokenization_drift": 0,
+      "role": "control",
+      "scorable": 0
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "A",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "R",
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 0
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "A",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "R",
+      "retokenization_drift": 0,
+      "role": "control",
+      "scorable": 0
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "B",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "R",
+      "retokenization_drift": 0,
+      "role": "encrypted",
+      "scorable": 0
+    },
+    {
+      "all_candidates_member": 0,
+      "attempted": 0,
+      "capacity_failures": 0,
+      "delivered": 0,
+      "family": "B",
+      "format_accepted": 0,
+      "format_and_kem_canonical": 0,
+      "invalid_utf8": 0,
+      "method": "R",
+      "retokenization_drift": 0,
+      "role": "control",
+      "scorable": 0
+    }
+  ],
+  "recovery": [
+    {
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "carrier_token_max": null,
+      "carrier_token_min": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "mean_success_payload_bits_per_token": null,
+      "method": "F",
+      "payload_bytes": 32,
+      "planned": 8,
+      "recovered_bytes_per_charged_second": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "recovery_fraction": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "carrier_token_max": null,
+      "carrier_token_min": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "mean_success_payload_bits_per_token": null,
+      "method": "F",
+      "payload_bytes": 128,
+      "planned": 8,
+      "recovered_bytes_per_charged_second": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "recovery_fraction": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "carrier_token_max": null,
+      "carrier_token_min": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "mean_success_payload_bits_per_token": null,
+      "method": "R",
+      "payload_bytes": 32,
+      "planned": 8,
+      "recovered_bytes_per_charged_second": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "recovery_fraction": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ]
+    },
+    {
+      "aggregate_recovered_bits_per_delivered_token": null,
+      "attempted": 0,
+      "authenticated_exact": 0,
+      "capacity_failures": 0,
+      "carrier_token_max": null,
+      "carrier_token_min": null,
+      "mean_attempt_useful_bits_per_token": null,
+      "mean_success_payload_bits_per_token": null,
+      "method": "R",
+      "payload_bytes": 128,
+      "planned": 8,
+      "recovered_bytes_per_charged_second": null,
+      "recovery_cluster_interval": [
+        null,
+        null
+      ],
+      "recovery_fraction": null,
+      "useful_rate_cluster_interval": [
+        null,
+        null
+      ]
+    }
+  ],
+  "replays": [],
+  "schema_version": 1,
+  "selected_gpu": {
+    "driver": "590.48.01",
+    "index": "1",
+    "name": "NVIDIA RTX 5000 Ada Generation",
+    "uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+    "vram_mib": "32760"
+  },
+  "skipped": [
+    {
+      "case_id": "qual-replay-32",
+      "reason": "Predetermined source unavailable; no substitution"
+    },
+    {
+      "case_id": "qual-replay-128",
+      "reason": "Predetermined source unavailable; no substitution"
+    }
+  ],
+  "stage7_usage": {
+    "cases": 4,
+    "seconds": 453.3871514170023,
+    "tokens": 6865
+  },
+  "starting_commit": "c2b4f91f0cc6842c37133ce31576ae2fa455b2a6",
+  "stop_reason": "No qualified meaningful small payload; comparative GPU study blocked",
+  "unique_worker_pids": 4,
+  "unsettled_attempts": [],
+  "unused_stage7_allowance": {
+    "cases": 124,
+    "seconds": 13946.612848582998,
+    "tokens": 293135
+  }
+}

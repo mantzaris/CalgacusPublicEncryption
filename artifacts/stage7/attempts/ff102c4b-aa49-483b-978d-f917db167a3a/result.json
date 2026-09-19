@@ -1,0 +1,73 @@
+{
+  "attempt_id": "ff102c4b-aa49-483b-978d-f917db167a3a",
+  "attempt_useful_bits_per_transmitted_token": 0.0,
+  "authenticated": false,
+  "candidate_costs": {
+    "encode": {
+      "examined_max": 20,
+      "examined_total": 24743,
+      "rejected": {
+        "empty": 0,
+        "invalid_utf8": 1,
+        "noncanonical": 156,
+        "special_control": 10
+      },
+      "steps": 1536
+    }
+  },
+  "case_id": "qual-HPKE-32",
+  "charged_tokens": 1546,
+  "ciphertext_sha256": "69ee210a719984112c63ca1cbddfdcfd696c270917b99969e25d4eff9d68014f",
+  "context_index": 2,
+  "cover_context": "A station bulletin about maintaining a platform clock:",
+  "encapsulation_hex": "c7b3f228aa53bd5a0636cc3969789f477d39b710d89cb7b610c2a7dd29195b69",
+  "envelope_bytes": 100,
+  "envelope_sha256": "ad638ca59c94fd6bb86bef814afd09513e410927074a897b00ed99e087a9b1cc",
+  "error": "Arithmetic carrier ceiling before complete stable packet",
+  "exact_recovery": false,
+  "exception_type": "CapacityError",
+  "failure_category": "capacity_exhaustion",
+  "family": null,
+  "gpu_uuid": "GPU-10d1f16f-9e79-08bb-b2ba-3353c04422cf",
+  "key_id": "STAGE7_TEST_ONLY_8",
+  "kind": "encrypted",
+  "method": "R",
+  "pair_id": null,
+  "payload_bytes": 32,
+  "payload_setting_bytes": 32,
+  "payload_sha256": "27df4e8688c465b8d408b801fe10f274a77d0d7620dbb3e096ce22cc735444b2",
+  "pid": 734507,
+  "profile_id": "stage7_public_R_size32_v1",
+  "profile_sha256": "c581c623f4eb99e0043af0f415d0215585626bd0d65e377a3d06dcfe40923acf",
+  "public_context_token_ids": {
+    "A station bulletin about maintaining a platform clock:": [
+      128000,
+      32,
+      8216,
+      75829,
+      922,
+      20958,
+      264,
+      5452,
+      9042,
+      25
+    ]
+  },
+  "receiver_public_key_hex": "e536a08415874b9942f1b294eaa422d0d4e11dd1db0a138ec7440e06f3a01220",
+  "schema_version": 1,
+  "serialized_base64": "x7PyKKpTvVoGNsw5aXifR305txDYnLe2EMKn3SkZW2mcCmE5pYomm7HI1DFBb+4nLedA1/IRHX09HUV1MhDEOVCHPfOyjFaP9Dww7iq+6eFE8pxkDJqIFD3yeFEHX7fonIm6Dw==",
+  "split": "stage7_qualification_development_only",
+  "stage7_phase": "qualification",
+  "success": false,
+  "tested_code_commit": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+  "timings": {
+    "encode_seconds": 91.77171455699863,
+    "load_and_verify_seconds": 14.336558189999778
+  },
+  "tokens_by_phase": {
+    "encode": 1546
+  },
+  "trace_path": "artifacts/stage7/attempts/ff102c4b-aa49-483b-978d-f917db167a3a/traces.json",
+  "wire_delivered": false,
+  "worker_seconds": 106.35822751600062
+}

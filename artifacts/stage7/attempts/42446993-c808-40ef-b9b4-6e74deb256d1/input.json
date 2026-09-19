@@ -1,0 +1,32 @@
+{
+  "TEST_ONLY_private_key_hex": "f82f47c4a0c7fd1811d493b57ce50d32beff860b1877a4d710cbde29cace545d",
+  "case_id": "qual-HPKE-128",
+  "context_index": 3,
+  "key_id": "STAGE7_TEST_ONLY_8",
+  "kind": "encrypted",
+  "method": "R",
+  "payload_bytes": 128,
+  "payload_hex": "22fb20ffded3c2798feac931bba00cd6fec943ed52d6ae821f0c8bba6b7b1699502da25b878f4e3fca5c883a097ffd7c9bf0b053b864494764b2bce3c9cd21444e71f8fbf012d61eb6520c8c3ea296ed36548c26945739cab05b7d11c1d5d683f2abbfe6f27bc2b34267850a6cb510a40fb6dd92547136d55d45a3bfb733efeb",
+  "profile_path": "configs/stage7/R128.json",
+  "profile_sha256": "e1f2a4e90bfadca57a196cb364775030748cf223a70de9e1877b51fe3a8c843a",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage7_qualification_development_only",
+  "stage7_phase": "qualification",
+  "tested_code_commit": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+  "token_reservation": 5000,
+  "wall_reservation_seconds": 420
+}

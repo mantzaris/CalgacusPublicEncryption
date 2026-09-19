@@ -1,0 +1,5 @@
+phase,kind,method,family,payload_bytes,attempts,charged_seconds,evaluated_tokens,mean_job_seconds,peak_sampled_vram_mib,mean_load_and_verify_seconds,mean_encode_seconds,mean_receiver_seconds,mean_public_scoring_seconds,mean_control_generation_seconds
+qualification,fixture,R,-,32,1,127.46600406899961,2224,127.46600406899961,5006,14.44845990900285,56.28090073099884,,,
+qualification,fixture,R,-,128,1,109.32615885500127,1548,109.32615885500127,5006,14.335305447002611,94.07465226500062,,,
+qualification,encrypted,R,-,32,1,107.24968029400043,1546,107.24968029400043,5006,14.336558189999778,91.77171455699863,,,
+qualification,encrypted,R,-,128,1,109.34530819900101,1547,109.34530819900101,5006,14.659766942997521,93.66104507800264,,,

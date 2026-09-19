@@ -1,0 +1,30 @@
+{
+  "case_id": "qual-synthetic-128",
+  "context_index": 1,
+  "kind": "fixture",
+  "method": "R",
+  "profile_path": "configs/stage7/R128.json",
+  "profile_sha256": "e1f2a4e90bfadca57a196cb364775030748cf223a70de9e1877b51fe3a8c843a",
+  "schema_version": 1,
+  "source_provenance": {
+    "checked_immediately_before_reservation": true,
+    "checked_paths": [
+      "src",
+      "scripts",
+      "configs",
+      "tests",
+      "pyproject.toml",
+      "requirements-cpu.lock",
+      "vendor"
+    ],
+    "commit": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+    "tracked_and_untracked_code_dirty": false
+  },
+  "split": "stage7_qualification_development_only",
+  "stage7_phase": "qualification",
+  "synthetic_envelope_hex": "0a9d94951a6bc6e50d63d5407ffaee7cdf59732398c292ad897418102f56e81fd26d8686302e9144ecb5dfd99419e43650246eace492831878bb1829a9be69e476458fcbfab1c6a5b4a4018018c2d83b7dcd125eddd2140654f28c9d9ca3c9f43d53f384d38818e25d274a35292c7b698749e04e958a79025e486b61b46bcfdf806cc8c0ad02baaf28cedb5623e19ed7f5c79cbe5aa4bc047a8fef92e3a5066cf701df1378faeecb7b23cb1c6b33938ad776d0639a6cadcc94bf76b49fedb585f77f5271",
+  "synthetic_envelope_sha256": "22d8a4c93fe4dee9eaba346d7455e823c2a5c040d5078bdad148f7aa78a4a63f",
+  "tested_code_commit": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+  "token_reservation": 3300,
+  "wall_reservation_seconds": 300
+}
