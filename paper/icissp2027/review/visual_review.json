@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "pdf_sha256": "0bd5da5ec7559b40dc077a8775b7b4c88e71602892dde96435e4925d79d19d09",
+  "pages_rendered": 12,
+  "dpi": 120,
+  "reviewer": "Codex visual inspection, not independent human peer review",
+  "all_pages_inspected": true,
+  "detail_checks": [
+    "protocol/public-private split and official title geometry",
+    "profile table wrapping and official 9-point caption/body conventions",
+    "restored Equation 2 present and readable",
+    "all-attempt recovery and scorable-denominator tables",
+    "capacity trajectory markers/targets/legends",
+    "fixed/stopped boundary and abort markings",
+    "raw score pairs and cohort labels",
+    "exact Unicode carrier excerpts; no inserted line-wrap markers",
+    "references and AI-use disclosure; anonymous metadata"
+  ],
+  "layout_findings": "No clipped text or tables, unreadable plot labels, overflow, broken citations/references or excessive blank float pages. Final-page whitespace is normal end-of-document space. Official anonymous title block spacing retained.",
+  "corrections": [
+    "13-page first layout reduced by editing repeated prose, not shrinking fonts or spacing",
+    "figure font embedding changed to compatible TrueType Liberation Serif",
+    "profile table widened by reducing columns, preserving role in caption",
+    "score definition restored after editorial omission caught visually",
+    "excerpts configured without synthetic continuation symbols"
+  ],
+  "rendered_pages": [
+    {
+      "page": 1,
+      "png_sha256": "2f07a8eba0e7680b187360f6452548be5be2e8c2a526b6dcb54606ffe0853929"
+    },
+    {
+      "page": 2,
+      "png_sha256": "9564b0735fb53f3af074f1096b6e1e379e1eb90b988cd1e82b8a24004638b61c"
+    },
+    {
+      "page": 3,
+      "png_sha256": "634fd75fa8869db24802ebcb5f052d9d418612adbca4f879631dde8f0af3cb8a"
+    },
+    {
+      "page": 4,
+      "png_sha256": "caf15ca4fa17ba939e76f7143fae34e7db1c41f54a34152bff167994066d1bda"
+    },
+    {
+      "page": 5,
+      "png_sha256": "ed45a3efbd79a22aa1507bc083f74ac0c2b9a5f29a6d011b658bf3aa83848f72"
+    },
+    {
+      "page": 6,
+      "png_sha256": "a9fc805ac9ee6a66d77cdd4cee3f977943b45f57b1ab0fdc3a7a9c9fcceb8e30"
+    },
+    {
+      "page": 7,
+      "png_sha256": "a4ae4239539b3fcdb640785c0ba294e96e0929ba9a938240c5248560f0dfc2cc"
+    },
+    {
+      "page": 8,
+      "png_sha256": "35e2948984f0332e8db22157dbad80aad0050fd5e93ce1af76a7138c61bb3876"
+    },
+    {
+      "page": 9,
+      "png_sha256": "2d762ef55de97c6ba4c8e9e0493e62bccc93c372a7a0ca63344d4678661ef563"
+    },
+    {
+      "page": 10,
+      "png_sha256": "bb30cbd45b8199c567b781fd2c93bce5d43e86a51db1048f8cae6bced1ea1de0"
+    },
+    {
+      "page": 11,
+      "png_sha256": "a881c07b7580e8ceaf616c2b6689532c9be7a8ddb52ab8ba5406dda7da467401"
+    },
+    {
+      "page": 12,
+      "png_sha256": "ff0a157ec771942ca527373102f08100f94710b180a762af4f7832e9bd97225f"
+    }
+  ]
+}

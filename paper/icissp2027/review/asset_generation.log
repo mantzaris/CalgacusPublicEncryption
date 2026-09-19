@@ -1,0 +1,3 @@
+PASS: regenerated four vector figures, two data tables, two exact excerpts, raw metrics and evidence hashes. No inference.
+Recovery: [(6, 'Calgacus', 32, 2, 4), (6, 'Calgacus', 128, 2, 4), (6, 'L', 32, 8, 8), (6, 'L', 128, 8, 8), (6, 'F', 32, 8, 8), (6, 'F', 128, 8, 8), (8, 'F', 32, 4, 4), (8, 'F', 128, 4, 4), (8, 'R', 32, 2, 4), (8, 'R', 128, 0, 4), (9, 'R', 32, 4, 6)]
+AUC: [(6, 'A', 'body_nll', 1.0), (6, 'B', 'body_nll', 1.0), (6, 'C', 'body_nll', 0.41015625), (6, 'A', 'nll', 1.0), (6, 'B', 'nll', 1.0), (6, 'C', 'nll', 0.3671875), (8, 'B', 'nll', 0.5), (9, 'B-fixed', 'nll', 1.0)]

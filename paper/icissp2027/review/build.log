@@ -1,0 +1,454 @@
+Rc files read:
+  /etc/LatexMk
+Latexmk: This is Latexmk, John Collins, 31 Jan. 2024. Version 4.83.
+Latexmk: applying rule 'bibtex build/main'...
+Rule 'bibtex build/main':  Reasons for rerun
+Changed files or newly in use/created:
+  ./references.bib
+Category 'changed_user':
+  ./references.bib
+
+------------
+Run number 1 of rule 'bibtex build/main'
+------------
+====== ENV{BIBINPUTS} changed to '/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027:build:/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027/build:'
+Latexmk: Change directory to 'build/'.
+To assist finding of files in document directory, I set
+  BIBINPUTS='/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027:build:/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027/build:'
+  BSTINPUTS='/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027:'.
+------------
+Running 'bibtex  "main.aux"'
+------------
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+The top-level auxiliary file: main.aux
+The style file: apalike.bst
+Database file #1: references.bib
+Latexmk: Change directory back to '/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027'
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  build/main.bbl
+  figures/figure2_capacity.pdf
+  figures/figure4_scores.pdf
+  main.tex
+Category 'changed_user':
+  figures/figure2_capacity.pdf
+  figures/figure4_scores.pdf
+  main.tex
+
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -recorder -output-directory="build"  "main.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(./article.cls
+Document Class: article 2000/05/19 v1.4b Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def))))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pslatex/pslatex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty) (./apalike.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(./SCITEPRESS.sty
+Conference Style for SCITEPRESS for LaTeX 2e -- version of May 2023
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(build/main.aux) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(build/main.out) (build/main.out)
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptmcm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxpsycm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+Underfull \hbox (badness 1072) in paragraph at lines 34--35
+\T1/ptm/m/n/10 Encryption can hide what a mes-sage says while
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}]
+Underfull \hbox (badness 3942) in paragraph at lines 51--52
+[]\T1/ptm/m/n/10 HPKE sup-plies en-cryp-tion, not con-ceal-ment
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+\T1/ptm/m/n/10 The im-ple-men-ta-tion uses pyh-pke 0.6.5 and
+
+Underfull \hbox (badness 3229) in paragraph at lines 77--78
+\T1/ptm/m/n/10 cryp-tog-ra-phy 46.0.7. The suite is Base-mode
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+\T1/ptm/m/n/10 DHKEM(X25519, HKDF-SHA256), HKDF-
+
+Underfull \hbox (badness 1270) in paragraph at lines 79--80
+\T1/ptm/m/n/10 Domain-separated HPKE in-for-ma-tion binds those
+(./generated/table_profiles.tex
+Underfull \hbox (badness 2050) in paragraph at lines 10--10
+[]|\T1/ptm/m/n/9 Four-byte outer en-ve-lope
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\T1/ptm/m/n/9 Inferred rank
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\T1/ptm/m/n/9 Pre-agreed 100/196-byte
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+[]|\T1/ptm/m/n/9 First sta-ble packet; mid-
+
+Underfull \hbox (badness 4205) in paragraph at lines 12--13
+\T1/ptm/m/n/9 point/replay; 1536 then 1984
+)
+Underfull \hbox (badness 2689) in paragraph at lines 96--97
+[]\T1/ptm/m/n/10 Length-inferred rank map-ping, F, omits that
+[3] [4 <./figures/figure1_protocol.pdf>]
+
+LaTeX Warning: Reference `eq:score' on page 5 undefined on input line 116.
+
+[5]
+Underfull \hbox (badness 1297) in paragraph at lines 137--138
+\T1/ptm/m/n/10 All in-fer-ence uses one frozen Meta-Llama-3-8B-
+(./generated/table_recovery.tex) [6]
+Underfull \hbox (badness 3417) in paragraph at lines 164--165
+\T1/ptm/m/n/10 recorded en-cod-ing steps. At the old ceil-ing,
+
+Underfull \hbox (badness 2142) in paragraph at lines 164--165
+\T1/ptm/m/n/10 the failed syn-thetic 196-byte, en-crypted 32-byte
+
+Underfull \hbox (badness 1062) in paragraph at lines 166--167
+\T1/ptm/m/n/10 integer-table en-tropy is 0.00512 bits/token. The
+[7]
+Underfull \hbox (badness 1072) in paragraph at lines 179--180
+\T1/ptm/m/n/10 serves its ex-act char-ac-ters, in-clud-ing the lead-ing
+(./generated/table_predicates.tex) [8 <./figures/figure2_capacity.pdf>]
+[9]
+Underfull \hbox (badness 1087) in paragraph at lines 226--227
+[]\T1/ptm/m/n/10 In S9, higher-is-R complete-message sur-prisal
+[10 <./figures/figure3_stopping.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+[]\T1/ptm/m/n/10 The ex-per-i-ments use one quan-tized
+[11 <./figures/figure4_scores.pdf>]
+Underfull \hbox (badness 1297) in paragraph at lines 253--254
+\T1/ptm/m/n/10 cov-ery, arith-metic ca-pac-ity aborts and generator-
+(build/main.bbl
+Underfull \hbox (badness 1490) in paragraph at lines 24--28
+\T1/ptm/m/n/10 hide text in other text of the same length.
+
+Underfull \hbox (badness 2564) in paragraph at lines 43--49
+[]\T1/ptm/m/n/10 Yan, R. and Mu-rawaki, Y. (2025).  Ad-dress-
+
+Underfull \hbox (badness 2261) in paragraph at lines 43--49
+\T1/ptm/m/n/10 phy and wa-ter-mark-ing based on large lan-
+
+Underfull \hbox (badness 1043) in paragraph at lines 43--49
+\T1/ptm/m/n/10 guage mod-els.  In \T1/ptm/m/it/10 Pro-ceed-ings of EMNLP\T1/ptm
+/m/n/10 ,
+
+Underfull \hbox (badness 1342) in paragraph at lines 43--49
+\T1/ptm/m/n/10 pages 7076--7098. As-so-ci-a-tion for Com-pu-ta-
+) [12] (build/main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on build/main.pdf (12 pages, 221095 bytes).
+Transcript written on build/main.log.
+Latexmk: Getting log file 'build/main.log'
+Latexmk: Examining 'build/main.fls'
+Latexmk: Examining 'build/main.log'
+Latexmk: Found input bbl file 'build/main.bbl'
+Latexmk: References changed.
+Latexmk: Log file says output to 'build/main.pdf'
+Latexmk: Found bibliography file(s):
+  ./references.bib
+Latexmk: applying rule 'bibtex build/main'...
+Rule 'bibtex build/main':  Reasons for rerun
+Changed files or newly in use/created:
+  build/main.aux
+
+------------
+Run number 2 of rule 'bibtex build/main'
+------------
+====== ENV{BIBINPUTS} changed to '/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027:build:/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027/build:'
+Latexmk: Change directory to 'build/'.
+To assist finding of files in document directory, I set
+  BIBINPUTS='/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027:build:/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027/build:'
+  BSTINPUTS='/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027:'.
+------------
+Running 'bibtex  "main.aux"'
+------------
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+The top-level auxiliary file: main.aux
+The style file: apalike.bst
+Database file #1: references.bib
+Latexmk: Change directory back to '/home/meow/Documents/repos/CalgacusPublicEncryption/paper/icissp2027'
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  build/main.aux
+
+------------
+Run number 2 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -recorder -output-directory="build"  "main.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(./article.cls
+Document Class: article 2000/05/19 v1.4b Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def))))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pslatex/pslatex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty) (./apalike.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(./SCITEPRESS.sty
+Conference Style for SCITEPRESS for LaTeX 2e -- version of May 2023
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(build/main.aux) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(build/main.out) (build/main.out)
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptmcm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxpsycm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+Underfull \hbox (badness 1072) in paragraph at lines 34--35
+\T1/ptm/m/n/10 Encryption can hide what a mes-sage says while
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}]
+Underfull \hbox (badness 3942) in paragraph at lines 51--52
+[]\T1/ptm/m/n/10 HPKE sup-plies en-cryp-tion, not con-ceal-ment
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+\T1/ptm/m/n/10 The im-ple-men-ta-tion uses pyh-pke 0.6.5 and
+
+Underfull \hbox (badness 3229) in paragraph at lines 77--78
+\T1/ptm/m/n/10 cryp-tog-ra-phy 46.0.7. The suite is Base-mode
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+\T1/ptm/m/n/10 DHKEM(X25519, HKDF-SHA256), HKDF-
+
+Underfull \hbox (badness 1270) in paragraph at lines 79--80
+\T1/ptm/m/n/10 Domain-separated HPKE in-for-ma-tion binds those
+(./generated/table_profiles.tex
+Underfull \hbox (badness 2050) in paragraph at lines 10--10
+[]|\T1/ptm/m/n/9 Four-byte outer en-ve-lope
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\T1/ptm/m/n/9 Inferred rank
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\T1/ptm/m/n/9 Pre-agreed 100/196-byte
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+[]|\T1/ptm/m/n/9 First sta-ble packet; mid-
+
+Underfull \hbox (badness 4205) in paragraph at lines 12--13
+\T1/ptm/m/n/9 point/replay; 1536 then 1984
+)
+Underfull \hbox (badness 2689) in paragraph at lines 96--97
+[]\T1/ptm/m/n/10 Length-inferred rank map-ping, F, omits that
+[3] [4 <./figures/figure1_protocol.pdf>] [5]
+Underfull \hbox (badness 1297) in paragraph at lines 137--138
+\T1/ptm/m/n/10 All in-fer-ence uses one frozen Meta-Llama-3-8B-
+(./generated/table_recovery.tex) [6]
+Underfull \hbox (badness 3417) in paragraph at lines 164--165
+\T1/ptm/m/n/10 recorded en-cod-ing steps. At the old ceil-ing,
+
+Underfull \hbox (badness 2142) in paragraph at lines 164--165
+\T1/ptm/m/n/10 the failed syn-thetic 196-byte, en-crypted 32-byte
+
+Underfull \hbox (badness 1062) in paragraph at lines 166--167
+\T1/ptm/m/n/10 integer-table en-tropy is 0.00512 bits/token. The
+[7]
+Underfull \hbox (badness 1072) in paragraph at lines 179--180
+\T1/ptm/m/n/10 serves its ex-act char-ac-ters, in-clud-ing the lead-ing
+(./generated/table_predicates.tex) [8 <./figures/figure2_capacity.pdf>]
+[9]
+Underfull \hbox (badness 1087) in paragraph at lines 226--227
+[]\T1/ptm/m/n/10 In S9, higher-is-R complete-message sur-prisal
+[10 <./figures/figure3_stopping.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+[]\T1/ptm/m/n/10 The ex-per-i-ments use one quan-tized
+[11 <./figures/figure4_scores.pdf>]
+Underfull \hbox (badness 1297) in paragraph at lines 253--254
+\T1/ptm/m/n/10 cov-ery, arith-metic ca-pac-ity aborts and generator-
+(build/main.bbl
+Underfull \hbox (badness 1490) in paragraph at lines 24--28
+\T1/ptm/m/n/10 hide text in other text of the same length.
+
+Underfull \hbox (badness 2564) in paragraph at lines 43--49
+[]\T1/ptm/m/n/10 Yan, R. and Mu-rawaki, Y. (2025).  Ad-dress-
+
+Underfull \hbox (badness 2261) in paragraph at lines 43--49
+\T1/ptm/m/n/10 phy and wa-ter-mark-ing based on large lan-
+
+Underfull \hbox (badness 1043) in paragraph at lines 43--49
+\T1/ptm/m/n/10 guage mod-els.  In \T1/ptm/m/it/10 Pro-ceed-ings of EMNLP\T1/ptm
+/m/n/10 ,
+
+Underfull \hbox (badness 1342) in paragraph at lines 43--49
+\T1/ptm/m/n/10 pages 7076--7098. As-so-ci-a-tion for Com-pu-ta-
+) [12] (build/main.aux) )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on build/main.pdf (12 pages, 220719 bytes).
+Transcript written on build/main.log.
+Latexmk: Getting log file 'build/main.log'
+Latexmk: Examining 'build/main.fls'
+Latexmk: Examining 'build/main.log'
+Latexmk: Found input bbl file 'build/main.bbl'
+Latexmk: Log file says output to 'build/main.pdf'
+Latexmk: Found bibliography file(s):
+  ./references.bib
+Latexmk: All targets (build/main.pdf) are up-to-date
+

@@ -1,0 +1,9 @@
+{
+  "asset_generation": "PYTHONPATH=.venv/lib/python3.10/site-packages MPLCONFIGDIR=/tmp/icissp-paper-mpl ../llm-rankcloak/.venv/bin/python paper/icissp2027/scripts/generate_assets.py",
+  "evidence_reconciliation": "PYTHONPATH=.venv/lib/python3.10/site-packages ../llm-rankcloak/.venv/bin/python paper/icissp2027/scripts/evidence_map.py",
+  "build_render_check": "bash paper/icissp2027/scripts/build.sh",
+  "source_reading": "Repository sources/reports and retained public papers; current official venue and primary pages checked.",
+  "inference_jobs": 0,
+  "evaluated_model_tokens": 0,
+  "new_experimental_cases": 0
+}

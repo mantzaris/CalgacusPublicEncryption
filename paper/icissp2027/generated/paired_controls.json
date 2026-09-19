@@ -1,0 +1,44 @@
+[
+  {
+    "context": 0,
+    "common": 862,
+    "fixed_tokens": 862,
+    "stop_tokens": 1984,
+    "stop_delivered": false
+  },
+  {
+    "context": 1,
+    "common": 752,
+    "fixed_tokens": 752,
+    "stop_tokens": 1186,
+    "stop_delivered": true
+  },
+  {
+    "context": 2,
+    "common": 1984,
+    "fixed_tokens": 1984,
+    "stop_tokens": 1984,
+    "stop_delivered": false
+  },
+  {
+    "context": 3,
+    "common": 905,
+    "fixed_tokens": 905,
+    "stop_tokens": 1052,
+    "stop_delivered": true
+  },
+  {
+    "context": 4,
+    "common": 1984,
+    "fixed_tokens": 1984,
+    "stop_tokens": 1984,
+    "stop_delivered": false
+  },
+  {
+    "context": 5,
+    "common": 832,
+    "fixed_tokens": 832,
+    "stop_tokens": 1044,
+    "stop_delivered": true
+  }
+]

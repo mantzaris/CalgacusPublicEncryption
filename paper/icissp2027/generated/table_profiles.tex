@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\caption{Evaluated transport profiles. All encrypted rows use the same established HPKE role, protecting the inner record rather than hiding the existence of communication. The profile, context and indicated size policy are public and authenticated through the binding. A/B/C are unencrypted diagnostic generators, not competing encryption schemes.}
+\label{tab:profiles}
+\centering\small
+\begin{tabular}{p{.80in}p{1.35in}p{1.65in}p{1.67in}}
+\hline
+Method & Public size information & Mapping/support & Framing and end condition\\
+\hline
+Adapted Calgacus & Bounded Base64 envelope & Full-vocabulary conditional rank transfer & Source-token count; actual text is retokenized\\
+Length rank (L) & Four-byte outer envelope length & Two nibbles/byte on canonical 16 & Header then envelope; 208/400 tokens\\
+Inferred rank (F) & Envelope length from token count; later fixed class & Same canonical 16, high nibble first & No outer header; 200/392 tokens\\
+Arithmetic (R) & Pre-agreed 100/196-byte envelope class & Integer probability intervals on the same 16 & First stable packet; midpoint/replay; 1536 then 1984 ceiling\\
+Controls & Assigned length or agreed packet target & A: full vocabulary; B: weighted 16; C: uniform 16 & Fixed length; B-stop instead ends at first stable packet\\
+\hline
+\end{tabular}
+\end{table*}

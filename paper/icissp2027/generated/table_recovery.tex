@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\caption{Recovery and cost by separate study cohort and payload size. Recovery includes every encrypted attempt. Replay counts are exact/attempted independent receiver jobs, not additional transmissions. Tokens describe successful carriers only. $U_s$ averages useful payload bits per token among successes; $U_a$ assigns zero to failed attempts. Seconds average complete encrypted jobs, including startup, reception and public scoring when reached. Calgacus denotes the audited adaptation. No failed arithmetic partial output is counted as transmitted text.}
+\label{tab:recovery}
+\centering\small
+\begin{tabular}{llrrrrrrrr}
+\hline
+Study & Method & Bytes & Recovery & Replays & Tokens & $U_s$ & $U_a$ & Seconds & Bytes/s\\
+\hline
+S6 & Calgacus & 32 & 2/4 & -- & 95--102 & 2.602 & 1.301 & 34.3 & 0.467 \\
+S6 & Calgacus & 128 & 2/4 & -- & 184--193 & 5.435 & 2.718 & 51.3 & 1.247 \\
+S6 & L & 32 & 8/8 & 2/2 & 208 & 1.231 & 1.231 & 37.6 & 0.851 \\
+S6 & L & 128 & 8/8 & 2/2 & 400 & 2.560 & 2.560 & 61.8 & 2.071 \\
+S6 & F & 32 & 8/8 & 2/2 & 200 & 1.280 & 1.280 & 36.5 & 0.876 \\
+S6 & F & 128 & 8/8 & 2/2 & 392 & 2.612 & 2.612 & 60.7 & 2.107 \\
+S8 & F & 32 & 4/4 & 2/2 & 200 & 1.280 & 1.280 & 37.1 & 0.863 \\
+S8 & F & 128 & 4/4 & 2/2 & 392 & 2.612 & 2.612 & 60.7 & 2.109 \\
+S8 & R & 32 & 2/4 & 1/1 & 563--1783 & 0.299 & 0.150 & 185.4 & 0.086 \\
+S8 & R & 128 & 0/4 & -- & -- & -- & 0.000 & 151.0 & 0.000 \\
+S9 & R & 32 & 4/6 & 2/2 & 752--905 & 0.307 & 0.205 & 141.6 & 0.151 \\
+\hline
+\end{tabular}
+\end{table*}

@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-09-19T16:48:29.220961+00:00",
+  "references": [
+    {
+      "key": "ziegler2019neural",
+      "title": "Neural Linguistic Steganography",
+      "authors": [
+        "Zachary M. Ziegler",
+        "Yuntian Deng",
+        "Alexander M. Rush"
+      ],
+      "version": "EMNLP-IJCNLP 2019, pp. 1210–1215",
+      "url": "https://aclanthology.org/D19-1115/",
+      "doi": "10.18653/v1/D19-1115",
+      "sections": "Sections 2–4.2, especially section 3 p.1212 and model-vs-natural-language discussion p.1213",
+      "claim": "Reverse arithmetic mapping, finite-message stopping, and model distribution are established; adapter differs.",
+      "note": "PDF author initials take precedence over shortened Anthology BibTeX names.",
+      "inspected_pdf_sha256": "70bcaf5ec14f3ed87b3f7f8604eb58e137b476dc9929cc47075aaf4462578b2c",
+      "availability": "Previously downloaded primary PDF reread for this draft; current primary landing page also checked. No full paper redistributed."
+    },
+    {
+      "key": "yan2025tokenization",
+      "title": "Addressing Tokenization Inconsistency in Steganography and Watermarking Based on Large Language Models",
+      "authors": [
+        "Ruiyi Yan",
+        "Yugo Murawaki"
+      ],
+      "version": "EMNLP 2025, pp. 7076–7098",
+      "url": "https://aclanthology.org/2025.emnlp-main.361/",
+      "doi": "10.18653/v1/2025.emnlp-main.361",
+      "sections": "Sections 2–3, Algorithm 1 p.7079, section 3.1 p.7080",
+      "claim": "Stepwise full-prefix consistency predates this work.",
+      "inspected_pdf_sha256": "348453ce485abdc88e011c02073ba21e28c82f8a351c957ddfcc4d2fb62a645f",
+      "availability": "Previously downloaded primary PDF reread for this draft; current primary landing page also checked. No full paper redistributed."
+    },
+    {
+      "key": "kaptchuk2021meteor",
+      "title": "Meteor: Cryptographically Secure Steganography for Realistic Distributions",
+      "authors": [
+        "Gabriel Kaptchuk",
+        "Tushar M. Jois",
+        "Matthew Green",
+        "Aviel D. Rubin"
+      ],
+      "version": "CCS 2021, author-hosted 21-page PDF",
+      "url": "https://www.cs.umd.edu/users/kaptchuk/publications/ccs21_meteor.pdf",
+      "doi": "10.1145/3460120.3484550",
+      "sections": "Sections 3–5, especially variable entropy in section 4 and cryptographic/synchronized randomness in sections 5.1–5.2",
+      "claim": "Low entropy and naive encrypted-randomness limitations are known; Meteor uses secret state and is not our public comparator.",
+      "inspected_pdf_sha256": "8ee5858264f895654c20265f3bbd3c81f263186fd189266558c76ef7efde3bdb",
+      "availability": "Previously downloaded primary PDF reread for this draft; current primary landing page also checked. No full paper redistributed."
+    },
+    {
+      "key": "norelli2026calgacus",
+      "title": "LLMs can hide text in other text of the same length",
+      "authors": [
+        "Antonio Norelli",
+        "Michael Bronstein"
+      ],
+      "version": "arXiv:2510.20075v6, 16 January 2026",
+      "url": "https://arxiv.org/abs/2510.20075v6",
+      "sections": "Sections 3 and 3.1, rank recipe p.4, high-entropy example/rank-probability distinctions pp.5–7",
+      "claim": "Conditional rank transfer and its high-entropy/mismatch limitations are established.",
+      "inspected_pdf_sha256": "41fe4f009dee05083544cb9275d3121e8b27ef7b74592c0af68da187ee8489f6",
+      "availability": "Previously downloaded primary PDF reread for this draft; current primary landing page also checked. No full paper redistributed."
+    },
+    {
+      "key": "vonahn2004public",
+      "title": "Public-Key Steganography",
+      "authors": [
+        "Luis von Ahn",
+        "Nicholas J. Hopper"
+      ],
+      "version": "EUROCRYPT 2004, LNCS 3027, pp.323–341; inspected extended ePrint 2003/233",
+      "url": "https://eprint.iacr.org/2003/233",
+      "sections": "Extended paper section 2 (IND$-CPA) and section 6, Construction 1 p.8 and hybrid construction p.10",
+      "claim": "Public extraction can coexist with security under particular channel/cryptographic assumptions.",
+      "availability": "Browser-readable primary PDF; no downloaded-byte hash claimed."
+    },
+    {
+      "key": "rfc9180",
+      "title": "Hybrid Public Key Encryption",
+      "version": "RFC 9180, February 2022",
+      "url": "https://www.rfc-editor.org/rfc/rfc9180.html",
+      "sections": "Sections 5, 7.1.1, 9.1, 9.7 and Appendix A.2.1",
+      "claim": "HPKE mode/suite, Base-mode sender-authentication absence and published suite vectors.",
+      "availability": "Official HTML inspected; no downloaded-byte hash claimed."
+    },
+    {
+      "key": "rfc7748",
+      "title": "Elliptic Curves for Security",
+      "version": "RFC 7748, January 2016",
+      "url": "https://www.rfc-editor.org/rfc/rfc7748.html",
+      "sections": "Section 5 encoding, plus distinction between canonical honest output and accepted noncanonical input",
+      "claim": "Necessary X25519 encapsulation representation, not full key validity or authentication.",
+      "availability": "Official HTML inspected; no downloaded-byte hash claimed."
+    },
+    {
+      "key": "openai2026codex",
+      "title": "Codex",
+      "version": "Product page accessed 19 September 2026; exact serving version unavailable",
+      "url": "https://openai.com/codex/",
+      "sections": "Product/tool identification only",
+      "claim": "Names the drafting tool, not support for a scientific claim.",
+      "availability": "Official product page inspected. GPT-6 family is session-reported, not inferred from the page."
+    }
+  ],
+  "official_template_and_venue": "template_and_policy.json",
+  "implementation_attribution": "../../../THIRD_PARTY_NOTICES.md",
+  "official_sources_inspected": [
+    {
+      "url": "https://github.com/noranta4/calgacus",
+      "revision": "116123d4b7a74b3d56d15623355f9acf32a87165",
+      "license": "MIT; reference snapshot retained"
+    },
+    {
+      "url": "https://github.com/harvardnlp/NeuralSteganography",
+      "revision": "14e982564aeaf9a33f7b4de440deda2184d17f12",
+      "license": "No license in inspected tree; no source copied; established method independently adapted"
+    }
+  ],
+  "claims_not_made": [
+    "new arithmetic coder",
+    "new encryption primitive",
+    "novel tokenization-consistency method",
+    "formal steganographic security",
+    "internal manuscript overlap cleared"
+  ],
+  "downloaded_unpublished_manuscripts_copied": false
+}

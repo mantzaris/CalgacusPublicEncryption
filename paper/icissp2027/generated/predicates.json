@@ -1,0 +1,161 @@
+{
+  "R": {
+    "attempted": 6,
+    "delivered": 4,
+    "scorable": 4,
+    "capacity_aborts": 2,
+    "checks": {
+      "valid_utf8": {
+        "pass": 4,
+        "fail": 0,
+        "na": 0
+      },
+      "canonical_bytes": {
+        "pass": 4,
+        "fail": 0,
+        "na": 0
+      },
+      "all_candidates_member": {
+        "pass": 4,
+        "fail": 0,
+        "na": 0
+      },
+      "stable_target_reached": {
+        "pass": 4,
+        "fail": 0,
+        "na": 0
+      },
+      "ends_at_first_completion": {
+        "pass": 4,
+        "fail": 0,
+        "na": 0
+      },
+      "filler_consistent": {
+        "pass": 4,
+        "fail": 0,
+        "na": 0
+      },
+      "canonical_replay_consistent": {
+        "pass": 4,
+        "fail": 0,
+        "na": 0
+      },
+      "kem_canonical": {
+        "pass": 4,
+        "fail": 0,
+        "na": 0
+      },
+      "format_accepted": {
+        "pass": 4,
+        "fail": 0,
+        "na": 0
+      }
+    }
+  },
+  "B-fixed": {
+    "attempted": 6,
+    "delivered": 6,
+    "scorable": 6,
+    "capacity_aborts": 0,
+    "checks": {
+      "valid_utf8": {
+        "pass": 6,
+        "fail": 0,
+        "na": 0
+      },
+      "canonical_bytes": {
+        "pass": 6,
+        "fail": 0,
+        "na": 0
+      },
+      "all_candidates_member": {
+        "pass": 6,
+        "fail": 0,
+        "na": 0
+      },
+      "stable_target_reached": {
+        "pass": 0,
+        "fail": 6,
+        "na": 0
+      },
+      "ends_at_first_completion": {
+        "pass": 0,
+        "fail": 0,
+        "na": 6
+      },
+      "filler_consistent": {
+        "pass": 0,
+        "fail": 0,
+        "na": 6
+      },
+      "canonical_replay_consistent": {
+        "pass": 0,
+        "fail": 0,
+        "na": 6
+      },
+      "kem_canonical": {
+        "pass": 0,
+        "fail": 0,
+        "na": 6
+      },
+      "format_accepted": {
+        "pass": 0,
+        "fail": 6,
+        "na": 0
+      }
+    }
+  },
+  "B-stop": {
+    "attempted": 6,
+    "delivered": 3,
+    "scorable": 3,
+    "capacity_aborts": 3,
+    "checks": {
+      "valid_utf8": {
+        "pass": 3,
+        "fail": 0,
+        "na": 0
+      },
+      "canonical_bytes": {
+        "pass": 3,
+        "fail": 0,
+        "na": 0
+      },
+      "all_candidates_member": {
+        "pass": 3,
+        "fail": 0,
+        "na": 0
+      },
+      "stable_target_reached": {
+        "pass": 3,
+        "fail": 0,
+        "na": 0
+      },
+      "ends_at_first_completion": {
+        "pass": 3,
+        "fail": 0,
+        "na": 0
+      },
+      "filler_consistent": {
+        "pass": 1,
+        "fail": 2,
+        "na": 0
+      },
+      "canonical_replay_consistent": {
+        "pass": 0,
+        "fail": 3,
+        "na": 0
+      },
+      "kem_canonical": {
+        "pass": 1,
+        "fail": 2,
+        "na": 0
+      },
+      "format_accepted": {
+        "pass": 0,
+        "fail": 3,
+        "na": 0
+      }
+    }
+  }
+}

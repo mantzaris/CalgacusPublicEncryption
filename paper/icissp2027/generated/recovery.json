@@ -1,0 +1,349 @@
+[
+  {
+    "stage": 6,
+    "method": "Calgacus",
+    "payload_bytes": 32,
+    "attempted": 4,
+    "recovered": 2,
+    "independent_replays": 0,
+    "exact_replays": 0,
+    "delivered_token_min": 95,
+    "delivered_token_max": 102,
+    "success_bits_per_token": 2.602270381836945,
+    "attempt_mean_bits_per_token": 1.3011351909184725,
+    "bytes_per_inclusive_second": 0.46688611902404314,
+    "mean_job_seconds": 34.269598833749114,
+    "encode_seconds": 6.279343829999561,
+    "receive_seconds": 6.252983575750477,
+    "score_seconds": 6.616430109749672,
+    "evaluated_tokens": 2563,
+    "failures": {
+      "tokenization_serialization_drift": 2
+    },
+    "attempt_ids": [
+      "407ce1fb-6006-4265-a94f-b66238b4955e",
+      "1d6c87c8-f6a9-4499-bcb3-a3319642fc45",
+      "55329715-5b19-4dd5-b737-9ed4441490ab",
+      "d8d04eb5-3e51-4eb5-87f4-095181665598"
+    ],
+    "gpu_revisions": [
+      "404904dfd9d8a44212db1bc42ba1a54a83cbb48c"
+    ]
+  },
+  {
+    "stage": 6,
+    "method": "Calgacus",
+    "payload_bytes": 128,
+    "attempted": 4,
+    "recovered": 2,
+    "independent_replays": 0,
+    "exact_replays": 0,
+    "delivered_token_min": 184,
+    "delivered_token_max": 193,
+    "success_bits_per_token": 5.435458436584817,
+    "attempt_mean_bits_per_token": 2.7177292182924084,
+    "bytes_per_inclusive_second": 1.2466179700709958,
+    "mean_job_seconds": 51.338903767250486,
+    "encode_seconds": 11.73080895449948,
+    "receive_seconds": 11.701754530500693,
+    "score_seconds": 12.683209270499901,
+    "evaluated_tokens": 4731,
+    "failures": {
+      "tokenization_serialization_drift": 2
+    },
+    "attempt_ids": [
+      "04b3bbbe-f99f-47eb-8bcb-f6c8abddb0a7",
+      "4f558ed6-6ac8-4bde-a5b4-a7a4914ce7ff",
+      "f27d2b89-d9f0-4f83-b453-e5acfb7c4cf5",
+      "f48b6571-c829-4f6e-96cb-f5c9c5c07b5e"
+    ],
+    "gpu_revisions": [
+      "404904dfd9d8a44212db1bc42ba1a54a83cbb48c"
+    ]
+  },
+  {
+    "stage": 6,
+    "method": "L",
+    "payload_bytes": 32,
+    "attempted": 8,
+    "recovered": 8,
+    "independent_replays": 2,
+    "exact_replays": 2,
+    "delivered_token_min": 208,
+    "delivered_token_max": 208,
+    "success_bits_per_token": 1.2307692307692308,
+    "attempt_mean_bits_per_token": 1.2307692307692308,
+    "bytes_per_inclusive_second": 0.8506021915709887,
+    "mean_job_seconds": 37.62040624524934,
+    "encode_seconds": 7.372794309999335,
+    "receive_seconds": 7.336116981623945,
+    "score_seconds": 7.592320301124801,
+    "evaluated_tokens": 5262,
+    "failures": {},
+    "attempt_ids": [
+      "f0a66d6b-c08a-4fba-9d2e-d0ecee09b294",
+      "5a45929b-e342-40e7-8f73-5473ddbc131b",
+      "393e27bd-fa1c-4265-aebb-7d7b8013da34",
+      "47a722fe-1d7b-42e6-b942-7581d18f6dff",
+      "8f0bdbd8-0e76-430d-86f7-513cec6a3946",
+      "ecd4f2f2-0b57-4813-95f5-8dd93526803a",
+      "643b943d-901a-4118-a75c-0ea46c67802c",
+      "0dc1583f-2ed3-4c20-b0fa-0a27ddfe39d5"
+    ],
+    "gpu_revisions": [
+      "404904dfd9d8a44212db1bc42ba1a54a83cbb48c"
+    ]
+  },
+  {
+    "stage": 6,
+    "method": "L",
+    "payload_bytes": 128,
+    "attempted": 8,
+    "recovered": 8,
+    "independent_replays": 2,
+    "exact_replays": 2,
+    "delivered_token_min": 400,
+    "delivered_token_max": 400,
+    "success_bits_per_token": 2.56,
+    "attempt_mean_bits_per_token": 2.56,
+    "bytes_per_inclusive_second": 2.070929271269972,
+    "mean_job_seconds": 61.80800173899979,
+    "encode_seconds": 15.406896902499284,
+    "receive_seconds": 15.367074218999733,
+    "score_seconds": 15.864856864124704,
+    "evaluated_tokens": 9870,
+    "failures": {},
+    "attempt_ids": [
+      "4717ca65-63cc-49b3-a184-43d0c4864e26",
+      "7c476879-6c19-432f-b638-0e0688109088",
+      "450b03c1-14b3-4e6e-bb02-6dbdef1534e0",
+      "be084141-4efa-4231-ac0e-b9306ea8c4bc",
+      "75f73e5e-a754-49c2-bb2c-be2524399046",
+      "5a38e9bc-63b5-44d9-ad73-5eab98859253",
+      "d260dc4d-3328-4186-aa90-90c2cd4d9893",
+      "d802d176-a62d-4178-9fa8-03135203a78a"
+    ],
+    "gpu_revisions": [
+      "404904dfd9d8a44212db1bc42ba1a54a83cbb48c"
+    ]
+  },
+  {
+    "stage": 6,
+    "method": "F",
+    "payload_bytes": 32,
+    "attempted": 8,
+    "recovered": 8,
+    "independent_replays": 2,
+    "exact_replays": 2,
+    "delivered_token_min": 200,
+    "delivered_token_max": 200,
+    "success_bits_per_token": 1.28,
+    "attempt_mean_bits_per_token": 1.28,
+    "bytes_per_inclusive_second": 0.8757507944304306,
+    "mean_job_seconds": 36.54007533137565,
+    "encode_seconds": 7.05043431175136,
+    "receive_seconds": 7.013736475625137,
+    "score_seconds": 7.264773768125451,
+    "evaluated_tokens": 5070,
+    "failures": {},
+    "attempt_ids": [
+      "5b854e0d-4225-4829-8a3b-43a44c835df4",
+      "f4ff60f4-ba0b-40d9-bc98-74ebabbe8413",
+      "14834e00-bf27-4cbc-9d3a-2434e0d3a5d2",
+      "f43dedf5-4ef5-4c31-b55c-416726c28661",
+      "e067c247-4d13-417b-8322-c360b6f70fde",
+      "a3473798-4ec1-4351-baed-fe40f1ad6cfd",
+      "895b8b55-da7b-4497-8591-ec4af7104716",
+      "95313d58-a7e3-4769-aec5-48bfde24d12f"
+    ],
+    "gpu_revisions": [
+      "404904dfd9d8a44212db1bc42ba1a54a83cbb48c"
+    ]
+  },
+  {
+    "stage": 6,
+    "method": "F",
+    "payload_bytes": 128,
+    "attempted": 8,
+    "recovered": 8,
+    "independent_replays": 2,
+    "exact_replays": 2,
+    "delivered_token_min": 392,
+    "delivered_token_max": 392,
+    "success_bits_per_token": 2.6122448979591835,
+    "attempt_mean_bits_per_token": 2.6122448979591835,
+    "bytes_per_inclusive_second": 2.1071596621541975,
+    "mean_job_seconds": 60.7452782524997,
+    "encode_seconds": 15.025564620000296,
+    "receive_seconds": 14.984629987374774,
+    "score_seconds": 15.454378411125617,
+    "evaluated_tokens": 9678,
+    "failures": {},
+    "attempt_ids": [
+      "1df95187-e3e3-4979-9620-59feaa711ffc",
+      "950df0d3-d96b-4436-b629-f5a8c83ce95e",
+      "74fb8ef2-bd30-49aa-a1b5-ea298383b932",
+      "12466c7a-3e92-4f12-b5c3-d75fa0b789a3",
+      "782d1886-aed3-43d0-aef6-0baa9f894b32",
+      "5720171c-92b5-4973-84dc-7b24c6080e43",
+      "b980eda4-41fb-4d02-9629-b1f0ef844239",
+      "a8633a8f-6057-4844-b6a7-2cd71cc09aa0"
+    ],
+    "gpu_revisions": [
+      "404904dfd9d8a44212db1bc42ba1a54a83cbb48c"
+    ]
+  },
+  {
+    "stage": 8,
+    "method": "F",
+    "payload_bytes": 32,
+    "attempted": 4,
+    "recovered": 4,
+    "independent_replays": 2,
+    "exact_replays": 2,
+    "delivered_token_min": 200,
+    "delivered_token_max": 200,
+    "success_bits_per_token": 1.28,
+    "attempt_mean_bits_per_token": 1.28,
+    "bytes_per_inclusive_second": 0.8631458373904991,
+    "mean_job_seconds": 37.07368860949828,
+    "encode_seconds": 7.061927942249895,
+    "receive_seconds": 7.034144338498663,
+    "score_seconds": 7.3131664722504865,
+    "evaluated_tokens": 2535,
+    "failures": {},
+    "attempt_ids": [
+      "2ebb48fc-25bd-44f2-b246-fc757074ee41",
+      "07c09f07-b57a-4ff1-9189-b4115a7ddf56",
+      "0955c817-980e-479d-9bad-3234f8fe04ff",
+      "a3eacab9-0b1a-4f6c-a61f-a3d5e84c9ad3"
+    ],
+    "gpu_revisions": [
+      "78617213825f1163b3692f698e1063ba32a7de73"
+    ]
+  },
+  {
+    "stage": 8,
+    "method": "F",
+    "payload_bytes": 128,
+    "attempted": 4,
+    "recovered": 4,
+    "independent_replays": 2,
+    "exact_replays": 2,
+    "delivered_token_min": 392,
+    "delivered_token_max": 392,
+    "success_bits_per_token": 2.6122448979591835,
+    "attempt_mean_bits_per_token": 2.6122448979591835,
+    "bytes_per_inclusive_second": 2.1092736303855797,
+    "mean_job_seconds": 60.68439777374988,
+    "encode_seconds": 14.969391565749902,
+    "receive_seconds": 14.962001249249624,
+    "score_seconds": 15.45476503224927,
+    "evaluated_tokens": 4839,
+    "failures": {},
+    "attempt_ids": [
+      "5c24964a-b777-4e55-8b7b-7f3811a1de56",
+      "86619577-96b5-4881-9316-ac1984b33afc",
+      "09d821ef-474b-49ab-ae90-e7314357e7a1",
+      "bbdf6362-0e79-4fd4-a294-104828ef080b"
+    ],
+    "gpu_revisions": [
+      "78617213825f1163b3692f698e1063ba32a7de73"
+    ]
+  },
+  {
+    "stage": 8,
+    "method": "R",
+    "payload_bytes": 32,
+    "attempted": 4,
+    "recovered": 2,
+    "independent_replays": 1,
+    "exact_replays": 1,
+    "delivered_token_min": 563,
+    "delivered_token_max": 1783,
+    "success_bits_per_token": 0.2991425830495035,
+    "attempt_mean_bits_per_token": 0.14957129152475174,
+    "bytes_per_inclusive_second": 0.08628827724166017,
+    "mean_job_seconds": 185.42495587425128,
+    "encode_seconds": 100.8971562347524,
+    "receive_seconds": 68.28444233649861,
+    "score_seconds": 69.82202183600384,
+    "evaluated_tokens": 11093,
+    "failures": {
+      "capacity_exhaustion": 2
+    },
+    "attempt_ids": [
+      "5ec8f275-1410-47ea-bb23-f28256f90198",
+      "2156c164-3e4d-4f8e-b95c-700af9cf2e0e",
+      "1bc4be9e-5f41-4a60-97e4-65928514ce13",
+      "1cd9b4a9-6ef0-456e-aaa5-afc6f7e8c6fc"
+    ],
+    "gpu_revisions": [
+      "78617213825f1163b3692f698e1063ba32a7de73"
+    ]
+  },
+  {
+    "stage": 8,
+    "method": "R",
+    "payload_bytes": 128,
+    "attempted": 4,
+    "recovered": 0,
+    "independent_replays": 0,
+    "exact_replays": 0,
+    "delivered_token_min": null,
+    "delivered_token_max": null,
+    "success_bits_per_token": null,
+    "attempt_mean_bits_per_token": 0.0,
+    "bytes_per_inclusive_second": 0.0,
+    "mean_job_seconds": 151.02883847199973,
+    "encode_seconds": 135.66996787599965,
+    "receive_seconds": null,
+    "score_seconds": null,
+    "evaluated_tokens": 7981,
+    "failures": {
+      "capacity_exhaustion": 4
+    },
+    "attempt_ids": [
+      "f23d7a1b-1a1a-4d92-a9ff-6c9ba5cedd9d",
+      "2b8f20f0-7f88-49cc-9804-30e91f12604c",
+      "5a149330-3020-4559-b54f-672c3ee94b06",
+      "c560b990-1609-4f2a-9472-b0176e90dbe4"
+    ],
+    "gpu_revisions": [
+      "78617213825f1163b3692f698e1063ba32a7de73"
+    ]
+  },
+  {
+    "stage": 9,
+    "method": "R",
+    "payload_bytes": 32,
+    "attempted": 6,
+    "recovered": 4,
+    "independent_replays": 2,
+    "exact_replays": 2,
+    "delivered_token_min": 752,
+    "delivered_token_max": 905,
+    "success_bits_per_token": 0.3069936316211732,
+    "attempt_mean_bits_per_token": 0.20466242108078217,
+    "bytes_per_inclusive_second": 0.15066175517788138,
+    "mean_job_seconds": 141.59753620383466,
+    "encode_seconds": 73.73694005666646,
+    "receive_seconds": 38.727187319500445,
+    "score_seconds": 39.650152752001304,
+    "evaluated_tokens": 14147,
+    "failures": {
+      "capacity_exhaustion": 2
+    },
+    "attempt_ids": [
+      "e7615a99-6bba-42a1-8303-92f1b0365ade",
+      "a7068080-bac5-4eae-a3aa-75543980fe64",
+      "04b7b69a-9b1c-4097-b2ff-8b5bade8d385",
+      "92d74510-a457-4f1b-bb01-0c78cdc0e187",
+      "a2b400e3-3b75-4947-b95e-8d0e65ada9da",
+      "2a68aaf4-e91f-4f19-a426-f55a22182442"
+    ],
+    "gpu_revisions": [
+      "a0e790647fe1b8dc052d9ac568b0733d25e309f7"
+    ]
+  }
+]

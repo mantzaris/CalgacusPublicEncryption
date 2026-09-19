@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "pages": 12,
+  "abstract_words": 173,
+  "pdf_nonwhitespace_nfkc_characters": 42732,
+  "layout_extraction_nonwhitespace_nfkc_characters": 43003,
+  "figure_labels": {
+    "figure1_protocol": {
+      "label_inventory_nonspace_characters": 460,
+      "pdf_extracted_nonspace_characters": 460
+    },
+    "figure2_capacity": {
+      "label_inventory_nonspace_characters": 259,
+      "pdf_extracted_nonspace_characters": 251
+    },
+    "figure3_stopping": {
+      "label_inventory_nonspace_characters": 279,
+      "pdf_extracted_nonspace_characters": 279
+    },
+    "figure4_scores": {
+      "label_inventory_nonspace_characters": 402,
+      "pdf_extracted_nonspace_characters": 376
+    }
+  },
+  "possibly_missing_labels": {
+    "figure1_protocol": [],
+    "figure2_capacity": [],
+    "figure3_stopping": [],
+    "figure4_scores": [
+      "1.75",
+      "1.75",
+      "1.75"
+    ]
+  },
+  "additional_possible_missing_label_characters": 12,
+  "visible_estimate_with_missing_labels": 42744,
+  "conservative_screening_upper_bound": 44987,
+  "conservative_headroom_below_50000": 5013,
+  "method": "NFKC-normalized non-whitespace Unicode characters from pdftotext of complete PDF. Includes title, abstract, prose, tables, captions, citations, references and extracted vector labels. Unmatched label strings are charged separately. Upper screening bound additionally charges every figure label again, then 2% of extracted content for possible extraction discrepancies. No LaTeX commands counted. Not the official submission-system count.",
+  "figure_count": 4,
+  "table_count": 3,
+  "examples": 2,
+  "historical_files_unchanged": 3043,
+  "ledger_unchanged": true,
+  "ledger_sha256": "e6df99cf56ac526bd38f1f92de2c65921b24e6c6f8045484d546242c660a51ae",
+  "checkpoint_sha256": "d3cb42aa290bf64e4d0625e1a5b8625f5e88e728dcb7dec8e66758f6c711251a",
+  "pdf_sha256": "0bd5da5ec7559b40dc077a8775b7b4c88e71602892dde96435e4925d79d19d09",
+  "template_files_unchanged": true,
+  "anonymity_checks": "No author/affiliation/personal-repository/test-key strings in rendered text; author, creator, producer, keywords and subject metadata blank.",
+  "build_checks": "No undefined citations/references, overfull boxes or LaTeX errors.",
+  "inference_jobs": 0,
+  "experimental_cases": 0
+}
