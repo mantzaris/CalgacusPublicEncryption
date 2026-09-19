@@ -1,0 +1,34 @@
+{
+  "additional_limits": {
+    "cases": 88,
+    "seconds": 10800,
+    "tokens": 230000
+  },
+  "allocation_id": "stage8_capacity_comparison_2026-09-18",
+  "authority": "Explicit user Stage8 subset of remaining Stage7 allocation; 10800 seconds / 230000 evaluated tokens / 88 attempts; lifetime ceilings unchanged",
+  "baseline_usage": {
+    "cases": 218,
+    "seconds": 7995.272036779985,
+    "tokens": 131859
+  },
+  "lifetime_limits": {
+    "cases": 342,
+    "seconds": 21941.884885362982,
+    "tokens": 424994
+  },
+  "parent_authorization_path": "configs/stage7/authorization.json",
+  "parent_authorization_sha256": "965cdbd9dd6a482f9a1ab4ab7a4c539c8017aec7d6278308a747d92006bcc8fd",
+  "previous_checkpoint": {
+    "bytes": 116766,
+    "limits": {
+      "cases": 342,
+      "seconds": 21941.884885362982,
+      "tokens": 424994
+    },
+    "schema_version": 1,
+    "sha256": "64e752c7c0ad3816e3a499ace125cacb0ae553f3e0840dedfbcf4c38a2386083"
+  },
+  "schema_version": 1,
+  "scope": "suballocation; no lifetime increase",
+  "starting_commit": "e55680169ef7c0e7110bfaddc0b5392e28419bb8"
+}

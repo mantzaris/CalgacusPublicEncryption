@@ -1,0 +1,1633 @@
+{
+  "additional_limits": {
+    "cases": 88,
+    "seconds": 10800,
+    "tokens": 230000
+  },
+  "analysis_spec_path": "docs/stage8_study_spec.md",
+  "analysis_spec_sha256": "e85bb51d0ed7fb4e94da79d5297234e63d00048384b67b40456ece2091336ed0",
+  "authorization_sha256": "2130ef2e808c52ae265d84b557137166171a69cb2ef0d49e36bb0a02753bdc4d",
+  "baseline_usage": {
+    "cases": 218,
+    "seconds": 7995.272036779985,
+    "tokens": 131859
+  },
+  "candidate_main_cases": 72,
+  "carrier_ceiling": 1984,
+  "control_length_assignment": "delivered received token count; failed source fallback1984 R /200 or392 F; no omission",
+  "diagnostic_cases": 8,
+  "key_assignment": "2*context+(payload==128); eight independent keys; group repeats together",
+  "lifetime_limits": {
+    "cases": 342,
+    "seconds": 21941.884885362982,
+    "tokens": 424994
+  },
+  "main_release": "only after qualification and committed conservative resource forecast; symmetric reduction allowed before main",
+  "possible_main_repetitions": [
+    2,
+    1
+  ],
+  "replay_policy": "fixed sources, unavailable slots unused; diagnostic HPKE first",
+  "retries": 0,
+  "schema_version": 1,
+  "slots": [
+    {
+      "case_id": "diagnostic-qual-synthetic-32",
+      "context_index": 0,
+      "historical_attempt_id": "a3c3f629-aafa-4468-a29b-93286e001878",
+      "kind": "fixture",
+      "method": "R",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "reservation": [
+        360,
+        4200
+      ],
+      "split": "repeated_historical_packet_development_only",
+      "stage8_phase": "diagnostic"
+    },
+    {
+      "case_id": "diagnostic-qual-synthetic-128",
+      "context_index": 1,
+      "historical_attempt_id": "b2ce8a41-05b8-4e45-8bc7-5227259a5088",
+      "kind": "fixture",
+      "method": "R",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "reservation": [
+        360,
+        4200
+      ],
+      "split": "repeated_historical_packet_development_only",
+      "stage8_phase": "diagnostic"
+    },
+    {
+      "case_id": "diagnostic-qual-HPKE-32",
+      "context_index": 2,
+      "historical_attempt_id": "ff102c4b-aa49-483b-978d-f917db167a3a",
+      "kind": "fixture",
+      "method": "R",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "reservation": [
+        360,
+        4200
+      ],
+      "split": "repeated_historical_packet_development_only",
+      "stage8_phase": "diagnostic"
+    },
+    {
+      "case_id": "diagnostic-qual-HPKE-128",
+      "context_index": 3,
+      "historical_attempt_id": "42446993-c808-40ef-b9b4-6e74deb256d1",
+      "kind": "fixture",
+      "method": "R",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "reservation": [
+        360,
+        4200
+      ],
+      "split": "repeated_historical_packet_development_only",
+      "stage8_phase": "diagnostic"
+    },
+    {
+      "case_id": "diagnostic-replay-qual-HPKE-32",
+      "context_index": 2,
+      "historical_attempt_id": "ff102c4b-aa49-483b-978d-f917db167a3a",
+      "kind": "replay",
+      "method": "R",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "reservation": [
+        210,
+        2100
+      ],
+      "source_case_id": "diagnostic-qual-HPKE-32",
+      "split": "repeated_historical_packet_development_only",
+      "stage8_phase": "diagnostic"
+    },
+    {
+      "case_id": "diagnostic-replay-qual-HPKE-128",
+      "context_index": 3,
+      "historical_attempt_id": "42446993-c808-40ef-b9b4-6e74deb256d1",
+      "kind": "replay",
+      "method": "R",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "reservation": [
+        210,
+        2100
+      ],
+      "source_case_id": "diagnostic-qual-HPKE-128",
+      "split": "repeated_historical_packet_development_only",
+      "stage8_phase": "diagnostic"
+    },
+    {
+      "case_id": "diagnostic-replay-qual-synthetic-32",
+      "context_index": 0,
+      "historical_attempt_id": "a3c3f629-aafa-4468-a29b-93286e001878",
+      "kind": "replay",
+      "method": "R",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "reservation": [
+        210,
+        2100
+      ],
+      "source_case_id": "diagnostic-qual-synthetic-32",
+      "split": "repeated_historical_packet_development_only",
+      "stage8_phase": "diagnostic"
+    },
+    {
+      "case_id": "diagnostic-replay-qual-synthetic-128",
+      "context_index": 1,
+      "historical_attempt_id": "b2ce8a41-05b8-4e45-8bc7-5227259a5088",
+      "kind": "replay",
+      "method": "R",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "reservation": [
+        210,
+        2100
+      ],
+      "source_case_id": "diagnostic-qual-synthetic-128",
+      "split": "repeated_historical_packet_development_only",
+      "stage8_phase": "diagnostic"
+    },
+    {
+      "case_id": "F-c0-n32-r0",
+      "context_index": 0,
+      "key_index": 0,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c0-n32-r0",
+      "payload_bytes": 32,
+      "payload_hex": "b69d2d201b49eab022a931dd3ca00d3225ec6a1150ace9a851172291f4766856",
+      "payload_sha256": "27fedf62b7eb0791bf6d51dddc81bb855b374641dc927eebf15c6e6e7b6dc003",
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "repetition": 0,
+      "reservation": [
+        90,
+        900
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c0-n32-r0",
+      "context_index": 0,
+      "key_index": 0,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c0-n32-r0",
+      "payload_bytes": 32,
+      "payload_hex": "b69d2d201b49eab022a931dd3ca00d3225ec6a1150ace9a851172291f4766856",
+      "payload_sha256": "27fedf62b7eb0791bf6d51dddc81bb855b374641dc927eebf15c6e6e7b6dc003",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "repetition": 0,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c0-n32-r1",
+      "context_index": 0,
+      "key_index": 0,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c0-n32-r1",
+      "payload_bytes": 32,
+      "payload_hex": "589bfb019174d498695cffb7aeef34d04c699c8d0a02ce92174635c626a08862",
+      "payload_sha256": "1f877ab39216c60ad8705efe8ba2eda518ac19faec2afecfd57c47e5f0b8d5d5",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "repetition": 1,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c0-n32-r1",
+      "context_index": 0,
+      "key_index": 0,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c0-n32-r1",
+      "payload_bytes": 32,
+      "payload_hex": "589bfb019174d498695cffb7aeef34d04c699c8d0a02ce92174635c626a08862",
+      "payload_sha256": "1f877ab39216c60ad8705efe8ba2eda518ac19faec2afecfd57c47e5f0b8d5d5",
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "repetition": 1,
+      "reservation": [
+        90,
+        900
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c0-n128-r0",
+      "context_index": 0,
+      "key_index": 1,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c0-n128-r0",
+      "payload_bytes": 128,
+      "payload_hex": "e29920ac6b6f988dae8bb25d3b524fec07533a187d9e1697d44c552547551d64af6f458054fbf42512255e0d6ac5d7795f2b70e2dd0ab5af434901e4449fc8262139e077dc92001feb672dce6440e449e3c5543d8289baebf3c4844add85fcb1742d3161759732462cbe79ff279109513afba1c2dc5e2e679daff2046316bedc",
+      "payload_sha256": "cae7f1d2612c0ed0cbc3c2d753779ab960844474d914d9f7fc91e33be69181fe",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "repetition": 0,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c0-n128-r0",
+      "context_index": 0,
+      "key_index": 1,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c0-n128-r0",
+      "payload_bytes": 128,
+      "payload_hex": "e29920ac6b6f988dae8bb25d3b524fec07533a187d9e1697d44c552547551d64af6f458054fbf42512255e0d6ac5d7795f2b70e2dd0ab5af434901e4449fc8262139e077dc92001feb672dce6440e449e3c5543d8289baebf3c4844add85fcb1742d3161759732462cbe79ff279109513afba1c2dc5e2e679daff2046316bedc",
+      "payload_sha256": "cae7f1d2612c0ed0cbc3c2d753779ab960844474d914d9f7fc91e33be69181fe",
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "repetition": 0,
+      "reservation": [
+        120,
+        1500
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c0-n128-r1",
+      "context_index": 0,
+      "key_index": 1,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c0-n128-r1",
+      "payload_bytes": 128,
+      "payload_hex": "747cc44f7ff3c7e1b28e69fd2db6f968f6a3cc24d5a0484d6c54330f322740d56f7baaafc0a08bc44023797cf5f475196ce1a8dd8520a56e242463841c9f4dd3d3b5f26bb93e8649c62f647aac54e0359d9d6c8eb228b76b2f4f9ff652c4f94989bf7c4823728f4999367c50b3beaeef533a504d8eb0a5d670c33301aa4f45d2",
+      "payload_sha256": "8ba7cebba4d0a75fc99feae1bcf0f93e6f6aa4c132078b2bae376824e5de4390",
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "repetition": 1,
+      "reservation": [
+        120,
+        1500
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c0-n128-r1",
+      "context_index": 0,
+      "key_index": 1,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c0-n128-r1",
+      "payload_bytes": 128,
+      "payload_hex": "747cc44f7ff3c7e1b28e69fd2db6f968f6a3cc24d5a0484d6c54330f322740d56f7baaafc0a08bc44023797cf5f475196ce1a8dd8520a56e242463841c9f4dd3d3b5f26bb93e8649c62f647aac54e0359d9d6c8eb228b76b2f4f9ff652c4f94989bf7c4823728f4999367c50b3beaeef533a504d8eb0a5d670c33301aa4f45d2",
+      "payload_sha256": "8ba7cebba4d0a75fc99feae1bcf0f93e6f6aa4c132078b2bae376824e5de4390",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "repetition": 1,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c1-n32-r0",
+      "context_index": 1,
+      "key_index": 2,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c1-n32-r0",
+      "payload_bytes": 32,
+      "payload_hex": "17230cdc9f78ee289dd4b53a7c5f6cdb4b1e0bba4118ed4eba80ae7375a265b2",
+      "payload_sha256": "7e421217f9c97a952ec725798cf1123e9b5773cbbdd88b569ea05432c66bb1e9",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "repetition": 0,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c1-n32-r0",
+      "context_index": 1,
+      "key_index": 2,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c1-n32-r0",
+      "payload_bytes": 32,
+      "payload_hex": "17230cdc9f78ee289dd4b53a7c5f6cdb4b1e0bba4118ed4eba80ae7375a265b2",
+      "payload_sha256": "7e421217f9c97a952ec725798cf1123e9b5773cbbdd88b569ea05432c66bb1e9",
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "repetition": 0,
+      "reservation": [
+        90,
+        900
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c1-n32-r1",
+      "context_index": 1,
+      "key_index": 2,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c1-n32-r1",
+      "payload_bytes": 32,
+      "payload_hex": "bfa70910bd0b491446d5096377a28f54977c2fde39e549f67cbb6c4a1f247bb6",
+      "payload_sha256": "94fe3d6e744ad75f6d3e5fd484bea9261590edfa1b55189c9285a1a4a1ea403f",
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "repetition": 1,
+      "reservation": [
+        90,
+        900
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c1-n32-r1",
+      "context_index": 1,
+      "key_index": 2,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c1-n32-r1",
+      "payload_bytes": 32,
+      "payload_hex": "bfa70910bd0b491446d5096377a28f54977c2fde39e549f67cbb6c4a1f247bb6",
+      "payload_sha256": "94fe3d6e744ad75f6d3e5fd484bea9261590edfa1b55189c9285a1a4a1ea403f",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "repetition": 1,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c1-n128-r0",
+      "context_index": 1,
+      "key_index": 3,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c1-n128-r0",
+      "payload_bytes": 128,
+      "payload_hex": "9eabb073b0940259afe6f79a3165a81166c2fc018396ddff8d4951df1749ecab8bc6ef77ef82eb89a084c35fc880f0a0c93e67ea49245ee430e381917c07119469a0a4a99e0084c9f74eb3d98344656a46dfc3ef7122fbd934e687e147c4bbeb473d98e4c695f7b25bb2eb864f3188b51fcb7419cadf7b1d7a3301aca9c79ece",
+      "payload_sha256": "3a28f683ed07aeb65da323f1a4af27648f2c17502eed2ca32aae4c5ac1928b21",
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "repetition": 0,
+      "reservation": [
+        120,
+        1500
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c1-n128-r0",
+      "context_index": 1,
+      "key_index": 3,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c1-n128-r0",
+      "payload_bytes": 128,
+      "payload_hex": "9eabb073b0940259afe6f79a3165a81166c2fc018396ddff8d4951df1749ecab8bc6ef77ef82eb89a084c35fc880f0a0c93e67ea49245ee430e381917c07119469a0a4a99e0084c9f74eb3d98344656a46dfc3ef7122fbd934e687e147c4bbeb473d98e4c695f7b25bb2eb864f3188b51fcb7419cadf7b1d7a3301aca9c79ece",
+      "payload_sha256": "3a28f683ed07aeb65da323f1a4af27648f2c17502eed2ca32aae4c5ac1928b21",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "repetition": 0,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c1-n128-r1",
+      "context_index": 1,
+      "key_index": 3,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c1-n128-r1",
+      "payload_bytes": 128,
+      "payload_hex": "9c464a8f241d82f52649dd5cde51e3fc3ad3fdc5ba34be5a2b9fa051af544d2c0019731864bc5714f0b547540be405a91c4874f082e88ca580e60eff63cea2030645e4b1fd9de12376d9d9d4ecebd4ef1bacfeff1e1b2b8eec95e93a4a7a57b25a0c8b57c8d150654464a4c93df8893b13b4a16707e2d7024eb337f06c62025a",
+      "payload_sha256": "fb8ab4e19320448088fa16e3592a502f76e363d39cb9f3c546609b98c181dc5d",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "repetition": 1,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c1-n128-r1",
+      "context_index": 1,
+      "key_index": 3,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c1-n128-r1",
+      "payload_bytes": 128,
+      "payload_hex": "9c464a8f241d82f52649dd5cde51e3fc3ad3fdc5ba34be5a2b9fa051af544d2c0019731864bc5714f0b547540be405a91c4874f082e88ca580e60eff63cea2030645e4b1fd9de12376d9d9d4ecebd4ef1bacfeff1e1b2b8eec95e93a4a7a57b25a0c8b57c8d150654464a4c93df8893b13b4a16707e2d7024eb337f06c62025a",
+      "payload_sha256": "fb8ab4e19320448088fa16e3592a502f76e363d39cb9f3c546609b98c181dc5d",
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "repetition": 1,
+      "reservation": [
+        120,
+        1500
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c2-n32-r0",
+      "context_index": 2,
+      "key_index": 4,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c2-n32-r0",
+      "payload_bytes": 32,
+      "payload_hex": "28a42954df0b4d7fca015cf94b7de7ef776be87b83577acf52d2783b428f4206",
+      "payload_sha256": "baed760ca272344456d3eaa6254d2344ca01d21c1860e90d1f2017d4308c586c",
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "repetition": 0,
+      "reservation": [
+        90,
+        900
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c2-n32-r0",
+      "context_index": 2,
+      "key_index": 4,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c2-n32-r0",
+      "payload_bytes": 32,
+      "payload_hex": "28a42954df0b4d7fca015cf94b7de7ef776be87b83577acf52d2783b428f4206",
+      "payload_sha256": "baed760ca272344456d3eaa6254d2344ca01d21c1860e90d1f2017d4308c586c",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "repetition": 0,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c2-n32-r1",
+      "context_index": 2,
+      "key_index": 4,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c2-n32-r1",
+      "payload_bytes": 32,
+      "payload_hex": "880a6fdd84f81d0787242d5475fd62760946cb2bddde139f09c3beaf571e1f05",
+      "payload_sha256": "f6dbc535364bd04370e01bd3817ffdf46049420f9a3afa28cf6c690b883e4885",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "repetition": 1,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c2-n32-r1",
+      "context_index": 2,
+      "key_index": 4,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c2-n32-r1",
+      "payload_bytes": 32,
+      "payload_hex": "880a6fdd84f81d0787242d5475fd62760946cb2bddde139f09c3beaf571e1f05",
+      "payload_sha256": "f6dbc535364bd04370e01bd3817ffdf46049420f9a3afa28cf6c690b883e4885",
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "repetition": 1,
+      "reservation": [
+        90,
+        900
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c2-n128-r0",
+      "context_index": 2,
+      "key_index": 5,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c2-n128-r0",
+      "payload_bytes": 128,
+      "payload_hex": "c70922c96aadf3e198d64f273ae71dab45ba56bf5c687f639756468e3ad1c50f55076b66499d8be87511c0b4595abe5d4f96ab7f87db7cd0cc0b5966b39f769e135261669a25250dbd747c0faad95683d226f068a6f4a9a1086004fc1dff63ddd13e3171b2a05d791f199bed8f92050a7206736125ed50893f6b45382497882b",
+      "payload_sha256": "02adaabc3597966fb6d41803e9570b178f7b27daa11eee70e74863673c17e648",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "repetition": 0,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c2-n128-r0",
+      "context_index": 2,
+      "key_index": 5,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c2-n128-r0",
+      "payload_bytes": 128,
+      "payload_hex": "c70922c96aadf3e198d64f273ae71dab45ba56bf5c687f639756468e3ad1c50f55076b66499d8be87511c0b4595abe5d4f96ab7f87db7cd0cc0b5966b39f769e135261669a25250dbd747c0faad95683d226f068a6f4a9a1086004fc1dff63ddd13e3171b2a05d791f199bed8f92050a7206736125ed50893f6b45382497882b",
+      "payload_sha256": "02adaabc3597966fb6d41803e9570b178f7b27daa11eee70e74863673c17e648",
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "repetition": 0,
+      "reservation": [
+        120,
+        1500
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c2-n128-r1",
+      "context_index": 2,
+      "key_index": 5,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c2-n128-r1",
+      "payload_bytes": 128,
+      "payload_hex": "355dde5fba0439e7e2c54b5aeb9171de4e52e90d52e207f410c3e7e453963743453bc9ed08d766ac1d4b66509d254fd6a8ceaa5064fc8980ce47e48d82d9be77ea3dc4030e1098ba6c82c511db3c4b9aa43f96cba2383a51a1b0e8bf0f6fbe2adaf6cbe283ef4d86b194ffbfc3d03c44ff7ab32bcc174c52f25733c779c0116a",
+      "payload_sha256": "356b9815944ee3aabe57d0aa3e570128068cc402f32bf0ad929cf39900c971d4",
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "repetition": 1,
+      "reservation": [
+        120,
+        1500
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c2-n128-r1",
+      "context_index": 2,
+      "key_index": 5,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c2-n128-r1",
+      "payload_bytes": 128,
+      "payload_hex": "355dde5fba0439e7e2c54b5aeb9171de4e52e90d52e207f410c3e7e453963743453bc9ed08d766ac1d4b66509d254fd6a8ceaa5064fc8980ce47e48d82d9be77ea3dc4030e1098ba6c82c511db3c4b9aa43f96cba2383a51a1b0e8bf0f6fbe2adaf6cbe283ef4d86b194ffbfc3d03c44ff7ab32bcc174c52f25733c779c0116a",
+      "payload_sha256": "356b9815944ee3aabe57d0aa3e570128068cc402f32bf0ad929cf39900c971d4",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "repetition": 1,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c3-n32-r0",
+      "context_index": 3,
+      "key_index": 6,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c3-n32-r0",
+      "payload_bytes": 32,
+      "payload_hex": "08987ac9b4587726e35098af1b1c6417ba1fe3f11a129b68f5ca5860e5657b8e",
+      "payload_sha256": "4b5646d7b6caca3acb6090687fa6b6da1c590bc1aae7e5631e493f802a40130f",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "repetition": 0,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c3-n32-r0",
+      "context_index": 3,
+      "key_index": 6,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c3-n32-r0",
+      "payload_bytes": 32,
+      "payload_hex": "08987ac9b4587726e35098af1b1c6417ba1fe3f11a129b68f5ca5860e5657b8e",
+      "payload_sha256": "4b5646d7b6caca3acb6090687fa6b6da1c590bc1aae7e5631e493f802a40130f",
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "repetition": 0,
+      "reservation": [
+        90,
+        900
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c3-n32-r1",
+      "context_index": 3,
+      "key_index": 6,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c3-n32-r1",
+      "payload_bytes": 32,
+      "payload_hex": "6ae7682b290e6f9328cac61e66d7cceb8fbc8df4c61786615711c3309bc05a61",
+      "payload_sha256": "f97cbb0fcb2650836eea80ff983392c3be16b5213149fd1a630a202244ea0768",
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "repetition": 1,
+      "reservation": [
+        90,
+        900
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c3-n32-r1",
+      "context_index": 3,
+      "key_index": 6,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c3-n32-r1",
+      "payload_bytes": 32,
+      "payload_hex": "6ae7682b290e6f9328cac61e66d7cceb8fbc8df4c61786615711c3309bc05a61",
+      "payload_sha256": "f97cbb0fcb2650836eea80ff983392c3be16b5213149fd1a630a202244ea0768",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "repetition": 1,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c3-n128-r0",
+      "context_index": 3,
+      "key_index": 7,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c3-n128-r0",
+      "payload_bytes": 128,
+      "payload_hex": "a958a1d6b1a84793cee29dee0dd5160ae5609c0f4633de99e94b1ada907b9dd7692238ed8b49a8f3bc220b9bc61b968311889202b069abc54cc3dc1185757ed2fb6bfdad44f8047fab8fc7226a214cfcc6c5326caaa7dba50db3240c544ca441dbdfb63eee18b445883dfa55df2aad43fde3403558043b7004006c2e11248658",
+      "payload_sha256": "994e03c46b14869f4415d7fdced986e143a84216b487d68f70331f0017e65f7e",
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "repetition": 0,
+      "reservation": [
+        120,
+        1500
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c3-n128-r0",
+      "context_index": 3,
+      "key_index": 7,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c3-n128-r0",
+      "payload_bytes": 128,
+      "payload_hex": "a958a1d6b1a84793cee29dee0dd5160ae5609c0f4633de99e94b1ada907b9dd7692238ed8b49a8f3bc220b9bc61b968311889202b069abc54cc3dc1185757ed2fb6bfdad44f8047fab8fc7226a214cfcc6c5326caaa7dba50db3240c544ca441dbdfb63eee18b445883dfa55df2aad43fde3403558043b7004006c2e11248658",
+      "payload_sha256": "994e03c46b14869f4415d7fdced986e143a84216b487d68f70331f0017e65f7e",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "repetition": 0,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "R-c3-n128-r1",
+      "context_index": 3,
+      "key_index": 7,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c3-n128-r1",
+      "payload_bytes": 128,
+      "payload_hex": "464f3e5af41f027506a8ef14f468055c8c243103af368931852b88c0009a7bc8852f4ab61539b286d87193d9839f9ac57f308104162087f575429594692544c26529ff885a9cb5cea2f2caac689dcd6a369a0eee362705501548e523bc15cc0a23cfd52322ec5e30b324665f4c44fc7feaca2a4857c69a8a6844757a6c261c65",
+      "payload_sha256": "736b61e168b708d5ac8c80b00c26422828a31f9a0f6b92ee2ece2268cc42e562",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "repetition": 1,
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "F-c3-n128-r1",
+      "context_index": 3,
+      "key_index": 7,
+      "kind": "encrypted",
+      "method": "F",
+      "pair_id": "c3-n128-r1",
+      "payload_bytes": 128,
+      "payload_hex": "464f3e5af41f027506a8ef14f468055c8c243103af368931852b88c0009a7bc8852f4ab61539b286d87193d9839f9ac57f308104162087f575429594692544c26529ff885a9cb5cea2f2caac689dcd6a369a0eee362705501548e523bc15cc0a23cfd52322ec5e30b324665f4c44fc7feaca2a4857c69a8a6844757a6c261c65",
+      "payload_sha256": "736b61e168b708d5ac8c80b00c26422828a31f9a0f6b92ee2ece2268cc42e562",
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "repetition": 1,
+      "reservation": [
+        120,
+        1500
+      ],
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c0-n32-r0",
+      "case_id": "control-F-c0-n32-r0-B",
+      "context_index": 0,
+      "fallback_tokens": 200,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c0-n32-r0",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "recipient_public_key_hex": "5d8104dc32cdc639c0b49f0ea8f73d18c3ab2ef7030cae7d4cab45e60f598c07",
+      "repetition": 0,
+      "reservation": [
+        65,
+        900
+      ],
+      "sampling_seed": 202609200000,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c0-n32-r0",
+      "case_id": "control-R-c0-n32-r0-B",
+      "context_index": 0,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c0-n32-r0",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "recipient_public_key_hex": "5d8104dc32cdc639c0b49f0ea8f73d18c3ab2ef7030cae7d4cab45e60f598c07",
+      "repetition": 0,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200001,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c0-n32-r1",
+      "case_id": "control-R-c0-n32-r1-B",
+      "context_index": 0,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c0-n32-r1",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "recipient_public_key_hex": "5d8104dc32cdc639c0b49f0ea8f73d18c3ab2ef7030cae7d4cab45e60f598c07",
+      "repetition": 1,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200002,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c0-n32-r1",
+      "case_id": "control-F-c0-n32-r1-B",
+      "context_index": 0,
+      "fallback_tokens": 200,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c0-n32-r1",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "recipient_public_key_hex": "5d8104dc32cdc639c0b49f0ea8f73d18c3ab2ef7030cae7d4cab45e60f598c07",
+      "repetition": 1,
+      "reservation": [
+        65,
+        900
+      ],
+      "sampling_seed": 202609200003,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c0-n128-r0",
+      "case_id": "control-R-c0-n128-r0-B",
+      "context_index": 0,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c0-n128-r0",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "recipient_public_key_hex": "f4e73fd37d9114f517e8988a2536f6e88b053c9313adcbe4eb1556d7a5801006",
+      "repetition": 0,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200004,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c0-n128-r0",
+      "case_id": "control-F-c0-n128-r0-B",
+      "context_index": 0,
+      "fallback_tokens": 392,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c0-n128-r0",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "recipient_public_key_hex": "f4e73fd37d9114f517e8988a2536f6e88b053c9313adcbe4eb1556d7a5801006",
+      "repetition": 0,
+      "reservation": [
+        90,
+        1100
+      ],
+      "sampling_seed": 202609200005,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c0-n128-r1",
+      "case_id": "control-F-c0-n128-r1-B",
+      "context_index": 0,
+      "fallback_tokens": 392,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c0-n128-r1",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "recipient_public_key_hex": "f4e73fd37d9114f517e8988a2536f6e88b053c9313adcbe4eb1556d7a5801006",
+      "repetition": 1,
+      "reservation": [
+        90,
+        1100
+      ],
+      "sampling_seed": 202609200006,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c0-n128-r1",
+      "case_id": "control-R-c0-n128-r1-B",
+      "context_index": 0,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c0-n128-r1",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "recipient_public_key_hex": "f4e73fd37d9114f517e8988a2536f6e88b053c9313adcbe4eb1556d7a5801006",
+      "repetition": 1,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200007,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c1-n32-r0",
+      "case_id": "control-R-c1-n32-r0-B",
+      "context_index": 1,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c1-n32-r0",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "recipient_public_key_hex": "2fbe031f563a5faa2144d54d6c33ed4a6e9f6f06dddd40629bcad062ae56161e",
+      "repetition": 0,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200008,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c1-n32-r0",
+      "case_id": "control-F-c1-n32-r0-B",
+      "context_index": 1,
+      "fallback_tokens": 200,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c1-n32-r0",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "recipient_public_key_hex": "2fbe031f563a5faa2144d54d6c33ed4a6e9f6f06dddd40629bcad062ae56161e",
+      "repetition": 0,
+      "reservation": [
+        65,
+        900
+      ],
+      "sampling_seed": 202609200009,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c1-n32-r1",
+      "case_id": "control-F-c1-n32-r1-B",
+      "context_index": 1,
+      "fallback_tokens": 200,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c1-n32-r1",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "recipient_public_key_hex": "2fbe031f563a5faa2144d54d6c33ed4a6e9f6f06dddd40629bcad062ae56161e",
+      "repetition": 1,
+      "reservation": [
+        65,
+        900
+      ],
+      "sampling_seed": 202609200010,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c1-n32-r1",
+      "case_id": "control-R-c1-n32-r1-B",
+      "context_index": 1,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c1-n32-r1",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "recipient_public_key_hex": "2fbe031f563a5faa2144d54d6c33ed4a6e9f6f06dddd40629bcad062ae56161e",
+      "repetition": 1,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200011,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c1-n128-r0",
+      "case_id": "control-F-c1-n128-r0-B",
+      "context_index": 1,
+      "fallback_tokens": 392,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c1-n128-r0",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "recipient_public_key_hex": "6e07a42b9009a6b2db4f8da1dd3fb53af193984ca3ffdcc66ff5c85117842c2e",
+      "repetition": 0,
+      "reservation": [
+        90,
+        1100
+      ],
+      "sampling_seed": 202609200012,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c1-n128-r0",
+      "case_id": "control-R-c1-n128-r0-B",
+      "context_index": 1,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c1-n128-r0",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "recipient_public_key_hex": "6e07a42b9009a6b2db4f8da1dd3fb53af193984ca3ffdcc66ff5c85117842c2e",
+      "repetition": 0,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200013,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c1-n128-r1",
+      "case_id": "control-R-c1-n128-r1-B",
+      "context_index": 1,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c1-n128-r1",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "recipient_public_key_hex": "6e07a42b9009a6b2db4f8da1dd3fb53af193984ca3ffdcc66ff5c85117842c2e",
+      "repetition": 1,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200014,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c1-n128-r1",
+      "case_id": "control-F-c1-n128-r1-B",
+      "context_index": 1,
+      "fallback_tokens": 392,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c1-n128-r1",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "recipient_public_key_hex": "6e07a42b9009a6b2db4f8da1dd3fb53af193984ca3ffdcc66ff5c85117842c2e",
+      "repetition": 1,
+      "reservation": [
+        90,
+        1100
+      ],
+      "sampling_seed": 202609200015,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c2-n32-r0",
+      "case_id": "control-F-c2-n32-r0-B",
+      "context_index": 2,
+      "fallback_tokens": 200,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c2-n32-r0",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "recipient_public_key_hex": "02b63085d56de57ebb47e211428159cc9199769ed06633564790e2a79c8f7e44",
+      "repetition": 0,
+      "reservation": [
+        65,
+        900
+      ],
+      "sampling_seed": 202609200016,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c2-n32-r0",
+      "case_id": "control-R-c2-n32-r0-B",
+      "context_index": 2,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c2-n32-r0",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "recipient_public_key_hex": "02b63085d56de57ebb47e211428159cc9199769ed06633564790e2a79c8f7e44",
+      "repetition": 0,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200017,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c2-n32-r1",
+      "case_id": "control-R-c2-n32-r1-B",
+      "context_index": 2,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c2-n32-r1",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "recipient_public_key_hex": "02b63085d56de57ebb47e211428159cc9199769ed06633564790e2a79c8f7e44",
+      "repetition": 1,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200018,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c2-n32-r1",
+      "case_id": "control-F-c2-n32-r1-B",
+      "context_index": 2,
+      "fallback_tokens": 200,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c2-n32-r1",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "recipient_public_key_hex": "02b63085d56de57ebb47e211428159cc9199769ed06633564790e2a79c8f7e44",
+      "repetition": 1,
+      "reservation": [
+        65,
+        900
+      ],
+      "sampling_seed": 202609200019,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c2-n128-r0",
+      "case_id": "control-R-c2-n128-r0-B",
+      "context_index": 2,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c2-n128-r0",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "recipient_public_key_hex": "45493b7db1a7392cc0b6c4c251ef1195c9e02f2a0d27e0262e59d657b5c1f740",
+      "repetition": 0,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200020,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c2-n128-r0",
+      "case_id": "control-F-c2-n128-r0-B",
+      "context_index": 2,
+      "fallback_tokens": 392,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c2-n128-r0",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "recipient_public_key_hex": "45493b7db1a7392cc0b6c4c251ef1195c9e02f2a0d27e0262e59d657b5c1f740",
+      "repetition": 0,
+      "reservation": [
+        90,
+        1100
+      ],
+      "sampling_seed": 202609200021,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c2-n128-r1",
+      "case_id": "control-F-c2-n128-r1-B",
+      "context_index": 2,
+      "fallback_tokens": 392,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c2-n128-r1",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "recipient_public_key_hex": "45493b7db1a7392cc0b6c4c251ef1195c9e02f2a0d27e0262e59d657b5c1f740",
+      "repetition": 1,
+      "reservation": [
+        90,
+        1100
+      ],
+      "sampling_seed": 202609200022,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c2-n128-r1",
+      "case_id": "control-R-c2-n128-r1-B",
+      "context_index": 2,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c2-n128-r1",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "recipient_public_key_hex": "45493b7db1a7392cc0b6c4c251ef1195c9e02f2a0d27e0262e59d657b5c1f740",
+      "repetition": 1,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200023,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c3-n32-r0",
+      "case_id": "control-R-c3-n32-r0-B",
+      "context_index": 3,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c3-n32-r0",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "recipient_public_key_hex": "b4bf795b3609adae92d655650346c6c8671f013c15d049e1301ec0f08e33212c",
+      "repetition": 0,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200024,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c3-n32-r0",
+      "case_id": "control-F-c3-n32-r0-B",
+      "context_index": 3,
+      "fallback_tokens": 200,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c3-n32-r0",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "recipient_public_key_hex": "b4bf795b3609adae92d655650346c6c8671f013c15d049e1301ec0f08e33212c",
+      "repetition": 0,
+      "reservation": [
+        65,
+        900
+      ],
+      "sampling_seed": 202609200025,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c3-n32-r1",
+      "case_id": "control-F-c3-n32-r1-B",
+      "context_index": 3,
+      "fallback_tokens": 200,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c3-n32-r1",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "recipient_public_key_hex": "b4bf795b3609adae92d655650346c6c8671f013c15d049e1301ec0f08e33212c",
+      "repetition": 1,
+      "reservation": [
+        65,
+        900
+      ],
+      "sampling_seed": 202609200026,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c3-n32-r1",
+      "case_id": "control-R-c3-n32-r1-B",
+      "context_index": 3,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c3-n32-r1",
+      "payload_setting_bytes": 32,
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "recipient_public_key_hex": "b4bf795b3609adae92d655650346c6c8671f013c15d049e1301ec0f08e33212c",
+      "repetition": 1,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200027,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c3-n128-r0",
+      "case_id": "control-F-c3-n128-r0-B",
+      "context_index": 3,
+      "fallback_tokens": 392,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c3-n128-r0",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "recipient_public_key_hex": "5b55c779de382c7cca936016e7bbd4301c26e5c07c4caa07fcb376ee8e09e806",
+      "repetition": 0,
+      "reservation": [
+        90,
+        1100
+      ],
+      "sampling_seed": 202609200028,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c3-n128-r0",
+      "case_id": "control-R-c3-n128-r0-B",
+      "context_index": 3,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c3-n128-r0",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "recipient_public_key_hex": "5b55c779de382c7cca936016e7bbd4301c26e5c07c4caa07fcb376ee8e09e806",
+      "repetition": 0,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200029,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "R-c3-n128-r1",
+      "case_id": "control-R-c3-n128-r1-B",
+      "context_index": 3,
+      "fallback_tokens": 1984,
+      "family": "B",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c3-n128-r1",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "recipient_public_key_hex": "5b55c779de382c7cca936016e7bbd4301c26e5c07c4caa07fcb376ee8e09e806",
+      "repetition": 1,
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609200030,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "associated_encrypted_case_id": "F-c3-n128-r1",
+      "case_id": "control-F-c3-n128-r1-B",
+      "context_index": 3,
+      "fallback_tokens": 392,
+      "family": "B",
+      "kind": "control",
+      "method": "F",
+      "pair_id": "c3-n128-r1",
+      "payload_setting_bytes": 128,
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "recipient_public_key_hex": "5b55c779de382c7cca936016e7bbd4301c26e5c07c4caa07fcb376ee8e09e806",
+      "repetition": 1,
+      "reservation": [
+        90,
+        1100
+      ],
+      "sampling_seed": 202609200031,
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "main_fixed"
+    },
+    {
+      "case_id": "replay-F-c0-n32",
+      "context_index": 0,
+      "key_index": 0,
+      "kind": "replay",
+      "method": "F",
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "reservation": [
+        50,
+        320
+      ],
+      "source_case_id": "F-c0-n32-r0",
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "fresh_receiver"
+    },
+    {
+      "case_id": "replay-R-c0-n32",
+      "context_index": 0,
+      "key_index": 0,
+      "kind": "replay",
+      "method": "R",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "reservation": [
+        210,
+        2100
+      ],
+      "source_case_id": "R-c0-n32-r0",
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "fresh_receiver"
+    },
+    {
+      "case_id": "replay-F-c0-n128",
+      "context_index": 0,
+      "key_index": 1,
+      "kind": "replay",
+      "method": "F",
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "reservation": [
+        65,
+        512
+      ],
+      "source_case_id": "F-c0-n128-r0",
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "fresh_receiver"
+    },
+    {
+      "case_id": "replay-R-c0-n128",
+      "context_index": 0,
+      "key_index": 1,
+      "kind": "replay",
+      "method": "R",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "reservation": [
+        210,
+        2100
+      ],
+      "source_case_id": "R-c0-n128-r0",
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "fresh_receiver"
+    },
+    {
+      "case_id": "replay-F-c2-n32",
+      "context_index": 2,
+      "key_index": 4,
+      "kind": "replay",
+      "method": "F",
+      "profile_path": "configs/stage8/F32.json",
+      "profile_sha256": "3de562e6e8fb9c7fcb1061b99f3f6a6b0307810e611236c9ba5264ca138d587d",
+      "reservation": [
+        50,
+        320
+      ],
+      "source_case_id": "F-c2-n32-r0",
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "fresh_receiver"
+    },
+    {
+      "case_id": "replay-R-c2-n32",
+      "context_index": 2,
+      "key_index": 4,
+      "kind": "replay",
+      "method": "R",
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "reservation": [
+        210,
+        2100
+      ],
+      "source_case_id": "R-c2-n32-r0",
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "fresh_receiver"
+    },
+    {
+      "case_id": "replay-F-c2-n128",
+      "context_index": 2,
+      "key_index": 5,
+      "kind": "replay",
+      "method": "F",
+      "profile_path": "configs/stage8/F128.json",
+      "profile_sha256": "7518e3fa2479479ebc88e01876da073e194c3a0697f31a6608682390a88a9e70",
+      "reservation": [
+        65,
+        512
+      ],
+      "source_case_id": "F-c2-n128-r0",
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "fresh_receiver"
+    },
+    {
+      "case_id": "replay-R-c2-n128",
+      "context_index": 2,
+      "key_index": 5,
+      "kind": "replay",
+      "method": "R",
+      "profile_path": "configs/stage8/R128.json",
+      "profile_sha256": "067208682efb9a051a46fc37d86b869d4260aa456b89101050db5c05aef15198",
+      "reservation": [
+        210,
+        2100
+      ],
+      "source_case_id": "R-c2-n128-r0",
+      "split": "stage8_prospective_development_informed_not_final_test",
+      "stage8_phase": "fresh_receiver"
+    }
+  ],
+  "starting_commit": "e55680169ef7c0e7110bfaddc0b5392e28419bb8",
+  "unscheduled_investigation_slots": 8
+}

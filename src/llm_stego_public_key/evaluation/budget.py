@@ -18,6 +18,7 @@ from ..errors import BudgetError
 LIMITS = {"seconds": 7200.0, "tokens": 25000, "cases": 72}
 STAGE6_AUTHORIZATION_SHA256 = "a79e6ebb431cc683d0a847c3a20936d714a16f0a9abad541fc7092d31772c2f9"
 STAGE7_AUTHORIZATION_SHA256 = '965cdbd9dd6a482f9a1ab4ab7a4c539c8017aec7d6278308a747d92006bcc8fd'
+STAGE8_AUTHORIZATION_SHA256 = '2130ef2e808c52ae265d84b557137166171a69cb2ef0d49e36bb0a02753bdc4d'
 MAX_LEDGER_BYTES = 2 * 1024 * 1024
 
 
@@ -46,7 +47,7 @@ class BudgetLedger:
         if authorization is not None:
             from ..profile import canonical_json
             if (create or limits is not None or anchor is not None
-                or hashlib.sha256(canonical_json(authorization)).hexdigest() not in {STAGE6_AUTHORIZATION_SHA256, STAGE7_AUTHORIZATION_SHA256}):
+                or hashlib.sha256(canonical_json(authorization)).hexdigest() not in {STAGE6_AUTHORIZATION_SHA256, STAGE7_AUTHORIZATION_SHA256, STAGE8_AUTHORIZATION_SHA256}):
                 raise BudgetError("Only the explicit frozen stage extension is authorized")
             limits = authorization["lifetime_limits"]
             anchor = authorization["previous_checkpoint"]
@@ -183,6 +184,8 @@ class BudgetLedger:
         if self.authorization is not None and metadata.get("allocation_id") != self.authorization["allocation_id"]:
             raise BudgetError("New reservations must identify the authorized allocation")
         usage = self.usage()
+        if self.authorization is not None and any(usage[k]-self.authorization["baseline_usage"][k]+requested[k] > self.authorization["additional_limits"][k] for k in LIMITS):
+            raise BudgetError("Authorized suballocation ceiling exceeded")
         if any(usage[k] + requested[k] > self._limits[k] for k in LIMITS) or any(
             e["event"] == "overrun" for e in self.events()
         ):

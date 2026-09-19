@@ -1,0 +1,943 @@
+{
+  "schema_version": 1,
+  "method": "independent half-open interval calculation, rational boundary products, bitwise rescaling; production coder not imported",
+  "inference": false,
+  "cases": [
+    {
+      "case_id": "qual-synthetic-32",
+      "attempt_id": "a3c3f629-aafa-4468-a29b-93286e001878",
+      "historical_source_revision": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+      "context": "A field guide describing the shape of a maple leaf:",
+      "kind": "fixture",
+      "envelope_bytes": 100,
+      "required_bits": 800,
+      "tokens": 1100,
+      "terminal": {
+        "position": 1100,
+        "stable_bits": 800,
+        "released_bits": 2,
+        "pending_underflow": 2,
+        "low": 1905855568,
+        "high_inclusive": 3605400159,
+        "residual_width": 1699544592,
+        "residual_information_bits": 1.3374989307576968,
+        "selected_frequency": 2151,
+        "selected_information_bits": 4.929208190576939,
+        "effective_interval_information_bits": 4.929208193307587,
+        "table_entropy_bits": 1.2346077269868794
+      },
+      "selected_information_sum": 803.3375095213519,
+      "effective_interval_information_sum": 803.3374989307567,
+      "finite_rounding_information_difference": -1.0590595138637582e-05,
+      "mean_table_entropy_bits": 0.6774188595100024,
+      "prefix_agreement": true,
+      "all_interval_states_agree": true,
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "tokens": 128,
+          "stable_bits_released": 110,
+          "selected_information_bits": 111.06735882745161,
+          "mean_table_entropy_bits": 0.9112254783201621,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "tokens": 128,
+          "stable_bits_released": 185,
+          "selected_information_bits": 185.4905811819959,
+          "mean_table_entropy_bits": 1.2525986143152348,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "tokens": 128,
+          "stable_bits_released": 109,
+          "selected_information_bits": 108.38487535152964,
+          "mean_table_entropy_bits": 0.8126086010973095,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "tokens": 128,
+          "stable_bits_released": 148,
+          "selected_information_bits": 148.17919584424277,
+          "mean_table_entropy_bits": 0.9460902608198748,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "tokens": 128,
+          "stable_bits_released": 52,
+          "selected_information_bits": 52.19374691477702,
+          "mean_table_entropy_bits": 0.46108126097451463,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "tokens": 128,
+          "stable_bits_released": 123,
+          "selected_information_bits": 123.30768399905654,
+          "mean_table_entropy_bits": 0.7847292868839646,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "tokens": 128,
+          "stable_bits_released": 3,
+          "selected_information_bits": 3.5249741937856727,
+          "mean_table_entropy_bits": 0.1076799997740835,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "tokens": 128,
+          "stable_bits_released": 10,
+          "selected_information_bits": 9.7304079233193,
+          "mean_table_entropy_bits": 0.09326598836211634,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1100,
+          "tokens": 76,
+          "stable_bits_released": 60,
+          "selected_information_bits": 61.458685285193944,
+          "mean_table_entropy_bits": 0.7617496140914792,
+          "pending_at_end": 2
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "tokens": 256,
+          "stable_bits_released": 295,
+          "selected_information_bits": 296.55794000944735,
+          "mean_table_entropy_bits": 1.081912046317698,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "tokens": 256,
+          "stable_bits_released": 257,
+          "selected_information_bits": 256.5640711957723,
+          "mean_table_entropy_bits": 0.8793494309585926,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "tokens": 256,
+          "stable_bits_released": 175,
+          "selected_information_bits": 175.5014309138336,
+          "mean_table_entropy_bits": 0.6229052739292393,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "tokens": 256,
+          "stable_bits_released": 13,
+          "selected_information_bits": 13.255382117104967,
+          "mean_table_entropy_bits": 0.10047299406809987,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1100,
+          "tokens": 76,
+          "stable_bits_released": 60,
+          "selected_information_bits": 61.458685285193944,
+          "mean_table_entropy_bits": 0.7617496140914792,
+          "pending_at_end": 2
+        }
+      ],
+      "longest_zero_release_runs": [
+        {
+          "first_token": 777,
+          "last_token": 910,
+          "tokens": 134,
+          "selected_information_bits": 1.5696417860214902,
+          "pending_start": 0,
+          "pending_end": 1
+        },
+        {
+          "first_token": 912,
+          "last_token": 1011,
+          "tokens": 100,
+          "selected_information_bits": 0.7862488173097649,
+          "pending_start": 0,
+          "pending_end": 0
+        },
+        {
+          "first_token": 737,
+          "last_token": 767,
+          "tokens": 31,
+          "selected_information_bits": 4.004507197375974,
+          "pending_start": 0,
+          "pending_end": 4
+        },
+        {
+          "first_token": 22,
+          "last_token": 51,
+          "tokens": 30,
+          "selected_information_bits": 3.2658073319721175,
+          "pending_start": 0,
+          "pending_end": 3
+        },
+        {
+          "first_token": 687,
+          "last_token": 716,
+          "tokens": 30,
+          "selected_information_bits": 0.6187987519026439,
+          "pending_start": 1,
+          "pending_end": 1
+        }
+      ],
+      "inputs_sha256": {
+        "artifacts/stage7/attempts/a3c3f629-aafa-4468-a29b-93286e001878/input.json": "d836d24564b05a716022aae73eba81bde10ba47202465bb094fe266b8f2f24ba",
+        "artifacts/stage7/attempts/a3c3f629-aafa-4468-a29b-93286e001878/traces.json": "26b4e4c66ad373328e7c49249ab553e3d878fa28b494875627fe0fa9e55d978d",
+        "artifacts/stage7/attempts/a3c3f629-aafa-4468-a29b-93286e001878/outcome.json": "36e59cf98a0eed41ba0afe219f1840e4aedc6eb14acdfd830bbd95ea20b50e4f"
+      }
+    },
+    {
+      "case_id": "qual-synthetic-128",
+      "attempt_id": "b2ce8a41-05b8-4e45-8bc7-5227259a5088",
+      "historical_source_revision": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+      "context": "A kitchen note on arranging clean cups on a shelf:",
+      "kind": "fixture",
+      "envelope_bytes": 196,
+      "required_bits": 1568,
+      "tokens": 1536,
+      "terminal": {
+        "position": 1536,
+        "stable_bits": 1229,
+        "released_bits": 0,
+        "pending_underflow": 0,
+        "low": 1979295680,
+        "high_inclusive": 4292385937,
+        "residual_width": 2313090258,
+        "residual_information_bits": 0.8928255842210255,
+        "selected_frequency": 65519,
+        "selected_information_bits": 0.0003742827947452993,
+        "effective_interval_information_bits": 0.0003742828313287899,
+        "table_entropy_bits": 0.004452022505596219
+      },
+      "selected_information_sum": 1229.892849769903,
+      "effective_interval_information_sum": 1229.8928255842222,
+      "finite_rounding_information_difference": -2.4185680786104058e-05,
+      "mean_table_entropy_bits": 0.8046153445716279,
+      "prefix_agreement": true,
+      "all_interval_states_agree": true,
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "tokens": 128,
+          "stable_bits_released": 169,
+          "selected_information_bits": 172.30775293636177,
+          "mean_table_entropy_bits": 1.3468973534692525,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "tokens": 128,
+          "stable_bits_released": 142,
+          "selected_information_bits": 140.43642964651394,
+          "mean_table_entropy_bits": 1.122073937355422,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "tokens": 128,
+          "stable_bits_released": 133,
+          "selected_information_bits": 134.46096243638078,
+          "mean_table_entropy_bits": 0.9336063475499641,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "tokens": 128,
+          "stable_bits_released": 112,
+          "selected_information_bits": 109.64592087908882,
+          "mean_table_entropy_bits": 0.852300871455007,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "tokens": 128,
+          "stable_bits_released": 90,
+          "selected_information_bits": 91.88312639337641,
+          "mean_table_entropy_bits": 0.7771004050282313,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "tokens": 128,
+          "stable_bits_released": 84,
+          "selected_information_bits": 84.12500002102554,
+          "mean_table_entropy_bits": 0.7157487487736373,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "tokens": 128,
+          "stable_bits_released": 93,
+          "selected_information_bits": 93.03090778922943,
+          "mean_table_entropy_bits": 0.7254565232718811,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "tokens": 128,
+          "stable_bits_released": 87,
+          "selected_information_bits": 85.12991083830161,
+          "mean_table_entropy_bits": 0.6946257148172922,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "tokens": 128,
+          "stable_bits_released": 87,
+          "selected_information_bits": 86.94249617874033,
+          "mean_table_entropy_bits": 0.6562577945581457,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "tokens": 128,
+          "stable_bits_released": 71,
+          "selected_information_bits": 70.85745038923184,
+          "mean_table_entropy_bits": 0.6232150616594335,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "tokens": 128,
+          "stable_bits_released": 80,
+          "selected_information_bits": 85.02710635591575,
+          "mean_table_entropy_bits": 0.6506859046308138,
+          "pending_at_end": 5
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "tokens": 128,
+          "stable_bits_released": 81,
+          "selected_information_bits": 76.04578590573723,
+          "mean_table_entropy_bits": 0.5574154722904612,
+          "pending_at_end": 0
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "tokens": 256,
+          "stable_bits_released": 311,
+          "selected_information_bits": 312.7441825828759,
+          "mean_table_entropy_bits": 1.2344856454123365,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "tokens": 256,
+          "stable_bits_released": 245,
+          "selected_information_bits": 244.1068833154699,
+          "mean_table_entropy_bits": 0.8929536095024856,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "tokens": 256,
+          "stable_bits_released": 174,
+          "selected_information_bits": 176.008126414402,
+          "mean_table_entropy_bits": 0.746424576900935,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "tokens": 256,
+          "stable_bits_released": 180,
+          "selected_information_bits": 178.16081862753117,
+          "mean_table_entropy_bits": 0.7100411190445863,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "tokens": 256,
+          "stable_bits_released": 158,
+          "selected_information_bits": 157.7999465679723,
+          "mean_table_entropy_bits": 0.6397364281087897,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "tokens": 256,
+          "stable_bits_released": 161,
+          "selected_information_bits": 161.072892261653,
+          "mean_table_entropy_bits": 0.604050688460638,
+          "pending_at_end": 0
+        }
+      ],
+      "longest_zero_release_runs": [
+        {
+          "first_token": 1193,
+          "last_token": 1228,
+          "tokens": 36,
+          "selected_information_bits": 7.452807342032476,
+          "pending_start": 0,
+          "pending_end": 8
+        },
+        {
+          "first_token": 1312,
+          "last_token": 1341,
+          "tokens": 30,
+          "selected_information_bits": 2.566564094204102,
+          "pending_start": 0,
+          "pending_end": 2
+        },
+        {
+          "first_token": 1403,
+          "last_token": 1431,
+          "tokens": 29,
+          "selected_information_bits": 5.156810241692238,
+          "pending_start": 0,
+          "pending_end": 6
+        },
+        {
+          "first_token": 1491,
+          "last_token": 1519,
+          "tokens": 29,
+          "selected_information_bits": 2.6995757490658443,
+          "pending_start": 0,
+          "pending_end": 3
+        },
+        {
+          "first_token": 1139,
+          "last_token": 1162,
+          "tokens": 24,
+          "selected_information_bits": 3.3433796977522956,
+          "pending_start": 0,
+          "pending_end": 3
+        }
+      ],
+      "inputs_sha256": {
+        "artifacts/stage7/attempts/b2ce8a41-05b8-4e45-8bc7-5227259a5088/input.json": "fea5bffa813ecb258e11c8a1ebf254cdd6f5310295b7d4314d1acac9b8a84655",
+        "artifacts/stage7/attempts/b2ce8a41-05b8-4e45-8bc7-5227259a5088/traces.json": "70c81c000201621228dcd814b45359026a986a5e1ae5a4f954b47ff5455ccf86",
+        "artifacts/stage7/attempts/b2ce8a41-05b8-4e45-8bc7-5227259a5088/outcome.json": "39f2b7e2080408e11a6fe302698bc426d4ed03f2b520805844292ffae64f7b34"
+      }
+    },
+    {
+      "case_id": "qual-HPKE-32",
+      "attempt_id": "ff102c4b-aa49-483b-978d-f917db167a3a",
+      "historical_source_revision": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+      "context": "A station bulletin about maintaining a platform clock:",
+      "kind": "encrypted",
+      "envelope_bytes": 100,
+      "required_bits": 800,
+      "tokens": 1536,
+      "terminal": {
+        "position": 1536,
+        "stable_bits": 705,
+        "released_bits": 1,
+        "pending_underflow": 0,
+        "low": 777130880,
+        "high_inclusive": 3864848667,
+        "residual_width": 3087717788,
+        "residual_information_bits": 0.47610624718317496,
+        "selected_frequency": 46022,
+        "selected_information_bits": 0.5099639396398522,
+        "effective_interval_information_bits": 0.5099639402702967,
+        "table_entropy_bits": 1.412945117830614
+      },
+      "selected_information_sum": 705.4761067944096,
+      "effective_interval_information_sum": 705.4761062471824,
+      "finite_rounding_information_difference": -5.472271595863276e-07,
+      "mean_table_entropy_bits": 0.4559460285176729,
+      "prefix_agreement": true,
+      "all_interval_states_agree": true,
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "tokens": 128,
+          "stable_bits_released": 124,
+          "selected_information_bits": 126.435820026269,
+          "mean_table_entropy_bits": 1.0478909520241657,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "tokens": 128,
+          "stable_bits_released": 65,
+          "selected_information_bits": 62.75427761219684,
+          "mean_table_entropy_bits": 0.5942570037333924,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "tokens": 128,
+          "stable_bits_released": 78,
+          "selected_information_bits": 78.85161052203203,
+          "mean_table_entropy_bits": 0.6358156205305595,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "tokens": 128,
+          "stable_bits_released": 91,
+          "selected_information_bits": 90.65755010591516,
+          "mean_table_entropy_bits": 0.5867390341582979,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "tokens": 128,
+          "stable_bits_released": 61,
+          "selected_information_bits": 62.045437965826544,
+          "mean_table_entropy_bits": 0.5674172297572093,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "tokens": 128,
+          "stable_bits_released": 0,
+          "selected_information_bits": 0.6819565155360925,
+          "mean_table_entropy_bits": 0.01589550329119454,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "tokens": 128,
+          "stable_bits_released": 0,
+          "selected_information_bits": 0.05874806459162721,
+          "mean_table_entropy_bits": 0.005172518017639114,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "tokens": 128,
+          "stable_bits_released": 0,
+          "selected_information_bits": 0.05632254930538845,
+          "mean_table_entropy_bits": 0.0050639136709814065,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "tokens": 128,
+          "stable_bits_released": 0,
+          "selected_information_bits": 0.05334934321138932,
+          "mean_table_entropy_bits": 0.004837271660199945,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "tokens": 128,
+          "stable_bits_released": 49,
+          "selected_information_bits": 47.835732201182005,
+          "mean_table_entropy_bits": 0.25025261960014467,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "tokens": 128,
+          "stable_bits_released": 94,
+          "selected_information_bits": 94.02486805261287,
+          "mean_table_entropy_bits": 0.6922194510072835,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "tokens": 128,
+          "stable_bits_released": 143,
+          "selected_information_bits": 142.0204338357284,
+          "mean_table_entropy_bits": 1.065791224761068,
+          "pending_at_end": 0
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "tokens": 256,
+          "stable_bits_released": 189,
+          "selected_information_bits": 189.19009763846586,
+          "mean_table_entropy_bits": 0.821073977878779,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "tokens": 256,
+          "stable_bits_released": 169,
+          "selected_information_bits": 169.50916062794715,
+          "mean_table_entropy_bits": 0.6112773273444285,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "tokens": 256,
+          "stable_bits_released": 61,
+          "selected_information_bits": 62.72739448136258,
+          "mean_table_entropy_bits": 0.2916563665242025,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "tokens": 256,
+          "stable_bits_released": 0,
+          "selected_information_bits": 0.11507061389701567,
+          "mean_table_entropy_bits": 0.0051182158443102595,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "tokens": 256,
+          "stable_bits_released": 49,
+          "selected_information_bits": 47.8890815443934,
+          "mean_table_entropy_bits": 0.1275449456301723,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "tokens": 256,
+          "stable_bits_released": 237,
+          "selected_information_bits": 236.04530188834113,
+          "mean_table_entropy_bits": 0.8790053378841759,
+          "pending_at_end": 0
+        }
+      ],
+      "longest_zero_release_runs": [
+        {
+          "first_token": 633,
+          "last_token": 1196,
+          "tokens": 564,
+          "selected_information_bits": 1.5827645672822699,
+          "pending_start": 0,
+          "pending_end": 2
+        },
+        {
+          "first_token": 1207,
+          "last_token": 1242,
+          "tokens": 36,
+          "selected_information_bits": 0.23640246204328194,
+          "pending_start": 0,
+          "pending_end": 0
+        },
+        {
+          "first_token": 1325,
+          "last_token": 1343,
+          "tokens": 19,
+          "selected_information_bits": 3.4267880743269887,
+          "pending_start": 0,
+          "pending_end": 3
+        },
+        {
+          "first_token": 570,
+          "last_token": 587,
+          "tokens": 18,
+          "selected_information_bits": 3.144291527547598,
+          "pending_start": 0,
+          "pending_end": 4
+        },
+        {
+          "first_token": 120,
+          "last_token": 136,
+          "tokens": 17,
+          "selected_information_bits": 2.987617773945367,
+          "pending_start": 0,
+          "pending_end": 2
+        }
+      ],
+      "inputs_sha256": {
+        "artifacts/stage7/attempts/ff102c4b-aa49-483b-978d-f917db167a3a/input.json": "0df63ce25adab6d3137821cc71dc10cca7471db62c4875c26edd08193d895dc5",
+        "artifacts/stage7/attempts/ff102c4b-aa49-483b-978d-f917db167a3a/traces.json": "0a123f7733ac5d1dce3a44f9a175a5b98f467e861a58466b665fe0df7beab89a",
+        "artifacts/stage7/attempts/ff102c4b-aa49-483b-978d-f917db167a3a/outcome.json": "b2e8a3ba27b980ee8a1ddd99a5c99506af7ce7cb1d255e8e2cd4ba4a5a610fc3"
+      }
+    },
+    {
+      "case_id": "qual-HPKE-128",
+      "attempt_id": "42446993-c808-40ef-b9b4-6e74deb256d1",
+      "historical_source_revision": "0fc812f7a71e80aa8d2c831d26c1c99202171cf2",
+      "context": "A garden journal describing rain beside a clay pot:",
+      "kind": "encrypted",
+      "envelope_bytes": 196,
+      "required_bits": 1568,
+      "tokens": 1536,
+      "terminal": {
+        "position": 1536,
+        "stable_bits": 1408,
+        "released_bits": 0,
+        "pending_underflow": 2,
+        "low": 180062752,
+        "high_inclusive": 2651035032,
+        "residual_width": 2470972281,
+        "residual_information_bits": 0.7975683191949337,
+        "selected_frequency": 65521,
+        "selected_information_bits": 0.00033024448458043404,
+        "effective_interval_information_bits": 0.0003302449816645055,
+        "table_entropy_bits": 0.0039922782726164955
+      },
+      "selected_information_sum": 1410.797567974662,
+      "effective_interval_information_sum": 1410.797568319195,
+      "finite_rounding_information_difference": 3.4453319130989257e-07,
+      "mean_table_entropy_bits": 0.9169143366063706,
+      "prefix_agreement": true,
+      "all_interval_states_agree": true,
+      "blocks128": [
+        {
+          "first_token": 1,
+          "last_token": 128,
+          "tokens": 128,
+          "stable_bits_released": 178,
+          "selected_information_bits": 178.55313030326607,
+          "mean_table_entropy_bits": 1.6843349424076217,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 129,
+          "last_token": 256,
+          "tokens": 128,
+          "stable_bits_released": 113,
+          "selected_information_bits": 113.08786868729807,
+          "mean_table_entropy_bits": 1.0588371257139713,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 257,
+          "last_token": 384,
+          "tokens": 128,
+          "stable_bits_released": 139,
+          "selected_information_bits": 140.74306617504425,
+          "mean_table_entropy_bits": 1.0049583157535058,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 385,
+          "last_token": 512,
+          "tokens": 128,
+          "stable_bits_released": 139,
+          "selected_information_bits": 138.17577620974689,
+          "mean_table_entropy_bits": 0.9755455445216231,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 513,
+          "last_token": 640,
+          "tokens": 128,
+          "stable_bits_released": 79,
+          "selected_information_bits": 79.77377116271576,
+          "mean_table_entropy_bits": 0.6843104450603996,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 641,
+          "last_token": 768,
+          "tokens": 128,
+          "stable_bits_released": 134,
+          "selected_information_bits": 132.16489142284826,
+          "mean_table_entropy_bits": 0.8595611912347633,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 769,
+          "last_token": 896,
+          "tokens": 128,
+          "stable_bits_released": 151,
+          "selected_information_bits": 151.53629503798322,
+          "mean_table_entropy_bits": 1.0921165149281928,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 897,
+          "last_token": 1024,
+          "tokens": 128,
+          "stable_bits_released": 130,
+          "selected_information_bits": 131.71806937732367,
+          "mean_table_entropy_bits": 1.0807834576457163,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1152,
+          "tokens": 128,
+          "stable_bits_released": 115,
+          "selected_information_bits": 113.56344861830208,
+          "mean_table_entropy_bits": 0.8475770868625068,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 1153,
+          "last_token": 1280,
+          "tokens": 128,
+          "stable_bits_released": 163,
+          "selected_information_bits": 162.6299483981954,
+          "mean_table_entropy_bits": 1.17262240023265,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1408,
+          "tokens": 128,
+          "stable_bits_released": 67,
+          "selected_information_bits": 68.36525822130427,
+          "mean_table_entropy_bits": 0.5227515326880928,
+          "pending_at_end": 2
+        },
+        {
+          "first_token": 1409,
+          "last_token": 1536,
+          "tokens": 128,
+          "stable_bits_released": 0,
+          "selected_information_bits": 0.4860443606382708,
+          "mean_table_entropy_bits": 0.01957348222743795,
+          "pending_at_end": 2
+        }
+      ],
+      "blocks256": [
+        {
+          "first_token": 1,
+          "last_token": 256,
+          "tokens": 256,
+          "stable_bits_released": 291,
+          "selected_information_bits": 291.64099899056407,
+          "mean_table_entropy_bits": 1.3715860340607966,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 257,
+          "last_token": 512,
+          "tokens": 256,
+          "stable_bits_released": 278,
+          "selected_information_bits": 278.9188423847909,
+          "mean_table_entropy_bits": 0.9902519301375644,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 513,
+          "last_token": 768,
+          "tokens": 256,
+          "stable_bits_released": 213,
+          "selected_information_bits": 211.93866258556395,
+          "mean_table_entropy_bits": 0.7719358181475814,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 769,
+          "last_token": 1024,
+          "tokens": 256,
+          "stable_bits_released": 281,
+          "selected_information_bits": 283.254364415307,
+          "mean_table_entropy_bits": 1.086449986286954,
+          "pending_at_end": 1
+        },
+        {
+          "first_token": 1025,
+          "last_token": 1280,
+          "tokens": 256,
+          "stable_bits_released": 278,
+          "selected_information_bits": 276.1933970164975,
+          "mean_table_entropy_bits": 1.010099743547578,
+          "pending_at_end": 0
+        },
+        {
+          "first_token": 1281,
+          "last_token": 1536,
+          "tokens": 256,
+          "stable_bits_released": 67,
+          "selected_information_bits": 68.8513025819427,
+          "mean_table_entropy_bits": 0.27116250745776627,
+          "pending_at_end": 2
+        }
+      ],
+      "longest_zero_release_runs": [
+        {
+          "first_token": 1396,
+          "last_token": 1536,
+          "tokens": 141,
+          "selected_information_bits": 0.5327892972774201,
+          "pending_start": 2,
+          "pending_end": 2
+        },
+        {
+          "first_token": 1352,
+          "last_token": 1394,
+          "tokens": 43,
+          "selected_information_bits": 1.796209271927589,
+          "pending_start": 0,
+          "pending_end": 2
+        },
+        {
+          "first_token": 1319,
+          "last_token": 1349,
+          "tokens": 31,
+          "selected_information_bits": 0.6585646101509098,
+          "pending_start": 0,
+          "pending_end": 0
+        },
+        {
+          "first_token": 1120,
+          "last_token": 1147,
+          "tokens": 28,
+          "selected_information_bits": 8.370206057323482,
+          "pending_start": 0,
+          "pending_end": 8
+        },
+        {
+          "first_token": 1026,
+          "last_token": 1043,
+          "tokens": 18,
+          "selected_information_bits": 1.4528502305780358,
+          "pending_start": 0,
+          "pending_end": 2
+        }
+      ],
+      "inputs_sha256": {
+        "artifacts/stage7/attempts/42446993-c808-40ef-b9b4-6e74deb256d1/input.json": "028707c29b86a42d56d3e0d8e7f71dad487b3f7e9f3dbeadb7aa35bbe304ee0e",
+        "artifacts/stage7/attempts/42446993-c808-40ef-b9b4-6e74deb256d1/traces.json": "3c459664e9884fb13784d13e50bd0bb305166af15fdf6fcd79a7532156594000",
+        "artifacts/stage7/attempts/42446993-c808-40ef-b9b4-6e74deb256d1/outcome.json": "41106d06c370813089be7e4da5f57d28c154dd644d2dfe71b5fc3d2b1b1bd52b"
+      }
+    }
+  ]
+}

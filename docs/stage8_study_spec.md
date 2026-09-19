@@ -1,0 +1,43 @@
+# Stage 8 fixed capacity extension and conditional comparison
+
+Authorized on 18 September 2026 from main e55680169ef7c0e7110bfaddc0b5392e28419bb8. This is a new namespace within unused Stage7 authorization, not a restart. Stage7 statuses, profiles and attempt records remain unchanged. No internal-manuscript gate, model search or parameter search is introduced.
+
+## One changed transport limit
+
+The model/tokenizer/native libraries, numerical settings, 2048 context, arithmetic precision/frequencies/termination, candidate admission, temperature, four Stage7 contexts and public32/128 payload classes are fixed. Only R's maximum carrier length changes from1536 to1984, under new exact registered profiles. F receives a Stage8 profile identity but keeps its existing200/392-token mapping and512-token bound. Public HPKE bindings include the intended new full profile. Maximum carrier length is public; no length concealment is claimed.
+
+Actual historical context counts including BOS are12,12,10,11. The largest context plus1984 carrier tokens plus one conservative unused backend position totals1997, below2048. An ASCII-byte context upper bound also fits. Native/tokenizer hashes are reverified on the host; every GPU job rechecks exact context token IDs before inference. No context-window increase or second carrier ceiling is permitted.
+
+## Diagnosis and diagnostic jobs
+
+First independently reconstruct all four Stage7 encoder trajectories from their actual frequency tables and symbols, compare every interval endpoint/pending/stable-bit state, and compare stable bit prefixes to the exact packet. Report selected-symbol information, effective integer-interval information, entropy, residual width,128/256-token blocks and longest stalls. This is host-only arithmetic, no inference.
+
+Diagnostic re-encoding order is the four Stage7 cases in original order: synthetic100, synthetic196, HPKE32, HPKE128. Use exact old envelope bytes and old public contexts with the Stage8 transport limit. Compare token IDs, candidate-order hashes, frequency tables and interval/stable/pending states against the entire old encoder prefix, even if the extended attempt also aborts. Any unexplained divergence stops work. Raw-envelope recovery is distinct from old-profile authentication. When opening old HPKE ciphertext, use its original Stage7 binding; never pretend it binds Stage8.
+
+Then up to four fresh-process diagnostic receivers, predetermined priority HPKE32, HPKE128, synthetic100, synthetic196, with one slot per completed source and no substitution. Receiver inputs: actual saved UTF-8, public transport/profile/context and, for original-binding authentication, the old public profile plus test private key. Expected envelope/payload hashes and old encoder traces remain evaluator-only. If neither historical HPKE packet completes at1984, stop before receiver jobs or fresh study. Qualification requires consistent arithmetic/prefixes and at least one exact completed HPKE envelope with independent receiver recovery and original-binding authentication. A large-payload capacity failure is retained, not a gate failure when another HPKE packet qualifies.
+
+## Fresh study, released only after qualification
+
+Candidate full matrix: F/R ×4 fixed development-informed contexts ×32/128 bytes ×2 repetitions =32 fresh encrypted attempts. Exactly one probability-weighted admissible B control per planned setting =32 controls. No ordinary-control matrix. Up to8 main receiver replays: contexts0 and2, repetition0, both methods and sizes; unavailable sources leave slots unused.
+
+Eight new independent test recipient keys, assignment `2*context + (payload_size==128)`, keep F/R paired and repeat the same key in that size/context group. This retains eight keys if repetitions must reduce symmetrically to one. Payloads: `SHAKE256(ASCII(ICISSP2027 Stage8 binary c={c} n={n} r={rep})).digest(n)`. Fresh OS/library HPKE randomness and message identifiers for every transmission. Control PCG64 seeds are fixed in allocation; they are reproducibility parameters, not cryptographic keys.
+
+Controls use **unrounded** float64 softmax conditional model probabilities over the shared canonical16 candidates, at temperature1. R uses the unchanged65536-frequency approximation. Public scoring records per-step total variation and entropies to quantify that difference without another inference pass. Controls have no header/encryption. Target length equals the associated delivered carrier's actual token count; failed-source fallback is1984 for R,200/392 for F. This is a length-conditioned generator. EOS remains an ordinary vocabulary token under the inherited selection policy; special/control IDs are excluded by the unchanged admissibility rule. No early stop, filtering repair, resampling or replacement after failures.
+
+Before main, forecast startup-inclusive work from diagnostics using observed per-pass costs and long-prefix costs, with margin. A committed release selects either all two repetitions or repetition0 **in every context/size/method**, including the corresponding controls. No outcome-dependent reductions once main starts. All main data are prospective exploratory data on development-informed contexts; historical and diagnostic observations are not pooled or called final held-out evaluation.
+
+## Capacity and public recognition
+
+Extract nested checkpoints512,1024,1536,1984 from each single trajectory. Stable bit progress is not authenticated recovery. For completed authenticated packets, checkpoint recovery is true only at/after the actual completion length. Record total envelope bits and useful payload bits separately; within-trajectory checkpoints are dependent. Do not pair fresh random ciphertexts with historical ciphertexts as a budget experiment.
+
+The public observer begins with received UTF-8 and public configuration, without private keys, ground truth, encoder traces or receiver outcomes. One complete pass yields canonical-token surprisal, log2 rank, candidate membership, public frame/termination acceptance, canonical X25519 representation, token/byte lengths and probability-rounding diagnostics. No F64-token body boundary is used for R; all body-region scores are unavailable. Format acceptance never means tag authentication. Token-path likelihood is not automatically the probability of the emitted UTF-8 string.
+
+Fixed higher-is-carrier score orientations: surprisal, log2 rank, membership, format, format+canonical-KEM, token and byte lengths. Report B separately; no threshold training/tuning or direction flipping. Primary cross-method scores use all complete received messages with scorable matched controls, independent of authentication. Keep abort counts alongside this delivery-conditioned analysis. A missing internal wire emission is not automatically a visible network event. Also report each size separately. Paired R-minus-F comparisons restrict to joint delivered/scorable payload/key/context pairs and explicitly name that additional conditioning.
+
+Uncertainty:2000 bootstrap draws, seed2026092008. Resample four contexts, then the two size/recipient-key groups within context, retaining both repetitions, methods, controls and nested budget checkpoints in each block. For size-stratified analyses resample contexts, retaining all repetitions. Tokens and replays are not independent units. Four selected contexts and degenerate all-success/separation intervals cannot establish population reliability or concealment.
+
+## Accounting and stopping
+
+Stage8 ceilings:10800 conservative GPU-job seconds,230000 evaluated tokens,88 attempts; additionally bounded by unchanged lifetime limits21941.884885362982 seconds,424994 tokens,342 attempts. Anchor7995.272036779985 seconds,131859 tokens,218 attempts. Historical entries are append-only. All model loading/startup, prompts, encode/inverse/scoring, failures and shutdown are charged. Persistent reservations, shared lock, deadlines, one-shot worker leases and source/profile/GPU checks remain mandatory. No unused allowance is added to lifetime ceilings.
+
+Eight diagnostic slots plus up to72 fresh slots leave eight unscheduled investigation slots. Failures consume slots. Full per-case reservations must fit both caps; never reduce a reservation merely to admit a job. Stop for an inverse/authentication error, authenticated wrong plaintext, prefix/numerical divergence, promised serialization-invariant failure, timeout, lease/accounting/provenance failure, or exhausted reservation headroom. Retain pure capacity failures and unavailable replays. No retries, extra ceilings, Stage9 or finished manuscript.

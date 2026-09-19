@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "ceiling": 1984,
+  "context_window": 2048,
+  "basis": "Actual token IDs from all four Stage7 workers, unchanged tokenizer/model hashes; ASCII-byte upper bound also fits; live tokenizer rechecked before each Stage8 inference sequence",
+  "contexts": [
+    {
+      "context": "A field guide describing the shape of a maple leaf:",
+      "context_token_ids_including_bos": [
+        128000,
+        32,
+        2115,
+        8641,
+        23524,
+        279,
+        6211,
+        315,
+        264,
+        55480,
+        16312,
+        25
+      ],
+      "actual_context_tokens": 12,
+      "historical_attempt_id": "a3c3f629-aafa-4468-a29b-93286e001878",
+      "carrier_ceiling": 1984,
+      "conservative_backend_extra_positions": 1,
+      "total_positions": 1997,
+      "remaining_positions": 51
+    },
+    {
+      "context": "A kitchen note on arranging clean cups on a shelf:",
+      "context_token_ids_including_bos": [
+        128000,
+        32,
+        9979,
+        5296,
+        389,
+        77218,
+        4335,
+        26446,
+        389,
+        264,
+        28745,
+        25
+      ],
+      "actual_context_tokens": 12,
+      "historical_attempt_id": "b2ce8a41-05b8-4e45-8bc7-5227259a5088",
+      "carrier_ceiling": 1984,
+      "conservative_backend_extra_positions": 1,
+      "total_positions": 1997,
+      "remaining_positions": 51
+    },
+    {
+      "context": "A station bulletin about maintaining a platform clock:",
+      "context_token_ids_including_bos": [
+        128000,
+        32,
+        8216,
+        75829,
+        922,
+        20958,
+        264,
+        5452,
+        9042,
+        25
+      ],
+      "actual_context_tokens": 10,
+      "historical_attempt_id": "ff102c4b-aa49-483b-978d-f917db167a3a",
+      "carrier_ceiling": 1984,
+      "conservative_backend_extra_positions": 1,
+      "total_positions": 1995,
+      "remaining_positions": 53
+    },
+    {
+      "context": "A garden journal describing rain beside a clay pot:",
+      "context_token_ids_including_bos": [
+        128000,
+        32,
+        13863,
+        8486,
+        23524,
+        11422,
+        30488,
+        264,
+        37148,
+        3419,
+        25
+      ],
+      "actual_context_tokens": 11,
+      "historical_attempt_id": "42446993-c808-40ef-b9b4-6e74deb256d1",
+      "carrier_ceiling": 1984,
+      "conservative_backend_extra_positions": 1,
+      "total_positions": 1996,
+      "remaining_positions": 52
+    }
+  ]
+}

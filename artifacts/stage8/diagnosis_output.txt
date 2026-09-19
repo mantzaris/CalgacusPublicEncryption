@@ -1,0 +1,76 @@
+[
+  {
+    "case_id": "qual-synthetic-32",
+    "bits": 800,
+    "pending": 2,
+    "information": 803.3375095213519,
+    "rounding_difference": -1.0590595138637582e-05,
+    "zero_block256": [],
+    "longest_stall": {
+      "first_token": 777,
+      "last_token": 910,
+      "tokens": 134,
+      "selected_information_bits": 1.5696417860214902,
+      "pending_start": 0,
+      "pending_end": 1
+    }
+  },
+  {
+    "case_id": "qual-synthetic-128",
+    "bits": 1229,
+    "pending": 0,
+    "information": 1229.892849769903,
+    "rounding_difference": -2.4185680786104058e-05,
+    "zero_block256": [],
+    "longest_stall": {
+      "first_token": 1193,
+      "last_token": 1228,
+      "tokens": 36,
+      "selected_information_bits": 7.452807342032476,
+      "pending_start": 0,
+      "pending_end": 8
+    }
+  },
+  {
+    "case_id": "qual-HPKE-32",
+    "bits": 705,
+    "pending": 0,
+    "information": 705.4761067944096,
+    "rounding_difference": -5.472271595863276e-07,
+    "zero_block256": [
+      {
+        "first_token": 769,
+        "last_token": 1024,
+        "tokens": 256,
+        "stable_bits_released": 0,
+        "selected_information_bits": 0.11507061389701567,
+        "mean_table_entropy_bits": 0.0051182158443102595,
+        "pending_at_end": 2
+      }
+    ],
+    "longest_stall": {
+      "first_token": 633,
+      "last_token": 1196,
+      "tokens": 564,
+      "selected_information_bits": 1.5827645672822699,
+      "pending_start": 0,
+      "pending_end": 2
+    }
+  },
+  {
+    "case_id": "qual-HPKE-128",
+    "bits": 1408,
+    "pending": 2,
+    "information": 1410.797567974662,
+    "rounding_difference": 3.4453319130989257e-07,
+    "zero_block256": [],
+    "longest_stall": {
+      "first_token": 1396,
+      "last_token": 1536,
+      "tokens": 141,
+      "selected_information_bits": 0.5327892972774201,
+      "pending_start": 2,
+      "pending_end": 2
+    }
+  }
+]
