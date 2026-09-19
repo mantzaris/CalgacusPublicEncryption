@@ -19,6 +19,7 @@ LIMITS = {"seconds": 7200.0, "tokens": 25000, "cases": 72}
 STAGE6_AUTHORIZATION_SHA256 = "a79e6ebb431cc683d0a847c3a20936d714a16f0a9abad541fc7092d31772c2f9"
 STAGE7_AUTHORIZATION_SHA256 = '965cdbd9dd6a482f9a1ab4ab7a4c539c8017aec7d6278308a747d92006bcc8fd'
 STAGE8_AUTHORIZATION_SHA256 = '2130ef2e808c52ae265d84b557137166171a69cb2ef0d49e36bb0a02753bdc4d'
+STAGE9_AUTHORIZATION_SHA256 = '59514fc412ba3130dc201ef09cce20940dbb8f669266bf32d0ee05c203997be3'
 MAX_LEDGER_BYTES = 2 * 1024 * 1024
 
 
@@ -47,7 +48,7 @@ class BudgetLedger:
         if authorization is not None:
             from ..profile import canonical_json
             if (create or limits is not None or anchor is not None
-                or hashlib.sha256(canonical_json(authorization)).hexdigest() not in {STAGE6_AUTHORIZATION_SHA256, STAGE7_AUTHORIZATION_SHA256, STAGE8_AUTHORIZATION_SHA256}):
+                or hashlib.sha256(canonical_json(authorization)).hexdigest() not in {STAGE6_AUTHORIZATION_SHA256, STAGE7_AUTHORIZATION_SHA256, STAGE8_AUTHORIZATION_SHA256, STAGE9_AUTHORIZATION_SHA256}):
                 raise BudgetError("Only the explicit frozen stage extension is authorized")
             limits = authorization["lifetime_limits"]
             anchor = authorization["previous_checkpoint"]

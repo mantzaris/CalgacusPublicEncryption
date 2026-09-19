@@ -1,0 +1,307 @@
+{
+  "cases": [
+    {
+      "case_id": "control-R-c0-n32-r0-B",
+      "context_index": 0,
+      "inputs_sha256": {
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/carrier.txt": "c4f3d7afc87ff01eeba20fbcdad2d4c653818eb619e6b636516adfbc2887bfe3",
+        "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/traces.json": "f5b5396730981a4eace31c24eae55ebf7776a07f632189792e092a7058c10887"
+      },
+      "old_format_error": "Incomplete arithmetic final interval",
+      "predicates": {
+        "all_candidates_member": true,
+        "arithmetic_terminal": {
+          "high_inclusive": 2176315004,
+          "low": 486360064,
+          "pending_underflow": 1,
+          "stable_bits": 583
+        },
+        "canonical_replay_consistent": null,
+        "ends_at_first_completion": null,
+        "filler_consistent": null,
+        "first_completion_token": null,
+        "format_accepted": false,
+        "format_and_kem_canonical": false,
+        "kem_canonical": null,
+        "stable_bits": 583,
+        "stable_target_reached": false,
+        "unavailable_reasons": {
+          "canonical_replay_consistent": "Required stable bits not reached",
+          "ends_at_first_completion": "Required stable bits not reached",
+          "filler_consistent": "Required stable bits not reached",
+          "kem_canonical": "Required stable bits not reached"
+        }
+      },
+      "profile_path": "configs/stage8/R32.json",
+      "source_attempt_id": "f9ca41bb-ebfe-47b4-931e-b2e874c4a0de",
+      "source_gpu_revision": "78617213825f1163b3692f698e1063ba32a7de73",
+      "transmitted_tokens": 1984,
+      "wire_path": "artifacts/stage8/attempts/f9ca41bb-ebfe-47b4-931e-b2e874c4a0de/carrier.txt"
+    },
+    {
+      "case_id": "control-R-c0-n128-r0-B",
+      "context_index": 0,
+      "inputs_sha256": {
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/carrier.txt": "b1eecd2bf415dbbb32d2c8ca012203cd838719e45c81281877fb44483d8970cc",
+        "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/traces.json": "43d974a7207a509fae89ff367e3df2114524bd0ddfdf845355eb5ba0737063cf"
+      },
+      "old_format_error": "Incomplete arithmetic final interval",
+      "predicates": {
+        "all_candidates_member": true,
+        "arithmetic_terminal": {
+          "high_inclusive": 4186650589,
+          "low": 1742467072,
+          "pending_underflow": 1,
+          "stable_bits": 224
+        },
+        "canonical_replay_consistent": null,
+        "ends_at_first_completion": null,
+        "filler_consistent": null,
+        "first_completion_token": null,
+        "format_accepted": false,
+        "format_and_kem_canonical": false,
+        "kem_canonical": null,
+        "stable_bits": 224,
+        "stable_target_reached": false,
+        "unavailable_reasons": {
+          "canonical_replay_consistent": "Required stable bits not reached",
+          "ends_at_first_completion": "Required stable bits not reached",
+          "filler_consistent": "Required stable bits not reached",
+          "kem_canonical": "Required stable bits not reached"
+        }
+      },
+      "profile_path": "configs/stage8/R128.json",
+      "source_attempt_id": "463d8616-48aa-48fe-8d6d-0e5b2f74670d",
+      "source_gpu_revision": "78617213825f1163b3692f698e1063ba32a7de73",
+      "transmitted_tokens": 1984,
+      "wire_path": "artifacts/stage8/attempts/463d8616-48aa-48fe-8d6d-0e5b2f74670d/carrier.txt"
+    },
+    {
+      "case_id": "control-R-c1-n32-r0-B",
+      "context_index": 1,
+      "inputs_sha256": {
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/carrier.txt": "545df43c90efed5ab1540d8eb76f0270880b1e80ffbee83c3297b64c8e84ebd8",
+        "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/traces.json": "af09c41d61cd38a3f0f0ded89f4d5f7cc2e2c6288b90bc29f6a571314403583b"
+      },
+      "old_format_error": "Trailing arithmetic tokens",
+      "predicates": {
+        "all_candidates_member": true,
+        "arithmetic_terminal": {
+          "high_inclusive": 4011329151,
+          "low": 1031944320,
+          "pending_underflow": 0,
+          "stable_bits": 801
+        },
+        "canonical_replay_consistent": false,
+        "ends_at_first_completion": false,
+        "envelope_bytes": 100,
+        "envelope_sha256": "993d88b88237e30a39b0bd747453f1abae199426fe4d8a57bcd7cd69ed1592da",
+        "filler_consistent": false,
+        "first_completion_token": 1752,
+        "first_replay_divergence": 1752,
+        "format_accepted": false,
+        "format_and_kem_canonical": false,
+        "kem_canonical": true,
+        "stable_bits": 801,
+        "stable_overshoot_bits": 1,
+        "stable_target_reached": true,
+        "unavailable_reasons": {}
+      },
+      "profile_path": "configs/stage8/R32.json",
+      "source_attempt_id": "1cbe87f3-dcd5-4ead-8ec0-045af2c25584",
+      "source_gpu_revision": "78617213825f1163b3692f698e1063ba32a7de73",
+      "transmitted_tokens": 1984,
+      "wire_path": "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/carrier.txt"
+    },
+    {
+      "case_id": "control-R-c1-n128-r0-B",
+      "context_index": 1,
+      "inputs_sha256": {
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/carrier.txt": "d42e49e26cec342aaaa1fc900c0ee1bc3fb8def70d1bdb44670fdb767c54891c",
+        "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/traces.json": "f5766bfecbe14c11215f72babd737a7e3733aeca71f9e1a41cdf4e2047b6d9bd"
+      },
+      "old_format_error": "Incomplete arithmetic final interval",
+      "predicates": {
+        "all_candidates_member": true,
+        "arithmetic_terminal": {
+          "high_inclusive": 3281159710,
+          "low": 2114856832,
+          "pending_underflow": 0,
+          "stable_bits": 611
+        },
+        "canonical_replay_consistent": null,
+        "ends_at_first_completion": null,
+        "filler_consistent": null,
+        "first_completion_token": null,
+        "format_accepted": false,
+        "format_and_kem_canonical": false,
+        "kem_canonical": null,
+        "stable_bits": 611,
+        "stable_target_reached": false,
+        "unavailable_reasons": {
+          "canonical_replay_consistent": "Required stable bits not reached",
+          "ends_at_first_completion": "Required stable bits not reached",
+          "filler_consistent": "Required stable bits not reached",
+          "kem_canonical": "Required stable bits not reached"
+        }
+      },
+      "profile_path": "configs/stage8/R128.json",
+      "source_attempt_id": "89369901-4bcd-44c4-b3c5-a2e8322a11f7",
+      "source_gpu_revision": "78617213825f1163b3692f698e1063ba32a7de73",
+      "transmitted_tokens": 1984,
+      "wire_path": "artifacts/stage8/attempts/89369901-4bcd-44c4-b3c5-a2e8322a11f7/carrier.txt"
+    },
+    {
+      "case_id": "control-R-c2-n32-r0-B",
+      "context_index": 2,
+      "inputs_sha256": {
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/carrier.txt": "39e94bc23373b1cdeea3749dc75a2eec8c19b5caa911614416b1e9a4bce99af1",
+        "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/traces.json": "4bc098ebcb89cab319361fbf0c8741f90048a82d923d453aae849eb327aa3e0f"
+      },
+      "old_format_error": "Incomplete arithmetic final interval",
+      "predicates": {
+        "all_candidates_member": true,
+        "arithmetic_terminal": {
+          "high_inclusive": 3605945078,
+          "low": 879805880,
+          "pending_underflow": 1,
+          "stable_bits": 425
+        },
+        "canonical_replay_consistent": null,
+        "ends_at_first_completion": null,
+        "filler_consistent": null,
+        "first_completion_token": null,
+        "format_accepted": false,
+        "format_and_kem_canonical": false,
+        "kem_canonical": null,
+        "stable_bits": 425,
+        "stable_target_reached": false,
+        "unavailable_reasons": {
+          "canonical_replay_consistent": "Required stable bits not reached",
+          "ends_at_first_completion": "Required stable bits not reached",
+          "filler_consistent": "Required stable bits not reached",
+          "kem_canonical": "Required stable bits not reached"
+        }
+      },
+      "profile_path": "configs/stage8/R32.json",
+      "source_attempt_id": "fc82f9fe-fe14-4ab3-aafb-1b87c41caf48",
+      "source_gpu_revision": "78617213825f1163b3692f698e1063ba32a7de73",
+      "transmitted_tokens": 563,
+      "wire_path": "artifacts/stage8/attempts/fc82f9fe-fe14-4ab3-aafb-1b87c41caf48/carrier.txt"
+    },
+    {
+      "case_id": "control-R-c2-n128-r0-B",
+      "context_index": 2,
+      "inputs_sha256": {
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/carrier.txt": "ba1c29afdf05b8d41ab1b5507358eca567b7e119404dd717c8a085434bbe1b5e",
+        "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/traces.json": "250f1e40cc9b40a3468eb2cb8c354c9e3399289203318f056dbab122af085f49"
+      },
+      "old_format_error": "Incomplete arithmetic final interval",
+      "predicates": {
+        "all_candidates_member": true,
+        "arithmetic_terminal": {
+          "high_inclusive": 2586905204,
+          "low": 1030891776,
+          "pending_underflow": 0,
+          "stable_bits": 1036
+        },
+        "canonical_replay_consistent": null,
+        "ends_at_first_completion": null,
+        "filler_consistent": null,
+        "first_completion_token": null,
+        "format_accepted": false,
+        "format_and_kem_canonical": false,
+        "kem_canonical": null,
+        "stable_bits": 1036,
+        "stable_target_reached": false,
+        "unavailable_reasons": {
+          "canonical_replay_consistent": "Required stable bits not reached",
+          "ends_at_first_completion": "Required stable bits not reached",
+          "filler_consistent": "Required stable bits not reached",
+          "kem_canonical": "Required stable bits not reached"
+        }
+      },
+      "profile_path": "configs/stage8/R128.json",
+      "source_attempt_id": "687f87df-d199-4dae-9686-e4e9a0f59b79",
+      "source_gpu_revision": "78617213825f1163b3692f698e1063ba32a7de73",
+      "transmitted_tokens": 1984,
+      "wire_path": "artifacts/stage8/attempts/687f87df-d199-4dae-9686-e4e9a0f59b79/carrier.txt"
+    },
+    {
+      "case_id": "control-R-c3-n32-r0-B",
+      "context_index": 3,
+      "inputs_sha256": {
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/carrier.txt": "2126bf856faf35d1651a8132ea2816b6e667050fdb4d9ea93dd12c2f9b2c4734",
+        "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/traces.json": "bcb89616d4fe71fdc28c3204120dffb0cd4626fd8a603754e6e98e948e1d5b60"
+      },
+      "old_format_error": "Trailing arithmetic tokens",
+      "predicates": {
+        "all_candidates_member": true,
+        "arithmetic_terminal": {
+          "high_inclusive": 3867574271,
+          "low": 1426456576,
+          "pending_underflow": 0,
+          "stable_bits": 800
+        },
+        "canonical_replay_consistent": true,
+        "ends_at_first_completion": false,
+        "envelope_bytes": 100,
+        "envelope_sha256": "5fc8c48c9d2510168a9c6a691288050bfe5eb7359562a92cc30cf98a314d3825",
+        "filler_consistent": true,
+        "first_completion_token": 938,
+        "format_accepted": false,
+        "format_and_kem_canonical": false,
+        "kem_canonical": true,
+        "stable_bits": 800,
+        "stable_overshoot_bits": 0,
+        "stable_target_reached": true,
+        "unavailable_reasons": {}
+      },
+      "profile_path": "configs/stage8/R32.json",
+      "source_attempt_id": "5805cd4c-bd1d-4261-977f-f42f925a3ee6",
+      "source_gpu_revision": "78617213825f1163b3692f698e1063ba32a7de73",
+      "transmitted_tokens": 1783,
+      "wire_path": "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/carrier.txt"
+    },
+    {
+      "case_id": "control-R-c3-n128-r0-B",
+      "context_index": 3,
+      "inputs_sha256": {
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/carrier.txt": "d5d7753dafaa1fe6791cb0e406cd3631e27aa2bc7920f3a49d2abb3d7c4a65ac",
+        "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/traces.json": "b3b75c03aa0864bba4bfafde5a70148b243a73b0457ffd4fde07f8603223cefc"
+      },
+      "old_format_error": "Incomplete arithmetic final interval",
+      "predicates": {
+        "all_candidates_member": true,
+        "arithmetic_terminal": {
+          "high_inclusive": 3004784840,
+          "low": 626298880,
+          "pending_underflow": 3,
+          "stable_bits": 531
+        },
+        "canonical_replay_consistent": null,
+        "ends_at_first_completion": null,
+        "filler_consistent": null,
+        "first_completion_token": null,
+        "format_accepted": false,
+        "format_and_kem_canonical": false,
+        "kem_canonical": null,
+        "stable_bits": 531,
+        "stable_target_reached": false,
+        "unavailable_reasons": {
+          "canonical_replay_consistent": "Required stable bits not reached",
+          "ends_at_first_completion": "Required stable bits not reached",
+          "filler_consistent": "Required stable bits not reached",
+          "kem_canonical": "Required stable bits not reached"
+        }
+      },
+      "profile_path": "configs/stage8/R128.json",
+      "source_attempt_id": "b7617277-884e-49f1-88ae-eadec10985e7",
+      "source_gpu_revision": "78617213825f1163b3692f698e1063ba32a7de73",
+      "transmitted_tokens": 1984,
+      "wire_path": "artifacts/stage8/attempts/b7617277-884e-49f1-88ae-eadec10985e7/carrier.txt"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Retrospective public scoring tables; not live reception or independent samples"
+}

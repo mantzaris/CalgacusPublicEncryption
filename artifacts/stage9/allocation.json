@@ -1,0 +1,436 @@
+{
+  "additional_limits": {
+    "cases": 32,
+    "seconds": 8640,
+    "tokens": 120000
+  },
+  "analysis_spec_path": "docs/stage9_study_spec.md",
+  "analysis_spec_sha256": "577886c10115a9ec03c4046352aa2f10a0fbaa8227ed4bd58f6a591135ea6066",
+  "authorization_sha256": "59514fc412ba3130dc201ef09cce20940dbb8f669266bf32d0ee05c203997be3",
+  "baseline_usage": {
+    "cases": 261,
+    "seconds": 13152.147518922986,
+    "tokens": 206887
+  },
+  "lifetime_limits": {
+    "cases": 342,
+    "seconds": 21941.884885362982,
+    "tokens": 424994
+  },
+  "observer_contract_sha256": "abd73d8637f44d06277b2ab52437b149f2456ee924475a375fd35735c846f95c",
+  "retries": 0,
+  "schema_version": 1,
+  "slots": [
+    {
+      "case_id": "historical-prefix-c1",
+      "context_index": 1,
+      "historical_source_case_id": "control-R-c1-n32-r0-B",
+      "kind": "historical_prefix",
+      "method": "R",
+      "original_carrier_path": "artifacts/stage8/attempts/1cbe87f3-dcd5-4ead-8ec0-045af2c25584/carrier.txt",
+      "original_carrier_sha256": "545df43c90efed5ab1540d8eb76f0270880b1e80ffbee83c3297b64c8e84ebd8",
+      "prefix_tokens": 1752,
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "reservation": [
+        210,
+        2100
+      ],
+      "split": "retrospective_derived_historical_prefix",
+      "stage9_phase": "retrospective"
+    },
+    {
+      "case_id": "historical-prefix-c3",
+      "context_index": 3,
+      "historical_source_case_id": "control-R-c3-n32-r0-B",
+      "kind": "historical_prefix",
+      "method": "R",
+      "original_carrier_path": "artifacts/stage8/attempts/5805cd4c-bd1d-4261-977f-f42f925a3ee6/carrier.txt",
+      "original_carrier_sha256": "2126bf856faf35d1651a8132ea2816b6e667050fdb4d9ea93dd12c2f9b2c4734",
+      "prefix_tokens": 938,
+      "profile_path": "configs/stage8/R32.json",
+      "profile_sha256": "22c12f317bb22d07dda40bc00c26f7e175df69aa1380dbfc634bac75eaa2863e",
+      "reservation": [
+        210,
+        2100
+      ],
+      "split": "retrospective_derived_historical_prefix",
+      "stage9_phase": "retrospective"
+    },
+    {
+      "case_id": "R-c0",
+      "context_index": 0,
+      "key_index": 0,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c0",
+      "payload_bytes": 32,
+      "payload_hex": "03a4ceb0c30317da1af543cb0d1674d96ba0032ce6a79ea074d6f6c0b67d8a09",
+      "payload_sha256": "77d2b7aebebd0156d1023cbf5e9c7d92f954265af7b917cb1e3ae0ab7eee2118",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c0",
+      "case_id": "B-fixed-c0",
+      "context_index": 0,
+      "fallback_tokens": 1984,
+      "family": "B-fixed",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c0",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210000,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c0",
+      "case_id": "B-stop-c0",
+      "context_index": 0,
+      "fallback_tokens": 1984,
+      "family": "B-stop",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c0",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210000,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "case_id": "R-c1",
+      "context_index": 1,
+      "key_index": 1,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c1",
+      "payload_bytes": 32,
+      "payload_hex": "b754e9777a4eaa2c15442266ec6ecc47c46bf06ba0553f5aa7e3d7e5da02146a",
+      "payload_sha256": "3ed0d4eb8763b9dcfe77ad947998c0d682eabb861aa05e739d5c2f09b3bf0a19",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c1",
+      "case_id": "B-fixed-c1",
+      "context_index": 1,
+      "fallback_tokens": 1984,
+      "family": "B-fixed",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c1",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210001,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c1",
+      "case_id": "B-stop-c1",
+      "context_index": 1,
+      "fallback_tokens": 1984,
+      "family": "B-stop",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c1",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210001,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "case_id": "R-c2",
+      "context_index": 2,
+      "key_index": 2,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c2",
+      "payload_bytes": 32,
+      "payload_hex": "3e5b3b0f750ffb71c6321e950b144995df6af471bc11f584eebee332f8800fea",
+      "payload_sha256": "091e4840ad8807db536b9207d93d3a9162c4ce75b321fb240812026c9d2b5bd1",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c2",
+      "case_id": "B-fixed-c2",
+      "context_index": 2,
+      "fallback_tokens": 1984,
+      "family": "B-fixed",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c2",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210002,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c2",
+      "case_id": "B-stop-c2",
+      "context_index": 2,
+      "fallback_tokens": 1984,
+      "family": "B-stop",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c2",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210002,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "case_id": "R-c3",
+      "context_index": 3,
+      "key_index": 3,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c3",
+      "payload_bytes": 32,
+      "payload_hex": "5367864172b155bfac104fff9a1996a7a4db1aa7c60c5e8d0d432cb2685cd3c1",
+      "payload_sha256": "056afe5c4cd23ea15ef9f8ca6c2e5bc041ea099fce600e79201709b8a41a9ce0",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c3",
+      "case_id": "B-fixed-c3",
+      "context_index": 3,
+      "fallback_tokens": 1984,
+      "family": "B-fixed",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c3",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210003,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c3",
+      "case_id": "B-stop-c3",
+      "context_index": 3,
+      "fallback_tokens": 1984,
+      "family": "B-stop",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c3",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210003,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "case_id": "R-c4",
+      "context_index": 4,
+      "key_index": 4,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c4",
+      "payload_bytes": 32,
+      "payload_hex": "40e387e89e85fb1337092b7b8606b9a8693c367e2de7d0175a536b8f1e899f0b",
+      "payload_sha256": "321d03a1c75346a75e98b689f315f558bb1b3ec7474d4240b1a41031ee541886",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c4",
+      "case_id": "B-fixed-c4",
+      "context_index": 4,
+      "fallback_tokens": 1984,
+      "family": "B-fixed",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c4",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210004,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c4",
+      "case_id": "B-stop-c4",
+      "context_index": 4,
+      "fallback_tokens": 1984,
+      "family": "B-stop",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c4",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210004,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "case_id": "R-c5",
+      "context_index": 5,
+      "key_index": 5,
+      "kind": "encrypted",
+      "method": "R",
+      "pair_id": "c5",
+      "payload_bytes": 32,
+      "payload_hex": "5f4f39aef5181d114856d23340ccfbcc6312509bb168b7cd9d341fa5a1370683",
+      "payload_sha256": "f8f6f91fc9fb5b6651b3ad9fbdcc699102efe5437d2df122dfc8c23179685371",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        540,
+        6200
+      ],
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c5",
+      "case_id": "B-fixed-c5",
+      "context_index": 5,
+      "fallback_tokens": 1984,
+      "family": "B-fixed",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c5",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210005,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "associated_encrypted_case_id": "R-c5",
+      "case_id": "B-stop-c5",
+      "context_index": 5,
+      "fallback_tokens": 1984,
+      "family": "B-stop",
+      "kind": "control",
+      "method": "R",
+      "pair_id": "c5",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        360,
+        4200
+      ],
+      "sampling_seed": 202609210005,
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "prospective"
+    },
+    {
+      "case_id": "replay-R-c0",
+      "context_index": 0,
+      "key_index": 0,
+      "kind": "replay",
+      "method": "R",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        210,
+        2100
+      ],
+      "source_case_id": "R-c0",
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "fresh_receiver"
+    },
+    {
+      "case_id": "replay-R-c3",
+      "context_index": 3,
+      "key_index": 3,
+      "kind": "replay",
+      "method": "R",
+      "profile_path": "configs/stage9/R32.json",
+      "profile_sha256": "1f924c27ac92328a2d1378850b5619726da0f157c899890b4a37b29923f7ed7c",
+      "reservation": [
+        210,
+        2100
+      ],
+      "source_case_id": "R-c3",
+      "split": "stage9_prospective_development_not_final_test",
+      "stage9_phase": "fresh_receiver"
+    }
+  ],
+  "starting_commit": "5400c9bf7ff03e9d10a913674bbc8399bd4df7da"
+}

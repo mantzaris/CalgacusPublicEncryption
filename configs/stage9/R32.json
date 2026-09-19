@@ -1,0 +1,119 @@
+{
+  "backend": {
+    "cuda_packages": {
+      "nvidia-cublas-cu12": "12.4.5.8",
+      "nvidia-cuda-runtime-cu12": "12.4.127"
+    },
+    "llama_cpp_python": "0.3.23",
+    "native_library_sha256": {
+      "libggml-base.so": "d7fadcef23b3b97e6e313254c5656caaf96b92c6785060ff2db1677e134c8aa6",
+      "libggml-cpu.so": "19be8814e6190554e4c1d3f72123da3717413cefb3c347903285ed63dd2a980f",
+      "libggml-cuda.so": "89d5798bdf1bfd679d8a155f1ba02c40008d708b8cafba62f5f5e21a8d7b958d",
+      "libggml.so": "c908ca5f8ae463d5d5c6d4c380326390a84be3b899cb01ad41bc117b91a887b8",
+      "libllama.so": "ed7dbeb62742a4a2d42fb35f5c26f48139121c7faa7715673ab5c01bb603267f",
+      "libmtmd.so": "408f42232538e4bc9f4ae5273e2e94dbbeda4c963a62c693a9e80e709d9055d6"
+    },
+    "numpy": "2.2.6"
+  },
+  "codec": "public_utf8_arithmetic16_v1",
+  "cover_contexts": [
+    "A museum note about a copper bell:",
+    "A workshop note about a wooden ruler:",
+    "A library note about a folded map:",
+    "A park note about a stone bench:",
+    "A harbor note about a painted buoy:",
+    "A classroom note about a glass prism:"
+  ],
+  "framing": {
+    "bit_order": "MSB first",
+    "envelope_bytes": 100,
+    "filler": "one midpoint bit 1 followed by infinite zeros after envelope",
+    "frequency_rule": "1+floor(p*(65536-16)); largest remainder, ties by candidate index",
+    "frequency_total": 65536,
+    "interval": "inclusive [low,high]; E1/E2/E3 renormalization",
+    "length_bytes": 0,
+    "maximum_carrier_tokens": 1984,
+    "precision_bits": 32,
+    "termination": "first token whose stable prefix reaches 8*envelope_bytes; emitted excess must match midpoint suffix; canonical midpoint replay; no appended tokens",
+    "zero_width": "prevented by positive frequencies and E3; reject if encountered"
+  },
+  "hpke": {
+    "aead_id": 3,
+    "implementation": "pyhpke==0.6.5",
+    "kdf_id": 1,
+    "kem_id": 32,
+    "mode": 0
+  },
+  "inference": {
+    "cache": "reset and kv_cache_clear per sequence; serial prefill/eval",
+    "cublas_compute": "32F",
+    "cublas_workspace": ":4096:8",
+    "cuda_launch_blocking": true,
+    "flash_attn": false,
+    "fusion": false,
+    "graphs": false,
+    "kv_type_k": "f16",
+    "kv_type_v": "f16",
+    "logits_all": true,
+    "logits_dtype": "float32",
+    "n_batch": 1,
+    "n_ctx": 2048,
+    "n_gpu_layers": -1,
+    "n_ubatch": 1,
+    "threads": 8
+  },
+  "max_payload_bytes": 128,
+  "model": {
+    "file": "Meta-Llama-3-8B-Instruct.Q4_K_M.gguf",
+    "identity": "QuantFactory/Meta-Llama-3-8B-Instruct-GGUF",
+    "quantization": "Q4_K_M",
+    "sha256": "86c8ea6c8b755687d0b723176fcd0b2411ef80533d23e2a5030f845d13ab2db7",
+    "tokenizer": "embedded GGUF",
+    "tokenizer_sha256": "5c8950bef385be95db5feda8c8afadba6a5c0b903e6ceaa39efe6cfe3d84f3f3"
+  },
+  "profile_id": "stage9_public_R_size32_v1",
+  "protocol": "ICISSP2027-HPKE-Calgacus/v1",
+  "public_size_class": {
+    "agreement": "pre-agreed public channel setting; no transmitted metadata; bound by HPKE profile",
+    "envelope_bytes": 100,
+    "payload_bytes": 32
+  },
+  "record": "message_id[16] || payload_length_u32be || payload; no padding",
+  "schema_version": 1,
+  "selection": {
+    "admissibility": "strict UTF-8 of full detokenized proposed carrier prefix AND exact retokenization to proposed IDs",
+    "candidate_pool": 128,
+    "candidate_selection": "first 16 admissible among first 128 ranked IDs; stop scan once 16 found; no expansion or retry",
+    "empty_emitted_bytes": "excluded",
+    "excluded_attributes": [
+      "UNKNOWN",
+      "UNUSED",
+      "CONTROL",
+      "USER_DEFINED"
+    ],
+    "excluded_llama_token_attribute_mask": 27,
+    "failure": "capacity_exhaustion if fewer than 16",
+    "mapping": "integer arithmetic; probability weighted among the same ordered sixteen candidates",
+    "numerical_assumption": "identical conditional candidate order across cleared-cache processes",
+    "order": "descending native logits, ascending token ID for exact ties",
+    "radix": 16,
+    "special_detokenization": true
+  },
+  "serialization": "raw HPKE envelope bits; finite arithmetic coding on public size class; midpoint extension",
+  "source_context": "Canonical Base64 data:",
+  "source_context_used": false,
+  "tokens": {
+    "add_bos_to_context": true,
+    "add_bos_to_text": false,
+    "boundary": "separate public context; canonical full carrier prefix at each emission",
+    "chat_template": null,
+    "detokenize_special_tokens": true,
+    "interpret_special_tokens": false,
+    "max_tokens": 1984,
+    "max_transport_bytes": 65536,
+    "normalization": "none; strict UTF-8; no strip or inserted space",
+    "rank_order": "descending native logits; ascending token ID for exact ties",
+    "stop": "first token whose stable prefix reaches 8*envelope_bytes; emitted excess must match midpoint suffix; canonical midpoint replay; no appended tokens",
+    "vocabulary": "public rank16 admissible alphabet within top 128; attribute mask 27"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "additional_limits": {
+    "cases": 32,
+    "seconds": 8640,
+    "tokens": 120000
+  },
+  "allocation_id": "stage9_stopping_rule_20260918",
+  "authority": "Explicit user Stage9 subset of remaining Stage7 parent: 8640 seconds / 120000 evaluated tokens / 32 attempts; no lifetime increase",
+  "authorization": "User Stage 9 instruction: subset of remaining Stage 7 parent; no increase or addition of overlapping balances",
+  "baseline_usage": {
+    "cases": 261,
+    "seconds": 13152.147518922986,
+    "tokens": 206887
+  },
+  "lifetime_limits": {
+    "cases": 342,
+    "seconds": 21941.884885362982,
+    "tokens": 424994
+  },
+  "parent_authorization_path": "configs/stage7/authorization.json",
+  "parent_authorization_sha256": "965cdbd9dd6a482f9a1ab4ab7a4c539c8017aec7d6278308a747d92006bcc8fd",
+  "previous_checkpoint": {
+    "bytes": 140909,
+    "limits": {
+      "cases": 342,
+      "seconds": 21941.884885362982,
+      "tokens": 424994
+    },
+    "schema_version": 1,
+    "sha256": "63bc3d490d8b977e122785040fbead0429dc2d832c6be0c4e78d0986bdab4561"
+  },
+  "schema_version": 1,
+  "scope": "suballocation; no lifetime increase",
+  "starting_commit": "5400c9bf7ff03e9d10a913674bbc8399bd4df7da"
+}
